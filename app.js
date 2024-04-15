@@ -16,6 +16,7 @@ const packageJson = require('./package.json');
 const AppError = require('./utils/appError');
 const errorHandler = require('./controllers/errorController');
 const productRouter = require('./routers/productRouter');
+const swaggerRouter = require('./routers/swaggerRouter');
 
 const app = express();
 
@@ -59,8 +60,10 @@ app.use(compression());
 app.use(mongoSanitize());
 
 // ROUTES
-const basePath = '/api/v1';
-// Swagger documentation
+const basePath = '/';
+const apiPath = `${basePath}api/v1`;
+
+// Swagger documentation and UI
 const jsDocOptions = {
   definition: {
     swagger: '2.0',
@@ -69,15 +72,16 @@ const jsDocOptions = {
       description: `${packageJson.description}`,
       version: `${packageJson.version}`,
     },
-    basePath,
+    basePath: apiPath,
   },
   apis: ['./routers/*.js'],
 };
 const swaggerSpec = swaggerJSDoc(jsDocOptions);
-app.use(`${basePath}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use(`${apiPath}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use(basePath, swaggerRouter);
 
 // App routes
-app.use(`${basePath}/products`, productRouter);
+app.use(`${apiPath}/products`, productRouter);
 
 // ERROR HANDLERS
 app.all('*', (req, res, next) => {
