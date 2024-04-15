@@ -10,7 +10,6 @@ const router = express.Router();
  *   name: Products
  *   description: Product management
  */
-
 router
   .route('/')
   /**
@@ -66,11 +65,12 @@ router
    *         in: formData
    *         required: true
    *         type: string
-   *     produces:
-   *       - application/json
    *     responses:
    *       201:
    *         description: Created product.
+   *         schema:
+   *           type: object
+   *           $ref: '#/definitions/Product'
    */
   .post(productController.createProduct);
 
@@ -83,8 +83,6 @@ router
    *     tags: [Products]
    *     summary: Get product
    *     description: Get an existing product by provided ID.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - in: path
    *         name: id
@@ -110,13 +108,13 @@ router
    *       - name: name
    *         description: Product name.
    *         in: formData
-   *         required: true
    *         type: string
-   *     produces:
-   *       - application/json
    *     responses:
    *       200:
    *         description: Updated product.
+   *         schema:
+   *           type: object
+   *           $ref: '#/definitions/Product'
    */
   .patch(productController.updateProduct)
   /**
@@ -126,8 +124,6 @@ router
    *     tags: [Products]
    *     summary: Delete product
    *     description: Delete an existing product by provided ID.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - in: path
    *         name: id

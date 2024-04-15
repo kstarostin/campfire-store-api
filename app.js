@@ -11,12 +11,15 @@ const cookieParser = require('cookie-parser');
 const compression = require('compression');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
+const mongooseToSwagger = require('mongoose-to-swagger');
 
 const packageJson = require('./package.json');
 const AppError = require('./utils/appError');
 const errorHandler = require('./controllers/errorController');
 const productRouter = require('./routers/productRouter');
 const swaggerRouter = require('./routers/swaggerRouter');
+
+const Product = require('./models/productModel');
 
 const app = express();
 
@@ -73,6 +76,9 @@ const jsDocOptions = {
       version: `${packageJson.version}`,
     },
     basePath: apiPath,
+    definitions: {
+      Product: mongooseToSwagger(Product),
+    },
   },
   apis: ['./routers/*.js'],
 };
