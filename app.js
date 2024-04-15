@@ -9,7 +9,10 @@ const helmet = require('helmet');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const swaggerUi = require('swagger-ui-express');
+const swaggerJSDoc = require('swagger-jsdoc');
 
+const packageJson = require('./package.json');
 const AppError = require('./utils/appError');
 const errorHandler = require('./controllers/errorController');
 const productRouter = require('./routers/productRouter');
@@ -56,7 +59,25 @@ app.use(compression());
 app.use(mongoSanitize());
 
 // ROUTES
-app.use('/api/v1/products', productRouter);
+const basePath = '/api/v1';
+// Swagger documentation
+const jsDocOptions = {
+  definition: {
+    swagger: '2.0',
+    info: {
+      title: 'Campfire Store API',
+      description: `${packageJson.description}`,
+      version: `${packageJson.version}`,
+    },
+    basePath,
+  },
+  apis: ['./routers/*.js'],
+};
+const swaggerSpec = swaggerJSDoc(jsDocOptions);
+app.use(`${basePath}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// App routes
+app.use(`${basePath}/products`, productRouter);
 
 // ERROR HANDLERS
 app.all('*', (req, res, next) => {

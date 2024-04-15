@@ -15,7 +15,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/products",
+							"raw": "{{URL}}/api/v1/products?limit=3",
 							"host": [
 								"{{URL}}"
 							],
@@ -28,25 +28,24 @@
 								{
 									"key": "limit",
 									"value": "3",
-									"description": "Specifies maximal number of results per page. Default is 25. Maximal is 50.",
-									"disabled": true
+									"description": "Maximal number of results per page. Default is 25. Maximal is 50."
 								},
 								{
 									"key": "page",
 									"value": "2",
-									"description": "Specifies current page number",
+									"description": "Current page number",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "name",
-									"description": "Specifies comma separated sorting parameters",
+									"description": "Comma separated sorting parameters",
 									"disabled": true
 								},
 								{
 									"key": "fields",
 									"value": "name,id",
-									"description": "Specifies comma separated set of returned fields",
+									"description": "Comma separated set of returned fields",
 									"disabled": true
 								}
 							]
@@ -75,7 +74,7 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "Specifies ID of the product to search for."
+									"description": "ID of the product to search for"
 								}
 							]
 						},
@@ -141,7 +140,7 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "Specifies ID of the product to search for."
+									"description": "ID of the product to search for"
 								}
 							]
 						},
@@ -169,7 +168,7 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "Specifies ID of the product to search for."
+									"description": "ID of the product to search for"
 								}
 							]
 						},
