@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const { xss } = require('express-xss-sanitizer');
@@ -10,16 +11,13 @@ const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
 const swaggerUi = require('swagger-ui-express');
-const swaggerJSDoc = require('swagger-jsdoc');
-const mongooseToSwagger = require('mongoose-to-swagger');
 
-const packageJson = require('./package.json');
 const AppError = require('./utils/appError');
 const errorHandler = require('./controllers/errorController');
 const productRouter = require('./routers/productRouter');
-const swaggerRouter = require('./routers/swaggerRouter');
+const swaggerRedirectRouter = require('./routers/swaggerRedirectRouter');
 
-const Product = require('./models/productModel');
+const swaggerConfig = require('./swagger/swaggerConfig');
 
 const app = express();
 
@@ -29,6 +27,9 @@ const app = express();
 app.use(cors());
 // Activate CORS pre-flight requests
 app.options('*', cors());
+
+// Serving static files
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Set security HTTP headers
 app.use(helmet());
@@ -66,25 +67,13 @@ app.use(mongoSanitize());
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
 
-// Swagger documentation and UI
-const jsDocOptions = {
-  definition: {
-    swagger: '2.0',
-    info: {
-      title: 'Campfire Store API',
-      description: `${packageJson.description}`,
-      version: `${packageJson.version}`,
-    },
-    basePath: apiPath,
-    definitions: {
-      Product: mongooseToSwagger(Product),
-    },
-  },
-  apis: ['./routers/*.js'],
-};
-const swaggerSpec = swaggerJSDoc(jsDocOptions);
-app.use(`${apiPath}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-app.use(basePath, swaggerRouter);
+// Swagger routes
+app.use(
+  `${apiPath}/api-docs`,
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
+);
+app.use(basePath, swaggerRedirectRouter);
 
 // App routes
 app.use(`${apiPath}/products`, productRouter);
