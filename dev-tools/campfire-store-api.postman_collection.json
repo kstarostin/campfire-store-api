@@ -7,6 +7,178 @@
 	},
 	"item": [
 		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "get all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/categories",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma separated set of returned fields.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Get list of categories. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "get category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/categories/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Get an existing category by provided ID."
+					},
+					"response": []
+				},
+				{
+					"name": "create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/categories",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						},
+						"description": "Create a new category."
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/categories/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a category to search for."
+								}
+							]
+						},
+						"description": "Update an existing category by provided ID."
+					},
+					"response": []
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/categories/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a category to search for."
+								}
+							]
+						},
+						"description": "Delete an existing category by provided ID."
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "products",
 			"item": [
 				{
@@ -15,7 +187,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/products?limit=3",
+							"raw": "{{URL}}/api/v1/products",
 							"host": [
 								"{{URL}}"
 							],
@@ -28,29 +200,30 @@
 								{
 									"key": "limit",
 									"value": "3",
-									"description": "Maximal number of results per page. Default is 25. Maximal is 50."
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
 								},
 								{
 									"key": "page",
 									"value": "2",
-									"description": "Current page number",
+									"description": "Current page number.",
 									"disabled": true
 								},
 								{
 									"key": "sort",
 									"value": "name",
-									"description": "Comma separated sorting parameters",
+									"description": "Comma-separated sorting parameters.",
 									"disabled": true
 								},
 								{
 									"key": "fields",
 									"value": "name,id",
-									"description": "Comma separated set of returned fields",
+									"description": "Comma-separated set of returned fields.",
 									"disabled": true
 								}
 							]
 						},
-						"description": "Get list of multiple items of the type product. The results can be filtered, sorted, paginated and limited using specific query parameters."
+						"description": "Get list of products. The results can be filtered, sorted, paginated and limited using special query parameters."
 					},
 					"response": []
 				},
@@ -74,11 +247,11 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "ID of the product to search for"
+									"description": "ID of a product to search for."
 								}
 							]
 						},
-						"description": "Get an existing item of the type product by provided ID."
+						"description": "Get an existing product by provided ID."
 					},
 					"response": []
 				},
@@ -107,7 +280,7 @@
 								"products"
 							]
 						},
-						"description": "Create a new item of the type product by provided ID."
+						"description": "Create a new product."
 					},
 					"response": []
 				},
@@ -140,11 +313,11 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "ID of the product to search for"
+									"description": "ID of a product to search for."
 								}
 							]
 						},
-						"description": "Update an existing item of the type product by provided ID."
+						"description": "Update an existing product by provided ID."
 					},
 					"response": []
 				},
@@ -168,11 +341,11 @@
 								{
 									"key": "id",
 									"value": "",
-									"description": "ID of the product to search for"
+									"description": "ID of a product to search for."
 								}
 							]
 						},
-						"description": "Delete an existing item of the type product by provided ID."
+						"description": "Delete an existing product by provided ID."
 					},
 					"response": []
 				}

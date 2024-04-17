@@ -14,6 +14,7 @@ const swaggerUi = require('swagger-ui-express');
 
 const AppError = require('./utils/appError');
 const errorHandler = require('./controllers/errorController');
+const categoryRouter = require('./routers/categoryRouter');
 const productRouter = require('./routers/productRouter');
 const swaggerRedirectRouter = require('./routers/swaggerRedirectRouter');
 
@@ -76,6 +77,7 @@ app.use(
 app.use(basePath, swaggerRedirectRouter);
 
 // App routes
+app.use(`${apiPath}/categories`, categoryRouter);
 app.use(`${apiPath}/products`, productRouter);
 
 // ERROR HANDLERS

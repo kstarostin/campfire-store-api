@@ -5,7 +5,7 @@ exports.getAllProducts = factory.getAll(Product, {
   defaultLimit: 25,
   maxLimit: 50,
 });
-exports.getProduct = factory.getOne(Product);
+exports.getProduct = factory.getOne(Product, { path: 'category' });
 exports.createProduct = factory.createOne(Product);
 exports.updateProduct = factory.updateOne(Product);
 exports.deleteProduct = factory.deleteOne(Product);

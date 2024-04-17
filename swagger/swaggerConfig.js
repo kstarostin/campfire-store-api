@@ -2,6 +2,7 @@ const swaggerJSDoc = require('swagger-jsdoc');
 const mongooseToSwagger = require('mongoose-to-swagger');
 
 const packageJson = require('../package.json');
+const Category = require('../models/categoryModel');
 const Product = require('../models/productModel');
 
 const basePath = '/';
@@ -18,13 +19,14 @@ const document = swaggerJSDoc({
     },
     basePath: apiPath,
     definitions: {
+      Category: mongooseToSwagger(Category),
       Product: mongooseToSwagger(Product),
     },
   },
   apis: ['./routers/*.js'],
 });
 
-// Swagger document
+// Swagger options
 const options = {
   customCss: '.swagger-ui .topbar { display: none }',
   customCssUrl: '../../../css/swagger-ui-theme.css',

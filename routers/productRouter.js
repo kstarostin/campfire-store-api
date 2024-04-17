@@ -18,7 +18,7 @@ router
    *   get:
    *     tags: [Products]
    *     summary: Get products
-   *     description: Get list of multiple items of the type product. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     description: Get list of products. The results can be filtered, sorted, paginated and limited using special query parameters.
    *     produces:
    *       - application/json
    *     parameters:
@@ -58,7 +58,7 @@ router
    *   post:
    *     tags: [Products]
    *     summary: Create product
-   *     description: Create a new item of the type product by provided ID.
+   *     description: Create a new product.
    *     parameters:
    *       - name: name
    *         description: Product name.
@@ -76,7 +76,7 @@ router
    *         required: true
    *         type: string
    *       - name: category
-   *         description: Product category.
+   *         description: Product category ID.
    *         in: formData
    *         required: true
    *         type: string
@@ -102,7 +102,7 @@ router
    *       - in: path
    *         name: id
    *         required: true
-   *         description: ID of the product to search for.
+   *         description: ID of a product to search for.
    *     responses:
    *       200:
    *         description: Found product, if exists.
@@ -114,12 +114,12 @@ router
    *   patch:
    *     tags: [Products]
    *     summary: Update product
-   *     description: Update an product by provided ID.
+   *     description: Update an existing product by provided ID.
    *     parameters:
    *       - in: path
    *         name: id
    *         required: true
-   *         description: ID of the product to search for.
+   *         description: ID of a product to search for.
    *       - name: name
    *         description: Product name.
    *         in: formData
@@ -133,7 +133,7 @@ router
    *         in: formData
    *         type: string
    *       - name: category
-   *         description: Product category.
+   *         description: Product category ID.
    *         in: formData
    *         type: string
    *     responses:
@@ -155,7 +155,7 @@ router
    *       - in: path
    *         name: id
    *         required: true
-   *         description: ID of the product to search for.
+   *         description: ID of a product to search for.
    *     responses:
    *       204:
    *         description: No content.
