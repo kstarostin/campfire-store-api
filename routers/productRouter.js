@@ -82,12 +82,9 @@ router
    *     summary: Get product
    *     description: Get an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         description: ID of a product to search for.
    *     responses:
    *       200:
    *         description: Found product, if exists.
@@ -101,12 +98,9 @@ router
    *     summary: Update product
    *     description: Update an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         description: ID of a product to search for.
    *       - name: name
    *         description: Product name.
    *         in: formData
@@ -139,12 +133,9 @@ router
    *     summary: Delete product
    *     description: Delete an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         description: ID of a product to search for.
    *     responses:
    *       204:
    *         description: No content.

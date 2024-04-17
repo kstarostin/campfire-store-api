@@ -1,4 +1,5 @@
 parameters:
+  # Common
   language:
     name: language
     description: Session language.
@@ -29,3 +30,15 @@ parameters:
     description: Comma-separated set of returned fields.
     in: query
     type: string
+  # Category
+  categoryId:
+    name: id
+    description: ID of a category to search for.
+    in: path
+    required: true
+  # Product
+  productId:
+    name: id
+    description: ID of a product to search for.
+    in: path
+    required: true

@@ -14,7 +14,7 @@ exports.parseLanguage = (req, res, next) => {
     queryLanguage && allowedLanguages.includes(queryLanguage)
       ? queryLanguage
       : defaultLanguage;
-  console.log(`Session language: ${req.language}`);
+  // console.log(`Session language: ${req.language}`);
   next();
 };
 
@@ -27,6 +27,6 @@ exports.parseCurrency = (req, res, next) => {
     queryCurrency && allowedCurrencies.includes(queryCurrency)
       ? queryCurrency
       : defaultCurrency;
-  console.log(`Session currency: ${req.currency}`);
+  // console.log(`Session currency: ${req.currency}`);
   next();
 };
