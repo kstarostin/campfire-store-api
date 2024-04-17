@@ -23,7 +23,7 @@ const document = swaggerJSDoc({
       Product: mongooseToSwagger(Product),
     },
   },
-  apis: ['./routers/*.js'],
+  apis: ['./routers/*.js', './swagger/parameters.yaml'],
 });
 
 // Swagger options

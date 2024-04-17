@@ -26,6 +26,18 @@
 							],
 							"query": [
 								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								},
+								{
 									"key": "limit",
 									"value": "3",
 									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
@@ -71,6 +83,20 @@
 								"categories",
 								":id"
 							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
+							],
 							"variable": [
 								{
 									"key": "id",
@@ -105,6 +131,20 @@
 								"api",
 								"v1",
 								"categories"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
 							]
 						},
 						"description": "Create a new category."
@@ -136,6 +176,20 @@
 								"categories",
 								":id"
 							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
+							],
 							"variable": [
 								{
 									"key": "id",
@@ -163,6 +217,20 @@
 								"v1",
 								"categories",
 								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
 							],
 							"variable": [
 								{
@@ -197,6 +265,18 @@
 								"products"
 							],
 							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								},
 								{
 									"key": "limit",
 									"value": "3",
@@ -243,6 +323,20 @@
 								"products",
 								":id"
 							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
+							],
 							"variable": [
 								{
 									"key": "id",
@@ -278,6 +372,20 @@
 								"api",
 								"v1",
 								"products"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
 							]
 						},
 						"description": "Create a new product."
@@ -309,6 +417,20 @@
 								"products",
 								":id"
 							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
+							],
 							"variable": [
 								{
 									"key": "id",
@@ -336,6 +458,20 @@
 								"v1",
 								"products",
 								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency.",
+									"disabled": true
+								}
 							],
 							"variable": [
 								{

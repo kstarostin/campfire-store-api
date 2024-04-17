@@ -13,6 +13,7 @@ const compression = require('compression');
 const swaggerUi = require('swagger-ui-express');
 
 const AppError = require('./utils/appError');
+const sessionHandler = require('./controllers/sessionController');
 const errorHandler = require('./controllers/errorController');
 const categoryRouter = require('./routers/categoryRouter');
 const productRouter = require('./routers/productRouter');
@@ -75,6 +76,9 @@ app.use(
   swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
 );
 app.use(basePath, swaggerRedirectRouter);
+
+// Handles request language and currency parameters in the session
+app.use(sessionHandler.parseLanguage, sessionHandler.parseCurrency);
 
 // App routes
 app.use(`${apiPath}/categories`, categoryRouter);

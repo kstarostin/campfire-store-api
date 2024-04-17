@@ -1,0 +1,31 @@
+parameters:
+  language:
+    name: language
+    description: Session language.
+    in: query
+    type: string
+  currency:
+    name: currency
+    description: Session currency.
+    in: query
+    type: string
+  limit:
+    name: limit
+    description: Maximal number of results per page. Default value is 25, maximal is 50.
+    in: query
+    type: integer
+  page:
+    name: page
+    description: Current page number.
+    in: query
+    type: integer
+  sort:
+    name: sort
+    description: Comma-separated sorting parameters.
+    in: query
+    type: string
+  fields:
+    name: fields
+    description: Comma-separated set of returned fields.
+    in: query
+    type: string

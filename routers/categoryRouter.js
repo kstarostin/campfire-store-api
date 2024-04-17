@@ -22,31 +22,12 @@ router
    *     produces:
    *       - application/json
    *     parameters:
-   *       - in: query
-   *         name: limit
-   *         schema:
-   *           type: integer
-   *           minimum: 1
-   *           maximum: 100
-   *           default: 25
-   *         description: Maximal number of results per page. Default value is 25, maximal is 100.
-   *       - in: query
-   *         name: page
-   *         schema:
-   *           type: integer
-   *           minimum: 1
-   *           default: 1
-   *         description: Current page number.
-   *       - in: query
-   *         name: sort
-   *         schema:
-   *           type: string
-   *         description: Comma-separated sorting parameters.
-   *       - in: query
-   *         name: fields
-   *         schema:
-   *           type: string
-   *         description: Comma-separated set of returned fields.
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/limit'
+   *       - $ref: '#/parameters/page'
+   *       - $ref: '#/parameters/sort'
+   *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
    *         description: List of found categories.
@@ -60,6 +41,8 @@ router
    *     summary: Create category
    *     description: Create a new category.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - name: name
    *         description: Category name.
    *         in: formData
@@ -88,6 +71,8 @@ router
    *     summary: Get category
    *     description: Get an existing category by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true
@@ -105,6 +90,8 @@ router
    *     summary: Update category
    *     description: Update an existing category by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true
@@ -134,6 +121,8 @@ router
    *     summary: Delete category
    *     description: Delete an existing category by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true

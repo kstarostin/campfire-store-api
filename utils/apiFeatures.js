@@ -73,7 +73,14 @@ class APIFeatures {
   filter() {
     const queryObj = { ...this.requestQuery };
     // These fields are handled by other feature functions
-    const excludedFields = ['page', 'sort', 'limit', 'fields'];
+    const excludedFields = [
+      'page',
+      'sort',
+      'limit',
+      'fields',
+      'language',
+      'currency',
+    ];
     excludedFields.forEach((el) => delete queryObj[el]);
 
     let queryStr = JSON.stringify(queryObj);

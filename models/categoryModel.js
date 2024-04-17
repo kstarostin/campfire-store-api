@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const slugifyName = require('../utils/slugifyName');
 
 /**
- * Describes the complete schema of the product model type.
+ * CATEGORY SCHEMA
  */
 const categorySchema = new mongoose.Schema(
   {

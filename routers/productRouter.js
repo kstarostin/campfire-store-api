@@ -22,31 +22,12 @@ router
    *     produces:
    *       - application/json
    *     parameters:
-   *       - in: query
-   *         name: limit
-   *         schema:
-   *           type: integer
-   *           minimum: 1
-   *           maximum: 50
-   *           default: 25
-   *         description: Maximal number of results per page. Default value is 25, maximal is 50.
-   *       - in: query
-   *         name: page
-   *         schema:
-   *           type: integer
-   *           minimum: 1
-   *           default: 1
-   *         description: Current page number.
-   *       - in: query
-   *         name: sort
-   *         schema:
-   *           type: string
-   *         description: Comma-separated sorting parameters.
-   *       - in: query
-   *         name: fields
-   *         schema:
-   *           type: string
-   *         description: Comma-separated set of returned fields.
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/limit'
+   *       - $ref: '#/parameters/page'
+   *       - $ref: '#/parameters/sort'
+   *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
    *         description: List of found products.
@@ -60,6 +41,8 @@ router
    *     summary: Create product
    *     description: Create a new product.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - name: name
    *         description: Product name.
    *         in: formData
@@ -99,6 +82,8 @@ router
    *     summary: Get product
    *     description: Get an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true
@@ -116,6 +101,8 @@ router
    *     summary: Update product
    *     description: Update an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true
@@ -152,6 +139,8 @@ router
    *     summary: Delete product
    *     description: Delete an existing product by provided ID.
    *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
    *       - in: path
    *         name: id
    *         required: true
