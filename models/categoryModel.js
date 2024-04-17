@@ -11,6 +11,11 @@ const categorySchema = new mongoose.Schema(
       default: Date.now(),
       select: false,
     },
+    updatedAt: {
+      type: Date,
+      default: Date.now(),
+      select: false,
+    },
     name: {
       type: String,
       required: [true, 'Category must have a name'],

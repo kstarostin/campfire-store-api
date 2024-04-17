@@ -4,7 +4,10 @@
     "name": "ILAGA",
     "manufacturer": "Rebel Kayaks",
     "category": "661f8a8cf7b9265221dba8d2",
-    "price": 3140,
+    "price": {
+      "value": 3140,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.rebelkayaks.com/product/ilaga-2-2/"
   },
   {
@@ -12,7 +15,10 @@
     "name": "Stereo ONE22 Pro",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "price": 1999,
+    "price": {
+      "value": 1999,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.cube.eu/de-de/cube-stereo-one22-pro-fireorange-n-black/fa0fb720455087e4ee42e2e9055bbee3"
   },
   {
@@ -20,7 +26,10 @@
     "name": "Lithium 40",
     "manufacturer": "Mammut",
     "category": "661f9bfed801db7ada6d4fd3",
-    "price": 190,
+    "price": {
+      "value": 190,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.mammut.com/de/de/products/2530-03562-0001/lithium-40"
   },
   {
@@ -28,7 +37,10 @@
     "name": "Naturehike Cloud-up 2 Ultralight Camping Tent",
     "manufacturer": "Naturehike",
     "category": "661f9b59dc8283b51d38f4d4",
-    "price": 158.25,
+    "price": {
+      "value": 158.25,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.naturehike.com/products/cloud-up-2-people-tent?variant=37854424563894"
   },
   {
@@ -36,7 +48,10 @@
     "name": "Nordwand Pro Pants Men",
     "manufacturer": "RevolutionRace",
     "category": "661f9c7f106aa7dbfa9f5a41",
-    "price": 119,
+    "price": {
+      "value": 119,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851"
   },
   {
@@ -44,7 +59,10 @@
     "name": "Bonafide 97 (Flat)",
     "manufacturer": "Blizzard Tecnica",
     "category": "661f9d01f2e5c09eb45296bb",
-    "price": 800,
+    "price": {
+      "value": 800,
+      "currency": "EUR"
+    },
     "originalUrl": "https://www.blizzard-tecnica.com/de/de/men/skis/all-mountain/bonafide/bonafide-97-flat"
   }
 ]

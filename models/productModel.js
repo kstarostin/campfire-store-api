@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugifyName = require('../utils/slugifyName');
+const { allowedCurrencies } = require('../utils/config');
 
 /**
  * Describes the complete schema of the product model type.
@@ -11,6 +12,11 @@ const productSchema = new mongoose.Schema(
       default: Date.now(),
       select: false,
     },
+    updatedAt: {
+      type: Date,
+      default: Date.now(),
+      select: false,
+    },
     name: {
       type: String,
       required: [true, 'Product must have a name'],
@@ -18,8 +24,18 @@ const productSchema = new mongoose.Schema(
     },
     slug: String,
     price: {
-      type: Number,
-      required: [true, 'Product must have a price'],
+      value: {
+        type: Number,
+        required: [true, 'Product price must have a value'],
+      },
+      currency: {
+        type: String,
+        required: [true, 'Product price must have a currency'],
+        enum: {
+          values: allowedCurrencies,
+          message: `Allowed price currencies are [${allowedCurrencies.join(', ')}]`,
+        },
+      },
     },
     manufacturer: {
       type: String,
