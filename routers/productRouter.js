@@ -65,6 +65,21 @@ router
    *         in: formData
    *         required: true
    *         type: string
+   *       - name: price
+   *         description: Product price.
+   *         in: formData
+   *         required: true
+   *         type: number
+   *       - name: manufacturer
+   *         description: Product manufacturer.
+   *         in: formData
+   *         required: true
+   *         type: string
+   *       - name: category
+   *         description: Product category.
+   *         in: formData
+   *         required: true
+   *         type: string
    *     responses:
    *       201:
    *         description: Created product.
@@ -107,6 +122,18 @@ router
    *         description: ID of the product to search for.
    *       - name: name
    *         description: Product name.
+   *         in: formData
+   *         type: string
+   *       - name: price
+   *         description: Product price.
+   *         in: formData
+   *         type: integer
+   *       - name: manufacturer
+   *         description: Product manufacturer.
+   *         in: formData
+   *         type: string
+   *       - name: category
+   *         description: Product category.
    *         in: formData
    *         type: string
    *     responses:

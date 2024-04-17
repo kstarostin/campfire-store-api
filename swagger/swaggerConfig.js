@@ -10,7 +10,7 @@ const apiPath = `${basePath}api/v1`;
 // Swagger document
 const document = swaggerJSDoc({
   definition: {
-    openapi: '3.0.0',
+    swagger: '2.0',
     info: {
       title: 'Campfire Store API',
       description: `${packageJson.description}`,
