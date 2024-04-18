@@ -25,9 +25,13 @@ const productSchema = new mongoose.Schema(
     },
     description: i18nTextSchema,
     slug: String,
-    price: {
-      type: priceSchema,
+    prices: {
+      type: [priceSchema],
       required: true,
+      validate: [
+        (value) => value.length > 0,
+        'Product must have at least one price',
+      ],
     },
     manufacturer: {
       type: String,

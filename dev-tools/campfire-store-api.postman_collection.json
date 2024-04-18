@@ -28,13 +28,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								},
 								{
@@ -87,13 +87,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -136,13 +136,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							]
@@ -180,13 +180,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -222,13 +222,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -268,13 +268,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								},
 								{
@@ -327,13 +327,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -356,7 +356,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": {\r\n        \"value\": 0,\r\n        \"currency\": \"\"\r\n    },\r\n    \"description\": {\r\n        \"values\": [\r\n            {\r\n                \"lang\": \"\",\r\n                \"value\": \"\"\r\n            }\r\n        ]\r\n    },\r\n    \"manufacturer\": \"\",\r\n    \"category\": {\r\n        \"_id\": \"\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"prices\": [\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        },\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        }\r\n    ],\r\n    \"description\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"manufacturer\": \"\",\r\n    \"category\": {\r\n        \"_id\": \"\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -377,13 +377,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							]
@@ -421,13 +421,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -463,13 +463,13 @@
 								{
 									"key": "language",
 									"value": "de",
-									"description": "Session language.",
+									"description": "Session language. Default is en.",
 									"disabled": true
 								},
 								{
 									"key": "currency",
 									"value": "EUR",
-									"description": "Session currency.",
+									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
