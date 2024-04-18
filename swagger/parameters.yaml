@@ -2,12 +2,12 @@ parameters:
   # Common
   language:
     name: language
-    description: Session language.
+    description: Session language. Default is en.
     in: query
     type: string
   currency:
     name: currency
-    description: Session currency.
+    description: Session currency. Default is USD.
     in: query
     type: string
   limit:

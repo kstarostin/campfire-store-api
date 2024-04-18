@@ -1,6 +1,7 @@
 const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
+const selectI18nString = require('../utils/selectI18nString');
 
 // Generic CRUD operations, can be applied to any model.
 
@@ -43,9 +44,12 @@ exports.getAll = (Model, limitOptions) =>
  * @param {*} populateOptions specifies additional fields to populate.
  * @returns a successful response with the found document, if such exists, or an error response.
  */
-exports.getOne = (Model, populateOptions) =>
+exports.getOne = (Model, populateOptions, selectI18nOptions) =>
   catchAsync(async (req, res, next) => {
     let query = Model.findById(req.params.id);
+    if (selectI18nOptions) {
+      query = query.select(selectI18nString(selectI18nOptions, req.language));
+    }
     if (populateOptions) {
       query = query.populate(populateOptions);
     }

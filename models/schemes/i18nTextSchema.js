@@ -1,35 +1,14 @@
 const mongoose = require('mongoose');
 const { allowedLanguages } = require('../../utils/config');
 
-/**
- * LOCALIZED TEXT VALUE SCHEMA
- */
-const i18nValueSchema = new mongoose.Schema({
-  lang: {
-    type: String,
-    required: [true, 'Localized text must have a language specified'],
-    enum: {
-      values: allowedLanguages,
-      message: `Allowed text languages are [${allowedLanguages.join(', ')}]`,
-    },
-  },
-  value: {
-    type: String,
-    required: [true, 'Localized text must have a value specified'],
-  },
-});
+// Prepare the schema dynamically based on the app configuration of supported languages.
+const schemaObject = Object.fromEntries(
+  allowedLanguages.map((lang) => [lang, 'String']),
+);
 
 /**
  * LOCALIZED TEXT SCHEMA
  */
-const i18nTextSchema = new mongoose.Schema({
-  values: {
-    type: [i18nValueSchema],
-    validate: [
-      (el) => Array.isArray(el) && el.length > 0,
-      'Please add at least one localized value',
-    ],
-  },
-});
+const i18nTextSchema = new mongoose.Schema(schemaObject);
 
 module.exports = i18nTextSchema;
