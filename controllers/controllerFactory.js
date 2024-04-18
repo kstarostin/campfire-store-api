@@ -2,6 +2,7 @@ const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
 const selectI18nString = require('../utils/selectI18nString');
+const filterSessionCurrency = require('../utils/filterSessionCurrency');
 
 // Generic CRUD operations, can be applied to any model.
 
@@ -12,7 +13,7 @@ const selectI18nString = require('../utils/selectI18nString');
  * (if nothing else is pecified in the qury parameter) and the maximal number of returned results.
  * @returns a successful response with the list of found documents, if any. Otherwise, with an empty list.
  */
-exports.getAll = (Model, limitOptions) =>
+exports.getAll = (Model, limitOptions, selectI18nOptions) =>
   catchAsync(async (req, res, next) => {
     // EXECUTE QUERY
     const features = new APIFeatures(Model.find(), req.query)
@@ -20,10 +21,18 @@ exports.getAll = (Model, limitOptions) =>
       .sort()
       .limitFields()
       .filter();
-    // const documents = await features.dbQuery.explain();
-    const documents = await features.dbQuery;
+    if (selectI18nOptions) {
+      features.dbQuery = features.dbQuery.select(
+        selectI18nString(selectI18nOptions, req.language),
+      );
+    }
     // retrieve total count of documents
     const totalCount = await Model.estimatedDocumentCount();
+    // const documents = await features.dbQuery.explain();
+    const documents = filterSessionCurrency(
+      await features.dbQuery,
+      req.currency,
+    );
 
     // SEND RESPONSE
     res.status(200).json({
@@ -53,11 +62,13 @@ exports.getOne = (Model, populateOptions, selectI18nOptions) =>
     if (populateOptions) {
       query = query.populate(populateOptions);
     }
-    const document = await query;
+    let document = await query;
 
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
     }
+
+    document = filterSessionCurrency([document], req.currency)[0];
 
     res.status(200).json({
       status: 'success',
