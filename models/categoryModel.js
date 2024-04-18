@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const i18nTextSchema = require('./schemes/i18nTextSchema');
 const slugifyName = require('../utils/slugifyName');
 
 /**
@@ -16,13 +17,16 @@ const categorySchema = new mongoose.Schema(
       default: Date.now(),
       select: false,
     },
-    name: {
+    code: {
       type: String,
-      required: [true, 'Category must have a name'],
+      required: [true, 'Category must have a unique code'],
       unique: true,
       trim: true,
     },
-    slug: String,
+    nameI18n: {
+      type: i18nTextSchema,
+      required: [true, 'Category must have a name'],
+    },
     parentCategory: { type: mongoose.Schema.ObjectId, ref: 'Category' },
   },
   {
@@ -39,12 +43,6 @@ categorySchema.virtual('subCategories', {
 
 categorySchema.virtual('root').get(function () {
   return !this.parentCategory;
-});
-
-// Document middleware: runs before .save() and .create()
-categorySchema.pre('save', function (next) {
-  this.slug = slugifyName(this.name);
-  next();
 });
 
 const Category = mongoose.model('Category', categorySchema);

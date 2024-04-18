@@ -23,7 +23,7 @@ const productSchema = new mongoose.Schema(
       required: [true, 'Product must have a name'],
       trim: true,
     },
-    description: i18nTextSchema,
+    descriptionI18n: i18nTextSchema,
     slug: String,
     prices: {
       type: [priceSchema],
@@ -61,10 +61,10 @@ productSchema.pre('save', function (next) {
 // Query middleware:
 productSchema.pre('find', function (next) {
   this.lean() // Convert to plain js object to exlude virtuals
-    .select('-description')
+    .select('-descriptionI18n')
     .populate({
       path: 'category',
-      select: '_id name slug',
+      select: '_id nameI18n slug',
     });
   next();
 });

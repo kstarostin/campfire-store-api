@@ -59,8 +59,14 @@ exports.getOne = (Model, populateOptions, selectI18nOptions) =>
     if (selectI18nOptions) {
       query = query.select(selectI18nString(selectI18nOptions, req.language));
     }
-    if (populateOptions) {
-      query = query.populate(populateOptions);
+    if (
+      populateOptions &&
+      Array.isArray(populateOptions) &&
+      populateOptions.length > 0
+    ) {
+      populateOptions.forEach((options) => {
+        query = query.populate(options);
+      });
     }
     let document = await query;
 

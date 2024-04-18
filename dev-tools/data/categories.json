@@ -1,76 +1,140 @@
 [
   {
     "_id": "661f8a811d571619fe96eec2",
-    "name": "Kayaks"
+    "code": "kayaks",
+    "nameI18n": {
+      "en": "Kayaks",
+      "de": "Kajaks"
+    }
   },
   {
     "_id": "661f8a8cf7b9265221dba8d2",
-    "name": "Touring kayaks",
+    "code": "touring-kayaks",
+    "nameI18n": {
+      "en": "Touring kayaks",
+      "de": "Touring Kajaks"
+    },
     "parentCategory": "661f8a811d571619fe96eec2"
   },
   {
     "_id": "661f8a911063cec412136c92",
-    "name": "Whitewater kayaks",
+    "code": "whitewater-kayaks",
+    "nameI18n": {
+      "en": "Whitewater kayaks",
+      "de": "Wildwasser-Kajaks"
+    },
     "parentCategory": "661f8a811d571619fe96eec2"
   },
   {
     "_id": "661f8a95fc66c5cca8a69bcb",
-    "name": "Inflatable kayaks",
+    "code": "inflatable-kayaks",
+    "nameI18n": {
+      "en": "Inflatable kayaks",
+      "de": "Aufblasbare Kajaks"
+    },
     "parentCategory": "661f8a811d571619fe96eec2"
   },
   {
     "_id": "661f8a9b6633eab0748e2638",
-    "name": "Bicycles"
+    "code": "bicycles",
+    "nameI18n": {
+      "en": "Bicycles",
+      "de": "Fahrräder"
+    }
   },
   {
     "_id": "661f8abd88e01ce866485372",
-    "name": "Road bikes",
+    "code": "road-bikes",
+    "nameI18n": {
+      "en": "Road bikes",
+      "de": "Rennräder"
+    },
     "parentCategory": "661f8a9b6633eab0748e2638"
   },
   {
     "_id": "661f8ac137eb9e0aa239bb96",
-    "name": "Gravel bikes",
+    "code": "gravel-bikes",
+    "nameI18n": {
+      "en": "Gravel bikes",
+      "de": "Gravelbikes"
+    },
     "parentCategory": "661f8a9b6633eab0748e2638"
   },
   {
     "_id": "661f8ac9010ca367f5647930",
-    "name": "Mountain bikes",
+    "code": "mountain-bikes",
+    "nameI18n": {
+      "en": "Mountain bikes",
+      "de": "Mountainbikes"
+    },
     "parentCategory": "661f8a9b6633eab0748e2638"
   },
   {
     "_id": "661f9b46991ea86cfbc53dda",
-    "name": "Camping"
+    "code": "camping",
+    "nameI18n": {
+      "en": "Camping",
+      "de": "Camping"
+    }
   },
   {
     "_id": "661f9b59dc8283b51d38f4d4",
-    "name": "Tents",
+    "code": "tents",
+    "nameI18n": {
+      "en": "Tents",
+      "de": "Zelte"
+    },
     "parentCategory": "661f9b46991ea86cfbc53dda"
   },
   {
     "_id": "661f9bf7adbbcb8a078d7a09",
-    "name": "Accessories"
+    "code": "accessories",
+    "nameI18n": {
+      "en": "Accessories",
+      "de": "Zubehör"
+    }
   },
   {
     "_id": "661f9bfed801db7ada6d4fd3",
-    "name": "Backpacks",
+    "code": "backpacks",
+    "nameI18n": {
+      "en": "Backpacks",
+      "de": "Rucksäcke"
+    },
     "parentCategory": "661f9bf7adbbcb8a078d7a09"
   },
   {
     "_id": "661f9cb87947f7b74d62db49",
-    "name": "Clothing"
+    "code": "clothing",
+    "nameI18n": {
+      "en": "Clothing",
+      "de": "Bekleidung"
+    }
   },
   {
     "_id": "661f9c7f106aa7dbfa9f5a41",
-    "name": "Hiking pants",
+    "code": "hiking-pants",
+    "nameI18n": {
+      "en": "Hiking pants",
+      "de": "Wanderhosen"
+    },
     "parentCategory": "661f9cb87947f7b74d62db49"
   },
   {
     "_id": "661f9cdcabdf632642f2b435",
-    "name": "Ski"
+    "code": "ski",
+    "nameI18n": {
+      "en": "Ski",
+      "de": "Ski"
+    }
   },
   {
     "_id": "661f9d01f2e5c09eb45296bb",
-    "name": "All Mountain",
+    "code": "all-mountain",
+    "nameI18n": {
+      "en": "All mountain",
+      "de": "All-Mountain"
+    },
     "parentCategory": "661f9cdcabdf632642f2b435"
   }
 ]
