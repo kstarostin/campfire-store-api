@@ -37,10 +37,11 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(helmet());
 
 // Limit requests from the same IP
+const periodMinutes = 60;
 const limiter = rateLimit({
   max: 100,
-  windowMs: 60 * 60 * 1000,
-  message: 'Too many requests from this IP, please try again in an hour.',
+  windowMs: periodMinutes * 60 * 1000,
+  message: `Too many requests from this IP. Please try again in ${periodMinutes} minutes.`,
 });
 app.use('/api', limiter);
 

@@ -4,16 +4,39 @@
 
 WIP...
 
+## API features
+
+1. API documentation is powered by [Swagger UI](https://swagger.io/tools/swagger-ui/) and available on `/` or `/api/v1/api-docs/`.
+2. Supports internationalisation with multiple currencies and text localisation. Use query parameters `language` and `currency` to tweak the responses.
+3. API requests are limited per IP by `express-rate-limit`.
+4. Protected against parameter pollution by `hpp`.
+5. Protected against NoSQL query injection by `express-mongo-sanitize`.
+6. Supports CORS with `cors` and secure HTTP headers with `helmet`.
+
 ## Project structure
 
-The main goal of this project was to build a webshop API using **Node.js** with **Express** framework.
+The main goal of this project was to create a small and simple API for an online shop using **Node.js** and the **Express** framework.
 
-### Build
+The API provides access to the shop's products and category system, allows you to add products to the cart and place orders.
+
+### Build and start
 
 Navigate to the project root and install the project dependencies with the command:
 
 ```
  npm install
+```
+
+For development, `nodemon` is used. Install it globally with the command:
+
+```
+ npm install -g nodemon
+```
+
+or as a development dependency:
+
+```
+ npm install --save-dev nodemon
 ```
 
 To start the app, use:
@@ -22,6 +45,14 @@ To start the app, use:
  npm start
 ```
 
+To start the app in production environment, use:
+
+```
+ npm run start:prod
+```
+
 ### Assets
 
 1. Swagger UI theme is Flatop from [swagger-ui-themes](https://github.com/ostranme/swagger-ui-themes)
+2. All product pictures are real and are the property of their manufacturers.
+3. The API logo and favicon are designed spicifically for this project and belong to Konstantin Starostin. Please do not copy them.
