@@ -115,7 +115,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"parentCategory\": \"\"\r\n}",
+							"raw": "{\r\n    \"code\": \"\",\r\n    \"nameI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"parentCategory\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -158,7 +158,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{}",
+							"raw": "{\r\n    \"code\": \"\",\r\n    \"nameI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"parentCategory\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -356,7 +356,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"prices\": [\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        },\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        }\r\n    ],\r\n    \"description\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"manufacturer\": \"\",\r\n    \"category\": {\r\n        \"_id\": \"\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"prices\": [\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        },\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        }\r\n    ],\r\n    \"descriptionI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"manufacturer\": \"\",\r\n    \"category\": {\r\n        \"_id\": \"\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -399,7 +399,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"prices\": [\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        },\r\n        {\r\n            \"value\": 0,\r\n            \"currency\": \"\"\r\n        }\r\n    ],\r\n    \"descriptionI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"manufacturer\": \"\",\r\n    \"category\": {\r\n        \"_id\": \"\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

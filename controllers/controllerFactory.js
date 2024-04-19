@@ -1,8 +1,7 @@
 const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
-const selectI18nString = require('../utils/selectI18nString');
-const filterSessionCurrency = require('../utils/filterSessionCurrency');
+const DocumentSanitizer = require('../utils/documentSanitizer');
 
 // Generic CRUD operations, can be applied to any model.
 
@@ -13,7 +12,7 @@ const filterSessionCurrency = require('../utils/filterSessionCurrency');
  * (if nothing else is pecified in the qury parameter) and the maximal number of returned results.
  * @returns a successful response with the list of found documents, if any. Otherwise, with an empty list.
  */
-exports.getAll = (Model, limitOptions, selectI18nOptions) =>
+exports.getAll = (Model, limitOptions) =>
   catchAsync(async (req, res, next) => {
     // EXECUTE QUERY
     const features = new APIFeatures(Model.find(), req.query)
@@ -21,17 +20,11 @@ exports.getAll = (Model, limitOptions, selectI18nOptions) =>
       .sort()
       .limitFields()
       .filter();
-    if (selectI18nOptions) {
-      features.dbQuery = features.dbQuery.select(
-        selectI18nString(selectI18nOptions, req.language),
-      );
-    }
     // retrieve total count of documents
     const totalCount = await Model.estimatedDocumentCount();
     // const documents = await features.dbQuery.explain();
-    const documents = filterSessionCurrency(
-      await features.dbQuery,
-      req.currency,
+    const documents = (await features.dbQuery).map((document) =>
+      new DocumentSanitizer(req.language, req.currency, 4).sanitize(document),
     );
 
     // SEND RESPONSE
@@ -53,12 +46,9 @@ exports.getAll = (Model, limitOptions, selectI18nOptions) =>
  * @param {*} populateOptions specifies additional fields to populate.
  * @returns a successful response with the found document, if such exists, or an error response.
  */
-exports.getOne = (Model, populateOptions, selectI18nOptions) =>
+exports.getOne = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
     let query = Model.findById(req.params.id);
-    if (selectI18nOptions) {
-      query = query.select(selectI18nString(selectI18nOptions, req.language));
-    }
     if (
       populateOptions &&
       Array.isArray(populateOptions) &&
@@ -73,8 +63,9 @@ exports.getOne = (Model, populateOptions, selectI18nOptions) =>
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
     }
-
-    document = filterSessionCurrency([document], req.currency)[0];
+    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(
+      document,
+    );
 
     res.status(200).json({
       status: 'success',
@@ -109,7 +100,7 @@ exports.createOne = (Model) =>
  */
 exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const document = await Model.findByIdAndUpdate(
+    let document = await Model.findByIdAndUpdate(
       req.params.id,
       { ...req.body, ...{ updatedAt: Date.now() } },
       {
@@ -121,6 +112,10 @@ exports.updateOne = (Model) =>
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
     }
+
+    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(
+      document,
+    );
 
     res.status(200).json({
       status: 'success',
