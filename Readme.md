@@ -39,6 +39,8 @@ or as a development dependency:
  npm install --save-dev nodemon
 ```
 
+After successful installation, copy the `./config.env.template` into the `./config.env` and configure all missing properties there.
+
 To start the app, use:
 
 ```

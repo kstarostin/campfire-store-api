@@ -1,0 +1,42 @@
+[
+  {
+    "email": "sarah.johnson@examplemail.com",
+    "name": "Sarah Johnson"
+  },
+  {
+    "email": "alex.chen@explorernet.net",
+    "name": "Alex Chen"
+  },
+  {
+    "email": "david.rodriguez@ninjagroup.org",
+    "name": "David Rodriguez"
+  },
+  {
+    "email": "e.thompson@adventuresinc.com",
+    "name": "Emily Thompson"
+  },
+  {
+    "email": "michael.patel@techservices.biz",
+    "name": "Michael Patel"
+  },
+  {
+    "email": "olivia.garcia@dreamscape.com",
+    "name": "Olivia Garcia"
+  },
+  {
+    "email": "rtaylor@digitalocean.io",
+    "name": "Ryan Taylor"
+  },
+  {
+    "email": "jessieleee@codersmail.me",
+    "name": "Jessica Lee"
+  },
+  {
+    "email": "daniel.nguyen@cosmosmail.net",
+    "name": "Daniel Nguyen"
+  },
+  {
+    "email": "s.wright@dreamworld.org",
+    "name": "Sophia Wright"
+  }
+]

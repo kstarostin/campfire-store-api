@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
-const slugifyName = require('../utils/slugifyName');
 
 /**
  * CATEGORY SCHEMA
@@ -21,7 +20,6 @@ const categorySchema = new mongoose.Schema(
       type: String,
       required: [true, 'Category must have a unique code'],
       unique: true,
-      trim: true,
     },
     nameI18n: {
       type: i18nTextSchema,

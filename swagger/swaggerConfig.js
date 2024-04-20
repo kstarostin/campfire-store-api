@@ -4,6 +4,7 @@ const mongooseToSwagger = require('mongoose-to-swagger');
 const packageJson = require('../package.json');
 const Category = require('../models/categoryModel');
 const Product = require('../models/productModel');
+const User = require('../models/userModel');
 
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
@@ -21,6 +22,7 @@ const document = swaggerJSDoc({
     definitions: {
       Category: mongooseToSwagger(Category),
       Product: mongooseToSwagger(Product),
+      User: mongooseToSwagger(User),
     },
   },
   apis: ['./routers/*.js', './swagger/parameters.yaml'],

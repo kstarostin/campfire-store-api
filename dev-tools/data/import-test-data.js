@@ -1,6 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const User = require('../../models/userModel');
 const Category = require('../../models/categoryModel');
 const Product = require('../../models/productModel');
 
@@ -13,7 +14,8 @@ const DB = process.env.DATABASE.replace(
 
 mongoose.connect(DB).then(() => console.log('DB connection successful!'));
 
-// READ JSON FILE
+// READ JSON FILES
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const categories = JSON.parse(
   fs.readFileSync(`${__dirname}/categories.json`, 'utf-8'),
 );
@@ -24,6 +26,8 @@ const products = JSON.parse(
 // IMPORT DATA INTO DB
 const importData = async () => {
   try {
+    console.log('Creating users...');
+    await User.create(users);
     console.log('Creating categories...');
     await Category.create(categories);
     console.log('Creating products...');
@@ -42,6 +46,8 @@ const deleteData = async () => {
     await Product.deleteMany();
     console.log('Deleteing categories...');
     await Category.deleteMany();
+    console.log('Deleteing users...');
+    await User.deleteMany();
     console.log('Data successfully deleted!');
   } catch (err) {
     console.log(err);

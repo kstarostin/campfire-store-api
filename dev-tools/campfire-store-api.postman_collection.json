@@ -244,7 +244,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "Category management"
 		},
 		{
 			"name": "products",
@@ -485,7 +486,250 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "Product management"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma-separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								}
+							]
+						},
+						"description": "Get an existing user by provided ID or email."
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Create a new user."
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								}
+							]
+						},
+						"description": "Update an existing user by provided ID or email."
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								}
+							]
+						},
+						"description": "Delete an existing product by provided ID or email."
+					},
+					"response": []
+				}
+			],
+			"description": "User management"
 		}
 	]
 }
