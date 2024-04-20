@@ -6,7 +6,10 @@ const GenericOrder = require('./genericOrderModel');
  */
 const cartSchema = new mongoose.Schema(
   {
-    testCart: String,
+    valid: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     toJSON: { virtuals: true },

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const GenericOrderEntry = require('./genericOrderEntryModel');
 
 /**
  * GENERIC ORDER SCHEMA
@@ -36,6 +37,12 @@ genericOrderSchema.pre(/^find/, function (next) {
   });
   next();
 });
+
+// todo: fix
+// genericOrderSchema.post('findOneAndDelete', async (doc) => {
+//   console.log('HERE!!');
+//   await GenericOrderEntry.deleteMany({ parent: doc._id });
+// });
 
 const GenericOrder = mongoose.model('GenericOrder', genericOrderSchema);
 module.exports = GenericOrder;

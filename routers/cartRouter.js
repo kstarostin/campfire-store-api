@@ -1,4 +1,5 @@
 const express = require('express');
+const cartEntryRouter = require('./cartEntryRouter');
 
 const cartController = require('../controllers/cartController');
 
@@ -51,7 +52,7 @@ router
   .post(cartController.assignUserToCart, cartController.createCart);
 
 router
-  .route('/:id')
+  .route('/:cartId')
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -106,5 +107,7 @@ router
    *         description: No content.
    */
   .delete(cartController.deleteCart);
+
+router.use('/:cartId/entries', cartEntryRouter);
 
 module.exports = router;

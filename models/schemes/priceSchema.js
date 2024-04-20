@@ -14,7 +14,7 @@ const priceSchema = new mongoose.Schema({
     required: [true, 'Price must have a currency'],
     enum: {
       values: allowedCurrencies,
-      message: `Allowed Currencies are [${allowedCurrencies.join(', ')}]`,
+      message: `Allowed currencies are [${allowedCurrencies.join(', ')}]`,
     },
   },
 });

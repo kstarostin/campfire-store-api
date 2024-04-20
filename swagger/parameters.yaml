@@ -54,3 +54,9 @@ parameters:
     description: ID of a cart to search for.
     in: path
     required: true
+  # Cart entry
+  entryId:
+    name: entryId
+    description: ID of an entry to search for.
+    in: path
+    required: true
