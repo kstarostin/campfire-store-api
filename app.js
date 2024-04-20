@@ -18,6 +18,7 @@ const errorHandler = require('./controllers/errorController');
 const categoryRouter = require('./routers/categoryRouter');
 const productRouter = require('./routers/productRouter');
 const userRouter = require('./routers/userRouter');
+// const cartRouter = require('./routers/cartRouter');
 const swaggerRedirectRouter = require('./routers/swaggerRedirectRouter');
 
 const swaggerConfig = require('./swagger/swaggerConfig');
@@ -86,6 +87,7 @@ app.use(sessionHandler.parseLanguage, sessionHandler.parseCurrency);
 app.use(`${apiPath}/categories`, categoryRouter);
 app.use(`${apiPath}/products`, productRouter);
 app.use(`${apiPath}/users`, userRouter);
+// app.use(`${apiPath}/users`, cartRouter);
 
 // ERROR HANDLERS
 app.all('*', (req, res, next) => {

@@ -2,15 +2,297 @@
 	"info": {
 		"_postman_id": "501218ea-77eb-4c6e-b898-3789d8090d4b",
 		"name": "Campfire Store API",
+		"description": "API for Campfire webshop.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21845599"
 	},
 	"item": [
 		{
-			"name": "categories",
+			"name": "Carts",
 			"item": [
 				{
-					"name": "get all categories",
+					"name": "Get all carts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/carts",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"carts"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma-separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search carts for."
+								}
+							]
+						},
+						"description": "Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "Create cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/carts",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"carts"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								}
+							]
+						},
+						"description": "Create a new cart for a user."
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"carts",
+								":cartId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Get an existing cart of a user by provided user's ID or email and cart's ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Update cart",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"carts",
+								":cartId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Update an existing cart for a user by provided user's ID or email and cart's ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"carts",
+								":cartId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Delete an existing product by provided ID or email."
+					},
+					"response": []
+				}
+			],
+			"description": "User's cart management"
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get all categories",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -68,7 +350,7 @@
 					"response": []
 				},
 				{
-					"name": "get category",
+					"name": "Get category",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -109,7 +391,7 @@
 					"response": []
 				},
 				{
-					"name": "create category",
+					"name": "Create category",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -152,7 +434,7 @@
 					"response": []
 				},
 				{
-					"name": "update category",
+					"name": "Update category",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -203,7 +485,7 @@
 					"response": []
 				},
 				{
-					"name": "delete category",
+					"name": "Delete category",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -248,10 +530,10 @@
 			"description": "Category management"
 		},
 		{
-			"name": "products",
+			"name": "Products",
 			"item": [
 				{
-					"name": "get all products",
+					"name": "Get all products",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -309,7 +591,7 @@
 					"response": []
 				},
 				{
-					"name": "get product",
+					"name": "Get product",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -351,7 +633,7 @@
 					"response": []
 				},
 				{
-					"name": "create product",
+					"name": "Create product",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -394,7 +676,7 @@
 					"response": []
 				},
 				{
-					"name": "update product",
+					"name": "Update product",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -445,7 +727,7 @@
 					"response": []
 				},
 				{
-					"name": "delete product",
+					"name": "Delete product",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -490,10 +772,10 @@
 			"description": "Product management"
 		},
 		{
-			"name": "users",
+			"name": "Users",
 			"item": [
 				{
-					"name": "get all users",
+					"name": "Get all users",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -508,18 +790,6 @@
 								"users"
 							],
 							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								},
 								{
 									"key": "limit",
 									"value": "3",
@@ -551,7 +821,7 @@
 					"response": []
 				},
 				{
-					"name": "get user",
+					"name": "Get user",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -566,20 +836,6 @@
 								"users",
 								":id"
 							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
 							"variable": [
 								{
 									"key": "id",
@@ -593,7 +849,7 @@
 					"response": []
 				},
 				{
-					"name": "create user",
+					"name": "Create user",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -615,20 +871,6 @@
 								"api",
 								"v1",
 								"users"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
 							]
 						},
 						"description": "Create a new user."
@@ -636,7 +878,7 @@
 					"response": []
 				},
 				{
-					"name": "update user",
+					"name": "Update user",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -660,20 +902,6 @@
 								"users",
 								":id"
 							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
 							"variable": [
 								{
 									"key": "id",
@@ -687,7 +915,7 @@
 					"response": []
 				},
 				{
-					"name": "delete user",
+					"name": "Delete user",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -702,20 +930,6 @@
 								"users",
 								":id"
 							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
 							"variable": [
 								{
 									"key": "id",
@@ -724,7 +938,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing product by provided ID or email."
+						"description": "Delete an existing user by provided ID or email."
 					},
 					"response": []
 				}

@@ -1,4 +1,5 @@
 const express = require('express');
+const cartRouter = require('./cartRouter');
 
 const userController = require('../controllers/userController');
 
@@ -59,7 +60,7 @@ router
   .post(userController.createUser);
 
 router
-  .route('/:id')
+  .route('/:userId')
   /**
    * @swagger
    * /users/{id}:
@@ -68,9 +69,7 @@ router
    *     summary: Get user
    *     description: Get an existing user by provided ID or email.
    *     parameters:
-   *       - $ref: '#/parameters/idOrEmail'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:
    *       200:
    *         description: Found user, if exists.
@@ -84,9 +83,7 @@ router
    *     summary: Update user
    *     description: Update an existing user by provided ID or email.
    *     parameters:
-   *       - $ref: '#/parameters/idOrEmail'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/userIdOrEmail'
    *       - name: name
    *         description: User name.
    *         in: formData
@@ -111,13 +108,13 @@ router
    *     summary: Delete user
    *     description: Delete an existing user by provided ID or email.
    *     parameters:
-   *       - $ref: '#/parameters/idOrEmail'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:
    *       204:
    *         description: No content.
    */
   .delete(userController.deleteUser);
+
+router.use('/:userId/carts', cartRouter);
 
 module.exports = router;

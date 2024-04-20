@@ -17,10 +17,10 @@ const isValidId = (id) => id.match(/^[0-9a-fA-F]{24}$/);
  * @returns a successful response with the found user, if such exists, or an error response.
  */
 exports.getUser = catchAsync(async (req, res, next) => {
-  const user = isValidId(req.params.id)
-    ? await User.findById({ _id: req.params.id })
+  const user = isValidId(req.params.userId)
+    ? await User.findById({ _id: req.params.userId })
     : await User.findOne({
-        email: req.params.id,
+        email: req.params.userId,
       });
   if (!user) {
     return next(new AppError('No user found with this ID or email', 404));
@@ -38,9 +38,9 @@ exports.getUser = catchAsync(async (req, res, next) => {
  * @returns a successful response with the found user, if such exists, or an error response.
  */
 exports.updateUser = catchAsync(async (req, res, next) => {
-  const updatedUser = isValidId(req.params.id)
+  const updatedUser = isValidId(req.params.userId)
     ? await User.findByIdAndUpdate(
-        req.params.id,
+        req.params.userId,
         { ...req.body, ...{ updatedAt: Date.now() } },
         {
           new: true,
@@ -48,7 +48,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
         },
       )
     : await User.findOneAndUpdate(
-        { email: req.params.email },
+        { email: req.params.userId },
         { ...req.body, ...{ updatedAt: Date.now() } },
         {
           new: true,
@@ -71,9 +71,9 @@ exports.updateUser = catchAsync(async (req, res, next) => {
  * @returns a successful response, if the user was found and deleted, or an error response.
  */
 exports.deleteUser = catchAsync(async (req, res, next) => {
-  const user = isValidId(req.params.id)
-    ? await User.findByIdAndDelete(req.params.id)
-    : await User.findOneAndDelete({ email: req.params.email });
+  const user = isValidId(req.params.userId)
+    ? await User.findByIdAndDelete(req.params.userId)
+    : await User.findOneAndDelete({ email: req.params.userId });
   if (!user) {
     return next(new AppError('No user found with this ID or email', 404));
   }

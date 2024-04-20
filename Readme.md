@@ -1,8 +1,12 @@
-![Campfire Store API logo](/public/img/campfire_logo.png 'Campfire Store API logo')
+<p align="center">
+  <img src="/public/img/campfire_logo.png" alt="Campfire Store API logo"/>
+</p>
 
-# Campfire Store API
+# Campfire | Store API
 
-WIP...
+**Campfire | Store API** is a demo project of an API for an online shop.
+
+The API provides access to the shop's products, category system and simmple user management, allows you to add products to the cart and place orders.
 
 ## API features
 
@@ -16,8 +20,6 @@ WIP...
 ## Project structure
 
 The main goal of this project was to create a small and simple API for an online shop using **Node.js** and the **Express** framework.
-
-The API provides access to the shop's products and category system, allows you to add products to the cart and place orders.
 
 ### Build and start
 
@@ -39,7 +41,7 @@ or as a development dependency:
  npm install --save-dev nodemon
 ```
 
-After successful installation, copy the `./config.env.template` into the `./config.env` and configure all missing properties there.
+After successful installation, copy `./config.env.template` into `./config.env` and configure personal properties there.
 
 To start the app, use:
 

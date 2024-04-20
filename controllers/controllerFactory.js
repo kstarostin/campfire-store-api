@@ -2,6 +2,22 @@ const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
 const DocumentSanitizer = require('../utils/documentSanitizer');
+const User = require('../models/userModel');
+
+const getUserIdFilter = async (req) => {
+  let filter = {};
+  if (req.params.userId) {
+    if (req.params.userId.match(/^[0-9a-fA-F]{24}$/)) {
+      filter = { user: req.params.userId };
+    } else {
+      const user = await User.findOne({
+        email: req.params.userId,
+      });
+      filter = { user: user?._id };
+    }
+  }
+  return filter;
+};
 
 // Generic CRUD operations, can be applied to any model.
 
@@ -14,8 +30,10 @@ const DocumentSanitizer = require('../utils/documentSanitizer');
  */
 exports.getAll = (Model, limitOptions) =>
   catchAsync(async (req, res, next) => {
+    // To allow for nested GET reviews on user
+    const filter = await getUserIdFilter(req);
     // EXECUTE QUERY
-    const features = new APIFeatures(Model.find(), req.query)
+    const features = new APIFeatures(Model.find(filter), req.query)
       .paginate(limitOptions)
       .sort()
       .limitFields()
@@ -48,7 +66,10 @@ exports.getAll = (Model, limitOptions) =>
  */
 exports.getOne = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
-    let query = Model.findById(req.params.id);
+    // To allow for nested GET reviews on user
+    const filter = { _id: req.params.id, ...(await getUserIdFilter(req)) };
+
+    let query = Model.findOne(filter);
     if (
       populateOptions &&
       Array.isArray(populateOptions) &&
@@ -100,8 +121,11 @@ exports.createOne = (Model) =>
  */
 exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    let document = await Model.findByIdAndUpdate(
-      req.params.id,
+    // To allow for nested GET reviews on user
+    const filter = { _id: req.params.id, ...(await getUserIdFilter(req)) };
+
+    let document = await Model.findOneAndUpdate(
+      filter,
       { ...req.body, ...{ updatedAt: Date.now() } },
       {
         new: true,
@@ -132,7 +156,10 @@ exports.updateOne = (Model) =>
  */
 exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const document = await Model.findByIdAndDelete(req.params.id);
+    // To allow for nested GET reviews on user
+    const filter = { _id: req.params.id, ...(await getUserIdFilter(req)) };
+
+    const document = await Model.findOneAndDelete(filter);
 
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
