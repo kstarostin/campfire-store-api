@@ -15,7 +15,7 @@ const getIdConditionsForMany = async (req) => {
   } else if (req.params.userId) {
     filter.user = req.params.userId;
   }
-  console.log(filter);
+  // console.log(filter);
   return filter;
 };
 
@@ -35,7 +35,7 @@ const getIdConditionsForOne = async (req) => {
   } else if (req.params.userId) {
     filter._id = req.params.userId;
   }
-  console.log(filter);
+  // console.log(filter);
   return filter;
 };
 

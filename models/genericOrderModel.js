@@ -29,20 +29,32 @@ const genericOrderSchema = new mongoose.Schema(
   },
 );
 
+genericOrderSchema.virtual('entries', {
+  ref: 'GenericOrderEntry',
+  foreignField: 'parent',
+  localField: '_id',
+  justOne: false,
+});
+
 // Query middleware
 genericOrderSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'user',
-    select: 'name email',
+    select: '_id name email',
+  }).populate({
+    path: 'entries',
+    select: '_id product quantity',
   });
   next();
 });
 
-// todo: fix
-// genericOrderSchema.post('findOneAndDelete', async (doc) => {
-//   console.log('HERE!!');
-//   await GenericOrderEntry.deleteMany({ parent: doc._id });
-// });
+genericOrderSchema.pre('findOneAndDelete', async function (next) {
+  if (this?.getFilter()?._id) {
+    const cartId = this.getFilter()._id;
+    await GenericOrderEntry.deleteMany({ parent: cartId });
+  }
+  next();
+});
 
 const GenericOrder = mongoose.model('GenericOrder', genericOrderSchema);
 module.exports = GenericOrder;
