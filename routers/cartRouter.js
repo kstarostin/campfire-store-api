@@ -33,7 +33,7 @@ router
    *       200:
    *         description: List of found user carts.
    */
-  .get(genericOrderController.validateUserId, cartController.getAllCarts)
+  .get(genericOrderController.handleUserId, cartController.getAllCarts)
   /**
    * @swagger
    * /users/{id}/carts:
@@ -51,7 +51,7 @@ router
    *           $ref: '#/definitions/Cart'
    */
   .post(
-    genericOrderController.validateUserId,
+    genericOrderController.handleUserId,
     cartController.assignUserToCart,
     cartController.createCart,
   );
@@ -74,7 +74,7 @@ router
    *       200:
    *         description: Found cart, if exists.
    */
-  .get(genericOrderController.validateUserId, cartController.getCart)
+  .get(genericOrderController.handleUserId, cartController.getCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -94,7 +94,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Cart'
    */
-  .patch(genericOrderController.validateUserId, cartController.updateCart)
+  .patch(genericOrderController.handleUserId, cartController.updateCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -105,13 +105,11 @@ router
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     responses:
    *       204:
    *         description: No content.
    */
-  .delete(genericOrderController.validateUserId, cartController.deleteCart);
+  .delete(genericOrderController.handleUserId, cartController.deleteCart);
 
 router.use('/:cartId/entries', cartEntryRouter);
 

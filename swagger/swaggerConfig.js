@@ -7,6 +7,7 @@ const Product = require('../models/productModel');
 const User = require('../models/userModel');
 const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
+const GenericOrderEntry = require('../models/genericOrderEntryModel');
 
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
@@ -26,6 +27,7 @@ const document = swaggerJSDoc({
       Product: mongooseToSwagger(Product),
       User: mongooseToSwagger(User),
       Cart: mongooseToSwagger(Cart),
+      GenericOrderEntry: mongooseToSwagger(GenericOrderEntry),
       Order: mongooseToSwagger(Order),
     },
   },

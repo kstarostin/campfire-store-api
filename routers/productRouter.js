@@ -134,8 +134,6 @@ router
    *     description: Delete an existing product by provided ID.
    *     parameters:
    *       - $ref: '#/parameters/productId'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     responses:
    *       204:
    *         description: No content.

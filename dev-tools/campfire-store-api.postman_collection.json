@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "501218ea-77eb-4c6e-b898-3789d8090d4b",
 		"name": "Campfire Store API",
-		"description": "API for Campfire webshop.",
+		"description": "API for Campfire online shop.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21845599"
 	},
@@ -16,7 +16,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id/carts",
+							"raw": "{{URL}}/api/v1/users/:userId/carts",
 							"host": [
 								"{{URL}}"
 							],
@@ -24,7 +24,7 @@
 								"api",
 								"v1",
 								"users",
-								":id",
+								":userId",
 								"carts"
 							],
 							"query": [
@@ -67,9 +67,9 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to search carts for."
+									"description": "ID or email of a user to create a cart for."
 								}
 							]
 						},
@@ -92,7 +92,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id/carts",
+							"raw": "{{URL}}/api/v1/users/:userId/carts",
 							"host": [
 								"{{URL}}"
 							],
@@ -100,7 +100,7 @@
 								"api",
 								"v1",
 								"users",
-								":id",
+								":userId",
 								"carts"
 							],
 							"query": [
@@ -119,7 +119,7 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to create a cart for."
 								}
@@ -135,7 +135,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId",
 							"host": [
 								"{{URL}}"
 							],
@@ -143,7 +143,7 @@
 								"api",
 								"v1",
 								"users",
-								":id",
+								":userId",
 								"carts",
 								":cartId"
 							],
@@ -163,9 +163,9 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to search for."
+									"description": "ID or email of a user to create a cart for."
 								},
 								{
 									"key": "cartId",
@@ -174,7 +174,7 @@
 								}
 							]
 						},
-						"description": "Get an existing cart of a user by provided user's ID or email and cart's ID."
+						"description": "Get an existing cart of a user by provided user's ID or email and cart ID."
 					},
 					"response": []
 				},
@@ -193,7 +193,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId",
 							"host": [
 								"{{URL}}"
 							],
@@ -201,7 +201,7 @@
 								"api",
 								"v1",
 								"users",
-								":id",
+								":userId",
 								"carts",
 								":cartId"
 							],
@@ -221,9 +221,9 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to search for."
+									"description": "ID or email of a user to create a cart for."
 								},
 								{
 									"key": "cartId",
@@ -232,7 +232,7 @@
 								}
 							]
 						},
-						"description": "Update an existing cart for a user by provided user's ID or email and cart's ID."
+						"description": "Update an existing cart of a user by provided user's ID or email and cart ID."
 					},
 					"response": []
 				},
@@ -242,7 +242,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id/carts/:cartId",
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId",
 							"host": [
 								"{{URL}}"
 							],
@@ -250,9 +250,134 @@
 								"api",
 								"v1",
 								"users",
-								":id",
+								":userId",
 								"carts",
 								":cartId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Delete an existing cart of a user by provided user's ID or email and cart ID."
+					},
+					"response": []
+				}
+			],
+			"description": "User's cart management"
+		},
+		{
+			"name": "Cart entries",
+			"item": [
+				{
+					"name": "Get all cart entries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma-separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Get list of cart entries for a user's cart. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "Create cart entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"\",\r\n    \"quantity\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries"
 							],
 							"query": [
 								{
@@ -270,9 +395,9 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to search for."
+									"description": "ID or email of a user to create a cart for."
 								},
 								{
 									"key": "cartId",
@@ -281,12 +406,175 @@
 								}
 							]
 						},
-						"description": "Delete an existing product by provided ID or email."
+						"description": "Create a new entry for a user's cart."
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart entry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries/:entryId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries",
+								":entryId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								},
+								{
+									"key": "entryId",
+									"value": "",
+									"description": "ID of an entry to search for."
+								}
+							]
+						},
+						"description": "Get an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Update cart entry",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries/:entryId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries",
+								":entryId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								},
+								{
+									"key": "entryId",
+									"value": "",
+									"description": "ID of an entry to search for."
+								}
+							]
+						},
+						"description": "Update an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cart entry",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries/:entryId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries",
+								":entryId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to create a cart for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								},
+								{
+									"key": "entryId",
+									"value": "",
+									"description": "ID of an entry to search for."
+								}
+							]
+						},
+						"description": "Delete an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
 					},
 					"response": []
 				}
 			],
-			"description": "User's cart management"
+			"description": "Cart entry management"
 		},
 		{
 			"name": "Categories",
@@ -499,20 +787,6 @@
 								"v1",
 								"categories",
 								":id"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
 							],
 							"variable": [
 								{
@@ -741,20 +1015,6 @@
 								"v1",
 								"products",
 								":id"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
 							],
 							"variable": [
 								{

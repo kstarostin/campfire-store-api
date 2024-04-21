@@ -115,8 +115,6 @@ router
    *     description: Delete an existing category by provided ID.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
-   *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     responses:
    *       204:
    *         description: No content.

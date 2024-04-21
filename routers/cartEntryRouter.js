@@ -18,8 +18,8 @@ router
    * /users/{id}/carts/{cartId}/entries:
    *   get:
    *     tags: [Cart entries]
-   *     summary: Get cart entriess
-   *     description: Get list of cart entries. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     summary: Get cart entries
+   *     description: Get list of cart entries for a user's cart. The results can be filtered, sorted, paginated and limited using special query parameters.
    *     produces:
    *       - application/json
    *     parameters:
@@ -34,8 +34,30 @@ router
    *         description: List of found cart entries.
    */
   .get(
-    genericOrderController.validateUserIdCartId,
+    genericOrderController.handleUserIdCartId,
     genericOrderEntryController.getAllEntries,
+  )
+  /**
+   * @swagger
+   * /users/{id}/carts/{cartId}/entries:
+   *   post:
+   *     tags: [Cart entries]
+   *     summary: Create cart entry
+   *     description: Create a new cart entry.
+   *     parameters:
+   *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/cartId'
+   *     responses:
+   *       201:
+   *         description: Created cart entry.
+   *         schema:
+   *           type: object
+   *           $ref: '#/definitions/GenericOrderEntry'
+   */
+  .post(
+    genericOrderController.handleUserIdCartId,
+    genericOrderEntryController.assignEntryToCart,
+    genericOrderEntryController.createEntry,
   );
 
 router
@@ -58,8 +80,51 @@ router
    *         description: Found cart entry, if exists.
    */
   .get(
-    genericOrderController.validateUserIdCartId,
+    genericOrderController.handleUserIdCartId,
     genericOrderEntryController.getEntry,
+  )
+  /**
+   * @swagger
+   * /users/{id}/carts/{cartId}/entries/{entryId}:
+   *   patch:
+   *     tags: [Cart entries]
+   *     summary: Update cart entry
+   *     description: Update an existing cart entry for a user by provided user's ID or email, cart ID and entry ID.
+   *     parameters:
+   *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/cartId'
+   *       - $ref: '#/parameters/entryId'
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
+   *     responses:
+   *       200:
+   *         description: Updated cart entry.
+   *         schema:
+   *           type: object
+   *           $ref: '#/definitions/GenericOrderEntry'
+   */
+  .patch(
+    genericOrderController.handleUserIdCartId,
+    genericOrderEntryController.updateEntry,
+  )
+  /**
+   * @swagger
+   * /users/{id}/carts/{cartId}/entries/{entryId}:
+   *   delete:
+   *     tags: [Cart entries]
+   *     summary: Delete cart entry
+   *     description: Delete an existing cart entry for a user by provided user's ID or email, cart ID and entry ID.
+   *     parameters:
+   *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/cartId'
+   *       - $ref: '#/parameters/entryId'
+   *     responses:
+   *       204:
+   *         description: No content.
+   */
+  .delete(
+    genericOrderController.handleUserIdCartId,
+    genericOrderEntryController.deleteEntry,
   );
 
 module.exports = router;

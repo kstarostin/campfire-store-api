@@ -1,7 +1,7 @@
 {
   "name": "campfire-store-api",
   "version": "1.0.0",
-  "description": "API for Campfire webshop.",
+  "description": "API for Campfire online shop.",
   "main": "server.js",
   "targets": {
     "main": false
