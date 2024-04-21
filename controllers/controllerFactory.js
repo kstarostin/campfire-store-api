@@ -2,66 +2,20 @@ const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
 const DocumentSanitizer = require('../utils/documentSanitizer');
-const User = require('../models/userModel');
-const Cart = require('../models/cartModel');
-const Order = require('../models/orderModel');
-
-/**
- * Verify that requested user ID exists.
- * @returns the ID if an existing user.
- */
-const getUserIdCondition = async (id, next) => {
-  let user;
-  if (id.match(/^[0-9a-fA-F]{24}$/)) {
-    user = await User.findById(id);
-  } else {
-    user = await User.findOne({ email: id });
-  }
-  if (!user) {
-    return next(new AppError('No user found with this ID', 404));
-  }
-  return user.id;
-};
-
-/**
- * Verify that requested cart ID exists.
- * @returns the ID if an existing cart.
- */
-const getCartIdCondition = async (id, next) => {
-  const cart = await Cart.findById(id);
-  if (!cart) {
-    return next(new AppError('No cart found with this ID', 404));
-  }
-  return cart.id;
-};
 
 /**
  * Build a filter condition for request parameters: userId and cartId,
  * when the request is structured for getting multiple documents.
  * @returns the filter condition.
  */
-const getIdConditionsForMany = async (req, next) => {
+const getIdConditionsForMany = async (req) => {
   const filter = {};
-  if (req.params.userId && (req.params.cartId || req.params.orderId)) {
-    const userId = await getUserIdCondition(req.params.userId, next);
-    const genericOrder = req.params.cartId
-      ? await Cart.findById(req.params.cartId)
-      : await Order.findById(req.params.orderId);
-    if (!genericOrder) {
-      return next(new AppError('No cart/order found with this ID', 404));
-    }
-    if (genericOrder.user.id !== userId) {
-      return next(
-        new AppError(
-          'No relation found between cart/order ID and user ID',
-          404,
-        ),
-      );
-    }
-    filter.parent = await getCartIdCondition(req.params.cartId, next);
+  if (req.params.cartId || req.params.orderId) {
+    filter.parent = req.params.cartId ? req.params.cartId : req.params.orderId;
   } else if (req.params.userId) {
-    filter.user = await getUserIdCondition(req.params.userId, next);
+    filter.user = req.params.userId;
   }
+  console.log(filter);
   return filter;
 };
 
@@ -70,36 +24,18 @@ const getIdConditionsForMany = async (req, next) => {
  * when the request is structured for one document.
  * @returns the filter condition.
  */
-const getIdConditionsForOne = async (req, next) => {
+const getIdConditionsForOne = async (req) => {
   const filter = {};
-  if (
-    req.params.userId &&
-    (req.params.cartId || req.params.orderId) &&
-    req.params.entryId
-  ) {
-    const userId = await getUserIdCondition(req.params.userId, next);
-    const genericOrder = req.params.cartId
-      ? await Cart.findById(req.params.cartId)
-      : await Order.findById(req.params.orderId);
-    if (!genericOrder) {
-      return next(new AppError('No cart/order found with this ID', 404));
-    }
-    if (genericOrder.user.id !== userId) {
-      return next(
-        new AppError(
-          'No relation found between cart/order ID and user ID',
-          404,
-        ),
-      );
-    }
-    filter.parent = genericOrder?.id;
+  if (req.params.entryId) {
+    filter.parent = req.params.cartId ? req.params.cartId : req.params.orderId;
     filter._id = req.params.entryId;
-  } else if (req.params.userId && (req.params.cartId || req.params.orderId)) {
-    filter.user = await getUserIdCondition(req.params.userId, next);
-    filter._id = await getCartIdCondition(req.params.cartId, next);
+  } else if (req.params.cartId || req.params.orderId) {
+    filter.user = req.params.userId;
+    filter._id = req.params.cartId ? req.params.cartId : req.params.orderId;
   } else if (req.params.userId) {
-    filter._id = await getUserIdCondition(req.params.userId, next);
+    filter._id = req.params.userId;
   }
+  console.log(filter);
   return filter;
 };
 
@@ -115,7 +51,7 @@ const getIdConditionsForOne = async (req, next) => {
 exports.getAll = (Model, limitOptions) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsForMany(req, next);
+    const filter = await getIdConditionsForMany(req);
     // EXECUTE QUERY
     const features = new APIFeatures(Model.find(filter), req.query)
       .paginate(limitOptions)
@@ -151,7 +87,7 @@ exports.getAll = (Model, limitOptions) =>
 exports.getOne = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsForOne(req, next);
+    const filter = await getIdConditionsForOne(req);
 
     let query = Model.findOne(filter);
     if (
@@ -206,7 +142,7 @@ exports.createOne = (Model) =>
 exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsForOne(req, next);
+    const filter = await getIdConditionsForOne(req);
 
     let document = await Model.findOneAndUpdate(
       filter,
@@ -241,7 +177,7 @@ exports.updateOne = (Model) =>
 exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsForOne(req, next);
+    const filter = await getIdConditionsForOne(req);
 
     const document = await Model.findOneAndDelete(filter);
 

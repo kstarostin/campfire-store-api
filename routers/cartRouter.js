@@ -2,6 +2,7 @@ const express = require('express');
 const cartEntryRouter = require('./cartEntryRouter');
 
 const cartController = require('../controllers/cartController');
+const genericOrderController = require('../controllers/genericOrderController');
 
 const router = express.Router({ mergeParams: true });
 
@@ -32,7 +33,7 @@ router
    *       200:
    *         description: List of found user carts.
    */
-  .get(cartController.getAllCarts)
+  .get(genericOrderController.validateUserId, cartController.getAllCarts)
   /**
    * @swagger
    * /users/{id}/carts:
@@ -49,7 +50,11 @@ router
    *           type: object
    *           $ref: '#/definitions/Cart'
    */
-  .post(cartController.assignUserToCart, cartController.createCart);
+  .post(
+    genericOrderController.validateUserId,
+    cartController.assignUserToCart,
+    cartController.createCart,
+  );
 
 router
   .route('/:cartId')
@@ -69,7 +74,7 @@ router
    *       200:
    *         description: Found cart, if exists.
    */
-  .get(cartController.getCart)
+  .get(genericOrderController.validateUserId, cartController.getCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -89,7 +94,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Cart'
    */
-  .patch(cartController.updateCart)
+  .patch(genericOrderController.validateUserId, cartController.updateCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -106,7 +111,7 @@ router
    *       204:
    *         description: No content.
    */
-  .delete(cartController.deleteCart);
+  .delete(genericOrderController.validateUserId, cartController.deleteCart);
 
 router.use('/:cartId/entries', cartEntryRouter);
 
