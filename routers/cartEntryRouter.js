@@ -1,6 +1,6 @@
 const express = require('express');
 
-const cartEntryController = require('../controllers/cartEntryController');
+const genericOrderEntryController = require('../controllers/genericOrderEntryController');
 
 const router = express.Router({ mergeParams: true });
 
@@ -32,7 +32,7 @@ router
    *       200:
    *         description: List of found cart entries.
    */
-  .get(cartEntryController.getAllEntries);
+  .get(genericOrderEntryController.getAllEntries);
 
 router
   .route('/:entryId')
@@ -53,6 +53,6 @@ router
    *       200:
    *         description: Found cart entry, if exists.
    */
-  .get(cartEntryController.getEntry);
+  .get(genericOrderEntryController.getEntry);
 
 module.exports = router;

@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 /**
- * GENERIC ORDER ENTRY SCHEMA
+ * CART/ORDER ENTRY SCHEMA
  */
-const genericOrderEntrySchema = new mongoose.Schema(
+const entrySchema = new mongoose.Schema(
   {
     createdAt: {
       type: Date,
@@ -34,12 +34,8 @@ const genericOrderEntrySchema = new mongoose.Schema(
   {
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
-    discriminatorKey: 'kind',
   },
 );
 
-const GenericOrderEntry = mongoose.model(
-  'GenericOrderEntry',
-  genericOrderEntrySchema,
-);
+const GenericOrderEntry = mongoose.model('GenericOrderEntry', entrySchema);
 module.exports = GenericOrderEntry;

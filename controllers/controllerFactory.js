@@ -40,7 +40,7 @@ const getCartIdCondition = async (id, next) => {
  * when the request is structured for getting multiple documents.
  * @returns the filter condition.
  */
-const getIdConditionsMany = async (req, next) => {
+const getIdConditionsForMany = async (req, next) => {
   const filter = {};
   if (req.params.userId && (req.params.cartId || req.params.orderId)) {
     const userId = await getUserIdCondition(req.params.userId, next);
@@ -70,7 +70,7 @@ const getIdConditionsMany = async (req, next) => {
  * when the request is structured for one document.
  * @returns the filter condition.
  */
-const getIdConditionsOne = async (req, next) => {
+const getIdConditionsForOne = async (req, next) => {
   const filter = {};
   if (
     req.params.userId &&
@@ -115,7 +115,7 @@ const getIdConditionsOne = async (req, next) => {
 exports.getAll = (Model, limitOptions) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsMany(req, next);
+    const filter = await getIdConditionsForMany(req, next);
     // EXECUTE QUERY
     const features = new APIFeatures(Model.find(filter), req.query)
       .paginate(limitOptions)
@@ -151,7 +151,7 @@ exports.getAll = (Model, limitOptions) =>
 exports.getOne = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsOne(req, next);
+    const filter = await getIdConditionsForOne(req, next);
 
     let query = Model.findOne(filter);
     if (
@@ -206,7 +206,7 @@ exports.createOne = (Model) =>
 exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsOne(req, next);
+    const filter = await getIdConditionsForOne(req, next);
 
     let document = await Model.findOneAndUpdate(
       filter,
@@ -241,7 +241,7 @@ exports.updateOne = (Model) =>
 exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
-    const filter = await getIdConditionsOne(req, next);
+    const filter = await getIdConditionsForOne(req, next);
 
     const document = await Model.findOneAndDelete(filter);
 

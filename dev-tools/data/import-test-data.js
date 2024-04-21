@@ -5,7 +5,7 @@ const User = require('../../models/userModel');
 const Category = require('../../models/categoryModel');
 const Product = require('../../models/productModel');
 const Cart = require('../../models/cartModel');
-const CartEntry = require('../../models/cartEntryModel');
+const GenericOrderEntry = require('../../models/genericOrderEntryModel');
 const Order = require('../../models/orderModel');
 
 dotenv.config({ path: './config.env' });
@@ -43,7 +43,7 @@ const importData = async () => {
     console.log('Creating carts...');
     await Cart.create(carts);
     console.log('Creating cart entries...');
-    await CartEntry.create(cartEntries);
+    await GenericOrderEntry.create(cartEntries);
     console.log('Creating orders...');
     await Order.create(orders);
     console.log('Data successfully loaded!');
@@ -59,7 +59,7 @@ const deleteData = async () => {
     console.log('Deleteing orders...');
     await Order.deleteMany();
     console.log('Deleteing cart entries...');
-    await CartEntry.deleteMany();
+    await GenericOrderEntry.deleteMany();
     console.log('Deleteing carts...');
     await Cart.deleteMany();
     console.log('Deleteing products...');
