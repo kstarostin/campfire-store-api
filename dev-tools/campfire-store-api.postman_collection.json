@@ -69,7 +69,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								}
 							]
 						},
@@ -165,7 +165,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -223,7 +223,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -258,7 +258,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -338,7 +338,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -397,7 +397,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to create a cart entry for."
 								},
 								{
 									"key": "cartId",
@@ -448,7 +448,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -513,7 +513,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -555,7 +555,7 @@
 								{
 									"key": "userId",
 									"value": "",
-									"description": "ID or email of a user to create a cart for."
+									"description": "ID or email of a user to search for."
 								},
 								{
 									"key": "cartId",
@@ -802,6 +802,180 @@
 				}
 			],
 			"description": "Category management"
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma-separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								}
+							]
+						},
+						"description": "Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "Place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartId\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to place an order for."
+								}
+							]
+						},
+						"description": "Place an order from a cart."
+					},
+					"response": []
+				},
+				{
+					"name": "Get order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/orders/:orderId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"orders",
+								":orderId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "orderId",
+									"value": "",
+									"description": "ID of an order to search for."
+								}
+							]
+						},
+						"description": "Get an existing cart of a user by provided user's ID or email and cart ID."
+					},
+					"response": []
+				}
+			],
+			"description": "Order management"
 		},
 		{
 			"name": "Products",

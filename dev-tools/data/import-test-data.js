@@ -30,6 +30,9 @@ const cartEntries = JSON.parse(
   fs.readFileSync(`${__dirname}/cartEntries.json`, 'utf-8'),
 );
 const orders = JSON.parse(fs.readFileSync(`${__dirname}/orders.json`, 'utf-8'));
+const orderEntries = JSON.parse(
+  fs.readFileSync(`${__dirname}/orderEntries.json`, 'utf-8'),
+);
 
 // IMPORT DATA INTO DB
 const importData = async () => {
@@ -46,6 +49,8 @@ const importData = async () => {
     await GenericOrderEntry.create(cartEntries);
     console.log('Creating orders...');
     await Order.create(orders);
+    console.log('Creating order entries...');
+    await GenericOrderEntry.create(orderEntries);
     console.log('Data successfully loaded!');
   } catch (err) {
     console.log(err);
@@ -56,10 +61,10 @@ const importData = async () => {
 // DELETE ALL DATA FROM DB
 const deleteData = async () => {
   try {
+    console.log('Deleteing cart and order entries...');
+    await GenericOrderEntry.deleteMany();
     console.log('Deleteing orders...');
     await Order.deleteMany();
-    console.log('Deleteing cart entries...');
-    await GenericOrderEntry.deleteMany();
     console.log('Deleteing carts...');
     await Cart.deleteMany();
     console.log('Deleteing products...');

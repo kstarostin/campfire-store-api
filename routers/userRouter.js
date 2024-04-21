@@ -1,5 +1,6 @@
 const express = require('express');
 const cartRouter = require('./cartRouter');
+const orderRouter = require('./orderRouter');
 
 const userController = require('../controllers/userController');
 
@@ -116,5 +117,6 @@ router
   .delete(userController.deleteUser);
 
 router.use('/:userId/carts', cartRouter);
+router.use('/:userId/orders', orderRouter);
 
 module.exports = router;

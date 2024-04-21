@@ -20,7 +20,7 @@ router
    *   get:
    *     tags: [Carts]
    *     summary: Get carts
-   *     description: Get list of user carts. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     description: Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters.
    *     produces:
    *       - application/json
    *     parameters:
@@ -31,7 +31,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found user carts.
+   *         description: List of found user's carts.
    */
   .get(genericOrderController.handleUserId, cartController.getAllCarts)
   /**
@@ -64,7 +64,7 @@ router
    *   get:
    *     tags: [Carts]
    *     summary: Get cart
-   *     description: Get an existing cart for a user by provided user's ID or email and cart's ID.
+   *     description: Get an existing cart for a user by provided user's ID or email and cart ID.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -81,7 +81,7 @@ router
    *   patch:
    *     tags: [Carts]
    *     summary: Update cart
-   *     description: Update an existing cart for a user by provided user's ID or email and cart's ID.
+   *     description: Update an existing cart for a user by provided user's ID or email and cart ID.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -101,7 +101,7 @@ router
    *   delete:
    *     tags: [Carts]
    *     summary: Delete cart
-   *     description: Delete an existing cart for a user by provided user's ID or email and cart's ID.
+   *     description: Delete an existing cart for a user by provided user's ID or email and cart ID.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'

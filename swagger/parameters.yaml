@@ -54,7 +54,13 @@ parameters:
     description: ID of a cart to search for.
     in: path
     required: true
-  # Cart entry
+  # Order
+  orderId:
+    name: orderId
+    description: ID of an order to search for.
+    in: path
+    required: true
+  # Cart/order entry
   entryId:
     name: entryId
     description: ID of an entry to search for.

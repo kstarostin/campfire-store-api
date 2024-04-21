@@ -46,7 +46,9 @@ const validateRequestParam = (req, paramName, next) => {
 
 exports.handleUserId = catchAsync(async (req, res, next) => {
   validateRequestParam(req, 'userId', next);
-  req.params.userId = (await extractUser(req.params.userId, next)).id;
+  const user = await extractUser(req.params.userId, next);
+  req.params.userId = user.id;
+  req.user = user; // todo replace with authentication protection
   next();
 });
 
@@ -54,6 +56,7 @@ exports.handleUserIdCartId = catchAsync(async (req, res, next) => {
   validateRequestParam(req, 'userId', next);
   const user = await extractUser(req.params.userId, next);
   req.params.userId = user.id;
+  req.user = user; // todo replace with authentication protection
 
   validateRequestParam(req, 'cartId', next);
   const cart = await extractCart(req.params.cartId);
@@ -70,6 +73,7 @@ exports.handleUserIdOrderId = catchAsync(async (req, res, next) => {
   validateRequestParam(req, 'userId', next);
   const user = await extractUser(req.params.userId, next);
   req.params.userId = user.id;
+  req.user = user; // todo replace with authentication protection
 
   validateRequestParam(req, 'orderId', next);
   const order = await extractOrder(req.params.cartId);
