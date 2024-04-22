@@ -25,11 +25,17 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Product must have a name.'],
       trim: true,
-      maxlength: [128, 'Product name length must be 128 characters maximum.'],
-      minlength: [2, 'Product name length must be 2 characters minimum.'],
+      maxlength: [
+        128,
+        'Product name length must be no more than 128 characters long.',
+      ],
+      minlength: [2, 'Product name length must at least 2 characters long.'],
     },
     descriptionI18n: i18nTextSchema({
-      maxlength: [4096, 'Product name length must be 4096 characters maximum.'],
+      maxlength: [
+        4096,
+        'Product name length must be no more than 4096 characters long.',
+      ],
     }),
     slug: String,
     prices: {
@@ -43,8 +49,11 @@ const productSchema = new mongoose.Schema(
     manufacturer: {
       type: String,
       required: [true, 'Product must have a manufacturer.'],
-      maxlength: [64, 'Manufacturer length must be 64 characters maximum.'],
-      minlength: [2, 'Manufacturer length must be 2 characters minimum.'],
+      maxlength: [
+        64,
+        'Manufacturer length must be no more than 64 characters long.',
+      ],
+      minlength: [2, 'Manufacturer length must at least 2 characters long.'],
     },
     category: {
       type: mongoose.Schema.ObjectId,

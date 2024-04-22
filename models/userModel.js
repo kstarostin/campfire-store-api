@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
+const addressSchema = require('./schemes/addressSchema');
 
 /**
  * USER SCHEMA
@@ -21,8 +22,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, 'User must have a name.'],
       trim: true,
-      maxlength: [128, 'User name length must be 64 characters maximum.'],
-      minlength: [2, 'User name length must be 2 characters minimum.'],
+      maxlength: [
+        128,
+        'User name length must be no more than 128 characters long.',
+      ],
+      minlength: [2, 'User name length must at least 2 characters long.'],
     },
     email: {
       type: String,
@@ -32,6 +36,8 @@ const userSchema = new mongoose.Schema(
       validate: [validator.isEmail, 'Please provide a valid email.'],
     },
     photo: imageContainerSchema,
+    deliveryAddresses: [addressSchema],
+    billingAddresses: [addressSchema],
   },
   {
     toJSON: { virtuals: true },

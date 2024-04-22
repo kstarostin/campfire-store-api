@@ -1,8 +1,9 @@
-module.exports = (value, respond, modelName) => {
+module.exports = async (value, respond, modelName) => {
+  // console.log(value);
   if (!value) {
     return true;
   }
-  return modelName
+  return await modelName
     .countDocuments({ _id: value })
     .exec()
     .then((count) => count > 0)

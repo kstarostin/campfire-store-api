@@ -14,7 +14,38 @@
         "altText": "Sarah Johnson photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Sarah Johnson",
+        "phone": "+1 (555) 123-4567",
+        "street": "Elm Avenue",
+        "house": "456",
+        "postalCode": "54321",
+        "town": "Riverside",
+        "country": "USA"
+      },
+      {
+        "name": "Sarah Johnson",
+        "phone": "+1 (555) 123-4567",
+        "street": "Maple Street",
+        "house": "123",
+        "postalCode": "12345",
+        "town": "Springfield",
+        "country": "USA"
+      }
+    ],
+    "billingAddresses": [
+      {
+        "name": "Sarah Johnson",
+        "phone": "+1 (555) 789-1234",
+        "street": "Oak Drive",
+        "house": "789",
+        "postalCode": "98765",
+        "town": "Oakwood",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f6401706e88a6f9a5e3",
@@ -31,7 +62,18 @@
         "altText": "Alex Chen photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Alex Chen",
+        "phone": "+1 (555) 456-7890",
+        "street": "Oak Avenue",
+        "house": "456",
+        "postalCode": "67890",
+        "town": "Lakeside",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f697b23011a70d577d2",
@@ -65,7 +107,18 @@
         "altText": "Emily Thompson photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Emily Thompson",
+        "phone": "+1 (555) 101-0101",
+        "street": "Pine Road",
+        "house": "1010",
+        "postalCode": "24680",
+        "town": "Hillside",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f73c4db8feaa69e8b22",
@@ -82,7 +135,18 @@
         "altText": "Michael Patel photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Michael Patel",
+        "phone": "+1 (555) 313-1313",
+        "street": "Cedar Lane",
+        "house": "1313",
+        "postalCode": "13579",
+        "town": "Hillside",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f780a99371c240fc593",
@@ -99,7 +163,18 @@
         "altText": "Olivia Garcia photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Olivia Garcia",
+        "phone": "+1 (555) 515-1515",
+        "street": "Birch Street",
+        "house": "1515",
+        "postalCode": "97531",
+        "town": "Greenwood",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f7ec0c5070bd3b52967",
@@ -116,7 +191,38 @@
         "altText": "Ryan Taylor photo",
         "mimeType": "image/jpeg"
       }
-    }
+    },
+    "deliveryAddresses": [
+      {
+        "name": "Ryan Taylor",
+        "phone": "+1 (555) 717-1717",
+        "street": "Ash Avenue",
+        "house": "1717",
+        "postalCode": "24680",
+        "town": "Greenwood",
+        "country": "USA"
+      },
+      {
+        "name": "Ryan Taylor",
+        "phone": "+1 (555) 789-0123",
+        "street": "Cedar Lane",
+        "house": "789",
+        "postalCode": "98765",
+        "town": "Woodland",
+        "country": "USA"
+      }
+    ],
+    "billingAddresses": [
+      {
+        "name": "Ryan Taylor",
+        "phone": "+1 (555) 717-1717",
+        "street": "Elm Street",
+        "house": "789",
+        "postalCode": "54321",
+        "town": "Riverdale",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f844495750aa3e7b1c3",
@@ -138,7 +244,18 @@
   {
     "_id": "66237f89e60255c1ddef3d76",
     "email": "daniel.nguyen@cosmosmail.net",
-    "name": "Daniel Nguyen"
+    "name": "Daniel Nguyen",
+    "deliveryAddresses": [
+      {
+        "name": "Daniel Nguyen",
+        "phone": "+1 (555) 212-2121",
+        "street": "Magnolia Drive",
+        "house": "2121",
+        "postalCode": "86420",
+        "town": "Riverbank",
+        "country": "USA"
+      }
+    ]
   },
   {
     "_id": "66237f8d08b4abd715eefd4d",

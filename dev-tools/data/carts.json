@@ -1,15 +1,69 @@
 [
   {
     "_id": "6623a6c356190f9fddbd72af",
-    "user": "66237f454d335db6d993d711"
+    "user": "66237f454d335db6d993d711",
+    "deliveryAddress": {
+      "name": "Sarah Johnson",
+      "phone": "+1 (555) 123-4567",
+      "street": "Elm Avenue",
+      "house": "456",
+      "postalCode": "54321",
+      "town": "Riverside",
+      "country": "USA"
+    },
+    "billingAddress": {
+      "name": "Sarah Johnson",
+      "phone": "+1 (555) 789-1234",
+      "street": "Oak Drive",
+      "house": "789",
+      "postalCode": "98765",
+      "town": "Oakwood",
+      "country": "USA"
+    }
   },
   {
     "_id": "6624b6479a3873319e122012",
-    "user": "66237f780a99371c240fc593"
+    "user": "66237f780a99371c240fc593",
+    "deliveryAddress": {
+      "name": "Olivia Garcia",
+      "phone": "+1 (555) 515-1515",
+      "street": "Birch Street",
+      "house": "1515",
+      "postalCode": "97531",
+      "town": "Greenwood",
+      "country": "USA"
+    },
+    "billingAddress": {
+      "name": "Olivia Garcia",
+      "phone": "+1 (555) 515-1515",
+      "street": "Magnolia Drive",
+      "house": "1234",
+      "postalCode": "97345",
+      "town": "Riverdale",
+      "country": "USA"
+    }
   },
   {
     "_id": "6624b691b3c4b689946bfb30",
-    "user": "66237f844495750aa3e7b1c3"
+    "user": "66237f844495750aa3e7b1c3",
+    "deliveryAddress": {
+      "name": "Jessica Lee",
+      "phone": "+1 (555) 123-4567",
+      "street": "Oak Drive",
+      "house": "1234",
+      "postalCode": "32432",
+      "town": "Oakwood",
+      "country": "USA"
+    },
+    "billingAddress": {
+      "name": "Jessica Lee",
+      "phone": "+1 (555) 123-4567",
+      "street": "Oak Drive",
+      "house": "1234",
+      "postalCode": "32432",
+      "town": "Oakwood",
+      "country": "USA"
+    }
   },
   {
     "_id": "6624b6c6acb7934041be9fec",

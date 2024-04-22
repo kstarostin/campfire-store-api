@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const GenericOrderEntry = require('./genericOrderEntryModel');
 const validateRefId = require('./middleware/validateRefId');
 const User = require('./userModel');
+const addressSchema = require('./schemes/addressSchema');
 
 /**
  * GENERIC ORDER SCHEMA
@@ -23,6 +24,8 @@ const genericOrderSchema = new mongoose.Schema(
       ref: 'User',
       requred: [true, 'Order/cart must belong to a user.'],
     },
+    deliveryAddress: addressSchema,
+    billingAddress: addressSchema,
   },
   {
     toJSON: { virtuals: true },
