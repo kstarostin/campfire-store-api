@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugifyName = require('../utils/slugifyName');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
 const priceSchema = require('./schemes/priceSchema');
+const imageContainerSchema = require('./schemes/imageContainerSchema');
 
 /**
  * PRODUCT SCHEMA
@@ -42,6 +43,7 @@ const productSchema = new mongoose.Schema(
       ref: 'Category',
       requred: [true, 'Product must have a category.'],
     },
+    images: [imageContainerSchema],
   },
   {
     toJSON: { virtuals: true },

@@ -34,6 +34,8 @@ const getIdConditionsForOne = async (req) => {
     filter._id = req.params.cartId ? req.params.cartId : req.params.orderId;
   } else if (req.params.userId) {
     filter._id = req.params.userId;
+  } else if (req.params.id) {
+    filter._id = req.params.id;
   }
   // console.log(filter);
   return filter;
