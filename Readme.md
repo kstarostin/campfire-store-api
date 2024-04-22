@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="/public/img/campfire_logo.png" alt="Campfire Store API logo"/>
+  <img src="/public/img/campfire_logo.png" alt="Campfire Store API"/>
 </p>
-
-# Campfire | Store API
+<br/>
 
 **Campfire | Store API** is a demo project of an API for an online shop.
 
