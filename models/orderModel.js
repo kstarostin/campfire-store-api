@@ -11,6 +11,7 @@ const orderSchema = new mongoose.Schema(
       type: String,
       required: [true, 'An order must have a status.'],
       default: defaultOrderStatus,
+      lowercase: true,
       enum: {
         values: allowedOrderStatuses,
         message: `Allowed order statuses are [${allowedOrderStatuses.join(', ')}].`,

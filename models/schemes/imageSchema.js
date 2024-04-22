@@ -9,7 +9,10 @@ const imageSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Image must have a URL.'],
   },
-  altText: String,
+  altText: {
+    type: String,
+    maxlength: [128, 'Image alt text length must be 128 characters maximum.'],
+  },
   mimeType: {
     type: String,
     required: [true, 'Image must have a mime type.'],

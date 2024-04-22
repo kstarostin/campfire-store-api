@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const GenericOrderEntry = require('./genericOrderEntryModel');
+const validateRefId = require('./middleware/validateRefId');
+const User = require('./userModel');
 
 /**
  * GENERIC ORDER SCHEMA
@@ -35,6 +37,14 @@ genericOrderSchema.virtual('entries', {
   localField: '_id',
   justOne: false,
 });
+
+// Document middleware
+genericOrderSchema
+  .path('user')
+  .validate(
+    (value, respond) => validateRefId(value, respond, User),
+    'Invalid user ID.',
+  );
 
 // Query middleware
 genericOrderSchema.pre(/^find/, function (next) {

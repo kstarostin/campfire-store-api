@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const User = require('../models/userModel');
@@ -6,7 +7,7 @@ const Order = require('../models/orderModel');
 
 const extractUser = async (id, next) => {
   let user;
-  if (id.match(/^[0-9a-fA-F]{24}$/)) {
+  if (mongoose.Types.ObjectId.isValid(id)) {
     user = await User.findById(id);
   } else {
     user = await User.findOne({ email: id });

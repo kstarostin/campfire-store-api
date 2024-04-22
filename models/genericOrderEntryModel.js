@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const validateRefId = require('./middleware/validateRefId');
+const Product = require('./productModel');
 
 /**
  * CART/ORDER ENTRY SCHEMA
@@ -24,11 +26,12 @@ const entrySchema = new mongoose.Schema(
       type: Number,
       default: 1,
       required: [true, 'Entry must have a quantity.'],
+      min: [1, 'Entry quantity value must be above 0'],
     },
     parent: {
       type: mongoose.Schema.ObjectId,
       ref: 'GenericOrder',
-      requred: [true, 'Entry must belong to an order or a cart.'],
+      requred: [true, 'Entry must belong to an order or to a cart.'],
     },
   },
   {
@@ -36,6 +39,14 @@ const entrySchema = new mongoose.Schema(
     toObject: { virtuals: true },
   },
 );
+
+// Document middleware
+entrySchema
+  .path('product')
+  .validate(
+    (value, respond) => validateRefId(value, respond, Product),
+    'Invalid product ID.',
+  );
 
 const GenericOrderEntry = mongoose.model('GenericOrderEntry', entrySchema);
 module.exports = GenericOrderEntry;

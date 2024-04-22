@@ -3,6 +3,8 @@ const slugifyName = require('../utils/slugifyName');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
 const priceSchema = require('./schemes/priceSchema');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
+const validateRefId = require('./middleware/validateRefId');
+const Category = require('./categoryModel');
 
 /**
  * PRODUCT SCHEMA
@@ -23,8 +25,12 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Product must have a name.'],
       trim: true,
+      maxlength: [128, 'Product name length must be 128 characters maximum.'],
+      minlength: [2, 'Product name length must be 2 characters minimum.'],
     },
-    descriptionI18n: i18nTextSchema,
+    descriptionI18n: i18nTextSchema({
+      maxlength: [4096, 'Product name length must be 4096 characters maximum.'],
+    }),
     slug: String,
     prices: {
       type: [priceSchema],
@@ -37,6 +43,8 @@ const productSchema = new mongoose.Schema(
     manufacturer: {
       type: String,
       required: [true, 'Product must have a manufacturer.'],
+      maxlength: [64, 'Manufacturer length must be 64 characters maximum.'],
+      minlength: [2, 'Manufacturer length must be 2 characters minimum.'],
     },
     category: {
       type: mongoose.Schema.ObjectId,
@@ -59,6 +67,13 @@ productSchema.pre('save', function (next) {
   this.slug = slugifyName(this.name);
   next();
 });
+
+productSchema
+  .path('category')
+  .validate(
+    (value, respond) => validateRefId(value, respond, Category),
+    'Invalid category ID.',
+  );
 
 // Query middleware:
 productSchema.pre('find', function (next) {
