@@ -5,7 +5,7 @@
 
 **Campfire | Store API** is a demo project of an API for an online shop.
 
-The API provides access to the shop's products, category system and simmple user management, allows you to add products to the cart and place orders.
+The API provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.
 
 ## API features
 

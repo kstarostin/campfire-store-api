@@ -1,9 +1,15 @@
+/**********/
+/* HEADER */
+/**********/
 .swagger-ui .topbar .topbar-wrapper:after {
-  content: url('../../../img/campfire_logo.png');
-  zoom: 40%;
-  height: 170px !important;
+  content: '';
+  display: inline-block;
+  width: 384px;
+  height: 52px;
+  background-size: 384px;
+  background-image: url('../../../img/campfire_logo.png');
   visibility: visible;
-  display: block;
+  margin-bottom: 8px;
 }
 .swagger-ui .topbar .topbar-wrapper a {
   display: none;
@@ -11,4 +17,15 @@
 .swagger-ui .topbar {
   background-color: #f8f9fa;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+}
+
+/********/
+/* INFO */
+/********/
+.information-container .info .main {
+  display: none;
+}
+
+.swagger-ui .info p {
+  font-size: 18px;
 }

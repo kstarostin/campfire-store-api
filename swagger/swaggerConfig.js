@@ -18,7 +18,7 @@ const document = swaggerJSDoc({
     swagger: '2.0',
     info: {
       title: 'Campfire Store API',
-      description: `${packageJson.description}`,
+      description: `API for Campfire online shop. It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.`,
       version: `${packageJson.version}`,
     },
     basePath: apiPath,
