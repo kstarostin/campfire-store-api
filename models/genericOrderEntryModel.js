@@ -18,17 +18,17 @@ const entrySchema = new mongoose.Schema(
     product: {
       type: mongoose.Schema.ObjectId,
       ref: 'Product',
-      requred: [true, 'Entry must have a product'],
+      requred: [true, 'Entry must have a product.'],
     },
     quantity: {
       type: Number,
       default: 1,
-      required: [true, 'Entry must have a quantity'],
+      required: [true, 'Entry must have a quantity.'],
     },
     parent: {
       type: mongoose.Schema.ObjectId,
       ref: 'GenericOrder',
-      requred: [true, 'Entry must belong to an order or a cart'],
+      requred: [true, 'Entry must belong to an order or a cart.'],
     },
   },
   {

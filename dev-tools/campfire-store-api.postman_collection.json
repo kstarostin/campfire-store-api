@@ -1289,7 +1289,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\"\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1318,7 +1318,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\"\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

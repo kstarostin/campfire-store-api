@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
     },
     name: {
       type: String,
-      required: [true, 'Product must have a name'],
+      required: [true, 'Product must have a name.'],
       trim: true,
     },
     descriptionI18n: i18nTextSchema,
@@ -30,17 +30,17 @@ const productSchema = new mongoose.Schema(
       required: true,
       validate: [
         (value) => value.length > 0,
-        'Product must have at least one price',
+        'Product must have at least one price.',
       ],
     },
     manufacturer: {
       type: String,
-      required: [true, 'Product must have a manufacturer'],
+      required: [true, 'Product must have a manufacturer.'],
     },
     category: {
       type: mongoose.Schema.ObjectId,
       ref: 'Category',
-      requred: [true, 'Product must have a category'],
+      requred: [true, 'Product must have a category.'],
     },
   },
   {

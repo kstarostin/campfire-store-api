@@ -9,11 +9,11 @@ const orderSchema = new mongoose.Schema(
   {
     status: {
       type: String,
-      required: [true, 'An order must have a status'],
+      required: [true, 'An order must have a status.'],
       default: defaultOrderStatus,
       enum: {
         values: allowedOrderStatuses,
-        message: `Allowed order statuses are [${allowedOrderStatuses.join(', ')}]`,
+        message: `Allowed order statuses are [${allowedOrderStatuses.join(', ')}].`,
       },
     },
   },

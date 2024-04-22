@@ -7,6 +7,8 @@ const defaultLanguage = 'en';
 const allowedOrderStatuses = ['open', 'progress', 'delivered'];
 const defaultOrderStatus = 'open';
 
+const allowedImageMimeTypes = ['image/jpeg', 'image/png', 'image/webp'];
+
 module.exports = {
   allowedCurrencies,
   defaultCurrency,
@@ -14,4 +16,5 @@ module.exports = {
   defaultLanguage,
   allowedOrderStatuses,
   defaultOrderStatus,
+  allowedImageMimeTypes,
 };

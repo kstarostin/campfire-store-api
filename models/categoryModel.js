@@ -18,12 +18,12 @@ const categorySchema = new mongoose.Schema(
     },
     code: {
       type: String,
-      required: [true, 'Category must have a unique code'],
+      required: [true, 'Category must have a unique code.'],
       unique: true,
     },
     nameI18n: {
       type: i18nTextSchema,
-      required: [true, 'Category must have a name'],
+      required: [true, 'Category must have a name.'],
     },
     parentCategory: { type: mongoose.Schema.ObjectId, ref: 'Category' },
   },

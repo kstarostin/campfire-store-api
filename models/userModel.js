@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+const imageContainerSchema = require('./schemes/imageContainerSchema');
 
 /**
  * USER SCHEMA
@@ -18,16 +19,17 @@ const userSchema = new mongoose.Schema(
     },
     name: {
       type: String,
-      required: [true, 'User must have a name'],
+      required: [true, 'User must have a name.'],
       trim: true,
     },
     email: {
       type: String,
-      required: [true, 'User must have an email'],
+      required: [true, 'User must have an email.'],
       unique: true,
       lowercase: true,
-      validate: [validator.isEmail, 'Please provide a valid email'],
+      validate: [validator.isEmail, 'Please provide a valid email.'],
     },
+    photo: imageContainerSchema,
   },
   {
     toJSON: { virtuals: true },

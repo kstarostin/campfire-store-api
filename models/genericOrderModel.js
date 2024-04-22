@@ -19,7 +19,7 @@ const genericOrderSchema = new mongoose.Schema(
     user: {
       type: mongoose.Schema.ObjectId,
       ref: 'User',
-      requred: [true, 'Order/cart must belong to a user'],
+      requred: [true, 'Order/cart must belong to a user.'],
     },
   },
   {
