@@ -36,8 +36,10 @@ const document = swaggerJSDoc({
 
 // Swagger options
 const options = {
-  customCss: '.swagger-ui .topbar { display: none }',
-  customCssUrl: '../../../css/swagger-ui-theme.css',
+  customCssUrl: [
+    '../../../css/swagger-ui-theme-flatop.css',
+    '../../../css/swagger-ui-general.css',
+  ],
   customSiteTitle: 'Campfire | Store API',
   customfavIcon: '../../../img/favicon.ico',
 };
