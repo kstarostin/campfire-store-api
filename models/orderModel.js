@@ -24,5 +24,12 @@ const orderSchema = new mongoose.Schema(
   },
 );
 
+// Query middleware
+orderSchema.pre(/^find/, function (next) {
+  this.lean() // Convert to plain js object to exlude virtuals
+    .select('-valid');
+  next();
+});
+
 const Order = GenericOrder.discriminator('Order', orderSchema);
 module.exports = Order;

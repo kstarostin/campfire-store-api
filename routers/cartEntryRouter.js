@@ -1,7 +1,7 @@
 const express = require('express');
 
 const genericOrderEntryController = require('../controllers/genericOrderEntryController');
-const genericOrderController = require('../controllers/genericOrderController');
+const sessionParametersHandler = require('../controllers/sessionParametersHandler');
 
 const router = express.Router({ mergeParams: true });
 
@@ -34,7 +34,7 @@ router
    *         description: List of found cart entries.
    */
   .get(
-    genericOrderController.handleUserIdCartId,
+    sessionParametersHandler.handleUserIdCartId,
     genericOrderEntryController.getAllEntries,
   )
   /**
@@ -55,7 +55,7 @@ router
    *           $ref: '#/definitions/GenericOrderEntry'
    */
   .post(
-    genericOrderController.handleUserIdCartId,
+    sessionParametersHandler.handleUserIdCartId,
     genericOrderEntryController.assignEntryToCart,
     genericOrderEntryController.createEntry,
   );
@@ -80,7 +80,7 @@ router
    *         description: Found cart entry, if exists.
    */
   .get(
-    genericOrderController.handleUserIdCartId,
+    sessionParametersHandler.handleUserIdCartId,
     genericOrderEntryController.getEntry,
   )
   /**
@@ -104,7 +104,7 @@ router
    *           $ref: '#/definitions/GenericOrderEntry'
    */
   .patch(
-    genericOrderController.handleUserIdCartId,
+    sessionParametersHandler.handleUserIdCartId,
     genericOrderEntryController.updateEntry,
   )
   /**
@@ -123,7 +123,7 @@ router
    *         description: No content.
    */
   .delete(
-    genericOrderController.handleUserIdCartId,
+    sessionParametersHandler.handleUserIdCartId,
     genericOrderEntryController.deleteEntry,
   );
 

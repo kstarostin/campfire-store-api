@@ -67,6 +67,7 @@ exports.handleUserIdCartId = catchAsync(async (req, res, next) => {
       new AppError('No relation found between cartId and userId', 404),
     );
   }
+  req.cart = cart;
   next();
 });
 

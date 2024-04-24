@@ -60,8 +60,11 @@ exports.getAll = (Model, limitOptions) =>
       .sort()
       .limitFields()
       .filter();
-    // retrieve total count of documents
-    const totalCount = await Model.estimatedDocumentCount();
+    // Retrieve total count of documents
+    const totalCount =
+      Object.keys(filter).length === 0 && filter.constructor === Object
+        ? await Model.estimatedDocumentCount()
+        : await Model.countDocuments(filter);
     // const documents = await features.dbQuery.explain();
     const documents = (await features.dbQuery).map((document) =>
       new DocumentSanitizer(req.language, req.currency, 4).sanitize(document),
