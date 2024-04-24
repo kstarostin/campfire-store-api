@@ -26,6 +26,15 @@ exports.placeOrder = catchAsync(async (req, res, next) => {
     );
   }
 
+  if (!cart.valid) {
+    return next(
+      new AppError(
+        'The cart with requested ID is not valid for placing an order. Make sure it has at least one entry, delliveryAddress and billingAddress assigned.',
+        400,
+      ),
+    );
+  }
+
   cart = await Cart.findByIdAndUpdate(
     cart._id,
     { kind: 'Order', status: defaultOrderStatus },

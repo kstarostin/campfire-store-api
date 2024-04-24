@@ -2,11 +2,13 @@
   {
     "product": "5c8a34ed14eb5c17645c9108",
     "quantity": 1,
+    "price": 3150,
     "parent": "6624dc79eec1037ed900695e"
   },
   {
     "product": "5c8a35b614eb5c17645c910b",
     "quantity": 2,
+    "price": 4270,
     "parent": "6624dc79eec1037ed900695e"
   }
 ]

@@ -2,6 +2,8 @@
   {
     "_id": "6623a6c356190f9fddbd72af",
     "user": "66237f454d335db6d993d711",
+    "currency": "USD",
+    "total": 5285,
     "deliveryAddress": {
       "name": "Sarah Johnson",
       "phone": "+1 (555) 123-4567",
@@ -24,6 +26,8 @@
   {
     "_id": "6624b6479a3873319e122012",
     "user": "66237f780a99371c240fc593",
+    "currency": "USD",
+    "total": 855,
     "deliveryAddress": {
       "name": "Olivia Garcia",
       "phone": "+1 (555) 515-1515",
@@ -46,6 +50,8 @@
   {
     "_id": "6624b691b3c4b689946bfb30",
     "user": "66237f844495750aa3e7b1c3",
+    "currency": "EUR",
+    "total": 0,
     "deliveryAddress": {
       "name": "Jessica Lee",
       "phone": "+1 (555) 123-4567",
@@ -67,6 +73,8 @@
   },
   {
     "_id": "6624b6c6acb7934041be9fec",
-    "user": "66237f697b23011a70d577d2"
+    "user": "66237f697b23011a70d577d2",
+    "currency": "USD",
+    "total": 13649.8
   }
 ]

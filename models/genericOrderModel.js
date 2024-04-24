@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const GenericOrderEntry = require('./genericOrderEntryModel');
 const validateRefId = require('./middleware/validateRefId');
 const User = require('./userModel');
+const currencyType = require('./schemes/currencyType');
 const addressSchema = require('./schemes/addressSchema');
 
 /**
@@ -23,6 +24,11 @@ const genericOrderSchema = new mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       ref: 'User',
       requred: [true, 'Order/cart must belong to a user.'],
+    },
+    currency: currencyType,
+    total: {
+      type: Number,
+      default: 0,
     },
     deliveryAddress: addressSchema,
     billingAddress: addressSchema,
@@ -56,7 +62,7 @@ genericOrderSchema.pre(/^find/, function (next) {
     select: '_id name email',
   }).populate({
     path: 'entries',
-    select: '_id product quantity',
+    select: '_id product quantity price',
   });
   next();
 });
@@ -70,4 +76,17 @@ genericOrderSchema.pre('findOneAndDelete', async function (next) {
 });
 
 const GenericOrder = mongoose.model('GenericOrder', genericOrderSchema);
+
+genericOrderSchema.methods.recalculate = async function () {
+  let total = 0;
+
+  const entries = await GenericOrderEntry.find({ parent: this._id });
+  entries?.forEach((entry) => {
+    total += entry.price;
+  });
+  this.total = total;
+
+  await this.save();
+};
+
 module.exports = GenericOrder;

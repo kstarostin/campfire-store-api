@@ -33,6 +33,11 @@ const entrySchema = new mongoose.Schema(
       ref: 'GenericOrder',
       requred: [true, 'Entry must belong to an order or to a cart.'],
     },
+    price: {
+      type: Number,
+      required: [true, 'Entry must have a price.'],
+      min: [0.01, 'Price value must be above 0.'],
+    },
   },
   {
     toJSON: { virtuals: true },
@@ -47,6 +52,16 @@ entrySchema
     (value, respond) => validateRefId(value, respond, Product),
     'Invalid product ID.',
   );
+
+// Query middleware:
+// TODO: fix TypeError: Cannot read properties of undefined (reading 'wasPopulated')
+// entrySchema.pre('find', function (next) {
+//   this.populate({
+//     path: 'product',
+//     select: '-descriptionI18n',
+//   });
+//   next();
+// });
 
 const GenericOrderEntry = mongoose.model('GenericOrderEntry', entrySchema);
 module.exports = GenericOrderEntry;

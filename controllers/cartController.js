@@ -30,6 +30,51 @@ exports.getAllCarts = factory.getAll(Cart, {
   maxLimit: 50,
 });
 exports.getCart = factory.getOne(Cart);
-exports.createCart = factory.createOne(Cart);
-exports.updateCart = factory.updateOne(Cart);
+
+exports.createCart = catchAsync(async (req, res, next) => {
+  // Assign request param currency or the default currency if nothing is specified in the payload
+  if (!req.body.currency) {
+    req.body.currency = req.currency;
+  }
+  // Create a new cart
+  const newDocument = await Cart.create(req.body);
+
+  res.status(201).json({
+    status: 'success',
+    data: {
+      data: newDocument,
+    },
+  });
+});
+
+exports.updateCart = catchAsync(async (req, res, next) => {
+  // Cart currency can't be changed
+  req.body.currency = undefined;
+  // To allow for nested GET objects on user
+  const filter = {
+    user: req.params.userId,
+    _id: req.params.cartId,
+  };
+
+  const document = await Cart.findOneAndUpdate(
+    filter,
+    { ...req.body, ...{ updatedAt: Date.now() } },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
+
+  if (!document) {
+    return next(new AppError('No document found with this ID', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      data: document,
+    },
+  });
+});
+
 exports.deleteCart = factory.deleteOne(Cart);

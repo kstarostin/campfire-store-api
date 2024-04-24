@@ -2,41 +2,49 @@
   {
     "product": "5c8a34ed14eb5c17645c9108",
     "quantity": 1,
+    "price": 3150,
     "parent": "6623a6c356190f9fddbd72af"
   },
   {
     "product": "5c8a35b614eb5c17645c910b",
     "quantity": 2,
+    "price": 2135,
     "parent": "6623a6c356190f9fddbd72af"
   },
   {
     "product": "5c8a1dfa2f8fb814b56fa181",
     "quantity": 1,
+    "price": 855,
     "parent": "6624b6479a3873319e122012"
   },
   {
     "product": "5c8a34ed14eb5c17645c9108",
     "quantity": 1,
+    "price": 3150,
     "parent": "6624b6c6acb7934041be9fec"
   },
   {
     "product": "5c8a21d02f8fb814b56fa189",
     "quantity": 2,
+    "price": 339.9,
     "parent": "6624b6c6acb7934041be9fec"
   },
   {
     "product": "5c88fa8cf4afda39709c2955",
     "quantity": 1,
+    "price": 209,
     "parent": "6624b6c6acb7934041be9fec"
   },
   {
     "product": "5c88fa8cf4afda39709c295a",
     "quantity": 3,
+    "price": 357,
     "parent": "6624b6c6acb7934041be9fec"
   },
   {
     "product": "5c8a35b614eb5c17645c910b",
     "quantity": 2,
+    "price": 4270,
     "parent": "6624b6c6acb7934041be9fec"
   }
 ]

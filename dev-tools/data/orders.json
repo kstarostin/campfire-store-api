@@ -3,6 +3,8 @@
     "_id": "6624dc79eec1037ed900695e",
     "status": "open",
     "user": "66237f6401706e88a6f9a5e3",
+    "currency": "USD",
+    "total": 11690,
     "deliveryAddress": {
       "name": "Alex Chen",
       "phone": "+1 (555) 456-7890",

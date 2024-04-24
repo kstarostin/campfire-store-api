@@ -60,7 +60,7 @@ exports.getAll = (Model, limitOptions) =>
       .sort()
       .limitFields()
       .filter();
-    // Retrieve total count of documents
+    // Retrieve total count of documents. If filter is empty - use more efficient way.
     const totalCount =
       Object.keys(filter).length === 0 && filter.constructor === Object
         ? await Model.estimatedDocumentCount()
