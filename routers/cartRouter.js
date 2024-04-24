@@ -44,6 +44,13 @@ router
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/currency'
+   *     requestBody:
+   *       description: A JSON object containing cart payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Cart'
    *     responses:
    *       201:
    *         description: Created cart.
@@ -89,6 +96,13 @@ router
    *       - $ref: '#/parameters/cartId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
+   *     requestBody:
+   *       description: A JSON object containing cart payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Cart'
    *     responses:
    *       200:
    *         description: Updated cart.

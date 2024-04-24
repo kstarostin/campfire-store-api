@@ -47,6 +47,13 @@ router
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
+   *     requestBody:
+   *       description: A JSON object containing cart entry payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/GenericOrderEntry'
    *     responses:
    *       201:
    *         description: Created cart entry.
@@ -96,6 +103,13 @@ router
    *       - $ref: '#/parameters/entryId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
+   *     requestBody:
+   *       description: A JSON object containing cart entry payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/GenericOrderEntry'
    *     responses:
    *       200:
    *         description: Updated cart entry.

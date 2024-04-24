@@ -43,15 +43,13 @@ router
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - name: name
-   *         description: Category name.
-   *         in: formData
-   *         required: true
-   *         type: string
-   *       - name: parentCategory
-   *         description: Parent category ID. Can be empty for a root category.
-   *         in: formData
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing category payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Category'
    *     responses:
    *       201:
    *         description: Created category.
@@ -90,14 +88,13 @@ router
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - name: name
-   *         description: Category name.
-   *         in: formData
-   *         type: string
-   *       - name: parentCategory
-   *         description: Parent category ID.
-   *         in: formData
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing category payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Category'
    *     responses:
    *       200:
    *         description: Updated category.

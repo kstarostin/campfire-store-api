@@ -35,23 +35,27 @@ const orderEntries = JSON.parse(
 );
 
 // IMPORT DATA INTO DB
+const performImport = async () => {
+  console.log('Creating users...');
+  await User.create(users);
+  console.log('Creating categories...');
+  await Category.create(categories);
+  console.log('Creating products...');
+  await Product.create(products);
+  console.log('Creating carts...');
+  await Cart.create(carts);
+  console.log('Creating cart entries...');
+  await GenericOrderEntry.create(cartEntries);
+  console.log('Creating orders...');
+  await Order.create(orders);
+  console.log('Creating order entries...');
+  await GenericOrderEntry.create(orderEntries);
+  console.log('Data successfully loaded!');
+};
+
 const importData = async () => {
   try {
-    console.log('Creating users...');
-    await User.create(users);
-    console.log('Creating categories...');
-    await Category.create(categories);
-    console.log('Creating products...');
-    await Product.create(products);
-    console.log('Creating carts...');
-    await Cart.create(carts);
-    console.log('Creating cart entries...');
-    await GenericOrderEntry.create(cartEntries);
-    console.log('Creating orders...');
-    await Order.create(orders);
-    console.log('Creating order entries...');
-    await GenericOrderEntry.create(orderEntries);
-    console.log('Data successfully loaded!');
+    await performImport();
   } catch (err) {
     console.log(err);
   }
@@ -59,29 +63,46 @@ const importData = async () => {
 };
 
 // DELETE ALL DATA FROM DB
+const performDelete = async () => {
+  console.log('Deleteing cart and order entries...');
+  await GenericOrderEntry.deleteMany();
+  console.log('Deleteing orders...');
+  await Order.deleteMany();
+  console.log('Deleteing carts...');
+  await Cart.deleteMany();
+  console.log('Deleteing products...');
+  await Product.deleteMany();
+  console.log('Deleteing categories...');
+  await Category.deleteMany();
+  console.log('Deleteing users...');
+  await User.deleteMany();
+  console.log('Data successfully deleted!');
+};
+
 const deleteData = async () => {
   try {
-    console.log('Deleteing cart and order entries...');
-    await GenericOrderEntry.deleteMany();
-    console.log('Deleteing orders...');
-    await Order.deleteMany();
-    console.log('Deleteing carts...');
-    await Cart.deleteMany();
-    console.log('Deleteing products...');
-    await Product.deleteMany();
-    console.log('Deleteing categories...');
-    await Category.deleteMany();
-    console.log('Deleteing users...');
-    await User.deleteMany();
-    console.log('Data successfully deleted!');
+    await performDelete();
   } catch (err) {
     console.log(err);
   }
   process.exit();
 };
 
-if (process.argv[2] === '--import') {
+// RECREATE ALL DATA IN DB
+const recreateData = async () => {
+  try {
+    await performDelete();
+    await performImport();
+  } catch (err) {
+    console.log(err);
+  }
+  process.exit();
+};
+
+if (process.argv[2] === '--import' || process.argv[2] === '--i') {
   importData();
-} else if (process.argv[2] === '--delete') {
+} else if (process.argv[2] === '--delete' || process.argv[2] === '--d') {
   deleteData();
+} else if (process.argv[2] === '--recreate' || process.argv[2] === '--re') {
+  recreateData();
 }

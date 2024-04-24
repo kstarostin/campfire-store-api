@@ -40,17 +40,13 @@ router
    *     tags: [Users]
    *     summary: Create user
    *     description: Create a new user.
-   *     parameters:
-   *       - name: name
-   *         description: User name.
-   *         in: formData
-   *         required: true
-   *         type: string
-   *       - name: email
-   *         description: User email.
-   *         in: formData
-   *         required: true
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing user payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/User'
    *     responses:
    *       201:
    *         description: Created user.
@@ -85,14 +81,13 @@ router
    *     description: Update an existing user by provided ID or email.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
-   *       - name: name
-   *         description: User name.
-   *         in: formData
-   *         type: string
-   *       - name: email
-   *         description: User email.
-   *         in: formData
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing user payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/User'
    *     responses:
    *       200:
    *         description: Updated user.

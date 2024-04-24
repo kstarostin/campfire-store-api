@@ -42,11 +42,16 @@ router
    *     description: Create a new order from a cart.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
-   *       - name: cartId
-   *         description: Cart ID.
-   *         in: formData
-   *         required: true
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing user payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             type: object
+   *             properties:
+   *               cartId:
+   *                 type: string
    *     responses:
    *       201:
    *         description: Placed order.

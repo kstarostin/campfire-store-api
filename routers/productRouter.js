@@ -43,26 +43,13 @@ router
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - name: name
-   *         description: Product name.
-   *         in: formData
-   *         required: true
-   *         type: string
-   *       - name: price
-   *         description: Product price.
-   *         in: formData
-   *         required: true
-   *         type: number
-   *       - name: manufacturer
-   *         description: Product manufacturer.
-   *         in: formData
-   *         required: true
-   *         type: string
-   *       - name: category
-   *         description: Product category ID.
-   *         in: formData
-   *         required: true
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing product payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Product'
    *     responses:
    *       201:
    *         description: Created product.
@@ -101,22 +88,13 @@ router
    *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
-   *       - name: name
-   *         description: Product name.
-   *         in: formData
-   *         type: string
-   *       - name: price
-   *         description: Product price.
-   *         in: formData
-   *         type: integer
-   *       - name: manufacturer
-   *         description: Product manufacturer.
-   *         in: formData
-   *         type: string
-   *       - name: category
-   *         description: Product category ID.
-   *         in: formData
-   *         type: string
+   *     requestBody:
+   *       description: A JSON object containing product payload.
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/definitions/Product'
    *     responses:
    *       200:
    *         description: Updated product.
