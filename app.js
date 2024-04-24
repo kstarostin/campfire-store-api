@@ -83,7 +83,7 @@ app.use(
 app.use(basePath, swaggerRedirectRouter);
 
 // Handles request language and currency parameters in the session
-app.use(sessionHandler.parseLanguage, sessionHandler.parseCurrency);
+app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);
 
 // App routes
 app.use(`${apiPath}/categories`, categoryRouter);

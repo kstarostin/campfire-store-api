@@ -2,7 +2,7 @@ const express = require('express');
 const cartEntryRouter = require('./cartEntryRouter');
 
 const cartController = require('../controllers/cartController');
-const sessionParametersHandler = require('../controllers/sessionParametersHandler');
+const sessionController = require('../controllers/sessionController');
 
 const router = express.Router({ mergeParams: true });
 
@@ -33,7 +33,7 @@ router
    *       200:
    *         description: List of found user's carts.
    */
-  .get(sessionParametersHandler.handleUserId, cartController.getAllCarts)
+  .get(sessionController.handleUserId, cartController.getAllCarts)
   /**
    * @swagger
    * /users/{id}/carts:
@@ -51,7 +51,7 @@ router
    *           $ref: '#/definitions/Cart'
    */
   .post(
-    sessionParametersHandler.handleUserId,
+    sessionController.handleUserId,
     cartController.oneSessionCartAllowed,
     cartController.assignUserToCart,
     cartController.createCart,
@@ -75,7 +75,7 @@ router
    *       200:
    *         description: Found cart, if exists.
    */
-  .get(sessionParametersHandler.handleUserId, cartController.getCart)
+  .get(sessionController.handleUserId, cartController.getCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -95,7 +95,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Cart'
    */
-  .patch(sessionParametersHandler.handleUserId, cartController.updateCart)
+  .patch(sessionController.handleUserId, cartController.updateCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -110,7 +110,7 @@ router
    *       204:
    *         description: No content.
    */
-  .delete(sessionParametersHandler.handleUserId, cartController.deleteCart);
+  .delete(sessionController.handleUserId, cartController.deleteCart);
 
 router.use('/:cartId/entries', cartEntryRouter);
 
