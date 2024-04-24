@@ -43,6 +43,7 @@ router
    *     description: Create a new cart.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/currency'
    *     responses:
    *       201:
    *         description: Created cart.

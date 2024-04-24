@@ -87,6 +87,7 @@ genericOrderSchema.methods.recalculate = async function () {
   this.total = total;
 
   await this.save();
+  return this.total;
 };
 
 module.exports = GenericOrder;
