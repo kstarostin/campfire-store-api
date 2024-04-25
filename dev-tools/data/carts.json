@@ -21,7 +21,8 @@
       "postalCode": "98765",
       "town": "Oakwood",
       "country": "USA"
-    }
+    },
+    "deliveryNote": "Please leave at the garage door"
   },
   {
     "_id": "6624b6479a3873319e122012",

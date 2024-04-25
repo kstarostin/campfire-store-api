@@ -32,6 +32,13 @@ const genericOrderSchema = new mongoose.Schema(
     },
     deliveryAddress: addressSchema,
     billingAddress: addressSchema,
+    deliveryNote: {
+      type: String,
+      maxlength: [
+        512,
+        'Delivery note length must be no more than 512 characters long.',
+      ],
+    },
   },
   {
     toJSON: { virtuals: true },

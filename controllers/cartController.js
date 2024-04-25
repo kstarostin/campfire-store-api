@@ -13,6 +13,12 @@ const updateEntryPrice = async function (entry, newCurrency) {
   return entry;
 };
 
+/**
+ * Validates if the cart can be switched to a different currency. Changes prices of all cart entries.
+ * @param {*} cart the current cart.
+ * @param {*} newCurrency the currency to switch to.
+ * @returns true if cart and entries were switched to the new currency.
+ */
 const changeCartEntriesCurrency = async function (cart, newCurrency, next) {
   // Validate new currency value
   if (!allowedCurrencies.includes(newCurrency)) {
@@ -47,6 +53,9 @@ const changeCartEntriesCurrency = async function (cart, newCurrency, next) {
   return true;
 };
 
+/**
+ * Check that user has no existing carts.
+ */
 exports.oneSessionCartAllowed = catchAsync(async (req, res, next) => {
   if (!req.params.userId) {
     return next();
@@ -97,6 +106,8 @@ exports.updateCart = catchAsync(async (req, res, next) => {
     user: req.params.userId,
     _id: req.params.cartId,
   };
+  // Do not allow to change calculated total price
+  req.body.total = undefined;
 
   const cart = await Cart.findOne(filter);
   let recalculate = false;

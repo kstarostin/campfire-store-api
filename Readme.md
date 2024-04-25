@@ -10,11 +10,11 @@ The API provides access to the shop's products, category system and simple user 
 ## API features
 
 1. API documentation is powered by [Swagger UI](https://swagger.io/tools/swagger-ui/) and available on `/` or `/api/v1/api-docs/`.
-2. Supports internationalisation with multiple currencies and text localisation. Use query parameters `language` and `currency` to tweak the responses.
-3. API requests are limited per IP by `express-rate-limit`.
-4. Protected against parameter pollution by `hpp`.
-5. Protected against NoSQL query injection by `express-mongo-sanitize`.
-6. Supports CORS with `cors` and secure HTTP headers with `helmet`.
+2. Protected routes require authorization with JWT. Some routes are additionally restricted by roles.
+3. Supports internationalization with multiple currencies and text localization. Use query parameters `language` and `currency` to tweak the responses.
+4. API requests are limited per IP.
+5. Protected against parameter pollution and NoSQL query injection.
+6. Supports CORS and secure HTTP headers.
 
 ## Project structure
 

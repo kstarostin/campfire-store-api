@@ -61,7 +61,12 @@ router
    *       content:
    *         application/json:
    *           schema:
-   *             $ref: '#/definitions/Cart'
+   *             type: object
+   *             properties:
+   *               currency:
+   *                 type: string
+   *           example:
+   *             currency: USD
    *     responses:
    *       201:
    *         description: Created cart.

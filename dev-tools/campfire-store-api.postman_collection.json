@@ -700,7 +700,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"deliveryAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"billingAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"deliveryAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"billingAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"deliveryNote\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
