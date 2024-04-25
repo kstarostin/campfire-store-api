@@ -4,7 +4,7 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
-      description: Test.
+      description: Use <i>/users/login</i> to get a JWT token.
   responses:
     unauthorizedError:
       description: Access token is missing or invalid.

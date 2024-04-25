@@ -15,6 +15,9 @@ const swaggerUi = require('swagger-ui-express');
 const AppError = require('./utils/appError');
 const sessionHandler = require('./controllers/sessionController');
 const errorHandler = require('./controllers/errorController');
+
+// Routers
+const authRouter = require('./routers/authRouter');
 const categoryRouter = require('./routers/categoryRouter');
 const productRouter = require('./routers/productRouter');
 const userRouter = require('./routers/userRouter');
@@ -86,6 +89,7 @@ app.use(basePath, swaggerRedirectRouter);
 app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);
 
 // App routes
+app.use(`${apiPath}/users`, authRouter);
 app.use(`${apiPath}/categories`, categoryRouter);
 app.use(`${apiPath}/products`, productRouter);
 app.use(`${apiPath}/users`, userRouter);
