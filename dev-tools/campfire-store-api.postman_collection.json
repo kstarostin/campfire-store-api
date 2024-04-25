@@ -950,7 +950,7 @@
 								}
 							]
 						},
-						"description": "Create a new category.\n\nThis resource is protected and requires prior authorization."
+						"description": "Create a new category.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1011,7 +1011,7 @@
 								}
 							]
 						},
-						"description": "Update an existing category by provided ID.\n\nThis resource is protected and requires prior authorization."
+						"description": "Update an existing category by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1049,7 +1049,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing category by provided ID.\n\nThis resource is protected and requires prior authorization."
+						"description": "Delete an existing category by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				}
@@ -1412,7 +1412,7 @@
 								}
 							]
 						},
-						"description": "Create a new product.\n\nThis resource is protected and requires prior authorization."
+						"description": "Create a new product.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1473,7 +1473,7 @@
 								}
 							]
 						},
-						"description": "Update an existing product by provided ID.\n\nThis resource is protected and requires prior authorization."
+						"description": "Update an existing product by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1511,7 +1511,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing product by provided ID.\n\nThis resource is protected and requires prior authorization."
+						"description": "Delete an existing product by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				}
@@ -1573,7 +1573,7 @@
 								}
 							]
 						},
-						"description": "Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization."
+						"description": "Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1611,7 +1611,7 @@
 								}
 							]
 						},
-						"description": "Get an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
+						"description": "Get an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only request themselves."
 					},
 					"response": []
 				},
@@ -1632,7 +1632,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1650,7 +1650,7 @@
 								"users"
 							]
 						},
-						"description": "Create a new user.\n\nThis resource is protected and requires prior authorization."
+						"description": "Create a new user.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				},
@@ -1671,7 +1671,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1697,7 +1697,7 @@
 								}
 							]
 						},
-						"description": "Update an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
+						"description": "Update an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only update themselves."
 					},
 					"response": []
 				},
@@ -1735,7 +1735,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
+						"description": "Delete an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
 				}

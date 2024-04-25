@@ -4,6 +4,7 @@
     "name": "Sarah Johnson",
     "email": "sarah.johnson@examplemail.com",
     "password": "test1234",
+    "roles": ["user", "admin"],
     "photo": {
       "small": {
         "url": "/img/users/small/sarah_500.jpg",
@@ -53,6 +54,7 @@
     "name": "Alex Chen",
     "email": "alex.chen@explorernet.net",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/alex_500.jpg",
@@ -82,6 +84,7 @@
     "name": "David Rodriguez",
     "email": "david.rodriguez@ninjagroup.org",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/david_500.jpg",
@@ -100,6 +103,7 @@
     "name": "Emily Thompson",
     "email": "e.thompson@adventuresinc.com",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/emily_500.jpg",
@@ -129,6 +133,7 @@
     "name": "Michael Patel",
     "email": "michael.patel@techservices.biz",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/michael_500.jpg",
@@ -158,6 +163,7 @@
     "name": "Olivia Garcia",
     "email": "olivia.garcia@dreamscape.com",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/olivia_500.jpg",
@@ -187,6 +193,7 @@
     "name": "Ryan Taylor",
     "email": "rtaylor@digitalocean.io",
     "password": "test1234",
+    "roles": ["user", "admin"],
     "photo": {
       "small": {
         "url": "/img/users/small/ryan_500.jpg",
@@ -236,6 +243,7 @@
     "name": "Jessica Lee",
     "email": "jessieleee@codersmail.me",
     "password": "test1234",
+    "roles": ["user"],
     "photo": {
       "small": {
         "url": "/img/users/small/jessica_500.jpg",
@@ -254,6 +262,7 @@
     "name": "Daniel Nguyen",
     "email": "daniel.nguyen@cosmosmail.net",
     "password": "test1234",
+    "roles": ["user"],
     "deliveryAddresses": [
       {
         "name": "Daniel Nguyen",
@@ -270,6 +279,7 @@
     "_id": "66237f8d08b4abd715eefd4d",
     "name": "Sophia Wright",
     "email": "s.wright@dreamworld.org",
-    "password": "test1234"
+    "password": "test1234",
+    "roles": ["user"]
   }
 ]

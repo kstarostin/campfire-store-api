@@ -25,7 +25,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get users
-   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
+   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     produces:
    *       - application/json
    *     parameters:
@@ -39,7 +39,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(userController.getAllUsers)
+  .get(authController.restrictTo('admin'), userController.getAllUsers)
   /**
    * @swagger
    * /users:
@@ -48,7 +48,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Create user
-   *     description: Create a new user.<br><br>This resource is protected and requires prior authorization.
+   *     description: Create a new user.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     requestBody:
    *       description: A JSON object containing user payload.
    *       required: true
@@ -65,7 +65,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(userController.createUser);
+  .post(authController.restrictTo('admin'), userController.createUser);
 
 router
   .route('/:userId')
@@ -77,7 +77,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get user
-   *     description: Get an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
+   *     description: Get an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only request themselves.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:
@@ -86,7 +86,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(userController.getUser)
+  .get(authController.restrictTo('admin', 'me'), userController.getUser)
   /**
    * @swagger
    * /users/{id}:
@@ -95,7 +95,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Update user
-   *     description: Update an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
+   *     description: Update an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only update themselves.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     requestBody:
@@ -114,7 +114,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(userController.updateUser)
+  .patch(authController.restrictTo('admin', 'me'), userController.updateUser)
   /**
    * @swagger
    * /users/{id}:
@@ -123,7 +123,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Delete user
-   *     description: Delete an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
+   *     description: Delete an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:
@@ -132,7 +132,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(userController.deleteUser);
+  .delete(authController.restrictTo('admin'), userController.deleteUser);
 
 router.use('/:userId/carts', cartRouter);
 router.use('/:userId/orders', orderRouter);

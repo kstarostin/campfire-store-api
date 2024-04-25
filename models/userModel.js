@@ -3,6 +3,7 @@ const validator = require('validator');
 const bcrypt = require('bcryptjs');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
 const addressSchema = require('./schemes/addressSchema');
+const { allowedUserRoles, defaultUserRole } = require('../utils/config');
 
 /**
  * USER SCHEMA
@@ -43,6 +44,23 @@ const userSchema = new mongoose.Schema(
       select: false,
     },
     passwordChangedAt: Date,
+    roles: {
+      type: [
+        {
+          type: String,
+          enum: {
+            values: allowedUserRoles,
+            message: `Allowed roles are [${allowedUserRoles.join(', ')}].`,
+          },
+          default: defaultUserRole,
+        },
+      ],
+      required: true,
+      validate: [
+        (value) => value.length > 0,
+        'User must have at least one role.',
+      ],
+    },
     photo: imageContainerSchema,
     deliveryAddresses: [addressSchema],
     billingAddresses: [addressSchema],

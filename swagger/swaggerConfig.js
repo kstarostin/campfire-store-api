@@ -18,7 +18,7 @@ const document = swaggerJSDoc({
     openapi: '3.0.0',
     info: {
       title: 'Campfire Store API',
-      description: `API for Campfire online shop. It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.`,
+      description: `API for Campfire online shop. It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.<br><br>Some resources are protected and require prior authorization.`,
       version: `${packageJson.version}`,
     },
     servers: [{ url: apiPath }],

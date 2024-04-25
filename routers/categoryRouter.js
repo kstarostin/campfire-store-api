@@ -42,7 +42,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Create category
-   *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.
+   *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -62,7 +62,11 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(authController.protect, categoryController.createCategory);
+  .post(
+    authController.protect,
+    authController.restrictTo('admin'),
+    categoryController.createCategory,
+  );
 
 router
   .route('/:id')
@@ -90,7 +94,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Update category
-   *     description: Update an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Update an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
@@ -111,7 +115,11 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(authController.protect, categoryController.updateCategory)
+  .patch(
+    authController.protect,
+    authController.restrictTo('admin'),
+    categoryController.updateCategory,
+  )
   /**
    * @swagger
    * /categories/{id}:
@@ -120,7 +128,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Delete category
-   *     description: Delete an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Delete an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *     responses:
@@ -129,6 +137,10 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(authController.protect, categoryController.deleteCategory);
+  .delete(
+    authController.protect,
+    authController.restrictTo('admin'),
+    categoryController.deleteCategory,
+  );
 
 module.exports = router;

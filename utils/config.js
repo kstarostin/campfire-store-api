@@ -1,20 +1,13 @@
-const allowedCurrencies = ['USD', 'EUR'];
-const defaultCurrency = 'USD';
+exports.allowedCurrencies = ['USD', 'EUR'];
+exports.defaultCurrency = 'USD';
 
-const allowedLanguages = ['en', 'de'];
-const defaultLanguage = 'en';
+exports.allowedLanguages = ['en', 'de'];
+exports.defaultLanguage = 'en';
 
-const allowedOrderStatuses = ['open', 'progress', 'delivered'];
-const defaultOrderStatus = 'open';
+exports.allowedOrderStatuses = ['open', 'progress', 'delivered'];
+exports.defaultOrderStatus = 'open';
 
-const allowedImageMimeTypes = ['image/jpeg', 'image/png', 'image/webp'];
+exports.allowedImageMimeTypes = ['image/jpeg', 'image/png', 'image/webp'];
 
-module.exports = {
-  allowedCurrencies,
-  defaultCurrency,
-  allowedLanguages,
-  defaultLanguage,
-  allowedOrderStatuses,
-  defaultOrderStatus,
-  allowedImageMimeTypes,
-};
+exports.allowedUserRoles = ['user', 'admin'];
+exports.defaultUserRole = 'user';

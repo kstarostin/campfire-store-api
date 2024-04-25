@@ -42,7 +42,7 @@ router
    *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Create product
-   *     description: Create a new product.<br><br>This resource is protected and requires prior authorization.
+   *     description: Create a new product.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -62,7 +62,11 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(authController.protect, productController.createProduct);
+  .post(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.createProduct,
+  );
 
 router
   .route('/:id')
@@ -90,7 +94,7 @@ router
    *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Update product
-   *     description: Update an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Update an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
@@ -111,7 +115,11 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(authController.protect, productController.updateProduct)
+  .patch(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.updateProduct,
+  )
   /**
    * @swagger
    * /products/{id}:
@@ -120,7 +128,7 @@ router
    *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Delete product
-   *     description: Delete an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Delete an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *     responses:
@@ -129,6 +137,10 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(authController.protect, productController.deleteProduct);
+  .delete(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.deleteProduct,
+  );
 
 module.exports = router;

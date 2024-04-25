@@ -38,26 +38,34 @@ exports.getUser = catchAsync(async (req, res, next) => {
  * @returns a successful response with the found user, if such exists, or an error response.
  */
 exports.updateUser = catchAsync(async (req, res, next) => {
-  const updatedUser = isValidId(req.params.userId)
-    ? await User.findByIdAndUpdate(
-        req.params.userId,
-        { ...req.body, ...{ updatedAt: Date.now() } },
-        {
-          new: true,
-          runValidators: true,
-        },
-      )
-    : await User.findOneAndUpdate(
-        { email: req.params.userId },
-        { ...req.body, ...{ updatedAt: Date.now() } },
-        {
-          new: true,
-          runValidators: true,
-        },
-      );
-  if (!updatedUser) {
+  // Search for a user by ID or email
+  const user = isValidId(req.params.userId)
+    ? await User.findById(req.params.userId)
+    : await User.findOne({ email: req.params.userId });
+  // Check existence
+  if (!user) {
     return next(new AppError('No user found with this ID or email', 404));
   }
+  // Make sure non-admins can't manage their roles
+  if (!req.user?.roles?.includes('admin')) {
+    req.body.roles = undefined;
+  }
+  // Forbid changing passwords on this route
+  if (req.body.password) {
+    return next(
+      new AppError('This route does not allow changing passwords.', 400),
+    );
+  }
+  // Perform update
+  const updatedUser = await User.findByIdAndUpdate(
+    user.id,
+    { ...req.body, ...{ updatedAt: Date.now() } },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
+
   res.status(200).json({
     status: 'success',
     data: {
