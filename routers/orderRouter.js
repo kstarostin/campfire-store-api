@@ -34,6 +34,8 @@ router
    *     responses:
    *       200:
    *         description: List of found user's orders.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(
     authController.protect,
@@ -67,6 +69,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Order'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .post(
     authController.protect,
@@ -93,6 +97,8 @@ router
    *     responses:
    *       200:
    *         description: Found order, if exists.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(
     authController.protect,

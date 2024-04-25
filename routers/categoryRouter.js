@@ -59,6 +59,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Category'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .post(authController.protect, categoryController.createCategory);
 
@@ -106,6 +108,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Category'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .patch(authController.protect, categoryController.updateCategory)
   /**
@@ -122,6 +126,8 @@ router
    *     responses:
    *       204:
    *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .delete(authController.protect, categoryController.deleteCategory);
 

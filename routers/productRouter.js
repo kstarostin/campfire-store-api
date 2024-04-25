@@ -59,6 +59,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Product'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .post(authController.protect, productController.createProduct);
 
@@ -106,6 +108,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Product'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .patch(authController.protect, productController.updateProduct)
   /**
@@ -122,6 +126,8 @@ router
    *     responses:
    *       204:
    *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .delete(authController.protect, productController.deleteProduct);
 

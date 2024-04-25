@@ -66,6 +66,9 @@ router.post('/signup', authController.signup);
  *                 type: string
  *               password:
  *                 type: string
+ *           example:
+ *             email: rtaylor@digitalocean.io
+ *             password: test1234
  *     responses:
  *       200:
  *         description: Contains authentication token and authenticated user.<br><br>Use this token in the authorize section to get access to protected resources.
@@ -119,6 +122,8 @@ router
    *     responses:
    *       200:
    *         description: List of found users.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(userController.getAllUsers)
   /**
@@ -143,6 +148,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/User'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .post(userController.createUser);
 
@@ -162,6 +169,8 @@ router
    *     responses:
    *       200:
    *         description: Found user, if exists.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(userController.getUser)
   /**
@@ -188,6 +197,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/User'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .patch(userController.updateUser)
   /**
@@ -204,6 +215,8 @@ router
    *     responses:
    *       204:
    *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .delete(userController.deleteUser);
 

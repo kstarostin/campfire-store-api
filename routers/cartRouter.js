@@ -35,6 +35,8 @@ router
    *     responses:
    *       200:
    *         description: List of found user's carts.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(
     authController.protect,
@@ -66,6 +68,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Cart'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .post(
     authController.protect,
@@ -94,6 +98,8 @@ router
    *     responses:
    *       200:
    *         description: Found cart, if exists.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .get(
     authController.protect,
@@ -127,6 +133,8 @@ router
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Cart'
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .patch(
     authController.protect,
@@ -148,6 +156,8 @@ router
    *     responses:
    *       204:
    *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
    */
   .delete(
     authController.protect,
