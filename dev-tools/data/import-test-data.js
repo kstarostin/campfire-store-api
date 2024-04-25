@@ -37,7 +37,7 @@ const orderEntries = JSON.parse(
 // IMPORT DATA INTO DB
 const performImport = async () => {
   console.log('Creating users...');
-  await User.create(users);
+  await User.create(users, { validateBeforeSave: false });
   console.log('Creating categories...');
   await Category.create(categories);
   console.log('Creating products...');

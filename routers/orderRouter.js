@@ -1,7 +1,8 @@
 const express = require('express');
 
-const orderController = require('../controllers/orderController');
+const authController = require('../controllers/authController');
 const sessionController = require('../controllers/sessionController');
+const orderController = require('../controllers/orderController');
 
 const router = express.Router({ mergeParams: true });
 
@@ -32,7 +33,11 @@ router
    *       200:
    *         description: List of found user's orders.
    */
-  .get(sessionController.handleUserId, orderController.getAllOrders)
+  .get(
+    authController.protect,
+    sessionController.handleUserId,
+    orderController.getAllOrders,
+  )
   /**
    * @swagger
    * /users/{id}/orders:
@@ -59,7 +64,11 @@ router
    *           type: object
    *           $ref: '#/definitions/Order'
    */
-  .post(sessionController.handleUserId, orderController.placeOrder);
+  .post(
+    authController.protect,
+    sessionController.handleUserId,
+    orderController.placeOrder,
+  );
 
 router
   .route('/:orderId')
@@ -79,6 +88,10 @@ router
    *       200:
    *         description: Found order, if exists.
    */
-  .get(sessionController.handleUserId, orderController.getOrder);
+  .get(
+    authController.protect,
+    sessionController.handleUserId,
+    orderController.getOrder,
+  );
 
 module.exports = router;

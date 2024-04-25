@@ -1,5 +1,6 @@
 const express = require('express');
 
+const authController = require('../controllers/authController');
 const productController = require('../controllers/productController');
 
 const router = express.Router();
@@ -57,7 +58,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Product'
    */
-  .post(productController.createProduct);
+  .post(authController.protect, productController.createProduct);
 
 router
   .route('/:id')
@@ -102,7 +103,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Product'
    */
-  .patch(productController.updateProduct)
+  .patch(authController.protect, productController.updateProduct)
   /**
    * @swagger
    * /products/{id}:
@@ -116,6 +117,6 @@ router
    *       204:
    *         description: No content.
    */
-  .delete(productController.deleteProduct);
+  .delete(authController.protect, productController.deleteProduct);
 
 module.exports = router;

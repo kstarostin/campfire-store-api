@@ -1,5 +1,6 @@
 const express = require('express');
 
+const authController = require('../controllers/authController');
 const categoryController = require('../controllers/categoryController');
 
 const router = express.Router();
@@ -57,7 +58,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Category'
    */
-  .post(categoryController.createCategory);
+  .post(authController.protect, categoryController.createCategory);
 
 router
   .route('/:id')
@@ -102,7 +103,7 @@ router
    *           type: object
    *           $ref: '#/definitions/Category'
    */
-  .patch(categoryController.updateCategory)
+  .patch(authController.protect, categoryController.updateCategory)
   /**
    * @swagger
    * /categories/{id}:
@@ -116,6 +117,6 @@ router
    *       204:
    *         description: No content.
    */
-  .delete(categoryController.deleteCategory);
+  .delete(authController.protect, categoryController.deleteCategory);
 
 module.exports = router;

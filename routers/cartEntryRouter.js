@@ -1,7 +1,8 @@
 const express = require('express');
 
-const genericOrderEntryController = require('../controllers/genericOrderEntryController');
+const authController = require('../controllers/authController');
 const sessionController = require('../controllers/sessionController');
+const genericOrderEntryController = require('../controllers/genericOrderEntryController');
 
 const router = express.Router({ mergeParams: true });
 
@@ -34,6 +35,7 @@ router
    *         description: List of found cart entries.
    */
   .get(
+    authController.protect,
     sessionController.handleUserIdCartId,
     genericOrderEntryController.getAllEntries,
   )
@@ -62,6 +64,7 @@ router
    *           $ref: '#/definitions/GenericOrderEntry'
    */
   .post(
+    authController.protect,
     sessionController.handleUserIdCartId,
     genericOrderEntryController.assignEntryToCart,
     genericOrderEntryController.createEntry,
@@ -87,6 +90,7 @@ router
    *         description: Found cart entry, if exists.
    */
   .get(
+    authController.protect,
     sessionController.handleUserIdCartId,
     genericOrderEntryController.getEntry,
   )
@@ -118,6 +122,7 @@ router
    *           $ref: '#/definitions/GenericOrderEntry'
    */
   .patch(
+    authController.protect,
     sessionController.handleUserIdCartId,
     genericOrderEntryController.updateEntry,
   )
@@ -137,6 +142,7 @@ router
    *         description: No content.
    */
   .delete(
+    authController.protect,
     sessionController.handleUserIdCartId,
     genericOrderEntryController.deleteEntry,
   );
