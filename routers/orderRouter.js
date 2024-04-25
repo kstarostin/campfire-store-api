@@ -18,9 +18,11 @@ router
    * @swagger
    * /users/{id}/orders:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Orders]
    *     summary: Get orders
-   *     description: Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     description: Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
    *     produces:
    *       - application/json
    *     parameters:
@@ -42,9 +44,11 @@ router
    * @swagger
    * /users/{id}/orders:
    *   post:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Orders]
    *     summary: Place order
-   *     description: Create a new order from a cart.
+   *     description: Create a new order from a cart.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     requestBody:
@@ -76,9 +80,11 @@ router
    * @swagger
    * /users/{id}/orders/{orderId}:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Orders]
    *     summary: Get order
-   *     description: Get an existing order for a user by provided user's ID or email and order ID.
+   *     description: Get an existing order for a user by provided user's ID or email and order ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/orderId'

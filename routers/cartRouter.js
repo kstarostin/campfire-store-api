@@ -19,9 +19,11 @@ router
    * @swagger
    * /users/{id}/carts:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Get carts
-   *     description: Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     description: Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
    *     produces:
    *       - application/json
    *     parameters:
@@ -43,9 +45,11 @@ router
    * @swagger
    * /users/{id}/carts:
    *   post:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Create cart
-   *     description: Create a new cart.
+   *     description: Create a new cart.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/currency'
@@ -77,9 +81,11 @@ router
    * @swagger
    * /users/{id}/carts/{cartId}:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Get cart
-   *     description: Get an existing cart for a user by provided user's ID or email and cart ID.
+   *     description: Get an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -98,9 +104,11 @@ router
    * @swagger
    * /users/{id}/carts/{cartId}:
    *   patch:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Update cart
-   *     description: Update an existing cart for a user by provided user's ID or email and cart ID.
+   *     description: Update an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -129,9 +137,11 @@ router
    * @swagger
    * /users/{id}/carts/{cartId}:
    *   delete:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Delete cart
-   *     description: Delete an existing cart for a user by provided user's ID or email and cart ID.
+   *     description: Delete an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'

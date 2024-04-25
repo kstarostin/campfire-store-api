@@ -47,7 +47,8 @@
 								"users",
 								"signup"
 							]
-						}
+						},
+						"description": "Create a new user account."
 					},
 					"response": []
 				},
@@ -88,7 +89,8 @@
 								"users",
 								"login"
 							]
-						}
+						},
+						"description": "Log in to an existing user account."
 					},
 					"response": []
 				},
@@ -120,11 +122,13 @@
 								"users",
 								"logout"
 							]
-						}
+						},
+						"description": "Log out from the current user account."
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "Authentication and authorization"
 		},
 		{
 			"name": "Cart entries",
@@ -209,7 +213,7 @@
 								}
 							]
 						},
-						"description": "Get list of cart entries for a user's cart. The results can be filtered, sorted, paginated and limited using special query parameters."
+						"description": "Get list of cart entries for a user's cart. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -278,7 +282,7 @@
 								}
 							]
 						},
-						"description": "Create a new entry for a user's cart."
+						"description": "Create a new entry for a user's cart.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -344,7 +348,7 @@
 								}
 							]
 						},
-						"description": "Get an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
+						"description": "Get an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -419,7 +423,7 @@
 								}
 							]
 						},
-						"description": "Update an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
+						"description": "Update an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -471,7 +475,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID."
+						"description": "Delete an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -554,7 +558,7 @@
 								}
 							]
 						},
-						"description": "Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters."
+						"description": "Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -616,7 +620,7 @@
 								}
 							]
 						},
-						"description": "Create a new cart for a user."
+						"description": "Create a new cart for a user.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -675,7 +679,7 @@
 								}
 							]
 						},
-						"description": "Get an existing cart of a user by provided user's ID or email and cart ID."
+						"description": "Get an existing cart of a user by provided user's ID or email and cart ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -743,7 +747,7 @@
 								}
 							]
 						},
-						"description": "Update an existing cart of a user by provided user's ID or email and cart ID."
+						"description": "Update an existing cart of a user by provided user's ID or email and cart ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -788,7 +792,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing cart of a user by provided user's ID or email and cart ID."
+						"description": "Delete an existing cart of a user by provided user's ID or email and cart ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -946,7 +950,7 @@
 								}
 							]
 						},
-						"description": "Create a new category."
+						"description": "Create a new category.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1007,7 +1011,7 @@
 								}
 							]
 						},
-						"description": "Update an existing category by provided ID."
+						"description": "Update an existing category by provided ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1045,7 +1049,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing category by provided ID."
+						"description": "Delete an existing category by provided ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -1128,7 +1132,7 @@
 								}
 							]
 						},
-						"description": "Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters."
+						"description": "Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1190,7 +1194,7 @@
 								}
 							]
 						},
-						"description": "Place an order from a cart."
+						"description": "Place an order from a cart.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1249,7 +1253,7 @@
 								}
 							]
 						},
-						"description": "Get an existing cart of a user by provided user's ID or email and cart ID."
+						"description": "Get an existing order of a user by provided user's ID or email and order ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -1408,7 +1412,7 @@
 								}
 							]
 						},
-						"description": "Create a new product."
+						"description": "Create a new product.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1469,7 +1473,7 @@
 								}
 							]
 						},
-						"description": "Update an existing product by provided ID."
+						"description": "Update an existing product by provided ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1507,7 +1511,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing product by provided ID."
+						"description": "Delete an existing product by provided ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -1569,7 +1573,7 @@
 								}
 							]
 						},
-						"description": "Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters."
+						"description": "Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1607,7 +1611,7 @@
 								}
 							]
 						},
-						"description": "Get an existing user by provided ID or email."
+						"description": "Get an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1646,7 +1650,7 @@
 								"users"
 							]
 						},
-						"description": "Create a new user."
+						"description": "Create a new user.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1693,7 +1697,7 @@
 								}
 							]
 						},
-						"description": "Update an existing user by provided ID or email."
+						"description": "Update an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -1731,7 +1735,7 @@
 								}
 							]
 						},
-						"description": "Delete an existing user by provided ID or email."
+						"description": "Delete an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}

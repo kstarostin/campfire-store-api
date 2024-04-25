@@ -38,9 +38,11 @@ router
    * @swagger
    * /categories:
    *   post:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Create category
-   *     description: Create a new category.
+   *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -82,9 +84,11 @@ router
    * @swagger
    * /categories/{id}:
    *   patch:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Update category
-   *     description: Update an existing category by provided ID.
+   *     description: Update an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
@@ -108,9 +112,11 @@ router
    * @swagger
    * /categories/{id}:
    *   delete:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Delete category
-   *     description: Delete an existing category by provided ID.
+   *     description: Delete an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *     responses:

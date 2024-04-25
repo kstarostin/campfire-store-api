@@ -31,7 +31,11 @@ const document = swaggerJSDoc({
       GenericOrderEntry: mongooseToSwagger(GenericOrderEntry),
     },
   },
-  apis: ['./routers/*.js', './swagger/parameters.yaml'],
+  apis: [
+    './routers/*.js',
+    './swagger/parameters.yaml',
+    './swagger/components.yaml',
+  ],
 });
 
 // Swagger options

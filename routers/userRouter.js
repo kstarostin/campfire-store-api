@@ -13,12 +13,12 @@ const router = express.Router();
  * @swagger
  * tags:
  *   name: Auth
- *   description: Authentication
+ *   description: Authentication and authorization
  */
 
 /**
  * @swagger
- * /signup:
+ * /users/signup:
  *   post:
  *     tags: [Auth]
  *     summary: Sign up
@@ -41,7 +41,7 @@ const router = express.Router();
  *                 type: string
  *     responses:
  *       201:
- *         description: Created user.
+ *         description: Contains authentication token and created user.<br><br>Use this token in the authorize section to get access to protected resources.
  *         schema:
  *           type: object
  *           $ref: '#/definitions/User'
@@ -49,11 +49,11 @@ const router = express.Router();
 router.post('/signup', authController.signup);
 /**
  * @swagger
- * /login:
+ * /users/login:
  *   post:
  *     tags: [Auth]
  *     summary: Log in
- *     description: Log in to an existin user account.
+ *     description: Log in to an existing user account.
  *     requestBody:
  *       description: A JSON object containing log in payload.
  *       required: true
@@ -67,8 +67,8 @@ router.post('/signup', authController.signup);
  *               password:
  *                 type: string
  *     responses:
- *       201:
- *         description: Authenticated user.
+ *       200:
+ *         description: Contains authentication token and authenticated user.<br><br>Use this token in the authorize section to get access to protected resources.
  *         schema:
  *           type: object
  *           $ref: '#/definitions/User'
@@ -76,7 +76,7 @@ router.post('/signup', authController.signup);
 router.post('/login', authController.login);
 /**
  * @swagger
- * /logout:
+ * /users/logout:
  *   get:
  *     tags: [Auth]
  *     summary: Log out
@@ -85,7 +85,7 @@ router.post('/login', authController.login);
  *       - application/json
  *     responses:
  *       200:
- *         description: Response status.
+ *         description: Response status.<br><br>The authentication token is invalidated and can't be used anymore for protected resources.
  */
 router.get('/logout', authController.logout);
 
@@ -104,9 +104,11 @@ router
    * @swagger
    * /users:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get users
-   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
    *     produces:
    *       - application/json
    *     parameters:
@@ -123,9 +125,11 @@ router
    * @swagger
    * /users:
    *   post:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Create user
-   *     description: Create a new user.
+   *     description: Create a new user.<br><br>This resource is protected and requires prior authorization.
    *     requestBody:
    *       description: A JSON object containing user payload.
    *       required: true
@@ -148,9 +152,11 @@ router
    * @swagger
    * /users/{id}:
    *   get:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get user
-   *     description: Get an existing user by provided ID or email.
+   *     description: Get an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:
@@ -162,9 +168,11 @@ router
    * @swagger
    * /users/{id}:
    *   patch:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Update user
-   *     description: Update an existing user by provided ID or email.
+   *     description: Update an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     requestBody:
@@ -186,9 +194,11 @@ router
    * @swagger
    * /users/{id}:
    *   delete:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Delete user
-   *     description: Delete an existing user by provided ID or email.
+   *     description: Delete an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:

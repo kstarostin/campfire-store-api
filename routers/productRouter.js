@@ -38,9 +38,11 @@ router
    * @swagger
    * /products:
    *   post:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Create product
-   *     description: Create a new product.
+   *     description: Create a new product.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -82,9 +84,11 @@ router
    * @swagger
    * /products/{id}:
    *   patch:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Update product
-   *     description: Update an existing product by provided ID.
+   *     description: Update an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
@@ -108,9 +112,11 @@ router
    * @swagger
    * /products/{id}:
    *   delete:
+   *     security:
+   *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Delete product
-   *     description: Delete an existing product by provided ID.
+   *     description: Delete an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *     responses:
