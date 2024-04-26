@@ -69,12 +69,12 @@ exports.signup = catchAsync(async (req, res, next) => {
     roles: [defaultUserRole],
     photo: {
       small: {
-        url: new ImagePathBuilder().for('user').withSize('small').build(),
+        url: new ImagePathBuilder().for('user').size('small').build(),
         altText: `${req.body.name} photo`,
         mimeType: 'image/png',
       },
       thumbnail: {
-        url: new ImagePathBuilder().for('user').withSize('thumbnail').build(),
+        url: new ImagePathBuilder().for('user').size('thumbnail').build(),
         altText: `${req.body.name} photo`,
         mimeType: 'image/png',
       },

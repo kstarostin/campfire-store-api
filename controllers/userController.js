@@ -9,22 +9,51 @@ const AppError = require('../utils/appError');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 const ImagePathBuilder = require('../utils/imagePathBuilder');
-// const { allowedImageMimeTypes } = require('../utils/config');
+const {
+  allowedImageMimeTypes,
+  imageDimensionsMap,
+} = require('../utils/config');
 
 const unlinkAsync = promisify(fs.unlink);
 const multerStorage = multer.memoryStorage();
 
 const multerFilter = (req, file, cb) => {
-  if (['image/jpeg'].includes(file.mimetype)) {
+  if (allowedImageMimeTypes.includes(file.mimetype)) {
     cb(null, true);
   } else {
-    cb(new AppError('Not an image! Please upload only images', 400), false);
+    cb(
+      new AppError(
+        `Allowed image mime types are [${allowedImageMimeTypes.join(', ')}].`,
+        400,
+      ),
+      false,
+    );
   }
 };
 const upload = multer({
   storage: multerStorage,
   fileFilter: multerFilter,
 });
+
+const createImageFile = async (options) => {
+  // Get image side size by its name
+  const size = +imageDimensionsMap.get(options.sizeName);
+  // Build path for an image
+  const imagePath = new ImagePathBuilder()
+    .for(options.resource)
+    .size(options.sizeName)
+    .name(options.name)
+    .mime(`image/jpeg`)
+    .build();
+  // Create the file
+  await sharp(options.file.buffer)
+    .resize(size, size)
+    .flatten({ background: '#ffffff' })
+    .toFormat('jpeg')
+    .jpeg({ quality: 90 })
+    .toFile(`public/${imagePath}`);
+  return imagePath;
+};
 
 // Checks if the ID matches the MongoDB ID format to avoud casting errors.
 const isValidId = (id) => id.match(/^[0-9a-fA-F]{24}$/);
@@ -181,47 +210,35 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
   if (!req.file) {
     return next();
   }
+  // Result file mime type
+  const mimeType = 'image/jpeg';
   // Build base image file name
   const imageName = `user-${req.user.id}-${Date.now()}`;
 
-  // Handle thumbnail image file
-  // Build path for a thumbnail image
-  const imageThumbnailPath = new ImagePathBuilder()
-    .for('user')
-    .withSize('thumbnail')
-    .withName(imageName)
-    .withMime('image/jpeg')
-    .build();
-  // Create the file
-  await sharp(req.file.buffer)
-    .resize(200, 200)
-    .toFormat('jpeg')
-    .jpeg({ quality: 90 })
-    .toFile(`public/${imageThumbnailPath}`);
+  // Create file for a thumbnail image
+  const imageThumbnailPath = await createImageFile({
+    file: req.file,
+    resource: 'user',
+    name: imageName,
+    sizeName: 'thumbnail',
+  });
   // Save the new file meta in request for further usage
   req.imageThumbnail = {
     url: imageThumbnailPath,
-    mimeType: 'image/jpeg',
+    mimeType,
   };
 
-  // Handle small image file
-  // Build path for a small image
-  const imageSmallPath = new ImagePathBuilder()
-    .for('user')
-    .withSize('small')
-    .withName(imageName)
-    .withMime('image/jpeg')
-    .build();
-  // Create the file
-  await sharp(req.file.buffer)
-    .resize(500, 500)
-    .toFormat('jpeg')
-    .jpeg({ quality: 90 })
-    .toFile(`public/${imageSmallPath}`);
+  // Create file for a small image
+  const imageSmallPath = await createImageFile({
+    file: req.file,
+    resource: 'user',
+    name: imageName,
+    sizeName: 'small',
+  });
   // Save the new file meta in request for further usage
   req.imageSmall = {
     url: imageSmallPath,
-    mimeType: 'image/jpeg',
+    mimeType,
   };
 
   next();

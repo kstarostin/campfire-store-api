@@ -1,4 +1,5 @@
 const AppError = require('./appError');
+const { imageDimensionsMap } = require('./config');
 
 class ImagePathBuilder {
   #supportedResources = ['user', 'product'];
@@ -20,30 +21,30 @@ class ImagePathBuilder {
   /**
    * Add image size type to the builder.
    */
-  withSize(size) {
+  size(imageSize) {
     // Validate size
-    if (!Array.from(this.#getDimensionsMap().keys()).includes(size)) {
+    if (!Array.from(imageDimensionsMap.keys()).includes(imageSize)) {
       throw new AppError(
-        `This size is not supported. Image path can be build only for the following sizes [${Array.from(this.#getDimensionsMap().keys()).join(', ')}]`,
+        `This size is not supported. Image path can be build only for the following sizes [${Array.from(imageDimensionsMap.keys()).join(', ')}]`,
       );
     }
-    this.size = size;
+    this.imageSize = imageSize;
     return this;
   }
 
   /**
    * Add image file name to the builder.
    */
-  withName(name) {
-    this.name = name;
+  name(imageName) {
+    this.imageName = imageName;
     return this;
   }
 
   /**
    * Add image file mime type to the builder.
    */
-  withMime(mime) {
-    this.mime = mime;
+  mime(mimeType) {
+    this.mimeType = mimeType;
     return this;
   }
 
@@ -52,27 +53,13 @@ class ImagePathBuilder {
    */
   build() {
     const resourceToken = `${this.resource}s`;
-    const nameToken = this.name ? this.name : 'user_photo_placeholder';
-    const dimensionToken = this.#getDimensionsMap().get(this.size);
-    const formatToken = this.name ? this.mime.split('/')[1] : 'png';
+    const nameToken = this.imageName
+      ? this.imageName
+      : 'user_photo_placeholder';
+    const dimensionToken = imageDimensionsMap.get(this.imageSize);
+    const formatToken = this.imageName ? this.mimeType.split('/')[1] : 'png';
 
-    return `/img/${resourceToken}/${this.size}/${nameToken}_${dimensionToken}.${formatToken}`;
-  }
-
-  /**
-   * Get the map of image sizes.
-   * The key is an image size type, the value is an actual size in pixels of one side (assuming that the image is square).
-   */
-  #getDimensionsMap() {
-    const dimensionsMap = new Map();
-
-    dimensionsMap.set('thumbnail', '200');
-    dimensionsMap.set('small', '500');
-    // dimensionsMap.set('medium', '1000');
-    // dimensionsMap.set('large', '2000');
-    // dimensionsMap.set('original', 'original');
-
-    return dimensionsMap;
+    return `/img/${resourceToken}/${this.imageSize}/${nameToken}_${dimensionToken}.${formatToken}`;
   }
 }
 
