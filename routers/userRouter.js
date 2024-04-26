@@ -2,8 +2,8 @@ const express = require('express');
 const cartRouter = require('./cartRouter');
 const orderRouter = require('./orderRouter');
 
-const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
+const userController = require('../controllers/userController');
 
 const router = express.Router();
 
@@ -91,7 +91,12 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(authController.restrictTo('admin', 'me'), userController.updateUser)
+  .patch(
+    authController.restrictTo('admin', 'me'),
+    userController.uploadUserPhoto,
+    userController.resizeUserPhoto,
+    userController.updateUser,
+  )
   /**
    * @swagger
    * /users/{id}:

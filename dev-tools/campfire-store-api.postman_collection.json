@@ -1856,13 +1856,14 @@
 						"method": "PATCH",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
 								}
-							}
+							]
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/users/:id",

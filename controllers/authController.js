@@ -4,12 +4,11 @@ const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const { defaultUserRole } = require('../utils/config');
+const ImagePathBuilder = require('../utils/imagePathBuilder');
 
 const getJwtSecret = () => process.env.JWT_SECRET;
 const getJwtExpiresIn = () => process.env.JWT_EXPIRES_IN;
 const getJwtCookieExpiresIn = () => process.env.JWT_COOKIE_EXPIRES_IN;
-
-const userPhotoPath = '/img/users';
 
 const signToken = (id) =>
   jwt.sign({ id }, getJwtSecret(), { expiresIn: getJwtExpiresIn() });
@@ -70,12 +69,12 @@ exports.signup = catchAsync(async (req, res, next) => {
     roles: [defaultUserRole],
     photo: {
       small: {
-        url: `${userPhotoPath}/small/user_photo_placeholder_500.png`,
+        url: new ImagePathBuilder().for('user').withSize('small').build(),
         altText: `${req.body.name} photo`,
         mimeType: 'image/png',
       },
       thumbnail: {
-        url: `${userPhotoPath}/thumbnail/user_photo_placeholder_200.png`,
+        url: new ImagePathBuilder().for('user').withSize('thumbnail').build(),
         altText: `${req.body.name} photo`,
         mimeType: 'image/png',
       },
