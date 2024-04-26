@@ -5,6 +5,7 @@ const GenericOrderEntry = require('../models/genericOrderEntryModel');
 const Product = require('../models/productModel');
 const factory = require('./controllerFactory');
 const { allowedCurrencies } = require('../utils/config');
+const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
 const updateEntryPrice = async function (entry, newCurrency) {
   const product = await Product.findById(entry.product);
@@ -106,8 +107,12 @@ exports.updateCart = catchAsync(async (req, res, next) => {
     user: req.params.userId,
     _id: req.params.cartId,
   };
-  // Do not allow to change calculated total price
-  req.body.total = undefined;
+  // Sanitize request body
+  req.body = new RequestBodySanitizer([
+    'deliveryAddress',
+    'billingAddress',
+    'deliveryNote',
+  ]).sanitize(req.body);
 
   const cart = await Cart.findOne(filter);
   let recalculate = false;
