@@ -271,6 +271,18 @@
     "email": "daniel.nguyen@cosmosmail.net",
     "password": "test1234",
     "roles": ["user"],
+    "photo": {
+      "small": {
+        "url": "/img/users/small/user_photo_placeholder_500.jpg",
+        "altText": "Daniel Nguyen photo",
+        "mimeType": "image/png"
+      },
+      "thumbnail": {
+        "url": "/img/users/thumbnail/user_photo_placeholder_200.jpg",
+        "altText": "Daniel Nguyen photo",
+        "mimeType": "image/png"
+      }
+    },
     "deliveryAddresses": [
       {
         "title": "662b497f11aed4312b44a001",
@@ -289,6 +301,18 @@
     "name": "Sophia Wright",
     "email": "s.wright@dreamworld.org",
     "password": "test1234",
-    "roles": ["user"]
+    "roles": ["user"],
+    "photo": {
+      "small": {
+        "url": "/img/users/small/user_photo_placeholder_500.jpg",
+        "altText": "Sophia Wright photo",
+        "mimeType": "image/png"
+      },
+      "thumbnail": {
+        "url": "/img/users/thumbnail/user_photo_placeholder_200.jpg",
+        "altText": "Sophia Wright photo",
+        "mimeType": "image/png"
+      }
+    }
   }
 ]

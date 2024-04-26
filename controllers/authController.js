@@ -9,6 +9,8 @@ const getJwtSecret = () => process.env.JWT_SECRET;
 const getJwtExpiresIn = () => process.env.JWT_EXPIRES_IN;
 const getJwtCookieExpiresIn = () => process.env.JWT_COOKIE_EXPIRES_IN;
 
+const userPhotoPath = '/img/users';
+
 const signToken = (id) =>
   jwt.sign({ id }, getJwtSecret(), { expiresIn: getJwtExpiresIn() });
 
@@ -66,6 +68,18 @@ exports.signup = catchAsync(async (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
     roles: [defaultUserRole],
+    photo: {
+      small: {
+        url: `${userPhotoPath}/small/user_photo_placeholder_500.png`,
+        altText: `${req.body.name} photo`,
+        mimeType: 'image/png',
+      },
+      thumbnail: {
+        url: `${userPhotoPath}/thumbnail/user_photo_placeholder_200.png`,
+        altText: `${req.body.name} photo`,
+        mimeType: 'image/png',
+      },
+    },
   });
   // Generate token, send response
   createAndSendToken(newUser, 201, req, res);
