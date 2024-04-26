@@ -2,6 +2,7 @@ const User = require('../models/userModel');
 const factory = require('./controllerFactory');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
+const DocumentSanitizer = require('../utils/documentSanitizer');
 
 exports.getAllUsers = factory.getAll(User, {
   defaultLimit: 25,
@@ -17,7 +18,7 @@ const isValidId = (id) => id.match(/^[0-9a-fA-F]{24}$/);
  * @returns a successful response with the found user, if such exists, or an error response.
  */
 exports.getUser = catchAsync(async (req, res, next) => {
-  const user = isValidId(req.params.userId)
+  let user = isValidId(req.params.userId)
     ? await User.findById({ _id: req.params.userId })
     : await User.findOne({
         email: req.params.userId,
@@ -25,6 +26,7 @@ exports.getUser = catchAsync(async (req, res, next) => {
   if (!user) {
     return next(new AppError('No user found with this ID or email', 404));
   }
+  user = new DocumentSanitizer(req.language, req.currency, 6).sanitize(user);
   res.status(200).json({
     status: 'success',
     data: {
@@ -57,13 +59,17 @@ exports.updateUser = catchAsync(async (req, res, next) => {
     );
   }
   // Perform update
-  const updatedUser = await User.findByIdAndUpdate(
+  let updatedUser = await User.findByIdAndUpdate(
     user.id,
     { ...req.body, ...{ updatedAt: Date.now() } },
     {
       new: true,
       runValidators: true,
     },
+  );
+
+  updatedUser = new DocumentSanitizer(req.language, req.currency, 6).sanitize(
+    updatedUser,
   );
 
   res.status(200).json({

@@ -67,7 +67,7 @@ exports.getAll = (Model, limitOptions) =>
         : await Model.countDocuments(filter);
     // const documents = await features.dbQuery.explain();
     const documents = (await features.dbQuery).map((document) =>
-      new DocumentSanitizer(req.language, req.currency, 4).sanitize(document),
+      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
     );
 
     // SEND RESPONSE

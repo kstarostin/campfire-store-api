@@ -82,7 +82,6 @@ exports.login = catchAsync(async (req, res, next) => {
   }
   // Get user
   const user = await User.findOne({ email }).select('+password');
-  console.log(user);
   // Validate password
   if (!user || !(await user.validatePassword(password, user.password))) {
     return next(new AppError('Incorrect email or password!', 401));
@@ -95,8 +94,8 @@ exports.login = catchAsync(async (req, res, next) => {
  * Perform logout by sending back dummy JWT with short expiration time.
  */
 exports.logout = (req, res) => {
-  // Replace JWT value with dummy and set for quick expiration
-  res.cookie('jwt', 'loggedout', {
+  // Replace JWT value with empty and set for quick expiration
+  res.cookie('jwt', '', {
     expires: new Date(Date.now() + 5 * 1000),
     httpOnly: true,
   });

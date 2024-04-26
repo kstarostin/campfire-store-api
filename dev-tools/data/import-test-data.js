@@ -1,6 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const Title = require('../../models/titleModel');
 const User = require('../../models/userModel');
 const Category = require('../../models/categoryModel');
 const Product = require('../../models/productModel');
@@ -18,6 +19,7 @@ const DB = process.env.DATABASE.replace(
 mongoose.connect(DB).then(() => console.log('DB connection successful!'));
 
 // READ JSON FILES
+const titles = JSON.parse(fs.readFileSync(`${__dirname}/titles.json`, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const categories = JSON.parse(
   fs.readFileSync(`${__dirname}/categories.json`, 'utf-8'),
@@ -36,6 +38,8 @@ const orderEntries = JSON.parse(
 
 // IMPORT DATA INTO DB
 const performImport = async () => {
+  console.log('Creating titles...');
+  await Title.create(titles);
   console.log('Creating users...');
   await User.create(users, { validateBeforeSave: false });
   console.log('Creating categories...');
@@ -76,6 +80,8 @@ const performDelete = async () => {
   await Category.deleteMany();
   console.log('Deleteing users...');
   await User.deleteMany();
+  console.log('Deleteing titles...');
+  await Title.deleteMany();
   console.log('Data successfully deleted!');
 };
 

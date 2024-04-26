@@ -8,6 +8,7 @@ const User = require('../models/userModel');
 const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
 const GenericOrderEntry = require('../models/genericOrderEntryModel');
+const Title = require('../models/titleModel');
 
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
@@ -23,12 +24,13 @@ const document = swaggerJSDoc({
     },
     servers: [{ url: apiPath }],
     definitions: {
-      Category: mongooseToSwagger(Category),
-      Product: mongooseToSwagger(Product),
-      User: mongooseToSwagger(User),
-      Cart: mongooseToSwagger(Cart),
-      Order: mongooseToSwagger(Order),
       GenericOrderEntry: mongooseToSwagger(GenericOrderEntry),
+      Cart: mongooseToSwagger(Cart),
+      Category: mongooseToSwagger(Category),
+      Order: mongooseToSwagger(Order),
+      Product: mongooseToSwagger(Product),
+      Title: mongooseToSwagger(Title),
+      User: mongooseToSwagger(User),
     },
   },
   apis: [

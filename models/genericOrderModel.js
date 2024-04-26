@@ -67,10 +67,25 @@ genericOrderSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'user',
     select: '_id name email',
-  }).populate({
-    path: 'entries',
-    select: '_id product quantity price',
-  });
+  })
+    .populate({
+      path: 'entries',
+      select: '_id product quantity price',
+    })
+    .populate({
+      path: 'deliveryAddress',
+      populate: {
+        path: 'title',
+        select: '_id code nameI18n',
+      },
+    })
+    .populate({
+      path: 'billingAddress',
+      populate: {
+        path: 'title',
+        select: '_id code nameI18n',
+      },
+    });
   next();
 });
 

@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "501218ea-77eb-4c6e-b898-3789d8090d4b",
 		"name": "Campfire Store API",
-		"description": "API for Campfire online shop.",
+		"description": "API for Campfire online shop. It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21845599"
 	},
@@ -218,6 +218,72 @@
 					"response": []
 				},
 				{
+					"name": "Get cart entry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries/:entryId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId",
+								"entries",
+								":entryId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								},
+								{
+									"key": "entryId",
+									"value": "",
+									"description": "ID of an entry to search for."
+								}
+							]
+						},
+						"description": "Get an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID.\n\nThis resource is protected and requires prior authorization."
+					},
+					"response": []
+				},
+				{
 					"name": "Create cart entry",
 					"request": {
 						"auth": {
@@ -283,72 +349,6 @@
 							]
 						},
 						"description": "Create a new entry for a user's cart.\n\nThis resource is protected and requires prior authorization."
-					},
-					"response": []
-				},
-				{
-					"name": "Get cart entry",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{jwt}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId/entries/:entryId",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"users",
-								":userId",
-								"carts",
-								":cartId",
-								"entries",
-								":entryId"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
-							"variable": [
-								{
-									"key": "userId",
-									"value": "",
-									"description": "ID or email of a user to search for."
-								},
-								{
-									"key": "cartId",
-									"value": "",
-									"description": "ID of a cart to search for."
-								},
-								{
-									"key": "entryId",
-									"value": "",
-									"description": "ID of an entry to search for."
-								}
-							]
-						},
-						"description": "Get an existing entry of a user's cart by provided user's ID or email, cart ID and entry ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				},
@@ -563,6 +563,65 @@
 					"response": []
 				},
 				{
+					"name": "Get cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"carts",
+								":cartId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "cartId",
+									"value": "",
+									"description": "ID of a cart to search for."
+								}
+							]
+						},
+						"description": "Get an existing cart of a user by provided user's ID or email and cart ID.\n\nThis resource is protected and requires prior authorization."
+					},
+					"response": []
+				},
+				{
 					"name": "Create cart",
 					"request": {
 						"auth": {
@@ -625,65 +684,6 @@
 					"response": []
 				},
 				{
-					"name": "Get cart",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{jwt}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/api/v1/users/:userId/carts/:cartId",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"users",
-								":userId",
-								"carts",
-								":cartId"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
-							"variable": [
-								{
-									"key": "userId",
-									"value": "",
-									"description": "ID or email of a user to search for."
-								},
-								{
-									"key": "cartId",
-									"value": "",
-									"description": "ID of a cart to search for."
-								}
-							]
-						},
-						"description": "Get an existing cart of a user by provided user's ID or email and cart ID.\n\nThis resource is protected and requires prior authorization."
-					},
-					"response": []
-				},
-				{
 					"name": "Update cart",
 					"request": {
 						"auth": {
@@ -700,7 +700,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"deliveryAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"billingAddress\": {\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"deliveryNote\": \"\"\r\n}",
+							"raw": "{\r\n    \"deliveryAddress\": {\r\n        \"title\": \"\",\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"billingAddress\": {\r\n        \"title\": \"\",\r\n        \"name\": \"\",\r\n        \"phone\": \"\",\r\n        \"street\": \"\",\r\n        \"house\": \"\",\r\n        \"postalCode\": \"\",\r\n        \"town\": \"\",\r\n        \"country\": \"\"\r\n    },\r\n    \"deliveryNote\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -825,12 +825,6 @@
 									"disabled": true
 								},
 								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								},
-								{
 									"key": "limit",
 									"value": "3",
 									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
@@ -882,18 +876,13 @@
 									"value": "de",
 									"description": "Session language. Default is en.",
 									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
 								}
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": ""
+									"value": "",
+									"description": "ID of a category to search for."
 								}
 							]
 						},
@@ -940,12 +929,6 @@
 									"key": "language",
 									"value": "de",
 									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							]
@@ -994,12 +977,6 @@
 									"key": "language",
 									"value": "de",
 									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
 									"disabled": true
 								}
 							],
@@ -1137,6 +1114,65 @@
 					"response": []
 				},
 				{
+					"name": "Get order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:userId/orders/:orderId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":userId",
+								"orders",
+								":orderId"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "orderId",
+									"value": "",
+									"description": "ID of an order to search for."
+								}
+							]
+						},
+						"description": "Get an existing order of a user by provided user's ID or email and order ID.\n\nThis resource is protected and requires prior authorization."
+					},
+					"response": []
+				},
+				{
 					"name": "Place order",
 					"request": {
 						"auth": {
@@ -1195,65 +1231,6 @@
 							]
 						},
 						"description": "Place an order from a cart.\n\nThis resource is protected and requires prior authorization."
-					},
-					"response": []
-				},
-				{
-					"name": "Get order",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{jwt}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/api/v1/users/:userId/orders/:orderId",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"users",
-								":userId",
-								"orders",
-								":orderId"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								},
-								{
-									"key": "currency",
-									"value": "EUR",
-									"description": "Session currency. Default is USD.",
-									"disabled": true
-								}
-							],
-							"variable": [
-								{
-									"key": "userId",
-									"value": "",
-									"description": "ID or email of a user to search for."
-								},
-								{
-									"key": "orderId",
-									"value": "",
-									"description": "ID of an order to search for."
-								}
-							]
-						},
-						"description": "Get an existing order of a user by provided user's ID or email and order ID.\n\nThis resource is protected and requires prior authorization."
 					},
 					"response": []
 				}
@@ -1519,6 +1496,240 @@
 			"description": "Product management"
 		},
 		{
+			"name": "Titles",
+			"item": [
+				{
+					"name": "Get all titles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/titles",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"titles"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma separated set of returned fields.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Get list of titles. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
+					"name": "Get title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/titles/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"titles",
+								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a title to search for."
+								}
+							]
+						},
+						"description": "Get an existing title by provided ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Create title",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"\",\r\n    \"nameI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"parentCategory\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/titles",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"titles"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Create a new title.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+					},
+					"response": []
+				},
+				{
+					"name": "Update title",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"\",\r\n    \"nameI18n\": {\r\n        \"en\": \"\",\r\n        \"de\": \"\"\r\n    },\r\n    \"parentCategory\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/v1/titles/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"titles",
+								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a title to search for."
+								}
+							]
+						},
+						"description": "Update an existing title by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete title",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/titles/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"titles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a title to search for."
+								}
+							]
+						},
+						"description": "Delete an existing title by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+					},
+					"response": []
+				}
+			],
+			"description": "Title management"
+		},
+		{
 			"name": "Users",
 			"item": [
 				{
@@ -1547,6 +1758,12 @@
 								"users"
 							],
 							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
 								{
 									"key": "limit",
 									"value": "3",
@@ -1603,6 +1820,14 @@
 								"users",
 								":id"
 							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
+							],
 							"variable": [
 								{
 									"key": "id",
@@ -1632,7 +1857,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1648,6 +1873,14 @@
 								"api",
 								"v1",
 								"users"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
 							]
 						},
 						"description": "Create a new user.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
@@ -1671,7 +1904,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1688,6 +1921,14 @@
 								"v1",
 								"users",
 								":id"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								}
 							],
 							"variable": [
 								{

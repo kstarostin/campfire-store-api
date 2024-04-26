@@ -42,6 +42,12 @@ parameters:
     description: ID of a product to search for.
     in: path
     required: true
+  # Title
+  titleId:
+    name: id
+    description: ID of a title to search for.
+    in: path
+    required: true
   # User
   userIdOrEmail:
     name: id

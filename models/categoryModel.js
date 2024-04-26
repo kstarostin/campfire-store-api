@@ -25,7 +25,7 @@ const categorySchema = new mongoose.Schema(
         32,
         'Category code length must be no more than 32 characters long.',
       ],
-      minlength: [2, 'Product code length must at least 2 characters long.'],
+      minlength: [2, 'Category code length must at least 2 characters long.'],
     },
     nameI18n: {
       type: i18nTextSchema({

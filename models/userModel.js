@@ -74,6 +74,7 @@ const userSchema = new mongoose.Schema(
 // Indexes
 userSchema.index({ email: 1 });
 
+// Document middleware
 userSchema.pre('save', async function (next) {
   // Only run this function if password was modified
   if (!this.isModified('password')) {
@@ -89,6 +90,24 @@ userSchema.pre('save', function (next) {
     return next();
   }
   this.passwordChangedAt = Date.now() - 1000;
+  next();
+});
+
+// Query middleware
+userSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'deliveryAddresses',
+    populate: {
+      path: 'title',
+      select: '_id code nameI18n',
+    },
+  }).populate({
+    path: 'billingAddresses',
+    populate: {
+      path: 'title',
+      select: '_id code nameI18n',
+    },
+  });
   next();
 });
 

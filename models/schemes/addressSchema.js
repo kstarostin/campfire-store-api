@@ -5,6 +5,10 @@ const validator = require('validator');
  * ADDRESS SCHEMA
  */
 const addressSchema = new mongoose.Schema({
+  title: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'Title',
+  },
   name: {
     type: String,
     required: [true, 'Address must have a name'],

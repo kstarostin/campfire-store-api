@@ -24,7 +24,6 @@ router
    *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *       - $ref: '#/parameters/limit'
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
@@ -45,7 +44,6 @@ router
    *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
    *     parameters:
    *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     requestBody:
    *       description: A JSON object containing category payload.
    *       required: true
@@ -80,7 +78,6 @@ router
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     responses:
    *       200:
    *         description: Found category, if exists.
@@ -98,7 +95,6 @@ router
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
-   *       - $ref: '#/parameters/currency'
    *     requestBody:
    *       description: A JSON object containing category payload.
    *       required: true

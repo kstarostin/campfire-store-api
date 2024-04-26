@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "662b497f11aed4312b44a001",
+    "code": "mr",
+    "nameI18n": {
+      "en": "Mr.",
+      "de": "Herr"
+    }
+  },
+  {
+    "_id": "662b49dddfa2e098067212f4",
+    "code": "mrs",
+    "nameI18n": {
+      "en": "Mrs.",
+      "de": "Frau"
+    }
+  }
+]

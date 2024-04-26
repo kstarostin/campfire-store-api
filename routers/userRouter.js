@@ -29,6 +29,7 @@ router
    *     produces:
    *       - application/json
    *     parameters:
+   *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/limit'
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
@@ -49,6 +50,8 @@ router
    *     tags: [Users]
    *     summary: Create user
    *     description: Create a new user.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     parameters:
+   *       - $ref: '#/parameters/language'
    *     requestBody:
    *       description: A JSON object containing user payload.
    *       required: true
@@ -80,6 +83,7 @@ router
    *     description: Get an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only request themselves.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/language'
    *     responses:
    *       200:
    *         description: Found user, if exists.
@@ -98,6 +102,7 @@ router
    *     description: Update an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only update themselves.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/language'
    *     requestBody:
    *       description: A JSON object containing user payload.
    *       required: true
