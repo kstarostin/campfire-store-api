@@ -1892,7 +1892,7 @@
 								}
 							]
 						},
-						"description": "Update an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only update themselves."
+						"description": "Update an existing user by provided ID or email. Alternatively, this endpoint can be used to upload/replace user's photo.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only update themselves."
 					},
 					"response": []
 				},

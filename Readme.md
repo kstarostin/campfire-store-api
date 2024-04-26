@@ -12,9 +12,10 @@ The API provides access to the shop's products, category system and simple user 
 1. API documentation is powered by [Swagger UI](https://swagger.io/tools/swagger-ui/) and available on `/` or `/api/v1/api-docs/`.
 2. Protected routes require authorization with JWT. Some routes are additionally restricted by roles.
 3. Supports internationalization with multiple currencies and text localization. Use query parameters `language` and `currency` to tweak the responses.
-4. API requests are limited per IP.
-5. Protected against parameter pollution and NoSQL query injection.
-6. Supports CORS and secure HTTP headers.
+4. Supports uploading of a user's photo.
+5. API requests are limited per IP.
+6. Protected against parameter pollution and NoSQL query injection.
+7. Supports CORS and secure HTTP headers.
 
 ## Project structure
 
