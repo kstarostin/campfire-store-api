@@ -42,6 +42,8 @@ router
    *     tags: [Categories]
    *     summary: Create category
    *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *     requestBody:
@@ -92,6 +94,8 @@ router
    *     tags: [Categories]
    *     summary: Update category
    *     description: Update an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'

@@ -42,6 +42,8 @@ router
    *     tags: [Titles]
    *     summary: Create title
    *     description: Create a new title.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *     requestBody:
@@ -92,6 +94,8 @@ router
    *     tags: [Titles]
    *     summary: Update title
    *     description: Update an existing title by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/titleId'
    *       - $ref: '#/parameters/language'

@@ -43,6 +43,8 @@ router
    *     tags: [Products]
    *     summary: Create product
    *     description: Create a new product.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -95,6 +97,8 @@ router
    *     tags: [Products]
    *     summary: Update product
    *     description: Update an existing product by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'

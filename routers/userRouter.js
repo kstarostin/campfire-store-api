@@ -72,16 +72,25 @@ router
    *     tags: [Users]
    *     summary: Update user
    *     description: Update an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only update themselves.
+   *     consumes:
+   *       - application/json
+   *       - multipart/form-data
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/language'
    *     requestBody:
-   *       description: A JSON object containing user payload.
-   *       required: true
+   *       description: A JSON object containing user payload or a form with user photo image.
    *       content:
    *         application/json:
    *           schema:
    *             $ref: '#/definitions/User'
+   *         multipart/form-data:
+   *           schema:
+   *             type: object
+   *             properties:
+   *               photo:
+   *                 type: string
+   *                 format: binary
    *     responses:
    *       200:
    *         description: Updated user document.

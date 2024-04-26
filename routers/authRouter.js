@@ -18,6 +18,8 @@ const router = express.Router();
  *     tags: [Authorization]
  *     summary: Sign up
  *     description: Create a new user account.
+ *     consumes:
+ *       - application/json
  *     requestBody:
  *       description: A JSON object containing sign up payload.
  *       required: true
@@ -49,6 +51,8 @@ router.post('/signup', authController.signup);
  *     tags: [Authorization]
  *     summary: Log in
  *     description: Log in to an existing user account.
+ *     consumes:
+ *       - application/json
  *     requestBody:
  *       description: A JSON object containing log in payload.
  *       required: true

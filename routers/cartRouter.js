@@ -52,6 +52,8 @@ router
    *     tags: [Carts]
    *     summary: Create cart
    *     description: Create a new cart.<br><br>This resource is protected and requires prior authorization.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/currency'
@@ -120,6 +122,8 @@ router
    *     tags: [Carts]
    *     summary: Update cart
    *     description: Update an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'

@@ -51,6 +51,8 @@ router
    *     tags: [Orders]
    *     summary: Place order
    *     description: Create a new order from a cart.<br><br>This resource is protected and requires prior authorization.
+   *     consumes:
+   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     requestBody:
