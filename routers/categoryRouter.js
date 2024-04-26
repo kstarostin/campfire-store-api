@@ -30,7 +30,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found categories.
+   *         description: List of found category documents.
    */
   .get(categoryController.getAllCategories)
   /**
@@ -53,7 +53,7 @@ router
    *             $ref: '#/definitions/Category'
    *     responses:
    *       201:
-   *         description: Created category.
+   *         description: Created category document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Category'
@@ -80,7 +80,7 @@ router
    *       - $ref: '#/parameters/language'
    *     responses:
    *       200:
-   *         description: Found category, if exists.
+   *         description: Found category document, if exists.
    */
   .get(categoryController.getCategory)
   /**
@@ -104,7 +104,7 @@ router
    *             $ref: '#/definitions/Category'
    *     responses:
    *       200:
-   *         description: Updated category.
+   *         description: Updated category document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Category'

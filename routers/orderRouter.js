@@ -33,7 +33,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found user's orders.
+   *         description: List of found user's order documents.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -65,7 +65,7 @@ router
    *                 type: string
    *     responses:
    *       201:
-   *         description: Placed order.
+   *         description: Placed order document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Order'
@@ -96,7 +96,7 @@ router
    *       - $ref: '#/parameters/currency'
    *     responses:
    *       200:
-   *         description: Found order, if exists.
+   *         description: Found order document, if exists.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

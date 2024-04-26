@@ -2,6 +2,7 @@ const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsync = require('../utils/catchAsync');
 const DocumentSanitizer = require('../utils/documentSanitizer');
+const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
 /**
  * Build a filter condition for request parameters: userId and cartId,
@@ -126,8 +127,12 @@ exports.getOne = (Model, populateOptions) =>
  * @param {*} Model the model type.
  * @returns a successful response with the created document.
  */
-exports.createOne = (Model) =>
+exports.createOne = (Model, bodySanitizerWhitelist = []) =>
   catchAsync(async (req, res, next) => {
+    // Sanitize request body
+    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(
+      req.body,
+    );
     const newDocument = await Model.create(req.body);
 
     res.status(201).json({
@@ -144,11 +149,15 @@ exports.createOne = (Model) =>
  * @returns a successful response with the updated document, if it was found and updated,
  * or an error response.
  */
-exports.updateOne = (Model) =>
+exports.updateOne = (Model, bodySanitizerWhitelist = []) =>
   catchAsync(async (req, res, next) => {
     // To allow for nested GET objects on user
     const filter = await getIdConditionsForOne(req);
-
+    // Sanitize request body
+    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(
+      req.body,
+    );
+    // Perform update
     let document = await Model.findOneAndUpdate(
       filter,
       { ...req.body, ...{ updatedAt: Date.now() } },
@@ -157,11 +166,11 @@ exports.updateOne = (Model) =>
         runValidators: true,
       },
     );
-
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
     }
 
+    // Sanitize response document
     document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(
       document,
     );

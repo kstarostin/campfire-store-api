@@ -34,7 +34,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found cart entries.
+   *         description: List of found cart entry documents.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -71,7 +71,7 @@ router
    *                 type: string
    *     responses:
    *       201:
-   *         description: Created cart entry.
+   *         description: Created cart entry document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/GenericOrderEntry'
@@ -104,7 +104,7 @@ router
    *       - $ref: '#/parameters/currency'
    *     responses:
    *       200:
-   *         description: Found cart entry, if exists.
+   *         description: Found cart entry document, if exists.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -140,7 +140,7 @@ router
    *                 type: number
    *     responses:
    *       200:
-   *         description: Updated cart entry.
+   *         description: Updated cart entry document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/GenericOrderEntry'

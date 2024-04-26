@@ -30,7 +30,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found titles.
+   *         description: List of found title documents.
    */
   .get(titleController.getAllTitles)
   /**
@@ -53,7 +53,7 @@ router
    *             $ref: '#/definitions/Title'
    *     responses:
    *       201:
-   *         description: Created title.
+   *         description: Created title document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Title'
@@ -80,7 +80,7 @@ router
    *       - $ref: '#/parameters/language'
    *     responses:
    *       200:
-   *         description: Found title, if exists.
+   *         description: Found title document, if exists.
    */
   .get(titleController.getTitle)
   /**
@@ -104,7 +104,7 @@ router
    *             $ref: '#/definitions/Title'
    *     responses:
    *       200:
-   *         description: Updated title.
+   *         description: Updated title document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Title'

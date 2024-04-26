@@ -6,6 +6,6 @@ exports.getAllTitles = factory.getAll(Title, {
   maxLimit: 100,
 });
 exports.getTitle = factory.getOne(Title);
-exports.createTitle = factory.createOne(Title);
-exports.updateTitle = factory.updateOne(Title);
+exports.createTitle = factory.createOne(Title, ['code', 'nameI18n']);
+exports.updateTitle = factory.updateOne(Title, ['code', 'nameI18n']);
 exports.deleteTitle = factory.deleteOne(Title);

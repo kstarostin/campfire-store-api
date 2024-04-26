@@ -3,6 +3,7 @@ const factory = require('./controllerFactory');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const DocumentSanitizer = require('../utils/documentSanitizer');
+const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
 exports.getAllUsers = factory.getAll(User, {
   defaultLimit: 25,
@@ -49,20 +50,32 @@ exports.updateUser = catchAsync(async (req, res, next) => {
   const user = isValidId(req.params.userId)
     ? await User.findById(req.params.userId)
     : await User.findOne({ email: req.params.userId });
+
   // Check existence
   if (!user) {
     return next(new AppError('No user found with this ID or email', 404));
   }
-  // Make sure non-admins can't manage their roles
-  if (!req.user?.roles?.includes('admin')) {
-    req.body.roles = undefined;
+
+  // Sanitize request body
+  const sanitizerWhitelist = [
+    'name',
+    'email',
+    'deliveryAddresses',
+    'billingAddresses',
+  ];
+  // Additionally, make sure only admins can manage their roles
+  if (req.user?.roles?.includes('admin')) {
+    sanitizerWhitelist.push('roles');
   }
+  req.body = new RequestBodySanitizer(sanitizerWhitelist).sanitize(req.body);
+
   // Forbid changing passwords on this route
   if (req.body.password) {
     return next(
       new AppError('This route does not allow changing passwords.', 400),
     );
   }
+
   // Perform update
   let updatedUser = await User.findByIdAndUpdate(
     user.id,
@@ -73,6 +86,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
     },
   );
 
+  // Sanitize response document
   updatedUser = new DocumentSanitizer(req.language, req.currency, 6).sanitize(
     updatedUser,
   );

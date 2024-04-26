@@ -4,6 +4,7 @@ const factory = require('./controllerFactory');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const DocumentSanitizer = require('../utils/documentSanitizer');
+const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
 /**
  * Calculate total entry price based on the product price filtered by the cart currency and the quantity.
@@ -58,6 +59,12 @@ exports.createEntry = catchAsync(async (req, res, next) => {
       next,
     );
   }
+  // Sanitize request body
+  req.body = new RequestBodySanitizer([
+    'product',
+    'quantity',
+    'parent',
+  ]).sanitize(req.body);
   // Create a new cart / order entry
   let newDocument = await GenericOrderEntry.create(req.body);
   newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(
@@ -93,8 +100,8 @@ exports.updateEntry = catchAsync(async (req, res, next) => {
       next,
     );
   }
-  // Cart entry product can't be changed
-  req.body.product = undefined;
+  // Sanitize request body
+  req.body = new RequestBodySanitizer(['quantity']).sanitize(req.body);
 
   let updatedDocument = await GenericOrderEntry.findByIdAndUpdate(
     filter,

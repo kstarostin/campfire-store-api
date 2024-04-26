@@ -31,7 +31,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found products.
+   *         description: List of found product documents.
    */
   .get(productController.getAllProducts)
   /**
@@ -55,7 +55,7 @@ router
    *             $ref: '#/definitions/Product'
    *     responses:
    *       201:
-   *         description: Created product.
+   *         description: Created product document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Product'
@@ -83,7 +83,7 @@ router
    *       - $ref: '#/parameters/currency'
    *     responses:
    *       200:
-   *         description: Found product, if exists.
+   *         description: Found product document, if exists.
    */
   .get(productController.getProduct)
   /**
@@ -108,7 +108,7 @@ router
    *             $ref: '#/definitions/Product'
    *     responses:
    *       200:
-   *         description: Updated product.
+   *         description: Updated product document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Product'

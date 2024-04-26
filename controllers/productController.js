@@ -6,6 +6,18 @@ exports.getAllProducts = factory.getAll(Product, {
   maxLimit: 50,
 });
 exports.getProduct = factory.getOne(Product, [{ path: 'category' }]);
-exports.createProduct = factory.createOne(Product);
-exports.updateProduct = factory.updateOne(Product);
+exports.createProduct = factory.createOne(Product, [
+  'name',
+  'descriptionI18n',
+  'prices',
+  'manufacturer',
+  'category',
+]);
+exports.updateProduct = factory.updateOne(Product, [
+  'name',
+  'descriptionI18n',
+  'prices',
+  'manufacturer',
+  'category',
+]);
 exports.deleteProduct = factory.deleteOne(Product);

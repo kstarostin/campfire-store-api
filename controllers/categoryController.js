@@ -9,6 +9,14 @@ exports.getCategory = factory.getOne(Category, [
   { path: 'subCategories' },
   { path: 'parentCategory' },
 ]);
-exports.createCategory = factory.createOne(Category);
-exports.updateCategory = factory.updateOne(Category);
+exports.createCategory = factory.createOne(Category, [
+  'code',
+  'nameI18n',
+  'parentCategory',
+]);
+exports.updateCategory = factory.updateOne(Category, [
+  'code',
+  'nameI18n',
+  'parentCategory',
+]);
 exports.deleteCategory = factory.deleteOne(Category);

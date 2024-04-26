@@ -34,7 +34,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found user's carts.
+   *         description: List of found user's cart documents.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -69,7 +69,7 @@ router
    *             currency: USD
    *     responses:
    *       201:
-   *         description: Created cart.
+   *         description: Created cart document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Cart'
@@ -102,7 +102,7 @@ router
    *       - $ref: '#/parameters/currency'
    *     responses:
    *       200:
-   *         description: Found cart, if exists.
+   *         description: Found cart document, if exists.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -134,7 +134,7 @@ router
    *             $ref: '#/definitions/Cart'
    *     responses:
    *       200:
-   *         description: Updated cart.
+   *         description: Updated cart document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/Cart'

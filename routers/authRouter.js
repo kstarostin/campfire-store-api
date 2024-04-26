@@ -36,7 +36,7 @@ const router = express.Router();
  *                 type: string
  *     responses:
  *       201:
- *         description: Contains authentication token and created user.<br><br>Use this token in the authorize section to get access to protected resources.
+ *         description: Contains authentication token and created user document.
  *         schema:
  *           type: object
  *           $ref: '#/definitions/User'
@@ -66,7 +66,7 @@ router.post('/signup', authController.signup);
  *             password: test1234
  *     responses:
  *       200:
- *         description: Contains authentication token and authenticated user.<br><br>Use this token in the authorize section to get access to protected resources.
+ *         description: Contains authentication token and authenticated user document.
  *         schema:
  *           type: object
  *           $ref: '#/definitions/User'

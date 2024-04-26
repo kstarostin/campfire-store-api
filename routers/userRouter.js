@@ -36,7 +36,7 @@ router
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
-   *         description: List of found users.
+   *         description: List of found user documents.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -58,7 +58,7 @@ router
    *       - $ref: '#/parameters/language'
    *     responses:
    *       200:
-   *         description: Found user, if exists.
+   *         description: Found user document, if exists.
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -84,7 +84,7 @@ router
    *             $ref: '#/definitions/User'
    *     responses:
    *       200:
-   *         description: Updated user.
+   *         description: Updated user document.
    *         schema:
    *           type: object
    *           $ref: '#/definitions/User'
