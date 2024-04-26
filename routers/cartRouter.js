@@ -96,7 +96,7 @@ router
    *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Get cart
-   *     description: Get an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Get an existing cart for a user by provided user's <code>id</code> or <code>email</code> and cart <code>id</code>.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -121,7 +121,7 @@ router
    *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Update cart
-   *     description: Update an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Update an existing cart for a user by provided user's <code>id</code> or <code>email</code> and cart <code>id</code>.<br><br>This resource is protected and requires prior authorization.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -158,7 +158,7 @@ router
    *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Delete cart
-   *     description: Delete an existing cart for a user by provided user's ID or email and cart ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Delete an existing cart for a user by provided user's <code>id</code> or <code>email</code> and cart <code>id</code>.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'

@@ -25,7 +25,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get users
-   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     produces:
    *       - application/json
    *     parameters:
@@ -52,7 +52,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Get user
-   *     description: Get an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only request themselves.
+   *     description: Get an existing user by provided <code>id</code> or <code>email</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only request themselves.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/language'
@@ -71,7 +71,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Update user
-   *     description: Update an existing user by provided ID or email. Alternatively, this endpoint can be used to upload/replace user's photo.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role. Users without admin role can only update themselves.
+   *     description: Update an existing user by provided <code>id</code> or <code>email</code>. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are <code>.jpeg</code>, <code>.png</code> and <code>.webp</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only update themselves.
    *     consumes:
    *       - application/json
    *       - multipart/form-data
@@ -114,7 +114,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Delete user
-   *     description: Delete an existing user by provided ID or email.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Delete an existing user by provided <code>id</code> or <code>email</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     responses:

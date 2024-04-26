@@ -90,7 +90,7 @@ router
    *       - bearerAuth: []
    *     tags: [Orders]
    *     summary: Get order
-   *     description: Get an existing order for a user by provided user's ID or email and order ID.<br><br>This resource is protected and requires prior authorization.
+   *     description: Get an existing order for a user by provided user's <code>id</code> or <code>email</code> and order <code>id</code>.<br><br>This resource is protected and requires prior authorization.
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/orderId'

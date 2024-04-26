@@ -41,7 +41,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Create category
-   *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -76,7 +76,7 @@ router
    *   get:
    *     tags: [Categories]
    *     summary: Get category
-   *     description: Get an existing category by provided ID.
+   *     description: Get an existing category by provided <code>id</code>.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
@@ -93,7 +93,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Update category
-   *     description: Update an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Update an existing category by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -128,7 +128,7 @@ router
    *       - bearerAuth: []
    *     tags: [Categories]
    *     summary: Delete category
-   *     description: Delete an existing category by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Delete an existing category by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *     responses:

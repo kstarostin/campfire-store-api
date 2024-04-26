@@ -29,3 +29,8 @@
 .swagger-ui .info p {
   font-size: 18px;
 }
+
+.swagger-ui .markdown code,
+.swagger-ui .renderedMarkdown code {
+  padding: 2px 4px;
+}

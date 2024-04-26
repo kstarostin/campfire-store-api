@@ -41,7 +41,7 @@ router
    *       - bearerAuth: []
    *     tags: [Titles]
    *     summary: Create title
-   *     description: Create a new title.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Create a new title.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -76,7 +76,7 @@ router
    *   get:
    *     tags: [Titles]
    *     summary: Get title
-   *     description: Get an existing title by provided ID.
+   *     description: Get an existing title by provided <code>id</code>.
    *     parameters:
    *       - $ref: '#/parameters/titleId'
    *       - $ref: '#/parameters/language'
@@ -93,7 +93,7 @@ router
    *       - bearerAuth: []
    *     tags: [Titles]
    *     summary: Update title
-   *     description: Update an existing title by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Update an existing title by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -128,7 +128,7 @@ router
    *       - bearerAuth: []
    *     tags: [Titles]
    *     summary: Delete title
-   *     description: Delete an existing title by provided ID.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
+   *     description: Delete an existing title by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     parameters:
    *       - $ref: '#/parameters/titleId'
    *     responses:
