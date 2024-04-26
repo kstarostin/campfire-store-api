@@ -13,6 +13,8 @@ const Title = require('../models/titleModel');
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
 
+const omitFields = ['_id', 'createdAt', 'updatedAt'];
+
 // Swagger document
 const document = swaggerJSDoc({
   definition: {
@@ -24,13 +26,15 @@ const document = swaggerJSDoc({
     },
     servers: [{ url: apiPath }],
     definitions: {
-      GenericOrderEntry: mongooseToSwagger(GenericOrderEntry),
-      Cart: mongooseToSwagger(Cart),
-      Category: mongooseToSwagger(Category),
-      Order: mongooseToSwagger(Order),
-      Product: mongooseToSwagger(Product),
-      Title: mongooseToSwagger(Title),
-      User: mongooseToSwagger(User),
+      GenericOrderEntry: mongooseToSwagger(GenericOrderEntry, { omitFields }),
+      Cart: mongooseToSwagger(Cart, { omitFields }),
+      Category: mongooseToSwagger(Category, { omitFields }),
+      Order: mongooseToSwagger(Order, { omitFields }),
+      Product: mongooseToSwagger(Product, { omitFields }),
+      Title: mongooseToSwagger(Title, { omitFields }),
+      User: mongooseToSwagger(User, {
+        omitFields: [...omitFields, 'password', 'passwordChangedAt'],
+      }),
     },
   },
   apis: [

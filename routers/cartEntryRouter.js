@@ -61,7 +61,14 @@ router
    *       content:
    *         application/json:
    *           schema:
-   *             $ref: '#/definitions/GenericOrderEntry'
+   *             type: object
+   *             properties:
+   *               product:
+   *                 type: string
+   *               quantity:
+   *                 type: number
+   *               parent:
+   *                 type: string
    *     responses:
    *       201:
    *         description: Created cart entry.
@@ -127,7 +134,10 @@ router
    *       content:
    *         application/json:
    *           schema:
-   *             $ref: '#/definitions/GenericOrderEntry'
+   *             type: object
+   *             properties:
+   *               quantity:
+   *                 type: number
    *     responses:
    *       200:
    *         description: Updated cart entry.

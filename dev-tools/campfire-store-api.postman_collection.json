@@ -1810,7 +1810,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/users/:id",
+							"raw": "{{URL}}/api/v1/users/:userId",
 							"host": [
 								"{{URL}}"
 							],
@@ -1818,7 +1818,7 @@
 								"api",
 								"v1",
 								"users",
-								":id"
+								":userId"
 							],
 							"query": [
 								{
@@ -1830,60 +1830,13 @@
 							],
 							"variable": [
 								{
-									"key": "id",
+									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for."
 								}
 							]
 						},
-						"description": "Get an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only request themselves."
-					},
-					"response": []
-				},
-				{
-					"name": "Create user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{jwt}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [\"\"],\r\n    \"photo\": {\r\n        \"small\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        },\r\n        \"thumbnail\": {\r\n            \"url\": \"\",\r\n            \"mimeType\": \"\",\r\n            \"altText\": \"\"\r\n        }\r\n    },\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{URL}}/api/v1/users",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"users"
-							],
-							"query": [
-								{
-									"key": "language",
-									"value": "de",
-									"description": "Session language. Default is en.",
-									"disabled": true
-								}
-							]
-						},
-						"description": "Create a new user.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+						"description": "Get an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only update themselves."
 					},
 					"response": []
 				},

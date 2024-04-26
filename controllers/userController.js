@@ -8,7 +8,12 @@ exports.getAllUsers = factory.getAll(User, {
   defaultLimit: 25,
   maxLimit: 100,
 });
-exports.createUser = factory.createOne(User);
+exports.createUser = (req, res) => {
+  res.status(500).json({
+    status: 'error',
+    message: 'This route is not yet defined! Please use /users/signup instead',
+  });
+};
 
 // Checks if the ID matches the MongoDB ID format to avoud casting errors.
 const isValidId = (id) => id.match(/^[0-9a-fA-F]{24}$/);

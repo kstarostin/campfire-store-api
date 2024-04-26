@@ -40,35 +40,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(authController.restrictTo('admin'), userController.getAllUsers)
-  /**
-   * @swagger
-   * /users:
-   *   post:
-   *     security:
-   *       - bearerAuth: []
-   *     tags: [Users]
-   *     summary: Create user
-   *     description: Create a new user.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without an admin role.
-   *     parameters:
-   *       - $ref: '#/parameters/language'
-   *     requestBody:
-   *       description: A JSON object containing user payload.
-   *       required: true
-   *       content:
-   *         application/json:
-   *           schema:
-   *             $ref: '#/definitions/User'
-   *     responses:
-   *       201:
-   *         description: Created user.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/User'
-   *       401:
-   *         $ref: '#/components/responses/unauthorizedError'
-   */
-  .post(authController.restrictTo('admin'), userController.createUser);
+  .get(authController.restrictTo('admin'), userController.getAllUsers);
 
 router
   .route('/:userId')
