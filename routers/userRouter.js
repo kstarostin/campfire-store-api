@@ -102,6 +102,7 @@ router
    */
   .patch(
     authController.restrictTo('admin', 'me'),
+    userController.validateExistence,
     userController.uploadUserPhoto,
     userController.resizeUserPhoto,
     userController.updateUser,

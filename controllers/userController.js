@@ -216,6 +216,18 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
   next();
 });
 
+exports.validateExistence = catchAsync(async (req, res, next) => {
+  // Search for a user by ID or email
+  const user = isValidId(req.params.userId)
+    ? await User.findById(req.params.userId)
+    : await User.findOne({ email: req.params.userId });
+  // Check existence
+  if (!user) {
+    return next(new AppError('No user found with this ID or email.', 404));
+  }
+  next();
+});
+
 /**
  * Function to delete a user's photo by requested user ID or email and photo ID.
  * @returns a successful response, if the user was found and the non-placeholder photo was deleted. Otherwise, an error response.
@@ -225,11 +237,6 @@ exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
   const user = isValidId(req.params.userId)
     ? await User.findById(req.params.userId)
     : await User.findOne({ email: req.params.userId });
-
-  // Check existence
-  if (!user) {
-    return next(new AppError('No user found with this ID or email.', 404));
-  }
 
   // Validate an existing photo
   if (

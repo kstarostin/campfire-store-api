@@ -149,13 +149,17 @@ exports.resizeProductImages = catchAsync(async (req, res, next) => {
   next();
 });
 
-exports.updateProduct = catchAsync(async (req, res, next) => {
+exports.validateExistence = catchAsync(async (req, res, next) => {
   const product = await Product.findById(req.params.id);
-
   // Check existence
   if (!product) {
     return next(new AppError('No product found with this ID.', 404));
   }
+  next();
+});
+
+exports.updateProduct = catchAsync(async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
 
   // Sanitize request body
   const sanitizerWhitelist = [

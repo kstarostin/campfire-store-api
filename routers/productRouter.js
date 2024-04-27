@@ -131,6 +131,7 @@ router
   .patch(
     authController.protect,
     authController.restrictTo('admin'),
+    productController.validateExistence,
     productController.uploadProductImages,
     productController.resizeProductImages,
     productController.updateProduct,
