@@ -95,7 +95,7 @@ router
    *     security:
    *       - bearerAuth: []
    *     tags: [Products]
-   *     summary: Update product
+   *     summary: Update product or upload images
    *     description: Update an existing product by provided <code>id</code> Alternatively, this endpoint can be used to upload product images. Allowed image format is <code>.webp</code>. Recommended minimum image size is 2000x2000.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
@@ -156,6 +156,32 @@ router
     authController.protect,
     authController.restrictTo('admin'),
     productController.deleteProduct,
+  );
+
+router
+  .route('/:id/images/:imageId')
+  /**
+   * @swagger
+   * /products/{id}/images/{imageId}:
+   *   delete:
+   *     security:
+   *       - bearerAuth: []
+   *     tags: [Products]
+   *     summary: Delete product image
+   *     description: Delete a product image by provided product <code>id</code> and image <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
+   *     parameters:
+   *       - $ref: '#/parameters/productId'
+   *       - $ref: '#/parameters/imageId'
+   *     responses:
+   *       204:
+   *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
+   */
+  .delete(
+    authController.protect,
+    authController.restrictTo('admin'),
+    productController.deleteProductImage,
   );
 
 module.exports = router;

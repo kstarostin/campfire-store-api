@@ -1,4 +1,6 @@
 const multer = require('multer');
+const fs = require('fs');
+const { promisify } = require('util');
 const Product = require('../models/productModel');
 const factory = require('./controllerFactory');
 const catchAsync = require('../utils/catchAsync');
@@ -6,6 +8,8 @@ const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 const AppError = require('../utils/appError');
 const { createImageFile } = require('../utils/fileUtils');
+
+const unlinkAsync = promisify(fs.unlink);
 
 const multerStorage = multer.memoryStorage();
 
@@ -48,7 +52,7 @@ exports.uploadProductImages = upload.fields([
 ]);
 
 exports.resizeProductImages = catchAsync(async (req, res, next) => {
-  if (!req.files.images) {
+  if (!req.params.id || !req.files.images) {
     return next();
   }
   req.images = [];
@@ -194,11 +198,70 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
   });
 });
 
-// exports.updateProduct = factory.updateOne(Product, [
-//   'name',
-//   'descriptionI18n',
-//   'prices',
-//   'manufacturer',
-//   'category',
-// ]);
 exports.deleteProduct = factory.deleteOne(Product);
+
+/**
+ * Function to delete a product image by requested user ID or email.
+ * @returns a successful response, if the image was deleted. Otherwise, an error response.
+ */
+exports.deleteProductImage = catchAsync(async (req, res, next) => {
+  const product = await Product.findById(req.params.id);
+
+  // Check product existence
+  if (!product) {
+    return next(new AppError('No product found with this ID.', 404));
+  }
+
+  const existingImage = product.images.find(
+    (image) => image.id === req.params.imageId,
+  );
+  // Check image existence
+  if (!existingImage) {
+    return next(
+      new AppError('Product does not have an image with this ID.', 404),
+    );
+  }
+
+  // Mark old photo images for delete
+  const imagesToRemove = [];
+  if (existingImage.thumbnail?.url) {
+    imagesToRemove.push(`public/${existingImage.thumbnail.url}`);
+  }
+  if (existingImage.small?.url) {
+    imagesToRemove.push(`public/${existingImage.small.url}`);
+  }
+  if (existingImage.medium?.url) {
+    imagesToRemove.push(`public/${existingImage.medium.url}`);
+  }
+  if (existingImage.large?.url) {
+    imagesToRemove.push(`public/${existingImage.large.url}`);
+  }
+  if (existingImage.original?.url) {
+    imagesToRemove.push(`public/${existingImage.original.url}`);
+  }
+
+  // Delete images, if any
+  await Promise.all(
+    imagesToRemove.map(async (image) => {
+      await unlinkAsync(image);
+    }),
+  );
+
+  // Perform update
+  req.body.images = product.images.filter(
+    (image) => image.id !== req.params.imageId,
+  );
+  req.body.updatedAt = Date.now();
+
+  await Product.findByIdAndUpdate(product.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  res.status(204).json({
+    status: 'success',
+    data: {
+      document: null,
+    },
+  });
+});

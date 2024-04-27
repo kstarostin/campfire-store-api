@@ -1491,6 +1491,51 @@
 						"description": "Delete an existing product by provided ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
 					},
 					"response": []
+				},
+				{
+					"name": "Delete product image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/products/:id/images/:imageId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								":id",
+								"images",
+								":imageId"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a product to search for."
+								},
+								{
+									"key": "imageId",
+									"value": "",
+									"description": "ID of an image to search for."
+								}
+							]
+						},
+						"description": "Delete a product image by providedproduct ID and image ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+					},
+					"response": []
 				}
 			],
 			"description": "Product management"

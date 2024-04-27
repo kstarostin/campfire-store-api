@@ -217,7 +217,7 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
 });
 
 /**
- * Function to delete a user's photo by requested user ID or email.
+ * Function to delete a user's photo by requested user ID or email and photo ID.
  * @returns a successful response, if the user was found and the non-placeholder photo was deleted. Otherwise, an error response.
  */
 exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
