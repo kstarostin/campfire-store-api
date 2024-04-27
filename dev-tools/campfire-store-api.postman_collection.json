@@ -1856,14 +1856,13 @@
 						"method": "PATCH",
 						"header": [],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "photo",
-									"type": "file",
-									"src": []
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"\",\r\n    \"roles\": [],\r\n    \"deliveryAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ],\r\n    \"billingAddresses\": [\r\n        {\r\n            \"title\": \"\",\r\n            \"name\": \"\",\r\n            \"phone\": \"\",\r\n            \"street\": \"\",\r\n            \"house\": \"\",\r\n            \"postalCode\": \"\",\r\n            \"town\": \"\",\r\n            \"country\": \"\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
 							"raw": "{{URL}}/api/v1/users/:id",
@@ -1892,7 +1891,7 @@
 								}
 							]
 						},
-						"description": "Update an existing user by provided ID or email. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are .jpeg, .png and .webp.  \n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without admin role can only update themselves."
+						"description": "Update an existing user by provided ID or email. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are .jpeg, .png and .webp.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without this role can only update themselves."
 					},
 					"response": []
 				},
@@ -1931,6 +1930,51 @@
 							]
 						},
 						"description": "Delete an existing user by provided ID or email.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user photo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/users/:id/photos/:photoId",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"photos",
+								":photoId"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID or email of a user to search for."
+								},
+								{
+									"key": "photoId",
+									"value": "",
+									"description": "ID of a photo to search for."
+								}
+							]
+						},
+						"description": "Delete a user's photo by provided user's ID or email and photo ID.\n\nThis resource is protected and requires prior authorization.\n\nThis resource is restricted to users without an admin role. Users without this role can only remove photos of themselves."
 					},
 					"response": []
 				}

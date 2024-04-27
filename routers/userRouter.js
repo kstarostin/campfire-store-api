@@ -125,6 +125,31 @@ router
    */
   .delete(authController.restrictTo('admin'), userController.deleteUser);
 
+router
+  .route('/:userId/photos/:photoId')
+  /**
+   * @swagger
+   * /users/{id}/photos/{photoId}:
+   *   delete:
+   *     security:
+   *       - bearerAuth: []
+   *     tags: [Users]
+   *     summary: Delete user photo
+   *     description: Delete a user's photo by provided user's <code>id</code> or <code>email</code> and photo <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only remove photos of themselves.
+   *     parameters:
+   *       - $ref: '#/parameters/userIdOrEmail'
+   *       - $ref: '#/parameters/photoId'
+   *     responses:
+   *       204:
+   *         description: No content.
+   *       401:
+   *         $ref: '#/components/responses/unauthorizedError'
+   */
+  .delete(
+    authController.restrictTo('admin', 'me'),
+    userController.deleteUserPhoto,
+  );
+
 router.use('/:userId/carts', cartRouter);
 router.use('/:userId/orders', orderRouter);
 

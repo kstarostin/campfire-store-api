@@ -72,3 +72,9 @@ parameters:
     description: <code>id</code> of an entry to search for.
     in: path
     required: true
+  # Photo
+  photoId:
+    name: photoId
+    description: <code>id</code> of a photo to search for.
+    in: path
+    required: true

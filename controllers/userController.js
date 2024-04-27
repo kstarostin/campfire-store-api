@@ -243,3 +243,72 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
 
   next();
 });
+
+/**
+ * Function to delete a user's photo by requested user ID or email.
+ * @returns a successful response, if the user was found and the non-placeholder photo was deleted. Otherwise, an error response.
+ */
+exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
+  // Search for a user by ID or email
+  const user = isValidId(req.params.userId)
+    ? await User.findById(req.params.userId)
+    : await User.findOne({ email: req.params.userId });
+
+  // Check existence
+  if (!user) {
+    return next(new AppError('No user found with this ID or email', 404));
+  }
+
+  // Validate an existing photo
+  if (
+    user.photo.id !== req.params.photoId ||
+    user.photo?.thumbnail?.url?.length === 0 ||
+    user.photo?.thumbnail?.url?.includes('user_photo_placeholder') ||
+    user.photo?.small?.url?.length === 0 ||
+    user.photo?.small?.url?.includes('user_photo_placeholder')
+  ) {
+    return next(
+      new AppError('User does not have a valid uploaded photo to remove.', 400),
+    );
+  }
+
+  // Mark old photo images for delete
+  const imagesToRemove = [];
+  imagesToRemove.push(`public/${user.photo.thumbnail.url}`);
+  imagesToRemove.push(`public/${user.photo.small.url}`);
+
+  // Replace user photo with placeholder
+  user.photo = {
+    small: {
+      url: new ImagePathBuilder().for('user').size('small').build(),
+      altText: `${user.name} photo`,
+      mimeType: 'image/png',
+    },
+    thumbnail: {
+      url: new ImagePathBuilder().for('user').size('thumbnail').build(),
+      altText: `${user.name} photo`,
+      mimeType: 'image/png',
+    },
+  };
+  user.updatedAt = Date.now();
+
+  // Perform update
+  await User.findByIdAndUpdate(user.id, user, {
+    new: true,
+    runValidators: true,
+  });
+
+  // Delete old photo images, if any
+  await Promise.all(
+    imagesToRemove.map(async (image) => {
+      await unlinkAsync(image);
+    }),
+  );
+
+  res.status(204).json({
+    status: 'success',
+    data: {
+      document: null,
+    },
+  });
+});
