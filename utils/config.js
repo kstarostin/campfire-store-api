@@ -20,9 +20,9 @@ const createImageDimensionsMap = () => {
 
   dimensionsMap.set('thumbnail', '200');
   dimensionsMap.set('small', '500');
-  // dimensionsMap.set('medium', '1000');
-  // dimensionsMap.set('large', '2000');
-  // dimensionsMap.set('original', 'original');
+  dimensionsMap.set('medium', '1000');
+  dimensionsMap.set('large', '2000');
+  dimensionsMap.set('original', 'original');
 
   return dimensionsMap;
 };

@@ -1,5 +1,4 @@
 const multer = require('multer');
-const sharp = require('sharp');
 const fs = require('fs');
 const { promisify } = require('util');
 const User = require('../models/userModel');
@@ -9,10 +8,8 @@ const AppError = require('../utils/appError');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 const ImagePathBuilder = require('../utils/imagePathBuilder');
-const {
-  allowedImageMimeTypes,
-  imageDimensionsMap,
-} = require('../utils/config');
+const { allowedImageMimeTypes } = require('../utils/config');
+const { createImageFile } = require('../utils/fileUtils');
 
 const unlinkAsync = promisify(fs.unlink);
 const multerStorage = multer.memoryStorage();
@@ -23,7 +20,7 @@ const multerFilter = (req, file, cb) => {
   } else {
     cb(
       new AppError(
-        `Allowed image mime types are [${allowedImageMimeTypes.join(', ')}].`,
+        `Allowed photo image mime types are [${allowedImageMimeTypes.join(', ')}].`,
         400,
       ),
       false,
@@ -35,26 +32,6 @@ const upload = multer({
   fileFilter: multerFilter,
 });
 
-const createImageFile = async (options) => {
-  // Get image side size by its name
-  const size = +imageDimensionsMap.get(options.sizeName);
-  // Build path for an image
-  const imagePath = new ImagePathBuilder()
-    .for(options.resource)
-    .size(options.sizeName)
-    .name(options.name)
-    .mime(`image/jpeg`)
-    .build();
-  // Create the file
-  await sharp(options.file.buffer)
-    .resize(size, size)
-    .flatten({ background: '#ffffff' })
-    .toFormat('jpeg')
-    .jpeg({ quality: 90 })
-    .toFile(`public/${imagePath}`);
-  return imagePath;
-};
-
 // Checks if the ID matches the MongoDB ID format to avoud casting errors.
 const isValidId = (id) => id.match(/^[0-9a-fA-F]{24}$/);
 
@@ -65,7 +42,7 @@ exports.getAllUsers = factory.getAll(User, {
 exports.createUser = (req, res) => {
   res.status(500).json({
     status: 'error',
-    message: 'This route is not yet defined! Please use /users/signup instead',
+    message: 'This route is not yet defined! Please use /users/signup instead.',
   });
 };
 
@@ -80,7 +57,7 @@ exports.getUser = catchAsync(async (req, res, next) => {
         email: req.params.userId,
       });
   if (!user) {
-    return next(new AppError('No user found with this ID or email', 404));
+    return next(new AppError('No user found with this ID or email.', 404));
   }
   user = new DocumentSanitizer(req.language, req.currency, 6).sanitize(user);
   res.status(200).json({
@@ -103,7 +80,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 
   // Check existence
   if (!user) {
-    return next(new AppError('No user found with this ID or email', 404));
+    return next(new AppError('No user found with this ID or email.', 404));
   }
 
   // Sanitize request body
@@ -122,17 +99,8 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 
   // Check if user photo is being uploaded
   const imagesToRemove = [];
-  if (req.imageThumbnail && req.imageSmall) {
-    req.body.photo = {
-      thumbnail: {
-        url: req.imageThumbnail.url,
-        mimeType: req.imageThumbnail.mimeType,
-      },
-      small: {
-        url: req.imageSmall.url,
-        mimeType: req.imageSmall.mimeType,
-      },
-    };
+  if (req.photo) {
+    req.body.photo = req.photo;
     // Mark old photo images for delete if not placeholders
     if (!user.photo?.thumbnail?.url?.includes('user_photo_placeholder')) {
       imagesToRemove.push(`public/${user.photo.thumbnail.url}`);
@@ -188,7 +156,7 @@ exports.deleteUser = catchAsync(async (req, res, next) => {
     ? await User.findByIdAndDelete(req.params.userId)
     : await User.findOneAndDelete({ email: req.params.userId });
   if (!user) {
-    return next(new AppError('No user found with this ID or email', 404));
+    return next(new AppError('No user found with this ID or email.', 404));
   }
   res.status(204).json({
     status: 'success',
@@ -221,12 +189,8 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
     resource: 'user',
     name: imageName,
     sizeName: 'thumbnail',
+    format: 'jpeg',
   });
-  // Save the new file meta in request for further usage
-  req.imageThumbnail = {
-    url: imageThumbnailPath,
-    mimeType,
-  };
 
   // Create file for a small image
   const imageSmallPath = await createImageFile({
@@ -234,11 +198,19 @@ exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
     resource: 'user',
     name: imageName,
     sizeName: 'small',
+    format: 'jpeg',
   });
+
   // Save the new file meta in request for further usage
-  req.imageSmall = {
-    url: imageSmallPath,
-    mimeType,
+  req.photo = {
+    thumbnail: {
+      url: imageThumbnailPath,
+      mimeType,
+    },
+    small: {
+      url: imageSmallPath,
+      mimeType,
+    },
   };
 
   next();
@@ -256,7 +228,7 @@ exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
 
   // Check existence
   if (!user) {
-    return next(new AppError('No user found with this ID or email', 404));
+    return next(new AppError('No user found with this ID or email.', 404));
   }
 
   // Validate an existing photo

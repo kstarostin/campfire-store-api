@@ -71,7 +71,7 @@ router
    *       - bearerAuth: []
    *     tags: [Users]
    *     summary: Update user
-   *     description: Update an existing user by provided <code>id</code> or <code>email</code>. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are <code>.jpeg</code>, <code>.png</code> and <code>.webp</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only update themselves.
+   *     description: Update an existing user by provided <code>id</code> or <code>email</code>. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are <code>.jpeg</code>, <code>.png</code> and <code>.webp</code>. Recommended minimum image size is 500x500.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only update themselves.
    *     consumes:
    *       - application/json
    *       - multipart/form-data

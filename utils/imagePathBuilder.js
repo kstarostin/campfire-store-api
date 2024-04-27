@@ -41,10 +41,10 @@ class ImagePathBuilder {
   }
 
   /**
-   * Add image file mime type to the builder.
+   * Add image file format to the builder.
    */
-  mime(mimeType) {
-    this.mimeType = mimeType;
+  format(formatName) {
+    this.formatName = formatName;
     return this;
   }
 
@@ -53,13 +53,9 @@ class ImagePathBuilder {
    */
   build() {
     const resourceToken = `${this.resource}s`;
-    const nameToken = this.imageName
-      ? this.imageName
-      : 'user_photo_placeholder';
     const dimensionToken = imageDimensionsMap.get(this.imageSize);
-    const formatToken = this.imageName ? this.mimeType.split('/')[1] : 'png';
 
-    return `/img/${resourceToken}/${this.imageSize}/${nameToken}_${dimensionToken}.${formatToken}`;
+    return `/img/${resourceToken}/${this.imageSize}/${this.imageName}_${dimensionToken}.${this.formatName}`;
   }
 }
 

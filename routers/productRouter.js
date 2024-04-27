@@ -96,7 +96,7 @@ router
    *       - bearerAuth: []
    *     tags: [Products]
    *     summary: Update product
-   *     description: Update an existing product by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
+   *     description: Update an existing product by provided <code>id</code> Alternatively, this endpoint can be used to upload product images. Allowed image format is <code>.webp</code>. Recommended minimum image size is 2000x2000.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
    *     consumes:
    *       - application/json
    *     parameters:
@@ -110,6 +110,15 @@ router
    *         application/json:
    *           schema:
    *             $ref: '#/definitions/Product'
+   *         multipart/form-data:
+   *           schema:
+   *             type: object
+   *             properties:
+   *               images:
+   *                 type: array
+   *                 items:
+   *                   type: string
+   *                   format: binary
    *     responses:
    *       200:
    *         description: Updated product document.
@@ -122,6 +131,8 @@ router
   .patch(
     authController.protect,
     authController.restrictTo('admin'),
+    productController.uploadProductImages,
+    productController.resizeProductImages,
     productController.updateProduct,
   )
   /**
