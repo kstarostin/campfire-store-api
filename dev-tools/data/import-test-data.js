@@ -24,23 +24,23 @@ const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const categories = JSON.parse(
   fs.readFileSync(`${__dirname}/categories.json`, 'utf-8'),
 );
-const accessories = JSON.parse(
-  fs.readFileSync(`${__dirname}/products/accessories.json`, 'utf-8'),
+const backpacks = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/backpacks.json`, 'utf-8'),
 );
-const bicycles = JSON.parse(
-  fs.readFileSync(`${__dirname}/products/bicycles.json`, 'utf-8'),
+const hikingPants = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/hiking-pants.json`, 'utf-8'),
 );
-const camping = JSON.parse(
-  fs.readFileSync(`${__dirname}/products/camping.json`, 'utf-8'),
-);
-const clothing = JSON.parse(
-  fs.readFileSync(`${__dirname}/products/clothing.json`, 'utf-8'),
-);
-const kayaks = JSON.parse(
-  fs.readFileSync(`${__dirname}/products/kayaks.json`, 'utf-8'),
+const mountainBikes = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/mountain-bikes.json`, 'utf-8'),
 );
 const ski = JSON.parse(
   fs.readFileSync(`${__dirname}/products/ski.json`, 'utf-8'),
+);
+const tents = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/tents.json`, 'utf-8'),
+);
+const touringKayaks = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/touring-kayaks.json`, 'utf-8'),
 );
 const carts = JSON.parse(fs.readFileSync(`${__dirname}/carts.json`, 'utf-8'));
 const cartEntries = JSON.parse(
@@ -63,12 +63,12 @@ const performImport = async () => {
   await Category.create(categories);
 
   console.log('Creating products...');
-  await Product.create(accessories);
-  await Product.create(bicycles);
-  await Product.create(camping);
-  await Product.create(clothing);
-  await Product.create(kayaks);
+  await Product.create(backpacks);
+  await Product.create(hikingPants);
+  await Product.create(mountainBikes);
   await Product.create(ski);
+  await Product.create(tents);
+  await Product.create(touringKayaks);
 
   console.log('Creating carts...');
   await Cart.create(carts);

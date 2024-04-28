@@ -1,0 +1,637 @@
+[
+  {
+    "_id": "5c88fa8cf4afda39709c295a",
+    "name": "Nordwand Pro Pants Men",
+    "manufacturer": "RevolutionRace",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 119,
+        "currency": "EUR"
+      },
+      {
+        "value": 119,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Highly versatile hiking pants with strategically placed stretch panels and added ventilation zippers for optimal comfort and flexibility.",
+      "de": "Äußerst vielseitige Wanderhose mit zusätzlichen Belüftungsreißverschlüssen und strategisch platzierten Stretcheinsätzen für optimalen Komfort und Flexibilität."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-5c88fa8cf4afda39709c295a-1714292827839-1_original.webp",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-5c88fa8cf4afda39709c295a-1714292827839-1_2000.webp",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-5c88fa8cf4afda39709c295a-1714292827839-1_1000.jpeg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-5c88fa8cf4afda39709c295a-1714292827839-1_500.jpeg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-5c88fa8cf4afda39709c295a-1714292827839-1_200.jpeg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851"
+  },
+  {
+    "_id": "662e06be7b552a6e688ae68b",
+    "name": "RVRC GP Pro Pants Men",
+    "manufacturer": "RevolutionRace",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 119,
+        "currency": "EUR"
+      },
+      {
+        "value": 119,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "The RVRC GP Pro Pants are a pair of highly durable, multifunctional outdoor pants designed to last in harsh outdoor settings. Made with PFC-free Hypershell® material, these pants are both wind- and water-repellent. Durable reinforcements over the thighs, lower legs, and seat add extra strength and protect against wear and tear. The 4-way stretch panels at the top, inside thighs, and behind the knees ventilate and provide incredible comfort. Thigh ventilation with zippers comes in handy when you’re getting too hot.",
+      "de": "Die RVRC GP Pro Pants ist eine äußerst strapazierfähige, multifunktionale Outdoor-Hose, die für raue Outdoor-Umgebungen ausgelegt ist. Diese Hose aus PFC-freiem Hypershell®-Material ist sowohl wind- als auch wasserabweisend. Strapazierfähige Verstärkungen an Oberschenkeln, Unterschenkeln und Gesäß sorgen für zusätzliche Festigkeit und schützen vor Abnutzung. Die 4-Wege-Stretcheinsätze oben, an den Innenseiten der Oberschenkel und an den Kniekehlen sorgen für Belüftung und bieten unglaublichen Komfort. Die Oberschenkelbelüftung mit Reißverschlüssen ist praktisch, wenn es dir zu heiß wird."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e06be7b552a6e688ae68b-1714292827841-1_original.webp",
+          "altText": "RVRC GP Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e06be7b552a6e688ae68b-1714292827841-1_2000.webp",
+          "altText": "RVRC GP Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e06be7b552a6e688ae68b-1714292827841-1_1000.jpeg",
+          "altText": "RVRC GP Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e06be7b552a6e688ae68b-1714292827841-1_500.jpeg",
+          "altText": "RVRC GP Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e06be7b552a6e688ae68b-1714292827841-1_200.jpeg",
+          "altText": "RVRC GP Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851"
+  },
+  {
+    "_id": "662e098ea24bc4eeeb49f7a3",
+    "name": "Nordwand Pro Pants Women",
+    "manufacturer": "RevolutionRace",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 119,
+        "currency": "EUR"
+      },
+      {
+        "value": 119,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "The Nordwand Pro Pants are a pair of multifunctional and stretchy outdoor pants for walking and other outdoor activities demanding high flexibility. Made from PFC-free Hypershell® material, these pants are both wind- and water-repellent with ventilation zippers at the thighs for added breathability. The 4-way stretch panels over the bottom, knees and hips, along with the pre-bent knee design, allow for a greater range of movement and comfort. These pants are built to last, with reinforced areas on the thighs and lower legs to prevent wear from heavy use. They also feature boot hooks at the leg ends, keeping the pants securely in place during any activity. Additionally, the Nordwand Pro Pants have five pockets for convenient storage as well as adjustable leg ends with buttoned closures for a customisable fit.",
+      "de": "Die Nordwand Pro Pants ist eine multifunktionale und dehnbare Outdoor-Hose für Wanderungen und andere Outdoor-Aktivitäten mit hohem Anspruch an Flexibilität. Diese Hose aus PFC-freiem Hypershell®-Material ist sowohl wind- als auch wasserabweisend und verfügt über Belüftungsreißverschlüsse an den Oberschenkeln für zusätzliche Atmungsaktivität. Die 4-Wege-Stretcheinsätze über dem Gesäß, den Knien und den Hüften sowie die vorgeformten Knie sorgen für eine größere Bewegungsfreiheit und mehr Komfort. Diese Hose ist langlebig und verfügt über verstärkte Bereiche an den Ober- und Unterschenkeln, um Schäden durch starke Beanspruchung zu vermeiden. Außerdem verfügt sie über Stiefelhaken an den Beinenden, die die Hose bei jeder Aktivität sicher an ihrem Platz halten. Außerdem hat die Nordwand Pro Pants fünf Taschen für praktische Aufbewahrung und verstellbare Beinabschlüsse mit Knöpfen für eine individuelle Passform."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e098ea24bc4eeeb49f7a3-1714293787134-1_original.webp",
+          "altText": "Nordwand Pro Pants Women photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e098ea24bc4eeeb49f7a3-1714293787134-1_2000.webp",
+          "altText": "Nordwand Pro Pants Women photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e098ea24bc4eeeb49f7a3-1714293787134-1_1000.jpeg",
+          "altText": "Nordwand Pro Pants Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e098ea24bc4eeeb49f7a3-1714293787134-1_500.jpeg",
+          "altText": "Nordwand Pro Pants Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e098ea24bc4eeeb49f7a3-1714293787134-1_200.jpeg",
+          "altText": "Nordwand Pro Pants Women photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.revolutionrace.de/damen/hosen/outdoor-wanderhosen/nordwand-pro-pants-women?Color=2283"
+  },
+  {
+    "_id": "662e0b1e6c0a612bde5f0b33",
+    "name": "Greenland Trail Trousers",
+    "manufacturer": "Fjällräven",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 177.95,
+        "currency": "EUR"
+      },
+      {
+        "value": 189.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Versatile, hardwearing trousers with pre-shaped knees – Greenland Trail Trousers for men are made of G-1000 and reinforced with a double layer of fabric on the rear and knees. Versatile and simple, comfortable and durable – they are perfect for everyday outdoor life as well as urban environments. Now with a new, more inclusive fit for improved movement and comfort. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
+      "de": "Vielseitige, strapazierfähige Hose mit vorgeformten Knien – die Greenland Trail Trousers für Herren ist aus G-1000 gefertigt und am Gesäß sowie an den Knien mit einer doppelten Materialschicht verstärkt. Dieses einfache, komfortable und langlebige Modell ist perfekt für den Alltag im Freien und für die Stadt geeignet. Jetzt mit neuer, noch besserer Passform für mehr Bewegungsfreiheit und Komfort. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0b1e6c0a612bde5f0b33-1714293870746-1_original.webp",
+          "altText": "Greenland Trail Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0b1e6c0a612bde5f0b33-1714293870746-1_2000.webp",
+          "altText": "Greenland Trail Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0b1e6c0a612bde5f0b33-1714293870746-1_1000.jpeg",
+          "altText": "Greenland Trail Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0b1e6c0a612bde5f0b33-1714293870746-1_500.jpeg",
+          "altText": "Greenland Trail Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/small/product-662e0b1e6c0a612bde5f0b33-1714293870746-1_500.jpeg",
+          "altText": "Greenland Trail Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/outdoor-trousers/greenland-trail-trousers-m"
+  },
+  {
+    "_id": "662e0cd23bd2f27659d7848f",
+    "name": "Vidda Pro Ventilated Trs",
+    "manufacturer": "Fjällräven",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 219.95,
+        "currency": "EUR"
+      },
+      {
+        "value": 235.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Durable trekking trousers with technical features, made from wind- and water-resistant G-1000. The model is based on our best-selling Vidda Pro but has improved ventilation options and a slimmer fit with stretch fabric in crotch so still has great freedom of movement . The buttoned strap adjustments at the leg endings can be removed and there are numerous practical pockets and details – such as a knife pocket on the right leg and a loop for an axe on the side of the waist. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
+      "de": "Langlebige Trekkinghose mit technischen Details aus wind- und wasserfestem G-1000. Das Modell orientiert sich an unserer beliebten Vidda Pro, punktet aber mit optimierten Belüftungsoptionen, schmalerem Schnitt und Stretchmaterial im Schritt für uneingeschränkte Bewegungsfreiheit. Die verstellbaren Riemen mit Druckknöpfen an den Beinenden lassen sich abnehmen und es gibt jede Menge praktische Details – wie eine Messertasche am rechten Bein und eine Schlaufe für eine Axt auf Taillenhöhe. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0cd23bd2f27659d7848f-1714294233489-1_original.webp",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0cd23bd2f27659d7848f-1714294233489-1_2000.webp",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0cd23bd2f27659d7848f-1714294233489-1_1000.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0cd23bd2f27659d7848f-1714294233489-1_500.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0cd23bd2f27659d7848f-1714294233489-1_200.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0cd23bd2f27659d7848f-1714294233491-2_original.webp",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0cd23bd2f27659d7848f-1714294233491-2_2000.webp",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0cd23bd2f27659d7848f-1714294233491-2_1000.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0cd23bd2f27659d7848f-1714294233491-2_500.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0cd23bd2f27659d7848f-1714294233491-2_200.jpeg",
+          "altText": "Vidda Pro Ventilated Trs photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/vidda-pro-ventilated-trs-m"
+  },
+  {
+    "_id": "662e0ee377fe7d14cc28d205",
+    "name": "Keb Trousers",
+    "manufacturer": "Fjällräven",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 239.95,
+        "currency": "EUR"
+      },
+      {
+        "value": 256.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Award-winning trekking trousers in stretch fabric and G-1000, now updated for even better performance, comfort and durability. The trousers have classic, large pockets, generous ventilation zippers and openings for kneepads (an accessory). A well-fitting, durable classic pair of trousers for maximum freedom of movement in the mountains. Available in three lengths; short, regular and long. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
+      "de": "Preisgekrönte Trekkinghose aus Stretchmaterial und G-1000, jetzt überarbeitet für noch bessere Leistung, mehr Tragekomfort und höhere Langlebigkeit. Die Hose hat klassische, große Taschen, zahlreiche Belüftungsreißverschlüsse und Öffnungen für Knieschoner (Zubehör). Ein gut sitzender, langlebiger Hosenklassiker für maximale Bewegungsfreiheit in den Bergen. Erhältlich in drei Längen: Kurz, regulär und lang. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0ee377fe7d14cc28d205-1714294910041-1_original.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0ee377fe7d14cc28d205-1714294910041-1_2000.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0ee377fe7d14cc28d205-1714294910041-1_1000.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0ee377fe7d14cc28d205-1714294910041-1_500.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0ee377fe7d14cc28d205-1714294910041-1_200.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0ee377fe7d14cc28d205-1714294910043-2_original.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0ee377fe7d14cc28d205-1714294910043-2_2000.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0ee377fe7d14cc28d205-1714294910043-2_1000.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0ee377fe7d14cc28d205-1714294910043-2_500.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0ee377fe7d14cc28d205-1714294910043-2_200.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0ee377fe7d14cc28d205-1714294910043-3_original.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0ee377fe7d14cc28d205-1714294910043-3_2000.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0ee377fe7d14cc28d205-1714294910043-3_1000.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0ee377fe7d14cc28d205-1714294910043-3_500.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0ee377fe7d14cc28d205-1714294910043-3_200.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0ee377fe7d14cc28d205-1714294910043-4_original.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0ee377fe7d14cc28d205-1714294910043-4_2000.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0ee377fe7d14cc28d205-1714294910043-4_1000.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0ee377fe7d14cc28d205-1714294910043-4_500.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0ee377fe7d14cc28d205-1714294910043-4_200.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662e0ee377fe7d14cc28d205-1714294910043-5_original.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e0ee377fe7d14cc28d205-1714294910043-5_2000.webp",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e0ee377fe7d14cc28d205-1714294910043-5_1000.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e0ee377fe7d14cc28d205-1714294910043-5_500.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e0ee377fe7d14cc28d205-1714294910043-5_200.jpeg",
+          "altText": "Keb Trousers photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/keb-trousers-m"
+  },
+  {
+    "_id": "662e11f91e71603fc3c969f4",
+    "name": "Abisko Trail Stretch Trousers Women",
+    "manufacturer": "Fjällräven",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 209.95,
+        "currency": "EUR"
+      },
+      {
+        "value": 224.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Lightweight, full-stretch trousers in a durable, double-woven stretch fabric – Abisko Trail Stretch Trousers W are functional trousers optimised for hiking. They are perfect for treks where you need excellent freedom of movement combined with durability and protection. Well-fitting design with regular fit, slightly tapered lower legs and elastic at the sides and back of the waist. They also have a discreet zippered leg pocket for your essentials, zippered hand pockets and elastic drawcord adjustments at the leg endings. If you’re already a fan of our trousers, then you can expect to stay the same size in our Improved Fit if you wear an EU 34 through 44. EU sizes 46 and above can go down a size, depending on fit preference. If this is your first pair of trousers, check our Size Guide to find your best fit.",
+      "de": "Leichte Stretchhose aus langlebigem, doppelt gewebtem Stretchmaterial – die Abisko Trail Stretch Trousers W ist eine Funktionshose, die sich optimal zum Wandern eignet. Sie ist der perfekte Begleiter, wenn du exzellente Bewegungsfreiheit, Langlebigkeit und Schutz brauchst. Gut sitzendes Design mit Regular Fit, etwas schmaler zulaufendem Bein unten sowie elastischen Einsätzen an den Seiten und hinten am Bund. Die Hose hat auch eine unauffällige Reißverschlusstasche am Bein für die wichtigsten Utensilien, Eingrifftaschen mit Reißverschluss und einen elastischen Tunnelzug an den Beinabschlüssen. Wenn du bereits ein Fan unserer Hosen bist und eine EU-Größe zwischen 34 und 44 trägst, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Ab Größe 46 kannst du eine Nummer kleiner tragen – je nach Vorliebe. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e11f91e71603fc3c969f4-1714295496934-1_original.webp",
+          "altText": "Abisko Trail Stretch Trousers Women photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e11f91e71603fc3c969f4-1714295496934-1_2000.webp",
+          "altText": "Abisko Trail Stretch Trousers Women photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e11f91e71603fc3c969f4-1714295496934-1_1000.jpeg",
+          "altText": "Abisko Trail Stretch Trousers Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e11f91e71603fc3c969f4-1714295496934-1_500.jpeg",
+          "altText": "Abisko Trail Stretch Trousers Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e11f91e71603fc3c969f4-1714295496934-1_200.jpeg",
+          "altText": "Abisko Trail Stretch Trousers Women photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/trekking-trousers/abisko-trail-stretch-trousers-w"
+  },
+  {
+    "_id": "662e13bb2a8d209afe2adb9c",
+    "name": "Nikka Shorts Curved Women",
+    "manufacturer": "Fjällräven",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 129.95,
+        "currency": "EUR"
+      },
+      {
+        "value": 139.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "High-performance trekking shorts made from stretch fabric and G-1000 for excellent freedom of movement and durability. This model with Curved Fit has a little extra width over the hips and thighs, and a slightly more accentuated waist that other models. This gives a more comfortable pair of shorts that sit better on a curvy figure, without being tight, bunching or having a gap at the back of the waist. The waist is cut lower at the front and higher at the back so they sit well under a backpack and when you are active. Stretch fabric at the lower back and G-1000 reinforcements over the rear. Hand pockets with zippers are positioned so they are accessible even when carrying a backpack with a hipbelt. There is a large leg pocket with a flap and a smaller inner pocket in mesh on the right leg, plus a smaller leg pocket for a mobile phone or GPS on the left leg. A loop at the waist can be used to attach a knife, camera or any other smaller piece of equipment wanted close at hand.",
+      "de": "Hochtechnische Trekkingshorts aus Stretchmaterial und G-1000® für maximale Bewegungsfreiheit und Strapazierfähigkeit. Dieses Modell betont dank dem femininen Curved Fit die Taille und bietet mehr Weite an Gesäß und Oberschenkeln. So ergibt sich eine Shorts mit bequemer Passform und gutem Sitz – ohne einzuengen, Falten zu werfen oder am Rücken abzustehen. Der Bund ist hinten höher geschnitten als vorn, damit die Hose auch beim Tragen eines Rucksacks und bei bewegungsintensiven Aktivitäten bestens sitzt. Stretchmaterial im Lendenrückenbereich und Verstärkungen aus G-1000® am Gesäß. Die Reißverschluss-Einschubtaschen sind so angeordnet, dass sie auch beim Tragen eines Rucksacks mit Hüftgurt noch zugänglich sind. Eine große Beintasche mit Patte und einer kleineren Innentasche aus Mesh auf dem rechten Bein. Eine kleinere Beintasche fürs Handy oder GPS-Gerät auf dem linken Bein. An der Schlaufe am Bund können Messer, Kamera oder andere Dingen, die man unterwegs schnell zur Hand haben möchte, befestigt werden."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e13bb2a8d209afe2adb9c-1714295949487-1_original.webp",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/medium/product-662e13bb2a8d209afe2adb9c-1714295949487-1_1000.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/large/product-662e13bb2a8d209afe2adb9c-1714295949487-1_2000.webp",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e13bb2a8d209afe2adb9c-1714295949487-1_500.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e13bb2a8d209afe2adb9c-1714295949487-1_200.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/shorts-skirts/nikka-shorts-curved-w"
+  },
+  {
+    "_id": "662e15153721dee2533196bd",
+    "name": "Men's Venga Rock Pants",
+    "manufacturer": "Patagonia",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 100,
+        "currency": "EUR"
+      },
+      {
+        "value": 109,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Lightweight Regenerative Organic Certified® cotton/spandex with enough stretch for high stepping, stemming and all-day comfort at the crag, our casual yet dialed Venga Rock Pants live and breathe rock climbing. Inseam is 32\"; also available in 30\" inseam. Made in a Fair Trade Certified™ factory.",
+      "de": "Unsere lässige und doch absolut funktionale Venga Rock Pants ist am Fels ganz in ihrem Element. Gefertigt aus leichter Regenerative Organic Certified™ Baumwolle mit etwas Elastan für genau den nötigen Stretch. Beinlänge 81 cm; auch erhältlich in Beinlänge 76 cm (Innennaht). Hergestellt in einem Fair Trade Certified™-Betrieb."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e15153721dee2533196bd-1714296400443-1_original.webp",
+          "altText": "Men's Venga Rock Pants photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e15153721dee2533196bd-1714296400443-1_2000.webp",
+          "altText": "Men's Venga Rock Pants photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e15153721dee2533196bd-1714296400443-1_1000.jpeg",
+          "altText": "Men's Venga Rock Pants photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e15153721dee2533196bd-1714296400443-1_500.jpeg",
+          "altText": "Men's Venga Rock Pants photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e15153721dee2533196bd-1714296400443-1_200.jpeg",
+          "altText": "Men's Venga Rock Pants photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.patagonia.com/product/mens-venga-rock-climbing-pants-regular/83083.html?dwvar_83083_color=TRBN&cgid=mens-pants-jeans-hiking"
+  },
+  {
+    "_id": "662e17849128c8b054fbe0c8",
+    "name": "Women's Pack Out Tights",
+    "manufacturer": "Patagonia",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 120,
+        "currency": "EUR"
+      },
+      {
+        "value": 112,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Pack it in, pack it out: These versatile tights are just what you need for increased mobility in the wilderness. Inseam is 29\". Made in a Fair Trade Certified™ factory.",
+      "de": "Was man mit in die Natur nimmt, kann man auch wieder zurückbringen: Diese vielseitige Tights hat verstärkte Einsätze an den Knien und am Gesäß für zusätzliche Strapazierfähigkeit und ist perfekt für optimale Beweglichkeit in der Wildnis. Beinlänge 71 cm (Innennaht). Hergestellt in einem Fair Trade Certified™-Betrieb."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e17849128c8b054fbe0c8-1714296964100-1_original.webp",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e17849128c8b054fbe0c8-1714296964100-1_2000.webp",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e17849128c8b054fbe0c8-1714296964100-1_1000.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e17849128c8b054fbe0c8-1714296964100-1_500.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e17849128c8b054fbe0c8-1714296964100-1_200.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.patagonia.com/product/womens-pack-out-active-tights/21995.html?dwvar_21995_color=MANR&cgid=womens-pants-jeans"
+  }
+]
