@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "5c8a34ed14eb5c17645c9108",
+    "name": "ILAGA",
+    "manufacturer": "Rebel Kayaks",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "prices": [
+      {
+        "value": 3140,
+        "currency": "EUR"
+      },
+      {
+        "value": 3150,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Ilaga is one of the most recognized and appreciated greenland kayaks on the market. It’s original shape by Johan Wirsen is available from Rebel Kayaks only. Ilaga is a low volume Greenland style kayak. It features an integrated foldable laminated backrest for layback rolls and to give access to storage between the back rest and rear bulkhead. It also features steel rods for roof rack security or tow line mounting.",
+      "de": "Ilaga ist eines der bekanntesten und geschätztesten Grönlandkajaks auf dem Markt. Seine Originalform von Johan Wirsen ist nur bei Rebel Kayaks erhältlich. Ilaga ist ein Kajak im Grönlandstil mit geringem Volumen. Es verfügt über eine integrierte, faltbare, laminierte Rückenlehne für das Zurücklegen von Rollen und für den Zugang zum Stauraum zwischen der Rückenlehne und dem Heckspant. Außerdem verfügt es über Stahlstangen zur Sicherung auf dem Dachgepäckträger oder zur Befestigung von Abschleppleinen."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/ilaga-original.webp",
+          "altText": "ILAGA photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/ilaga-2000.webp",
+          "altText": "ILAGA photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/ilaga-1000.jpg",
+          "altText": "ILAGA photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/ilaga-500.jpg",
+          "altText": "ILAGA photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/ilaga-200.jpg",
+          "altText": "ILAGA photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.rebelkayaks.com/product/ilaga-2-2/"
+  }
+]

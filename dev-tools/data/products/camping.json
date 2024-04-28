@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "5c8a21d02f8fb814b56fa189",
+    "name": "Naturehike Cloud-up 2 Ultralight Camping Tent",
+    "manufacturer": "Naturehike",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "prices": [
+      {
+        "value": 158.25,
+        "currency": "EUR"
+      },
+      {
+        "value": 169.95,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "If you are looking for an ultralight tent that saves space and reduces weight, and a high-quality product with half the price or even less but can rival top brands, then Naturehike Cloud Up series tents are your best choice.",
+      "de": "Wenn Sie ein ultraleichtes Zelt suchen, das Platz spart und das Gewicht reduziert, und ein hochwertiges Produkt zum halben Preis oder sogar weniger, das aber mit den Top-Marken mithalten kann, dann sind die Zelte der Naturehike Cloud Up-Serie Ihre beste Wahl."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/naturehike-cloud-up-2-ultralight-camping-tent-original.webp",
+          "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/naturehike-cloud-up-2-ultralight-camping-tent-1000.jpg",
+          "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/naturehike-cloud-up-2-ultralight-camping-tent-500.jpg",
+          "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/naturehike-cloud-up-2-ultralight-camping-tent-200.jpg",
+          "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.naturehike.com/products/cloud-up-2-people-tent?variant=37854424563894"
+  }
+]

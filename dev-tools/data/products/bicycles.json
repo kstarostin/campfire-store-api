@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "5c8a35b614eb5c17645c910b",
+    "name": "Stereo ONE22 Pro",
+    "manufacturer": "Cube",
+    "category": "661f8ac9010ca367f5647930",
+    "prices": [
+      {
+        "value": 1999,
+        "currency": "EUR"
+      },
+      {
+        "value": 2135,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Like all our frames, the Stereo ONE22 is all about providing the best performance at the lowest possible weight. Hydroformed tubing is triple butted to save as much weight as possible without sacrificing strength. The tapered head tube and Boost 148 rear axle ensure steering precision and excellent pedalling efficiency. And it's all built around our Efficient Trail Control kinematics and a 130mm fork, with Agile Trail Geometry putting you firmly in control at all times. There's even a SizeSplit XS option with 27.5in wheels for riders who are shorter in stature, but don't want to compromise on performance.",
+      "de": "Wie bei allen unseren Rahmen geht es auch beim Stereo ONE22 um 1a-Performance bei zugleich geringem Gewicht. Klingt unmachbar? Keineswegs. Durch den Einsatz dreifach konifizierter Rohrsätze wurde effizient Gewicht gespart, und zwar ohne Einbußen in Sachen Stabilität und Steifigkeit. Eine ausgeklügelte Kombination aus einem konifizierten Steuerrohr und Boost 148 Hinterbau sorgt für optimierte Lenkpräzision und höchste Pedaliereffizienz. Dazu kommen unsere Efficient Trail Control Kinematik, eine 130 mm Federgabel und die Agile Trail Geometry für ein stabiles, kontrolliertes Handling, immer und überall. Unser SizeSplit System umfasst sogar eine XS-Variante mit 27.5 Zoll Laufrädern für kleinere Fahrer, die auf maximale Performance nicht verzichten wollen."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/stereo-one22-pro-original.webp",
+          "altText": "Stereo ONE22 Pro photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/stereo-one22-pro-2000.webp",
+          "altText": "Stereo ONE22 Pro photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/stereo-one22-pro-1000.jpg",
+          "altText": "Stereo ONE22 Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/stereo-one22-pro-500.jpg",
+          "altText": "Stereo ONE22 Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/stereo-one22-pro-200.jpg",
+          "altText": "Stereo ONE22 Pro photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.cube.eu/de-de/cube-stereo-one22-pro-fireorange-n-black/fa0fb720455087e4ee42e2e9055bbee3"
+  }
+]

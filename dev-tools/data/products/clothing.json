@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "5c88fa8cf4afda39709c295a",
+    "name": "Nordwand Pro Pants Men",
+    "manufacturer": "RevolutionRace",
+    "category": "661f9c7f106aa7dbfa9f5a41",
+    "prices": [
+      {
+        "value": 119,
+        "currency": "EUR"
+      },
+      {
+        "value": 119,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Highly versatile hiking pants with strategically placed stretch panels and added ventilation zippers for optimal comfort and flexibility.",
+      "de": "Äußerst vielseitige Wanderhose mit zusätzlichen Belüftungsreißverschlüssen und strategisch platzierten Stretcheinsätzen für optimalen Komfort und Flexibilität."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/nordwand-pro-pants-men-original.webp",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/nordwand-pro-pants-men-2000.webp",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/nordwand-pro-pants-men-1000.jpg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/nordwand-pro-pants-men-500.jpg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/nordwand-pro-pants-men-200.jpg",
+          "altText": "Nordwand Pro Pants Men photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851"
+  }
+]

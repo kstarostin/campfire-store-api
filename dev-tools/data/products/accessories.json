@@ -1,0 +1,555 @@
+[
+  {
+    "_id": "5c88fa8cf4afda39709c2955",
+    "name": "Lithium 40",
+    "manufacturer": "Mammut",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 190,
+        "currency": "EUR"
+      },
+      {
+        "value": 209,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "When you go hiking, you like a challenge. Your backpack needs to pack in quite a bit. The Lithium 40 is made mainly from recycled materials and the durable water-repellent treatment is PFC-free. The back length can be adapted to suit your needs. Anatomically shaped, softly padded hip belt and shoulder straps provide additional comfort. If you don’t need the hip belt, you can simply remove it. The same applies to the integrated rain cover and the bottom compartment with external access. There are secure attachments for trekking poles and an ice axe. You can also use the compression straps to carry equipment. The Lithium 40 is compatible with hydration systems and the mesh side pockets allow access even when walking. A flexible and spacious companion for demanding tours.",
+      "de": "Wenn du wandern gehst, dann richtig. Da muss dein Rucksack einiges packen können. Der Lithium 40 ist mehrheitlich aus recycelten Materialien hergestellt, die dauerhaft wasserabweisende Imprägnierung ist PFC-frei. Die Rückenlänge passt du deinen Bedürfnissen an. Für zusätzlichen Tragekomfort sorgen anatomisch geformte, weich gepolsterte Hüft- und Schultergurte. Brauchst du den Hüftgurt nicht, nimmst du ihn einfach ab. Genauso machst du es mit der integrierten Regenhülle und dem von aussen zugänglichen Bodenfach. Trekkingstöcke und Pickel lassen sich sicher befestigen. Die Kompressionsriemen kannst du auch als Materialhalterung verwenden. Der Lithium 40 ist mit Trinksystemen kompatibel, auf die seitlichen Netztaschen greifst du auch im Gehen zu. Ein flexibler und geräumiger Begleiter für anspruchsvolle Touren."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-5c88fa8cf4afda39709c2955-1714287500165-1_original.webp",
+          "altText": "Lithium 40 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-5c88fa8cf4afda39709c2955-1714287500165-1_1000.jpg",
+          "altText": "Lithium 40 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-5c88fa8cf4afda39709c2955-1714287500165-1_500.jpg",
+          "altText": "Lithium 40 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-5c88fa8cf4afda39709c2955-1714287500165-1_200.jpg",
+          "altText": "Lithium 40 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.mammut.com/de/de/products/2530-03562-0001/lithium-40"
+  },
+  {
+    "_id": "662def6170b24f3efc32963b",
+    "name": "Trion 15",
+    "manufacturer": "Mammut",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 150,
+        "currency": "EUR"
+      },
+      {
+        "value": 160,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "The perfect daypack for your alpine tours, the smallest of the Trion series serves up lightweight comfort and exceptional durability in the close-to-body fit of a trail running vest. Water-repellent and abrasion-resistant, our full Trion line was developed with pro alpinists Stephan Siegrist and Nico Hojac to optimize every last detail. Made of primarily recycled materials, the Trion 15 offers unmatched freedom of movement, a zippered roll-top closure, and quick side access to the main compartment.",
+      "de": "Das Leichtgewicht aus extrem robusten, vorwiegend recycelten Materialien eignet sich ideal zum Bergsteigen oder Klettern für alpine Tagestouren. Ähnlich einer Trailrunning-Weste sitzt der Trion 15 dank des komfortablen Tragesystem nah am Körper und schenkt dir so volle Bewegungsfreiheit. In Zusammenarbeit mit den Profi-Alpinisten Stephan Siegrist und Nico Hojac haben wir den wasserabweisenden Allrounder perfektioniert und mit schnell zugänglichen Verstaumöglichkeiten ausgestattet. So hast du über das Rolltop mit Reissverschluss sowie die seitliche Öffnung schnell Zugriff auf das Hauptfach."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662def6170b24f3efc32963b-1714287500707-1_original.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662def6170b24f3efc32963b-1714287500707-1_2000.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662def6170b24f3efc32963b-1714287500707-1_1000.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662def6170b24f3efc32963b-1714287500707-1_500.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662def6170b24f3efc32963b-1714287500707-1_200.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662def6170b24f3efc32963b-1714287500707-2_original.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662def6170b24f3efc32963b-1714287500707-2_2000.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662def6170b24f3efc32963b-1714287500707-2_1000.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662def6170b24f3efc32963b-1714287500707-2_500.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662def6170b24f3efc32963b-1714287500707-2_200.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662def6170b24f3efc32963b-1714287500707-3_original.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662def6170b24f3efc32963b-1714287500707-3_2000.webp",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662def6170b24f3efc32963b-1714287500707-3_1000.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662def6170b24f3efc32963b-1714287500707-3_500.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662def6170b24f3efc32963b-1714287500707-3_200.jpeg",
+          "altText": "Trion 15 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.mammut.com/de/de/products/2520-00981-0243/trion-15"
+  },
+  {
+    "_id": "662df51aaf311f80b416de13",
+    "name": "Trion 38",
+    "manufacturer": "Mammut",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 180,
+        "currency": "EUR"
+      },
+      {
+        "value": 195,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "When you go hiking, you like a challenge. Your backpack needs to pack in quite a bit. The Lithium 40 is made mainly from recycled materials and the durable water-repellent treatment is PFC-free. The back length can be adapted to suit your needs. Anatomically shaped, softly padded hip belt and shoulder straps provide additional comfort. If you don’t need the hip belt, you can simply remove it. The same applies to the integrated rain cover and the bottom compartment with external access. There are secure attachments for trekking poles and an ice axe. You can also use the compression straps to carry equipment. The Lithium 40 is compatible with hydration systems and the mesh side pockets allow access even when walking. A flexible and spacious companion for demanding tours.",
+      "de": "Das Leichtgewicht aus extrem robusten, vorwiegend recycelten Materialien eignet sich ideal zum Bergsteigen, Klettern oder Skitouren. In Zusammenarbeit mit den Profi-Alpinisten Stephan Siegrist und Nico Hojac haben wir den wasserabweisenden Allrounder perfektioniert und mit schnell zugänglichen Verstaumöglichkeiten ausgestattet. So kommst du neben dem Rolltop unter dem abnehmbaren Deckel über den seitlichen Reissverschluss schnell zum Hauptfach. Für die Lawinenausrüstung gibt es ein separates Fach, für Eispickel eine praktische, sichere Fixierung. Das bequeme Kontaktrückensystem hält die Last nah am Rücken, damit dein Fokus in der Vertikalen ganz auf der nächsten Bewegung bleibt."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662df51aaf311f80b416de13-1714288056927-1_original.webp",
+          "altText": "Trion 38 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662df51aaf311f80b416de13-1714288056927-1_2000.webp",
+          "altText": "Trion 38 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662df51aaf311f80b416de13-1714288056927-1_1000.jpeg",
+          "altText": "Trion 38 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662df51aaf311f80b416de13-1714288056927-1_500.jpeg",
+          "altText": "Trion 38 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662df51aaf311f80b416de13-1714288056927-1_200.jpeg",
+          "altText": "Trion 38 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.mammut.com/de/de/products/2520-03842-2277/trion-38"
+  },
+  {
+    "_id": "662df7f89b36f3b6155abd5f",
+    "name": "AETHER 65",
+    "manufacturer": "Osprey",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 300,
+        "currency": "EUR"
+      },
+      {
+        "value": 320,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "Ideal for a week on the trail or a gear-intensive weekend, the Aether 65 is a customizable, perfect-fitting pack that has the ability to carry larger and heavier loads. Featuring an adjustable torso and Custom Fit-on-the-Fly™ Shoulder Straps and Hipbelt to calibrate the perfect fit. An injection-molded AirScape™ backpanel delivers fine-tuned performance. Made with high-quality bluesign®-approved nylon and PFC-free DWR. Raincover included.",
+      "de": "Egal, ob du eine ganze Woche unterwegs bist oder einen Wochenendtrip mit viel Ausrüstung planst: Der Aether 65 ist dein idealer Begleiter. Er ist flexibel anpassbar und kann auch große und schwere Lasten tragen. Dank verstellbarer Rückenlänge und den anpassbaren Fit-on-the-Fly Schulter- und Hüftgurten lässt sich die Passform exakt einstellen. Die spritzgegossene AirScape Rückenplatte liefert eine fein abgestimmte Performance. Hergestellt aus hochwertigem Nylon mit bluesign-Siegel und PFC-freier DWR-Imprägnierung. Inklusive Regenhülle."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662df7f89b36f3b6155abd5f-1714288688426-1_original.webp",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662df7f89b36f3b6155abd5f-1714288688426-1_2000.webp",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662df7f89b36f3b6155abd5f-1714288688426-1_1000.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662df7f89b36f3b6155abd5f-1714288688426-1_500.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662df7f89b36f3b6155abd5f-1714288688426-1_200.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.osprey.com/aether-trade-65-aether65f20-550#color=Black"
+  },
+  {
+    "_id": "662df8c6b026d4e999ba5327",
+    "name": "AURA AG 50",
+    "manufacturer": "Osprey",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 310,
+        "currency": "EUR"
+      },
+      {
+        "value": 315,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "For lighter-weight multiday overnight trips where comfort and ventilation are paramount and a women's-specific fit is ideal, people know to reach for their Aura AG 50. AntiGravity suspension delivers a weight-defying fit that seamlessly envelopes your back and hips in 3D-suspended mesh that'll have you wondering where all that weight you packed went. Trust us when we say it's still there—the suspension is just that good. From easy-to-use stretch mesh side pockets, Stow-on-the-Go trekking pole attachment and integrated raincover, the Aura AG 50 is a compromise-free women's backpacking pack. Made with recycled main, accent and bottom fabrics.",
+      "de": "Für mehrtägige Touren mit leichterem Gepäck, wo vor allem Komfort und optimale Belüftung zählen, greifen Frauen am liebsten zum speziell auf sie abgestimmten Aura AG 50. Das AntiGravity-Rückensystem zaubert das Gewicht einfach weg und passt sich dank dem 3D-gespannten Mesh nahtlos an Rücken und Hüften an. Du wirst dich wundern, ob du auch wirklich alles dabei hast. Das hast du, versprochen. Dieses Rückensystem ist einfach so gut. Von den handlichen Seitenfächern aus elastischem Mesh über das Stow-on-the-Go-Befestigungssystem für Trekkingstöcke. Mit dem Aura AG 50 gehen Frauen bei der Wahl ihres Trekkingrucksacks keine Kompromisse ein. Hergestellt aus 100 % recycelten Materialien."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662df8c6b026d4e999ba5327-1714289134689-1_original.webp",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662df8c6b026d4e999ba5327-1714289134689-1_2000.webp",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662df8c6b026d4e999ba5327-1714289134689-1_1000.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662df8c6b026d4e999ba5327-1714289134689-1_500.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662df8c6b026d4e999ba5327-1714289134689-1_200.jpeg",
+          "altText": "AETHER 65 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.osprey.com/aura-ag-50-aura50s22-417#color=Enchantment%2520Purple"
+  },
+  {
+    "_id": "662dfa6d912584992752bc65",
+    "name": "AC LITE 16",
+    "manufacturer": "Deuter",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 100,
+        "currency": "EUR"
+      },
+      {
+        "value": 107,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "This comfortable day pack features the ultra-light deuter Aircomfort back system with maximum ventilation and offers an excellent comfort-to-weight ratio. It has a spacious main compartment and dedicated cell phone pocket, stretch side pockets, lid compartments and gear loops to strap poles and a range of gear to the outside of the pack. Prepped to accommodate a mesh helmet holder and hydration system (up to 2 L) and comes with a detachable rain cover.",
+      "de": "Der bequeme Rucksack für Tagesausflüge mit federleichtem, maximal belüftetem Aircomfort-Rückensystem bietet nicht nur eine sehr gute Gewicht-Komfort-Ratio, sondern besitzt auch ein geräumiges Hauptfach sowie eine Smartphone-Tasche, elastische Seitentaschen, Deckelfächer und Schlaufen außen am Rucksack, die das Verstauen und Befestigung von Gegenständen und Stöcken mühelos einfach machen. Er ist Helmnetz- und Trinksystem-kompatibel (bis 2 L) und hat eine abnehmbare Regenhülle."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662dfa6d912584992752bc65-1714289827824-1_original.webp",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662dfa6d912584992752bc65-1714289827824-1_2000.webp",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662dfa6d912584992752bc65-1714289827824-1_1000.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662dfa6d912584992752bc65-1714289827824-1_500.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662dfa6d912584992752bc65-1714289827824-1_200.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662dfa6d912584992752bc65-1714289827824-2_original.webp",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662dfa6d912584992752bc65-1714289827824-2_2000.webp",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662dfa6d912584992752bc65-1714289827824-2_1000.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662dfa6d912584992752bc65-1714289827824-2_500.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662dfa6d912584992752bc65-1714289827824-2_200.jpeg",
+          "altText": "AC LITE 16 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1402320-wanderrucksack-ac-lite-16"
+  },
+  {
+    "_id": "662dfe4954778fefe2874ac2",
+    "name": "TRAIL 28 SL",
+    "manufacturer": "Deuter",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 145,
+        "currency": "EUR"
+      },
+      {
+        "value": 155,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "The reduced contact surface and large ventilation channels of the deuter Airstripes back system generates optimum air flow, while perforated shoulder straps and hip fins (with pockets) ensure even weight distribution – for a snug, secure fit over any terrain. A flat-format lid allows space for the head to move, even with a helmet on. Loops on the shoulder straps keep via ferrata set carabiners close at hand. And thanks to a large front zipper opening and side pockets, equipment and gear are always easy to access.",
+      "de": "Das Airstripes Rückensystem mit geringer Rückenauflage und großen Belüftungskanälen sowie die perforierten Schulterträger und Hüftflossen mit Taschen sorgen für optimale Luftzirkulation, körpernahe Gewichtsverteilung und damit einen kompakten Sitz in jedem Terrain. Die flache Deckelkonstruktion bietet gute Kopffreiheit - auch mit Helm. Dank Fixierungen an den Schulterträgern sind die Karabiner des Klettersteigsets stets griffbereit. Zudem sind Equipment und Material dank großem Reißverschluss-Frontzugang und Seitentaschen schnell zur Hand."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662dfe4954778fefe2874ac2-1714290413218-1_original.webp",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662dfe4954778fefe2874ac2-1714290413218-1_2000.webp",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662dfe4954778fefe2874ac2-1714290413218-1_1000.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662dfe4954778fefe2874ac2-1714290413218-1_500.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662dfe4954778fefe2874ac2-1714290413218-1_200.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-662dfe4954778fefe2874ac2-1714290413220-2_original.webp",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662dfe4954778fefe2874ac2-1714290413220-2_2000.webp",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662dfe4954778fefe2874ac2-1714290413220-2_1000.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662dfe4954778fefe2874ac2-1714290413220-2_500.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662dfe4954778fefe2874ac2-1714290413220-2_200.jpeg",
+          "altText": "TRAIL 28 SL photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403139-wanderrucksack-trail-28-sl"
+  },
+  {
+    "_id": "662e000df9c246bd3b03dbf9",
+    "name": "SPEED LITE 13",
+    "manufacturer": "Deuter",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 65,
+        "currency": "EUR"
+      },
+      {
+        "value": 69,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "This pack is speedy, light and sustainable thanks to deuter’s Lite back system, ergonomic, perforated shoulder straps, a detachable waist belt, precision-adjustable sternum strap and 100% recycled, bluesign® certified body fabric. Designed for fast-paced hiking, side compression straps effectively reduce load wobble and enable full range of movement. This helps save energy over longer distances too.",
+      "de": "Leicht, schnell und nachhaltig am Berg dank bewährtem Lite Tragesystem, ergonomisch geformten, perforierten Schulterträgern, abnehmbaren Bauchgurt, stufenlos verstellbarem Brustgurt und 100% recyceltem und bluesign® zertifiziertem Hauptmaterial. Bei schnellen Hikes sorgen seitliche Kompressionsriemen für die Minimierung von Auf- und Abbewegung der Ladung und damit für eine uneingeschränkte Bewegungsfreiheit. So wird wichtige Energie auf längeren Strecken gespart."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e000df9c246bd3b03dbf9-1714291102380-1_original.webp",
+          "altText": "SPEED LITE 13 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e000df9c246bd3b03dbf9-1714291102380-1_2000.webp",
+          "altText": "SPEED LITE 13 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e000df9c246bd3b03dbf9-1714291102380-1_1000.jpeg",
+          "altText": "SPEED LITE 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e000df9c246bd3b03dbf9-1714291102380-1_500.jpeg",
+          "altText": "SPEED LITE 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e000df9c246bd3b03dbf9-1714291102380-1_200.jpeg",
+          "altText": "SPEED LITE 13 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1401544-wanderrucksack-speed-lite-13"
+  },
+  {
+    "_id": "662e00c6dd0d4ade52164a56",
+    "name": "TRAIL PRO 36",
+    "manufacturer": "Deuter",
+    "category": "661f9bfed801db7ada6d4fd3",
+    "prices": [
+      {
+        "value": 200,
+        "currency": "EUR"
+      },
+      {
+        "value": 215,
+        "currency": "USD"
+      }
+    ],
+    "descriptionI18n": {
+      "en": "The reduced contact surface of the deuter Airstripes back system and airy, quick-drying Air Spacer Mesh against the back combined with perforated shoulder straps and hip fins ensure maximum airflow, even weight distribution, excellent comfort and a snug, secure fit on multi-day via ferrata (fixed-rope) routes.  The flat-format lid allows space for the head to move, even with a helmet on. Loops on the shoulder straps keep via ferrata set carabiners close at hand. While equipment and gear are easy to access via a large front zipper opening or in the side pockets.",
+      "de": "Das Airstripes Rückensystem mit geringer Auflagefläche und luftdurchlässigem, schnell trocknendem Air Spacer Mesh sorgt zusammen mit den perforierten Schulterträgern und Hüftflossen für maximale Belüftung, gute Lastverteilung und kompakten Sitz auf langen Touren mit Klettersteig. Die flache Deckelkonstruktion bietet gute Kopffreiheit - auch mit Helm. Dank Fixierungen an den Schulterträgern sind die Karabiner des Klettersteigsets stets griffbereit und das Material über den großen Reißverschluss-Frontzugang und Seitentaschen schnell erreichbar."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e00c6dd0d4ade52164a56-1714291177769-1_original.webp",
+          "altText": "TRAIL PRO 36 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e00c6dd0d4ade52164a56-1714291177769-1_2000.webp",
+          "altText": "TRAIL PRO 36 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e00c6dd0d4ade52164a56-1714291177769-1_1000.jpeg",
+          "altText": "TRAIL PRO 36 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e00c6dd0d4ade52164a56-1714291177769-1_500.jpeg",
+          "altText": "TRAIL PRO 36 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e00c6dd0d4ade52164a56-1714291177769-1_200.jpeg",
+          "altText": "TRAIL PRO 36 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403213-wanderrucksack-trail-pro-36"
+  }
+]

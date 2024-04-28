@@ -24,8 +24,23 @@ const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const categories = JSON.parse(
   fs.readFileSync(`${__dirname}/categories.json`, 'utf-8'),
 );
-const products = JSON.parse(
-  fs.readFileSync(`${__dirname}/products.json`, 'utf-8'),
+const accessories = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/accessories.json`, 'utf-8'),
+);
+const bicycles = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/bicycles.json`, 'utf-8'),
+);
+const camping = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/camping.json`, 'utf-8'),
+);
+const clothing = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/clothing.json`, 'utf-8'),
+);
+const kayaks = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/kayaks.json`, 'utf-8'),
+);
+const ski = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/ski.json`, 'utf-8'),
 );
 const carts = JSON.parse(fs.readFileSync(`${__dirname}/carts.json`, 'utf-8'));
 const cartEntries = JSON.parse(
@@ -40,20 +55,33 @@ const orderEntries = JSON.parse(
 const performImport = async () => {
   console.log('Creating titles...');
   await Title.create(titles);
+
   console.log('Creating users...');
   await User.create(users, { validateBeforeSave: false });
+
   console.log('Creating categories...');
   await Category.create(categories);
+
   console.log('Creating products...');
-  await Product.create(products);
+  await Product.create(accessories);
+  await Product.create(bicycles);
+  await Product.create(camping);
+  await Product.create(clothing);
+  await Product.create(kayaks);
+  await Product.create(ski);
+
   console.log('Creating carts...');
   await Cart.create(carts);
+
   console.log('Creating cart entries...');
   await GenericOrderEntry.create(cartEntries);
+
   console.log('Creating orders...');
   await Order.create(orders);
+
   console.log('Creating order entries...');
   await GenericOrderEntry.create(orderEntries);
+
   console.log('Data successfully loaded!');
 };
 
