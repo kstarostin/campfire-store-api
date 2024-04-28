@@ -21,27 +21,27 @@
     "images": [
       {
         "original": {
-          "url": "/img/products/original/stereo-one22-pro-original.webp",
+          "url": "/img/products/original/product-5c8a35b614eb5c17645c910b-1714292824233-1_original.webp",
           "altText": "Stereo ONE22 Pro photo",
           "mimeType": "image/webp"
         },
         "large": {
-          "url": "/img/products/large/stereo-one22-pro-2000.webp",
+          "url": "/img/products/large/product-5c8a35b614eb5c17645c910b-1714292824233-1_2000.webp",
           "altText": "Stereo ONE22 Pro photo",
           "mimeType": "image/webp"
         },
         "medium": {
-          "url": "/img/products/medium/stereo-one22-pro-1000.jpg",
+          "url": "/img/products/medium/product-5c8a35b614eb5c17645c910b-1714292824233-1_1000.jpg",
           "altText": "Stereo ONE22 Pro photo",
           "mimeType": "image/jpeg"
         },
         "small": {
-          "url": "/img/products/small/stereo-one22-pro-500.jpg",
+          "url": "/img/products/small/product-5c8a35b614eb5c17645c910b-1714292824233-1_500.jpg",
           "altText": "Stereo ONE22 Pro photo",
           "mimeType": "image/jpeg"
         },
         "thumbnail": {
-          "url": "/img/products/thumbnail/stereo-one22-pro-200.jpg",
+          "url": "/img/products/thumbnail/product-5c8a35b614eb5c17645c910b-1714292824233-1_200.jpg",
           "altText": "Stereo ONE22 Pro photo",
           "mimeType": "image/jpeg"
         }

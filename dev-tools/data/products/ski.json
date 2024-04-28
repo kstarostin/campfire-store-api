@@ -21,27 +21,27 @@
     "images": [
       {
         "original": {
-          "url": "/img/products/original/bonafide-97-flat-original.webp",
+          "url": "/img/products/large/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_original.webp",
           "altText": "Bonafide 97 (Flat) photo",
           "mimeType": "image/webp"
         },
         "large": {
-          "url": "/img/products/large/bonafide-97-flat-2000.webp",
+          "url": "/img/products/large/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_2000.webp",
           "altText": "Bonafide 97 (Flat) photo",
           "mimeType": "image/webp"
         },
         "medium": {
-          "url": "/img/products/medium/bonafide-97-flat-1000.jpg",
+          "url": "/img/products/medium/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_1000.jpg",
           "altText": "Bonafide 97 (Flat) photo",
           "mimeType": "image/jpeg"
         },
         "small": {
-          "url": "/img/products/small/bonafide-97-flat-500.jpg",
+          "url": "/img/products/small/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_500.jpg",
           "altText": "Bonafide 97 (Flat) photo",
           "mimeType": "image/jpeg"
         },
         "thumbnail": {
-          "url": "/img/products/thumbnail/bonafide-97-flat-200.jpg",
+          "url": "/img/products/thumbnail/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_200.jpg",
           "altText": "Bonafide 97 (Flat) photo",
           "mimeType": "image/jpeg"
         }

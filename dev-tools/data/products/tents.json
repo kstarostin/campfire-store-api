@@ -21,22 +21,22 @@
     "images": [
       {
         "original": {
-          "url": "/img/products/original/naturehike-cloud-up-2-ultralight-camping-tent-original.webp",
+          "url": "/img/products/original/product-5c8a21d02f8fb814b56fa189-171429435467-1_original.webp",
           "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
           "mimeType": "image/webp"
         },
         "medium": {
-          "url": "/img/products/medium/naturehike-cloud-up-2-ultralight-camping-tent-1000.jpg",
+          "url": "/img/products/medium/product-5c8a21d02f8fb814b56fa189-171429435467-1_1000.jpg",
           "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
           "mimeType": "image/jpeg"
         },
         "small": {
-          "url": "/img/products/small/naturehike-cloud-up-2-ultralight-camping-tent-500.jpg",
+          "url": "/img/products/small/product-5c8a21d02f8fb814b56fa189-171429435467-1_500.jpg",
           "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
           "mimeType": "image/jpeg"
         },
         "thumbnail": {
-          "url": "/img/products/thumbnail/naturehike-cloud-up-2-ultralight-camping-tent-200.jpg",
+          "url": "/img/products/thumbnail/product-5c8a21d02f8fb814b56fa189-171429435467-1_200.jpg",
           "altText": "Naturehike Cloud-up 2 Ultralight Camping Tent photo",
           "mimeType": "image/jpeg"
         }

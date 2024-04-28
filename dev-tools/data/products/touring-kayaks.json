@@ -21,27 +21,27 @@
     "images": [
       {
         "original": {
-          "url": "/img/products/original/ilaga-original.webp",
+          "url": "/img/products/original/product-5c8a34ed14eb5c17645c9108-1714292832655-1_original.webp",
           "altText": "ILAGA photo",
           "mimeType": "image/webp"
         },
         "large": {
-          "url": "/img/products/large/ilaga-2000.webp",
+          "url": "/img/products/large/product-5c8a34ed14eb5c17645c9108-1714292832655-1_2000.webp",
           "altText": "ILAGA photo",
           "mimeType": "image/webp"
         },
         "medium": {
-          "url": "/img/products/medium/ilaga-1000.jpg",
+          "url": "/img/products/medium/product-5c8a34ed14eb5c17645c9108-1714292832655-1_1000.jpg",
           "altText": "ILAGA photo",
           "mimeType": "image/jpeg"
         },
         "small": {
-          "url": "/img/products/small/ilaga-500.jpg",
+          "url": "/img/products/small/product-5c8a34ed14eb5c17645c9108-1714292832655-1_500.jpg",
           "altText": "ILAGA photo",
           "mimeType": "image/jpeg"
         },
         "thumbnail": {
-          "url": "/img/products/thumbnail/ilaga-200.jpg",
+          "url": "/img/products/thumbnail/product-5c8a34ed14eb5c17645c9108-1714292832655-1_200.jpg",
           "altText": "ILAGA photo",
           "mimeType": "image/jpeg"
         }
