@@ -201,7 +201,7 @@
 								},
 								{
 									"key": "filter",
-									"value": "{\"price\": 2500}",
+									"value": "{ \"price\": { \"$gt\": 1500 }, \"quantity\": { \"$gte\": 2 } }",
 									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
 									"disabled": true
 								}
@@ -554,12 +554,6 @@
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
 									"disabled": true
-								},
-								{
-									"key": "filter",
-									"value": "{\"currency\": \"EUR\"}",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
-									"disabled": true
 								}
 							],
 							"variable": [
@@ -862,7 +856,7 @@
 								},
 								{
 									"key": "filter",
-									"value": "{\"code\": \"\"}",
+									"value": "{ \"nameI18n.en\": { \"$regex\": \"kayaks\", \"$options\": \"i\" } }",
 									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
 									"disabled": true
 								}
@@ -1120,7 +1114,7 @@
 								},
 								{
 									"key": "filter",
-									"value": "{\"currency\": \"EUR\"}",
+									"value": "{ \"total\": { \"$gt\": 1500 }, \"currency\": \"USD\", \"status\": { \"$in\": [\"open\", \"progress\"] } }",
 									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
 									"disabled": true
 								}
@@ -1270,7 +1264,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/products?filter={\"manufacturer\": \"\"}",
+							"raw": "{{URL}}/api/v1/products",
 							"host": [
 								"{{URL}}"
 							],
@@ -1319,7 +1313,8 @@
 								{
 									"key": "filter",
 									"value": "{\"manufacturer\": \"\"}",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean]."
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							]
 						},
@@ -1617,12 +1612,6 @@
 									"value": "name,id",
 									"description": "Comma separated set of returned fields.",
 									"disabled": true
-								},
-								{
-									"key": "filter",
-									"value": "{\"code\": \"\"}",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
-									"disabled": true
 								}
 							]
 						},
@@ -1870,7 +1859,7 @@
 								},
 								{
 									"key": "filter",
-									"value": "{\"name\": {\"$regex\" : \"Da\", \"$options\" : \"i\" }}",
+									"value": "{ \"name\": { \"$regex\": \"sarah\", \"$options\": \"i\" } }",
 									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
 									"disabled": true
 								}

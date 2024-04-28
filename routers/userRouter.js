@@ -34,7 +34,13 @@ router
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
    *       - $ref: '#/parameters/fields'
-   *       - $ref: '#/parameters/filter'
+   *       - in: query
+   *         name: filter
+   *         description: JSON string with parameter names and values to filter by.<br><br>Supported value types are [string, number, boolean, object, array].<br><br>Example&#58; <code>{ "name"&#58; { "$regex"&#58; "sarah", "$options"&#58; "i" } }</code>.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
    *     responses:
    *       200:
    *         description: List of found user documents.
