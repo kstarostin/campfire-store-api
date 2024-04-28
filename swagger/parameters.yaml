@@ -32,7 +32,7 @@ parameters:
     type: string
   filter:
     name: filter
-    description: JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean]. Example&#58; <code>{ "parameter"&#58; "value"}</code>
+    description: JSON string with parameter names and values to filter by.<br><br>Supported value types are [string, number, boolean, object, array].<br><br>Example&#58; <code>{ "price"&#58; { "$gte"&#58; 1500 }, "name"&#58; { "$regex"&#58; "sarah", "$options"&#58; "i" } }</code>.
     in: query
     content:
       application/json:
