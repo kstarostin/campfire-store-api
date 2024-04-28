@@ -28,6 +28,7 @@ router
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
    *       - $ref: '#/parameters/fields'
+   *       - $ref: '#/parameters/filter'
    *     responses:
    *       200:
    *         description: List of found category documents.

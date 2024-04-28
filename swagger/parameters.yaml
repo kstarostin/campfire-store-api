@@ -30,6 +30,14 @@ parameters:
     description: Comma-separated set of returned fields.
     in: query
     type: string
+  filter:
+    name: filter
+    description: JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean]. Example&#58; <code>{ "parameter"&#58; "value"}</code>
+    in: query
+    content:
+      application/json:
+        schema:
+          type: object
   # Category
   categoryId:
     name: id

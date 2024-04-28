@@ -198,6 +198,12 @@
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"price\": 2500}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							],
 							"variable": [
@@ -548,6 +554,12 @@
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"currency\": \"EUR\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							],
 							"variable": [
@@ -847,6 +859,12 @@
 									"value": "name,id",
 									"description": "Comma separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"code\": \"\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							]
 						},
@@ -1099,6 +1117,12 @@
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"currency\": \"EUR\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							],
 							"variable": [
@@ -1246,7 +1270,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/products",
+							"raw": "{{URL}}/api/v1/products?filter={\"manufacturer\": \"\"}",
 							"host": [
 								"{{URL}}"
 							],
@@ -1291,6 +1315,11 @@
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"manufacturer\": \"\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean]."
 								}
 							]
 						},
@@ -1588,6 +1617,12 @@
 									"value": "name,id",
 									"description": "Comma separated set of returned fields.",
 									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"code\": \"\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
 								}
 							]
 						},
@@ -1831,6 +1866,12 @@
 									"key": "fields",
 									"value": "name,id",
 									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"name\": {\"$regex\" : \"Da\", \"$options\" : \"i\" }}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
 									"disabled": true
 								}
 							]

@@ -73,18 +73,24 @@ class APIFeatures {
   filter() {
     const queryObj = { ...this.requestQuery };
     // These fields are handled by other feature functions
-    const excludedFields = [
-      'page',
-      'sort',
-      'limit',
-      'fields',
-      'language',
-      'currency',
-    ];
-    excludedFields.forEach((el) => delete queryObj[el]);
+    // const excludedFields = [
+    //   'page',
+    //   'sort',
+    //   'limit',
+    //   'fields',
+    //   'language',
+    //   'currency',
+    // ];
+    // excludedFields.forEach((el) => delete queryObj[el]);
 
-    let queryStr = JSON.stringify(queryObj);
+    if (!queryObj.filter) {
+      return this;
+    }
+
+    let queryStr = queryObj.filter;
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+
+    console.log(queryStr);
 
     this.dbQuery = this.dbQuery.find(JSON.parse(queryStr));
 
