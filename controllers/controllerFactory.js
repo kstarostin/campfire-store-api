@@ -72,6 +72,9 @@ exports.getAll = (Model, limitOptions) =>
       new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
     );
 
+    const numberPages =
+      totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
+
     // SEND RESPONSE
     res.status(200).json({
       status: 'success',
@@ -79,6 +82,7 @@ exports.getAll = (Model, limitOptions) =>
       resultsPerPage: features.limit,
       resultsTotal: totalCount,
       currentPage: features.page,
+      pages: numberPages,
       data: {
         documents,
       },

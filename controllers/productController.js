@@ -31,6 +31,41 @@ const upload = multer({
 });
 
 /**
+ * TODO: replace with mongoose aggregation on all non-paginated results
+ * Collects filters for found products. The filters contain available values to filter by.
+ * @param {*} results a list of found products for analysis.
+ * @returns a list of filters and available results.
+ */
+const aggregateFilters = function (req, results) {
+  const filters = [];
+  if (results.length === 0) {
+    return filters;
+  }
+
+  // Inspect result prices
+  const prices = results.map((product) => product.priceI18n[req.currency]);
+  filters.push({
+    name: 'priceI18n',
+    type: 'Number',
+    // values: prices,
+    min: Math.min(...prices),
+    max: Math.max(...prices),
+  });
+
+  // Collect result manufacturers
+  const manufacturers = [
+    ...new Set(results.map((product) => product.manufacturer)),
+  ];
+  filters.push({
+    name: 'manufacturer',
+    type: 'String',
+    values: manufacturers,
+  });
+
+  return filters;
+};
+
+/**
  * Validates request parameter id for category and populates found category in to the request.
  * If the category is root, then finds all child categories and populates them for filter usage as well.
  */
@@ -84,6 +119,9 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
   );
 
+  const numberPages =
+    totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
+
   // SEND RESPONSE
   res.status(200).json({
     status: 'success',
@@ -91,6 +129,8 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     resultsPerPage: features.limit,
     resultsTotal: totalCount,
     currentPage: features.page,
+    pages: numberPages,
+    filters: aggregateFilters(req, documents),
     data: {
       documents,
     },
