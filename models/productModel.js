@@ -90,7 +90,7 @@ productSchema.pre('find', function (next) {
     .select('-descriptionI18n')
     .populate({
       path: 'category',
-      select: '_id nameI18n',
+      select: '_id nameI18n parentCategory',
     });
   next();
 });

@@ -1323,6 +1323,79 @@
 					"response": []
 				},
 				{
+					"name": "Get all products for category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/v1/categories/:id/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								":id",
+								"products"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "de",
+									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"description": "Session currency. Default is USD.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"description": "Maximal number of results per page. Default is 25, maximal is 50.",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "Current page number.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"description": "Comma-separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "name,id",
+									"description": "Comma-separated set of returned fields.",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"manufacturer\": \"\"}",
+									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "ID of a leaf category or a root category to filter by. For root categories, the result will contain list of products for all it's child (leaf) categories."
+								}
+							]
+						},
+						"description": "Get list of products. The results can be filtered, sorted, paginated and limited using special query parameters."
+					},
+					"response": []
+				},
+				{
 					"name": "Get product",
 					"request": {
 						"method": "GET",

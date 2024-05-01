@@ -2,6 +2,7 @@ const express = require('express');
 
 const authController = require('../controllers/authController');
 const categoryController = require('../controllers/categoryController');
+const productController = require('../controllers/productController');
 
 const router = express.Router();
 
@@ -149,5 +150,33 @@ router
     authController.restrictTo('admin'),
     categoryController.deleteCategory,
   );
+
+router
+  .route('/:id/products')
+  /**
+   * @swagger
+   * /categories/{id}/products:
+   *   get:
+   *     tags: [Products]
+   *     summary: Get products for category
+   *     description: Get list of products for category. The results can be filtered, sorted, paginated and limited using special query parameters.
+   *     produces:
+   *       - application/json
+   *     parameters:
+   *       - in: path
+   *         name: id
+   *         required: true
+   *         description: <code>id</code> of a leaf category or a root category to filter by. For root categories, the result will contain a list of products for all it's child (leaf) categories.
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/currency'
+   *       - $ref: '#/parameters/limit'
+   *       - $ref: '#/parameters/page'
+   *       - $ref: '#/parameters/sort'
+   *       - $ref: '#/parameters/fields'
+   *     responses:
+   *       200:
+   *         description: List of found product documents.
+   */
+  .get(productController.handleCategoryId, productController.getAllProducts);
 
 module.exports = router;

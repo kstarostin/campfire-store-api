@@ -4,10 +4,12 @@ const { promisify } = require('util');
 const Product = require('../models/productModel');
 const factory = require('./controllerFactory');
 const catchAsync = require('../utils/catchAsync');
+const APIFeatures = require('../utils/apiFeatures');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 const AppError = require('../utils/appError');
 const { createImageFile } = require('../utils/fileUtils');
+const Category = require('../models/categoryModel');
 
 const unlinkAsync = promisify(fs.unlink);
 
@@ -28,10 +30,72 @@ const upload = multer({
   fileFilter: multerFilter,
 });
 
-exports.getAllProducts = factory.getAll(Product, {
-  defaultLimit: 25,
-  maxLimit: 50,
+/**
+ * Validates request parameter id for category and populates found category in to the request.
+ * If the category is root, then finds all child categories and populates them for filter usage as well.
+ */
+exports.handleCategoryId = catchAsync(async (req, res, next) => {
+  if (!req.params.id) {
+    return next(
+      new AppError('Required parameter id for this request is missing.', 400),
+    );
+  }
+  const category = await Category.findById(req.params.id);
+
+  if (!category) {
+    return next(new AppError('No category found with this ID.', 404));
+  }
+  const categories = [];
+  categories.push(category);
+  if (category.root) {
+    const childCategories = await Category.find({
+      parentCategory: category.id,
+    });
+    categories.push(...childCategories);
+  }
+  req.categories = categories;
+
+  next();
 });
+
+/**
+ * Get all products. If the request contains category id, then returns a list of products for this category.
+ * If the category is a root category, then performs searching for it's child categories.
+ */
+exports.getAllProducts = catchAsync(async (req, res, next) => {
+  const filter = {};
+  if (req.categories) {
+    filter.category = { $in: req.categories.map((category) => category.id) };
+  }
+  // EXECUTE QUERY
+  const features = new APIFeatures(Product.find(filter), req.query)
+    .paginate({ defaultLimit: 25, maxLimit: 50 })
+    .sort()
+    .limitFields()
+    .filter();
+  // Retrieve total count of documents. If filter is empty - use more efficient way.
+  const totalCount =
+    Object.keys(filter).length === 0 && filter.constructor === Object
+      ? await Product.estimatedDocumentCount()
+      : await Product.countDocuments(filter);
+  // const documents = await features.dbQuery.explain();
+  const documents = (await features.dbQuery).map((document) =>
+    new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
+  );
+
+  // SEND RESPONSE
+  res.status(200).json({
+    status: 'success',
+    resultsFound: documents.length,
+    resultsPerPage: features.limit,
+    resultsTotal: totalCount,
+    currentPage: features.page,
+    data: {
+      documents,
+    },
+  });
+});
+
 exports.getProduct = factory.getOne(Product, [{ path: 'category' }]);
 exports.createProduct = factory.createOne(Product, [
   'name',
