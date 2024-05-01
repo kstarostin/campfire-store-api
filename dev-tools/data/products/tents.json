@@ -4,16 +4,10 @@
     "name": "Naturehike Cloud-up 2 Ultralight Camping Tent",
     "manufacturer": "Naturehike",
     "category": "661f9b59dc8283b51d38f4d4",
-    "prices": [
-      {
-        "value": 158.25,
-        "currency": "EUR"
-      },
-      {
-        "value": 169.95,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 158.25,
+      "USD": 169.95
+    },
     "descriptionI18n": {
       "en": "If you are looking for an ultralight tent that saves space and reduces weight, and a high-quality product with half the price or even less but can rival top brands, then Naturehike Cloud Up series tents are your best choice.",
       "de": "Wenn Sie ein ultraleichtes Zelt suchen, das Platz spart und das Gewicht reduziert, und ein hochwertiges Produkt zum halben Preis oder sogar weniger, das aber mit den Top-Marken mithalten kann, dann sind die Zelte der Naturehike Cloud Up-Serie Ihre beste Wahl."

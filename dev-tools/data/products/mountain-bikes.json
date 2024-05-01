@@ -4,16 +4,10 @@
     "name": "Stereo ONE22 Pro",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 1999,
-        "currency": "EUR"
-      },
-      {
-        "value": 2135,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 1999,
+      "USD": 2135
+    },
     "descriptionI18n": {
       "en": "Like all our frames, the Stereo ONE22 is all about providing the best performance at the lowest possible weight. Hydroformed tubing is triple butted to save as much weight as possible without sacrificing strength. The tapered head tube and Boost 148 rear axle ensure steering precision and excellent pedalling efficiency. And it's all built around our Efficient Trail Control kinematics and a 130mm fork, with Agile Trail Geometry putting you firmly in control at all times. There's even a SizeSplit XS option with 27.5in wheels for riders who are shorter in stature, but don't want to compromise on performance.",
       "de": "Wie bei allen unseren Rahmen geht es auch beim Stereo ONE22 um 1a-Performance bei zugleich geringem Gewicht. Klingt unmachbar? Keineswegs. Durch den Einsatz dreifach konifizierter Rohrsätze wurde effizient Gewicht gespart, und zwar ohne Einbußen in Sachen Stabilität und Steifigkeit. Eine ausgeklügelte Kombination aus einem konifizierten Steuerrohr und Boost 148 Hinterbau sorgt für optimierte Lenkpräzision und höchste Pedaliereffizienz. Dazu kommen unsere Efficient Trail Control Kinematik, eine 130 mm Federgabel und die Agile Trail Geometry für ein stabiles, kontrolliertes Handling, immer und überall. Unser SizeSplit System umfasst sogar eine XS-Variante mit 27.5 Zoll Laufrädern für kleinere Fahrer, die auf maximale Performance nicht verzichten wollen."
@@ -54,16 +48,10 @@
     "name": "AMS ZERO99 C:68X SLT 29",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 7299,
-        "currency": "EUR"
-      },
-      {
-        "value": 7799,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 7299,
+      "USD": 7799
+    },
     "descriptionI18n": {
       "en": "Fast is light, fast is comfortable, and fast is efficient. The AMS ZERO99 C:68X 29's frame is crafted from our premium carbon and weighs in at a stunning 1,600g, approximately. But it's not just about low weight. Short chainstays with plenty of clearance for 2.25in tyres tuck the rear wheel in under the rider for efficient power transfer. Slender tubes help keep the ride comfortable, rather than harsh. There are angle adjustment inserts to allow fine-tuning of the head angle. And with 100mm of travel front and rear and a geometry that's tuned for agility and pace, you've got everything you need to get to the head of the pack.",
       "de": "Die wichtigsten Voraussetzungen für maximalen Speed? Ganz klar: geringes Gewicht, Komfort und Effizienz. Da kann der AMS ZERO99 C:68X 29 Rahmen mitreden. Er wurde aus unserem hochwertigsten Carbonmaterial gefertigt und wiegt nur 1600 g. Wenig Gewicht ist allerdings nur die halbe Miete. Dank kurzer Kettenstreben mit viel Platz für 2.25 Zoll breite Reifen befindet sich das Hinterrad direkt unter dem Fahrer, was die Kraftübertragung optimiert und die eingesetzte Power in Dynamik und Vorwärtsdrang umsetzt. Und durch die schlanken Rohrsätze fährt sich das Chassis komfortabel anstatt ruppig. Mit den integrierten Lagerschalen zur Winkelverstellung lässt sich der Steuerrohrwinkel feineinstellen. 100 mm Federweg am Vorder- und Hinterrad in der Kombination mit einer auf Agilität und Tempo ausgelegten Geometrie steuern das Ihrige zur Performance bei. Kurz: Gegen diese Speed-Maschine hat die Konkurrenz praktisch keine Chance!"
@@ -104,16 +92,10 @@
     "name": "STEREO ONE77 PRO 29",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 3199,
-        "currency": "EUR"
-      },
-      {
-        "value": 3499,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 3199,
+      "USD": 3499
+    },
     "descriptionI18n": {
       "en": "Big wheels, big travel, big fun. The Stereo ONE77's frame is based on our proven four-bar suspension design and Agile Trail Geometry, for superb suspension performance and dependable handling in a huge range of trail conditions. With a flip chip and two mounting points for air and coil, the rear suspension setup is designed to be progressive – and there are angle adjustment inserts so you can tweak the geometry to suit your own preference. The frame is equally happy with an air or coil shock, and covered bearings, internally routed cables and a threaded bottom bracket mean you can spend more time shredding and less time wrenching. Simply put, it redefines what a big-travel, big-wheeled bike can do.",
       "de": "Große Laufräder, viel Federweg, mega Fahrspaß – kurz: das Stereo ONE77. Die Basis des Rahmens bilden unser bewährtes Viergelenker-Design und die Agile Trail Geometry, beides Garanten für exzellente Dämpfung und zuverlässiges Handling bei allen möglichen und unmöglichen Trail-Bedingungen. Mit einem Flip-Chip und zwei Befestigungspunkten für wahlweise Stahl- oder Luftdämpfer gibt sich die Federung am Heck superprogressiv und effizient. Außerdem kannst du die Geometrie per Lagerschalen zur Winkelverstellung auf deine individuellen Vorlieben und Anforderungen anpassen. Für den letzten Schliff sorgen elegant integrierte Lager, ein geschraubtes Tretlager und ins Innere verlegte Züge. Das bedeutet weniger Wartung und damit keine verpassten Meter mehr auf dem Trail. Kurz: Mit diesem Chassis bekommen Federweg und Laufradgröße ihre ganz große Bühne!"
@@ -154,16 +136,10 @@
     "name": "ATTENTION",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 999,
-        "currency": "EUR"
-      },
-      {
-        "value": 1069,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 999,
+      "USD": 1069
+    },
     "descriptionI18n": {
       "en": "The Attention's sleek looks are thanks to its Smooth Welded head tube and seat tube junctions. It incorporates a threaded bottom bracket and internal cable routing for long-lasting service and simple maintenance. There's even a flat disc mount that integrates seamlessly with our kickstand mount, and integrated mounting points for Acid mudguards and carrier. Updated geometry includes a lower top tube and tapered head tube for more confident handling, and there's plenty of room to run wide, grippy and comfortable 2.25in tyres. Our SizeSplit system has an expanded range, too, so however tall you are there'll be an Attention that fits perfectly. And, as your skills increase, there's scope to fit a dropper post upgrade.",
       "de": "Der Attention Rahmen besticht mit seinem supercleanen Look – verantwortlich dafür: die im Smooth Welding Verfahren hergestellten Verbindungen am Steuerrohr und Sattelstützenprofil. Außerdem haben wir ihm ein geschraubtes Tretlager gegeben und die Züge ins Innere verlegt, damit sie ihre Aufgabe lange machen und leicht gewartet werden können. Es gibt sogar eine Aufnahme für eine Flat Mount Scheibenbremse, die nahtlos in die Seitenständeraufnahme integriert ist. Montagepunkte für Acid Schutzbleche und Gepäckträger sind auch mit dabei. Die spezielle Geometrie hat ein niedrigeres Oberrohr und konifiziertes Steuerrohr für noch zuverlässigeres Handling. Außerdem bleibt viel Platz für breite, griffige und komfortabel rollende 2.25 Zoll Reifen. Auch haben wir unser SizeSplit System jetzt noch breiter aufgestellt – dadurch findest du mit Sicherheit die perfekt passende Kombination aus Attention Laufrad- und Rahmengröße für dich. Und da mit wachsendem Fahrkönnen auch die Ansprüche steigen, kann das Chassis mit einer versenkbaren Sattelstütze ausgestattet werden."
@@ -204,16 +180,10 @@
     "name": "ELITE C:68X SLX",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 4999,
-        "currency": "EUR"
-      },
-      {
-        "value": 5349,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 4999,
+      "USD": 5349
+    },
     "descriptionI18n": {
       "en": "Power. Speed. Control. For a high-performance race frame like the Elite C:68X, it's all in the details. Our premium C:68X® carbon material and Advanced Twin Mold monocoque manufacturing technique have allowed us to create one of the lightest cross-country hardtails around. Optimised carbon lay-up, a tapered head tube and Boost rear axle translate into rapid acceleration. Slender seatstays help absorb trail vibration, so you can push harder for longer. And Agile Ride Geometry puts you firmly in control, so you can power ahead of the competition.",
       "de": "Power, Speed, Kontrolle – beim hochgezüchteten Race-Chassis des Elite C:68X steckt die Performance in den Details. Durch den Einsatz unseres hochwertigen C:68X® Carbonmaterials und Advanced Twin Mold Monocoque Verfahrens ist uns einer der leichtesten Offroad-Hardtail-Rahmen auf dem Markt gelungen. Die spezielle Verteilung der Carbonfasern, das konisch zulaufende Steuerrohr und ein Boost Hinterbau ermöglichen explosive Beschleunigung. Schlanke Sitzstreben absorbieren die Vibrationen vom Trail und sorgen für viel Fahrkomfort und kraftsparendes Pedalieren, was sich vor allem auf langen Strecken bezahlt macht. Last, but not least unsere Agile Ride Geometry für unglaubliche Kontrolle – damit bist du der Konkurrenz immer den entscheidenden Meter voraus!"
@@ -254,16 +224,10 @@
     "name": "ACCESS WS",
     "manufacturer": "Cube",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 599,
-        "currency": "EUR"
-      },
-      {
-        "value": 639,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 599,
+      "USD": 639
+    },
     "descriptionI18n": {
       "en": "The Access WS's sleek looks are thanks to its Smooth Welded head tube and seat tube junctions. It incorporates internal cable routing for reliable gear changes and lower maintenance. There's even a flat disc mount that integrates seamlessly with our kickstand mount, and integrated mounting points for Acid mudguards and carrier. Updated geometry includes a lower top tube for more confident handling, and there's plenty of room to run wide, grippy and comfortable 2.25in tyres. Our SizeSplit system has an expanded range, too, so every rider can find an Access WS that fits her perfectly.",
       "de": "Der Access WS Rahmen besticht mit einem supercleanen Look – verantwortlich dafür: Die im Smooth Welding Verfahren hergestellten Verbindungen am Steuerrohr und Sattelstützenprofil. Außerdem haben wir die Züge ins Innere verlegt, damit sie ihre Aufgabe lange machen und leicht gewartet werden können. Es gibt sogar eine Aufnahme für eine Flat Mount Scheibenbremse, die nahtlos in die Seitenständeraufnahme integriert ist. Montagepunkte für Acid Schutzbleche und Gepäckträger sind auch mit dabei. Die Geometrie hat ein niedrigeres Oberrohr für noch zuverlässigeres Handling und lässt viel Platz für breite, griffige, komfortabel rollende 2.25 Zoll Reifen. Auch haben wir unser SizeSplit System noch breiter aufgestellt – dadurch findest du mit Sicherheit die perfekt passende Access WS Rahmengröße für dich."
@@ -304,16 +268,10 @@
     "name": "Neuron CF 8",
     "manufacturer": "Canyon",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 2999,
-        "currency": "EUR"
-      },
-      {
-        "value": 3199,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 2999,
+      "USD": 3199
+    },
     "descriptionI18n": {
       "en": "",
       "de": ""
@@ -462,16 +420,10 @@
     "name": "Grand Canyon 8",
     "manufacturer": "Canyon",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 1499,
-        "currency": "EUR"
-      },
-      {
-        "value": 1599,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 1499,
+      "USD": 1599
+    },
     "descriptionI18n": {
       "en": "",
       "de": ""
@@ -512,16 +464,10 @@
     "name": "Spark RC Comp Bike",
     "manufacturer": "Scott",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 3999,
-        "currency": "EUR"
-      },
-      {
-        "value": 4299,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 3199,
+      "USD": 4299
+    },
     "descriptionI18n": {
       "en": "The Spark RC Comp is the perfect blend of top-notch carbon engineering, never before seen levels of integration and just the right amount of secret sauce. We wanted to make this platform faster than ever before both up and down the hill. Increasing travel, perfecting geometry, and applying input from the world's best athletes, we've created the cross country race bike of all cross country race bikes. If you think fast is fun, then you're going to love this ride.",
       "de": "Das Spark RC Comp bietet die ideale Kombination aus Carbon-Entwicklung der Spitzenklasse, einem noch nie dagewesenen Maß an Integration und genau der richtigen Menge an geheimen Zutaten. Wir wollten diese Plattform sowohl für den Weg nach oben als auch den Trail hinunter so schnell wie noch nie machen. Wir haben den Federweg vergrößert, an der Geometrie gefeilt sowie Tipps und Wünsche der besten Athleten der Welt umgesetzt, um das beste Cross-Country-Bike aller Cross-Country-Bikes überhaupt zu entwickeln. Wenn du Geschwindigkeit liebst, dann wirst du auch dieses Bike lieben."
@@ -562,16 +508,10 @@
     "name": "Scale 980",
     "manufacturer": "Scott",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 999,
-        "currency": "EUR"
-      },
-      {
-        "value": 999,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 999,
+      "USD": 999
+    },
     "descriptionI18n": {
       "en": "Balancing the Scale’s DNA , we’ve created a whole new breed in the world of hardtail mountain bikes. A racing inspired geometry, coupled with a straightforward and sharp design provides the all-new Scale 900 line with its distinctive character and aggressive look - a bike that proudly flaunts its definitive characteristics. This rig is ready for just about anything, are you?",
       "de": "Wir haben die DNA des NEUEN Scale perfektioniert und eine ganz neue Art von Hardtail-Mountainbike erschaffen. Die komplett neue Scale 900 Kollektion erhält durch die rennerprobte Geometrie und das schnittige Design seine charakteristischen Eigenschaften und den aggressiven Look – ein Bike, das seine inneren Werte stolz zur Schau stellt. Dieses Gefährt kann fast alles. Bist du bereit?"
@@ -612,16 +552,10 @@
     "name": "Genius 940",
     "manufacturer": "Scott",
     "category": "661f8ac9010ca367f5647930",
-    "prices": [
-      {
-        "value": 2999,
-        "currency": "EUR"
-      },
-      {
-        "value": 2999,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 2999,
+      "USD": 2999
+    },
     "descriptionI18n": {
       "en": "The Genius has always been our favorite bike. Smart suspension, smarter features, and the smartest design lead to an unbelievable trail bike that just can't get enough. The All-New Genius, any trail, any time.",
       "de": "Das Genius war schon immer unser Lieblings-Bike. Mit der smarten Federung, den smarten Eigenschaften und dem smarten Design ist es ein unglaubliches Trailbike, von dem man einfach nicht genug kriegen kann. Das komplett neue Genius für jeden Trail zu jeder Zeit."

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const slugifyName = require('../utils/slugifyName');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
-const priceSchema = require('./schemes/priceSchema');
+const i18nPriceSchema = require('./schemes/i18nPriceSchema');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
 const validateRefId = require('./middleware/validateRefId');
 const Category = require('./categoryModel');
@@ -38,14 +38,12 @@ const productSchema = new mongoose.Schema(
       ],
     }),
     slug: String,
-    prices: {
-      type: [priceSchema],
-      required: true,
-      validate: [
-        (value) => value.length > 0,
-        'Product must have at least one price.',
+    priceI18n: i18nPriceSchema({
+      required: [
+        true,
+        'Product must have a price value for each supported currency.',
       ],
-    },
+    }),
     manufacturer: {
       type: String,
       required: [true, 'Product must have a manufacturer.'],

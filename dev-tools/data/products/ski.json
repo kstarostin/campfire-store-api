@@ -4,16 +4,10 @@
     "name": "Bonafide 97 (Flat)",
     "manufacturer": "Blizzard Tecnica",
     "category": "661f9d01f2e5c09eb45296bb",
-    "prices": [
-      {
-        "value": 800,
-        "currency": "EUR"
-      },
-      {
-        "value": 855,
-        "currency": "USD"
-      }
-    ],
+    "priceI18n": {
+      "EUR": 800,
+      "USD": 855
+    },
     "descriptionI18n": {
       "en": "The iconic Bonafide, long-praised for its masterful combination of technical performance and all-mountain versatility, is made to attack the mountain with grace and precision. From crushing through crud, to laying it down on hard pack, to navigating your way through untouched pow in the trees, they’re the ultimate all-conditions daily driver for committed skiers. The TrueBlend Woodcore specifically targets the flex throughout the ski, with a softer tip and tail that keeps you nimble. Denser wood underfoot acts like a gas pedal, giving you the power and drive when you want to charge. Combined with a versatile sidecut and a reduced rocker profile, the Bonafide is the perfect blend of Austrian engineering and real-world testing that’ll keep you skiing confidently, even on those less-than-perfect days.",
       "de": "Mit dem Bonafide 97 schließt Blizzard die Lücke zwischen Freeride und Allmountain. Bei einer Mittelbreite von 97 mm und der universellen Konstruktion ist der Tip- und Tail-Rocker perfekt für alle, die gleichermaßen auf der Piste und im Powder Spaß haben wollen. Abseits verschafft er Auftrieb und erhöht die Drehfreudigkeit. Die doppelte Titanal-Begurtung intendiert Verwindungssteifigkeit, sodass der Ski auch auf eisigem Untergrund geschmeidig auf der Kante carven kann. Stabilität und Dynamik erlangt der Allrounder durch den neuartigen und kleinteilig aufgebauten Holzkern, die TrueBlend Woodcore Technologie."

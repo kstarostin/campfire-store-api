@@ -1,4 +1,4 @@
-const { allowedLanguages } = require('./config');
+const { allowedLanguages, allowedCurrencies } = require('./config');
 
 class DocumentSanitizer {
   constructor(sessionLanguage, sessionCurrency, maxLevel) {
@@ -62,12 +62,12 @@ class DocumentSanitizer {
 
         // If current property is a localized text
         if (key.toLowerCase().includes('i18n')) {
-          this.#sanitizeI18nText(object, path, key);
-        } else if (typeof object[key] === 'object') {
-          // If current property is an array of prices
-          if (this.#isPriceArray(object, key)) {
-            this.#sanitizePrices(object, `${path}.${key}`, key);
+          if (key.toLowerCase().includes('pricei18n')) {
+            this.#sanitizeI18nPrice(object, path, key);
+          } else {
+            this.#sanitizeI18nText(object, path, key);
           }
+        } else if (typeof object[key] === 'object') {
           // If current property is a nested object with it's own properties
           this.#scanLevel(object[key], `${path}.${key}`, level + 1);
         }
@@ -84,10 +84,6 @@ class DocumentSanitizer {
     );
   }
 
-  #isPriceArray(object, key) {
-    return Array.isArray(object[key]) && object[key].some((el) => el.currency);
-  }
-
   #sanitizeI18nText = (object, path, key) => {
     allowedLanguages
       .filter((lang) => lang !== this.sessionLanguage)
@@ -97,11 +93,13 @@ class DocumentSanitizer {
       });
   };
 
-  #sanitizePrices = (object, path, key) => {
-    // console.log(`Sanitizing prices: ${path}.${key}`);
-    object[key] = object[key].filter(
-      (price) => price.currency === this.sessionCurrency,
-    );
+  #sanitizeI18nPrice = (object, path, key) => {
+    allowedCurrencies
+      .filter((currency) => currency !== this.sessionCurrency)
+      .forEach((currency) => {
+        // console.log(`Sanitizing i18n key: ${path}.${key}.${lang}`);
+        object[key][currency] = undefined;
+      });
   };
 }
 

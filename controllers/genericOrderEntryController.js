@@ -22,8 +22,8 @@ const calculateEntryPrice = async function (cart, productId, quantity, next) {
   }
 
   const { currency } = cart;
-  const price = product.prices.find((pr) => pr.currency === currency);
-  if (!price || !price.value) {
+  const priceValue = product.priceI18n[currency];
+  if (!priceValue) {
     return next(
       new AppError(
         `The product ${product.id} doesn't have a valid price for the session cart currency ${currency}`,
@@ -31,7 +31,7 @@ const calculateEntryPrice = async function (cart, productId, quantity, next) {
       ),
     );
   }
-  return price.value * quantity;
+  return priceValue * quantity;
 };
 
 exports.assignEntryToCart = (req, res, next) => {
@@ -50,6 +50,12 @@ exports.getAllEntries = factory.getAll(GenericOrderEntry, {
 exports.getEntry = factory.getOne(GenericOrderEntry);
 
 exports.createEntry = catchAsync(async (req, res, next) => {
+  // Sanitize request body
+  req.body = new RequestBodySanitizer([
+    'product',
+    'quantity',
+    'parent',
+  ]).sanitize(req.body);
   // Adjust entry price in the payload based on the product and cart currency
   if (req.params.cartId) {
     req.body.price = await calculateEntryPrice(
@@ -59,12 +65,6 @@ exports.createEntry = catchAsync(async (req, res, next) => {
       next,
     );
   }
-  // Sanitize request body
-  req.body = new RequestBodySanitizer([
-    'product',
-    'quantity',
-    'parent',
-  ]).sanitize(req.body);
   // Create a new cart / order entry
   let newDocument = await GenericOrderEntry.create(req.body);
   newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(
