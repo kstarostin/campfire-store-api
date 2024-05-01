@@ -29,6 +29,7 @@ router
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
    *       - $ref: '#/parameters/fields'
+   *       - $ref: '#/parameters/profuctFilter'
    *     responses:
    *       200:
    *         description: List of found product documents.

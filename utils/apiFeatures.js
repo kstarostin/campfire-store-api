@@ -6,6 +6,7 @@ class APIFeatures {
   constructor(dbQuery, requestQuery) {
     this.dbQuery = dbQuery;
     this.requestQuery = requestQuery;
+    this.resultFilter = {};
   }
 
   /**
@@ -70,19 +71,21 @@ class APIFeatures {
    * The exact parameter names depend on the resource type and available fields.
    * @returns enchanced search query.
    */
-  filter() {
+  filter(filter = {}) {
     const queryObj = { ...this.requestQuery };
 
     if (!queryObj.filter) {
       return this;
     }
 
-    // let queryStr = queryObj.filter;
-    // queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+    const resultFilter = {
+      ...filter,
+      ...JSON.parse(queryObj.filter),
+    };
+    this.resultFilter = resultFilter;
+    // console.log(this.resultFilter);
 
-    console.log(queryObj.filter);
-
-    this.dbQuery = this.dbQuery.find(JSON.parse(queryObj.filter));
+    this.dbQuery = this.dbQuery.find(this.resultFilter);
 
     return this;
   }

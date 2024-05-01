@@ -33,7 +33,7 @@ router
    *       - $ref: '#/parameters/fields'
    *       - in: query
    *         name: filter
-   *         description: JSON string with parameter names and values to filter by.<br><br>Supported value types are [string, number, boolean, object, array].<br><br>Example&#58; <code>{ "total"&#58; { "$gt"&#58; 1500 }, "currency"&#58; "USD", "status"&#58; { "$in"&#58; ["open", "progress"] } }</code>.
+   *         description: JSON string with parameter names and values to filter by.<br><br>Supported query conditions&#58; <code>$gt</code>, <code>$gte</code>, <code>$lt</code>, <code>$lte</code>, <code>$in</code>, <code>$or</code>, <code>$regex</code>, etc. Find more at <a target="_blank" href="https://www.mongodb.com/docs/manual/reference/operator/query/">Query and Projection Operators</a>.<br><br>Supported value types&#58; <code>string</code>, <code>number</code>, <code>boolean</code>, <code>object</code>, <code>array</code>.<br><br>Example&#58; <code>{ "total"&#58; { "$gt"&#58; 1500 }, "currency"&#58; "USD", "status"&#58; { "$in"&#58; ["open", "progress"] } }</code>.
    *         content:
    *           application/json:
    *             schema:

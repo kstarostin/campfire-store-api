@@ -42,6 +42,14 @@ parameters:
     description: <code>id</code> of a product to search for.
     in: path
     required: true
+  profuctFilter:
+    name: filter
+    description: JSON string with parameter names and values to filter by.<br><br>Supported query conditions&#58; <code>$gt</code>, <code>$gte</code>, <code>$lt</code>, <code>$lte</code>, <code>$in</code>, <code>$or</code>, <code>$regex</code>, etc. Find more at <a target="_blank" href="https://www.mongodb.com/docs/manual/reference/operator/query/">Query and Projection Operators</a>.<br><br>Supported value types&#58; <code>string</code>, <code>number</code>, <code>boolean</code>, <code>object</code>, <code>array</code>.<br><br>Example&#58; <code>{ "manufacturer"&#58; { "$in"&#58; ["Cube", "Canyon"] }, "priceI18n.USD"&#58; {  "$gte"&#58; 1000, "$lte"&#58; 5000 } }</code>.
+    in: query
+    content:
+      application/json:
+        schema:
+          type: object
   # Title
   titleId:
     name: id

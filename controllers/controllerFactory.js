@@ -63,9 +63,10 @@ exports.getAll = (Model, limitOptions) =>
       .filter();
     // Retrieve total count of documents. If filter is empty - use more efficient way.
     const totalCount =
-      Object.keys(filter).length === 0 && filter.constructor === Object
+      Object.keys(features.resultFilter).length === 0 &&
+      features.resultFilter.constructor === Object
         ? await Model.estimatedDocumentCount()
-        : await Model.countDocuments(filter);
+        : await Model.countDocuments(features.resultFilter);
     // const documents = await features.dbQuery.explain();
     const documents = (await features.dbQuery).map((document) =>
       new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),

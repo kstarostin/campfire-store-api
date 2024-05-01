@@ -31,7 +31,7 @@ router
    *       - $ref: '#/parameters/fields'
    *       - in: query
    *         name: filter
-   *         description: JSON string with parameter names and values to filter by.<br><br>Supported value types are [string, number, boolean, object, array].<br><br>Example&#58; <code>{ "nameI18n.en"&#58; { "$regex"&#58; "kayaks", "$options"&#58; "i" } }</code>.
+   *         description: JSON string with parameter names and values to filter by.<br><br>Supported query conditions&#58; <code>$gt</code>, <code>$gte</code>, <code>$lt</code>, <code>$lte</code>, <code>$in</code>, <code>$or</code>, <code>$regex</code>, etc. Find more at <a target="_blank" href="https://www.mongodb.com/docs/manual/reference/operator/query/">Query and Projection Operators</a>.<br><br>Supported value types&#58; <code>string</code>, <code>number</code>, <code>boolean</code>, <code>object</code>, <code>array</code>.<br><br>Example&#58; <code>{ "nameI18n.en"&#58; { "$regex"&#58; "kayaks", "$options"&#58; "i" } }</code>.
    *         content:
    *           application/json:
    *             schema:
@@ -173,6 +173,7 @@ router
    *       - $ref: '#/parameters/page'
    *       - $ref: '#/parameters/sort'
    *       - $ref: '#/parameters/fields'
+   *       - $ref: '#/parameters/profuctFilter'
    *     responses:
    *       200:
    *         description: List of found product documents.

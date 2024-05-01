@@ -202,7 +202,7 @@
 								{
 									"key": "filter",
 									"value": "{ \"price\": { \"$gt\": 1500 }, \"quantity\": { \"$gte\": 2 } }",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"description": "JSON string with parameter names and values to filter by. Supported query conditions: $gt, $gte, $lt, $lte, $in, $or, $regex, etc. Supported value types: string, number, boolean, object, array.",
 									"disabled": true
 								}
 							],
@@ -857,7 +857,7 @@
 								{
 									"key": "filter",
 									"value": "{ \"nameI18n.en\": { \"$regex\": \"kayaks\", \"$options\": \"i\" } }",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"description": "JSON string with parameter names and values to filter by. Supported query conditions: $gt, $gte, $lt, $lte, $in, $or, $regex, etc. Supported value types: string, number, boolean, object, array.",
 									"disabled": true
 								}
 							]
@@ -1115,7 +1115,7 @@
 								{
 									"key": "filter",
 									"value": "{ \"total\": { \"$gt\": 1500 }, \"currency\": \"USD\", \"status\": { \"$in\": [\"open\", \"progress\"] } }",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"description": "JSON string with parameter names and values to filter by. Supported query conditions: $gt, $gte, $lt, $lte, $in, $or, $regex, etc. Supported value types: string, number, boolean, object, array.",
 									"disabled": true
 								}
 							],
@@ -1264,7 +1264,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/api/v1/products",
+							"raw": "{{URL}}/api/v1/products?filter={ \"manufacturer\": \"Cube\", \"priceI18n.USD\": { \"$gte\": 1000, \"$lte\": 5000 } }",
 							"host": [
 								"{{URL}}"
 							],
@@ -1312,9 +1312,8 @@
 								},
 								{
 									"key": "filter",
-									"value": "{\"manufacturer\": \"\"}",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
-									"disabled": true
+									"value": "{ \"manufacturer\": \"Cube\", \"priceI18n.USD\": { \"$gte\": 1000, \"$lte\": 5000 } }",
+									"description": "JSON string with parameter names and values to filter by. Supported query conditions: $gt, $gte, $lt, $lte, $in, $or, $regex, etc. Supported value types: string, number, boolean, object, array."
 								}
 							]
 						},
@@ -1933,7 +1932,7 @@
 								{
 									"key": "filter",
 									"value": "{ \"name\": { \"$regex\": \"sarah\", \"$options\": \"i\" } }",
-									"description": "JSON string with parameter names and values to filter by. Supported value types are [string, number, boolean].",
+									"description": "JSON string with parameter names and values to filter by. Supported query conditions: $gt, $gte, $lt, $lte, $in, $or, $regex, etc. Supported value types: string, number, boolean, object, array.",
 									"disabled": true
 								}
 							]
