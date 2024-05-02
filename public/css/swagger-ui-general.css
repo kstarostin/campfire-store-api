@@ -27,7 +27,11 @@
 }
 
 .swagger-ui .info p {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.swagger-ui .info a {
+  font-size: 16px;
 }
 
 .swagger-ui .markdown code,

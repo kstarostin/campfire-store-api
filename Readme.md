@@ -3,9 +3,11 @@
 </p>
 <br/>
 
-**Campfire | Store API** is a demo project of an API for an online shop.
+**Campfire | Store API** is a demo project of an API for an online store.
 
-The API provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders.
+The API provides access to the store products, category system and simple user management, allows you to add products to the cart and place orders.
+
+Check the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com/api/v1/api-docs/).
 
 ## API features
 
@@ -78,4 +80,5 @@ To start the app in production environment, use:
 
 1. Swagger UI theme is Flatop from [swagger-ui-themes](https://github.com/ostranme/swagger-ui-themes)
 2. All product pictures are real and are the property of their manufacturers.
-3. The API logo and favicon are designed spicifically for this project and belong to Konstantin Starostin. Please do not copy them.
+3. The photos of the sample customers provided by [Unsplash](https://unsplash.com/).
+4. The API logo and favicon are designed spicifically for this project and belong to Konstantin Starostin. Please do not copy them.
