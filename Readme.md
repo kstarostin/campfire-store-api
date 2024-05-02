@@ -41,7 +41,26 @@ or as a development dependency:
  npm install --save-dev nodemon
 ```
 
-After successful installation, copy `./config.env.template` into `./config.env` and configure personal properties there.
+After successful installation, copy `./config.env.template` in to `./config.env` and configure personal properties there.
+The app requires connection to an instance of MongoDB. Create your own instance and set `DATABASE_USERNAME`, `DATABASE_PASSWORD` and `DATABASE` URL in the `./config.env` file.
+
+With the `./dev-tools/data/import-test-data.js` script you can import sample data in to your database. Use command:
+
+```
+ node .\dev-tools\data\import-test-data.js --import
+```
+
+To clear the DB, use:
+
+```
+ node .\dev-tools\data\import-test-data.js --delete
+```
+
+To re-create data in the DB, use:
+
+```
+ node .\dev-tools\data\import-test-data.js --recreate
+```
 
 To start the app, use:
 

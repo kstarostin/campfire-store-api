@@ -137,6 +137,6 @@ if (process.argv[2] === '--import' || process.argv[2] === '--i') {
   importData();
 } else if (process.argv[2] === '--delete' || process.argv[2] === '--d') {
   deleteData();
-} else if (process.argv[2] === '--recreate' || process.argv[2] === '--re') {
+} else if (process.argv[2] === '--recreate' || process.argv[2] === '--r') {
   recreateData();
 }
