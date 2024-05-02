@@ -9,7 +9,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "set NODE_ENV=production&&node server.js",
+    "start:prod": "set NODE_ENV=production&&set PORT=80&&node server.js",
     "debug": "ndb server.js"
   },
   "author": "Konstantin Starostin",
