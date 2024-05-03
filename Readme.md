@@ -3,11 +3,11 @@
 </p>
 <br/>
 
-**Campfire | Store API** is a demo project of an API for an online store.
+**Campfire Store API** is a demo project of an API for an online store.
 
 The API provides access to the store products, category system and simple user management, allows you to add products to the cart and place orders.
 
-Check out the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com/api/v1/api-docs/) or use the Postman collection `./dev-tools/campfire-store-api.postman_collection.json` with the environment file `./dev-tools/prod-env.campfire-store-api.postman_collection.json`.
+Check out the API visual documentation <a href="http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com/api/v1/api-docs/" target="_blank">here</a> or use Postman collection `./dev-tools/campfire-store-api.postman_collection.json` with the environment file `./dev-tools/prod-env.campfire-store-api.postman_collection.json`.
 
 ## API features
 
@@ -21,7 +21,7 @@ Check out the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1
 
 ## Project structure
 
-The main goal of this project was to create a small and simple API for an online store using **Node.js** and the **Express** framework.
+The main goal of this project was to create a small and simple API for an online store using **Node.js** and **Express** framework.
 
 ### Build and start
 
@@ -78,7 +78,7 @@ To start the app in production environment, use:
 
 ### Assets
 
-1. Swagger UI theme is Flatop from [swagger-ui-themes](https://github.com/ostranme/swagger-ui-themes)
+1. Swagger UI theme is Flatop by [Swagger UI Themes](https://ostranme.github.io/swagger-ui-themes/).
 2. All product pictures are real and are the property of their manufacturers.
-3. The photos of the sample customers provided by [Unsplash](https://unsplash.com/).
+3. The sample customers photos provided by [unsplash.com](https://unsplash.com/).
 4. The API logo and favicon are designed spicifically for this project and belong to Konstantin Starostin. Please do not copy them.
