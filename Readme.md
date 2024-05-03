@@ -21,7 +21,7 @@ Check the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1.com
 
 ## Project structure
 
-The main goal of this project was to create a small and simple API for an online shop using **Node.js** and the **Express** framework.
+The main goal of this project was to create a small and simple API for an online store using **Node.js** and the **Express** framework.
 
 ### Build and start
 
@@ -44,7 +44,7 @@ or as a development dependency:
 ```
 
 After successful installation, copy `./config.env.template` in to `./config.env` and configure personal properties there.
-The app requires connection to an instance of MongoDB. Create your own instance and set `DATABASE_USERNAME`, `DATABASE_PASSWORD` and `DATABASE` URL in the `./config.env` file.
+The app requires connection to an instance of MongoDB. Create your own instance (e.g. [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database)) and set `DATABASE_USERNAME`, `DATABASE_PASSWORD` and `DATABASE` URL in the `./config.env` file.
 
 With the `./dev-tools/data/import-test-data.js` script you can import sample data in to your database. Use command:
 

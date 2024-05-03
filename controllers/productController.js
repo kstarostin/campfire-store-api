@@ -31,38 +31,55 @@ const upload = multer({
 });
 
 /**
- * TODO: replace with mongoose aggregation on all non-paginated results
  * Collects filters for found products. The filters contain available values to filter by.
- * @param {*} results a list of found products for analysis.
- * @returns a list of filters and available results.
+ * @param {*} results currently applied filter.
+ * @returns a list of filters for further application.
  */
-const aggregateFilters = function (req, results) {
-  const filters = [];
-  if (results.length === 0) {
-    return filters;
-  }
+const aggregateFilters = async function (req, filter) {
+  // console.log(filter);
 
-  // Inspect result prices
-  const prices = results.map((product) => product.priceI18n[req.currency]);
-  filters.push({
-    name: 'priceI18n',
-    type: 'Number',
-    // values: prices,
-    min: Math.min(...prices),
-    max: Math.max(...prices),
-  });
+  // Aggregate information from DB
+  const filters = await Product.aggregate([
+    {
+      $match: filter,
+    },
+    {
+      $project: {
+        manufacturer: 1,
+        priceI18n: `$priceI18n.${req.currency}`,
+      },
+    },
+    {
+      $group: {
+        _id: null,
+        manufacturers: {
+          $addToSet: '$manufacturer',
+        },
+        minPrice: {
+          $min: '$priceI18n',
+        },
+        maxPrice: {
+          $max: '$priceI18n',
+        },
+      },
+    },
+  ]);
+  // console.log(filters);
 
-  // Collect result manufacturers
-  const manufacturers = [
-    ...new Set(results.map((product) => product.manufacturer)),
-  ];
-  filters.push({
+  // Map to returned result
+  const manufacturerFilter = {
     name: 'manufacturer',
     type: 'String',
-    values: manufacturers,
-  });
+    values: filters[0].manufacturers,
+  };
+  const priceFilter = {
+    name: 'priceI18n',
+    type: 'Number',
+    min: filters[0].minPrice,
+    max: filters[0].maxPrice,
+  };
 
-  return filters;
+  return [manufacturerFilter, priceFilter];
 };
 
 /**
@@ -119,7 +136,7 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
   );
 
-  const numberPages =
+  const numberOfPages =
     totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
 
   // SEND RESPONSE
@@ -129,9 +146,9 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     resultsPerPage: features.limit,
     resultsTotal: totalCount,
     currentPage: features.page,
-    pages: numberPages,
-    filters: aggregateFilters(req, documents),
+    pages: numberOfPages,
     data: {
+      filters: await aggregateFilters(req, features.resultFilter),
       documents,
     },
   });

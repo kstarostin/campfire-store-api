@@ -1,0 +1,27 @@
+{
+	"id": "82236fbb-1ea5-4575-a35d-fc79db977572",
+	"name": "PROD: Campfire Store API",
+	"values": [
+		{
+			"key": "URL",
+			"value": "http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "password",
+			"value": "test1234",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "jwt",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-05-02T16:23:42.925Z",
+	"_postman_exported_using": "Postman/11.0.5"
+}
