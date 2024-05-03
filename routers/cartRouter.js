@@ -23,14 +23,11 @@ router
    *       - bearerAuth: []
    *     tags: [Carts]
    *     summary: Get carts
-   *     description: Get list of user's carts. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
+   *     description: Get list of user's carts.<br><br>This resource is protected and requires prior authorization.
    *     produces:
    *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
-   *       - $ref: '#/parameters/limit'
-   *       - $ref: '#/parameters/page'
-   *       - $ref: '#/parameters/sort'
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:

@@ -74,16 +74,18 @@ class APIFeatures {
   filter(filter = {}) {
     const queryObj = { ...this.requestQuery };
 
-    if (!queryObj.filter) {
+    const queryFilter = queryObj.filter ? JSON.parse(queryObj.filter) : {};
+    const resultFilter = {
+      ...filter,
+      ...queryFilter,
+    };
+
+    if (Object.keys(resultFilter).length === 0) {
       return this;
     }
 
-    const resultFilter = {
-      ...filter,
-      ...JSON.parse(queryObj.filter),
-    };
     this.resultFilter = resultFilter;
-    // console.log(this.resultFilter);
+    console.log(this.resultFilter);
 
     this.dbQuery = this.dbQuery.find(this.resultFilter);
 

@@ -80,8 +80,8 @@ exports.assignUserToCart = (req, res, next) => {
 };
 
 exports.getAllCarts = factory.getAll(Cart, {
-  defaultLimit: 25,
-  maxLimit: 50,
+  defaultLimit: 1,
+  maxLimit: 1,
 });
 exports.getCart = factory.getOne(Cart);
 

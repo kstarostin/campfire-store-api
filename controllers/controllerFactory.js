@@ -60,7 +60,7 @@ exports.getAll = (Model, limitOptions) =>
       .paginate(limitOptions)
       .sort()
       .limitFields()
-      .filter();
+      .filter(filter);
     // Retrieve total count of documents. If filter is empty - use more efficient way.
     const totalCount =
       Object.keys(features.resultFilter).length === 0 &&
