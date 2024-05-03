@@ -54,7 +54,7 @@ app.use(
 app.use(basePath, swaggerRedirectRouter);
 
 // Set security HTTP headers
-app.use(helmet());
+// app.use(helmet());
 
 // Limit requests from the same IP
 if (process.env.NODE_ENV !== 'development') {
