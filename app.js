@@ -19,6 +19,8 @@ const errorHandler = require('./controllers/errorController');
 // Routers
 const authRouter = require('./routers/authRouter');
 const categoryRouter = require('./routers/categoryRouter');
+const currRouter = require('./routers/currRouter');
+const langRouter = require('./routers/langRouter');
 const productRouter = require('./routers/productRouter');
 const titleRouter = require('./routers/titleRouter');
 const userRouter = require('./routers/userRouter');
@@ -91,6 +93,8 @@ app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);
 
 // App routes
 app.use(`${apiPath}/categories`, categoryRouter);
+app.use(`${apiPath}/currencies`, currRouter);
+app.use(`${apiPath}/languages`, langRouter);
 app.use(`${apiPath}/products`, productRouter);
 app.use(`${apiPath}/titles`, titleRouter);
 app.use(`${apiPath}/users`, authRouter);

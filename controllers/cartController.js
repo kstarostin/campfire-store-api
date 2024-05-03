@@ -96,7 +96,7 @@ exports.createCart = catchAsync(async (req, res, next) => {
   res.status(201).json({
     status: 'success',
     data: {
-      data: newDocument,
+      document: newDocument,
     },
   });
 });
@@ -145,7 +145,7 @@ exports.updateCart = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: 'success',
     data: {
-      data: updatedCart,
+      document: updatedCart,
     },
   });
 });

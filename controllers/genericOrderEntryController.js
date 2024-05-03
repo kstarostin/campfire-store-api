@@ -76,7 +76,7 @@ exports.createEntry = catchAsync(async (req, res, next) => {
   res.status(201).json({
     status: 'success',
     data: {
-      data: newDocument,
+      document: newDocument,
     },
   });
 });
@@ -123,7 +123,7 @@ exports.updateEntry = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: 'success',
     data: {
-      data: updatedDocument,
+      document: updatedDocument,
     },
   });
 });

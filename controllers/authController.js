@@ -39,7 +39,7 @@ const createAndSendToken = (user, statusCode, req, res) => {
     status: 'success',
     token,
     data: {
-      user,
+      document: user,
     },
   });
 };

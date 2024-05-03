@@ -319,7 +319,7 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: 'success',
     data: {
-      data: updatedProduct,
+      document: updatedProduct,
     },
   });
 });

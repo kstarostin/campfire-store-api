@@ -176,7 +176,7 @@ router
    *       - $ref: '#/parameters/profuctFilter'
    *     responses:
    *       200:
-   *         description: List of found product documents.
+   *         description: Lists of found product documents and applicable filters.
    */
   .get(productController.handleCategoryId, productController.getAllProducts);
 
