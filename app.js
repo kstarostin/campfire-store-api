@@ -41,6 +41,18 @@ app.options('*', cors());
 // Serving static files
 app.use(express.static(path.join(__dirname, '/public')));
 
+// ROUTES
+const basePath = '/';
+const apiPath = `${basePath}api/v1`;
+
+// Swagger routes
+app.use(
+  `${apiPath}/api-docs`,
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
+);
+app.use(basePath, swaggerRedirectRouter);
+
 // Set security HTTP headers
 app.use(helmet());
 
@@ -75,18 +87,6 @@ app.use(compression());
 
 // Sanitize data against NoSQL query injection
 app.use(mongoSanitize());
-
-// ROUTES
-const basePath = '/';
-const apiPath = `${basePath}api/v1`;
-
-// Swagger routes
-app.use(
-  `${apiPath}/api-docs`,
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
-);
-app.use(basePath, swaggerRedirectRouter);
 
 // Handles request language and currency parameters in the session
 app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);
