@@ -78,7 +78,7 @@ To start the app in production environment, use:
 
 ### Assets
 
-1. Swagger UI theme is Flatop by [Swagger UI Themes](https://ostranme.github.io/swagger-ui-themes/).
+1. Swagger UI theme is Flattop by [Swagger UI Themes](https://ostranme.github.io/swagger-ui-themes/).
 2. All product pictures are real and are the property of their manufacturers.
 3. The sample customers photos provided by [unsplash.com](https://unsplash.com/).
 4. The API logo and favicon are designed spicifically for this project and belong to Konstantin Starostin. Please do not copy them.

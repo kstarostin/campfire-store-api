@@ -47,7 +47,7 @@ const document = swaggerJSDoc({
 // Swagger options
 const options = {
   customCssUrl: [
-    '../../../css/swagger-ui-theme-flatop.css',
+    '../../../css/swagger-ui-theme-flattop.css',
     '../../../css/swagger-ui-general.css',
   ],
   customSiteTitle: 'Campfire | Store API',
