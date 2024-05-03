@@ -20,8 +20,6 @@ router
    *     tags: [Titles]
    *     summary: Get titles
    *     description: Get list of titles. The results can be filtered, sorted, paginated and limited using special query parameters.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/limit'
@@ -31,6 +29,12 @@ router
    *     responses:
    *       200:
    *         description: List of found title documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Title'
    */
   .get(titleController.getAllTitles)
   /**
@@ -42,8 +46,6 @@ router
    *     tags: [Titles]
    *     summary: Create title
    *     description: Create a new title.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *     requestBody:
@@ -56,9 +58,11 @@ router
    *     responses:
    *       201:
    *         description: Created title document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Title'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Title'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -83,6 +87,11 @@ router
    *     responses:
    *       200:
    *         description: Found title document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Title'
    */
   .get(titleController.getTitle)
   /**
@@ -94,8 +103,6 @@ router
    *     tags: [Titles]
    *     summary: Update title
    *     description: Update an existing title by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/titleId'
    *       - $ref: '#/parameters/language'
@@ -109,9 +116,11 @@ router
    *     responses:
    *       200:
    *         description: Updated title document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Title'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Title'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

@@ -26,8 +26,6 @@ router
    *     tags: [Users]
    *     summary: Get users
    *     description: Get list of users. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/limit'
@@ -44,6 +42,12 @@ router
    *     responses:
    *       200:
    *         description: List of found user documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/User'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -66,6 +70,11 @@ router
    *     responses:
    *       200:
    *         description: Found user document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/User'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -79,9 +88,6 @@ router
    *     tags: [Users]
    *     summary: Update user or upload photo
    *     description: Update an existing user by provided <code>id</code> or <code>email</code>. Alternatively, this endpoint can be used to upload/replace user's photo. Allowed image formats are <code>.jpeg</code>, <code>.png</code> and <code>.webp</code>. Recommended minimum image size is 500x500.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>. Users without this role can only update themselves.
-   *     consumes:
-   *       - application/json
-   *       - multipart/form-data
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/language'
@@ -101,9 +107,11 @@ router
    *     responses:
    *       200:
    *         description: Updated user document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/User'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/User'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

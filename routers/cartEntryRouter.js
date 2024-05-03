@@ -23,8 +23,6 @@ router
    *     tags: [Cart entries]
    *     summary: Get cart entries
    *     description: Get list of cart entries for a user's cart. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -42,6 +40,12 @@ router
    *     responses:
    *       200:
    *         description: List of found cart entry documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/GenericOrderEntry'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -59,8 +63,6 @@ router
    *     tags: [Cart entries]
    *     summary: Create cart entry
    *     description: Create a new cart entry.<br><br>This resource is protected and requires prior authorization.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -81,9 +83,11 @@ router
    *     responses:
    *       201:
    *         description: Created cart entry document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/GenericOrderEntry'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/GenericOrderEntry'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -114,6 +118,11 @@ router
    *     responses:
    *       200:
    *         description: Found cart entry document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/GenericOrderEntry'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -131,8 +140,6 @@ router
    *     tags: [Cart entries]
    *     summary: Update cart entry
    *     description: Update an existing cart entry for a user by provided user's <code>id</code> or <code>email</code>, cart <code>id</code> and entry <code>id</code>.<br><br>This resource is protected and requires prior authorization.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -152,9 +159,11 @@ router
    *     responses:
    *       200:
    *         description: Updated cart entry document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/GenericOrderEntry'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/GenericOrderEntry'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

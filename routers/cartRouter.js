@@ -24,14 +24,18 @@ router
    *     tags: [Carts]
    *     summary: Get carts
    *     description: Get list of user's carts.<br><br>This resource is protected and requires prior authorization.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/fields'
    *     responses:
    *       200:
    *         description: List of found user's cart documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Cart'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -49,8 +53,6 @@ router
    *     tags: [Carts]
    *     summary: Create cart
    *     description: Create a new cart.<br><br>This resource is protected and requires prior authorization.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/currency'
@@ -69,9 +71,11 @@ router
    *     responses:
    *       201:
    *         description: Created cart document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Cart'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Cart'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -102,6 +106,11 @@ router
    *     responses:
    *       200:
    *         description: Found cart document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Cart'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -119,8 +128,6 @@ router
    *     tags: [Carts]
    *     summary: Update cart
    *     description: Update an existing cart for a user by provided user's <code>id</code> or <code>email</code> and cart <code>id</code>.<br><br>This resource is protected and requires prior authorization.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/cartId'
@@ -136,9 +143,11 @@ router
    *     responses:
    *       200:
    *         description: Updated cart document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Cart'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Cart'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

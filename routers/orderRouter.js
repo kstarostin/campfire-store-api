@@ -23,8 +23,6 @@ router
    *     tags: [Orders]
    *     summary: Get orders
    *     description: Get list of user's orders. The results can be filtered, sorted, paginated and limited using special query parameters.<br><br>This resource is protected and requires prior authorization.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *       - $ref: '#/parameters/limit'
@@ -41,6 +39,12 @@ router
    *     responses:
    *       200:
    *         description: List of found user's order documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Order'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -58,8 +62,6 @@ router
    *     tags: [Orders]
    *     summary: Place order
    *     description: Create a new order from a cart.<br><br>This resource is protected and requires prior authorization.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/userIdOrEmail'
    *     requestBody:
@@ -75,9 +77,11 @@ router
    *     responses:
    *       201:
    *         description: Placed order document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Order'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Order'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -106,6 +110,11 @@ router
    *     responses:
    *       200:
    *         description: Found order document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Order'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

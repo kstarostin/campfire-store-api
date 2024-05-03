@@ -24,6 +24,15 @@ router
    *     responses:
    *       200:
    *         description: List of supported currencies.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 type: object
+   *                 properties:
+   *                   code:
+   *                     type: string
    */
   .get(currController.getAllCurrencies);
 

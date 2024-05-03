@@ -20,8 +20,6 @@ router
    *     tags: [Products]
    *     summary: Get products
    *     description: Get list of products. The results can be filtered, sorted, paginated and limited using special query parameters.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -33,6 +31,12 @@ router
    *     responses:
    *       200:
    *         description: Lists of found product documents and applicable filters.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Product'
    */
   .get(productController.getAllProducts)
   /**
@@ -44,8 +48,6 @@ router
    *     tags: [Products]
    *     summary: Create product
    *     description: Create a new product.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/currency'
@@ -59,9 +61,11 @@ router
    *     responses:
    *       201:
    *         description: Created product document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Product'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Product'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -87,6 +91,11 @@ router
    *     responses:
    *       200:
    *         description: Found product document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Product'
    */
   .get(productController.getProduct)
   /**
@@ -98,8 +107,6 @@ router
    *     tags: [Products]
    *     summary: Update product or upload images
    *     description: Update an existing product by provided <code>id</code> Alternatively, this endpoint can be used to upload product images. Allowed image format is <code>.webp</code>. Recommended minimum image size is 2000x2000.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/productId'
    *       - $ref: '#/parameters/language'
@@ -123,9 +130,11 @@ router
    *     responses:
    *       200:
    *         description: Updated product document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Product'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Product'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

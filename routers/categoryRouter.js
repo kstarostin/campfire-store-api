@@ -21,8 +21,6 @@ router
    *     tags: [Categories]
    *     summary: Get categories
    *     description: Get list of categories. The results can be filtered, sorted, paginated and limited using special query parameters.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *       - $ref: '#/parameters/limit'
@@ -39,6 +37,12 @@ router
    *     responses:
    *       200:
    *         description: List of found category documents.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Category'
    */
   .get(categoryController.getAllCategories)
   /**
@@ -50,8 +54,6 @@ router
    *     tags: [Categories]
    *     summary: Create category
    *     description: Create a new category.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/language'
    *     requestBody:
@@ -64,9 +66,11 @@ router
    *     responses:
    *       201:
    *         description: Created category document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Category'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Category'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -91,6 +95,11 @@ router
    *     responses:
    *       200:
    *         description: Found category document, if exists.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Category'
    */
   .get(categoryController.getCategory)
   /**
@@ -102,8 +111,6 @@ router
    *     tags: [Categories]
    *     summary: Update category
    *     description: Update an existing category by provided <code>id</code>.<br><br>This resource is protected and requires prior authorization.<br><br>This resource is restricted to users without the role <code>admin</code>.
-   *     consumes:
-   *       - application/json
    *     parameters:
    *       - $ref: '#/parameters/categoryId'
    *       - $ref: '#/parameters/language'
@@ -117,9 +124,11 @@ router
    *     responses:
    *       200:
    *         description: Updated category document.
-   *         schema:
-   *           type: object
-   *           $ref: '#/definitions/Category'
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               $ref: '#/definitions/Category'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -160,8 +169,6 @@ router
    *     tags: [Products]
    *     summary: Get products for category
    *     description: Get list of products for category. The results can be filtered, sorted, paginated and limited using special query parameters.
-   *     produces:
-   *       - application/json
    *     parameters:
    *       - in: path
    *         name: id
@@ -177,6 +184,12 @@ router
    *     responses:
    *       200:
    *         description: Lists of found product documents and applicable filters.
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: array
+   *               items:
+   *                 $ref: '#/definitions/Product'
    */
   .get(productController.handleCategoryId, productController.getAllProducts);
 
