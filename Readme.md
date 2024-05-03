@@ -7,13 +7,13 @@
 
 The API provides access to the store products, category system and simple user management, allows you to add products to the cart and place orders.
 
-Check the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com/api/v1/api-docs/).
+Check out the API visual documentation [here](http://ec2-51-20-52-104.eu-north-1.compute.amazonaws.com/api/v1/api-docs/) or use the Postman collection `./dev-tools/campfire-store-api.postman_collection.json` with the environment file `./dev-tools/prod-env.campfire-store-api.postman_collection.json`.
 
 ## API features
 
 1. API documentation is powered by [Swagger UI](https://swagger.io/tools/swagger-ui/) and available on `/` or `/api/v1/api-docs/`.
 2. Protected routes require authorization with JWT. Some routes are additionally restricted by roles.
-3. Supports internationalization with multiple currencies and text localization. Use query parameters `language` and `currency` to tweak the responses.
+3. Supports internationalization with multiple currencies and text localization. Use request query parameters `language` and `currency` to tweak the responses.
 4. Supports uploading a user's photo and multiple product images.
 5. API requests are limited per IP.
 6. Protected against parameter pollution and NoSQL query injection.

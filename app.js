@@ -41,40 +41,21 @@ app.options('*', cors());
 // Serving static files
 app.use(express.static(path.join(__dirname, '/public')));
 
-// ROUTES
-const basePath = '/';
-const apiPath = `${basePath}api/v1`;
-
-// Swagger routes
-app.use(
-  `${apiPath}/api-docs`,
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
-);
-app.use(basePath, swaggerRedirectRouter);
-
 // Set security HTTP headers
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        'script-src': ["'self'"],
-        upgradeInsecureRequests: null,
-      },
-    },
-  }),
-);
+app.use(helmet());
 
 // Limit requests from the same IP
-if (process.env.NODE_ENV !== 'development') {
-  const periodMinutes = 60;
-  const limiter = rateLimit({
-    max: 100,
-    windowMs: periodMinutes * 60 * 1000,
-    message: `Too many requests from this IP. Please try again in ${periodMinutes} minutes.`,
-  });
-  app.use('/api', limiter);
-}
+const allowList = process.env.RATE_LIMIT_ALLOW_LIST
+  ? process.env.RATE_LIMIT_ALLOW_LIST.split(',')
+  : [];
+const periodMinutes = 60;
+const limiter = rateLimit({
+  limit: 100,
+  windowMs: periodMinutes * 60 * 1000,
+  message: `Too many requests from this IP. Please try again in ${periodMinutes} minutes.`,
+  skip: (req, res) => allowList.includes(req.ip),
+});
+app.use('/api', limiter);
 
 // Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -99,6 +80,18 @@ app.use(mongoSanitize());
 
 // Handles request language and currency parameters in the session
 app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);
+
+// ROUTES
+const basePath = '/';
+const apiPath = `${basePath}api/v1`;
+
+// Swagger routes
+app.use(
+  `${apiPath}/api-docs`,
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
+);
+app.use(basePath, swaggerRedirectRouter);
 
 // App routes
 app.use(`${apiPath}/categories`, categoryRouter);

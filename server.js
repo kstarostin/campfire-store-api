@@ -19,7 +19,9 @@ process.on('uncaughtException', (err) => {
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-  console.log(`App running on port ${port}...`);
+  console.log(
+    `App is running in the ${process.env.NODE_ENV} environment on port ${port}...`,
+  );
 });
 
 process.on('unhandledRejection', (err) => {
