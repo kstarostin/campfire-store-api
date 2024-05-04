@@ -27,6 +27,9 @@ const categories = JSON.parse(
 const backpacks = JSON.parse(
   fs.readFileSync(`${__dirname}/products/backpacks.json`, 'utf-8'),
 );
+const gravelBikes = JSON.parse(
+  fs.readFileSync(`${__dirname}/products/gravel-bikes.json`, 'utf-8'),
+);
 const hikingPants = JSON.parse(
   fs.readFileSync(`${__dirname}/products/hiking-pants.json`, 'utf-8'),
 );
@@ -64,6 +67,7 @@ const performImport = async () => {
 
   console.log('Creating products...');
   await Product.create(backpacks);
+  await Product.create(gravelBikes);
   await Product.create(hikingPants);
   await Product.create(mountainBikes);
   await Product.create(ski);

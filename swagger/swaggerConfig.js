@@ -21,8 +21,13 @@ const document = swaggerJSDoc({
     openapi: '3.0.0',
     info: {
       title: 'Campfire Store API',
-      description: `Campfire Store API is a <strong>demo</strong> project of an API for an online store created by Konstantin Starostin.<br><br>It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders. Protected resources require prior authorization. Some resources are restricted to users without an admin role.<br><br>The source code and documentation are available on <a href="${process.env.GITHUB}" target="_blank">GitHub</a>.`,
+      description: `Campfire Store API is a <strong>demo</strong> project of an API for an online store created by Konstantin Starostin.
+      <br><br>It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders. Protected resources require prior authorization. Some resources are restricted to users without an admin role.`,
       version: `${packageJson.version}`,
+    },
+    externalDocs: {
+      description: 'The source code on GitHub',
+      url: `${process.env.GITHUB}`,
     },
     servers: [{ url: apiPath }],
     definitions: {

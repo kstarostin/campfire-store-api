@@ -1,0 +1,550 @@
+[
+  {
+    "_id": "663608a2ec3b85f6fc239331",
+    "name": "Nuroad Race",
+    "manufacturer": "Cube",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 1699,
+      "USD": 1830
+    },
+    "descriptionI18n": {
+      "en": "To create the Nuroad we took inspiration from our race and cyclocross bikes, then threw a little mountain bike DNA into the mix. There's plenty of clearance for big, grippy and comfortable 45mm tyres – or 40mm if you run mudguards at the same time. There's an integrated seat clamp, exceptionally tidy rack, guard and kickstand mounts, and neat internal cable routing to keep gear shifts grit- and mud-free for longer. Thru-axle wheels improve steering accuracy, even on the roughest roads. And the full carbon fork isn't just lightweight – it also helps reduce vibration from the road and features lowrider rack mounts.",
+      "de": "Bei der Entwicklung des Nuroad Rahmens haben wir uns von unseren Renn- und Cyclocross-Rädern inspirieren lassen und dem Rahmen on top ein paar Mountainbike-Skills mit auf den Weg gegeben. So bietet er viel Reifenfreiheit für griffige und komfortabel rollende 45 mm breite Pneus – oder für 40 mm breite Reifen, dann sogar mit Schutzblechen. Außerdem eine integrierte Sattelklemmung, formschön gestaltete Montagepunkte für Gepäckträger, Schutzbleche und Seitenständer sowie ästhetisch ins Innere verlegte Züge für dauerhaft saubere Schaltvorgänge, auch bei viel Staub oder Matsch. Laufräder mit Steckachsen optimieren die Lenkpräzision, selbst bei schwierigen Straßenverhältnissen. Und dann die Vollcarbongabel – sie ist nicht nur sehr leicht, sondern absorbiert auch sämtliche Vibrationen vom Untergrund und ist mit Aufnahmen für Lowrider Gepäckträger versehen."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-5c8a35b614eb5c17645c910b-1714807599284-1_original.webp",
+          "altText": "Nuroad Race photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-5c8a35b614eb5c17645c910b-1714807599284-1_2000.webp",
+          "altText": "Nuroad Race photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-5c8a35b614eb5c17645c910b-1714807599284-1_1000.jpeg",
+          "altText": "Nuroad Race photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-5c8a35b614eb5c17645c910b-1714807599284-1_500.jpeg",
+          "altText": "Nuroad Race photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-5c8a35b614eb5c17645c910b-1714807599284-1_200.jpeg",
+          "altText": "Nuroad Race photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.cube.eu/de-de/cube-nuroad-race-blue-n-black/c0658a68ba83b39365c7b9e170972b5e"
+  },
+  {
+    "_id": "6635e3f06209d2d0edb16d0c",
+    "name": "Nuroad WS",
+    "manufacturer": "Cube",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 1199,
+      "USD": 1299
+    },
+    "descriptionI18n": {
+      "en": "The Nuroad WS blends the best bits of our road race and cyclocross bikes. Gravel Comfort Geometry is based on the stability, day-long riding ability and agility of our Attain WS series. There's even a new XXS size with 27.5in wheels, so every rider can find her perfect fit. There's plenty of clearance to run wide, grippy and comfortable tyres up to 40mm in width, even with mudguards. And internal cable routing keeps your gears shifting cleanly even with mud and water flying around. It is, in short, a super-adaptable all-rounder. Where will it take you next?",
+      "de": "Der Nuroad WS Rahmen vereint unser Best-of aus den Bereichen Rennrad und Cyclocross. Seine Gravel Comfort Geometry basiert in Sachen Stabilität, dauerhafter Komfort und Spritzigkeit auf unserer Attain WS Serie. Und dank der neuen XXS-Größe mit 27.5 Zoll Laufrädern findet jede Fahrerin die perfekt abgestimmte Passform für sich. Zudem gibt es genügend Platz für die Aufnahme griffiger und komfortabler Reifen mit bis zu 40 mm Breite inklusive Schutzbleche. Und weil wir die Züge ins Rahmeninnere verlegt haben, sind saubere Schaltvorgänge garantiert, sogar bei viel Matsch und Schlamm auf der Strecke. Fazit: Dieses Chassis ist eine Klasse für sich – ein flexibel anpassbarer Allrounder, der keine Offroad-Wünsche offen lässt. Also, wohin soll das nächste Abenteuer gehen?"
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e3f06209d2d0edb16d0c-1714807936728-1_original.webp",
+          "altText": "Nuroad WS photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e3f06209d2d0edb16d0c-1714807936728-1_2000.webp",
+          "altText": "Nuroad WS photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e3f06209d2d0edb16d0c-1714807936728-1_1000.jpeg",
+          "altText": "Nuroad WS photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e3f06209d2d0edb16d0c-1714807936728-1_500.jpeg",
+          "altText": "Nuroad WS photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e3f06209d2d0edb16d0c-1714807936728-1_200.jpeg",
+          "altText": "Nuroad WS photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.cube.eu/de-de/cube-nuroad-ws-lightgrey-n-rose/7281f75fd389e6bf42b66c0e1e0e128d"
+  },
+  {
+    "_id": "6635e52c08a5c723c8ac2f99",
+    "name": "Grizl CF SL 8 Trail",
+    "manufacturer": "Canyon",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 3199,
+      "USD": 3449
+    },
+    "descriptionI18n": {
+      "en": "This gravel bike is capable and comfortable on rough terrain and ready for adventure thanks to its RockShox Rudy suspension fork.",
+      "de": "Dieses Gravel Bike ist dank seiner RockShox Rudy Federgabel besonders geländegängig und abenteuertauglich."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e52c08a5c723c8ac2f99-1714808641493-1_original.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e52c08a5c723c8ac2f99-1714808641493-1_2000.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e52c08a5c723c8ac2f99-1714808641493-1_1000.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e52c08a5c723c8ac2f99-1714808641493-1_500.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e52c08a5c723c8ac2f99-1714808641493-1_200.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e52c08a5c723c8ac2f99-1714808641495-2_original.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e52c08a5c723c8ac2f99-1714808641495-2_2000.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e52c08a5c723c8ac2f99-1714808641495-2_1000.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e52c08a5c723c8ac2f99-1714808641495-2_500.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e52c08a5c723c8ac2f99-1714808641495-2_200.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e52c08a5c723c8ac2f99-1714808641495-3_original.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e52c08a5c723c8ac2f99-1714808641495-3_2000.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e52c08a5c723c8ac2f99-1714808641495-3_1000.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e52c08a5c723c8ac2f99-1714808641495-3_500.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e52c08a5c723c8ac2f99-1714808641495-3_200.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e52c08a5c723c8ac2f99-1714808641495-4_original.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e52c08a5c723c8ac2f99-1714808641495-4_2000.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e52c08a5c723c8ac2f99-1714808641495-4_1000.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e52c08a5c723c8ac2f99-1714808641495-4_500.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e52c08a5c723c8ac2f99-1714808641495-4_200.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e52c08a5c723c8ac2f99-1714808641496-5_original.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e52c08a5c723c8ac2f99-1714808641496-5_2000.webp",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e52c08a5c723c8ac2f99-1714808641496-5_1000.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e52c08a5c723c8ac2f99-1714808641496-5_500.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e52c08a5c723c8ac2f99-1714808641496-5_200.jpeg",
+          "altText": "Grizl CF SL 8 Trail photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/en-de/gravel-bikes/adventure/grizl/trail/grizl-cf-sl-8-trail/3473.html"
+  },
+  {
+    "_id": "6635e897a9db5c2e7c062892",
+    "name": "Grizl CF SLX 8 Di2",
+    "manufacturer": "Canyon",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 3999,
+      "USD": 4299
+    },
+    "descriptionI18n": {
+      "en": "Cover big distances at record speed. This bike combines the superlight, adventure-ready Grizl CF SLX frame with top-end components like electronic Shimano shifting and carbon wheels.",
+      "de": "Rekordtempo für die Langstrecke. Mit dem leichten und abenteuertauglichen Grizl CF SLX Rahmen und Spitzenkomponenten wie der elektronischen Schaltung von Shimano und Laufrädern aus Carbon ist dieses Bike kaum zu schlagen."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-6635e897a9db5c2e7c062892-1714809279182-1_original.webp",
+          "altText": "Grizl CF SLX 8 Di2 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635e897a9db5c2e7c062892-1714809279182-1_2000.webp",
+          "altText": "Grizl CF SLX 8 Di2 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635e897a9db5c2e7c062892-1714809279182-1_1000.jpeg",
+          "altText": "Grizl CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635e897a9db5c2e7c062892-1714809279182-1_500.jpeg",
+          "altText": "Grizl CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635e897a9db5c2e7c062892-1714809279182-1_200.jpeg",
+          "altText": "Grizl CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/de-de/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/3702.html?dwvar_3702_pv_rahmenfarbe=R083_P11"
+  },
+  {
+    "_id": "6635eaef6fbd7b858b6acb86",
+    "name": "Grail CF SL 7",
+    "manufacturer": "Canyon",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 2699,
+      "USD": 2799
+    },
+    "descriptionI18n": {
+      "en": "Cover big distances at record speed. This bike combines the superlight, adventure-ready Grizl CF SLX frame with top-end components like electronic Shimano shifting and carbon wheels.",
+      "de": "Schnell, souverän, zuverlässig. Mit seinem stabilen Fahrverhalten, dem präzisen Handling, der robusten Shimano-Schaltung und den unverwüstlichen Aluminium-Laufrädern von DT Swiss ist das Grail CF SL 7 eine vollwertige Rennmaschine."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-6635eaef6fbd7b858b6acb86-1714815743602-1_original.webp",
+          "altText": "Grail CF SL 7 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6635eaef6fbd7b858b6acb86-1714815743602-1_2000.webp",
+          "altText": "Grail CF SL 7 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6635eaef6fbd7b858b6acb86-1714815743602-1_1000.jpeg",
+          "altText": "Grail CF SL 7 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6635eaef6fbd7b858b6acb86-1714815743602-1_500.jpeg",
+          "altText": "Grail CF SL 7 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6635eaef6fbd7b858b6acb86-1714815743602-1_200.jpeg",
+          "altText": "Grail CF SL 7 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/de-de/gravel-bikes/performance/grail/cf-sl/grail-cf-sl-7/3575.html"
+  },
+  {
+    "_id": "663603ab52bc5f09bc0ce046",
+    "name": "Grail CF SLX 8 AXS",
+    "manufacturer": "Canyon",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 5299,
+      "USD": 5699
+    },
+    "descriptionI18n": {
+      "en": "Versatile, integrated, rapid. With a next-gen Grail CF SLX frame, wireless SRAM shifting, and lightning-fast Zipp wheels, this is a blazing fast gravel bike built for high-level racing.",
+      "de": "Vielseitig. Integriert. Blitzschnell. Mit dem fortschrittlichen Grail CF SLX Rahmen, kabelloser Schaltung von SRAM und blitzschnellen Laufrädern von Zipp ist dieses Gravel Bike für den Renneinsatz an der Weltspitze prädestiniert."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663603ab52bc5f09bc0ce046-1714816059268-1_original.webp",
+          "altText": "Grail CF SLX 8 AXS photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663603ab52bc5f09bc0ce046-1714816059268-1_2000.webp",
+          "altText": "Grail CF SLX 8 AXS photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663603ab52bc5f09bc0ce046-1714816059268-1_1000.jpeg",
+          "altText": "Grail CF SLX 8 AXS photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663603ab52bc5f09bc0ce046-1714816059268-1_500.jpeg",
+          "altText": "Grail CF SLX 8 AXS photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663603ab52bc5f09bc0ce046-1714816059268-1_200.jpeg",
+          "altText": "Grail CF SLX 8 AXS photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/en-de/gravel-bikes/performance/grail/cf-slx/grail-cf-slx-8-axs/3580.html"
+  },
+  {
+    "_id": "66360493560b98ec0c94efe1",
+    "name": "Grail CFR LTD",
+    "manufacturer": "Canyon",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 10000,
+      "USD": 10000
+    },
+    "descriptionI18n": {
+      "en": "Next Level speed. Next Level style. With the same advanced CFR frame and dazzling GRVL DZZL artwork that won Unbound 2023, this might just be the fastest gravel bike on the planet today.",
+      "de": "Next Level Speed. Next Level Style. Mit dem gleichen fortschrittlichen CFR-Rahmen und der auffälligen GRVL DZZL Artwork, die bei Unbound 2023 den Sieg geholt haben, ist es wahrscheinlich das schnellste Gravel Bike auf dem Planeten."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-66360493560b98ec0c94efe1-1714816354770-1_original.webp",
+          "altText": "Grail CFR LTD photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66360493560b98ec0c94efe1-1714816354770-1_2000.webp",
+          "altText": "Grail CFR LTD photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66360493560b98ec0c94efe1-1714816354770-1_1000.jpeg",
+          "altText": "Grail CFR LTD photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66360493560b98ec0c94efe1-1714816354770-1_500.jpeg",
+          "altText": "Grail CFR LTD photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66360493560b98ec0c94efe1-1714816354770-1_200.jpeg",
+          "altText": "Grail CFR LTD photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/de-de/fahrrad-outlet/gravel-bike/grail-cfr-ltd/4093.html"
+  },
+  {
+    "_id": "663606d1245b69f3c4c75029",
+    "name": "Speedster Gravel 10 Bike",
+    "manufacturer": "Scott",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 2999,
+      "USD": 3229
+    },
+    "descriptionI18n": {
+      "en": "The SCOTT Speedster Gravel 10 is your one stop shop for when the path gets less traveled. Comfortable geometry for all-day rides, room for big tires and fully internal cable routing make this a great option for those looking to take it off road!",
+      "de": "Das SCOTT Speedster Gravel 10 ist dein Bike für abgelegenes Gelände. Eine komfortable Geometrie für ganztägige Rides, Platz für große Reifen und eine komplett innenliegende Zugverlegung machen dieses Rad zu einer fantastischen Option für alle Zweirad-Offroader!"
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663606d1245b69f3c4c75029-1714816772167-1_original.webp",
+          "altText": "Speedster Gravel 10 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663606d1245b69f3c4c75029-1714816772167-1_2000.webp",
+          "altText": "Speedster Gravel 10 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663606d1245b69f3c4c75029-1714816772167-1_1000.jpeg",
+          "altText": "Speedster Gravel 10 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663606d1245b69f3c4c75029-1714816772167-1_500.jpeg",
+          "altText": "Speedster Gravel 10 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663606d1245b69f3c4c75029-1714816772167-1_200.jpeg",
+          "altText": "Speedster Gravel 10 Bike photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-10-bike?article=293259047"
+  },
+  {
+    "_id": "6636079252d387e096864c2e",
+    "name": "Speedster Gravel 40 Bike",
+    "manufacturer": "Scott",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 1899,
+      "USD": 2049
+    },
+    "descriptionI18n": {
+      "en": "The SCOTT Speedster Gravel 40 is your one stop shop for when the path gets less traveled. Comfortable geometry for all-day rides, room for big tires, fenders and fully internal cable routing make this a great option for those looking to take it off road!",
+      "de": "Das SCOTT Speedster Gravel 40 ist dein Bike für abgelegenes Gelände. Eine komfortable Geometrie für ganztägige Rides, Platz für große Reifen, Schutzbleche und eine komplett innenliegende Zugverlegung machen dieses Rad zu einer fantastischen Option für alle Zweirad-Abenteuer!"
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-6636079252d387e096864c2e-1714817080159-1_original.webp",
+          "altText": "Speedster Gravel 40 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-6636079252d387e096864c2e-1714817080159-1_2000.webp",
+          "altText": "Speedster Gravel 40 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6636079252d387e096864c2e-1714817080159-1_1000.jpeg",
+          "altText": "Speedster Gravel 40 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6636079252d387e096864c2e-1714817080159-1_500.jpeg",
+          "altText": "Speedster Gravel 40 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6636079252d387e096864c2e-1714817080159-1_200.jpeg",
+          "altText": "Speedster Gravel 40 Bike photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-40-bike-orange?article=293263047"
+  },
+  {
+    "_id": "663608f0d8ac5672cbba011a",
+    "name": "Contessa Addict Gravel 15 Bike",
+    "manufacturer": "Scott",
+    "category": "661f8ac137eb9e0aa239bb96",
+    "priceI18n": {
+      "EUR": 2599,
+      "USD": 2799
+    },
+    "descriptionI18n": {
+      "en": "The Scott Contessa Addict Gravel 15 will get you wherever you’re going, no matter what the trail throws at you. More progressive, more control and more mounts mean this adventure-ready machine is your ticket to getting out there. Find yourself, get lost.",
+      "de": "Mit dem Scott Contessa Addict Gravel 15 kommst du auf jedem Untergrund voran. Dieses fortschrittlichere Abenteuer-Bike mit mehr Kontrolle und mehr Halterungen ist deine Eintrittskarte für die freie Natur. Gehe an deine Grenzen und erfahre dich selbst!"
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663608f0d8ac5672cbba011a-1714817431820-1_original.webp",
+          "altText": "Contessa Addict Gravel 15 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663608f0d8ac5672cbba011a-1714817431820-1_2000.webp",
+          "altText": "Contessa Addict Gravel 15 Bike photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663608f0d8ac5672cbba011a-1714817431820-1_1000.jpeg",
+          "altText": "Contessa Addict Gravel 15 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663608f0d8ac5672cbba011a-1714817431820-1_500.jpeg",
+          "altText": "Contessa Addict Gravel 15 Bike photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663608f0d8ac5672cbba011a-1714817431820-1_200.jpeg",
+          "altText": "Contessa Addict Gravel 15 Bike photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.scott-sports.com/de/de/product/scott-contessa-addict-gravel-15-bike?article=290526049"
+  }
+]
