@@ -1,0 +1,347 @@
+[
+  {
+    "_id": "663677cf9d2dbf4b790d1698",
+    "name": "Attain Race",
+    "manufacturer": "Cube",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 1199,
+      "USD": 1299
+    },
+    "descriptionI18n": {
+      "en": "You shouldn't have to suffer for your sport. That's why we built the Attain's 6061 disc brake-ready aluminium chassis with both comfort and performance in mind. Double-butted tubes save weight wherever possible, without sacrificing strength. Smooth Welding gives tube joints a premium, almost organic appearance. The tapered steerer and thru axles front and rear ensure pinpoint precision accuracy and efficient power transfer. And slender seatstays and a full carbon fork help reduce road shock and vibration for significantly improved rider comfort.",
+      "de": "Wer seinem Lieblingssport frönt, sollte sich nicht quälen müssen. Deshalb haben wir bei der Entwicklung des Attain Rahmens aus 6061er-Aluminium (inklusive Aufnahmen für Scheibenbremsen) auch viel Wert auf Performance bei zugleich hohem Komfort gelegt. Durch die doppelt konifizierten Rohrsätze wurde, wo möglich, Gewicht gespart – selbstverständlich ohne Einbußen in Sachen Stabilität und Steifigkeit. Das konische Steuerrohr und Steckachsen vorne und hinten sorgen für ein superpräzises Lenkverhalten und maximale Kraftübertragung. Und die schlanken Sitzstreben und die Vollcarbongabel schlucken etwaige Schläge und Vibrationen vom Straßenbelag und optimieren so den Fahrkomfort. Last, but not least verleihen die im Smooth Welding Verfahren gestalteten, glatten Rohrverbindungen dem Chassis seinen cleanen, überaus edlen Look."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663677cf9d2dbf4b790d1698-1714846456997-1_original.webp",
+          "altText": "Attain Race photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663677cf9d2dbf4b790d1698-1714846456997-1_2000.webp",
+          "altText": "Attain Race photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663677cf9d2dbf4b790d1698-1714846456997-1_1000.jpeg",
+          "altText": "Attain Race photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663677cf9d2dbf4b790d1698-1714846456997-1_500.jpeg",
+          "altText": "Attain Race photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663677cf9d2dbf4b790d1698-1714846456997-1_200.jpeg",
+          "altText": "Attain Race photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.cube.eu/de-de/cube-attain-race-black-n-white/f47c66341dd33754ad8e1c403767ca79"
+  },
+  {
+    "_id": "663679aa99e4bfc0653f32f1",
+    "name": "Axial WS",
+    "manufacturer": "Cube",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 949,
+      "USD": 1029
+    },
+    "descriptionI18n": {
+      "en": "A fast bike should also be a comfortable bike, and the Axial WS's double-butted aluminium, disc-compatible chassis combines both in a beautifully integrated package. The tapered head tube and cross-ovalised down tube ensure accurate steering and rapid forward progress, while the carbon fork and slender seatstays help filter out road buzz and shock to keep you comfortable for the long haul. It's the best of both worlds.",
+      "de": "Pfeilschnelles Bike gefällig? Gerne. Abstriche in Sachen Fahrkomfort? Auf keinen Fall. Der mit Scheibenbremsen kompatible Axial WS Rahmen aus doppelt konifizierten Aluminiumrohrsätzen präsentiert sich deshalb als die beste – und voll integrierte – Kombination aus Performance, Komfort und einer Optik, die ihresgleichen sucht. Das konische Steuerrohr und das kreuzovale Unterrohr sorgen für ein präzises Lenkverhalten und starken Vorwärtsdrang. Dabei reduzieren die Vollcarbongabel und die schlanken Sitzstreben etwaige Vibrationen vom Straßenbelag und optimieren so den Fahrkomfort, vor allem auf langen Strecken. Fazit: das Beste aus zwei Welten in einem Chassis vereint!"
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663679aa99e4bfc0653f32f1-1714846525039-1_original.webp",
+          "altText": "Axial WS photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663679aa99e4bfc0653f32f1-1714846525039-1_2000.webp",
+          "altText": "Axial WS photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663679aa99e4bfc0653f32f1-1714846525039-1_1000.jpeg",
+          "altText": "Axial WS photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663679aa99e4bfc0653f32f1-1714846525039-1_500.jpeg",
+          "altText": "Axial WS photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663679aa99e4bfc0653f32f1-1714846525039-1_200.jpeg",
+          "altText": "Axial WS photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.cube.eu/de-de/cube-axial-ws-greyrose-n-blush/c89fdd6c79deac8a8fb0d79b7f1a0810"
+  },
+  {
+    "_id": "66367c0785fae5dd2b063190",
+    "name": "Endurance 6",
+    "manufacturer": "Canyon",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 1399,
+      "USD": 1499
+    },
+    "descriptionI18n": {
+      "en": "With the latest Tiagra groupset for accurate gear shifting, class-leading lightness, and the Endurace's signature relaxed geometry, this aluminium endurace bike is built to go the distance.",
+      "de": "Mit der neuesten Tiagra-Schaltgruppe für akkurate Gangwechsel, klassenbestem Leichtbau und der bewährten Geometrie des Endurace ist dieser Aluminium-Bolide für die Langstrecke prädestiniert."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-66367c0785fae5dd2b063190-1714846993122-1_original.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367c0785fae5dd2b063190-1714846993122-1_2000.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367c0785fae5dd2b063190-1714846993122-1_1000.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367c0785fae5dd2b063190-1714846993122-1_500.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367c0785fae5dd2b063190-1714846993122-1_200.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-66367c0785fae5dd2b063190-1714846993124-2_original.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367c0785fae5dd2b063190-1714846993124-2_2000.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367c0785fae5dd2b063190-1714846993124-2_1000.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367c0785fae5dd2b063190-1714846993124-2_500.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367c0785fae5dd2b063190-1714846993124-2_200.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-66367c0785fae5dd2b063190-1714846993124-3_original.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367c0785fae5dd2b063190-1714846993124-3_2000.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367c0785fae5dd2b063190-1714846993124-3_1000.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367c0785fae5dd2b063190-1714846993124-3_500.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367c0785fae5dd2b063190-1714846993124-3_200.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        }
+      },
+      {
+        "original": {
+          "url": "/img/products/original/product-66367c0785fae5dd2b063190-1714846993124-4_original.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367c0785fae5dd2b063190-1714846993124-4_2000.webp",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367c0785fae5dd2b063190-1714846993124-4_1000.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367c0785fae5dd2b063190-1714846993124-4_500.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367c0785fae5dd2b063190-1714846993124-4_200.jpeg",
+          "altText": "Endurance 6 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "canyon.com/en-de/road-bikes/endurance-bikes/endurace/al/endurace-6/3718.html"
+  },
+  {
+    "_id": "66367e0fe2fed4e4f85b6149",
+    "name": "Endurace CFR Flash",
+    "manufacturer": "Canyon",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 9499,
+      "USD": 9999
+    },
+    "descriptionI18n": {
+      "en": "One of the fastest, most stunning endurance bikes ever. World Tour-inspired performance, advanced comfort innovation, a premium frame finish: welcome to the Next Level of endurance riding.",
+      "de": "Eines der schnellsten und beeindruckendsten Endurance Bikes aller Zeiten. Performance-Werte auf WorldTour-Niveau, fortschrittliche Komfort-Features und ein erstklassiger Rahmen: Willkommen auf dem nächsten Level im Bereich Endurance."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-66367e0fe2fed4e4f85b6149-1714847375405-1_original.webp",
+          "altText": "Endurace CFR Flash photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367e0fe2fed4e4f85b6149-1714847375405-1_2000.webp",
+          "altText": "Endurace CFR Flash photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367e0fe2fed4e4f85b6149-1714847375405-1_1000.jpeg",
+          "altText": "Endurace CFR Flash photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367e0fe2fed4e4f85b6149-1714847375405-1_500.jpeg",
+          "altText": "Endurace CFR Flash photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367e0fe2fed4e4f85b6149-1714847375405-1_200.jpeg",
+          "altText": "Endurace CFR Flash photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/en-de/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-flash/3090.html"
+  },
+  {
+    "_id": "66367ef81ff94c4ed0b6096a",
+    "name": "Aeroad CF SLX 8 Di2",
+    "manufacturer": "Canyon",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 6299,
+      "USD": 6779
+    },
+    "descriptionI18n": {
+      "en": "Wind tunnel-optimised tube profiles, premium aero carbon wheels, complete integration of all cables for reduced drag. This is our interpretation of a cutting-edge aero race bike.",
+      "de": "Im Windkanal optimierte Rahmenprofile, exklusive Aero-Laufräder und Integration aller Leitungen: Das ist unsere moderne Interpretation Aero-optimierter Rennräder."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-66367ef81ff94c4ed0b6096a-1714847618187-1_original.webp",
+          "altText": "Aeroad CF SLX 8 Di2 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-66367ef81ff94c4ed0b6096a-1714847618187-1_2000.webp",
+          "altText": "Aeroad CF SLX 8 Di2 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-66367ef81ff94c4ed0b6096a-1714847618187-1_1000.jpeg",
+          "altText": "Aeroad CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-66367ef81ff94c4ed0b6096a-1714847618187-1_500.jpeg",
+          "altText": "Aeroad CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-66367ef81ff94c4ed0b6096a-1714847618187-1_200.jpeg",
+          "altText": "Aeroad CF SLX 8 Di2 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.canyon.com/de-de/rennrad/aero-rennrad/aeroad/cf-slx/aeroad-cf-slx-8-di2/3688.html"
+  },
+  {
+    "_id": "663680b01c463d05b9849336",
+    "name": "Émonda SL 5",
+    "manufacturer": "Trek",
+    "category": "661f8abd88e01ce866485372",
+    "priceI18n": {
+      "EUR": 2999,
+      "USD": 3229
+    },
+    "descriptionI18n": {
+      "en": "The Émonda SL 5 Disc is a lightweight carbon road bike with a balanced ride quality, superior handling characteristics, a Shimano 105 drivetrain and the added benefit of free speed thanks to aero tube shaping. It's a great choice for century rides on hilly terrain, windy flats and speedy descents.",
+      "de": "Das Émonda SL 5 Disc mit Shimanos 105-Antrieb ist ein leichtes Carbonrennrad mit ausgewogener Fahrqualität und überlegenem Handling, das dank aerodynamischer Rohrprofile einen echten Geschwindigkeitsvorteil bietet. Es ist die perfekte Wahl für Radmarathons in hügeligem Terrain, für flache windige Abschnitte und für schnelle Abfahrten."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-663680b01c463d05b9849336-1714848117561-1_original.webp",
+          "altText": "Émonda SL 5 photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-663680b01c463d05b9849336-1714848117561-1_2000.webp",
+          "altText": "Émonda SL 5 photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-663680b01c463d05b9849336-1714848117561-1_1000.jpeg",
+          "altText": "Émonda SL 5 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-663680b01c463d05b9849336-1714848117561-1_500.jpeg",
+          "altText": "Émonda SL 5 photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-663680b01c463d05b9849336-1714848117561-1_200.jpeg",
+          "altText": "Émonda SL 5 photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "originalUrl": "https://www.trekbikes.com/de/de_DE/bikes/rennr%C3%A4der/performance-rennr%C3%A4der/%C3%A9monda/%C3%A9mondasl/%C3%A9monda-sl-5/p/41366/?colorCode=white"
+  }
+]
