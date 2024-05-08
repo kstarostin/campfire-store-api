@@ -8,3 +8,217 @@ components:
   responses:
     unauthorizedError:
       description: Access token is missing or invalid.
+  schemas:
+    # Common for multiple items
+    itemsSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        resultsFound:
+          type: number
+        resultsPerPage:
+          type: number
+        resultsTotal:
+          type: number
+        currentPage:
+          type: number
+        pages:
+          type: number
+    # Cart/order entry
+    genericOrderEntriesSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/GenericOrderEntry'
+    genericOrderEntrySchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/GenericOrderEntry'
+    # Cart
+    cartsSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Cart'
+    cartSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Cart'
+    # Category
+    categoriesSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Category'
+    categorySchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Category'
+    # Currency
+    currenciesSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            documents:
+              type: array
+              items:
+                type: object
+                properties:
+                  code:
+                    type: string
+    # Language
+    languagesSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            documents:
+              type: array
+              items:
+                type: object
+                properties:
+                  code:
+                    type: string
+    # Order
+    ordersSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Order'
+    orderSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Order'
+    # Product
+    productsSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                filters:
+                  type: array
+                  items:
+                    type: object
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Product'
+    productSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Product'
+    # Title
+    titlesSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Title'
+    titleSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Title'
+    # User
+    usersSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/User'
+    userSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/User'

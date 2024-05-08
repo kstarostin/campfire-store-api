@@ -32,9 +32,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Title'
+   *               $ref: '#/components/schemas/titlesSchema'
    */
   .get(titleController.getAllTitles)
   /**
@@ -61,8 +59,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Title'
+   *               $ref: '#/components/schemas/titleSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -90,8 +87,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Title'
+   *               $ref: '#/components/schemas/titleSchema'
    */
   .get(titleController.getTitle)
   /**
@@ -119,8 +115,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Title'
+   *               $ref: '#/components/schemas/titleSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

@@ -34,9 +34,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Product'
+   *               $ref: '#/components/schemas/productsSchema'
    */
   .get(productController.getAllProducts)
   /**
@@ -64,8 +62,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Product'
+   *               $ref: '#/components/schemas/productSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -94,8 +91,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Product'
+   *               $ref: '#/components/schemas/productSchema'
    */
   .get(productController.getProduct)
   /**
@@ -133,8 +129,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Product'
+   *               $ref: '#/components/schemas/productSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

@@ -45,9 +45,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/User'
+   *               $ref: '#/components/schemas/usersSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -73,8 +71,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/User'
+   *               $ref: '#/components/schemas/userSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -110,8 +107,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/User'
+   *               $ref: '#/components/schemas/userSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

@@ -33,9 +33,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Cart'
+   *               $ref: '#/components/schemas/cartsSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -74,8 +72,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Cart'
+   *               $ref: '#/components/schemas/cartSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -109,8 +106,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Cart'
+   *               $ref: '#/components/schemas/cartSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -146,8 +142,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Cart'
+   *               $ref: '#/components/schemas/cartSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

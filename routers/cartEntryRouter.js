@@ -43,9 +43,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/GenericOrderEntry'
+   *               $ref: '#/components/schemas/genericOrderEntriesSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -86,8 +84,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/GenericOrderEntry'
+   *               $ref: '#/components/schemas/genericOrderEntrySchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -121,8 +118,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/GenericOrderEntry'
+   *               $ref: '#/components/schemas/genericOrderEntrySchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -162,8 +158,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/GenericOrderEntry'
+   *               $ref: '#/components/schemas/genericOrderEntrySchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

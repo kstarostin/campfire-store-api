@@ -40,9 +40,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Category'
+   *               $ref: '#/components/schemas/categoriesSchema'
    */
   .get(categoryController.getAllCategories)
   /**
@@ -69,8 +67,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Category'
+   *               $ref: '#/components/schemas/categorySchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -98,8 +95,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Category'
+   *               $ref: '#/components/schemas/categorySchema'
    */
   .get(categoryController.getCategory)
   /**
@@ -127,8 +123,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Category'
+   *               $ref: '#/components/schemas/categorySchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -187,9 +182,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Product'
+   *               $ref: '#/components/schemas/productsSchema'
    */
   .get(productController.handleCategoryId, productController.getAllProducts);
 

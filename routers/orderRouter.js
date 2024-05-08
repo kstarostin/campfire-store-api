@@ -42,9 +42,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/definitions/Order'
+   *               $ref: '#/components/schemas/ordersSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -80,8 +78,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Order'
+   *               $ref: '#/components/schemas/orderSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
@@ -113,8 +110,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: object
-   *               $ref: '#/definitions/Order'
+   *               $ref: '#/components/schemas/orderSchema'
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */

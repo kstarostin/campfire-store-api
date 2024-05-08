@@ -27,12 +27,7 @@ router
    *         content:
    *           application/json:
    *             schema:
-   *               type: array
-   *               items:
-   *                 type: object
-   *                 properties:
-   *                   code:
-   *                     type: string
+   *               $ref: '#/components/schemas/currenciesSchema'
    */
   .get(currController.getAllCurrencies);
 

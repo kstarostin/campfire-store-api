@@ -85,7 +85,7 @@ class APIFeatures {
     }
 
     this.resultFilter = resultFilter;
-    console.log(this.resultFilter);
+    // console.log(this.resultFilter);
 
     this.dbQuery = this.dbQuery.find(this.resultFilter);
 
