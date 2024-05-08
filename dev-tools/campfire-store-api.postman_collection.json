@@ -211,13 +211,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "ec213c13-f026-45b0-8490-29f817c31f0c"
+									"uuid": "cefcf7e2-b489-4bd4-af64-3f1d7022377e"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "e2edfdb9-c23a-4dd0-8c1c-12dad2289585"
+									"uuid": "c4f0d935-d668-49d1-b614-649deedb3960"
 								}
 							]
 						},
@@ -274,19 +274,19 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "ee3da9b1-e9da-422f-9042-1a78e440a950"
+									"uuid": "2be377a0-71e1-4d8c-a404-4d69b37bda51"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "1b860f1d-b8b2-4362-9918-e41a24cb92aa"
+									"uuid": "84fe2798-6cf0-487b-a46c-921c78e63fe8"
 								},
 								{
 									"key": "entryId",
 									"value": "",
 									"description": "ID of an entry to search for.",
-									"uuid": "374689d9-3cd3-4068-84dd-ca4a08ecb9a1"
+									"uuid": "9464edc8-8690-4f46-8d9c-84d255f5fb99"
 								}
 							]
 						},
@@ -351,13 +351,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to create a cart entry for.",
-									"uuid": "aff644da-7f0a-4440-bbee-3cdc7206f748"
+									"uuid": "9b1c3175-16fa-47c2-bfb1-76af0b0a3ff2"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "10b92e1e-f979-4aa0-b7fd-231771e16047"
+									"uuid": "1280f939-c968-4af3-9f58-252af59e7300"
 								}
 							]
 						},
@@ -423,19 +423,19 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "03de7c4b-e28e-4798-8402-7275da7bd27f"
+									"uuid": "f14bebbb-956d-4eab-9ad2-35be2a12dae0"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "d6772fdb-7427-4622-8908-e34f8b814131"
+									"uuid": "1fb98d55-b326-4b3a-a954-3b260759ffb2"
 								},
 								{
 									"key": "entryId",
 									"value": "",
 									"description": "ID of an entry to search for.",
-									"uuid": "2aac3d5b-cd8c-4c53-87ff-469c719e5f80"
+									"uuid": "23920dcd-4a42-4664-b952-2f5b91ce6753"
 								}
 							]
 						},
@@ -478,19 +478,19 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "02930e22-fa67-47fd-96f4-0b082a5a6182"
+									"uuid": "56ecb650-028a-46ef-b05e-51576ca9ab75"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "97c8cde3-3a79-4aad-962d-ccfe81212351"
+									"uuid": "2d34dc68-80b1-4954-91ba-6d3c1a5b8de8"
 								},
 								{
 									"key": "entryId",
 									"value": "",
 									"description": "ID of an entry to search for.",
-									"uuid": "6a744e0e-09a2-430e-8c2c-9edbf2f6b690"
+									"uuid": "5477cf94-5977-4483-81ac-69d423e1ea55"
 								}
 							]
 						},
@@ -550,7 +550,7 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "fc2ca4c3-d5bd-4e2c-a2de-702f37de268a"
+									"uuid": "63ecc2ea-b464-4d07-b831-65f39d9140ce"
 								}
 							]
 						},
@@ -605,13 +605,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "2024c546-6ddb-4ae8-9ffd-a7a3d219cf71"
+									"uuid": "49b3a394-c336-4d20-9c1c-770716bb5a45"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "8219743a-3348-485e-b67e-969a0eb9a7a8"
+									"uuid": "d3e4f427-7baa-4a6e-8ff4-bc5e7dce2e68"
 								}
 							]
 						},
@@ -674,7 +674,7 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to create a cart for.",
-									"uuid": "da37f8b8-0937-4414-8d4b-531def8fdd11"
+									"uuid": "e99ed7e7-16a9-4eab-91fa-6fba8ea649e9"
 								}
 							]
 						},
@@ -738,13 +738,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "b0c31aa3-effb-4416-b245-2344e1129a6f"
+									"uuid": "bb7fdd14-ec45-4ee5-8f70-ae40ed14a4d0"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "d9bae641-4fa2-4667-9c90-d21e7abb7dc1"
+									"uuid": "ecdbe5fc-3c2d-42ee-8b43-4f00ebf4554d"
 								}
 							]
 						},
@@ -785,13 +785,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "dc37dadb-e3a9-41a5-853e-b0dad4e1d6c6"
+									"uuid": "c0ac5ad9-8292-46d9-9d83-d3cdea7ffefd"
 								},
 								{
 									"key": "cartId",
 									"value": "",
 									"description": "ID of a cart to search for.",
-									"uuid": "19b0d50d-5399-4e8a-b35e-2a55add00ad0"
+									"uuid": "86344512-9b41-424a-9ed7-fd44655e89c7"
 								}
 							]
 						},
@@ -892,7 +892,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a category to search for.",
-									"uuid": "0b22d6a8-5fa4-496b-894a-9635998d20a1"
+									"uuid": "c4980046-9cf6-4a91-9d99-3f748735ff73"
 								}
 							]
 						},
@@ -995,7 +995,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a category to search for.",
-									"uuid": "9b9b954a-640a-45d1-8d2c-8d641b34af3d"
+									"uuid": "dc69039b-184b-4ad3-966d-f2669851d0fe"
 								}
 							]
 						},
@@ -1034,7 +1034,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a category to search for.",
-									"uuid": "0417975e-7734-4bdb-89ed-2e6a8f03b22d"
+									"uuid": "a5484c5f-4034-40af-b24d-5da67757ab29"
 								}
 							]
 						},
@@ -1069,6 +1069,18 @@
 									"value": "de",
 									"description": "Session language. Default is en.",
 									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "code",
+									"description": "Comma separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "code,nameI18n",
+									"description": "Comma separated set of returned fields.",
+									"disabled": true
 								}
 							]
 						},
@@ -1102,6 +1114,18 @@
 									"key": "language",
 									"value": "de",
 									"description": "Session language. Default is en.",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "code",
+									"description": "Comma separated sorting parameters.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "code,nameI18n",
+									"description": "Comma separated set of returned fields.",
 									"disabled": true
 								}
 							]
@@ -1191,7 +1215,7 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "ecf1f9f5-73ce-4040-ac33-715fac0839bf"
+									"uuid": "9d8215fa-5e35-439f-9e91-ec0f6c68956e"
 								}
 							]
 						},
@@ -1246,13 +1270,13 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "cfe922b9-8f0e-424c-981d-dbb53c08c55e"
+									"uuid": "8bb4635e-71d0-4c42-9889-b24e04faf0e6"
 								},
 								{
 									"key": "orderId",
 									"value": "",
 									"description": "ID of an order to search for.",
-									"uuid": "26e54f9f-51d7-45f4-b10b-35ee02608ede"
+									"uuid": "33665a09-26f8-4900-a403-028ea4d53e24"
 								}
 							]
 						},
@@ -1315,7 +1339,7 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to place an order for.",
-									"uuid": "dda18a6e-d05f-46db-ac6b-802dc8a607f4"
+									"uuid": "bafe318d-22d2-4cba-a0b3-f21ae2eb873e"
 								}
 							]
 						},
@@ -1459,7 +1483,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a leaf category or a root category to filter by. For root categories, the result will contain list of products for all it's child (leaf) categories.",
-									"uuid": "0fa12b36-5319-47bf-8fa9-c26574cfecce"
+									"uuid": "5ea24714-750b-49f6-812d-b99e2254f302"
 								}
 							]
 						},
@@ -1502,7 +1526,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a product to search for.",
-									"uuid": "ddb3ebfc-a798-4b0d-8fdf-3042c6c8e10c"
+									"uuid": "82eab1b9-076b-49dc-aab7-4a72d4c27968"
 								}
 							]
 						},
@@ -1617,7 +1641,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a product to search for.",
-									"uuid": "5958e8c4-efea-4f32-b930-47b7cfc2254b"
+									"uuid": "52af9417-f3b5-4dac-844c-34168d71d3d2"
 								}
 							]
 						},
@@ -1656,7 +1680,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a product to search for.",
-									"uuid": "4a546ffe-5d01-4caa-8058-e74ad13445a0"
+									"uuid": "f87c4ada-e08d-4ede-8a1e-002f8dc22e08"
 								}
 							]
 						},
@@ -1697,13 +1721,13 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a product to search for.",
-									"uuid": "cdbc8cac-d883-4b0d-8610-6254ae62056a"
+									"uuid": "3464dd59-ec70-48f8-91f8-5c5f4e0ebe27"
 								},
 								{
 									"key": "imageId",
 									"value": "",
 									"description": "ID of an image to search for.",
-									"uuid": "2a2404cb-961a-4bb5-9149-74f9b7bea9ef"
+									"uuid": "bc168baf-a685-4ff5-ad77-4fdfee189040"
 								}
 							]
 						},
@@ -1798,7 +1822,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a title to search for.",
-									"uuid": "d614f7c6-984c-4011-a4de-6c2b88bf65cf"
+									"uuid": "89117d25-cbac-4bed-9f41-36406f5a1892"
 								}
 							]
 						},
@@ -1901,7 +1925,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a title to search for.",
-									"uuid": "b1176e50-ab75-409f-851d-2201132fbf77"
+									"uuid": "4b354d27-61fb-4a22-b0ff-fd2ef7e117d5"
 								}
 							]
 						},
@@ -1940,7 +1964,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID of a title to search for.",
-									"uuid": "dac5795f-10f8-4706-8814-7d2ca92215b9"
+									"uuid": "c247f081-409c-47ac-b350-e57f80254e95"
 								}
 							]
 						},
@@ -2061,7 +2085,7 @@
 									"key": "userId",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "bfd549f0-836f-4203-9a79-7c6ffd847cc1"
+									"uuid": "c2f0e113-17d3-4f1d-be18-9905728d27a5"
 								}
 							]
 						},
@@ -2117,7 +2141,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "ec020cd2-287f-4db1-acf0-e4cf036d4ef2"
+									"uuid": "4b7e1b48-cb32-4677-9d1e-75a5379ac9c4"
 								}
 							]
 						},
@@ -2156,7 +2180,7 @@
 									"key": "id",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "f07a6b87-a971-46f7-9e10-ff26e3e4f936"
+									"uuid": "2f7c5ea6-d1c6-465a-873f-8a48589e2ffb"
 								}
 							]
 						},
@@ -2197,13 +2221,13 @@
 									"key": "id",
 									"value": "",
 									"description": "ID or email of a user to search for.",
-									"uuid": "548240d0-fc4b-4f9b-a9e8-e650e4af058a"
+									"uuid": "d7064dae-1f9d-4b9c-8578-39b3e0d8bf83"
 								},
 								{
 									"key": "photoId",
 									"value": "",
 									"description": "ID of a photo to search for.",
-									"uuid": "c96748af-6fa1-481b-a569-e4be68ec208a"
+									"uuid": "c266c197-562c-4acc-9ab0-75b0f0c52ae3"
 								}
 							]
 						},

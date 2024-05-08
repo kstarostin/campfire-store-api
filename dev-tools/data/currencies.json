@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "663b945215abe801efdca2e4",
+    "code": "USD",
+    "nameI18n": {
+      "en": "US dollar",
+      "de": "US-Dollar"
+    }
+  },
+  {
+    "_id": "663b9469a543f9a1f2f82c8e",
+    "code": "EUR",
+    "nameI18n": {
+      "en": "Euro",
+      "de": "Euro"
+    }
+  }
+]

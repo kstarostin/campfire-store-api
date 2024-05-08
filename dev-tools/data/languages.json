@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "663b9b54a07c0f9f05fa5a58",
+    "code": "en",
+    "nameI18n": {
+      "en": "English",
+      "de": "Englisch"
+    }
+  },
+  {
+    "_id": "663b9b58ae2e0455045aebfa",
+    "code": "de",
+    "nameI18n": {
+      "en": "German",
+      "de": "Deutsch"
+    }
+  }
+]

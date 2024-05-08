@@ -8,6 +8,9 @@ const Product = require('../../models/productModel');
 const Cart = require('../../models/cartModel');
 const GenericOrderEntry = require('../../models/genericOrderEntryModel');
 const Order = require('../../models/orderModel');
+const Currency = require('../../models/currencyModel');
+const Language = require('../../models/languageModel');
+const { allowedCurrencies, allowedLanguages } = require('../../utils/config');
 
 dotenv.config({ path: './config.env' });
 
@@ -56,9 +59,22 @@ const orders = JSON.parse(fs.readFileSync(`${__dirname}/orders.json`, 'utf-8'));
 const orderEntries = JSON.parse(
   fs.readFileSync(`${__dirname}/orderEntries.json`, 'utf-8'),
 );
+// Filtered currencies and languages
+const currencies = JSON.parse(
+  fs.readFileSync(`${__dirname}/currencies.json`, 'utf-8'),
+).filter((currency) => allowedCurrencies.includes(currency.code));
+const languages = JSON.parse(
+  fs.readFileSync(`${__dirname}/languages.json`, 'utf-8'),
+).filter((language) => allowedLanguages.includes(language.code));
 
 // IMPORT DATA INTO DB
 const performImport = async () => {
+  console.log('Creating currencies...');
+  await Currency.create(currencies);
+
+  console.log('Creating languages...');
+  await Language.create(languages);
+
   console.log('Creating titles...');
   await Title.create(titles);
 
@@ -118,6 +134,10 @@ const performDelete = async () => {
   await User.deleteMany();
   console.log('Deleteing titles...');
   await Title.deleteMany();
+  console.log('Deleteing currencies...');
+  await Currency.deleteMany();
+  console.log('Deleteing languages...');
+  await Language.deleteMany();
   console.log('Data successfully deleted!');
 };
 

@@ -19,6 +19,10 @@ router
    *     tags: [Currencies]
    *     summary: Get currencies
    *     description: Get list of currencies.
+   *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/sort'
+   *       - $ref: '#/parameters/fields'
    *     produces:
    *       - application/json
    *     responses:

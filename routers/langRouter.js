@@ -19,6 +19,10 @@ router
    *     tags: [Languages]
    *     summary: Get languages
    *     description: Get list of languages.
+   *     parameters:
+   *       - $ref: '#/parameters/language'
+   *       - $ref: '#/parameters/sort'
+   *       - $ref: '#/parameters/fields'
    *     produces:
    *       - application/json
    *     responses:

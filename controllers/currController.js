@@ -1,12 +1,20 @@
+const Currency = require('../models/currencyModel');
 const catchAsync = require('../utils/catchAsync');
-const { allowedCurrencies } = require('../utils/config');
+const DocumentSanitizer = require('../utils/documentSanitizer');
+const APIFeatures = require('../utils/apiFeatures');
 
 exports.getAllCurrencies = catchAsync(async (req, res, next) => {
-  const currencies = allowedCurrencies.map((currency) => ({ code: currency }));
+  // EXECUTE QUERY
+  const features = new APIFeatures(Currency.find(), req.query)
+    .sort()
+    .limitFields();
+  const documents = (await features.dbQuery).map((document) =>
+    new DocumentSanitizer(req.language, req.currency, 2).sanitize(document),
+  );
   res.status(200).json({
     status: 'success',
     data: {
-      documents: currencies,
+      documents,
     },
   });
 });
