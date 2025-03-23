@@ -76,6 +76,10 @@ To start the app in production environment, use:
  npm run start:prod
 ```
 
+<p align="center">
+  <img src="/public/img/screenshot.png" alt="Screenshot"/>
+</p>
+
 ### Assets
 
 1. Swagger UI theme is Flattop by [Swagger UI Themes](https://ostranme.github.io/swagger-ui-themes/).
