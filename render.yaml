@@ -1,0 +1,37 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+#
+# Deploy: push this file to your repo, then in the Render Dashboard choose
+# "New" → "Blueprint" and connect the repository. You will be prompted for
+# DATABASE_USERNAME, DATABASE_PASSWORD, and DATABASE (MongoDB Atlas URI with
+# <USERNAME> and <PASSWORD> placeholders). JWT_SECRET is generated automatically.
+#
+# After the first deploy, seed the database if needed:
+#   node dev-tools/data/import-test-data.js --import
+#
+# Ensure MongoDB Atlas Network Access allows connections from anywhere (0.0.0.0/0)
+# or from Render's outbound IPs.
+
+services:
+  - type: web
+    name: campfire-store-api
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm ci
+    startCommand: NODE_ENV=production node server.js
+    healthCheckPath: /api/v1/languages
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: DATABASE
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 30d
+      - key: JWT_COOKIE_EXPIRES_IN
+        value: '30'
