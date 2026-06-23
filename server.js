@@ -22,6 +22,12 @@ const server = app.listen(port, () => {
   console.log(
     `App is running in the ${process.env.NODE_ENV} environment on port ${port}...`,
   );
+
+  if (process.env.NODE_ENV === 'development') {
+    const appUrl = `http://localhost:${port}`;
+    console.log(`Open in browser: ${appUrl}`);
+    console.log(`API docs: ${appUrl}/api/v1/api-docs`);
+  }
 });
 
 process.on('unhandledRejection', (err) => {
