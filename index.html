@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campfire Store — Design mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      :root {
+        --font-sans: 'Inter', system-ui, sans-serif;
+        --font-display: 'Fraunces', Georgia, serif;
+
+        --color-bg: #fafaf9;
+        --color-surface: #ffffff;
+        --color-surface-muted: #f5f5f4;
+        --color-border: #e7e5e4;
+        --color-text: #1c1917;
+        --color-text-muted: #78716c;
+        --color-primary: #ea580c;
+        --color-primary-hover: #c2410c;
+        --color-primary-subtle: #fff7ed;
+        --color-accent: #f59e0b;
+        --color-secondary: #047857;
+        --color-secondary-hover: #065f46;
+        --color-secondary-subtle: #e8f7f0;
+        --color-secondary-muted: #d1ebe0;
+
+        --radius-sm: 0.5rem;
+        --radius-md: 0.75rem;
+        --radius-lg: 1rem;
+        --shadow-sm: 0 1px 2px rgb(28 25 23 / 7%);
+        --shadow-md: 0 10px 28px rgb(28 25 23 / 10%);
+        --header-height: 4.75rem;
+        --max-width: 72rem;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-sans);
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--color-text);
+        background: var(--color-bg);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      .mockup-banner {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+        background: var(--color-primary-subtle);
+        border-bottom: 1px solid #fed7aa;
+      }
+
+      .container {
+        width: min(100% - 2rem, var(--max-width));
+        margin-inline: auto;
+      }
+
+      /* Header */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: rgb(255 255 255 / 95%);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .site-header.mega-open {
+        border-bottom-color: transparent;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        min-height: var(--header-height);
+      }
+
+      .logo {
+        display: flex;
+        line-height: 0;
+      }
+
+      .logo img {
+        height: 3rem;
+        width: auto;
+        display: block;
+        transform: translateY(-0.4rem);
+      }
+
+      .nav-desktop {
+        display: none;
+        align-items: center;
+        gap: 1.25rem;
+        margin-left: 1rem;
+        font-size: 0.9375rem;
+        font-weight: 500;
+      }
+
+      .nav-link,
+      .nav-trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-weight: 500;
+        color: inherit;
+        background: transparent;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .nav-link:hover,
+      .nav-trigger:hover,
+      .site-header.mega-open .nav-trigger {
+        color: var(--color-primary);
+      }
+
+      .nav-trigger svg {
+        width: 1rem;
+        height: 1rem;
+        transition: transform 0.15s ease;
+      }
+
+      .site-header.mega-open .nav-trigger svg {
+        transform: rotate(180deg);
+      }
+
+      .mega-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid var(--color-border);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-md);
+      }
+
+      .site-header.mega-open .mega-menu {
+        display: block;
+      }
+
+      .mega-menu__inner {
+        padding: 1.25rem 0 1rem;
+      }
+
+      .mega-menu__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem 1.5rem;
+      }
+
+      .mega-menu__column h3 {
+        margin: 0 0 0.625rem;
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .mega-menu__column h3 a {
+        color: var(--color-text);
+        text-decoration: none;
+      }
+
+      .mega-menu__column h3 a:hover {
+        color: var(--color-primary);
+      }
+
+      .mega-menu__column ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .mega-menu__column li + li {
+        margin-top: 0.375rem;
+      }
+
+      .mega-menu__column li a {
+        color: var(--color-text-muted);
+        font-size: 0.875rem;
+        text-decoration: none;
+      }
+
+      .mega-menu__column li a:hover {
+        color: var(--color-primary);
+      }
+
+      .mega-menu__footer {
+        margin-top: 1rem;
+        padding-top: 0.875rem;
+        border-top: 1px solid var(--color-border);
+      }
+
+      .mega-menu__footer a {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--color-secondary);
+        text-decoration: none;
+      }
+
+      .mega-menu__footer a:hover {
+        color: var(--color-secondary-hover);
+      }
+
+      .header-search {
+        display: none;
+        flex: 1;
+        max-width: 22rem;
+        margin-inline: auto;
+      }
+
+      .search-field {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.625rem 0.875rem;
+        border: 1px solid var(--color-border);
+        border-radius: 999px;
+        background: var(--color-bg);
+      }
+
+      .search-field input {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        margin-left: auto;
+      }
+
+      .icon-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 0;
+        border-radius: 999px;
+        color: var(--color-text);
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .icon-btn:hover {
+        background: var(--color-surface-muted);
+      }
+
+      .locale-pill {
+        display: none;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.375rem 0.75rem;
+        border: 1px solid var(--color-border);
+        border-radius: 999px;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        background: var(--color-surface);
+      }
+
+      .cart-btn {
+        position: relative;
+      }
+
+      .cart-badge {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        min-width: 1.125rem;
+        height: 1.125rem;
+        padding: 0 0.25rem;
+        border-radius: 999px;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        line-height: 1.125rem;
+        text-align: center;
+        color: white;
+        background: var(--color-primary);
+      }
+
+      /* Hero */
+      .hero {
+        padding: 2rem 0 1.5rem;
+      }
+
+      .hero-card {
+        display: grid;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        border: 1px solid #fed7aa;
+        border-radius: var(--radius-lg);
+        background:
+          radial-gradient(circle at 88% 12%, rgb(245 158 11 / 22%), transparent 40%),
+          radial-gradient(circle at 12% 82%, rgb(234 88 12 / 18%), transparent 36%),
+          linear-gradient(145deg, #fffbeb 0%, #fff7ed 45%, #ffffff 100%);
+        box-shadow: var(--shadow-md);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.25rem 0.625rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-primary-hover);
+        background: var(--color-primary-subtle);
+      }
+
+      .hero h1 {
+        margin: 0.75rem 0 0;
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+      }
+
+      .hero p {
+        max-width: 36rem;
+        margin: 0.75rem 0 0;
+        color: var(--color-text-muted);
+        font-size: 1.0625rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.125rem;
+        border: 0;
+        border-radius: 999px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+      }
+
+      .btn-primary {
+        color: white;
+        background: var(--color-primary);
+      }
+
+      .btn-primary:hover {
+        background: var(--color-primary-hover);
+      }
+
+      .btn-secondary {
+        color: var(--color-text);
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+      }
+
+      .btn-secondary:hover {
+        border-color: #cfc7bb;
+        background: var(--color-surface-muted);
+      }
+
+      .btn-forest {
+        color: var(--color-secondary);
+        background: var(--color-secondary-subtle);
+        border: 1px solid var(--color-secondary-muted);
+      }
+
+      .btn-forest:hover {
+        color: white;
+        background: var(--color-secondary);
+        border-color: var(--color-secondary);
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+      }
+
+      .stat {
+        padding: 0.875rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: rgb(255 255 255 / 82%);
+      }
+
+      .stat--warm {
+        background: var(--color-primary-subtle);
+        border-color: #fed7aa;
+      }
+
+      .stat--flame {
+        background: #fffbeb;
+        border-color: #fde68a;
+      }
+
+      .stat--neutral {
+        background: var(--color-surface-muted);
+        border-color: var(--color-border);
+      }
+
+      .stat strong {
+        display: block;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+      }
+
+      .stat span {
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+      }
+
+      /* Categories */
+      .section {
+        padding: 1.25rem 0 2rem;
+      }
+
+      .section--band {
+        padding: 1.75rem 0 2.25rem;
+        background: var(--color-surface-muted);
+        border-block: 1px solid var(--color-border);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+
+      .section-head p {
+        margin: 0.25rem 0 0;
+        color: var(--color-text-muted);
+        font-size: 0.9375rem;
+      }
+
+      .link-muted {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--color-secondary);
+      }
+
+      .link-muted:hover {
+        color: var(--color-secondary-hover);
+      }
+
+      .section--categories .link-view-all {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 0.875rem;
+        border: 1px solid var(--color-secondary-muted);
+        border-radius: 999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--color-secondary);
+        background: var(--color-surface);
+        transition:
+          background 0.15s ease,
+          color 0.15s ease,
+          border-color 0.15s ease;
+      }
+
+      .section--categories .link-view-all:hover {
+        color: #ffffff;
+        border-color: var(--color-secondary);
+        background: var(--color-secondary);
+      }
+
+      .section--categories .category-icon {
+        color: var(--color-secondary);
+        background: var(--color-secondary-subtle);
+      }
+
+      .category-row {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(8.5rem, 1fr);
+        gap: 0.75rem;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        scrollbar-width: thin;
+      }
+
+      .category-card {
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .category-card--forest {
+        background: linear-gradient(180deg, var(--color-secondary-subtle) 0%, var(--color-surface) 100%);
+        border-color: var(--color-secondary-muted);
+      }
+
+      .category-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 0.75rem;
+        border-radius: 999px;
+        color: var(--color-primary);
+        background: var(--color-primary-subtle);
+      }
+
+      .category-icon--forest {
+        color: var(--color-secondary);
+        background: var(--color-secondary-subtle);
+      }
+
+      .category-card strong {
+        display: block;
+        font-size: 0.9375rem;
+      }
+
+      .category-card span {
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+      }
+
+      /* Toolbar */
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .chip {
+        padding: 0.5rem 0.875rem;
+        border: 1px solid var(--color-border);
+        border-radius: 999px;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        background: var(--color-surface);
+        cursor: pointer;
+      }
+
+      .chip.is-active {
+        color: white;
+        border-color: var(--color-secondary);
+        background: var(--color-secondary);
+      }
+
+      .chip.is-forest {
+        color: var(--color-secondary);
+        border-color: var(--color-secondary-muted);
+        background: var(--color-secondary-subtle);
+      }
+
+      .section--products .chip.is-active {
+        color: white;
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+      }
+
+      .section--products .chip.is-forest {
+        color: var(--color-secondary);
+        border-color: var(--color-secondary-muted);
+        background: var(--color-secondary-subtle);
+      }
+
+      .section--products .chip.is-forest:hover {
+        color: #ffffff;
+        border-color: var(--color-secondary);
+        background: var(--color-secondary);
+      }
+
+      .section--products .product-price {
+        color: var(--color-primary-hover);
+      }
+
+      .section--products .product-card:hover {
+        border-color: #fdba74;
+      }
+
+      .sort-select {
+        margin-left: auto;
+        padding: 0.5rem 0.875rem;
+        border: 1px solid var(--color-border);
+        border-radius: 999px;
+        background: var(--color-surface);
+      }
+
+      /* Product grid */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.875rem;
+      }
+
+      .product-card {
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-sm);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .product-media {
+        aspect-ratio: 1;
+        padding: 1rem;
+        background: linear-gradient(180deg, #ffffff 0%, var(--color-surface-muted) 100%);
+      }
+
+      .product-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .product-body {
+        padding: 0.875rem;
+      }
+
+      .product-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        margin-bottom: 0.375rem;
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+      }
+
+      .badge {
+        padding: 0.125rem 0.5rem;
+        border-radius: 999px;
+        font-weight: 600;
+        color: #92400e;
+        background: #fdecc8;
+      }
+
+      .badge--forest {
+        color: #065f46;
+        background: var(--color-secondary-muted);
+      }
+
+      .product-body h3 {
+        margin: 0;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .product-price {
+        margin: 0.5rem 0 0;
+        font-size: 1.0625rem;
+        font-weight: 600;
+      }
+
+      .product-price small {
+        margin-left: 0.25rem;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--color-text-muted);
+      }
+
+      /* Promo strip */
+      .promo {
+        margin: 0.5rem 0 2rem;
+        padding: 1.25rem 1.5rem;
+        border-radius: var(--radius-lg);
+        color: white;
+        border: 1px solid rgb(255 255 255 / 10%);
+        background: linear-gradient(135deg, #064e3b 0%, #047857 48%, #065f46 100%);
+        box-shadow: var(--shadow-md);
+      }
+
+      .promo h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+      }
+
+      .promo p {
+        max-width: 32rem;
+        margin: 0.5rem 0 0;
+        color: rgb(255 255 255 / 88%);
+      }
+
+      /* Footer */
+      .site-footer {
+        margin-top: 1rem;
+        padding: 2rem 0;
+        border-top: 1px solid var(--color-border);
+        background: var(--color-surface-muted);
+      }
+
+      .footer-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .footer-grid h3 {
+        margin: 0 0 0.75rem;
+        font-family: var(--font-display);
+        font-size: 1rem;
+      }
+
+      .footer-grid ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-grid li + li {
+        margin-top: 0.5rem;
+      }
+
+      .footer-grid a {
+        color: var(--color-text-muted);
+        font-size: 0.9375rem;
+      }
+
+      .footer-grid a:hover {
+        color: var(--color-secondary);
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--color-border);
+        color: var(--color-text-muted);
+        font-size: 0.8125rem;
+      }
+
+      /* Dark header variant preview */
+      .variant-toggle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .variant-note {
+        margin: 1rem 0 0;
+        padding: 1rem;
+        border: 1px dashed #d6d3d1;
+        border-radius: var(--radius-md);
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        background: var(--color-surface);
+      }
+
+      body.header-dark .site-header {
+        background: rgb(28 25 23 / 96%);
+        border-bottom-color: #292524;
+      }
+
+      body.header-dark .nav-link,
+      body.header-dark .nav-trigger,
+      body.header-dark .icon-btn,
+      body.header-dark .locale-pill {
+        color: #f5f5f4;
+      }
+
+      body.header-dark .nav-link:hover,
+      body.header-dark .nav-trigger:hover,
+      body.header-dark.site-header.mega-open .nav-trigger {
+        color: #fdba74;
+      }
+
+      body.header-dark .mega-menu {
+        background: #1c1917;
+        border-top-color: #292524;
+      }
+
+      body.header-dark .mega-menu__column h3 a {
+        color: #f5f5f4;
+      }
+
+      body.header-dark .mega-menu__column li a {
+        color: #a8a29e;
+      }
+
+      body.header-dark .mega-menu__column h3 a:hover,
+      body.header-dark .mega-menu__column li a:hover {
+        color: #fdba74;
+      }
+
+      body.header-dark .mega-menu__footer {
+        border-top-color: #292524;
+      }
+
+      body.header-dark .icon-btn:hover {
+        background: rgb(255 255 255 / 8%);
+      }
+
+      body.header-dark .locale-pill,
+      body.header-dark .search-field {
+        border-color: #44403c;
+        background: #292524;
+        color: #f5f5f4;
+      }
+
+      body.header-dark .search-field input {
+        color: #f5f5f4;
+      }
+
+      body.header-dark .search-field input::placeholder {
+        color: #a8a29e;
+      }
+
+      body.header-dark .logo img {
+        filter: brightness(0) invert(1);
+      }
+
+      body.header-dark .logo img {
+        /* Keeps flame visible-ish on dark — real app needs a light logo asset */
+        filter: brightness(1.15) contrast(1.05);
+      }
+
+      @media (min-width: 768px) {
+        .nav-desktop,
+        .header-search,
+        .locale-pill {
+          display: flex;
+        }
+
+        .mega-menu__grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .hero-card {
+          grid-template-columns: 1.3fr 0.7fr;
+          align-items: center;
+          padding: 2rem;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 1rem;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1.4fr repeat(3, 1fr);
+        }
+
+        .footer-bottom {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mockup-banner">
+      Design mockup only — open this file in a browser to brainstorm layout and colors before scaffolding the React app.
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="Campfire Store home">
+          <img src="./public/img/campfire_logo_cropped.png" alt="Campfire Store" />
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main">
+          <button
+            class="nav-trigger"
+            id="categories-trigger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="categories-mega-menu"
+          >
+            Categories
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </nav>
+
+        <label class="header-search">
+          <span class="search-field">
+            <i data-lucide="search" size="18"></i>
+            <input type="search" placeholder="Search gear, brands, categories…" />
+          </span>
+        </label>
+
+        <div class="header-actions">
+          <button class="locale-pill" type="button">
+            <i data-lucide="globe" size="16"></i>
+            EN · USD
+          </button>
+          <button class="icon-btn" type="button" aria-label="Account">
+            <i data-lucide="user" size="20"></i>
+          </button>
+          <button class="icon-btn cart-btn" type="button" aria-label="Cart">
+            <i data-lucide="shopping-cart" size="20"></i>
+            <span class="cart-badge">2</span>
+          </button>
+          <button class="icon-btn" type="button" aria-label="Menu">
+            <i data-lucide="menu" size="20"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mega-menu" id="categories-mega-menu" aria-label="Category menu" aria-hidden="true">
+        <div class="container mega-menu__inner">
+          <div class="mega-menu__grid">
+            <div class="mega-menu__column">
+              <h3><a href="#">Kayaks</a></h3>
+              <ul>
+                <li><a href="#">Touring kayaks</a></li>
+                <li><a href="#">Whitewater kayaks</a></li>
+                <li><a href="#">Inflatable kayaks</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__column">
+              <h3><a href="#">Bicycles</a></h3>
+              <ul>
+                <li><a href="#">Road bikes</a></li>
+                <li><a href="#">Gravel bikes</a></li>
+                <li><a href="#">Mountain bikes</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__column">
+              <h3><a href="#">Camping</a></h3>
+              <ul>
+                <li><a href="#">Tents</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__column">
+              <h3><a href="#">Accessories</a></h3>
+              <ul>
+                <li><a href="#">Backpacks</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__column">
+              <h3><a href="#">Clothing</a></h3>
+              <ul>
+                <li><a href="#">Hiking pants</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-menu__column">
+              <h3><a href="#">Ski</a></h3>
+              <ul>
+                <li><a href="#">All mountain</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mega-menu__footer">
+            <a href="#">View all categories</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-card">
+            <div>
+              <span class="eyebrow">
+                <i data-lucide="flame" size="14"></i>
+                Outdoor demo shop
+              </span>
+              <h1>Gear up for the trail, water, and road.</h1>
+              <p>
+                A lightweight storefront concept for the Campfire Store API — warm
+                neutrals, orange accents from the logo flame, and a clean catalog
+                built for mobile first.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" type="button">
+                  Shop bestsellers
+                  <i data-lucide="arrow-right" size="18"></i>
+                </button>
+                <button class="btn btn-secondary" type="button">Browse categories</button>
+              </div>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat stat--warm">
+                <strong>49+</strong>
+                <span>Products in API seed</span>
+              </div>
+              <div class="stat stat--flame">
+                <strong>EN / DE</strong>
+                <span>Localized catalog</span>
+              </div>
+              <div class="stat stat--neutral">
+                <strong>USD / EUR</strong>
+                <span>Currency switch</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variant-toggle">
+            <button class="btn btn-secondary" type="button" id="toggle-header-light">
+              Light header
+            </button>
+            <button class="btn btn-secondary" type="button" id="toggle-header-dark">
+              Dark header preview
+            </button>
+          </div>
+          <p class="variant-note">
+            The current logo is designed for light backgrounds. The dark header toggle is only a rough preview — for production you’ll want a dedicated light-wordmark logo asset instead of CSS filters.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--categories">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Shop by category</h2>
+              <p>Horizontal scroll on mobile, full row on desktop.</p>
+            </div>
+            <a class="link-view-all" href="#">View all</a>
+          </div>
+
+          <div class="category-row">
+            <article class="category-card">
+              <span class="category-icon"><i data-lucide="bike" size="18"></i></span>
+              <strong>Bicycles</strong>
+              <span>27 products</span>
+            </article>
+            <article class="category-card">
+              <span class="category-icon"><i data-lucide="backpack" size="18"></i></span>
+              <strong>Backpacks</strong>
+              <span>9 products</span>
+            </article>
+            <article class="category-card">
+              <span class="category-icon"><i data-lucide="tent" size="18"></i></span>
+              <strong>Camping</strong>
+              <span>Tents &amp; more</span>
+            </article>
+            <article class="category-card">
+              <span class="category-icon"><i data-lucide="sailboat" size="18"></i></span>
+              <strong>Kayaks</strong>
+              <span>Touring line</span>
+            </article>
+            <article class="category-card">
+              <span class="category-icon"><i data-lucide="shirt" size="18"></i></span>
+              <strong>Clothing</strong>
+              <span>Hiking pants</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--band section--products">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Featured products</h2>
+              <p>Card grid with manufacturer, price, and subtle hover lift.</p>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="chip-row">
+              <button class="chip is-active" type="button">All</button>
+              <button class="chip" type="button">Mammut</button>
+              <button class="chip" type="button">Specialized</button>
+              <button class="chip is-forest" type="button">Under $500</button>
+            </div>
+            <select class="sort-select" aria-label="Sort products">
+              <option>Sort: Newest</option>
+              <option>Sort: Price low-high</option>
+              <option>Sort: Price high-low</option>
+            </select>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="./public/img/products/small/product-5c88fa8cf4afda39709c2955-1714287500165-1_500.jpg"
+                  alt="Lithium 40 backpack"
+                />
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Mammut</span>
+                  <span class="badge">Bestseller</span>
+                </div>
+                <h3>Lithium 40</h3>
+                <p class="product-price">$209 <small>USD</small></p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="./public/img/products/small/product-5c8a34ed14eb5c17645c9108-1714292832655-1_500.jpg"
+                  alt="Mountain bike"
+                />
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Specialized</span>
+                </div>
+                <h3>Rockhopper Comp</h3>
+                <p class="product-price">$1,250 <small>USD</small></p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="./public/img/products/small/product-5c8a1dfa2f8fb814b56fa181-1714292544365-1_500.jpg"
+                  alt="Gravel bike"
+                />
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Canyon</span>
+                </div>
+                <h3>Grail AL 7</h3>
+                <p class="product-price">$1,899 <small>USD</small></p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="./public/img/products/small/product-5c8a21d02f8fb814b56fa189-171429435467-1_500.jpg"
+                  alt="Hiking pants"
+                />
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Patagonia</span>
+                  <span class="badge">New</span>
+                </div>
+                <h3>Terrain Pants</h3>
+                <p class="product-price">$119 <small>USD</small></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="promo">
+          <h2>Free demo checkout flow</h2>
+          <p>
+            Login as <strong>alex.chen@explorernet.net</strong>, build a cart, and place an order against the live API — perfect for showcasing the full stack.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img src="./public/img/campfire_logo_cropped.png" alt="Campfire Store" style="height: 1.75rem" />
+            <p style="margin: 0.75rem 0 0; max-width: 20rem; color: var(--color-text-muted); font-size: 0.9375rem">
+              Demo outdoor storefront for the Campfire Store API. Orange fire accents in the hero, emerald green across the catalog UI.
+            </p>
+          </div>
+          <div>
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#">All products</a></li>
+              <li><a href="#">Bicycles</a></li>
+              <li><a href="#">Camping</a></li>
+              <li><a href="#">Kayaks</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Account</h3>
+            <ul>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Profile</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>API</h3>
+            <ul>
+              <li><a href="https://campfire-store-api.onrender.com/api/v1/api-docs/" target="_blank" rel="noreferrer">Swagger docs</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Postman collection</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Campfire Store — design mockup</span>
+          <span>Inter + Fraunces · Lucide · orange hero · emerald accents</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+
+      const siteHeader = document.getElementById('site-header');
+      const categoriesTrigger = document.getElementById('categories-trigger');
+      const categoriesMegaMenu = document.getElementById('categories-mega-menu');
+
+      const setMegaMenuOpen = (isOpen) => {
+        siteHeader.classList.toggle('mega-open', isOpen);
+        categoriesTrigger.setAttribute('aria-expanded', String(isOpen));
+        categoriesMegaMenu.setAttribute('aria-hidden', String(!isOpen));
+      };
+
+      categoriesTrigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        setMegaMenuOpen(!siteHeader.classList.contains('mega-open'));
+      });
+
+      categoriesTrigger.addEventListener('mouseenter', () => {
+        setMegaMenuOpen(true);
+      });
+
+      siteHeader.addEventListener('mouseleave', () => {
+        setMegaMenuOpen(false);
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!siteHeader.contains(event.target)) {
+          setMegaMenuOpen(false);
+        }
+      });
+
+      document.getElementById('toggle-header-light').addEventListener('click', () => {
+        document.body.classList.remove('header-dark');
+      });
+
+      document.getElementById('toggle-header-dark').addEventListener('click', () => {
+        document.body.classList.add('header-dark');
+      });
+    </script>
+  </body>
+</html>
