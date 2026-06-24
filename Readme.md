@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/img/campfire_logo.png" alt="Campfire Store API"/>
+  <img src="/public/img/campfire_store_api_logo.png" alt="Campfire Store API"/>
 </p>
 <br/>
 

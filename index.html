@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,12 +16,15 @@
         --font-sans: 'Inter', system-ui, sans-serif;
         --font-display: 'Fraunces', Georgia, serif;
 
-        --color-bg: #fafaf9;
+        --color-bg: #fafafa;
+        --color-header-bg: #1c1917;
+        --color-header-border: #292524;
+        --color-footer-bg: #f0f0f0;
         --color-surface: #ffffff;
-        --color-surface-muted: #f5f5f4;
-        --color-border: #e7e5e4;
-        --color-text: #1c1917;
-        --color-text-muted: #78716c;
+        --color-surface-muted: #f5f5f5;
+        --color-border: #e5e5e5;
+        --color-text: #171717;
+        --color-text-muted: #737373;
         --color-primary: #ea580c;
         --color-primary-hover: #c2410c;
         --color-primary-subtle: #fff7ed;
@@ -34,8 +37,8 @@
         --radius-sm: 0.5rem;
         --radius-md: 0.75rem;
         --radius-lg: 1rem;
-        --shadow-sm: 0 1px 2px rgb(28 25 23 / 7%);
-        --shadow-md: 0 10px 28px rgb(28 25 23 / 10%);
+        --shadow-sm: 0 1px 2px rgb(0 0 0 / 6%);
+        --shadow-md: 0 10px 28px rgb(0 0 0 / 8%);
         --header-height: 4.75rem;
         --max-width: 72rem;
       }
@@ -71,15 +74,6 @@
         font: inherit;
       }
 
-      .mockup-banner {
-        padding: 0.5rem 1rem;
-        text-align: center;
-        font-size: 0.8125rem;
-        color: var(--color-text-muted);
-        background: var(--color-primary-subtle);
-        border-bottom: 1px solid #fed7aa;
-      }
-
       .container {
         width: min(100% - 2rem, var(--max-width));
         margin-inline: auto;
@@ -90,9 +84,10 @@
         position: sticky;
         top: 0;
         z-index: 30;
-        background: rgb(255 255 255 / 95%);
+        background: rgb(28 25 23 / 96%);
         backdrop-filter: blur(10px);
-        border-bottom: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-header-border);
+        color: #f5f5f4;
       }
 
       .site-header.mega-open {
@@ -145,7 +140,7 @@
       .nav-link:hover,
       .nav-trigger:hover,
       .site-header.mega-open .nav-trigger {
-        color: var(--color-primary);
+        color: #fdba74;
       }
 
       .nav-trigger svg {
@@ -164,8 +159,8 @@
         top: 100%;
         left: 0;
         right: 0;
-        border-top: 1px solid var(--color-border);
-        background: var(--color-surface);
+        border-top: 1px solid var(--color-header-border);
+        background: var(--color-header-bg);
         box-shadow: var(--shadow-md);
       }
 
@@ -192,12 +187,12 @@
       }
 
       .mega-menu__column h3 a {
-        color: var(--color-text);
+        color: #f5f5f4;
         text-decoration: none;
       }
 
       .mega-menu__column h3 a:hover {
-        color: var(--color-primary);
+        color: #fdba74;
       }
 
       .mega-menu__column ul {
@@ -211,19 +206,19 @@
       }
 
       .mega-menu__column li a {
-        color: var(--color-text-muted);
+        color: #a8a29e;
         font-size: 0.875rem;
         text-decoration: none;
       }
 
       .mega-menu__column li a:hover {
-        color: var(--color-primary);
+        color: #fdba74;
       }
 
       .mega-menu__footer {
         margin-top: 1rem;
         padding-top: 0.875rem;
-        border-top: 1px solid var(--color-border);
+        border-top: 1px solid var(--color-header-border);
       }
 
       .mega-menu__footer a {
@@ -250,9 +245,10 @@
         gap: 0.5rem;
         width: 100%;
         padding: 0.625rem 0.875rem;
-        border: 1px solid var(--color-border);
+        border: 1px solid #44403c;
         border-radius: 999px;
-        background: var(--color-bg);
+        background: #292524;
+        color: #f5f5f4;
       }
 
       .search-field input {
@@ -260,6 +256,11 @@
         border: 0;
         outline: none;
         background: transparent;
+        color: #f5f5f4;
+      }
+
+      .search-field input::placeholder {
+        color: #a8a29e;
       }
 
       .header-actions {
@@ -277,13 +278,13 @@
         height: 2.5rem;
         border: 0;
         border-radius: 999px;
-        color: var(--color-text);
+        color: inherit;
         background: transparent;
         cursor: pointer;
       }
 
       .icon-btn:hover {
-        background: var(--color-surface-muted);
+        background: rgb(255 255 255 / 8%);
       }
 
       .locale-pill {
@@ -291,11 +292,12 @@
         align-items: center;
         gap: 0.375rem;
         padding: 0.375rem 0.75rem;
-        border: 1px solid var(--color-border);
+        border: 1px solid #44403c;
         border-radius: 999px;
         font-size: 0.8125rem;
         font-weight: 500;
-        background: var(--color-surface);
+        background: #292524;
+        color: inherit;
       }
 
       .cart-btn {
@@ -330,8 +332,16 @@
         border: 1px solid #fed7aa;
         border-radius: var(--radius-lg);
         background:
-          radial-gradient(circle at 88% 12%, rgb(245 158 11 / 22%), transparent 40%),
-          radial-gradient(circle at 12% 82%, rgb(234 88 12 / 18%), transparent 36%),
+          radial-gradient(
+            circle at 88% 12%,
+            rgb(245 158 11 / 22%),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 12% 82%,
+            rgb(234 88 12 / 18%),
+            transparent 36%
+          ),
           linear-gradient(145deg, #fffbeb 0%, #fff7ed 45%, #ffffff 100%);
         box-shadow: var(--shadow-md);
       }
@@ -383,7 +393,10 @@
         font-size: 0.9375rem;
         font-weight: 600;
         cursor: pointer;
-        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        transition:
+          background 0.15s ease,
+          color 0.15s ease,
+          border-color 0.15s ease;
       }
 
       .btn-primary {
@@ -402,7 +415,7 @@
       }
 
       .btn-secondary:hover {
-        border-color: #cfc7bb;
+        border-color: #d4d4d4;
         background: var(--color-surface-muted);
       }
 
@@ -465,7 +478,7 @@
 
       .section--band {
         padding: 1.75rem 0 2.25rem;
-        background: var(--color-surface-muted);
+        background: var(--color-bg);
         border-block: 1px solid var(--color-border);
       }
 
@@ -546,7 +559,11 @@
       }
 
       .category-card--forest {
-        background: linear-gradient(180deg, var(--color-secondary-subtle) 0%, var(--color-surface) 100%);
+        background: linear-gradient(
+          180deg,
+          var(--color-secondary-subtle) 0%,
+          var(--color-surface) 100%
+        );
         border-color: var(--color-secondary-muted);
       }
 
@@ -661,7 +678,9 @@
         border-radius: var(--radius-md);
         background: var(--color-surface);
         box-shadow: var(--shadow-sm);
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
       }
 
       .product-card:hover {
@@ -672,7 +691,7 @@
       .product-media {
         aspect-ratio: 1;
         padding: 1rem;
-        background: linear-gradient(180deg, #ffffff 0%, var(--color-surface-muted) 100%);
+        background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
       }
 
       .product-media img {
@@ -735,7 +754,12 @@
         border-radius: var(--radius-lg);
         color: white;
         border: 1px solid rgb(255 255 255 / 10%);
-        background: linear-gradient(135deg, #064e3b 0%, #047857 48%, #065f46 100%);
+        background: linear-gradient(
+          135deg,
+          #064e3b 0%,
+          #047857 48%,
+          #065f46 100%
+        );
         box-shadow: var(--shadow-md);
       }
 
@@ -756,7 +780,7 @@
         margin-top: 1rem;
         padding: 2rem 0;
         border-top: 1px solid var(--color-border);
-        background: var(--color-surface-muted);
+        background: var(--color-footer-bg);
       }
 
       .footer-grid {
@@ -800,92 +824,6 @@
         font-size: 0.8125rem;
       }
 
-      /* Dark header variant preview */
-      .variant-toggle {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-
-      .variant-note {
-        margin: 1rem 0 0;
-        padding: 1rem;
-        border: 1px dashed #d6d3d1;
-        border-radius: var(--radius-md);
-        font-size: 0.875rem;
-        color: var(--color-text-muted);
-        background: var(--color-surface);
-      }
-
-      body.header-dark .site-header {
-        background: rgb(28 25 23 / 96%);
-        border-bottom-color: #292524;
-      }
-
-      body.header-dark .nav-link,
-      body.header-dark .nav-trigger,
-      body.header-dark .icon-btn,
-      body.header-dark .locale-pill {
-        color: #f5f5f4;
-      }
-
-      body.header-dark .nav-link:hover,
-      body.header-dark .nav-trigger:hover,
-      body.header-dark.site-header.mega-open .nav-trigger {
-        color: #fdba74;
-      }
-
-      body.header-dark .mega-menu {
-        background: #1c1917;
-        border-top-color: #292524;
-      }
-
-      body.header-dark .mega-menu__column h3 a {
-        color: #f5f5f4;
-      }
-
-      body.header-dark .mega-menu__column li a {
-        color: #a8a29e;
-      }
-
-      body.header-dark .mega-menu__column h3 a:hover,
-      body.header-dark .mega-menu__column li a:hover {
-        color: #fdba74;
-      }
-
-      body.header-dark .mega-menu__footer {
-        border-top-color: #292524;
-      }
-
-      body.header-dark .icon-btn:hover {
-        background: rgb(255 255 255 / 8%);
-      }
-
-      body.header-dark .locale-pill,
-      body.header-dark .search-field {
-        border-color: #44403c;
-        background: #292524;
-        color: #f5f5f4;
-      }
-
-      body.header-dark .search-field input {
-        color: #f5f5f4;
-      }
-
-      body.header-dark .search-field input::placeholder {
-        color: #a8a29e;
-      }
-
-      body.header-dark .logo img {
-        filter: brightness(0) invert(1);
-      }
-
-      body.header-dark .logo img {
-        /* Keeps flame visible-ish on dark — real app needs a light logo asset */
-        filter: brightness(1.15) contrast(1.05);
-      }
-
       @media (min-width: 768px) {
         .nav-desktop,
         .header-search,
@@ -921,14 +859,13 @@
     </style>
   </head>
   <body>
-    <div class="mockup-banner">
-      Design mockup only — open this file in a browser to brainstorm layout and colors before scaffolding the React app.
-    </div>
-
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <a class="logo" href="#" aria-label="Campfire Store home">
-          <img src="./public/img/campfire_logo_cropped.png" alt="Campfire Store" />
+          <img
+            src="./public/img/campfire_logo_light.png"
+            alt="Campfire Store"
+          />
         </a>
 
         <nav class="nav-desktop" aria-label="Main">
@@ -947,7 +884,10 @@
         <label class="header-search">
           <span class="search-field">
             <i data-lucide="search" size="18"></i>
-            <input type="search" placeholder="Search gear, brands, categories…" />
+            <input
+              type="search"
+              placeholder="Search gear, brands, categories…"
+            />
           </span>
         </label>
 
@@ -969,7 +909,12 @@
         </div>
       </div>
 
-      <div class="mega-menu" id="categories-mega-menu" aria-label="Category menu" aria-hidden="true">
+      <div
+        class="mega-menu"
+        id="categories-mega-menu"
+        aria-label="Category menu"
+        aria-hidden="true"
+      >
         <div class="container mega-menu__inner">
           <div class="mega-menu__grid">
             <div class="mega-menu__column">
@@ -1037,16 +982,18 @@
               </span>
               <h1>Gear up for the trail, water, and road.</h1>
               <p>
-                A lightweight storefront concept for the Campfire Store API — warm
-                neutrals, orange accents from the logo flame, and a clean catalog
-                built for mobile first.
+                A lightweight storefront concept for the Campfire Store API —
+                clean gray neutrals, orange accents from the logo flame, and a
+                catalog built for mobile first.
               </p>
               <div class="hero-actions">
                 <button class="btn btn-primary" type="button">
                   Shop bestsellers
                   <i data-lucide="arrow-right" size="18"></i>
                 </button>
-                <button class="btn btn-secondary" type="button">Browse categories</button>
+                <button class="btn btn-secondary" type="button">
+                  Browse categories
+                </button>
               </div>
             </div>
 
@@ -1065,18 +1012,6 @@
               </div>
             </div>
           </div>
-
-          <div class="variant-toggle">
-            <button class="btn btn-secondary" type="button" id="toggle-header-light">
-              Light header
-            </button>
-            <button class="btn btn-secondary" type="button" id="toggle-header-dark">
-              Dark header preview
-            </button>
-          </div>
-          <p class="variant-note">
-            The current logo is designed for light backgrounds. The dark header toggle is only a rough preview — for production you’ll want a dedicated light-wordmark logo asset instead of CSS filters.
-          </p>
         </div>
       </section>
 
@@ -1092,27 +1027,37 @@
 
           <div class="category-row">
             <article class="category-card">
-              <span class="category-icon"><i data-lucide="bike" size="18"></i></span>
+              <span class="category-icon"
+                ><i data-lucide="bike" size="18"></i
+              ></span>
               <strong>Bicycles</strong>
               <span>27 products</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"><i data-lucide="backpack" size="18"></i></span>
+              <span class="category-icon"
+                ><i data-lucide="backpack" size="18"></i
+              ></span>
               <strong>Backpacks</strong>
               <span>9 products</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"><i data-lucide="tent" size="18"></i></span>
+              <span class="category-icon"
+                ><i data-lucide="tent" size="18"></i
+              ></span>
               <strong>Camping</strong>
               <span>Tents &amp; more</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"><i data-lucide="sailboat" size="18"></i></span>
+              <span class="category-icon"
+                ><i data-lucide="sailboat" size="18"></i
+              ></span>
               <strong>Kayaks</strong>
               <span>Touring line</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"><i data-lucide="shirt" size="18"></i></span>
+              <span class="category-icon"
+                ><i data-lucide="shirt" size="18"></i
+              ></span>
               <strong>Clothing</strong>
               <span>Hiking pants</span>
             </article>
@@ -1217,7 +1162,9 @@
         <div class="promo">
           <h2>Free demo checkout flow</h2>
           <p>
-            Login as <strong>alex.chen@explorernet.net</strong>, build a cart, and place an order against the live API — perfect for showcasing the full stack.
+            Login as <strong>alex.chen@explorernet.net</strong>, build a cart,
+            and place an order against the live API — perfect for showcasing the
+            full stack.
           </p>
         </div>
       </section>
@@ -1227,9 +1174,21 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <img src="./public/img/campfire_logo_cropped.png" alt="Campfire Store" style="height: 1.75rem" />
-            <p style="margin: 0.75rem 0 0; max-width: 20rem; color: var(--color-text-muted); font-size: 0.9375rem">
-              Demo outdoor storefront for the Campfire Store API. Orange fire accents in the hero, emerald green across the catalog UI.
+            <img
+              src="./public/img/campfire_logo_dark.png"
+              alt="Campfire Store"
+              style="height: 1.75rem"
+            />
+            <p
+              style="
+                margin: 0.75rem 0 0;
+                max-width: 20rem;
+                color: var(--color-text-muted);
+                font-size: 0.9375rem;
+              "
+            >
+              Demo outdoor storefront for the Campfire Store API. Orange fire
+              accents in the hero, emerald green across the catalog UI.
             </p>
           </div>
           <div>
@@ -1253,7 +1212,14 @@
           <div>
             <h3>API</h3>
             <ul>
-              <li><a href="https://campfire-store-api.onrender.com/api/v1/api-docs/" target="_blank" rel="noreferrer">Swagger docs</a></li>
+              <li>
+                <a
+                  href="https://campfire-store-api.onrender.com/api/v1/api-docs/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Swagger docs</a
+                >
+              </li>
               <li><a href="#">GitHub</a></li>
               <li><a href="#">Postman collection</a></li>
             </ul>
@@ -1272,7 +1238,9 @@
 
       const siteHeader = document.getElementById('site-header');
       const categoriesTrigger = document.getElementById('categories-trigger');
-      const categoriesMegaMenu = document.getElementById('categories-mega-menu');
+      const categoriesMegaMenu = document.getElementById(
+        'categories-mega-menu',
+      );
 
       const setMegaMenuOpen = (isOpen) => {
         siteHeader.classList.toggle('mega-open', isOpen);
@@ -1297,14 +1265,6 @@
         if (!siteHeader.contains(event.target)) {
           setMegaMenuOpen(false);
         }
-      });
-
-      document.getElementById('toggle-header-light').addEventListener('click', () => {
-        document.body.classList.remove('header-dark');
-      });
-
-      document.getElementById('toggle-header-dark').addEventListener('click', () => {
-        document.body.classList.add('header-dark');
       });
     </script>
   </body>

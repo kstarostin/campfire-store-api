@@ -43,11 +43,7 @@ Open `index.html` in a browser alongside this doc. Replicate:
 - Interaction: categories mega-menu opens on hover (desktop) and click; closes on outside click / mouse leave
 - Responsive grids and horizontal category scroll on small screens
 
-**Exclude from production UI** (mockup-only):
-
-- Top “Design mockup only” banner
-- Hero “Light header / Dark header preview” toggle and variant note
-- Dark-header CSS filter hack on the logo — if a dark header is added later, use a dedicated light-wordmark asset
+**Exclude from production UI** (mockup-only): none — the design mockup reflects the intended production header.
 
 ---
 
@@ -72,12 +68,15 @@ Load fonts via Google Fonts (same URL as `index.html`) or self-host.
 
 | Token                      | Hex       | Usage                                                              |
 | -------------------------- | --------- | ------------------------------------------------------------------ |
-| `--color-bg`               | `#fafaf9` | Page background (cool stone — not warm beige)                      |
-| `--color-surface`          | `#ffffff` | Cards, header                                                      |
-| `--color-surface-muted`    | `#f5f5f4` | Band sections, hovers                                              |
-| `--color-border`           | `#e7e5e4` | Borders                                                            |
-| `--color-text`             | `#1c1917` | Primary text                                                       |
-| `--color-text-muted`       | `#78716c` | Secondary text                                                     |
+| `--color-bg`               | `#fafafa` | Page and section backgrounds (neutral gray-white)                  |
+| `--color-header-bg`        | `#1c1917` | Sticky header — dark charcoal                                       |
+| `--color-header-border`    | `#292524` | Header and mega-menu borders on dark header                         |
+| `--color-footer-bg`        | `#f0f0f0` | Footer — slightly darker than header                               |
+| `--color-surface`          | `#ffffff` | Cards, mega-menu dropdown, inputs on tinted areas                  |
+| `--color-surface-muted`    | `#f5f5f5` | Hovers, subtle fills (neutral gray — not warm beige)               |
+| `--color-border`           | `#e5e5e5` | Borders                                                            |
+| `--color-text`             | `#171717` | Primary text                                                       |
+| `--color-text-muted`       | `#737373` | Secondary text                                                     |
 | `--color-primary`          | `#ea580c` | Orange — hero, primary CTAs, header link hovers, featured products |
 | `--color-primary-hover`    | `#c2410c` | Primary hover, product prices in featured section                  |
 | `--color-primary-subtle`   | `#fff7ed` | Orange tinted backgrounds                                          |
@@ -86,6 +85,8 @@ Load fonts via Google Fonts (same URL as `index.html`) or self-host.
 | `--color-secondary-hover`  | `#065f46` | Emerald hover                                                      |
 | `--color-secondary-subtle` | `#e8f7f0` | Green tinted backgrounds                                           |
 | `--color-secondary-muted`  | `#d1ebe0` | Green borders/chips                                                |
+
+**Neutral shell layering:** page `#fafafa` → dark header `#1c1917` → footer `#f0f0f0`. Header uses light-on-dark text (`#f5f5f4`) and amber hover accents (`#fdba74`) for nav links.
 
 Supporting oranges for hero borders/gradients: `#fed7aa`, `#fffbeb`, `#fde68a`, `#fdba74`.
 
@@ -109,8 +110,8 @@ Promo gradient (emerald only): `135deg, #064e3b 0%, #047857 48%, #065f46 100%`.
 | `--radius-sm`     | `0.5rem`                                                |
 | `--radius-md`     | `0.75rem`                                               |
 | `--radius-lg`     | `1rem`                                                  |
-| `--shadow-sm`     | `0 1px 2px rgb(28 25 23 / 7%)`                          |
-| `--shadow-md`     | `0 10px 28px rgb(28 25 23 / 10%)`                       |
+| `--shadow-sm`     | `0 1px 2px rgb(0 0 0 / 6%)`                             |
+| `--shadow-md`     | `0 10px 28px rgb(0 0 0 / 8%)`                           |
 | Section padding   | `1.25rem 0 2rem` typical; band sections slightly taller |
 
 ### 4.5 Component sizes (match mockup)
@@ -139,7 +140,7 @@ Promo gradient (emerald only): `135deg, #064e3b 0%, #047857 48%, #065f46 100%`.
 - **No “Home” text link.** The **logo** is the home link (`/`).
 - Desktop nav: **Categories** trigger only (mega-menu).
 - Logo: link to `/`, `aria-label="Campfire Store home"`.
-- Sticky header: `background: rgb(255 255 255 / 95%)`, `backdrop-filter: blur(10px)`.
+- Sticky header: `background: rgb(28 25 23 / 96%)`, `border-bottom: 1px solid var(--color-header-border)`, light text and `campfire_logo_light.png`
 
 ---
 
@@ -147,10 +148,13 @@ Promo gradient (emerald only): `135deg, #064e3b 0%, #047857 48%, #065f46 100%`.
 
 Bundle these files in the frontend `public/` directory (shipped with the UI project — do not fetch from the API):
 
-| Asset   | Filename            | Usage                                                                                 |
-| ------- | ------------------- | ------------------------------------------------------------------------------------- |
-| Logo    | `campfire_logo_png` | Header and footer (same file in both places)                                          |
-| Favicon | `favicon.ico`       | Site favicon — reference in `index.html` as `<link rel="icon" href="/favicon.ico" />` |
+| Asset              | Filename                 | Usage                                                                                 |
+| ------------------ | ------------------------ | ------------------------------------------------------------------------------------- |
+| Logo (light bg)    | `campfire_logo_dark.png`  | Footer on light/gray backgrounds                                                    |
+| Logo (dark bg)     | `campfire_logo_light.png` | **Header** (default dark header)                                                  |
+| Favicon            | `favicon.ico`            | Site favicon — reference in `index.html` as `<link rel="icon" href="/favicon.ico" />` |
+
+Header uses `campfire_logo_light.png` on the dark header. Footer uses `campfire_logo_dark.png` on the light gray footer background.
 
 Product images are **not** bundled in the frontend — they are served from the API host (see §7).
 
@@ -308,7 +312,7 @@ Use a shared **AppLayout** (header + footer) for all pages except optionally log
 
 ### 8.2 Footer (global)
 
-Match `index.html` footer grid:
+Match `index.html` footer grid. Background: `var(--color-footer-bg)` (`#f0f0f0`).
 
 - Brand blurb + small logo
 - **Shop** links (categories)
@@ -497,7 +501,6 @@ VITE_API_ORIGIN=http://localhost:3000
 - Admin product/category management
 - Payment gateway (orders are placed directly via API)
 - Server-side rendering
-- Dark mode (unless added later with proper logo asset)
 
 ---
 
