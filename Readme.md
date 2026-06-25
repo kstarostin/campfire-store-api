@@ -111,10 +111,6 @@ Swagger will be available at `https://<your-service>.onrender.com/api/v1/api-doc
 
 > Free Render services spin down after ~15 minutes of inactivity. The first request after sleep may take 30–60 seconds (cold start); warm requests are much faster.
 
-<p align="center">
-  <img src="/public/img/screenshot.png" alt="Screenshot"/>
-</p>
-
 ### Assets
 
 1. Swagger UI theme is Flattop by [Swagger UI Themes](https://ostranme.github.io/swagger-ui-themes/).
