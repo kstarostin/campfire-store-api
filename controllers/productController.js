@@ -86,6 +86,8 @@ const aggregateFilters = async function (req, filter) {
   return [manufacturerFilter, priceFilter];
 };
 
+exports.aggregateFilters = aggregateFilters;
+
 /**
  * Validates request parameter id for category and populates found category in to the request.
  * If the category is root, then finds all child categories and populates them for filter usage as well.

@@ -30,6 +30,11 @@ parameters:
     description: Comma-separated set of returned fields.
     in: query
     type: string
+  searchQuery:
+    name: q
+    description: Free-text search query. Matches product name, manufacturer, localized descriptions, and category names/codes. Whitespace-separated terms are combined with <code>AND</code>.
+    in: query
+    type: string
   # Category
   categoryId:
     name: id

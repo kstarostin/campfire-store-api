@@ -131,6 +131,51 @@ describe('Campfire Store API regression suite', () => {
     expect(response.body.data.documents).toHaveLength(1);
   });
 
+  test('GET /search without q returns an empty product list', async () => {
+    const response = await request(app).get(`${API}/search`).expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.query).toBe('');
+    expect(response.body.data.documents).toEqual([]);
+    expect(response.body.resultsTotal).toBe(0);
+  });
+
+  test('GET /search?q=kayak finds products by name or category', async () => {
+    const response = await request(app)
+      .get(`${API}/search`)
+      .query({ q: 'kayak', limit: 10 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.query).toBe('kayak');
+    expect(response.body.resultsTotal).toBeGreaterThan(0);
+    expect(response.body.data.documents.length).toBeGreaterThan(0);
+  });
+
+  test('GET /search?q=Cube finds products by manufacturer', async () => {
+    const response = await request(app)
+      .get(`${API}/search`)
+      .query({ q: 'Cube', limit: 10 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsTotal).toBeGreaterThan(0);
+    expect(
+      response.body.data.documents.every(
+        (product) => product.manufacturer === 'Cube',
+      ),
+    ).toBe(true);
+  });
+
+  test('GET /search rejects overly long queries', async () => {
+    const response = await request(app)
+      .get(`${API}/search`)
+      .query({ q: 'a'.repeat(129) })
+      .expect(400);
+
+    expect(response.body.status).toBe('failed');
+  });
+
   test('GET /badges returns seeded badges (public)', async () => {
     const response = await request(app).get(`${API}/badges`).expect(200);
 
