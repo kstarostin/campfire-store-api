@@ -161,6 +161,8 @@ exports.createProduct = factory.createOne(Product, [
   'prices',
   'manufacturer',
   'category',
+  'isFeatured',
+  'featureOrder',
 ]);
 
 /**
@@ -290,6 +292,8 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
     'prices',
     'manufacturer',
     'category',
+    'isFeatured',
+    'featureOrder',
   ];
   req.body = new RequestBodySanitizer(sanitizerWhitelist).sanitize(req.body);
 

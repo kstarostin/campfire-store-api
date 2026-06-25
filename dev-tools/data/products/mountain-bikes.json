@@ -501,7 +501,9 @@
         }
       }
     ],
-    "originalUrl": "https://www.scott-sports.com/de/de/product/scott-spark-rc-comp-green-bike?article=290109006"
+    "originalUrl": "https://www.scott-sports.com/de/de/product/scott-spark-rc-comp-green-bike?article=290109006",
+    "isFeatured": true,
+    "featureOrder": 3
   },
   {
     "_id": "662e5952a763e3a594534495",

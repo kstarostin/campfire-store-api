@@ -58,6 +58,14 @@ const productSchema = new mongoose.Schema(
       ref: 'Category',
       requred: [true, 'Product must have a category.'],
     },
+    isFeatured: {
+      type: Boolean,
+      default: false,
+    },
+    featureOrder: {
+      type: Number,
+      min: [1, 'Feature order must be at least 1.'],
+    },
     images: [imageContainerSchema],
   },
   {
@@ -68,6 +76,7 @@ const productSchema = new mongoose.Schema(
 
 // Indexes
 productSchema.index({ slug: 1 });
+productSchema.index({ isFeatured: 1, featureOrder: 1 });
 
 // Document middleware: runs before .save() and .create()
 productSchema.pre('save', function (next) {
