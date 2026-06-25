@@ -10,6 +10,7 @@ const CATEGORY_ICONS = [
   'shirt',
   'mountain',
   'package',
+  'sport-shoe',
 ];
 
 const DEFAULT_CATEGORY_ICON = 'package';

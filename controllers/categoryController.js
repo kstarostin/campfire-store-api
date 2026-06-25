@@ -5,7 +5,7 @@ const AppError = require('../utils/appError');
 const mongoose = require('mongoose');
 
 exports.getAllCategories = factory.getAll(Category, {
-  defaultLimit: 25,
+  defaultLimit: 100,
   maxLimit: 100,
 });
 exports.getCategory = factory.getOne(Category, [

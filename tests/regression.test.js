@@ -13,6 +13,7 @@ const SAMPLE_PRODUCT_ID = '5c88fa8cf4afda39709c2955';
 const KAYAKS_ROOT_CATEGORY_ID = '661f8a811d571619fe96eec2';
 const TOURING_KAYAKS_CATEGORY_ID = '661f8a8cf7b9265221dba8d2';
 const GRAVEL_BIKES_CATEGORY_CODE = 'gravel-bikes';
+const BAGS_AND_GEAR_CATEGORY_CODE = 'bags-and-gear';
 const BICYCLES_ROOT_CATEGORY_ID = '661f8a9b6633eab0748e2638';
 const BESTSELLER_BADGE_ID = '662b497f11aed4312b44a010';
 
@@ -43,11 +44,12 @@ describe('Campfire Store API regression suite', () => {
   test('GET /categories returns icon keys for storefront rendering', async () => {
     const response = await request(app)
       .get(`${API}/categories`)
-      .query({ language: 'en', limit: 100 })
+      .query({ language: 'en' })
       .expect(200);
 
     expect(response.body.status).toBe('success');
-    expect(response.body.data.documents.length).toBeGreaterThan(0);
+    expect(response.body.resultsTotal).toBeGreaterThanOrEqual(32);
+    expect(response.body.data.documents.length).toBeGreaterThanOrEqual(32);
 
     for (const category of response.body.data.documents) {
       expect(category.icon).toBeDefined();
@@ -68,6 +70,40 @@ describe('Campfire Store API regression suite', () => {
     expect(response.body.status).toBe('success');
     expect(response.body.data.document.code).toBe(GRAVEL_BIKES_CATEGORY_CODE);
     expect(response.body.data.document.nameI18n.en).toBe('Gravel bikes');
+  });
+
+  test('GET /categories/bags-and-gear resolves renamed root category', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/${BAGS_AND_GEAR_CATEGORY_CODE}`)
+      .query({ language: 'en' })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.data.document.code).toBe(BAGS_AND_GEAR_CATEGORY_CODE);
+    expect(response.body.data.document.nameI18n.en).toBe('Bags & gear');
+    expect(response.body.data.document.icon).toBe('backpack');
+  });
+
+  test('GET /categories/footwear returns sport-shoe icon', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/footwear`)
+      .query({ language: 'en' })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.data.document.code).toBe('footwear');
+    expect(response.body.data.document.icon).toBe('sport-shoe');
+  });
+
+  test('GET /categories/sleeping-bags returns empty product list', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/sleeping-bags/products`)
+      .query({ language: 'en', currency: 'EUR', page: 1, limit: 8 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsTotal).toBe(0);
+    expect(response.body.data.documents).toEqual([]);
   });
 
   test('GET /categories/:code/products returns products for category code', async () => {
