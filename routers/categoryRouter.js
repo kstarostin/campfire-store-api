@@ -97,7 +97,7 @@ router
    *             schema:
    *               $ref: '#/components/schemas/categorySchema'
    */
-  .get(categoryController.getCategory)
+  .get(categoryController.resolveCategoryParam, categoryController.getCategory)
   /**
    * @swagger
    * /categories/{id}:
@@ -130,6 +130,7 @@ router
   .patch(
     authController.protect,
     authController.restrictTo('admin'),
+    categoryController.resolveCategoryParam,
     categoryController.updateCategory,
   )
   /**
@@ -152,6 +153,7 @@ router
   .delete(
     authController.protect,
     authController.restrictTo('admin'),
+    categoryController.resolveCategoryParam,
     categoryController.deleteCategory,
   );
 
@@ -184,6 +186,10 @@ router
    *             schema:
    *               $ref: '#/components/schemas/productsSchema'
    */
-  .get(productController.handleCategoryId, productController.getAllProducts);
+  .get(
+    categoryController.resolveCategoryParam,
+    productController.handleCategoryId,
+    productController.getAllProducts,
+  );
 
 module.exports = router;

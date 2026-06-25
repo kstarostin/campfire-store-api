@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
+const {
+  CATEGORY_ICONS,
+  DEFAULT_CATEGORY_ICON,
+} = require('../utils/categoryIconUtils');
 // const validateRefId = require('./middleware/validateRefId');
 
 /**
@@ -37,6 +41,14 @@ const categorySchema = new mongoose.Schema(
       required: [true, 'Category must have a name.'],
     },
     parentCategory: { type: mongoose.Schema.ObjectId, ref: 'Category' },
+    icon: {
+      type: String,
+      enum: {
+        values: CATEGORY_ICONS,
+        message: `Category icon must be one of: ${CATEGORY_ICONS.join(', ')}`,
+      },
+      default: DEFAULT_CATEGORY_ICON,
+    },
   },
   {
     toJSON: { virtuals: true },

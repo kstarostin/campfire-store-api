@@ -15,10 +15,21 @@ class APIFeatures {
    */
   sort() {
     if (this.requestQuery.sort) {
-      const sortBy = this.requestQuery.sort.split(',').join(' ');
-      this.dbQuery = this.dbQuery.sort(sortBy);
+      const sortFields = this.requestQuery.sort
+        .split(',')
+        .map((field) => field.trim())
+        .filter(Boolean);
+      const hasIdSort = sortFields.some(
+        (field) => field.replace(/^-/, '') === '_id',
+      );
+
+      if (!hasIdSort) {
+        sortFields.push('_id');
+      }
+
+      this.dbQuery = this.dbQuery.sort(sortFields.join(' '));
     } else {
-      this.dbQuery = this.dbQuery.sort('-createdAt');
+      this.dbQuery = this.dbQuery.sort('-createdAt _id');
     }
 
     return this;

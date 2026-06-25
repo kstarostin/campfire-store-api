@@ -10,6 +10,10 @@ const TEST_USER = {
 };
 
 const SAMPLE_PRODUCT_ID = '5c88fa8cf4afda39709c2955';
+const KAYAKS_ROOT_CATEGORY_ID = '661f8a811d571619fe96eec2';
+const TOURING_KAYAKS_CATEGORY_ID = '661f8a8cf7b9265221dba8d2';
+const GRAVEL_BIKES_CATEGORY_CODE = 'gravel-bikes';
+const BICYCLES_ROOT_CATEGORY_ID = '661f8a9b6633eab0748e2638';
 const BESTSELLER_BADGE_ID = '662b497f11aed4312b44a010';
 
 const ADMIN_USER = {
@@ -34,6 +38,47 @@ describe('Campfire Store API regression suite', () => {
 
     const codes = response.body.data.documents.map((language) => language.code);
     expect(codes).toEqual(expect.arrayContaining(['en', 'de']));
+  });
+
+  test('GET /categories returns icon keys for storefront rendering', async () => {
+    const response = await request(app)
+      .get(`${API}/categories`)
+      .query({ language: 'en', limit: 100 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.data.documents.length).toBeGreaterThan(0);
+
+    for (const category of response.body.data.documents) {
+      expect(category.icon).toBeDefined();
+    }
+
+    const kayaks = response.body.data.documents.find(
+      (category) => category.code === 'kayaks',
+    );
+    expect(kayaks.icon).toBe('sailboat');
+  });
+
+  test('GET /categories/:code resolves category by unique code', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/${GRAVEL_BIKES_CATEGORY_CODE}`)
+      .query({ language: 'en', currency: 'EUR' })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.data.document.code).toBe(GRAVEL_BIKES_CATEGORY_CODE);
+    expect(response.body.data.document.nameI18n.en).toBe('Gravel bikes');
+  });
+
+  test('GET /categories/:code/products returns products for category code', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/${GRAVEL_BIKES_CATEGORY_CODE}/products`)
+      .query({ language: 'en', currency: 'EUR', page: 1, limit: 8 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsTotal).toBeGreaterThan(0);
+    expect(response.body.data.documents.length).toBeGreaterThan(0);
   });
 
   test('GET /products returns seeded products', async () => {
@@ -129,6 +174,117 @@ describe('Campfire Store API regression suite', () => {
 
     expect(response.body.status).toBe('success');
     expect(response.body.data.documents).toHaveLength(1);
+  });
+
+  test('GET /products returns price quick filters when meaningful', async () => {
+    const response = await request(app)
+      .get(`${API}/products`)
+      .query({ language: 'en', currency: 'EUR', limit: 100 })
+      .expect(200);
+
+    const priceFilter = response.body.data.filters.find(
+      (filter) => filter.name === 'priceI18n',
+    );
+
+    expect(priceFilter).toBeDefined();
+    expect(Array.isArray(priceFilter.quickFilters)).toBe(true);
+    expect(priceFilter.quickFilters.length).toBeGreaterThan(0);
+
+    for (const quickFilter of priceFilter.quickFilters) {
+      expect(quickFilter.max).toBeGreaterThan(0);
+      expect(quickFilter.count).toBeGreaterThanOrEqual(1);
+      expect(quickFilter.count).toBeLessThanOrEqual(
+        Math.max(1, Math.floor(response.body.resultsTotal * 0.25)),
+      );
+    }
+  });
+
+  test('GET /products?filter applies under-price quick filter', async () => {
+    const unfiltered = await request(app)
+      .get(`${API}/products`)
+      .query({ language: 'en', currency: 'EUR', limit: 100 })
+      .expect(200);
+
+    const priceFilter = unfiltered.body.data.filters.find(
+      (filter) => filter.name === 'priceI18n',
+    );
+    const quickFilter = priceFilter.quickFilters[0];
+    expect(quickFilter).toBeDefined();
+
+    const filtered = await request(app)
+      .get(`${API}/products`)
+      .query({
+        language: 'en',
+        currency: 'EUR',
+        limit: 100,
+        filter: JSON.stringify({ 'priceI18n.EUR': { $lt: quickFilter.max } }),
+      })
+      .expect(200);
+
+    expect(filtered.body.resultsTotal).toBe(quickFilter.count);
+    expect(filtered.body.resultsTotal).toBeLessThan(unfiltered.body.resultsTotal);
+    expect(
+      filtered.body.data.filters.find((filter) => filter.name === 'priceI18n').quickFilters,
+    ).toEqual(priceFilter.quickFilters);
+  });
+
+  test('GET /categories/:id/products returns products for root and leaf categories', async () => {
+    const rootResponse = await request(app)
+      .get(`${API}/categories/${KAYAKS_ROOT_CATEGORY_ID}/products`)
+      .query({ language: 'en', currency: 'EUR', page: 1, limit: 8, sort: 'featureOrder' })
+      .expect(200);
+
+    expect(rootResponse.body.status).toBe('success');
+    expect(rootResponse.body.resultsTotal).toBeGreaterThan(0);
+    expect(rootResponse.body.data.documents.length).toBeGreaterThan(0);
+    expect(rootResponse.body.data.filters).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ name: 'manufacturer' }),
+        expect.objectContaining({ name: 'priceI18n' }),
+      ]),
+    );
+
+    const leafResponse = await request(app)
+      .get(`${API}/categories/${TOURING_KAYAKS_CATEGORY_ID}/products`)
+      .query({ language: 'en', currency: 'EUR', page: 1, limit: 8 })
+      .expect(200);
+
+    expect(leafResponse.body.status).toBe('success');
+    expect(leafResponse.body.resultsTotal).toBeGreaterThan(0);
+    expect(leafResponse.body.data.documents.length).toBeGreaterThan(0);
+  });
+
+  test('GET /categories/:id/products paginates root category products without duplicates', async () => {
+    const collected = new Set();
+    let page = 1;
+    let pages = 1;
+
+    do {
+      const response = await request(app)
+        .get(`${API}/categories/${BICYCLES_ROOT_CATEGORY_ID}/products`)
+        .query({
+          language: 'en',
+          currency: 'EUR',
+          page,
+          limit: 8,
+          sort: 'featureOrder',
+        })
+        .expect(200);
+
+      if (page === 1) {
+        pages = response.body.pages;
+        expect(response.body.resultsTotal).toBeGreaterThan(8);
+      }
+
+      for (const document of response.body.data.documents) {
+        expect(collected.has(document._id)).toBe(false);
+        collected.add(document._id);
+      }
+
+      page += 1;
+    } while (page <= pages);
+
+    expect(collected.size).toBeGreaterThan(0);
   });
 
   test('GET /search without q returns an empty product list', async () => {

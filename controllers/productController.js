@@ -11,6 +11,7 @@ const {
   normalizeProductBadges,
   validateProductBadgeAssignments,
 } = require('../utils/productBadgeUtils');
+const { buildPriceQuickFilters, stripCatalogClientFilters } = require('../utils/priceFilterUtils');
 const AppError = require('../utils/appError');
 const { createImageFile } = require('../utils/fileUtils');
 const Category = require('../models/categoryModel');
@@ -39,13 +40,13 @@ const upload = multer({
  * @param {*} results currently applied filter.
  * @returns a list of filters for further application.
  */
-const aggregateFilters = async function (req, filter) {
-  // console.log(filter);
+const aggregateFilters = async function (req, resultFilter, quickFilterScope) {
+  const scope = quickFilterScope ?? resultFilter;
 
-  // Aggregate information from DB
+  // Aggregate information from DB for the active result set
   const filters = await Product.aggregate([
     {
-      $match: filter,
+      $match: resultFilter,
     },
     {
       $project: {
@@ -68,7 +69,47 @@ const aggregateFilters = async function (req, filter) {
       },
     },
   ]);
-  // console.log(filters);
+
+  if (!filters.length) {
+    return [
+      {
+        name: 'manufacturer',
+        type: 'String',
+        values: [],
+      },
+      {
+        name: 'priceI18n',
+        type: 'Number',
+        min: null,
+        max: null,
+        quickFilters: [],
+      },
+    ];
+  }
+
+  const scopePrices = await Product.aggregate([
+    { $match: scope },
+    {
+      $project: {
+        price: `$priceI18n.${req.currency}`,
+      },
+    },
+    {
+      $match: {
+        price: { $ne: null, $gt: 0 },
+      },
+    },
+    {
+      $group: {
+        _id: null,
+        prices: { $push: '$price' },
+      },
+    },
+  ]);
+
+  const priceValues = (scopePrices[0]?.prices ?? []).filter(
+    (price) => typeof price === 'number' && Number.isFinite(price) && price > 0,
+  );
 
   // Map to returned result
   const manufacturerFilter = {
@@ -81,6 +122,7 @@ const aggregateFilters = async function (req, filter) {
     type: 'Number',
     min: filters[0].minPrice,
     max: filters[0].maxPrice,
+    quickFilters: buildPriceQuickFilters(priceValues),
   };
 
   return [manufacturerFilter, priceFilter];
@@ -123,7 +165,9 @@ exports.handleCategoryId = catchAsync(async (req, res, next) => {
 exports.getAllProducts = catchAsync(async (req, res, next) => {
   const filter = {};
   if (req.categories) {
-    filter.category = { $in: req.categories.map((category) => category.id) };
+    filter.category = {
+      $in: req.categories.map((category) => category._id),
+    };
   }
   // EXECUTE QUERY
   const features = new APIFeatures(Product.find(filter).select('-descriptionI18n'), req.query)
@@ -145,7 +189,12 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
   );
 
   const numberOfPages =
-    totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
+    totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
+
+  const quickFilterScope = stripCatalogClientFilters(
+    features.resultFilter,
+    req.currency,
+  );
 
   // SEND RESPONSE
   res.status(200).json({
@@ -156,7 +205,7 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     currentPage: features.page,
     pages: numberOfPages,
     data: {
-      filters: await aggregateFilters(req, features.resultFilter),
+      filters: await aggregateFilters(req, features.resultFilter, quickFilterScope),
       documents,
     },
   });

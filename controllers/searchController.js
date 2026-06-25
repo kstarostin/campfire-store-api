@@ -7,6 +7,7 @@ const { normalizeProductBadges } = require('../utils/productBadgeUtils');
 const { buildProductSearchFilter } = require('../utils/searchQueryUtils');
 const AppError = require('../utils/appError');
 const { aggregateFilters } = require('./productController');
+const { stripCatalogClientFilters } = require('../utils/priceFilterUtils');
 
 const MAX_QUERY_LENGTH = 128;
 
@@ -73,6 +74,11 @@ exports.searchProducts = catchAsync(async (req, res, next) => {
   const numberOfPages =
     totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
 
+  const quickFilterScope = stripCatalogClientFilters(
+    features.resultFilter,
+    req.currency,
+  );
+
   res.status(200).json({
     status: 'success',
     resultsFound: documents.length,
@@ -82,7 +88,7 @@ exports.searchProducts = catchAsync(async (req, res, next) => {
     pages: numberOfPages,
     query,
     data: {
-      filters: await aggregateFilters(req, features.resultFilter),
+      filters: await aggregateFilters(req, features.resultFilter, quickFilterScope),
       documents,
     },
   });
