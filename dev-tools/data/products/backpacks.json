@@ -38,7 +38,11 @@
     ],
     "originalUrl": "https://www.mammut.com/de/de/products/2530-03562-0001/lithium-40",
     "isFeatured": true,
-    "featureOrder": 1
+    "featureOrder": 1,
+    "badges": [
+      { "badge": "662b497f11aed4312b44a010", "priority": 1 },
+      { "badge": "662b497f11aed4312b44a011", "priority": 2 }
+    ]
   },
   {
     "_id": "662def6170b24f3efc32963b",

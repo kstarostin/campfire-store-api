@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "662b497f11aed4312b44a010",
+    "code": "bestseller",
+    "nameI18n": { "en": "Bestseller", "de": "Bestseller" },
+    "style": "primary",
+    "active": true
+  },
+  {
+    "_id": "662b497f11aed4312b44a011",
+    "code": "new",
+    "nameI18n": { "en": "New", "de": "Neu" },
+    "style": "forest",
+    "active": true
+  }
+]

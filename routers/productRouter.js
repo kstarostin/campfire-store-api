@@ -69,6 +69,7 @@ router
   .post(
     authController.protect,
     authController.restrictTo('admin'),
+    productController.validateProductBadges,
     productController.createProduct,
   );
 

@@ -3,6 +3,7 @@ const slugifyName = require('../utils/slugifyName');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
 const i18nPriceSchema = require('./schemes/i18nPriceSchema');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
+const productBadgeSchema = require('./schemes/productBadgeSchema');
 const validateRefId = require('./middleware/validateRefId');
 const Category = require('./categoryModel');
 
@@ -66,6 +67,10 @@ const productSchema = new mongoose.Schema(
       type: Number,
       min: [1, 'Feature order must be at least 1.'],
     },
+    badges: {
+      type: [productBadgeSchema],
+      default: [],
+    },
     images: [imageContainerSchema],
   },
   {
@@ -77,6 +82,7 @@ const productSchema = new mongoose.Schema(
 // Indexes
 productSchema.index({ slug: 1 });
 productSchema.index({ isFeatured: 1, featureOrder: 1 });
+productSchema.index({ 'badges.badge': 1 });
 
 // Document middleware: runs before .save() and .create()
 productSchema.pre('save', function (next) {
@@ -92,12 +98,15 @@ productSchema
   );
 
 // Query middleware:
-productSchema.pre('find', function (next) {
+productSchema.pre(/^find/, function (next) {
   this.lean() // Convert to plain js object to exlude virtuals
-    .select('-descriptionI18n')
     .populate({
       path: 'category',
       select: '_id nameI18n parentCategory',
+    })
+    .populate({
+      path: 'badges.badge',
+      select: '_id code nameI18n style active',
     });
   next();
 });

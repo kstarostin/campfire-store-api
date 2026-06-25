@@ -4,6 +4,7 @@ const Title = require('../../models/titleModel');
 const User = require('../../models/userModel');
 const Category = require('../../models/categoryModel');
 const Product = require('../../models/productModel');
+const Badge = require('../../models/badgeModel');
 const Cart = require('../../models/cartModel');
 const GenericOrderEntry = require('../../models/genericOrderEntryModel');
 const Order = require('../../models/orderModel');
@@ -20,6 +21,7 @@ const seedData = {
   titles: readJson('titles.json'),
   users: readJson('users.json'),
   categories: readJson('categories.json'),
+  badges: readJson('badges.json'),
   backpacks: readJson('products/backpacks.json'),
   gravelBikes: readJson('products/gravel-bikes.json'),
   hikingPants: readJson('products/hiking-pants.json'),
@@ -56,6 +58,9 @@ const performImport = async () => {
   console.log('Creating categories...');
   await Category.create(seedData.categories);
 
+  console.log('Creating badges...');
+  await Badge.create(seedData.badges);
+
   console.log('Creating products...');
   await Product.create(seedData.backpacks);
   await Product.create(seedData.gravelBikes);
@@ -90,6 +95,8 @@ const performDelete = async () => {
   await Cart.deleteMany();
   console.log('Deleteing products...');
   await Product.deleteMany();
+  console.log('Deleteing badges...');
+  await Badge.deleteMany();
   console.log('Deleteing categories...');
   await Category.deleteMany();
   console.log('Deleteing users...');

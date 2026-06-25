@@ -56,6 +56,12 @@ parameters:
     description: <code>id</code> of a title to search for.
     in: path
     required: true
+  # Badge
+  badgeId:
+    name: id
+    description: <code>id</code> of a badge to search for.
+    in: path
+    required: true
   # User
   userIdOrEmail:
     name: id

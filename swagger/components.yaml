@@ -199,6 +199,29 @@ components:
           properties:
             document:
               $ref: '#/definitions/Title'
+    # Badge
+    badgesSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Badge'
+    badgeSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Badge'
     # User
     usersSchema:
       allOf:

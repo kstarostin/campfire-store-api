@@ -9,6 +9,7 @@ const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
 const GenericOrderEntry = require('../models/genericOrderEntryModel');
 const Title = require('../models/titleModel');
+const Badge = require('../models/badgeModel');
 
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
@@ -37,6 +38,7 @@ const document = swaggerJSDoc({
       Order: mongooseToSwagger(Order, { omitFields }),
       Product: mongooseToSwagger(Product, { omitFields }),
       Title: mongooseToSwagger(Title, { omitFields }),
+      Badge: mongooseToSwagger(Badge, { omitFields }),
       User: mongooseToSwagger(User, {
         omitFields: [...omitFields, 'password', 'passwordChangedAt'],
       }),

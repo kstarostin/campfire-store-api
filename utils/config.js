@@ -12,6 +12,9 @@ exports.allowedImageMimeTypes = ['image/jpeg', 'image/png', 'image/webp'];
 exports.allowedUserRoles = ['user', 'admin'];
 exports.defaultUserRole = 'user';
 
+exports.allowedBadgeStyles = ['primary', 'forest', 'neutral'];
+exports.defaultBadgeStyle = 'primary';
+
 /**
  * The map of image sizes. The key is an image size type, the value is an actual size in pixels of one side (assuming that the image is square).
  */

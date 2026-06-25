@@ -7,6 +7,10 @@ const catchAsync = require('../utils/catchAsync');
 const APIFeatures = require('../utils/apiFeatures');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
+const {
+  normalizeProductBadges,
+  validateProductBadgeAssignments,
+} = require('../utils/productBadgeUtils');
 const AppError = require('../utils/appError');
 const { createImageFile } = require('../utils/fileUtils');
 const Category = require('../models/categoryModel');
@@ -120,7 +124,7 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     filter.category = { $in: req.categories.map((category) => category.id) };
   }
   // EXECUTE QUERY
-  const features = new APIFeatures(Product.find(filter), req.query)
+  const features = new APIFeatures(Product.find(filter).select('-descriptionI18n'), req.query)
     .paginate({ defaultLimit: 25, maxLimit: 50 })
     .sort()
     .limitFields()
@@ -133,7 +137,9 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
       : await Product.countDocuments(features.resultFilter);
   // const documents = await features.dbQuery.explain();
   const documents = (await features.dbQuery).map((document) =>
-    new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
+    normalizeProductBadges(
+      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
+    ),
   );
 
   const numberOfPages =
@@ -154,7 +160,30 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getProduct = factory.getOne(Product, [{ path: 'category' }]);
+exports.validateProductBadges = catchAsync(async (req, res, next) => {
+  await validateProductBadgeAssignments(req.body.badges);
+  next();
+});
+
+exports.getProduct = catchAsync(async (req, res, next) => {
+  let product = await Product.findById(req.params.id);
+
+  if (!product) {
+    return next(new AppError('No document found with this ID', 404));
+  }
+
+  product = normalizeProductBadges(
+    new DocumentSanitizer(req.language, req.currency, 7).sanitize(product),
+  );
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      document: product,
+    },
+  });
+});
+
 exports.createProduct = factory.createOne(Product, [
   'name',
   'descriptionI18n',
@@ -163,6 +192,7 @@ exports.createProduct = factory.createOne(Product, [
   'category',
   'isFeatured',
   'featureOrder',
+  'badges',
 ]);
 
 /**
@@ -285,6 +315,12 @@ exports.validateExistence = catchAsync(async (req, res, next) => {
 exports.updateProduct = catchAsync(async (req, res, next) => {
   const product = await Product.findById(req.params.id);
 
+  if (!product) {
+    return next(new AppError('No product found with this ID.', 404));
+  }
+
+  await validateProductBadgeAssignments(req.body.badges);
+
   // Sanitize request body
   const sanitizerWhitelist = [
     'name',
@@ -294,6 +330,7 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
     'category',
     'isFeatured',
     'featureOrder',
+    'badges',
   ];
   req.body = new RequestBodySanitizer(sanitizerWhitelist).sanitize(req.body);
 
@@ -304,7 +341,7 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
   }
 
   // Perform update
-  let updatedProduct = await Product.findByIdAndUpdate(
+  await Product.findByIdAndUpdate(
     req.params.id,
     { ...req.body, ...{ updatedAt: Date.now() } },
     {
@@ -313,12 +350,12 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
     },
   );
 
+  let updatedProduct = await Product.findById(req.params.id);
+
   // Sanitize response document
-  updatedProduct = new DocumentSanitizer(
-    req.language,
-    req.currency,
-    5,
-  ).sanitize(updatedProduct);
+  updatedProduct = normalizeProductBadges(
+    new DocumentSanitizer(req.language, req.currency, 7).sanitize(updatedProduct),
+  );
 
   res.status(200).json({
     status: 'success',

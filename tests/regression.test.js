@@ -10,9 +10,16 @@ const TEST_USER = {
 };
 
 const SAMPLE_PRODUCT_ID = '5c88fa8cf4afda39709c2955';
+const BESTSELLER_BADGE_ID = '662b497f11aed4312b44a010';
+
+const ADMIN_USER = {
+  email: 'sarah.johnson@examplemail.com',
+  password: 'test1234',
+};
 
 describe('Campfire Store API regression suite', () => {
   let authToken;
+  let adminToken;
 
   test('app module loads', () => {
     expect(app).toBeDefined();
@@ -122,6 +129,64 @@ describe('Campfire Store API regression suite', () => {
 
     expect(response.body.status).toBe('success');
     expect(response.body.data.documents).toHaveLength(1);
+  });
+
+  test('GET /badges returns seeded badges (public)', async () => {
+    const response = await request(app).get(`${API}/badges`).expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.data.documents.length).toBeGreaterThanOrEqual(2);
+
+    const codes = response.body.data.documents.map((badge) => badge.code);
+    expect(codes).toEqual(expect.arrayContaining(['bestseller', 'new']));
+  });
+
+  test('GET /products/:id includes populated product badges', async () => {
+    const response = await request(app)
+      .get(`${API}/products/${SAMPLE_PRODUCT_ID}`)
+      .expect(200);
+
+    const product = response.body.data.document;
+
+    expect(product.badges).toHaveLength(2);
+    expect(product.badges[0].badge.code).toBe('bestseller');
+    expect(product.badges[0].priority).toBe(1);
+    expect(product.badges[0].badge.active).toBeUndefined();
+    expect(product.badges[1].badge.code).toBe('new');
+  });
+
+  test('POST /badges without token returns 401', async () => {
+    const response = await request(app)
+      .post(`${API}/badges`)
+      .send({
+        code: 'test-badge',
+        nameI18n: { en: 'Test', de: 'Test' },
+        style: 'neutral',
+        active: true,
+      })
+      .expect(401);
+
+    expect(response.body.status).toBe('failed');
+  });
+
+  test('DELETE /badges/:id returns 409 when badge is assigned to products', async () => {
+    const loginResponse = await request(app)
+      .post(`${API}/users/login`)
+      .send({
+        email: ADMIN_USER.email,
+        password: ADMIN_USER.password,
+      })
+      .expect(200);
+
+    adminToken = loginResponse.body.token;
+
+    const response = await request(app)
+      .delete(`${API}/badges/${BESTSELLER_BADGE_ID}`)
+      .set('Authorization', `Bearer ${adminToken}`)
+      .expect(409);
+
+    expect(response.body.status).toBe('failed');
+    expect(response.body.message).toMatch(/assigned to/i);
   });
 
   test('unknown route returns 404', async () => {
