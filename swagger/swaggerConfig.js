@@ -14,6 +14,11 @@ const Badge = require('../models/badgeModel');
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
 
+const storefrontUrl =
+  process.env.STOREFRONT_URL || 'https://campfire-store.netlify.app';
+const githubUrl =
+  process.env.GITHUB || 'https://github.com/kstarostin/campfire-store-api';
+
 const omitFields = ['_id', 'createdAt', 'updatedAt'];
 
 // Swagger document
@@ -22,13 +27,18 @@ const document = swaggerJSDoc({
     openapi: '3.0.0',
     info: {
       title: 'Campfire Store API',
-      description: `Campfire Store API is a <strong>demo</strong> project of an API for an online store created by Konstantin Starostin.
-      <br><br>It provides access to the shop's products, category system and simple user management, allows you to add products to the cart and place orders. Protected resources require prior authorization. Some resources are restricted to users without an admin role.`,
+      description: [
+        'REST API for <strong>Campfire Store</strong>, a demo outdoor gear shop — kayaks, bikes, camping, clothing, footwear, and more.',
+        'Use it to list products and categories, manage carts and orders, and authenticate customers with JWT.',
+        `<br><br><strong>Storefront:</strong> <a href="${storefrontUrl}" target="_blank" rel="noopener noreferrer">${storefrontUrl}</a>`,
+        '<br><br>Protected routes require a Bearer token. Some endpoints are limited to admin users.',
+        '<br><br>Demo project by Konstantin Starostin.',
+      ].join(' '),
       version: `${packageJson.version}`,
     },
     externalDocs: {
-      description: 'The source code on GitHub',
-      url: `${process.env.GITHUB}`,
+      description: 'API source on GitHub',
+      url: githubUrl,
     },
     servers: [{ url: apiPath }],
     definitions: {
