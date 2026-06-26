@@ -41,7 +41,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.cube.eu/de-de/cube-nuroad-race-blue-n-black/c0658a68ba83b39365c7b9e170972b5e"
+    "manufacturerUrl": "https://www.cube.eu/de-de/cube-nuroad-race-blue-n-black/c0658a68ba83b39365c7b9e170972b5e",
+    "taglineI18n": {
+      "en": "Race-bred gravel bike ready for rough roads and big tyres.",
+      "de": "Rennsport-inspiriertes Gravelbike für raue Straßen und breite Reifen."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Gravel racing",
+          "de": "Gravel-Rennen"
+        }
+      }
+    ]
   },
   {
     "_id": "6635e3f06209d2d0edb16d0c",
@@ -85,7 +112,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.cube.eu/de-de/cube-nuroad-ws-lightgrey-n-rose/7281f75fd389e6bf42b66c0e1e0e128d"
+    "manufacturerUrl": "https://www.cube.eu/de-de/cube-nuroad-ws-lightgrey-n-rose/7281f75fd389e6bf42b66c0e1e0e128d",
+    "taglineI18n": {
+      "en": "Women’s gravel all-rounder with comfort-first geometry.",
+      "de": "Gravel-Allrounder für Frauen mit komfortorientierter Geometrie."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "All-road adventures",
+          "de": "Allroad-Abenteuer"
+        }
+      }
+    ]
   },
   {
     "_id": "6635e52c08a5c723c8ac2f99",
@@ -237,7 +291,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/en-de/gravel-bikes/adventure/grizl/trail/grizl-cf-sl-8-trail/3473.html"
+    "manufacturerUrl": "https://www.canyon.com/en-de/gravel-bikes/adventure/grizl/trail/grizl-cf-sl-8-trail/3473.html",
+    "taglineI18n": {
+      "en": "Adventure-ready carbon gravel for bikepacking and dirt roads.",
+      "de": "Abenteuer-taugliches Carbon-Gravel für Bikepacking und Schotter."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Bikepacking",
+          "de": "Bikepacking"
+        }
+      }
+    ]
   },
   {
     "_id": "6635e897a9db5c2e7c062892",
@@ -281,7 +362,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/de-de/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/3702.html?dwvar_3702_pv_rahmenfarbe=R083_P11"
+    "manufacturerUrl": "https://www.canyon.com/de-de/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/3702.html?dwvar_3702_pv_rahmenfarbe=R083_P11",
+    "taglineI18n": {
+      "en": "High-end gravel rig with electronic shifting and carbon finesse.",
+      "de": "High-End-Gravel mit E-Schaltung und Carbon-Performance."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Fast gravel",
+          "de": "Schnelles Gravel"
+        }
+      }
+    ]
   },
   {
     "_id": "6635eaef6fbd7b858b6acb86",
@@ -325,10 +433,42 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/de-de/gravel-bikes/performance/grail/cf-sl/grail-cf-sl-7/3575.html",
     "isFeatured": true,
     "featureOrder": 2,
-    "badges": [{ "badge": "662b497f11aed4312b44a010", "priority": 1 }]
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
+    ],
+    "manufacturerUrl": "https://www.canyon.com/de-de/gravel-bikes/performance/grail/cf-sl/grail-cf-sl-7/3575.html",
+    "taglineI18n": {
+      "en": "Fast, composed gravel for long days on mixed terrain.",
+      "de": "Schnelles, ausbalanciertes Gravel für lange Tage auf gemischtem Terrain."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Gravel & bikepacking",
+          "de": "Gravel & Bikepacking"
+        }
+      }
+    ]
   },
   {
     "_id": "663603ab52bc5f09bc0ce046",
@@ -372,7 +512,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/en-de/gravel-bikes/performance/grail/cf-slx/grail-cf-slx-8-axs/3580.html"
+    "manufacturerUrl": "https://www.canyon.com/en-de/gravel-bikes/performance/grail/cf-slx/grail-cf-slx-8-axs/3580.html",
+    "taglineI18n": {
+      "en": "Premium gravel performance with wireless shifting.",
+      "de": "Premium-Gravel-Performance mit Funk-Schaltung."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Racing & fondos",
+          "de": "Rennen & Fondos"
+        }
+      }
+    ]
   },
   {
     "_id": "66360493560b98ec0c94efe1",
@@ -416,7 +583,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/de-de/fahrrad-outlet/gravel-bike/grail-cfr-ltd/4093.html"
+    "manufacturerUrl": "https://www.canyon.com/de-de/fahrrad-outlet/gravel-bike/grail-cfr-ltd/4093.html",
+    "taglineI18n": {
+      "en": "Limited-edition carbon gravel built for speed and style.",
+      "de": "Limitiertes Carbon-Gravel für Tempo und Stil."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Performance gravel",
+          "de": "Performance-Gravel"
+        }
+      }
+    ]
   },
   {
     "_id": "663606d1245b69f3c4c75029",
@@ -460,7 +654,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-10-bike?article=293259047"
+    "manufacturerUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-10-bike?article=293259047",
+    "taglineI18n": {
+      "en": "Entry gravel bike with stable handling and wide tyre clearance.",
+      "de": "Einsteiger-Gravel mit stabiler Handhabung und viel Reifenfreiheit."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Gravel & commuting",
+          "de": "Gravel & Pendeln"
+        }
+      }
+    ]
   },
   {
     "_id": "6636079252d387e096864c2e",
@@ -504,7 +725,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-40-bike-orange?article=293263047"
+    "manufacturerUrl": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-40-bike-orange?article=293263047",
+    "taglineI18n": {
+      "en": "Comfortable gravel explorer for all-day rides.",
+      "de": "Komfortables Gravel-Explorationbike für ganztägige Ausfahrten."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Touring gravel",
+          "de": "Gravel-Touren"
+        }
+      }
+    ]
   },
   {
     "_id": "663608f0d8ac5672cbba011a",
@@ -548,6 +796,33 @@
         }
       }
     ],
-    "originalUrl": "https://www.scott-sports.com/de/de/product/scott-contessa-addict-gravel-15-bike?article=290526049"
+    "manufacturerUrl": "https://www.scott-sports.com/de/de/product/scott-contessa-addict-gravel-15-bike?article=290526049",
+    "taglineI18n": {
+      "en": "Women’s gravel bike tuned for confidence on rough roads.",
+      "de": "Gravelbike für Frauen mit sicherem Handling auf rauen Wegen."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Gravel & endurance",
+          "de": "Gravel & Ausdauer"
+        }
+      }
+    ]
   }
 ]

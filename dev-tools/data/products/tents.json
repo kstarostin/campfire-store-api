@@ -36,8 +36,35 @@
         }
       }
     ],
-    "originalUrl": "https://www.naturehike.com/products/cloud-up-2-people-tent?variant=37854424563894",
     "isFeatured": true,
-    "featureOrder": 5
+    "featureOrder": 5,
+    "manufacturerUrl": "https://www.naturehike.com/products/cloud-up-2-people-tent?variant=37854424563894",
+    "taglineI18n": {
+      "en": "Ultralight two-person tent that packs small for trail camps.",
+      "de": "Ultraleichtes Zweipersonenzelt mit kleinem Packmaß fürs Trail-Camping."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "Ultralight",
+          "de": "Ultraleicht"
+        }
+      }
+    ]
   }
 ]

@@ -73,6 +73,49 @@ router
     productController.createProduct,
   );
 
+/**
+ * @swagger
+ * /products/{id}/related:
+ *   get:
+ *     tags: [Products]
+ *     summary: Get related products
+ *     description: Returns products from the same leaf category as the requested product, excluding the product itself. Results are sorted by featured status, feature order, and name.
+ *     parameters:
+ *       - $ref: '#/parameters/productId'
+ *       - $ref: '#/parameters/language'
+ *       - $ref: '#/parameters/currency'
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *           minimum: 1
+ *           maximum: 20
+ *           default: 8
+ *         description: Maximum number of related products to return.
+ *     responses:
+ *       200:
+ *         description: Related product documents from the same category.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                 resultsFound:
+ *                   type: integer
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     documents:
+ *                       type: array
+ *                       items:
+ *                         $ref: '#/definitions/Product'
+ *       404:
+ *         description: Product not found.
+ */
+router.get('/:id/related', productController.getRelatedProducts);
+
 router
   .route('/:id')
   /**

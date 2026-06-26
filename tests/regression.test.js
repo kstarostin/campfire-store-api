@@ -10,6 +10,7 @@ const TEST_USER = {
 };
 
 const SAMPLE_PRODUCT_ID = '5c88fa8cf4afda39709c2955';
+const GRAIL_PRODUCT_ID = '6635eaef6fbd7b858b6acb86';
 const KAYAKS_ROOT_CATEGORY_ID = '661f8a811d571619fe96eec2';
 const TOURING_KAYAKS_CATEGORY_ID = '661f8a8cf7b9265221dba8d2';
 const GRAVEL_BIKES_CATEGORY_CODE = 'gravel-bikes';
@@ -390,6 +391,39 @@ describe('Campfire Store API regression suite', () => {
     expect(product.badges[0].priority).toBe(1);
     expect(product.badges[0].badge.active).toBeUndefined();
     expect(product.badges[1].badge.code).toBe('new');
+  });
+
+  test('GET /products/:id includes category code on populated category', async () => {
+    const response = await request(app)
+      .get(`${API}/products/${GRAIL_PRODUCT_ID}`)
+      .query({ language: 'en', currency: 'EUR' })
+      .expect(200);
+
+    expect(response.body.data.document.category.code).toBe(GRAVEL_BIKES_CATEGORY_CODE);
+  });
+
+  test('GET /products/:id/related returns same-category products excluding self', async () => {
+    const response = await request(app)
+      .get(`${API}/products/${GRAIL_PRODUCT_ID}/related`)
+      .query({ language: 'en', currency: 'EUR', limit: 8 })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsFound).toBeGreaterThan(0);
+    expect(response.body.data.documents.length).toBeGreaterThan(0);
+
+    const ids = response.body.data.documents.map((product) => product._id);
+    expect(ids).not.toContain(GRAIL_PRODUCT_ID);
+    response.body.data.documents.forEach((product) => {
+      expect(product.category.code).toBe(GRAVEL_BIKES_CATEGORY_CODE);
+    });
+  });
+
+  test('GET /products/:id/related returns 404 for missing product', async () => {
+    await request(app)
+      .get(`${API}/products/507f1f77bcf86cd799439011/related`)
+      .query({ language: 'en', currency: 'EUR' })
+      .expect(404);
   });
 
   test('POST /badges without token returns 401', async () => {

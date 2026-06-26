@@ -41,9 +41,36 @@
         }
       }
     ],
-    "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851",
     "isFeatured": true,
-    "featureOrder": 8
+    "featureOrder": 8,
+    "manufacturerUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851",
+    "taglineI18n": {
+      "en": "Stretch hiking pants built for variable mountain weather.",
+      "de": "Stretch-Wanderhose für wechselhaftes Bergwetter."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Stretch softshell",
+          "de": "Stretch-Softshell"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Hiking & trekking",
+          "de": "Wandern & Trekking"
+        }
+      }
+    ]
   },
   {
     "_id": "662e06be7b552a6e688ae68b",
@@ -87,7 +114,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851"
+    "manufacturerUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851",
+    "taglineI18n": {
+      "en": "Tough multifunction pants for harsh outdoor conditions.",
+      "de": "Robuste Multifunktionshose für raue Outdoor-Bedingungen."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Hypershell",
+          "de": "Hypershell"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Mountaineering",
+          "de": "Bergsteigen"
+        }
+      }
+    ]
   },
   {
     "_id": "662e098ea24bc4eeeb49f7a3",
@@ -131,7 +185,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.revolutionrace.de/damen/hosen/outdoor-wanderhosen/nordwand-pro-pants-women?Color=2283"
+    "manufacturerUrl": "https://www.revolutionrace.de/damen/hosen/outdoor-wanderhosen/nordwand-pro-pants-women?Color=2283",
+    "taglineI18n": {
+      "en": "Women’s versatile hiking pants with stretch and ventilation.",
+      "de": "Vielseitige Wanderhose für Frauen mit Stretch und Belüftung."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Stretch softshell",
+          "de": "Stretch-Softshell"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Hiking & trekking",
+          "de": "Wandern & Trekking"
+        }
+      }
+    ]
   },
   {
     "_id": "662e0b1e6c0a612bde5f0b33",
@@ -175,7 +256,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/outdoor-trousers/greenland-trail-trousers-m"
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/outdoor-trousers/greenland-trail-trousers-m",
+    "taglineI18n": {
+      "en": "Durable trail trousers for year-round outdoor use.",
+      "de": "Strapazierfähige Trailhose für ganzjährigen Outdoor-Einsatz."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "G-1000 Eco",
+          "de": "G-1000 Eco"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Trail hiking",
+          "de": "Trail-Wandern"
+        }
+      }
+    ]
   },
   {
     "_id": "662e0cd23bd2f27659d7848f",
@@ -246,7 +354,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/vidda-pro-ventilated-trs-m"
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/vidda-pro-ventilated-trs-m",
+    "taglineI18n": {
+      "en": "Ventilated trekking trousers for warm-weather hikes.",
+      "de": "Belüftete Trekkinghose für warme Wandertage."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "G-1000 Eco",
+          "de": "G-1000 Eco"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Summer trekking",
+          "de": "Sommer-Trekking"
+        }
+      }
+    ]
   },
   {
     "_id": "662e0ee377fe7d14cc28d205",
@@ -398,7 +533,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/keb-trousers-m"
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/men/trousers/trekking-trousers/keb-trousers-m",
+    "taglineI18n": {
+      "en": "Technical mountaineering trousers for demanding alpine routes.",
+      "de": "Technische Bergsteigerhose für anspruchsvolle Alpinrouten."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Stretch & Cordura",
+          "de": "Stretch & Cordura"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Alpine climbing",
+          "de": "Alpines Klettern"
+        }
+      }
+    ]
   },
   {
     "_id": "662e11f91e71603fc3c969f4",
@@ -442,7 +604,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/trekking-trousers/abisko-trail-stretch-trousers-w"
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/trekking-trousers/abisko-trail-stretch-trousers-w",
+    "taglineI18n": {
+      "en": "Light stretch trousers for fast trail days.",
+      "de": "Leichte Stretchhose für schnelle Trailtage."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Stretch weave",
+          "de": "Stretch-Gewebe"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Trail running & hiking",
+          "de": "Trailrunning & Wandern"
+        }
+      }
+    ]
   },
   {
     "_id": "662e13bb2a8d209afe2adb9c",
@@ -486,7 +675,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/shorts-skirts/nikka-shorts-curved-w"
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/shorts-skirts/nikka-shorts-curved-w",
+    "taglineI18n": {
+      "en": "Curved-cut hiking shorts for warm trail days.",
+      "de": "Wandershorts mit ergonomischem Schnitt für warme Trailtage."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "G-1000 Lite",
+          "de": "G-1000 Lite"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Summer hiking",
+          "de": "Sommer-Wandern"
+        }
+      }
+    ]
   },
   {
     "_id": "662e15153721dee2533196bd",
@@ -530,7 +746,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.patagonia.com/product/mens-venga-rock-climbing-pants-regular/83083.html?dwvar_83083_color=TRBN&cgid=mens-pants-jeans-hiking"
+    "manufacturerUrl": "https://www.patagonia.com/product/mens-venga-rock-climbing-pants-regular/83083.html?dwvar_83083_color=TRBN&cgid=mens-pants-jeans-hiking",
+    "taglineI18n": {
+      "en": "Durable climbing pants with stretch for vertical movement.",
+      "de": "Strapazierfähige Kletterhose mit Stretch für vertikale Bewegung."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Recycled nylon",
+          "de": "Recyceltes Nylon"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Rock climbing",
+          "de": "Klettern"
+        }
+      }
+    ]
   },
   {
     "_id": "662e17849128c8b054fbe0c8",
@@ -574,6 +817,33 @@
         }
       }
     ],
-    "originalUrl": "https://www.patagonia.com/product/womens-pack-out-active-tights/21995.html?dwvar_21995_color=MANR&cgid=womens-pants-jeans"
+    "manufacturerUrl": "https://www.patagonia.com/product/womens-pack-out-active-tights/21995.html?dwvar_21995_color=MANR&cgid=womens-pants-jeans",
+    "taglineI18n": {
+      "en": "Active tights for training hikes and cool-weather runs.",
+      "de": "Aktive Tights für Trainingswanderungen und kühlere Läufe."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Recycled polyester",
+          "de": "Recyceltes Polyester"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Training & hiking",
+          "de": "Training & Wandern"
+        }
+      }
+    ]
   }
 ]

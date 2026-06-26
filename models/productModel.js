@@ -4,6 +4,7 @@ const i18nTextSchema = require('./schemes/i18nTextSchema');
 const i18nPriceSchema = require('./schemes/i18nPriceSchema');
 const imageContainerSchema = require('./schemes/imageContainerSchema');
 const productBadgeSchema = require('./schemes/productBadgeSchema');
+const productHighlightSchema = require('./schemes/productHighlightSchema');
 const validateRefId = require('./middleware/validateRefId');
 const Category = require('./categoryModel');
 
@@ -71,6 +72,30 @@ const productSchema = new mongoose.Schema(
       type: [productBadgeSchema],
       default: [],
     },
+    manufacturerUrl: {
+      type: String,
+      trim: true,
+      maxlength: [
+        2048,
+        'Manufacturer URL must be no more than 2048 characters long.',
+      ],
+    },
+    taglineI18n: i18nTextSchema({
+      maxlength: [
+        160,
+        'Tagline must be no more than 160 characters long.',
+      ],
+    }),
+    highlights: {
+      type: [productHighlightSchema],
+      default: [],
+      validate: {
+        validator(value) {
+          return !value || value.length <= 4;
+        },
+        message: 'Product cannot have more than 4 highlights.',
+      },
+    },
     images: [imageContainerSchema],
   },
   {
@@ -102,7 +127,7 @@ productSchema.pre(/^find/, function (next) {
   this.lean() // Convert to plain js object to exlude virtuals
     .populate({
       path: 'category',
-      select: '_id nameI18n parentCategory',
+      select: '_id code nameI18n parentCategory',
     })
     .populate({
       path: 'badges.badge',

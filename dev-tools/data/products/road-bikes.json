@@ -41,9 +41,36 @@
         }
       }
     ],
-    "originalUrl": "https://www.cube.eu/de-de/cube-attain-race-black-n-white/f47c66341dd33754ad8e1c403767ca79",
     "isFeatured": true,
-    "featureOrder": 7
+    "featureOrder": 7,
+    "manufacturerUrl": "https://www.cube.eu/de-de/cube-attain-race-black-n-white/f47c66341dd33754ad8e1c403767ca79",
+    "taglineI18n": {
+      "en": "Sharp aluminium road bike for fast training rides.",
+      "de": "Sportliches Aluminium-Rennrad für schnelle Trainingsausfahrten."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Road racing",
+          "de": "Straßenrennen"
+        }
+      }
+    ]
   },
   {
     "_id": "663679aa99e4bfc0653f32f1",
@@ -87,7 +114,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.cube.eu/de-de/cube-axial-ws-greyrose-n-blush/c89fdd6c79deac8a8fb0d79b7f1a0810"
+    "manufacturerUrl": "https://www.cube.eu/de-de/cube-axial-ws-greyrose-n-blush/c89fdd6c79deac8a8fb0d79b7f1a0810",
+    "taglineI18n": {
+      "en": "Women’s endurance road bike for long days in the saddle.",
+      "de": "Ausdauer-Rennrad für Frauen für lange Tage im Sattel."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Endurance rides",
+          "de": "Ausdauerfahrten"
+        }
+      }
+    ]
   },
   {
     "_id": "66367c0785fae5dd2b063190",
@@ -212,7 +266,34 @@
         }
       }
     ],
-    "originalUrl": "canyon.com/en-de/road-bikes/endurance-bikes/endurace/al/endurace-6/3718.html"
+    "manufacturerUrl": "canyon.com/en-de/road-bikes/endurance-bikes/endurace/al/endurace-6/3718.html",
+    "taglineI18n": {
+      "en": "Comfortable aluminium endurance bike for all-day road rides.",
+      "de": "Komfortables Aluminium-Ausdauerrad für ganztägige Straßentouren."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Aluminium",
+          "de": "Aluminium"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Endurance & sportive",
+          "de": "Ausdauer & Sportive"
+        }
+      }
+    ]
   },
   {
     "_id": "66367e0fe2fed4e4f85b6149",
@@ -256,7 +337,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/en-de/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-flash/3090.html"
+    "manufacturerUrl": "https://www.canyon.com/en-de/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-flash/3090.html",
+    "taglineI18n": {
+      "en": "Top-tier carbon endurance bike for racing and gran fondos.",
+      "de": "Carbon-Ausdauerrad der Spitzenklasse für Rennen und Gran Fondos."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Racing & fondos",
+          "de": "Rennen & Fondos"
+        }
+      }
+    ]
   },
   {
     "_id": "66367ef81ff94c4ed0b6096a",
@@ -300,7 +408,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.canyon.com/de-de/rennrad/aero-rennrad/aeroad/cf-slx/aeroad-cf-slx-8-di2/3688.html"
+    "manufacturerUrl": "https://www.canyon.com/de-de/rennrad/aero-rennrad/aeroad/cf-slx/aeroad-cf-slx-8-di2/3688.html",
+    "taglineI18n": {
+      "en": "Aero race bike built for speed on flat and rolling roads.",
+      "de": "Aero-Rennrad für Tempo auf flachen und welligen Strecken."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Road racing",
+          "de": "Straßenrennen"
+        }
+      }
+    ]
   },
   {
     "_id": "663680b01c463d05b9849336",
@@ -344,6 +479,33 @@
         }
       }
     ],
-    "originalUrl": "https://www.trekbikes.com/de/de_DE/bikes/rennr%C3%A4der/performance-rennr%C3%A4der/%C3%A9monda/%C3%A9mondasl/%C3%A9monda-sl-5/p/41366/?colorCode=white"
+    "manufacturerUrl": "https://www.trekbikes.com/de/de_DE/bikes/rennr%C3%A4der/performance-rennr%C3%A4der/%C3%A9monda/%C3%A9mondasl/%C3%A9monda-sl-5/p/41366/?colorCode=white",
+    "taglineI18n": {
+      "en": "Lightweight carbon climber for hills and fast group rides.",
+      "de": "Leichter Carbon-Kletterer für Anstiege und schnelle Gruppenausfahrten."
+    },
+    "highlights": [
+      {
+        "code": "frame",
+        "valueI18n": {
+          "en": "Carbon",
+          "de": "Carbon"
+        }
+      },
+      {
+        "code": "wheel",
+        "valueI18n": {
+          "en": "700c",
+          "de": "700c"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Climbing & racing",
+          "de": "Anstiege & Rennen"
+        }
+      }
+    ]
   }
 ]

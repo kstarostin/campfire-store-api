@@ -41,8 +41,35 @@
         }
       }
     ],
-    "originalUrl": "https://www.blizzard-tecnica.com/de/de/men/skis/all-mountain/bonafide/bonafide-97-flat",
     "isFeatured": true,
-    "featureOrder": 6
+    "featureOrder": 6,
+    "manufacturerUrl": "https://www.blizzard-tecnica.com/de/de/men/skis/all-mountain/bonafide/bonafide-97-flat",
+    "taglineI18n": {
+      "en": "Versatile all-mountain ski for confident turns in varied snow.",
+      "de": "Vielseitiger All-Mountain-Ski für sichere Schwünge im wechselnden Schnee."
+    },
+    "highlights": [
+      {
+        "code": "waist",
+        "valueI18n": {
+          "en": "97 mm",
+          "de": "97 mm"
+        }
+      },
+      {
+        "code": "skill",
+        "valueI18n": {
+          "en": "Advanced",
+          "de": "Fortgeschritten"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "All-mountain",
+          "de": "All-Mountain"
+        }
+      }
+    ]
   }
 ]

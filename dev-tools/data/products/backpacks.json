@@ -36,12 +36,45 @@
         }
       }
     ],
-    "originalUrl": "https://www.mammut.com/de/de/products/2530-03562-0001/lithium-40",
     "isFeatured": true,
     "featureOrder": 1,
     "badges": [
-      { "badge": "662b497f11aed4312b44a010", "priority": 1 },
-      { "badge": "662b497f11aed4312b44a011", "priority": 2 }
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      },
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 2
+      }
+    ],
+    "manufacturerUrl": "https://www.mammut.com/de/de/products/2530-03562-0001/lithium-40",
+    "taglineI18n": {
+      "en": "Light alpine pack for multi-day hut-to-hut trips.",
+      "de": "Leichter Alpinrucksack für mehrtägige Hüttentouren."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "40 L",
+          "de": "40 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Alpine trekking",
+          "de": "Alpines Trekking"
+        }
+      }
     ]
   },
   {
@@ -140,7 +173,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.mammut.com/de/de/products/2520-00981-0243/trion-15"
+    "manufacturerUrl": "https://www.mammut.com/de/de/products/2520-00981-0243/trion-15",
+    "taglineI18n": {
+      "en": "Compact climbing pack for fast alpine days.",
+      "de": "Kompakter Kletterrucksack für schnelle Alpintage."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "15 L",
+          "de": "15 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Climbing & via ferrata",
+          "de": "Klettern & Via Ferrata"
+        }
+      }
+    ]
   },
   {
     "_id": "662df51aaf311f80b416de13",
@@ -184,7 +244,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.mammut.com/de/de/products/2520-03842-2277/trion-38"
+    "manufacturerUrl": "https://www.mammut.com/de/de/products/2520-03842-2277/trion-38",
+    "taglineI18n": {
+      "en": "Versatile alpine pack for demanding multi-day routes.",
+      "de": "Vielseitiger Alpinrucksack für anspruchsvolle Mehrtagestouren."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "38 L",
+          "de": "38 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Alpine & ski touring",
+          "de": "Alpin & Skitouren"
+        }
+      }
+    ]
   },
   {
     "_id": "662df7f89b36f3b6155abd5f",
@@ -228,7 +315,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.osprey.com/aether-trade-65-aether65f20-550#color=Black"
+    "manufacturerUrl": "https://www.osprey.com/aether-trade-65-aether65f20-550#color=Black",
+    "taglineI18n": {
+      "en": "Premium load-hauler built for long wilderness treks.",
+      "de": "Premium-Tragesystem für lange Wildnis-Trekkingtouren."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "65 L",
+          "de": "65 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Men",
+          "de": "Herren"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Extended backpacking",
+          "de": "Langstrecken-Trekking"
+        }
+      }
+    ]
   },
   {
     "_id": "662df8c6b026d4e999ba5327",
@@ -272,7 +386,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.osprey.com/aura-ag-50-aura50s22-417#color=Enchantment%2520Purple"
+    "manufacturerUrl": "https://www.osprey.com/aura-ag-50-aura50s22-417#color=Enchantment%2520Purple",
+    "taglineI18n": {
+      "en": "Women’s multi-day pack with all-day comfort.",
+      "de": "Mehrtagesrucksack für Frauen mit ganztägigem Tragekomfort."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "50 L",
+          "de": "50 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Multi-day trekking",
+          "de": "Mehrtagestrekking"
+        }
+      }
+    ]
   },
   {
     "_id": "662dfa6d912584992752bc65",
@@ -343,7 +484,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1402320-wanderrucksack-ac-lite-16"
+    "manufacturerUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1402320-wanderrucksack-ac-lite-16",
+    "taglineI18n": {
+      "en": "Light daypack for trails, travel, and everyday carry.",
+      "de": "Leichter Tagesrucksack für Trails, Reisen und Alltag."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "16 L",
+          "de": "16 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Day hikes",
+          "de": "Tagestouren"
+        }
+      }
+    ]
   },
   {
     "_id": "662dfe4954778fefe2874ac2",
@@ -414,7 +582,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403139-wanderrucksack-trail-28-sl"
+    "manufacturerUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403139-wanderrucksack-trail-28-sl",
+    "taglineI18n": {
+      "en": "Women’s hiking pack sized for weekends on the trail.",
+      "de": "Wanderrucksack für Frauen – ideal für Wochenendtouren."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "28 L",
+          "de": "28 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Day & weekend hikes",
+          "de": "Tages- & Wochenendtouren"
+        }
+      }
+    ]
   },
   {
     "_id": "662e000df9c246bd3b03dbf9",
@@ -458,7 +653,34 @@
         }
       }
     ],
-    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1401544-wanderrucksack-speed-lite-13"
+    "manufacturerUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1401544-wanderrucksack-speed-lite-13",
+    "taglineI18n": {
+      "en": "Ultralight pack for fast-and-light mountain days.",
+      "de": "Ultraleichter Rucksack für schnelle Bergtage."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "13 L",
+          "de": "13 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Fast & light tours",
+          "de": "Schnell & leicht unterwegs"
+        }
+      }
+    ]
   },
   {
     "_id": "662e00c6dd0d4ade52164a56",
@@ -502,6 +724,33 @@
         }
       }
     ],
-    "originalUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403213-wanderrucksack-trail-pro-36"
+    "manufacturerUrl": "https://www.deuter.com/de-de/shop/rucksacke/p1403213-wanderrucksack-trail-pro-36",
+    "taglineI18n": {
+      "en": "Technical trail pack with stable carry for rough terrain.",
+      "de": "Technischer Trailrucksack mit stabilem Tragesystem fürs Gelände."
+    },
+    "highlights": [
+      {
+        "code": "volume",
+        "valueI18n": {
+          "en": "36 L",
+          "de": "36 L"
+        }
+      },
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Unisex",
+          "de": "Unisex"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Technical trails",
+          "de": "Technische Trails"
+        }
+      }
+    ]
   }
 ]

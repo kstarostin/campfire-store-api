@@ -41,8 +41,35 @@
         }
       }
     ],
-    "originalUrl": "https://www.rebelkayaks.com/product/ilaga-2-2/",
     "isFeatured": true,
-    "featureOrder": 4
+    "featureOrder": 4,
+    "manufacturerUrl": "https://www.rebelkayaks.com/product/ilaga-2-2/",
+    "taglineI18n": {
+      "en": "Stable touring kayak for lakes, coastlines, and multi-day trips.",
+      "de": "Stabiles Tourenkajak für Seen, Küsten und Mehrtagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Touring",
+          "de": "Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "520 cm",
+          "de": "520 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Coast & lakes",
+          "de": "Küste & Seen"
+        }
+      }
+    ]
   }
 ]

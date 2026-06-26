@@ -235,6 +235,43 @@ exports.getProduct = catchAsync(async (req, res, next) => {
   });
 });
 
+const parseRelatedLimit = (value, { defaultLimit = 8, maxLimit = 20 } = {}) => {
+  const parsed = Number.parseInt(value, 10);
+  if (Number.isNaN(parsed)) return defaultLimit;
+  return Math.min(Math.max(parsed, 1), maxLimit);
+};
+
+exports.getRelatedProducts = catchAsync(async (req, res, next) => {
+  const product = await Product.findById(req.params.id).select('category');
+
+  if (!product) {
+    return next(new AppError('No document found with this ID', 404));
+  }
+
+  const limit = parseRelatedLimit(req.query.limit);
+  const documents = (
+    await Product.find({
+      category: product.category,
+      _id: { $ne: product._id },
+    })
+      .select('-descriptionI18n')
+      .sort({ isFeatured: -1, featureOrder: 1, name: 1 })
+      .limit(limit)
+  ).map((document) =>
+    normalizeProductBadges(
+      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
+    ),
+  );
+
+  res.status(200).json({
+    status: 'success',
+    resultsFound: documents.length,
+    data: {
+      documents,
+    },
+  });
+});
+
 exports.createProduct = factory.createOne(Product, [
   'name',
   'descriptionI18n',
