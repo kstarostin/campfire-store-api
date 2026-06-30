@@ -4,6 +4,9 @@ const catchAsync = require('../utils/catchAsync');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
+const getParentId = (req) =>
+  req.params.cartId || req.params.orderId || req.params.wishlistId;
+
 /**
  * Build a filter condition for request parameters: userId and cartId,
  * when the request is structured for getting multiple documents.
@@ -11,8 +14,9 @@ const RequestBodySanitizer = require('../utils/requestBodySanitizer');
  */
 const getIdConditionsForMany = async (req) => {
   const filter = {};
-  if (req.params.cartId || req.params.orderId) {
-    filter.parent = req.params.cartId ? req.params.cartId : req.params.orderId;
+  const parentId = getParentId(req);
+  if (parentId) {
+    filter.parent = parentId;
   } else if (req.params.userId) {
     filter.user = req.params.userId;
   }
@@ -27,12 +31,13 @@ const getIdConditionsForMany = async (req) => {
  */
 const getIdConditionsForOne = async (req) => {
   const filter = {};
+  const parentId = getParentId(req);
   if (req.params.entryId) {
-    filter.parent = req.params.cartId ? req.params.cartId : req.params.orderId;
+    filter.parent = parentId;
     filter._id = req.params.entryId;
-  } else if (req.params.cartId || req.params.orderId) {
+  } else if (parentId) {
     filter.user = req.params.userId;
-    filter._id = req.params.cartId ? req.params.cartId : req.params.orderId;
+    filter._id = parentId;
   } else if (req.params.userId) {
     filter._id = req.params.userId;
   } else if (req.params.id) {

@@ -20,6 +20,8 @@ beforeAll(async () => {
       serverSelectionTimeoutMS: 15000,
     });
   }
+
+  await recreateTestData();
 });
 
 afterAll(async () => {

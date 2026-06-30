@@ -1,6 +1,7 @@
 const express = require('express');
 const cartRouter = require('./cartRouter');
 const orderRouter = require('./orderRouter');
+const wishlistRouter = require('./wishlistRouter');
 
 const authController = require('../controllers/authController');
 const userController = require('../controllers/userController');
@@ -164,5 +165,6 @@ router
 
 router.use('/:userId/carts', cartRouter);
 router.use('/:userId/orders', orderRouter);
+router.use('/:userId/wishlists', wishlistRouter);
 
 module.exports = router;

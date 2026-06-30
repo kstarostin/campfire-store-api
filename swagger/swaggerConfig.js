@@ -7,6 +7,8 @@ const Product = require('../models/productModel');
 const User = require('../models/userModel');
 const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
+const Wishlist = require('../models/wishlistModel');
+const WishlistEntry = require('../models/wishlistEntryModel');
 const GenericOrderEntry = require('../models/genericOrderEntryModel');
 const Title = require('../models/titleModel');
 const Badge = require('../models/badgeModel');
@@ -44,6 +46,8 @@ const document = swaggerJSDoc({
     definitions: {
       GenericOrderEntry: mongooseToSwagger(GenericOrderEntry, { omitFields }),
       Cart: mongooseToSwagger(Cart, { omitFields }),
+      Wishlist: mongooseToSwagger(Wishlist, { omitFields }),
+      WishlistEntry: mongooseToSwagger(WishlistEntry, { omitFields }),
       Category: mongooseToSwagger(Category, { omitFields }),
       Order: mongooseToSwagger(Order, { omitFields }),
       Product: mongooseToSwagger(Product, { omitFields }),

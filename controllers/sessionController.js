@@ -4,6 +4,7 @@ const AppError = require('../utils/appError');
 const User = require('../models/userModel');
 const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
+const Wishlist = require('../models/wishlistModel');
 const {
   allowedLanguages,
   defaultLanguage,
@@ -38,6 +39,14 @@ const extractOrder = async (id, next) => {
     return next(new AppError('No order found with this ID', 404));
   }
   return order;
+};
+
+const extractWishlist = async (id) => {
+  const wishlist = await Wishlist.findById(id);
+  if (!wishlist) {
+    throw new AppError('No wishlist found with this ID', 404);
+  }
+  return wishlist;
 };
 
 const validateRequestParam = (req, paramName, next) => {
@@ -80,6 +89,29 @@ exports.handleUserIdCartId = catchAsync(async (req, res, next) => {
     );
   }
   req.cart = cart;
+  next();
+});
+
+/**
+ * Validates request parameters userId and wishlistId and populates session wishlist in to the request.
+ */
+exports.handleUserIdWishlistId = catchAsync(async (req, res, next) => {
+  validateRequestParam(req, 'userId', next);
+  const user = await extractUser(req.params.userId, next);
+  req.params.userId = user.id;
+
+  validateRequestParam(req, 'wishlistId', next);
+  const wishlist = await extractWishlist(req.params.wishlistId);
+
+  const wishlistUserId = wishlist.user._id
+    ? wishlist.user._id.toString()
+    : wishlist.user.toString();
+  if (wishlistUserId !== user.id.toString()) {
+    return next(
+      new AppError('No relation found between wishlistId and userId', 404),
+    );
+  }
+  req.wishlist = wishlist;
   next();
 });
 

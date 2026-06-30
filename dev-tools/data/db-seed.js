@@ -8,6 +8,8 @@ const Badge = require('../../models/badgeModel');
 const Cart = require('../../models/cartModel');
 const GenericOrderEntry = require('../../models/genericOrderEntryModel');
 const Order = require('../../models/orderModel');
+const Wishlist = require('../../models/wishlistModel');
+const WishlistEntry = require('../../models/wishlistEntryModel');
 const Currency = require('../../models/currencyModel');
 const Language = require('../../models/languageModel');
 const { allowedCurrencies, allowedLanguages } = require('../../utils/config');
@@ -32,6 +34,8 @@ const seedData = {
   touringKayaks: readJson('products/touring-kayaks.json'),
   carts: readJson('carts.json'),
   cartEntries: readJson('cartEntries.json'),
+  wishlists: readJson('wishlists.json'),
+  wishlistEntries: readJson('wishlistEntries.json'),
   orders: readJson('orders.json'),
   orderEntries: readJson('orderEntries.json'),
   currencies: readJson('currencies.json').filter((currency) =>
@@ -77,6 +81,12 @@ const performImport = async () => {
   console.log('Creating cart entries...');
   await GenericOrderEntry.create(seedData.cartEntries);
 
+  console.log('Creating wishlists...');
+  await Wishlist.create(seedData.wishlists);
+
+  console.log('Creating wishlist entries...');
+  await WishlistEntry.create(seedData.wishlistEntries);
+
   console.log('Creating orders...');
   await Order.create(seedData.orders);
 
@@ -87,6 +97,10 @@ const performImport = async () => {
 };
 
 const performDelete = async () => {
+  console.log('Deleteing wishlist entries...');
+  await WishlistEntry.deleteMany();
+  console.log('Deleteing wishlists...');
+  await Wishlist.deleteMany();
   console.log('Deleteing cart and order entries...');
   await GenericOrderEntry.deleteMany();
   console.log('Deleteing orders...');

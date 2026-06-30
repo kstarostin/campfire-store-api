@@ -79,6 +79,12 @@ parameters:
     description: <code>id</code> of a cart to search for.
     in: path
     required: true
+  # Wishlist
+  wishlistId:
+    name: wishlistId
+    description: <code>id</code> of a wishlist to search for.
+    in: path
+    required: true
   # Order
   orderId:
     name: orderId

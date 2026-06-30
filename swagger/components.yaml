@@ -71,6 +71,51 @@ components:
           properties:
             document:
               $ref: '#/definitions/Cart'
+    # Wishlist
+    wishlistsSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/Wishlist'
+    wishlistSchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/Wishlist'
+    wishlistEntriesSchema:
+      allOf:
+        - $ref: '#/components/schemas/itemsSchema'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                documents:
+                  type: array
+                  items:
+                    $ref: '#/definitions/WishlistEntry'
+    wishlistEntrySchema:
+      type: object
+      properties:
+        status:
+          type: string
+        data:
+          type: object
+          properties:
+            document:
+              $ref: '#/definitions/WishlistEntry'
     # Category
     categoriesSchema:
       allOf:

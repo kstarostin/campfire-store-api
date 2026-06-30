@@ -9,6 +9,8 @@ const TEST_USER = {
   id: '66237f6401706e88a6f9a5e3',
 };
 
+const ALEX_WISHLIST_ID = '6624c705acb7934041bea005';
+
 const SAMPLE_PRODUCT_ID = '5c88fa8cf4afda39709c2955';
 const GRAIL_PRODUCT_ID = '6635eaef6fbd7b858b6acb86';
 const KAYAKS_ROOT_CATEGORY_ID = '661f8a811d571619fe96eec2';
@@ -424,6 +426,58 @@ describe('Campfire Store API regression suite', () => {
       .get(`${API}/products/507f1f77bcf86cd799439011/related`)
       .query({ language: 'en', currency: 'EUR' })
       .expect(404);
+  });
+
+  test('GET /users/:id/wishlists returns seeded wishlist for authenticated user', async () => {
+    const response = await request(app)
+      .get(`${API}/users/${TEST_USER.id}/wishlists`)
+      .set('Authorization', `Bearer ${authToken}`)
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsTotal).toBe(1);
+    expect(response.body.data.documents[0]._id).toBe(ALEX_WISHLIST_ID);
+    expect(response.body.data.documents[0].name).toBe('Wishlist');
+  });
+
+  test('GET /users/:id/wishlists/:wishlistId/entries returns seeded products', async () => {
+    const response = await request(app)
+      .get(`${API}/users/${TEST_USER.id}/wishlists/${ALEX_WISHLIST_ID}/entries`)
+      .set('Authorization', `Bearer ${authToken}`)
+      .query({ language: 'en', currency: 'EUR', sort: '-createdAt' })
+      .expect(200);
+
+    expect(response.body.status).toBe('success');
+    expect(response.body.resultsTotal).toBe(3);
+
+    const productIds = response.body.data.documents.map((entry) =>
+      typeof entry.product === 'string' ? entry.product : entry.product._id,
+    );
+    expect(productIds).toEqual(
+      expect.arrayContaining([GRAIL_PRODUCT_ID, SAMPLE_PRODUCT_ID]),
+    );
+  });
+
+  test('POST /users/:id/wishlists/:wishlistId/entries rejects duplicate product', async () => {
+    const response = await request(app)
+      .post(`${API}/users/${TEST_USER.id}/wishlists/${ALEX_WISHLIST_ID}/entries`)
+      .set('Authorization', `Bearer ${authToken}`)
+      .send({ product: GRAIL_PRODUCT_ID })
+      .expect(409);
+
+    expect(response.body.status).toBe('failed');
+    expect(response.body.message).toMatch(/already in the wishlist/i);
+  });
+
+  test('POST /users/:id/wishlists rejects second wishlist for same user', async () => {
+    const response = await request(app)
+      .post(`${API}/users/${TEST_USER.id}/wishlists`)
+      .set('Authorization', `Bearer ${authToken}`)
+      .send({ name: 'Another list' })
+      .expect(400);
+
+    expect(response.body.status).toBe('failed');
+    expect(response.body.message).toMatch(/one wishlist is allowed per user/i);
   });
 
   test('POST /badges without token returns 401', async () => {
