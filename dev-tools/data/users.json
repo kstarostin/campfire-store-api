@@ -71,14 +71,39 @@
     },
     "deliveryAddresses": [
       {
+        "label": "Home",
         "title": "662b497f11aed4312b44a001",
         "name": "Alex Chen",
-        "phone": "+1 (555) 456-7890",
-        "street": "Oak Avenue",
-        "house": "456",
-        "postalCode": "67890",
-        "town": "Lakeside",
-        "country": "USA"
+        "phone": "+49 89 1234 5678",
+        "street": "Trailhead Lane",
+        "house": "42",
+        "postalCode": "80331",
+        "town": "Munich",
+        "country": "Germany"
+      },
+      {
+        "label": "Office",
+        "title": "662b497f11aed4312b44a001",
+        "name": "Alex Chen",
+        "phone": "+49 30 9876 5432",
+        "street": "Bergstraße",
+        "house": "8",
+        "postalCode": "10115",
+        "town": "Berlin",
+        "country": "Germany"
+      }
+    ],
+    "billingAddresses": [
+      {
+        "label": "Home",
+        "title": "662b497f11aed4312b44a001",
+        "name": "Alex Chen",
+        "phone": "+49 89 1234 5678",
+        "street": "Trailhead Lane",
+        "house": "42",
+        "postalCode": "80331",
+        "town": "Munich",
+        "country": "Germany"
       }
     ]
   },

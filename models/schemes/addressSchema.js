@@ -5,6 +5,14 @@ const validator = require('validator');
  * ADDRESS SCHEMA
  */
 const addressSchema = new mongoose.Schema({
+  label: {
+    type: String,
+    trim: true,
+    maxlength: [
+      32,
+      'Address label length must be no more than 32 characters long.',
+    ],
+  },
   title: {
     type: mongoose.Schema.ObjectId,
     ref: 'Title',

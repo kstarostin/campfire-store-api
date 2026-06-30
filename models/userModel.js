@@ -93,20 +93,14 @@ userSchema.pre('save', function (next) {
   next();
 });
 
-// Query middleware
+// Query middleware — populate title refs inside embedded address subdocuments only.
 userSchema.pre(/^find/, function (next) {
   this.populate({
-    path: 'deliveryAddresses',
-    populate: {
-      path: 'title',
-      select: '_id code nameI18n',
-    },
+    path: 'deliveryAddresses.title',
+    select: '_id code nameI18n',
   }).populate({
-    path: 'billingAddresses',
-    populate: {
-      path: 'title',
-      select: '_id code nameI18n',
-    },
+    path: 'billingAddresses.title',
+    select: '_id code nameI18n',
   });
   next();
 });
