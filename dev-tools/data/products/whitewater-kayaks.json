@@ -1,0 +1,1009 @@
+[
+  {
+    "_id": "6a44fa7608a766eb31550cb9",
+    "name": "Machno",
+    "manufacturer": "Pyranha",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1345,
+      "USD": 1450
+    },
+    "descriptionI18n": {
+      "en": "The Pyranha Machno is Team Pyranha's ultimate creek boat — refined worldwide to deliver a formidable bow rocker that keeps you on top of big features and a wide, curved planing hull with soft chines that stays stable and predictable. Wave deflectors lift through holes and break bow spray; extreme bow rocker and steep stern rocker make boofs almost effortless. High-volume design carries you through stomping drops with a pointed bow that splits water and a rounded stern that deflects it cleanly. Stout 2 outfitting with adjustable thigh grips and deep-fill hip pads; available in S, M, and L for paddlers from 45–130 kg.",
+      "de": "Der Pyranha Machno ist Team Pyranhas ultimatives Creek-Boot — weltweit verfeinert mit starkem Bug-Rocker für große Features und breitem, gebogenem Planungsrumpf mit weichen Kanten für Stabilität und Vorhersagbarkeit. Wellenabweiser heben durch Löcher und brechen Bugspray; extremer Bug- und steiler Heck-Rocker für mühelose Boofs. Hochvolumiges Design für harte Drops mit spitzem Bug und rundem Heck. Stout-2-Ausstattung mit verstellbaren Oberschenkelgriffen und tiefen Hüftpolstern; in S, M und L für Paddler von 45–130 kg."
+    },
+    "manufacturerUrl": "https://www.pyranha.com/kayaks.php?kayak=Machno",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fa7608a766eb31550cb9-1782905586460-1_200.jpeg",
+          "altText": "Machno photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fa7608a766eb31550cb9-1782905586460-1_500.jpeg",
+          "altText": "Machno photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fa7608a766eb31550cb9-1782905586460-1_1000.jpeg",
+          "altText": "Machno photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fa7608a766eb31550cb9-1782905586460-1_2000.webp",
+          "altText": "Machno photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fa7608a766eb31550cb9-1782905586460-1_original.webp",
+          "altText": "Machno photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "High-volume creek kayak built for big water and confident boofs.",
+      "de": "Hochvolumiges Creek-Kajak für großes Wasser und sichere Boofs."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Creek / river",
+          "de": "Creek / Fluss"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "265 cm (M)",
+          "de": "265 cm (M)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Steep creeks",
+          "de": "Steile Creeks"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44faf39b2d9b46dd09c2e7",
+    "name": "Ripper",
+    "manufacturer": "Pyranha",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1295,
+      "USD": 1400
+    },
+    "descriptionI18n": {
+      "en": "The Pyranha Ripper brings #FastIsFun from the 9R lineage together with a playful stern for river-running adrenaline. Generous bow rocker keeps the ride dry; a maximum-waterline planing hull delivers exceptional downriver speed, easy attainments, and surfability. A low-volume stern enables stern squirts, dip turns, and soul surfing; a full-volume bow punches features with room for big pop-outs. Bow control edges carve on waves yet soften aft for forgiveness and flat spins. Stout 2 outfitting with full plate footrest and security handles — enough volume for your favourite runs without dulling the fun.",
+      "de": "Der Pyranha Ripper verbindet #FastIsFun aus der 9R-Linie mit verspieltem Heck für River-Running-Adrenalin. Großzügiger Bug-Rocker für trockene Fahrt; Planungsrumpf mit maximaler Wasserlinie für Tempo, leichte Aufwärtsfahrten und Surffähigkeit. Niedrigvolumiges Heck für Stern-Squirts, Dip-Turns und Soul-Surfing; vollvolumiger Bug für Features und große Pop-outs. Bug-Kanten für Wellen-Carving, zum Heck hin weicher für Verzeihung und Flat-Spins. Stout-2-Ausstattung mit Vollplatten-Fußstütze und Sicherheitsgriffen — genug Volumen für Lieblingsläufe ohne Spaßverlust."
+    },
+    "manufacturerUrl": "https://www.pyranha.com/kayaks.php?kayak=Ripper",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44faf39b2d9b46dd09c2e7-1782905667741-1_200.jpeg",
+          "altText": "Ripper photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44faf39b2d9b46dd09c2e7-1782905667741-1_500.jpeg",
+          "altText": "Ripper photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44faf39b2d9b46dd09c2e7-1782905667741-1_1000.jpeg",
+          "altText": "Ripper photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44faf39b2d9b46dd09c2e7-1782905667741-1_2000.webp",
+          "altText": "Ripper photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44faf39b2d9b46dd09c2e7-1782905667741-1_original.webp",
+          "altText": "Ripper photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Fast river-running kayak with a playful stern for squirts and surf.",
+      "de": "Schnelles River-Running-Kajak mit verspieltem Heck für Squirts und Surf."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "River running",
+          "de": "River Running"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "274 cm (M)",
+          "de": "274 cm (M)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Play the river",
+          "de": "River Play"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44fb44a6f72106547b014c",
+    "name": "Rewind MD River Play",
+    "manufacturer": "Dagger",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1499,
+      "USD": 1599
+    },
+    "descriptionI18n": {
+      "en": "The Dagger Rewind MD River Play is the award-winning medium-size downriver playboat for paddlers from 63–100 kg. Piercing river-running speed meets slicey stern play — ample bow volume and rocker resurface quickly and hold momentum after drops, while the low-volume tail invites tailies and new tricks on your home run. Contour Ergo outfitting delivers a customised, comfortable fit from the first paddle stroke. At 267 cm × 65 cm with 254 L volume and roughly 20 kg, the MD is Dagger's versatile one-boat answer for whitewater paddlers of all abilities.",
+      "de": "Der Dagger Rewind MD River Play ist das preisgekrönte Downriver-Playboat in Medium für Paddler von 63–100 kg. Durchdringendes River-Running-Tempo trifft auf slicey Heck-Play — großzügiges Bugvolumen und Rocker für schnelles Auftauchen und Tempo nach Drops, niedrigvolumiges Heck für Tailies und neue Tricks auf dem Home Run. Contour-Ergo-Ausstattung für passgenauen Komfort ab der ersten Paddelbewegung. Mit 267 cm × 65 cm, 254 L Volumen und ca. 20 kg ist das MD Daggers vielseitige One-Boat-Lösung für Wildwasserpaddler aller Niveaus."
+    },
+    "manufacturerUrl": "https://www.confluenceoutdoor.com/products/dagger-rewind-md-river-play-whitewater-kayak-9010340057",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fb44a6f72106547b014c-1782905885754-1_200.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fb44a6f72106547b014c-1782905885754-1_500.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fb44a6f72106547b014c-1782905885754-1_1000.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fb44a6f72106547b014c-1782905885754-1_2000.webp",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fb44a6f72106547b014c-1782905885754-1_original.webp",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fb44a6f72106547b014c-1782905886067-2_200.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fb44a6f72106547b014c-1782905886067-2_500.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fb44a6f72106547b014c-1782905886067-2_1000.jpeg",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fb44a6f72106547b014c-1782905886067-2_2000.webp",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fb44a6f72106547b014c-1782905886067-2_original.webp",
+          "altText": "Rewind MD River Play photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Medium downriver playboat for speed, surf, and slicey stern tricks.",
+      "de": "Medium-Downriver-Playboat für Tempo, Surf und slicey Heck-Tricks."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "River play",
+          "de": "River Play"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "267 cm (MD)",
+          "de": "267 cm (MD)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Downriver play",
+          "de": "Downriver Play"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44fc214b16a3377e667497",
+    "name": "Phantom",
+    "manufacturer": "Dagger",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1599,
+      "USD": 1649
+    },
+    "descriptionI18n": {
+      "en": "Created to compete with the fastest whitewater race kayaks, the Dagger Phantom Creek Race stays high-and-dry yet carries speed through holes and away from drops. A 271 cm × 68 cm planing hull with 337 L volume balances tracking and manoeuvrability, changing direction rapidly on edge — squared stern design skims over turbulent water instead of hanging up. Optimized for paddlers from 66–116 kg at roughly 23 kg. Updated Contour Ergo outfitting includes the Engage Thigh Brace System with interchangeable inner hooks for relaxed or aggressive connectivity.",
+      "de": "Der Dagger Phantom Creek Race wurde entwickelt, um mit den schnellsten Wildwasser-Rennkajaks mitzuhalten — hoch und trocken, mit Tempo durch Löcher und nach Drops. 271 cm × 68 cm Planungsrumpf mit 337 L balanciert Spurtreue und Manövrierfähigkeit, auf Kante schnelle Richtungswechsel — quadratisches Heck gleitet über turbulentes Wasser statt hängen zu bleiben. Für Paddler von 66–116 kg bei ca. 23 kg. Aktualisierte Contour-Ergo-Ausstattung mit Engage-Thigh-Brace-System und wechselbaren Innenhaken für entspannten oder aggressiven Kontakt."
+    },
+    "manufacturerUrl": "https://www.confluenceoutdoor.com/products/dagger-phantom-creek-race-whitewater-kayak-9010334091",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fc214b16a3377e667497-1782906106155-1_200.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fc214b16a3377e667497-1782906106155-1_500.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fc214b16a3377e667497-1782906106155-1_1000.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fc214b16a3377e667497-1782906106155-1_2000.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fc214b16a3377e667497-1782906106155-1_original.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fc214b16a3377e667497-1782906106478-2_200.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fc214b16a3377e667497-1782906106478-2_500.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fc214b16a3377e667497-1782906106478-2_1000.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fc214b16a3377e667497-1782906106478-2_2000.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fc214b16a3377e667497-1782906106478-2_original.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fc214b16a3377e667497-1782906106968-3_200.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fc214b16a3377e667497-1782906106968-3_500.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fc214b16a3377e667497-1782906106968-3_1000.jpeg",
+          "altText": "Phantom photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fc214b16a3377e667497-1782906106968-3_2000.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fc214b16a3377e667497-1782906106968-3_original.webp",
+          "altText": "Phantom photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "271 cm creek-race kayak for speed, boofs, and big water.",
+      "de": "271-cm-Creek-Race-Kajak für Tempo, Boofs und großes Wasser."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Creek / race",
+          "de": "Creek / Race"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "271 cm",
+          "de": "271 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Steep creeks",
+          "de": "Steile Creeks"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44fdc34b5310f72eea378b",
+    "name": "Antix 2",
+    "manufacturer": "Jackson Kayak",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1549,
+      "USD": 1649
+    },
+    "descriptionI18n": {
+      "en": "If you could pick only one boat and still unlock every style of paddling on every style of river, the Jackson Kayak Antix 2.0 is it. A reshaped full planing hull is faster, squirts with less effort, and surfs like no other half-slice — great on rivers and creeks alike. Improved bow volume and rocker, increased foot room, Bees Knees thigh hooks, Uni-Shock bulkhead, and Sure-Lock backband keep you comfortable from first surf to advanced boofs. Available in S, M, and L (7'7\"–8'5\", 43–105 kg) for paddlers of every skill level.",
+      "de": "Wenn du nur ein Boot wählen könntest und trotzdem jeden Paddelstil auf jedem Fluss freischalten willst, ist es der Jackson Kayak Antix 2.0. Umgeformter Planungsrumpf — schneller, weniger Aufwand beim Squirten, surft wie kein anderes Half-Slice; stark auf Fluss und Creek. Mehr Bugvolumen und Rocker, mehr Fußraum, Bees-Knees-Oberschenkelhaken, Uni-Shock-Schotte und Sure-Lock-Rückenband. In S, M und L (235–259 cm, 43–105 kg) für jedes Niveau."
+    },
+    "manufacturerUrl": "https://jacksonkayak.com/whitewater/jackson-kayak/antix-2-0",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fdc34b5310f72eea378b-1782906488350-1_200.jpeg",
+          "altText": "Antix 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fdc34b5310f72eea378b-1782906488350-1_500.jpeg",
+          "altText": "Antix 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fdc34b5310f72eea378b-1782906488350-1_1000.jpeg",
+          "altText": "Antix 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fdc34b5310f72eea378b-1782906488350-1_2000.webp",
+          "altText": "Antix 2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fdc34b5310f72eea378b-1782906488350-1_original.webp",
+          "altText": "Antix 2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Versatile half-slice for rivers, creeks, and all-day play.",
+      "de": "Vielseitiges Half-Slice für Fluss, Creek und ganztägiges Play."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Half-slice",
+          "de": "Half-Slice"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "245 cm (M)",
+          "de": "245 cm (M)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "One-boat quiver",
+          "de": "Ein Boot für alles"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44fe7a30a10df24310ab47",
+    "name": "Ethos Nine COREtour",
+    "manufacturer": "Wave Sport",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 939,
+      "USD": 1049
+    },
+    "descriptionI18n": {
+      "en": "The Wave Sport Ethos Nine COREtour is a lightweight crossover kayak for mixed flat and moving water up to Class II — cover distance, carry kit, and still have fun. At 291 cm × 65 cm and 19.5 kg, it suits small to medium paddlers (41–91 kg) with a smooth rocker profile, progressive chines, and spring-loaded skeg for tracking on the flat or manoeuvrability in easy rapids. COREtour outfitting with leg-lifter seat, flip-over hip pads, stern hatch with bulkhead, and deck bungees supports multi-day river trips without the weight of full whitewater spec.",
+      "de": "Der Wave Sport Ethos Nine COREtour ist ein leichtes Crossover-Kajak für gemischtes Flach- und Fließgewässer bis WW II — Weite, Gepäck und trotzdem Spaß. Mit 291 cm × 65 cm und 19,5 kg für kleine bis mittlere Paddler (41–91 kg); glatter Rocker, progressive Kanten und Feder-Skag für Spurtreue oder Manövrierfähigkeit in leichten Stromschnellen. COREtour-Ausstattung mit Leg-Lifter-Sitz, Flip-over-Hüftpolstern, Heckluke mit Schott und Deckspanngurten für Mehrtagesflussfahrten bei geringerem Gewicht."
+    },
+    "manufacturerUrl": "https://www.wavesport.com/products/ethos-nine-coretour",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fe7a30a10df24310ab47-1782906728507-1_200.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fe7a30a10df24310ab47-1782906728507-1_500.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fe7a30a10df24310ab47-1782906728507-1_1000.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fe7a30a10df24310ab47-1782906728507-1_2000.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fe7a30a10df24310ab47-1782906728507-1_original.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fe7a30a10df24310ab47-1782906729303-2_200.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fe7a30a10df24310ab47-1782906729303-2_500.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fe7a30a10df24310ab47-1782906729303-2_1000.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fe7a30a10df24310ab47-1782906729303-2_2000.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fe7a30a10df24310ab47-1782906729303-2_original.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44fe7a30a10df24310ab47-1782906730257-3_200.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44fe7a30a10df24310ab47-1782906730257-3_500.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44fe7a30a10df24310ab47-1782906730257-3_1000.jpeg",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44fe7a30a10df24310ab47-1782906730257-3_2000.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44fe7a30a10df24310ab47-1782906730257-3_original.webp",
+          "altText": "Ethos Nine COREtour photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Light crossover kayak for Class II rivers and multi-day trips.",
+      "de": "Leichtes Crossover-Kajak für WW II und Mehrtagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Crossover",
+          "de": "Crossover"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "291 cm",
+          "de": "291 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Rivers & tour",
+          "de": "Fluss & Tour"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4500b76ee3c8f48ec4bedf",
+    "name": "Tutea",
+    "manufacturer": "Waka Kayaks",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1390,
+      "USD": 1499
+    },
+    "descriptionI18n": {
+      "en": "The Waka Tutea is a small-to-medium creek boat scaled from the legendary Tuna — smooth lines and well-proportioned rocker for paddlers who need manoeuvrability without sacrificing boof speed through Grade V. At 250 cm × 67 cm and 300 L, it suits 50–85 kg kayakers with a narrower cockpit feel and slightly sharper edges than the Tuna for speed out of holes. High-floating, easy to boof, turn, carve, and flat spin; beginner-friendly yet capable for advanced creeking. Fast-adjusting rotomoulded seat and outfitting for schools and experts alike.",
+      "de": "Die Waka Tutea ist ein klein- bis mittelgroßes Creek-Boot, vom legendären Tuna abgeleitet — geschmeidige Linien und proportionierter Rocker für Paddler, die Manövrierfähigkeit ohne Boof-Tempo bis WW V brauchen. Mit 250 cm × 67 cm und 300 L für 50–85 kg; schmaleres Cockpitgefühl und etwas schärfere Kanten als der Tuna für Tempo aus Löchern. Hochschwimmend, leicht zu boofen, wenden, carven und flat-spinnen; einsteigerfreundlich und fortgeschrittenentauglich. Schnell verstellbarer rotomouldierter Sitz für Schulen und Profis."
+    },
+    "manufacturerUrl": "https://www.wakakayaks.com/kayak/tutea/",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4500b76ee3c8f48ec4bedf-1782907182866-1_200.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4500b76ee3c8f48ec4bedf-1782907182866-1_500.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4500b76ee3c8f48ec4bedf-1782907182866-1_1000.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4500b76ee3c8f48ec4bedf-1782907182866-1_2000.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4500b76ee3c8f48ec4bedf-1782907182866-1_original.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4500b76ee3c8f48ec4bedf-1782907183147-2_200.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4500b76ee3c8f48ec4bedf-1782907183147-2_500.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4500b76ee3c8f48ec4bedf-1782907183147-2_1000.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4500b76ee3c8f48ec4bedf-1782907183147-2_2000.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4500b76ee3c8f48ec4bedf-1782907183147-2_original.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4500b76ee3c8f48ec4bedf-1782907183458-3_200.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4500b76ee3c8f48ec4bedf-1782907183458-3_500.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4500b76ee3c8f48ec4bedf-1782907183458-3_1000.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4500b76ee3c8f48ec4bedf-1782907183458-3_2000.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4500b76ee3c8f48ec4bedf-1782907183458-3_original.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4500b76ee3c8f48ec4bedf-1782907183761-4_200.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4500b76ee3c8f48ec4bedf-1782907183761-4_500.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4500b76ee3c8f48ec4bedf-1782907183761-4_1000.jpeg",
+          "altText": "Tutea photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4500b76ee3c8f48ec4bedf-1782907183761-4_2000.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4500b76ee3c8f48ec4bedf-1782907183761-4_original.webp",
+          "altText": "Tutea photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Compact creek boat for smaller paddlers on steep lines.",
+      "de": "Kompaktes Creek-Boot für kleinere Paddler an steilen Linien."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Creek / river",
+          "de": "Creek / Fluss"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "250 cm",
+          "de": "250 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Grade V creeks",
+          "de": "WW V Creeks"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a45012fcdae9dcacb1ed1c5",
+    "name": "Magnum 80",
+    "manufacturer": "Riot",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1249,
+      "USD": 1350
+    },
+    "descriptionI18n": {
+      "en": "The Riot Magnum 80 is the culmination of Riot paddlers' creeking wisdom — perfect length and shape for punching features without going vertical. Buoyant yet manoeuvrable, it's the ultimate creeking companion for paddlers from 77–104 kg at 252 cm × 68 cm and 303 L. Also available as the Magnum 72 for lighter paddlers. Smooth rocker, even volume distribution, Unity outfitting, and included airbags make it a forgiving classic from Grade II through the hardest test-pieces.",
+      "de": "Der Riot Magnum 80 ist die Essenz von Riots Creeking-Erfahrung — perfekte Länge und Form, um Features zu durchbohren ohne vertikal zu gehen. Schwimmfähig und dennoch wendig, das ultimative Creek-Begleiter für 77–104 kg bei 252 cm × 68 cm und 303 L. Auch als Magnum 72 für leichtere Paddler. Glatter Rocker, gleichmäßige Volumenverteilung, Unity-Ausstattung und Luftkissen inklusive — verzeihender Klassiker von WW II bis zu härtesten Linien."
+    },
+    "manufacturerUrl": "https://riotkayaks.com/products/magnum-80-kayak",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45012fcdae9dcacb1ed1c5-1782907349453-1_200.jpeg",
+          "altText": "Magnum 80 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45012fcdae9dcacb1ed1c5-1782907349453-1_500.jpeg",
+          "altText": "Magnum 80 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45012fcdae9dcacb1ed1c5-1782907349453-1_1000.jpeg",
+          "altText": "Magnum 80 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45012fcdae9dcacb1ed1c5-1782907349453-1_2000.webp",
+          "altText": "Magnum 80 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45012fcdae9dcacb1ed1c5-1782907349453-1_original.webp",
+          "altText": "Magnum 80 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Classic forgiving whitewater kayak for learning and progression.",
+      "de": "Klassisches verzeihendes Wildwasserkajak zum Lernen und Fortschreiten."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "River running",
+          "de": "River Running"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "252 cm (80)",
+          "de": "252 cm (80)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Grade II–V",
+          "de": "WW II–V"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4501b8b44876a1bf9a58ee",
+    "name": "Thunder 65",
+    "manufacturer": "Riot",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1249,
+      "USD": 1350
+    },
+    "descriptionI18n": {
+      "en": "The Riot Thunder 65 is an all-purpose river-running kayak — effortless upstream ferries and smooth downstream speed with beveled edges and a flat, shallow hull that adapts to the energy of the current. At 234 cm × 65 cm and 65 US gal, it suits a wide range of paddlers with Unity seating, Suregrip thigh braces, adjustable creek footbrace, and front/rear flotation bags. Also available as Thunder 76 for larger riders. Stable, comfortable, and versatile from playful rapids to multi-day self-support.",
+      "de": "Der Riot Thunder 65 ist ein Allround-River-Runner — mühelose Ferrys gegenstrom und flüssiges Tempo stromabwärts mit abgeschrägten Kanten und flachem, seichtem Rumpf, der sich der Strömungsenergie anpasst. Mit 234 cm × 65 cm und 65 US gal für viele Paddler; Unity-Sitz, Suregrip-Schenkelstützen, verstellbare Creek-Fußstütze und Bug-/Heck-Schwimmkissen. Auch als Thunder 76 für größere Fahrer. Stabil, komfortabel und vielseitig von verspielten Stromschnellen bis Self-Support."
+    },
+    "manufacturerUrl": "https://riotkayaks.com/products/thunder-65-kayak",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4501b8b44876a1bf9a58ee-1782907544216-1_200.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4501b8b44876a1bf9a58ee-1782907544216-1_500.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4501b8b44876a1bf9a58ee-1782907544216-1_1000.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4501b8b44876a1bf9a58ee-1782907544216-1_2000.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4501b8b44876a1bf9a58ee-1782907544216-1_original.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4501b8b44876a1bf9a58ee-1782907546543-2_200.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4501b8b44876a1bf9a58ee-1782907546543-2_500.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4501b8b44876a1bf9a58ee-1782907546543-2_1000.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4501b8b44876a1bf9a58ee-1782907546543-2_2000.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4501b8b44876a1bf9a58ee-1782907546543-2_original.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4501b8b44876a1bf9a58ee-1782907548540-3_200.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4501b8b44876a1bf9a58ee-1782907548540-3_500.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4501b8b44876a1bf9a58ee-1782907548540-3_1000.jpeg",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4501b8b44876a1bf9a58ee-1782907548540-3_2000.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4501b8b44876a1bf9a58ee-1782907548540-3_original.webp",
+          "altText": "Thunder 65 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Versatile 65-gal river runner for ferries and rapid speed.",
+      "de": "Vielseitiger 65-gal-River-Runner für Ferrys und Flusstempo."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "River running",
+          "de": "River Running"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "234 cm",
+          "de": "234 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "All-round river",
+          "de": "Allround-Fluss"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4502e6e2cf3b9d2ccf0096",
+    "name": "Cross",
+    "manufacturer": "Zet",
+    "category": "661f8a911063cec412136c92",
+    "priceI18n": {
+      "EUR": 1299,
+      "USD": 1399
+    },
+    "descriptionI18n": {
+      "en": "The ZET Cross is a true all-river whitewater kayak — sporty, stable, and easy to manoeuvre with a long, wide rocker profile designed to move through waves and holes and boof beautifully even at low speeds. Flat hull and edges make it highly responsive: it accelerates quickly, holds its line, and carves without catchy features. At 272 cm × 67 cm, 350 L, and 22 kg, it suits paddlers from 70–100 kg. Incredible stability makes it ideal for experts pushing limits and intermediates building skills — from creek runs to river racing.",
+      "de": "Der ZET Cross ist ein echtes Allround-Wildwasserkajak — sportlich, stabil und wendig mit langem, breitem Rockerprofil für Wellen, Löcher und saubere Boofs auch bei wenig Tempo. Flacher Rumpf und Kanten machen ihn sehr reaktionsfreudig: schnelle Beschleunigung, perfekte Linienführung, kurvige Fahrten ohne „catchy“ Features. Mit 272 cm × 67 cm, 350 L und 22 kg für 70–100 kg. Hohe Stabilität für Experten und Fortgeschrittene — vom Creek bis zum Flussrennen."
+    },
+    "manufacturerUrl": "https://zet-kayaks.com/product/cross",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4502e6e2cf3b9d2ccf0096-1782907903330-1_200.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4502e6e2cf3b9d2ccf0096-1782907903330-1_500.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4502e6e2cf3b9d2ccf0096-1782907903330-1_1000.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4502e6e2cf3b9d2ccf0096-1782907903330-1_2000.webp",
+          "altText": "Cross photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4502e6e2cf3b9d2ccf0096-1782907903330-1_original.webp",
+          "altText": "Cross photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4502e6e2cf3b9d2ccf0096-1782907903645-2_200.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4502e6e2cf3b9d2ccf0096-1782907903645-2_500.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4502e6e2cf3b9d2ccf0096-1782907903645-2_1000.jpeg",
+          "altText": "Cross photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4502e6e2cf3b9d2ccf0096-1782907903645-2_2000.webp",
+          "altText": "Cross photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4502e6e2cf3b9d2ccf0096-1782907903645-2_original.webp",
+          "altText": "Cross photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "All-river creek boat for speed, boofs, and progression.",
+      "de": "Allround-Creek-Boot für Tempo, Boofs und Fortschritt."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "All-river",
+          "de": "Allround"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "272 cm",
+          "de": "272 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Grade III–V",
+          "de": "WW III–V"
+        }
+      }
+    ]
+  }
+]

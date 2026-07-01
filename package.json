@@ -11,7 +11,10 @@
     "start": "nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production PORT=80 node server.js",
     "debug": "ndb server.js",
-    "test": "jest --runInBand --forceExit"
+    "test": "jest --runInBand --forceExit",
+    "product:id": "node dev-tools/new-product-id.js",
+    "product:images": "node dev-tools/process-staged-images.js",
+    "product:enrich": "node dev-tools/data/enrich-product-metadata.js"
   },
   "author": "Konstantin Starostin",
   "license": "ISC",

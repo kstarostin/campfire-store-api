@@ -1,0 +1,607 @@
+[
+  {
+    "_id": "6a450ca257ff5b1b81780161",
+    "name": "Camano",
+    "manufacturer": "Werner",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 349,
+      "USD": 349
+    },
+    "descriptionI18n": {
+      "en": "The Werner Camano is Werner's award-winning low-angle touring kayak paddle — a mid-size dihedral fiberglass blade on a carbon-blend straight shaft for smooth, stable all-day strokes with minimal flutter. At 761 g (230 cm) with 650 cm² blade area (52 cm × 16.5 cm), it suits the widest range of paddlers. Smart-View adjustable ferrule offers solid one-piece feel with 15° feather increments; lengths from 205–260 cm in 5 cm steps. Premium swing weight and stiffness for relaxed touring on lakes, rivers, and coastal day trips.",
+      "de": "Das Werner Camano ist Werners preisgekröntes Low-Angle-Tourenpaddel — mittelgroße Dihedral-Fiberglasblatt auf Carbon-Mix-Geradschaft für ruhige, stabile Ganztages-Schläge mit wenig Flattern. 761 g (230 cm), 650 cm² Blattfläche (52 cm × 16,5 cm), für die meisten Paddler. Smart-View-Ferrule mit 15°-Feather-Stufen; Längen 205–260 cm in 5-cm-Schritten. Premium-Schwunggewicht und Steifigkeit für entspanntes Touren auf Seen, Flüssen und Küstentagesfahrten."
+    },
+    "manufacturerUrl": "https://www.wernerpaddles.com/products/werner-camano-2-piece-straight-shaft-kayak-paddle",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450ca257ff5b1b81780161-1782910192750-1_200.jpeg",
+          "altText": "Camano photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450ca257ff5b1b81780161-1782910192750-1_500.jpeg",
+          "altText": "Camano photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450ca257ff5b1b81780161-1782910192750-1_1000.jpeg",
+          "altText": "Camano photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450ca257ff5b1b81780161-1782910192750-1_2000.webp",
+          "altText": "Camano photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450ca257ff5b1b81780161-1782910192750-1_original.webp",
+          "altText": "Camano photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Award-winning low-angle paddle for efficient all-day touring.",
+      "de": "Preisgekröntes Low-Angle-Paddel für effizientes Ganztagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Touring paddle",
+          "de": "Tourenpaddel"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "220–260 cm",
+          "de": "220–260 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Low-angle touring",
+          "de": "Low-Angle-Touren"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450d9eabac12be3ec20b4f",
+    "name": "Ripple",
+    "manufacturer": "NRS",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 169,
+      "USD": 180
+    },
+    "descriptionI18n": {
+      "en": "The NRS Ripple is a tough, economical two-piece kayak paddle built for whitewater and versatile river use — asymmetrical fiberglass-reinforced ABS blades transfer power efficiently with minimal flutter, on a lightweight fiberglass shaft for comfortable swing weight and long-term durability. Medium blades (632 cm²; 18 cm × 43 cm) suit beginners and intermediates. Three-position ferrule sets 0° or 45° feather with left- or right-hand control; lengths 197–240 cm. ~1,077 g at 220 cm.",
+      "de": "Das NRS Ripple ist ein robustes, preiswertes Zweiteiler-Kajakpaddel für Wildwasser und vielseitigen Flusseinsatz — asymmetrische glasfaserverstärkte ABS-Blätter übertragen Kraft effizient mit wenig Flattern, auf leichter Glasfaser-Geradschaft für angenehmes Schwunggewicht und Langlebigkeit. Mittelgroße Blätter (632 cm²; 18 cm × 43 cm) für Einsteiger und Fortgeschrittene. Dreistufen-Ferrule mit 0° oder 45° Feather, Links- oder Rechtshand; Längen 197–240 cm. Ca. 1.077 g bei 220 cm."
+    },
+    "manufacturerUrl": "https://www.nrs.com/nrs-ripple-kayak-paddle/pdze",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450d9eabac12be3ec20b4f-1782910537392-1_200.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450d9eabac12be3ec20b4f-1782910537392-1_500.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450d9eabac12be3ec20b4f-1782910537392-1_1000.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450d9eabac12be3ec20b4f-1782910537392-1_2000.webp",
+          "altText": "Ripple photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450d9eabac12be3ec20b4f-1782910537392-1_original.webp",
+          "altText": "Ripple photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450d9eabac12be3ec20b4f-1782910537704-2_200.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450d9eabac12be3ec20b4f-1782910537704-2_500.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450d9eabac12be3ec20b4f-1782910537704-2_1000.jpeg",
+          "altText": "Ripple photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450d9eabac12be3ec20b4f-1782910537704-2_2000.webp",
+          "altText": "Ripple photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450d9eabac12be3ec20b4f-1782910537704-2_original.webp",
+          "altText": "Ripple photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Durable NRS paddle for whitewater and everyday river use.",
+      "de": "Robustes NRS-Paddel für Wildwasser und Flusseinsatz."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Kayak paddle",
+          "de": "Kajakpaddel"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "197–240 cm",
+          "de": "197–240 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Whitewater & touring",
+          "de": "Wildwasser & Touren"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450e5acf03cdab7897833d",
+    "name": "Meander",
+    "manufacturer": "Palm",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 105,
+      "USD": 115
+    },
+    "descriptionI18n": {
+      "en": "The Palm Meander is an easy-going touring buoyancy aid and a firm favourite for kayak and general watersports use — lightweight and slimline with front zip entry, secure waist buckle, 3D anti ride-up belt, and a zipped front pocket with clip-in point. PVC-free Gaia and EPE foam in nylon 420D ripstop; corrosion-free YKK zips. ISO 12402-5 certified with 45–55 N buoyancy by size (50 N at M/L). ~630 g (M/L).",
+      "de": "Die Palm Meander ist eine unkomplizierte Touren-Schwimmweste und Favorit für Kajak und Wassersport — leicht und schlank mit Front-Reißverschluss, Hüftschnalle, 3D Anti-Ride-Up-Gurt und Reißverschlusstasche mit Clip-In. PVC-freier Gaia- und EPE-Schaum in Nylon-420D-Ripstop; korrosionsfreie YKK-Reißverschlüsse. ISO 12402-5, 45–55 N Auftrieb je Größe (50 N bei M/L). Ca. 630 g (M/L)."
+    },
+    "manufacturerUrl": "https://palm.equipment/gb/touring-pfds/14-84-meander-pfd",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450e5acf03cdab7897833d-1782910782255-1_200.jpeg",
+          "altText": "Meander photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450e5acf03cdab7897833d-1782910782255-1_500.jpeg",
+          "altText": "Meander photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450e5acf03cdab7897833d-1782910782255-1_1000.jpeg",
+          "altText": "Meander photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450e5acf03cdab7897833d-1782910782255-1_2000.webp",
+          "altText": "Meander photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450e5acf03cdab7897833d-1782910782255-1_original.webp",
+          "altText": "Meander photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Lightweight touring buoyancy aid for comfortable all-day paddling.",
+      "de": "Leichte Touren-Schwimmweste für komfortables Ganztagespaddeln."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "50N buoyancy aid",
+          "de": "50N-Schwimmweste"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "XS/S–XL/XXL",
+          "de": "XS/S–XL/XXL"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Kayak touring",
+          "de": "Kajaktouren"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450fd2c6bd758c955ecd5f",
+    "name": "Sting Ray",
+    "manufacturer": "Aqua-Bound",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 149,
+      "USD": 160
+    },
+    "descriptionI18n": {
+      "en": "The Aqua-Bound Sting Ray Fiberglass 4-Piece is a packable low-angle touring kayak paddle — mid-size 597 cm² blades (16.5 × 46 cm) for efficient flatwater strokes with less fatigue. Fiberglass shaft and fiberglass-reinforced nylon blades; snap-button ferrule with 0° or 60° feather. Breaks into four pieces for travel, packrafting, and spare-paddle duty. ~950 g (220 cm). Lengths 200–240 cm.",
+      "de": "Das Aqua-Bound Sting Ray Fiberglass 4-Piece ist ein packbares Low-Angle-Tourenpaddel — mittelgroße 597 cm² Blätter (16,5 × 46 cm) für effiziente Flachwasser-Schläge mit weniger Ermüdung. Glasfaser-Schaft und glasfaserverstärkte Nylonblätter; Snap-Button-Ferrule mit 0° oder 60° Feather. Vier-teilig für Reise, Packraft und Reservepaddel. Ca. 950 g (220 cm). Längen 200–240 cm."
+    },
+    "manufacturerUrl": "https://www.aquabound.com/products/sting-ray-fiberglass-4-piece-snap-button-kayak-paddle",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450fd2c6bd758c955ecd5f-1782911090881-1_200.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450fd2c6bd758c955ecd5f-1782911090881-1_500.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450fd2c6bd758c955ecd5f-1782911090881-1_1000.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450fd2c6bd758c955ecd5f-1782911090881-1_2000.webp",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450fd2c6bd758c955ecd5f-1782911090881-1_original.webp",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450fd2c6bd758c955ecd5f-1782911091274-2_200.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450fd2c6bd758c955ecd5f-1782911091274-2_500.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450fd2c6bd758c955ecd5f-1782911091274-2_1000.jpeg",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450fd2c6bd758c955ecd5f-1782911091274-2_2000.webp",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450fd2c6bd758c955ecd5f-1782911091274-2_original.webp",
+          "altText": "Sting Ray photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Packable 4-piece paddle for flatwater touring and travel.",
+      "de": "Packbares 4-teiliges Paddel für Flachwasser-Touren und Reisen."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Touring paddle",
+          "de": "Tourenpaddel"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "200–240 cm",
+          "de": "200–240 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Flatwater touring",
+          "de": "Flachwasser-Touren"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4510843650989015c279a9",
+    "name": "Standard Rescue Throw Bag",
+    "manufacturer": "NRS",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 72,
+      "USD": 78
+    },
+    "descriptionI18n": {
+      "en": "The NRS Standard Rescue Throw Bag is a swiftwater safety essential — rugged Cordura bag with 75 ft (23 m) of floating 3/8\" yellow polypropylene rope rated at 1,900 lb (8.45 kN) tensile strength. Internal foam flotation keeps the bag on the surface; 2\" mesh panel aids drainage; barrel-lock drawstring with flared top for smooth throws and fast reload. Elastic loop and pocket fit a glow stick for low-light rescues. ~1.0 kg (2 lb 4 oz).",
+      "de": "Die NRS Standard Rescue Throw Bag ist ein Wildwasser-Sicherheits-Must-have — robuster Cordura-Sack mit 23 m schwimmendem 3/8\"-Polypropylen-Seil in Gelb, 1.900 lb (8,45 kN) Zugfestigkeit. Innenschaum hält den Sack an der Oberfläche; 2\"-Mesh für Ablauf; Barrel-Lock-Zugband mit ausgestelltem Top für saubere Würfe und schnelles Nachladen. Elastic-Loop und Tasche für Leuchtstab bei Dunkelheit. Ca. 1,0 kg."
+    },
+    "manufacturerUrl": "https://www.nrs.com/nrs-standard-rescue-throw-bag/pmit",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4510843650989015c279a9-1782911177578-1_200.jpeg",
+          "altText": "Standard Rescue Throw Bag photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4510843650989015c279a9-1782911177578-1_500.jpeg",
+          "altText": "Standard Rescue Throw Bag photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4510843650989015c279a9-1782911177578-1_1000.jpeg",
+          "altText": "Standard Rescue Throw Bag photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4510843650989015c279a9-1782911177578-1_2000.webp",
+          "altText": "Standard Rescue Throw Bag photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4510843650989015c279a9-1782911177578-1_original.webp",
+          "altText": "Standard Rescue Throw Bag photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Essential swiftwater throw rope for kayak rescue situations.",
+      "de": "Unverzichtbare Wildwasser-Wurfleine für Kajak-Rettung."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Throw bag",
+          "de": "Wurfleine"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "75 ft rope",
+          "de": "23 m Seil"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Swiftwater rescue",
+          "de": "Wildwasser-Rettung"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4510ecbb0199501f287ce7",
+    "name": "JayLow",
+    "manufacturer": "Yakima",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 229,
+      "USD": 249
+    },
+    "descriptionI18n": {
+      "en": "The Yakima JayLow is a versatile J-cradle rooftop kayak mount — carry one kayak in J-cradle position or two in vertical stacker mode, then fold flat when not in use. Fully assembled out of the box with tool-free installation on Yakima StreamLine, round, square, factory, or aerodynamic crossbars. Integrated cam lever adjusts the upright; includes heavy-duty straps and bow/stern tie-downs. Supports one boat up to 100 lb (45 kg) or two boats up to 130 lb (59 kg) combined. ~5 kg (11 lb).",
+      "de": "Der Yakima JayLow ist ein vielseitiger J-Cradle-Dach-Kajakträger — ein Kajak im J-Cradle oder zwei im vertikalen Stacker-Modus, flach klappbar bei Nichtgebrauch. Werkzeuglos montierbar auf Yakima StreamLine, Rund-, Vierkant-, Werks- oder Aerobars. Integrierter Cam-Hebel für die Aufrechtstellung; inkl. Heavy-Duty-Gurte und Bug-/Heckleinen. Ein Boot bis 45 kg oder zwei Boote zusammen bis 59 kg. Ca. 5 kg."
+    },
+    "manufacturerUrl": "https://yakima.com/products/jaylow",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4510ecbb0199501f287ce7-1782911332435-1_200.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4510ecbb0199501f287ce7-1782911332435-1_500.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4510ecbb0199501f287ce7-1782911332435-1_1000.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4510ecbb0199501f287ce7-1782911332435-1_2000.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4510ecbb0199501f287ce7-1782911332435-1_original.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4510ecbb0199501f287ce7-1782911332802-2_200.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4510ecbb0199501f287ce7-1782911332802-2_500.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4510ecbb0199501f287ce7-1782911332802-2_1000.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4510ecbb0199501f287ce7-1782911332802-2_2000.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4510ecbb0199501f287ce7-1782911332802-2_original.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4510ecbb0199501f287ce7-1782911333245-3_200.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4510ecbb0199501f287ce7-1782911333245-3_500.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4510ecbb0199501f287ce7-1782911333245-3_1000.jpeg",
+          "altText": "JayLow photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4510ecbb0199501f287ce7-1782911333245-3_2000.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4510ecbb0199501f287ce7-1782911333245-3_original.webp",
+          "altText": "JayLow photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Fold-flat J-cradle mount for one or two kayaks on the roof.",
+      "de": "Klappbarer J-Cradle-Träger für ein oder zwei Kajaks auf dem Dach."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Roof kayak mount",
+          "de": "Dach-Kajakträger"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "1–2 boats",
+          "de": "1–2 Boote"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Vehicle transport",
+          "de": "Fahrzeugtransport"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a45117b9fa77dcf70bb1d02",
+    "name": "Sensei 87",
+    "manufacturer": "HIKO",
+    "category": "6a3d2d3f9824a6c14ed21bff",
+    "priceI18n": {
+      "EUR": 355,
+      "USD": 383
+    },
+    "descriptionI18n": {
+      "en": "The HIKO Sensei 87 is a premium rand-style whitewater sprayskirt for large bighole cockpits (82–92 cm) — engineered for maximum implosion/explosion resistance and a secure bond between paddler and boat. Hollow-core EPDM rand, StoneBase 4.0 Delta e.prene periphery with Tedate edge coating, and DuraBase 4.0 Alpha deck panel with silicone underside grip. Soft DuoBase 3.0 neoprene waist tunnel; reinforced yellow T-bar pull loop for reliable exit. Waist sizes XS–2XL.",
+      "de": "Die HIKO Sensei 87 ist eine Premium-Rand-Spritzdecke für große Bighole-Luken (82–92 cm) — konstruiert für maximale Implosions-/Explosionsfestigkeit und sicheren Sitz. EPDM-Hohlkern-Rand, StoneBase-4.0-Delta-e.prene-Randbereich mit Tedate-Kantenschutz und DuraBase-4.0-Alpha-Teller mit Silikon-Unterseite. Weicher DuoBase-3.0-Neopren-Tunnel; verstärkte gelbe T-Bar-Auslöseschlaufe. Hüftgrößen XS–2XL."
+    },
+    "manufacturerUrl": "https://www.hiko.cz/products/sensei-87-sprayskirt-1",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45117b9fa77dcf70bb1d02-1782911512650-1_200.jpeg",
+          "altText": "Sensei 87 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45117b9fa77dcf70bb1d02-1782911512650-1_500.jpeg",
+          "altText": "Sensei 87 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45117b9fa77dcf70bb1d02-1782911512650-1_1000.jpeg",
+          "altText": "Sensei 87 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45117b9fa77dcf70bb1d02-1782911512650-1_2000.webp",
+          "altText": "Sensei 87 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45117b9fa77dcf70bb1d02-1782911512650-1_original.webp",
+          "altText": "Sensei 87 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "High-end rand sprayskirt for demanding whitewater kayaking.",
+      "de": "High-End-Rand-Spritzdecke für anspruchsvolles Wildwasser."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Whitewater sprayskirt",
+          "de": "WW-Spritzdecke"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "Bighole 87",
+          "de": "Bighole 87"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Whitewater kayak",
+          "de": "Wildwasser-Kajak"
+        }
+      }
+    ]
+  }
+]

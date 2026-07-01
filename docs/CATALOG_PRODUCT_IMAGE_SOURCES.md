@@ -80,7 +80,7 @@ Already in seed with `originalUrl` — re-harvest only if files missing.
 | `hiking-pants.json` | 10 | Fjällräven, Patagonia, RevolutionRace |
 | `mountain-bikes.json` | 11 | Cube, Canyon, Scott |
 | `road-bikes.json` | 6 | Cube, Canyon, Trek |
-| `ski.json` | 1 | Blizzard Bonafide |
+| `all-mountain-skis.json` | 1 | Blizzard Bonafide |
 | `tents.json` | 1 | Naturehike |
 | `touring-kayaks.json` | 1 | Rebel Kayaks ILAGA |
 

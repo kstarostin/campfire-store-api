@@ -15,23 +15,29 @@ const Language = require('../../models/languageModel');
 const { allowedCurrencies, allowedLanguages } = require('../../utils/config');
 
 const dataDir = __dirname;
+const productsDir = path.join(dataDir, 'products');
 
 const readJson = (filename) =>
   JSON.parse(fs.readFileSync(path.join(dataDir, filename), 'utf-8'));
+
+const readProductFiles = () => {
+  const files = fs
+    .readdirSync(productsDir)
+    .filter((name) => name.endsWith('.json'))
+    .sort();
+
+  return files.map((filename) => ({
+    filename,
+    products: readJson(path.join('products', filename)),
+  }));
+};
 
 const seedData = {
   titles: readJson('titles.json'),
   users: readJson('users.json'),
   categories: readJson('categories.json'),
   badges: readJson('badges.json'),
-  backpacks: readJson('products/backpacks.json'),
-  gravelBikes: readJson('products/gravel-bikes.json'),
-  hikingPants: readJson('products/hiking-pants.json'),
-  mountainBikes: readJson('products/mountain-bikes.json'),
-  roadBikes: readJson('products/road-bikes.json'),
-  ski: readJson('products/ski.json'),
-  tents: readJson('products/tents.json'),
-  touringKayaks: readJson('products/touring-kayaks.json'),
+  productFiles: readProductFiles(),
   carts: readJson('carts.json'),
   cartEntries: readJson('cartEntries.json'),
   wishlists: readJson('wishlists.json'),
@@ -66,14 +72,17 @@ const performImport = async () => {
   await Badge.create(seedData.badges);
 
   console.log('Creating products...');
-  await Product.create(seedData.backpacks);
-  await Product.create(seedData.gravelBikes);
-  await Product.create(seedData.hikingPants);
-  await Product.create(seedData.mountainBikes);
-  await Product.create(seedData.roadBikes);
-  await Product.create(seedData.ski);
-  await Product.create(seedData.tents);
-  await Product.create(seedData.touringKayaks);
+  let productCount = 0;
+  for (const { filename, products } of seedData.productFiles) {
+    if (!products.length) {
+      console.log(`  Skipping empty ${filename}`);
+      continue;
+    }
+    await Product.create(products);
+    productCount += products.length;
+    console.log(`  ${filename}: ${products.length}`);
+  }
+  console.log(`  Total products: ${productCount}`);
 
   console.log('Creating carts...');
   await Cart.create(seedData.carts);

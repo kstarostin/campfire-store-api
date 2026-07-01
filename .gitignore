@@ -42,3 +42,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Local product image staging (see dev-tools/PRODUCT_EXPANSION_WORKFLOW.md)
+/dev-tools/image-staging/*
+!/dev-tools/image-staging/.gitkeep

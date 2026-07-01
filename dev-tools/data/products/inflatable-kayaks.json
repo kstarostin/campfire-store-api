@@ -1,0 +1,965 @@
+[
+  {
+    "_id": "6a45042bf884e3346bd6a0ac",
+    "name": "Twist 2/1",
+    "manufacturer": "Gumotex",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 799,
+      "USD": 869
+    },
+    "descriptionI18n": {
+      "en": "The Gumotex Twist 2/1 is a compact, lightweight inflatable kayak for recreation and touring on lakes and calm rivers. At just 13 kg with a 360 cm × 83 cm hull and 180 kg max load, it converts easily between solo and tandem setups thanks to a variable seating system — one seat centred for solo touring with generous legroom and gear space, or two seats for paddling as a pair. Built from durable Nitrilon with a three-chamber safety design, inflatable seats with adjustable backrests, tracking fin, bow/stern grab handles, and a compact 53 × 36 × 20 cm pack size for travel.",
+      "de": "Das Gumotex Twist 2/1 ist ein kompaktes, leichtes Aufblas-Kajak für Freizeit und Touren auf Seen und ruhigen Flüssen. Nur 13 kg bei 360 cm × 83 cm und 180 kg Zuladung — dank variablem Sitzsystem schnell von Solo auf Tandem umrüstbar: ein Sitz mittig für großzügigen Beinraum und Gepäck, oder zwei Sitze für zu zweit. Robuster Nitrilon-Rumpf mit Drei-Kammer-Sicherheit, aufblasbare Sitze mit verstellbarer Lehne, Tracking-Finne, Griffe an Bug und Heck sowie Packmaß 53 × 36 × 20 cm für unterwegs."
+    },
+    "manufacturerUrl": "https://gumotexboats.com/eu/product/twist-2-1/",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45042bf884e3346bd6a0ac-1782908080880-1_200.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45042bf884e3346bd6a0ac-1782908080880-1_500.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45042bf884e3346bd6a0ac-1782908080880-1_1000.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45042bf884e3346bd6a0ac-1782908080880-1_2000.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45042bf884e3346bd6a0ac-1782908080880-1_original.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45042bf884e3346bd6a0ac-1782908081224-2_200.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45042bf884e3346bd6a0ac-1782908081224-2_500.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45042bf884e3346bd6a0ac-1782908081224-2_1000.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45042bf884e3346bd6a0ac-1782908081224-2_2000.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45042bf884e3346bd6a0ac-1782908081224-2_original.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45042bf884e3346bd6a0ac-1782908081529-3_200.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45042bf884e3346bd6a0ac-1782908081529-3_500.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45042bf884e3346bd6a0ac-1782908081529-3_1000.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45042bf884e3346bd6a0ac-1782908081529-3_2000.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45042bf884e3346bd6a0ac-1782908081529-3_original.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45042bf884e3346bd6a0ac-1782908081859-4_200.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45042bf884e3346bd6a0ac-1782908081859-4_500.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45042bf884e3346bd6a0ac-1782908081859-4_1000.jpeg",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45042bf884e3346bd6a0ac-1782908081859-4_2000.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45042bf884e3346bd6a0ac-1782908081859-4_original.webp",
+          "altText": "Twist 2/1 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Light 1–2 person inflatable for lakes and calm-river touring.",
+      "de": "Leichtes 1–2-Person-Aufblas-Kajak für Seen und ruhige Flüsse."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable tandem/solo",
+          "de": "Aufblas Solo/Tandem"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "360 cm",
+          "de": "360 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & calm rivers",
+          "de": "Seen & ruhige Flüsse"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4504f4046db0918409b20f",
+    "name": "Seawave",
+    "manufacturer": "Gumotex",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 1499,
+      "USD": 1629
+    },
+    "descriptionI18n": {
+      "en": "The Gumotex Seawave is a fast, versatile inflatable touring kayak for sea, lakes, and calm rivers — configurable for one, two, or three paddlers with movable inflatable seats. Its long narrow 455 cm × 80 cm hull with pronounced keel, floor reinforcements, and tracking fin delivers excellent glide and directional stability; optional cockpit covers and rudder extend it into sheltered coastal touring. At 17.5 kg with 250 kg max load and durable Nitrilon construction (0.25 bar, multi-chamber safety), it packs to 68 × 43 × 30 cm with a 100 L drybag for expedition carry.",
+      "de": "Das Gumotex Seawave ist ein schnelles, vielseitiges Aufblas-Tourenkajak für Meer, Seen und ruhige Flüsse — für ein, zwei oder drei Paddler mit verschiebbaren aufblasbaren Sitzen. Der lange, schmale 455 cm × 80 cm Rumpf mit ausgeprägter Kielrinne, Bodenverstärkungen und Tracking-Finne sorgt für Tempo und Kursstabilität; optionale Cockpit-Abdeckungen und Ruder erweitern es für Küstentouren. 17,5 kg bei 250 kg Zuladung, robuster Nitrilon (0,25 bar, Mehrkammer-Sicherheit), Packmaß 68 × 43 × 30 cm mit 100-L-Trockensack."
+    },
+    "manufacturerUrl": "https://kanu-online.com/en/products/kajaks-gumotex-seawave",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4504f4046db0918409b20f-1782908267488-1_200.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4504f4046db0918409b20f-1782908267488-1_500.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4504f4046db0918409b20f-1782908267488-1_1000.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4504f4046db0918409b20f-1782908267488-1_2000.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4504f4046db0918409b20f-1782908267488-1_original.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4504f4046db0918409b20f-1782908267820-2_200.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4504f4046db0918409b20f-1782908267820-2_500.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4504f4046db0918409b20f-1782908267820-2_1000.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4504f4046db0918409b20f-1782908267820-2_2000.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4504f4046db0918409b20f-1782908267820-2_original.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4504f4046db0918409b20f-1782908268297-3_200.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4504f4046db0918409b20f-1782908268297-3_500.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4504f4046db0918409b20f-1782908268297-3_1000.jpeg",
+          "altText": "Seawave photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4504f4046db0918409b20f-1782908268297-3_2000.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4504f4046db0918409b20f-1782908268297-3_original.webp",
+          "altText": "Seawave photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Fast 1–3 person inflatable for sea touring and expeditions.",
+      "de": "Schnelles 1–3-Person-Aufblas-Kajak für Meer und Expeditionen."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable sea/touring",
+          "de": "Aufblas Meer/Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "455 cm",
+          "de": "455 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Sea, lakes & rivers",
+          "de": "Meer, Seen & Flüsse"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a45065b3abd9b4ebe0695da",
+    "name": "AdvancedFrame Ultralite",
+    "manufacturer": "Advanced Elements",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 799,
+      "USD": 849
+    },
+    "descriptionI18n": {
+      "en": "The Advanced Elements AdvancedFrame Ultralite is a solo inflatable kayak built for high performance in the lightest package possible — just 7.9 kg (17.5 lb) at 317 cm × 81 cm with 102 kg max capacity. Aluminum rib-frame panels in the bow and stern mimic hard-shell tracking while ultra-light three-layer polyurethane construction and a foam floor keep weight down. Sets up in minutes with a large cockpit opening, high-back seat, inflatable foot brace, skeg fin, bungee deck lacing, and onboard storage — ideal for remote lakes, calm rivers, and fly-in adventures. Folds to 79 × 46 × 15 cm.",
+      "de": "Das Advanced Elements AdvancedFrame Ultralite ist ein Solo-Aufblas-Kajak für Höchstleistung im leichtesten Paket — nur 7,9 kg bei 317 cm × 81 cm und 102 kg Zuladung. Aluminium-Rippenrahmen in Bug und Heck imitieren Hardshell-Kursführung, ultraleichte Drei-Lagen-Polyurethan-Konstruktion und Schaum-Boden halten das Gewicht niedrig. In Minuten aufgebaut mit großer Cockpit-Öffnung, Hochlehne, aufblasbarer Fußstütze, Skeg-Finne, Deck-Gepäcknetzen und Stauraum — ideal für entlegene Seen, ruhige Flüsse und Fly-in-Touren. Packmaß 79 × 46 × 15 cm."
+    },
+    "manufacturerUrl": "https://www.confluenceoutdoor.com/products/advanced-elements-outer-cover-advancedframe-ultralite-ae3022-oc?variant=47216675389741",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a45065b3abd9b4ebe0695da-1782908682965-1_200.jpeg",
+          "altText": "AdvancedFrame Ultralite photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a45065b3abd9b4ebe0695da-1782908682965-1_500.jpeg",
+          "altText": "AdvancedFrame Ultralite photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a45065b3abd9b4ebe0695da-1782908682965-1_1000.jpeg",
+          "altText": "AdvancedFrame Ultralite photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a45065b3abd9b4ebe0695da-1782908682965-1_2000.webp",
+          "altText": "AdvancedFrame Ultralite photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a45065b3abd9b4ebe0695da-1782908682965-1_original.webp",
+          "altText": "AdvancedFrame Ultralite photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Ultralight solo inflatable with rib-frame tracking performance.",
+      "de": "Ultraleichtes Solo-Aufblas-Kajak mit Rippenrahmen-Performance."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable solo touring",
+          "de": "Aufblas Solo-Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "317 cm (10 ft 5 in)",
+          "de": "317 cm (10 ft 5 in)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & calm water",
+          "de": "Seen & ruhiges Wasser"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4508ffa3e4ad6c598a2f9f",
+    "name": "X500 1P",
+    "manufacturer": "Itiwit",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 659,
+      "USD": 719
+    },
+    "descriptionI18n": {
+      "en": "The Itiwit Strenfit X500 1P is Decathlon's drop-stitch inflatable touring kayak for intermediate solo paddlers — a rigid sit-in design that fits in a backpack yet paddles like a hard shell on lakes, calm rivers, and sheltered coastal waters. At 380 cm × 64 cm and 18 kg with 125 kg max load, its V-shaped hull limits drag and tracks without a fin. Inflates in about 6 minutes at 15 PSI (1.03 bar) with six independent air chambers, adjustable footrests, a high-density foam seat, and cockpit combing compatible with spray skirts. Includes backpack, seat, footrest, and repair kit — pump and paddle sold separately.",
+      "de": "Das Itiwit Strenfit X500 1P ist Decathlons Drop-Stitch-Tourenkajak für fortgeschrittene Solo-Paddler — sit-in-Design im Rucksack-Format mit Hartschalen-Feeling auf Seen, ruhigen Flüssen und geschützten Küstengewässern. 380 cm × 64 cm, 18 kg, 125 kg Zuladung; V-Rumpf für Tempo und Kurs ohne Finne. Aufbau in ca. 6 Minuten bei 15 PSI (1,03 bar), sechs unabhängige Luftkammern, verstellbare Fußstütze, Schaumstoffsitz und Cockpitrand für Spritzdecken. Mit Rucksack, Sitz, Fußstütze und Reparaturset — Pumpe und Paddel separat."
+    },
+    "manufacturerUrl": "https://www.decathlon.de/p/kajak-aufblasbar-hochdruck-drop-stitch-1-sitzer-x500-touring/148573/c210c135c2m8403087",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4508ffa3e4ad6c598a2f9f-1782909492685-1_200.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4508ffa3e4ad6c598a2f9f-1782909492685-1_500.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4508ffa3e4ad6c598a2f9f-1782909492685-1_1000.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4508ffa3e4ad6c598a2f9f-1782909492685-1_2000.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4508ffa3e4ad6c598a2f9f-1782909492685-1_original.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4508ffa3e4ad6c598a2f9f-1782909493433-2_200.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4508ffa3e4ad6c598a2f9f-1782909493433-2_500.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4508ffa3e4ad6c598a2f9f-1782909493433-2_1000.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4508ffa3e4ad6c598a2f9f-1782909493433-2_2000.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4508ffa3e4ad6c598a2f9f-1782909493433-2_original.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4508ffa3e4ad6c598a2f9f-1782909494535-3_200.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4508ffa3e4ad6c598a2f9f-1782909494535-3_500.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4508ffa3e4ad6c598a2f9f-1782909494535-3_1000.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4508ffa3e4ad6c598a2f9f-1782909494535-3_2000.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4508ffa3e4ad6c598a2f9f-1782909494535-3_original.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4508ffa3e4ad6c598a2f9f-1782909495581-4_200.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4508ffa3e4ad6c598a2f9f-1782909495581-4_500.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4508ffa3e4ad6c598a2f9f-1782909495581-4_1000.jpeg",
+          "altText": "X500 1P photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4508ffa3e4ad6c598a2f9f-1782909495581-4_2000.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4508ffa3e4ad6c598a2f9f-1782909495581-4_original.webp",
+          "altText": "X500 1P photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Drop-stitch solo sit-in for serious day touring.",
+      "de": "Drop-Stitch-Solo-Sit-in für anspruchsvolle Tagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable sit-in solo",
+          "de": "Aufblas Sit-in Solo"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "380 cm",
+          "de": "380 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Sea, lakes & rivers",
+          "de": "Meer, Seen & Flüsse"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450a346aa5c71f1c32252b",
+    "name": "Steam 312",
+    "manufacturer": "Aqua Marina",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 449,
+      "USD": 489
+    },
+    "descriptionI18n": {
+      "en": "The Aqua Marina Steam 312 (ST-312) is a premium solo inflatable kayak for touring and mild whitewater — welded reinforced-PVC tubes with a removable 7 cm drop-stitch high-pressure floor for rigidity and responsive handling. At 312 cm × 90 cm and 11.5 kg with 110 kg max load, its streamlined hull tracks well with twin centre fins. Self-bailing drain valves suit river and coastal use; Deck Shield, cargo bungees, and adjustable footrest add comfort. Package typically includes premium seat, pump, fins, 10 L dry bag, and zip backpack.",
+      "de": "Das Aqua Marina Steam 312 (ST-312) ist ein Premium-Solo-Aufblas-Kajak für Touren und leichtes Wildwasser — verschweißte verstärkte PVC-Schläuche mit abnehmbarem 7 cm Drop-Stitch-Hochdruckboden für Steifigkeit und direktes Handling. 312 cm × 90 cm, 11,5 kg, 110 kg Zuladung; stromlinienförmiger Rumpf mit zwei Mittelfinnen. Selbstentwässernde Ventile für Fluss und Küste; Deck Shield, Gepäcknetze und verstellbare Fußstütze. Paket meist mit Premium-Sitz, Pumpe, Finnen, 10-L-Trockensack und Zip-Rucksack."
+    },
+    "manufacturerUrl": "https://aquamarina.com/products/reinforced-kayak/steam/",
+    "taglineI18n": {
+      "en": "Rigid solo inflatable for touring and mild whitewater.",
+      "de": "Steifes Solo-Aufblas-Kajak für Touren und leichtes Wildwasser."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable all-round",
+          "de": "Aufblas Allround"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "312 cm (10 ft 3 in)",
+          "de": "312 cm (10 ft 3 in)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes, rivers & coast",
+          "de": "Seen, Flüsse & Küste"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450a346aa5c71f1c32252b-1782909617950-1_200.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450a346aa5c71f1c32252b-1782909617950-1_500.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450a346aa5c71f1c32252b-1782909617950-1_1000.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450a346aa5c71f1c32252b-1782909617950-1_2000.webp",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450a346aa5c71f1c32252b-1782909617950-1_original.webp",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450a346aa5c71f1c32252b-1782909618338-2_200.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450a346aa5c71f1c32252b-1782909618338-2_500.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450a346aa5c71f1c32252b-1782909618338-2_1000.jpeg",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450a346aa5c71f1c32252b-1782909618338-2_2000.webp",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450a346aa5c71f1c32252b-1782909618338-2_original.webp",
+          "altText": "Steam 312 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450acaa39cdba95f9db7c3",
+    "name": "Excursion Pro K2",
+    "manufacturer": "Intex",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 369,
+      "USD": 398
+    },
+    "descriptionI18n": {
+      "en": "The Intex Excursion Pro K2 is a budget-friendly tandem inflatable kayak for lakes, rivers, and calm coastal water — Super-Tough 3-ply PVC laminate with a polyester core for abrasion and UV resistance. At 384 cm × 94 cm and about 16 kg with 181 kg max load, it paddles solo or as a pair with two adjustable bucket seats, floor-mounted footrests, and removable skegs for tracking. Fishing rod holders, accessory mounting bracket, bow/stern D-ring storage, and grab handles round out the kit — includes dual aluminium paddles, high-output pump, carry bag, and repair patch.",
+      "de": "Das Intex Excursion Pro K2 ist ein preiswertes Tandem-Aufblas-Kajak für Seen, Flüsse und ruhige Küstengewässer — Super-Tough 3-lagiges PVC-Laminat mit Polyesterkern gegen Abrieb und UV. 384 cm × 94 cm, ca. 16 kg, 181 kg Zuladung; solo oder zu zweit mit zwei verstellbaren Eimersitzen, bodenmontierten Fußstützen und abnehmbaren Skegs. Rutenhalter, Zubehör-Halterung, Bug-/Heck-D-Ringe und Griffe — im Set zwei Alu-Paddel, Hochleistungspumpe, Tragetasche und Reparaturflicken."
+    },
+    "manufacturerUrl": "https://intexcorp.com/products/sporting-goods/professional-series-boats/excursion-pro-k2-kayak/",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450acaa39cdba95f9db7c3-1782909758336-1_200.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450acaa39cdba95f9db7c3-1782909758336-1_500.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450acaa39cdba95f9db7c3-1782909758336-1_1000.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450acaa39cdba95f9db7c3-1782909758336-1_2000.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450acaa39cdba95f9db7c3-1782909758336-1_original.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450acaa39cdba95f9db7c3-1782909758698-2_200.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450acaa39cdba95f9db7c3-1782909758698-2_500.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450acaa39cdba95f9db7c3-1782909758698-2_1000.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450acaa39cdba95f9db7c3-1782909758698-2_2000.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450acaa39cdba95f9db7c3-1782909758698-2_original.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450acaa39cdba95f9db7c3-1782909759120-3_200.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450acaa39cdba95f9db7c3-1782909759120-3_500.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450acaa39cdba95f9db7c3-1782909759120-3_1000.jpeg",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450acaa39cdba95f9db7c3-1782909759120-3_2000.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450acaa39cdba95f9db7c3-1782909759120-3_original.webp",
+          "altText": "Excursion Pro K2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Affordable tandem inflatable kit for casual lake and river days.",
+      "de": "Günstiges Tandem-Aufblas-Set für entspannte See- und Flusstage."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable tandem recreational",
+          "de": "Aufblas Tandem Freizeit"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "384 cm (12 ft 7 in)",
+          "de": "384 cm (12 ft 7 in)"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & calm rivers",
+          "de": "Seen & ruhige Flüsse"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450b498989c70cefa976a9",
+    "name": "Yukon",
+    "manufacturer": "Sevylor",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 399,
+      "USD": 439
+    },
+    "descriptionI18n": {
+      "en": "The Sevylor Yukon KCC380 is a two-person touring inflatable kayak for lakes, calm rivers, and mild coastal water — ideal for day trips and multi-day excursions with partial bow and stern spray decks for a drier ride. At 390 cm × 89 cm and 17 kg with 210 kg max load, its broad stable hull converts between solo and tandem with removable adjustable seats and footrests. PVC-coated nylon construction with three air chambers, welded directional strake, removable fin, cargo nets, mesh and waterproof pockets, and neoprene paddle guards. Includes backpack carry bag, pressure gauge, and owner's manual.",
+      "de": "Das Sevylor Yukon KCC380 ist ein Zwei-Personen-Touren-Aufblas-Kajak für Seen, ruhige Flüsse und leichte Küstengewässer — ideal für Tages- und Mehrtagestouren mit partiellem Spritzdeck an Bug und Heck. 390 cm × 89 cm, 17 kg, 210 kg Zuladung; breiter stabiler Rumpf, umrüstbar Solo/Tandem mit abnehmbaren verstellbaren Sitzen und Fußstützen. PVC-beschichtetes Nylon, drei Luftkammern, geschweißte Steuerleiste, abnehmbare Finne, Gepäcknetze, Mesh- und wasserdichte Taschen. Mit Rucksack-Tragetasche, Manometer und Handbuch."
+    },
+    "manufacturerUrl": "https://www.sevylor-europe.com/inflatable-kayaks-canoes/yukon-kcc380-inflatable-kayak/SP_1765427.html",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450b498989c70cefa976a9-1782909833269-1_200.jpeg",
+          "altText": "Yukon photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450b498989c70cefa976a9-1782909833269-1_500.jpeg",
+          "altText": "Yukon photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450b498989c70cefa976a9-1782909833269-1_1000.jpeg",
+          "altText": "Yukon photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450b498989c70cefa976a9-1782909833269-1_2000.webp",
+          "altText": "Yukon photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450b498989c70cefa976a9-1782909833269-1_original.webp",
+          "altText": "Yukon photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Stable tandem touring inflatable for multi-day lake trips.",
+      "de": "Stabiles Tandem-Touren-Aufblas-Kajak für Mehrtages-Seen-Touren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable tandem touring",
+          "de": "Aufblas Tandem Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "390 cm",
+          "de": "390 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes, rivers & coast",
+          "de": "Seen, Flüsse & Küste"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450b9f3267aaff8199e191",
+    "name": "Holiday 2",
+    "manufacturer": "Grabner",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 2690,
+      "USD": 2899
+    },
+    "descriptionI18n": {
+      "en": "The Grabner Holiday 2 is a premium Austrian inflatable touring kayak — a lightweight classic for one or two paddlers on rivers, lakes, and sheltered sea, rated to WW Class II. At 395 cm × 75 cm and just 17 kg with 190 kg payload, its 1100 dtex EPDM rubber hull inflates in about 6 minutes at 0.3 bar with three air chambers and hot-vulcanised seams. High freeboard sheds spray; adjustable seat spacing suits solo or tandem; bow and stern storage (15 L / 25 L). Includes two seats, two footrests, repair kit, and valve tools — packs to 55 × 35 × 20 cm.",
+      "de": "Das Grabner Holiday 2 ist ein premium österreichisches Aufblas-Tourenkajak — leichter Klassiker für ein oder zwei Paddler auf Flüssen, Seen und geschütztem Meer, bis WW II. 395 cm × 75 cm, nur 17 kg, 190 kg Zuladung; 1100-dtex-EPDM-Gummi, ca. 6 Minuten Aufbau bei 0,3 bar, drei Kammern, heißvulkanisierte Nähte. Hoher Freibord gegen Spritzwasser; verstellbarer Sitzabstand Solo/Tandem; Bug-/Heck-Stauraum (15 L / 25 L). Mit zwei Sitzen, zwei Fußstützen, Reparaturset und Ventilwerkzeug — Packmaß 55 × 35 × 20 cm."
+    },
+    "manufacturerUrl": "https://www.grabner.com/en/shop/products/inflatable-boats/kayaks/holiday",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450b9f3267aaff8199e191-1782909955389-1_200.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450b9f3267aaff8199e191-1782909955389-1_500.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450b9f3267aaff8199e191-1782909955389-1_1000.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450b9f3267aaff8199e191-1782909955389-1_2000.webp",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450b9f3267aaff8199e191-1782909955389-1_original.webp",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450b9f3267aaff8199e191-1782909955677-2_200.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450b9f3267aaff8199e191-1782909955677-2_500.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450b9f3267aaff8199e191-1782909955677-2_1000.jpeg",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450b9f3267aaff8199e191-1782909955677-2_2000.webp",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450b9f3267aaff8199e191-1782909955677-2_original.webp",
+          "altText": "Holiday 2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Premium EPDM inflatable for rivers, lakes, and Class II water.",
+      "de": "Premium-EPDM-Aufblas-Kajak für Fluss, See und WW II."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable sit-in touring",
+          "de": "Aufblas Sit-in Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "395 cm",
+          "de": "395 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Rivers, lakes & WW II",
+          "de": "Flüsse, Seen & WW II"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a450c1819b9507a085d4085",
+    "name": "Thaya",
+    "manufacturer": "Gumotex",
+    "category": "661f8a95fc66c5cca8a69bcb",
+    "priceI18n": {
+      "EUR": 1550,
+      "USD": 1790
+    },
+    "descriptionI18n": {
+      "en": "The Gumotex Thaya is a drop-stitch inflatable kayak combining Nitrilon side tubes with a rigid high-pressure floor for stability, stiffness, and manoeuvrability on lakes and rivers up to WW II. At 410 cm × 89 cm and 17.5 kg with 230 kg max load, it configures for one paddler, two adults, or two adults plus a child. Drop-stitch inflatable seats, front and rear adjustable footrests, tracking fin, bow/stern safety lines, and optional foredeck for coastal spray. Includes two seats, two footrests, fin, repair kit, valve wrench, and 100 L drybag — packs to 63 × 40 × 26 cm.",
+      "de": "Das Gumotex Thaya ist ein Drop-Stitch-Aufblas-Kajak mit Nitrilon-Seitenkammern und steifem Hochdruckboden für Stabilität, Steifigkeit und Wendigkeit auf Seen und Flüssen bis WW II. 410 cm × 89 cm, 17,5 kg, 230 kg Zuladung; für einen Paddler, zwei Erwachsene oder zwei Erwachsene plus Kind. Drop-Stitch-Sitze, verstellbare Fußstützen vorne und hinten, Tracking-Finne, Sicherheitsleinen und optionales Vorderdeck. Mit zwei Sitzen, zwei Fußstützen, Finne, Reparaturset, Ventilschlüssel und 100-L-Trockensack — Packmaß 63 × 40 × 26 cm."
+    },
+    "manufacturerUrl": "https://gumotexboats.com/eu/product/thaya/",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a450c1819b9507a085d4085-1782910096357-1_200.jpeg",
+          "altText": "Thaya photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a450c1819b9507a085d4085-1782910096357-1_500.jpeg",
+          "altText": "Thaya photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a450c1819b9507a085d4085-1782910096357-1_1000.jpeg",
+          "altText": "Thaya photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a450c1819b9507a085d4085-1782910096357-1_2000.webp",
+          "altText": "Thaya photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a450c1819b9507a085d4085-1782910096357-1_original.webp",
+          "altText": "Thaya photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Drop-stitch family inflatable for lakes and WW II rivers.",
+      "de": "Drop-Stitch-Familien-Aufblas-Kajak für Seen und WW-II-Flüsse."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable drop-stitch",
+          "de": "Aufblas Drop-Stitch"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "410 cm",
+          "de": "410 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & WW II rivers",
+          "de": "Seen & WW-II-Flüsse"
+        }
+      }
+    ]
+  }
+]

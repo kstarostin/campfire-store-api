@@ -1,0 +1,144 @@
+[
+  {
+    "_id": "662e13bb2a8d209afe2adb9c",
+    "name": "Nikka Shorts Curved Women",
+    "manufacturer": "Fjällräven",
+    "category": "6a3d2d3f9824a6c14ed21c08",
+    "priceI18n": {
+      "EUR": 129.95,
+      "USD": 139.95
+    },
+    "descriptionI18n": {
+      "en": "High-performance trekking shorts made from stretch fabric and G-1000 for excellent freedom of movement and durability. This model with Curved Fit has a little extra width over the hips and thighs, and a slightly more accentuated waist that other models. This gives a more comfortable pair of shorts that sit better on a curvy figure, without being tight, bunching or having a gap at the back of the waist. The waist is cut lower at the front and higher at the back so they sit well under a backpack and when you are active. Stretch fabric at the lower back and G-1000 reinforcements over the rear. Hand pockets with zippers are positioned so they are accessible even when carrying a backpack with a hipbelt. There is a large leg pocket with a flap and a smaller inner pocket in mesh on the right leg, plus a smaller leg pocket for a mobile phone or GPS on the left leg. A loop at the waist can be used to attach a knife, camera or any other smaller piece of equipment wanted close at hand.",
+      "de": "Hochtechnische Trekkingshorts aus Stretchmaterial und G-1000® für maximale Bewegungsfreiheit und Strapazierfähigkeit. Dieses Modell betont dank dem femininen Curved Fit die Taille und bietet mehr Weite an Gesäß und Oberschenkeln. So ergibt sich eine Shorts mit bequemer Passform und gutem Sitz – ohne einzuengen, Falten zu werfen oder am Rücken abzustehen. Der Bund ist hinten höher geschnitten als vorn, damit die Hose auch beim Tragen eines Rucksacks und bei bewegungsintensiven Aktivitäten bestens sitzt. Stretchmaterial im Lendenrückenbereich und Verstärkungen aus G-1000® am Gesäß. Die Reißverschluss-Einschubtaschen sind so angeordnet, dass sie auch beim Tragen eines Rucksacks mit Hüftgurt noch zugänglich sind. Eine große Beintasche mit Patte und einer kleineren Innentasche aus Mesh auf dem rechten Bein. Eine kleinere Beintasche fürs Handy oder GPS-Gerät auf dem linken Bein. An der Schlaufe am Bund können Messer, Kamera oder andere Dingen, die man unterwegs schnell zur Hand haben möchte, befestigt werden."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e13bb2a8d209afe2adb9c-1714295949487-1_original.webp",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/medium/product-662e13bb2a8d209afe2adb9c-1714295949487-1_1000.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/large/product-662e13bb2a8d209afe2adb9c-1714295949487-1_2000.webp",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e13bb2a8d209afe2adb9c-1714295949487-1_500.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e13bb2a8d209afe2adb9c-1714295949487-1_200.jpeg",
+          "altText": "Nikka Shorts Curved Women photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/women/trousers/shorts-skirts/nikka-shorts-curved-w",
+    "taglineI18n": {
+      "en": "Curved-cut hiking shorts for warm trail days.",
+      "de": "Wandershorts mit ergonomischem Schnitt für warme Trailtage."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "G-1000 Lite",
+          "de": "G-1000 Lite"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Summer hiking",
+          "de": "Sommer-Wandern"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "662e17849128c8b054fbe0c8",
+    "name": "Women's Pack Out Tights",
+    "manufacturer": "Patagonia",
+    "category": "6a3d2d3f9824a6c14ed21c08",
+    "priceI18n": {
+      "EUR": 120,
+      "USD": 112
+    },
+    "descriptionI18n": {
+      "en": "Pack it in, pack it out: These versatile tights are just what you need for increased mobility in the wilderness. Inseam is 29\". Made in a Fair Trade Certified™ factory.",
+      "de": "Was man mit in die Natur nimmt, kann man auch wieder zurückbringen: Diese vielseitige Tights hat verstärkte Einsätze an den Knien und am Gesäß für zusätzliche Strapazierfähigkeit und ist perfekt für optimale Beweglichkeit in der Wildnis. Beinlänge 71 cm (Innennaht). Hergestellt in einem Fair Trade Certified™-Betrieb."
+    },
+    "images": [
+      {
+        "original": {
+          "url": "/img/products/original/product-662e17849128c8b054fbe0c8-1714296964100-1_original.webp",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/webp"
+        },
+        "large": {
+          "url": "/img/products/large/product-662e17849128c8b054fbe0c8-1714296964100-1_2000.webp",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/webp"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-662e17849128c8b054fbe0c8-1714296964100-1_1000.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-662e17849128c8b054fbe0c8-1714296964100-1_500.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        },
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-662e17849128c8b054fbe0c8-1714296964100-1_200.jpeg",
+          "altText": "Women's Pack Out Tights photo",
+          "mimeType": "image/jpeg"
+        }
+      }
+    ],
+    "manufacturerUrl": "https://www.patagonia.com/product/womens-pack-out-active-tights/21995.html?dwvar_21995_color=MANR&cgid=womens-pants-jeans",
+    "taglineI18n": {
+      "en": "Active tights for training hikes and cool-weather runs.",
+      "de": "Aktive Tights für Trainingswanderungen und kühlere Läufe."
+    },
+    "highlights": [
+      {
+        "code": "fit",
+        "valueI18n": {
+          "en": "Women",
+          "de": "Damen"
+        }
+      },
+      {
+        "code": "material",
+        "valueI18n": {
+          "en": "Recycled polyester",
+          "de": "Recyceltes Polyester"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Training & hiking",
+          "de": "Training & Wandern"
+        }
+      }
+    ]
+  }
+]

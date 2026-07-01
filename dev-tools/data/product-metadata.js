@@ -557,4 +557,367 @@ module.exports = {
       { code: 'use', valueI18n: { en: 'Coast & lakes', de: 'Küste & Seen' } },
     ],
   },
+  '6a44e920799a3f287e6c68ec': {
+    taglineI18n: {
+      en: 'Fast HTP sea kayak for medium paddlers on rivers and open water.',
+      de: 'Schnelles HTP-Seekajak für mittlere Paddler auf Flüssen und offenem Wasser.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Sea touring', de: 'Seekajak' } },
+      { code: 'length', valueI18n: { en: '490 cm', de: '490 cm' } },
+      { code: 'use', valueI18n: { en: 'Rivers & coast', de: 'Flüsse & Küste' } },
+    ],
+  },
+  '6a44ec4dbaf73aad41d6af5c': {
+    taglineI18n: {
+      en: 'Compact 452 cm Valley sea kayak built for surf, rocks, and speed.',
+      de: 'Kompaktes 452-cm-Valley-Seekajak für Surf, Felsküsten und Tempo.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Sea touring', de: 'Seekajak' } },
+      { code: 'length', valueI18n: { en: '452 cm', de: '452 cm' } },
+      { code: 'use', valueI18n: { en: 'Surf & rock-hopping', de: 'Surf & Rock-Hopping' } },
+    ],
+  },
+  '6a44f1d1b143e2ab469915d7': {
+    taglineI18n: {
+      en: 'Fast 591 cm tandem sea kayak for expeditions and family tours.',
+      de: 'Schnelles 591-cm-Tandem-Seekajak für Expeditionen und Familientouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Tandem sea', de: 'Tandem-Seekajak' } },
+      { code: 'length', valueI18n: { en: '591 cm', de: '591 cm' } },
+      { code: 'use', valueI18n: { en: 'Coast & expeditions', de: 'Küste & Expedition' } },
+    ],
+  },
+  '6a44f3418497341fce235f8a': {
+    taglineI18n: {
+      en: 'Stable 381 cm recreational kayak built for comfort and distance.',
+      de: 'Stabiles 381-cm-Freizeitkajak für Komfort und Weite.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Recreational touring', de: 'Freizeit-Touren' } },
+      { code: 'length', valueI18n: { en: '381 cm', de: '381 cm' } },
+      { code: 'use', valueI18n: { en: 'Lakes & coast', de: 'Seen & Küste' } },
+    ],
+  },
+  '6a44f49098f4de3565dbed59': {
+    taglineI18n: {
+      en: 'Light 305 cm performance sit-in for stability and day touring.',
+      de: 'Leichtes 305-cm-Performance-Sit-in für Stabilität und Tagestouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Performance touring', de: 'Performance-Touren' } },
+      { code: 'length', valueI18n: { en: '305 cm', de: '305 cm' } },
+      { code: 'use', valueI18n: { en: 'Lakes & chop', de: 'Seen & Chop' } },
+    ],
+  },
+  '6a44f7565a4f0010dd1d328f': {
+    taglineI18n: {
+      en: 'Compact 386 cm day-tourer with skeg and twin hatches.',
+      de: 'Kompaktes 386-cm-Tagestourenkajak mit Skag und Doppelluken.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Day touring', de: 'Tagestouren' } },
+      { code: 'length', valueI18n: { en: '386 cm', de: '386 cm' } },
+      { code: 'use', valueI18n: { en: 'Inland & coast', de: 'Binnen & Küste' } },
+    ],
+  },
+  '6a44f91ca923caab5a5a2c40': {
+    taglineI18n: {
+      en: 'Elite 519 cm fibreglass sea kayak with skeg and rudder.',
+      de: 'Elite-519-cm-Glasfaser-Seekajak mit Skag und Ruder.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Sea touring', de: 'Seekajak' } },
+      { code: 'length', valueI18n: { en: '519 cm', de: '519 cm' } },
+      { code: 'use', valueI18n: { en: 'Open coast', de: 'Offene Küste' } },
+    ],
+  },
+  '6a44fa7608a766eb31550cb9': {
+    taglineI18n: {
+      en: 'High-volume creek kayak built for big water and confident boofs.',
+      de: 'Hochvolumiges Creek-Kajak für großes Wasser und sichere Boofs.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Creek / river', de: 'Creek / Fluss' } },
+      { code: 'length', valueI18n: { en: '265 cm (M)', de: '265 cm (M)' } },
+      { code: 'use', valueI18n: { en: 'Steep creeks', de: 'Steile Creeks' } },
+    ],
+  },
+  '6a44faf39b2d9b46dd09c2e7': {
+    taglineI18n: {
+      en: 'Fast river-running kayak with a playful stern for squirts and surf.',
+      de: 'Schnelles River-Running-Kajak mit verspieltem Heck für Squirts und Surf.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'River running', de: 'River Running' } },
+      { code: 'length', valueI18n: { en: '274 cm (M)', de: '274 cm (M)' } },
+      { code: 'use', valueI18n: { en: 'Play the river', de: 'River Play' } },
+    ],
+  },
+  '6a44fb44a6f72106547b014c': {
+    taglineI18n: {
+      en: 'Medium downriver playboat for speed, surf, and slicey stern tricks.',
+      de: 'Medium-Downriver-Playboat für Tempo, Surf und slicey Heck-Tricks.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'River play', de: 'River Play' } },
+      { code: 'length', valueI18n: { en: '267 cm (MD)', de: '267 cm (MD)' } },
+      { code: 'use', valueI18n: { en: 'Downriver play', de: 'Downriver Play' } },
+    ],
+  },
+  '6a44fc214b16a3377e667497': {
+    taglineI18n: {
+      en: '271 cm creek-race kayak for speed, boofs, and big water.',
+      de: '271-cm-Creek-Race-Kajak für Tempo, Boofs und großes Wasser.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Creek / race', de: 'Creek / Race' } },
+      { code: 'length', valueI18n: { en: '271 cm', de: '271 cm' } },
+      { code: 'use', valueI18n: { en: 'Steep creeks', de: 'Steile Creeks' } },
+    ],
+  },
+  '6a44fdc34b5310f72eea378b': {
+    taglineI18n: {
+      en: 'Versatile half-slice for rivers, creeks, and all-day play.',
+      de: 'Vielseitiges Half-Slice für Fluss, Creek und ganztägiges Play.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Half-slice', de: 'Half-Slice' } },
+      { code: 'length', valueI18n: { en: '245 cm (M)', de: '245 cm (M)' } },
+      { code: 'use', valueI18n: { en: 'One-boat quiver', de: 'Ein Boot für alles' } },
+    ],
+  },
+  '6a44fe7a30a10df24310ab47': {
+    taglineI18n: {
+      en: 'Light crossover kayak for Class II rivers and multi-day trips.',
+      de: 'Leichtes Crossover-Kajak für WW II und Mehrtagestouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Crossover', de: 'Crossover' } },
+      { code: 'length', valueI18n: { en: '291 cm', de: '291 cm' } },
+      { code: 'use', valueI18n: { en: 'Rivers & tour', de: 'Fluss & Tour' } },
+    ],
+  },
+  '6a4500b76ee3c8f48ec4bedf': {
+    taglineI18n: {
+      en: 'Compact creek boat for smaller paddlers on steep lines.',
+      de: 'Kompaktes Creek-Boot für kleinere Paddler an steilen Linien.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Creek / river', de: 'Creek / Fluss' } },
+      { code: 'length', valueI18n: { en: '250 cm', de: '250 cm' } },
+      { code: 'use', valueI18n: { en: 'Grade V creeks', de: 'WW V Creeks' } },
+    ],
+  },
+  '6a45012fcdae9dcacb1ed1c5': {
+    taglineI18n: {
+      en: 'Classic forgiving whitewater kayak for learning and progression.',
+      de: 'Klassisches verzeihendes Wildwasserkajak zum Lernen und Fortschreiten.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'River running', de: 'River Running' } },
+      { code: 'length', valueI18n: { en: '252 cm (80)', de: '252 cm (80)' } },
+      { code: 'use', valueI18n: { en: 'Grade II–V', de: 'WW II–V' } },
+    ],
+  },
+  '6a4501b8b44876a1bf9a58ee': {
+    taglineI18n: {
+      en: 'Versatile 65-gal river runner for ferries and rapid speed.',
+      de: 'Vielseitiger 65-gal-River-Runner für Ferrys und Flusstempo.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'River running', de: 'River Running' } },
+      { code: 'length', valueI18n: { en: '234 cm', de: '234 cm' } },
+      { code: 'use', valueI18n: { en: 'All-round river', de: 'Allround-Fluss' } },
+    ],
+  },
+  '6a4502e6e2cf3b9d2ccf0096': {
+    taglineI18n: {
+      en: 'All-river creek boat for speed, boofs, and progression.',
+      de: 'Allround-Creek-Boot für Tempo, Boofs und Fortschritt.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'All-river', de: 'Allround' } },
+      { code: 'length', valueI18n: { en: '272 cm', de: '272 cm' } },
+      { code: 'use', valueI18n: { en: 'Grade III–V', de: 'WW III–V' } },
+    ],
+  },
+  '6a45042bf884e3346bd6a0ac': {
+    taglineI18n: {
+      en: 'Light 1–2 person inflatable for lakes and calm-river touring.',
+      de: 'Leichtes 1–2-Person-Aufblas-Kajak für Seen und ruhige Flüsse.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable tandem/solo', de: 'Aufblas Solo/Tandem' } },
+      { code: 'length', valueI18n: { en: '360 cm', de: '360 cm' } },
+      { code: 'use', valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' } },
+    ],
+  },
+  '6a4504f4046db0918409b20f': {
+    taglineI18n: {
+      en: 'Fast 1–3 person inflatable for sea touring and expeditions.',
+      de: 'Schnelles 1–3-Person-Aufblas-Kajak für Meer und Expeditionen.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable sea/touring', de: 'Aufblas Meer/Touren' } },
+      { code: 'length', valueI18n: { en: '455 cm', de: '455 cm' } },
+      { code: 'use', valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' } },
+    ],
+  },
+  '6a45065b3abd9b4ebe0695da': {
+    taglineI18n: {
+      en: 'Ultralight solo inflatable with rib-frame tracking performance.',
+      de: 'Ultraleichtes Solo-Aufblas-Kajak mit Rippenrahmen-Performance.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable solo touring', de: 'Aufblas Solo-Touren' } },
+      { code: 'length', valueI18n: { en: '317 cm (10 ft 5 in)', de: '317 cm (10 ft 5 in)' } },
+      { code: 'use', valueI18n: { en: 'Lakes & calm water', de: 'Seen & ruhiges Wasser' } },
+    ],
+  },
+  '6a4508ffa3e4ad6c598a2f9f': {
+    taglineI18n: {
+      en: 'Drop-stitch solo sit-in for serious day touring.',
+      de: 'Drop-Stitch-Solo-Sit-in für anspruchsvolle Tagestouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable sit-in solo', de: 'Aufblas Sit-in Solo' } },
+      { code: 'length', valueI18n: { en: '380 cm', de: '380 cm' } },
+      { code: 'use', valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' } },
+    ],
+  },
+  '6a450a346aa5c71f1c32252b': {
+    taglineI18n: {
+      en: 'Rigid solo inflatable for touring and mild whitewater.',
+      de: 'Steifes Solo-Aufblas-Kajak für Touren und leichtes Wildwasser.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable all-round', de: 'Aufblas Allround' } },
+      { code: 'length', valueI18n: { en: '312 cm (10 ft 3 in)', de: '312 cm (10 ft 3 in)' } },
+      { code: 'use', valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' } },
+    ],
+  },
+  '6a450acaa39cdba95f9db7c3': {
+    taglineI18n: {
+      en: 'Affordable tandem inflatable kit for casual lake and river days.',
+      de: 'Günstiges Tandem-Aufblas-Set für entspannte See- und Flusstage.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable tandem recreational', de: 'Aufblas Tandem Freizeit' } },
+      { code: 'length', valueI18n: { en: '384 cm (12 ft 7 in)', de: '384 cm (12 ft 7 in)' } },
+      { code: 'use', valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' } },
+    ],
+  },
+  '6a450b498989c70cefa976a9': {
+    taglineI18n: {
+      en: 'Stable tandem touring inflatable for multi-day lake trips.',
+      de: 'Stabiles Tandem-Touren-Aufblas-Kajak für Mehrtages-Seen-Touren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable tandem touring', de: 'Aufblas Tandem Touren' } },
+      { code: 'length', valueI18n: { en: '390 cm', de: '390 cm' } },
+      { code: 'use', valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' } },
+    ],
+  },
+  '6a450b9f3267aaff8199e191': {
+    taglineI18n: {
+      en: 'Premium EPDM inflatable for rivers, lakes, and Class II water.',
+      de: 'Premium-EPDM-Aufblas-Kajak für Fluss, See und WW II.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable sit-in touring', de: 'Aufblas Sit-in Touren' } },
+      { code: 'length', valueI18n: { en: '395 cm', de: '395 cm' } },
+      { code: 'use', valueI18n: { en: 'Rivers, lakes & WW II', de: 'Flüsse, Seen & WW II' } },
+    ],
+  },
+  '6a450c1819b9507a085d4085': {
+    taglineI18n: {
+      en: 'Drop-stitch family inflatable for lakes and WW II rivers.',
+      de: 'Drop-Stitch-Familien-Aufblas-Kajak für Seen und WW-II-Flüsse.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable drop-stitch', de: 'Aufblas Drop-Stitch' } },
+      { code: 'length', valueI18n: { en: '410 cm', de: '410 cm' } },
+      { code: 'use', valueI18n: { en: 'Lakes & WW II rivers', de: 'Seen & WW-II-Flüsse' } },
+    ],
+  },
+  '6a450ca257ff5b1b81780161': {
+    taglineI18n: {
+      en: 'Award-winning low-angle paddle for efficient all-day touring.',
+      de: 'Preisgekröntes Low-Angle-Paddel für effizientes Ganztagestouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Touring paddle', de: 'Tourenpaddel' } },
+      { code: 'length', valueI18n: { en: '220–260 cm', de: '220–260 cm' } },
+      { code: 'use', valueI18n: { en: 'Low-angle touring', de: 'Low-Angle-Touren' } },
+    ],
+  },
+  '6a450d9eabac12be3ec20b4f': {
+    taglineI18n: {
+      en: 'Durable NRS paddle for whitewater and everyday river use.',
+      de: 'Robustes NRS-Paddel für Wildwasser und Flusseinsatz.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Kayak paddle', de: 'Kajakpaddel' } },
+      { code: 'length', valueI18n: { en: '197–240 cm', de: '197–240 cm' } },
+      { code: 'use', valueI18n: { en: 'Whitewater & touring', de: 'Wildwasser & Touren' } },
+    ],
+  },
+  '6a450e5acf03cdab7897833d': {
+    taglineI18n: {
+      en: 'Lightweight touring buoyancy aid for comfortable all-day paddling.',
+      de: 'Leichte Touren-Schwimmweste für komfortables Ganztagespaddeln.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: '50N buoyancy aid', de: '50N-Schwimmweste' } },
+      { code: 'length', valueI18n: { en: 'XS/S–XL/XXL', de: 'XS/S–XL/XXL' } },
+      { code: 'use', valueI18n: { en: 'Kayak touring', de: 'Kajaktouren' } },
+    ],
+  },
+  '6a450fd2c6bd758c955ecd5f': {
+    taglineI18n: {
+      en: 'Packable 4-piece paddle for flatwater touring and travel.',
+      de: 'Packbares 4-teiliges Paddel für Flachwasser-Touren und Reisen.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Touring paddle', de: 'Tourenpaddel' } },
+      { code: 'length', valueI18n: { en: '200–240 cm', de: '200–240 cm' } },
+      { code: 'use', valueI18n: { en: 'Flatwater touring', de: 'Flachwasser-Touren' } },
+    ],
+  },
+  '6a4510843650989015c279a9': {
+    taglineI18n: {
+      en: 'Essential swiftwater throw rope for kayak rescue situations.',
+      de: 'Unverzichtbare Wildwasser-Wurfleine für Kajak-Rettung.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Throw bag', de: 'Wurfleine' } },
+      { code: 'length', valueI18n: { en: '75 ft rope', de: '23 m Seil' } },
+      { code: 'use', valueI18n: { en: 'Swiftwater rescue', de: 'Wildwasser-Rettung' } },
+    ],
+  },
+  '6a4510ecbb0199501f287ce7': {
+    taglineI18n: {
+      en: 'Fold-flat J-cradle mount for one or two kayaks on the roof.',
+      de: 'Klappbarer J-Cradle-Träger für ein oder zwei Kajaks auf dem Dach.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Roof kayak mount', de: 'Dach-Kajakträger' } },
+      { code: 'length', valueI18n: { en: '1–2 boats', de: '1–2 Boote' } },
+      { code: 'use', valueI18n: { en: 'Vehicle transport', de: 'Fahrzeugtransport' } },
+    ],
+  },
+  '6a45117b9fa77dcf70bb1d02': {
+    taglineI18n: {
+      en: 'High-end rand sprayskirt for demanding whitewater kayaking.',
+      de: 'High-End-Rand-Spritzdecke für anspruchsvolles Wildwasser.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Whitewater sprayskirt', de: 'WW-Spritzdecke' } },
+      { code: 'length', valueI18n: { en: 'Bighole 87', de: 'Bighole 87' } },
+      { code: 'use', valueI18n: { en: 'Whitewater kayak', de: 'Wildwasser-Kajak' } },
+    ],
+  },
 };

@@ -71,5 +71,718 @@
         }
       }
     ]
+  },
+  {
+    "_id": "6a44e920799a3f287e6c68ec",
+    "name": "Seayak Classic",
+    "manufacturer": "Prijon",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 1946,
+      "USD": 2100
+    },
+    "descriptionI18n": {
+      "en": "The Seayak Classic is an agile all-rounder for rivers and open water. For medium-sized paddlers it offers comfortable room and enough storage for extended tours. The relatively long, slim hull brings the boat up to a pleasant cruising speed quickly, while the classic multi-chine hull delivers good tracking and lively edging. Touring seat with 3D thigh braces and a slide footrest let you dial in your position for long days. Two watertight bulkheads (42 L front, 110 L rear), deck nets, day hatch, perimeter line, and plenty of deck mounts keep gear organized on multi-day trips. Blow-moulded HTP polyethylene — made in Germany.",
+      "de": "Der Seayak Classic ist ein wendiger Allrounder für Flüsse und offene Gewässer. Für paddler im mittleren Gewichts- und Größenbereich bietet er komfortable Platzverhältnisse und genug Stauraum für ausgedehnte Touren. Die längere, relativ schlanke Form bringt das Boot schnell auf angenehme Reisegeschwindigkeit, während die klassische Knickspant-Konstruktion gute Spurtreue und lebendiges Kantenverhalten ermöglicht. Touringsitz mit 3-D-Schenkelstützen und Schlittenfußstütze für lange Tagestouren. Zwei wasserdichte Gepäckräume (42 L vorn, 110 L hinten), Decknetze, Tagesluke, Deckleine und viele Befestigungspunkte. Aus HTP-Polyethylen per Blowformverfahren — made in Germany."
+    },
+    "manufacturerUrl": "https://en.prijon.com/seayak-classic-2.html",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44e920799a3f287e6c68ec-1782901530406-1_200.jpeg",
+          "altText": "Seayak Classic photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44e920799a3f287e6c68ec-1782901530406-1_500.jpeg",
+          "altText": "Seayak Classic photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44e920799a3f287e6c68ec-1782901530406-1_1000.jpeg",
+          "altText": "Seayak Classic photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44e920799a3f287e6c68ec-1782901530406-1_2000.webp",
+          "altText": "Seayak Classic photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44e920799a3f287e6c68ec-1782901530406-1_original.webp",
+          "altText": "Seayak Classic photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Fast HTP sea kayak for medium paddlers on rivers and open water.",
+      "de": "Schnelles HTP-Seekajak für mittlere Paddler auf Flüssen und offenem Wasser."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Sea touring",
+          "de": "Seekajak"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "490 cm",
+          "de": "490 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Rivers & coast",
+          "de": "Flüsse & Küste"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44ec4dbaf73aad41d6af5c",
+    "name": "Genesis",
+    "manufacturer": "Valley",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 4350,
+      "USD": 4700
+    },
+    "descriptionI18n": {
+      "en": "Don't call it shorty — at 452 cm (459 cm composite) the Genesis is Valley's most compact sea kayak and a genuine superpower. Built for rock-hopping and surf, it's also the lightest model in the line for any given construction, with an efficient hull that keeps pace with many 16-foot tourers. Increased rocker and bow volume tame rough water; hard chines deliver stability and playful edging. A true all-rounder: compact and playful on the coast, yet it tracks well and carries enough gear for multi-day trips.",
+      "de": "Mit 452 cm (459 cm in Composite) ist die Genesis Valleys kompaktestes Seekajak — keine Schwäche, sondern eine Stärke. Für Rock-Hopping und Surf gebaut, zugleich das leichteste Modell der Linie in jeweiliger Bauweise; der effiziente Rumpf hält mit vielen 5-m-Tourenkajaks mit. Mehr Rocker und Bugvolumen für raue See, harte Kanten für Stabilität und Kantenspiel. Echter Allrounder: kompakt und verspielt an der Küste, läuft dennoch gut durch und bietet Stauraum für Mehrtagestouren."
+    },
+    "manufacturerUrl": "https://valleyseakayaks.com/genesis/",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44ec4dbaf73aad41d6af5c-1782902132848-1_200.jpeg",
+          "altText": "Genesis photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44ec4dbaf73aad41d6af5c-1782902132848-1_500.jpeg",
+          "altText": "Genesis photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44ec4dbaf73aad41d6af5c-1782902132848-1_1000.jpeg",
+          "altText": "Genesis photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44ec4dbaf73aad41d6af5c-1782902132848-1_2000.webp",
+          "altText": "Genesis photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44ec4dbaf73aad41d6af5c-1782902132848-1_original.webp",
+          "altText": "Genesis photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Compact 452 cm Valley sea kayak built for surf, rocks, and speed.",
+      "de": "Kompaktes 452-cm-Valley-Seekajak für Surf, Felsküsten und Tempo."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Sea touring",
+          "de": "Seekajak"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "452 cm",
+          "de": "452 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Surf & rock-hopping",
+          "de": "Surf & Rock-Hopping"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44f1d1b143e2ab469915d7",
+    "name": "Esperanto",
+    "manufacturer": "Boreal Design",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 2530,
+      "USD": 2740
+    },
+    "descriptionI18n": {
+      "en": "The Esperanto is one of the fastest rotomoulded tandem sea kayaks on the market — speed with an easy, stable paddle stroke and impressive cruising pace. Moderate rocker and a large rudder keep turns efficient; well-spaced cockpits let partners paddle at their own rhythm. Three bulkheads with bow, stern and centre hatches swallow expedition loads, and the centre compartment accepts an optional child seat. Flex 4 Drytec seats, reflective deck lines, and up to 218 kg capacity make it ideal for mixed-ability pairs, families, or long coastal tours.",
+      "de": "Die Esperanto zählt zu den schnellsten rotomouldierten Tandem-Seekajaks — Tempo bei leichtem, stabilem Paddelschlag und hoher Reisegeschwindigkeit. Moderater Rocker und großes Ruder für effiziente Kurven; weit gesetzte Cockpits ermöglichen eigenes Paddeltempo. Drei Schotte mit Bug-, Heck- und Mittelluke für Expeditionsgepäck; Mittelfach optional mit Kindersitz. Flex-4-Drytec-Sitze, reflektierende Deckleinen, bis 218 kg Zuladung — ideal für Paare mit unterschiedlichem Niveau, Familien oder lange Küstentouren."
+    },
+    "manufacturerUrl": "https://www.borealdesign.com/products/esperanto-heavy-duty-kayak",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f1d1b143e2ab469915d7-1782903526781-1_200.jpeg",
+          "altText": "Esperanto photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f1d1b143e2ab469915d7-1782903526781-1_500.jpeg",
+          "altText": "Esperanto photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f1d1b143e2ab469915d7-1782903526781-1_1000.jpeg",
+          "altText": "Esperanto photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f1d1b143e2ab469915d7-1782903526781-1_2000.webp",
+          "altText": "Esperanto photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f1d1b143e2ab469915d7-1782903526781-1_original.webp",
+          "altText": "Esperanto photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Fast 591 cm tandem sea kayak for expeditions and family tours.",
+      "de": "Schnelles 591-cm-Tandem-Seekajak für Expeditionen und Familientouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Tandem sea",
+          "de": "Tandem-Seekajak"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "591 cm",
+          "de": "591 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Coast & expeditions",
+          "de": "Küste & Expedition"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44f3418497341fce235f8a",
+    "name": "Pungo 125",
+    "manufacturer": "Wilderness Systems",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 1249,
+      "USD": 1099
+    },
+    "descriptionI18n": {
+      "en": "The Pungo 125 blends Wilderness Systems' celebrated hull design with modern outfitting for recreational and light touring use. Renowned for reassuring stability without sacrificing speed, it's widely regarded as the easiest-to-paddle kayak in its class — efficient enough for longer lake, river, and coastal days. The patented Phase 3 AirPro seat adjusts for all-day comfort; a removable DryTec dry box, SlideTrax accessory track, dual cup holders, and configurable deck bungees keep essentials within reach. At 381 cm with a generous cockpit, it's sized for larger paddlers or expedition-minded day trips.",
+      "de": "Das Pungo 125 verbindet Wilderness Systems' bewährten Rumpf mit moderner Ausstattung für Freizeit- und leichte Tourenfahrten. Bekannt für verlässliche Stabilität ohne Tempoverlust — gilt als eines der leichtesten Kajaks seiner Klasse und effizient genug für längere Tage auf See, Fluss und Küste. Patentierte Phase-3-AirPro-Sitzverstellung für ganztägigen Komfort; abnehmbare DryTec-Box, SlideTrax-Zubehörschiene, zwei Getränkehalter und konfigurierbare Deckspanngurte. Mit 381 cm Länge und großzügigem Cockpit für größere Paddler oder tourenorientierte Tagestouren."
+    },
+    "manufacturerUrl": "https://www.wildernesssystems.com/us/products/pungo-125",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903951609-1_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903951609-1_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903951609-1_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903951609-1_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903951609-1_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903952495-2_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903952495-2_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903952495-2_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903952495-2_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903952495-2_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903953207-3_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903953207-3_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903953207-3_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903953207-3_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903953207-3_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954497-4_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954497-4_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954497-4_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954497-4_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954497-4_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954993-5_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954993-5_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954993-5_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954993-5_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954993-5_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Stable 381 cm recreational kayak built for comfort and distance.",
+      "de": "Stabiles 381-cm-Freizeitkajak für Komfort und Weite."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Recreational touring",
+          "de": "Freizeit-Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "381 cm",
+          "de": "381 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & coast",
+          "de": "Seen & Küste"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44f49098f4de3565dbed59",
+    "name": "Sprint 100XR",
+    "manufacturer": "Pelican",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 699,
+      "USD": 770
+    },
+    "descriptionI18n": {
+      "en": "The Sprint 100XR is Pelican's recreational-performance sit-inside for paddlers ready to move beyond basic recreational boats. A deep-V chine hull and 305 cm length improve secondary stability and tracking in chop while responding quickly to weight shifts for a better return on effort. The adjustable Ergobreeze/Ergoform seat, premium knee pads, and adjustable footrests keep long days comfortable. A cockpit table with 10 cm day hatch and bottle holder, rear quick-lock hatch, front deck bungees, keel extension, stern bulkhead, and side foam blocks balance touring convenience with safety — at just 19 kg one of the lightest performance sit-insides in its class.",
+      "de": "Das Sprint 100XR ist Pelicans Performance-Sit-in für Paddler, die über einfache Freizeitkajaks hinauswollen. Tief-V-Kiel und 305 cm Länge verbessern Sekundärstabilität und Spurtreue bei Chop und reagieren schnell auf Gewichtsverlagerung für bessere Effizienz. Verstellbarer Ergobreeze/Ergoform-Sitz, Premium-Knieschoner und verstellbare Fußstützen für lange Tage. Cockpittisch mit 10-cm-Tagesluke und Getränkehalter, Heck-Quick-Lock-Luke, Bug-Deckspanngurte, Kielverlängerung, Hecksott und seitliche Schaumblöcke — bei nur 19 kg eines der leichtesten Performance-Sit-ins seiner Klasse."
+    },
+    "manufacturerUrl": "https://www.confluenceoutdoor.com/products/pelican-sprint-100xr-performance-kayak-knp10p106-00",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f49098f4de3565dbed59-1782904276770-1_200.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f49098f4de3565dbed59-1782904276770-1_500.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f49098f4de3565dbed59-1782904276770-1_1000.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f49098f4de3565dbed59-1782904276770-1_2000.webp",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f49098f4de3565dbed59-1782904276770-1_original.webp",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f49098f4de3565dbed59-1782904277091-2_200.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f49098f4de3565dbed59-1782904277091-2_500.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f49098f4de3565dbed59-1782904277091-2_1000.jpeg",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f49098f4de3565dbed59-1782904277091-2_2000.webp",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f49098f4de3565dbed59-1782904277091-2_original.webp",
+          "altText": "Sprint 100XR photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Light 305 cm performance sit-in for stability and day touring.",
+      "de": "Leichtes 305-cm-Performance-Sit-in für Stabilität und Tagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Performance touring",
+          "de": "Performance-Touren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "305 cm",
+          "de": "305 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Lakes & chop",
+          "de": "Seen & Chop"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44f7565a4f0010dd1d328f",
+    "name": "Enduro 13",
+    "manufacturer": "Riot",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 1155,
+      "USD": 1100
+    },
+    "descriptionI18n": {
+      "en": "The Enduro 13 packs Riot's touring credentials into a compact 386 cm hull tuned for speed and straight-line tracking. A streamlined, grooved hull delivers strong secondary stability and keeps pace with longer tourers on lakes, canals, estuaries, and sheltered coast. Twin 15-inch rubber hatches with bow and stern bulkheads, front deck rigging, and a flush-mount rod holder cover day-trip gear. The Track-Rite drop skeg fine-tunes tracking in wind and cross-currents; Flex 4 Drytec seating and self-rescue safety straps round out a versatile inland and coastal day-tourer.",
+      "de": "Das Enduro 13 vereint Riots Touren-DNA in einem kompakten 386-cm-Rumpf für Tempo und Spurtreue. Der stromlinienförmige, gerillte Rumpf bietet gute Sekundärstabilität und hält mit längeren Tourenkajaks auf Seen, Kanälen, Ästuaren und geschützter Küste mit. Zwei 38-cm-Gummiluken mit Bug- und Hecksott, Bug-Deckrigging und Flush-Rod-Holder für Tagestourengepäck. Track-Rite-Kielskag feinjustiert die Spurtreue bei Wind und Querströmung; Flex-4-Drytec-Sitz und Selbstrettungsgurte machen es zum vielseitigen Binnen- und Küstentourenkajak."
+    },
+    "manufacturerUrl": "https://riotkayaks.com/products/enduro-13-kayak",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f7565a4f0010dd1d328f-1782905115626-1_200.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f7565a4f0010dd1d328f-1782905115626-1_500.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f7565a4f0010dd1d328f-1782905115626-1_1000.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f7565a4f0010dd1d328f-1782905115626-1_2000.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f7565a4f0010dd1d328f-1782905115626-1_original.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f7565a4f0010dd1d328f-1782905116356-2_200.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f7565a4f0010dd1d328f-1782905116356-2_500.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f7565a4f0010dd1d328f-1782905116356-2_1000.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f7565a4f0010dd1d328f-1782905116356-2_2000.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f7565a4f0010dd1d328f-1782905116356-2_original.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f7565a4f0010dd1d328f-1782905117104-3_200.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f7565a4f0010dd1d328f-1782905117104-3_500.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f7565a4f0010dd1d328f-1782905117104-3_1000.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f7565a4f0010dd1d328f-1782905117104-3_2000.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f7565a4f0010dd1d328f-1782905117104-3_original.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f7565a4f0010dd1d328f-1782905117810-4_200.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f7565a4f0010dd1d328f-1782905117810-4_500.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f7565a4f0010dd1d328f-1782905117810-4_1000.jpeg",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f7565a4f0010dd1d328f-1782905117810-4_2000.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f7565a4f0010dd1d328f-1782905117810-4_original.webp",
+          "altText": "Enduro 13 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Compact 386 cm day-tourer with skeg and twin hatches.",
+      "de": "Kompaktes 386-cm-Tagestourenkajak mit Skag und Doppelluken."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Day touring",
+          "de": "Tagestouren"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "386 cm",
+          "de": "386 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Inland & coast",
+          "de": "Binnen & Küste"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a44f91ca923caab5a5a2c40",
+    "name": "Ocean Spirit 519 Elite",
+    "manufacturer": "Tahe Marine",
+    "category": "661f8a8cf7b9265221dba8d2",
+    "priceI18n": {
+      "EUR": 2952,
+      "USD": 3200
+    },
+    "descriptionI18n": {
+      "en": "The Ocean Spirit 519 Elite is Tahe Marine's elite fibreglass sea kayak for all-round touring on open water. A straight bow and flatter profile deliver speed and control on longer trips, while generous bow and stern hatches, a day hatch aft of the cockpit, and a forward mini box provide serious load volume for full-day and coastal excursions. At 519 cm × 58 cm and just 23 kg, it suits paddlers from 55–90 kg who want a fast, stable one-boat solution. Supplied with skeg and rudder for confident tracking even in strong crosswinds — produced and developed in the EU.",
+      "de": "Der Ocean Spirit 519 Elite ist Tahe Marines Elite-Glasfaser-Seekajak für vielseitige Touren auf offenem Wasser. Gerader Bug und flacheres Profil für Tempo und Kontrolle auf längeren Fahrten; großzügige Bug- und Heckfächer, Tagesluke hinter dem Cockpit und Minibox vorne für ernsthaftes Packvolumen bei Ganztags- und Küstentouren. Mit 519 cm × 58 cm und nur 23 kg für Paddler von 55–90 kg, die ein schnelles, stabiles Ein-Boot-für-alles wollen. Mit Skag und Ruder für sichere Spurtreue auch bei starkem Seitenwind — in der EU produziert und entwickelt."
+    },
+    "manufacturerUrl": "https://surfundski.de/tahe-marine-ocean-spirit-519-2021-elite-glasfiber-havkajak",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f91ca923caab5a5a2c40-1782905415638-1_200.jpeg",
+          "altText": "Ocean Spirit 519 Elite photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f91ca923caab5a5a2c40-1782905415638-1_500.jpeg",
+          "altText": "Ocean Spirit 519 Elite photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f91ca923caab5a5a2c40-1782905415638-1_1000.jpeg",
+          "altText": "Ocean Spirit 519 Elite photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f91ca923caab5a5a2c40-1782905415638-1_2000.webp",
+          "altText": "Ocean Spirit 519 Elite photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f91ca923caab5a5a2c40-1782905415638-1_original.webp",
+          "altText": "Ocean Spirit 519 Elite photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Elite 519 cm fibreglass sea kayak with skeg and rudder.",
+      "de": "Elite-519-cm-Glasfaser-Seekajak mit Skag und Ruder."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Sea touring",
+          "de": "Seekajak"
+        }
+      },
+      {
+        "code": "length",
+        "valueI18n": {
+          "en": "519 cm",
+          "de": "519 cm"
+        }
+      },
+      {
+        "code": "use",
+        "valueI18n": {
+          "en": "Open coast",
+          "de": "Offene Küste"
+        }
+      }
+    ]
   }
 ]
