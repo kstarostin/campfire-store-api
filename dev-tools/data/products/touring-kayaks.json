@@ -302,6 +302,60 @@
     "images": [
       {
         "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954993-5_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954993-5_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954993-5_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954993-5_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954993-5_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954497-4_200.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954497-4_500.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954497-4_1000.jpeg",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954497-4_2000.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954497-4_original.webp",
+          "altText": "Pungo 125 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
           "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903951609-1_200.jpeg",
           "altText": "Pungo 125 photo",
           "mimeType": "image/jpeg"
@@ -377,60 +431,6 @@
         },
         "original": {
           "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903953207-3_original.webp",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/webp"
-        }
-      },
-      {
-        "thumbnail": {
-          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954497-4_200.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "small": {
-          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954497-4_500.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "medium": {
-          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954497-4_1000.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "large": {
-          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954497-4_2000.webp",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/webp"
-        },
-        "original": {
-          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954497-4_original.webp",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/webp"
-        }
-      },
-      {
-        "thumbnail": {
-          "url": "/img/products/thumbnail/product-6a44f3418497341fce235f8a-1782903954993-5_200.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "small": {
-          "url": "/img/products/small/product-6a44f3418497341fce235f8a-1782903954993-5_500.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "medium": {
-          "url": "/img/products/medium/product-6a44f3418497341fce235f8a-1782903954993-5_1000.jpeg",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/jpeg"
-        },
-        "large": {
-          "url": "/img/products/large/product-6a44f3418497341fce235f8a-1782903954993-5_2000.webp",
-          "altText": "Pungo 125 photo",
-          "mimeType": "image/webp"
-        },
-        "original": {
-          "url": "/img/products/original/product-6a44f3418497341fce235f8a-1782903954993-5_original.webp",
           "altText": "Pungo 125 photo",
           "mimeType": "image/webp"
         }
