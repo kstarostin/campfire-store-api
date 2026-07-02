@@ -16,6 +16,7 @@ const GRAIL_PRODUCT_ID = '6635eaef6fbd7b858b6acb86';
 const KAYAKS_ROOT_CATEGORY_ID = '661f8a811d571619fe96eec2';
 const TOURING_KAYAKS_CATEGORY_ID = '661f8a8cf7b9265221dba8d2';
 const GRAVEL_BIKES_CATEGORY_CODE = 'gravel-bikes';
+const SLEEPING_BAGS_CATEGORY_CODE = 'sleeping-bags';
 const BAGS_AND_GEAR_CATEGORY_CODE = 'bags-and-gear';
 const BICYCLES_ROOT_CATEGORY_ID = '661f8a9b6633eab0748e2638';
 const BESTSELLER_BADGE_ID = '662b497f11aed4312b44a010';
@@ -98,15 +99,15 @@ describe('Campfire Store API regression suite', () => {
     expect(response.body.data.document.icon).toBe('sport-shoe');
   });
 
-  test('GET /categories/sleeping-bags returns empty product list', async () => {
+  test('GET /categories/sleeping-bags returns seeded products', async () => {
     const response = await request(app)
-      .get(`${API}/categories/sleeping-bags/products`)
+      .get(`${API}/categories/${SLEEPING_BAGS_CATEGORY_CODE}/products`)
       .query({ language: 'en', currency: 'EUR', page: 1, limit: 8 })
       .expect(200);
 
     expect(response.body.status).toBe('success');
-    expect(response.body.resultsTotal).toBe(0);
-    expect(response.body.data.documents).toEqual([]);
+    expect(response.body.resultsTotal).toBeGreaterThan(0);
+    expect(response.body.data.documents.length).toBeGreaterThan(0);
   });
 
   test('GET /categories/:code/products returns products for category code', async () => {

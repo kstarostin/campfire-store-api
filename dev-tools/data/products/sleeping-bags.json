@@ -1,0 +1,1050 @@
+[
+  {
+    "_id": "6a46307ff6404e52322f9416",
+    "name": "Exosphere -6°",
+    "manufacturer": "Deuter",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 220,
+      "USD": 250
+    },
+    "descriptionI18n": {
+      "en": "The Deuter Exosphere -6° is a three-season synthetic mummy sleeping bag — Thermo ProLoft insulation with 360° fill, ThermoStretch elastic seams, and shingle construction for reliable warmth in damp conditions. Bluesign-certified shell and lining from recycled polyester; DryZone water-repellent head and foot areas. Comfort 0 °C, limit -6 °C (ISO EN 23537). ErgoFoot box, ThermoHood, draft collar, zip-together compatible. Weight from 1.3 kg; packs to 19 × 33 cm; fits users up to 185 cm.",
+      "de": "Der Deuter Exosphere -6° ist ein Drei-Jahreszeiten-Synthetics-Mumienschlafsack — Thermo ProLoft-Isolierung mit 360°-Füllung, elastischen ThermoStretch-Nähten und Schindeln-Konstruktion für zuverlässige Wärme bei Feuchtigkeit. Bluesign-zertifiziertes Außen- und Innenmaterial aus recyceltem Polyester; DryZone wasserabweisende Kopf- und Fußzonen. Komfort 0 °C, Grenz -6 °C (ISO EN 23537). ErgoFoot-Fußbox, ThermoHood, Windschutzkragen, Reißverschluss-Koppelung. Gewicht ab 1,3 kg; Packmaß 19 × 33 cm; für Körpergröße bis 185 cm."
+    },
+    "manufacturerUrl": "https://www.deuter.com/int-en/exosphere-6c-21f/4046051174792",
+    "taglineI18n": {
+      "en": "Stretch synthetic bag rated to -6 °C for alpine trekking.",
+      "de": "Dehnbarer Synthetics-Schlafsack bis -6 °C fürs alpine Trekking."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.3 kg",
+          "de": "1,3 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46307ff6404e52322f9416-1782984987522-1_200.jpeg",
+          "altText": "Exosphere -6° photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46307ff6404e52322f9416-1782984987522-1_500.jpeg",
+          "altText": "Exosphere -6° photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46307ff6404e52322f9416-1782984987522-1_1000.jpeg",
+          "altText": "Exosphere -6° photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46307ff6404e52322f9416-1782984987522-1_2000.webp",
+          "altText": "Exosphere -6° photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46307ff6404e52322f9416-1782984987522-1_original.webp",
+          "altText": "Exosphere -6° photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46316c9820e6a8c2d311c9",
+    "name": "Astro 300",
+    "manufacturer": "Deuter",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 240,
+      "USD": 270
+    },
+    "descriptionI18n": {
+      "en": "The Deuter Astro 300 is a lightweight summer down mummy sleeping bag — 350 g RDS-certified grey duck down with 360° fill and H-shaped baffles for even loft. Bluesign and Green Button certified; water-repellent 30D PA ripstop shell. Comfort 7 °C, limit 2 °C (ISO EN 23537). ErgoFoot box, ThermoHood, internal pocket, 2-stage compression sack. Weight 850 g; packs to 18 × 26 cm; fits users up to 185 cm.",
+      "de": "Der Deuter Astro 300 ist ein leichter Sommer-Daunen-Mumienschlafsack — 350 g RDS-zertifizierte Graue-Enten-Daune mit 360°-Füllung und H-förmigen Kammern für gleichmäßiges Loft. Bluesign- und Green-Button-zertifiziert; wasserabweisendes 30D PA Ripstop-Außenmaterial. Komfort 7 °C, Grenz 2 °C (ISO EN 23537). ErgoFoot-Fußbox, ThermoHood, Innentasche, 2-stufiger Kompressionssack. Gewicht 850 g; Packmaß 18 × 26 cm; für Körpergröße bis 185 cm."
+    },
+    "manufacturerUrl": "https://www.deuter.com/int-en/astro-300-2c-36f/4046051182261",
+    "taglineI18n": {
+      "en": "Ultralight RDS down bag for warm summer nights.",
+      "de": "Ultraleichter RDS-Daunenschlafsack für warme Sommernächte."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Summer",
+          "de": "Sommer"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "850 g",
+          "de": "850 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46316c9820e6a8c2d311c9-1782985255229-1_200.jpeg",
+          "altText": "Astro 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46316c9820e6a8c2d311c9-1782985255229-1_500.jpeg",
+          "altText": "Astro 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46316c9820e6a8c2d311c9-1782985255229-1_1000.jpeg",
+          "altText": "Astro 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46316c9820e6a8c2d311c9-1782985255229-1_2000.webp",
+          "altText": "Astro 300 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46316c9820e6a8c2d311c9-1782985255229-1_original.webp",
+          "altText": "Astro 300 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46323e95eb204e618822a9",
+    "name": "Trestles Elite Eco 20",
+    "manufacturer": "Marmot",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 200,
+      "USD": 225
+    },
+    "descriptionI18n": {
+      "en": "The Marmot Trestles Elite Eco 20 is a three-season synthetic mummy sleeping bag — 100% recycled shell, lining, and HL-ElixR Eco fill that retains warmth when damp. Wave top and blanket bottom construction; anatomical 3D footbox; full left zip plus short right zip for ventilation. ISO tested: comfort -4 °C, limit -11 °C. Insulated draft tube, internal stash pocket, compression and storage sacks included. Weight 1.6 kg; fits users up to 183 cm.",
+      "de": "Der Marmot Trestles Elite Eco 20 ist ein Drei-Jahreszeiten-Synthetics-Mumienschlafsack — 100 % recyceltes Außenmaterial, Innenfutter und HL-ElixR Eco-Füllung mit Wärme auch bei Feuchtigkeit. Wellen-Konstruktion oben, Decken-Konstruktion unten; anatomische 3D-Fußbox; voller Linker-Reißverschluss plus kurzer Rechts-Reißverschluss zur Belüftung. ISO-getestet: Komfort -4 °C, Grenz -11 °C. Isolierter Windschutzkragen, Innentasche, Kompressions- und Aufbewahrungssack inklusive. Gewicht 1,6 kg; für Körpergröße bis 183 cm."
+    },
+    "manufacturerUrl": "https://www.marmot.eu/equipment/sleeping-bags/trestles-elite-eco-20-sleeping-bag/SP_2948371.html",
+    "taglineI18n": {
+      "en": "Recycled synthetic mummy bag rated to 20 °F.",
+      "de": "Recycelter Synthetics-Mumienschlafsack bis 20 °F bewertet."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.6 kg",
+          "de": "1,6 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46323e95eb204e618822a9-1782985427829-2_200.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46323e95eb204e618822a9-1782985427829-2_500.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46323e95eb204e618822a9-1782985427829-2_1000.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46323e95eb204e618822a9-1782985427829-2_2000.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46323e95eb204e618822a9-1782985427829-2_original.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46323e95eb204e618822a9-1782985428366-3_200.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46323e95eb204e618822a9-1782985428366-3_500.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46323e95eb204e618822a9-1782985428366-3_1000.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46323e95eb204e618822a9-1782985428366-3_2000.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46323e95eb204e618822a9-1782985428366-3_original.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46323e95eb204e618822a9-1782985427257-1_200.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46323e95eb204e618822a9-1782985427257-1_500.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46323e95eb204e618822a9-1782985427257-1_1000.jpeg",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46323e95eb204e618822a9-1782985427257-1_2000.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46323e95eb204e618822a9-1782985427257-1_original.webp",
+          "altText": "Trestles Elite Eco 20 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4632eb57ba9849019ce362",
+    "name": "Ascent AcII",
+    "manufacturer": "Sea to Summit",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 400,
+      "USD": 399
+    },
+    "descriptionI18n": {
+      "en": "The Sea to Summit Ascent AcII is a three-season relaxed-mummy down sleeping bag — RDS-certified 750+ Ultra-Dry goose down with Free-Flow triple-zip ventilation (side, opposite side, and footbox). Box baffles with vertical torso baffles to limit down shift; technical hood, draft collar, and zip draft tube. ISO lower limit -9 °C (15 °F); women's comfort -2 °C. Weight 1.02 kg; 540 g fill; packs to 7.5 L compressed; fits users up to 183 cm. 20D recycled nylon shell with non-PFAS DWR.",
+      "de": "Der Sea to Summit Ascent AcII ist ein Drei-Jahreszeiten-Daunenschlafsack in relaxed-Mummy-Form — RDS-zertifizierte 750+ Ultra-Dry-Gänsedaune mit Free-Flow-Drei-Wege-Reißverschluss-Belüftung (Seite, Gegenseite, Fußbox). Box-Kammern mit vertikalen Brust-Kammern gegen Daunenverschiebung; technische Kapuze, Windschutzkragen und Reißverschluss-Windbahn. ISO-Grenz -9 °C (15 °F); Damen-Komfort -2 °C. Gewicht 1,02 kg; 540 g Füllung; komprimiert 7,5 L; für Körpergröße bis 183 cm. 20D recyceltes Nylon-Außenmaterial mit non-PFAS DWR."
+    },
+    "manufacturerUrl": "https://seatosummit.eu/en-at/products/the-ascent-down-sleeping-bag",
+    "taglineI18n": {
+      "en": "Versatile down bag with triple-zip Free-Flow ventilation.",
+      "de": "Vielseitiger Daunenschlafsack mit Free-Flow-Drei-Wege-Reißverschluss."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.02 kg",
+          "de": "1,02 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4632eb57ba9849019ce362-1782985582981-1_200.jpeg",
+          "altText": "Ascent AcII photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4632eb57ba9849019ce362-1782985582981-1_500.jpeg",
+          "altText": "Ascent AcII photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4632eb57ba9849019ce362-1782985582981-1_1000.jpeg",
+          "altText": "Ascent AcII photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4632eb57ba9849019ce362-1782985582981-1_2000.webp",
+          "altText": "Ascent AcII photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4632eb57ba9849019ce362-1782985582981-1_original.webp",
+          "altText": "Ascent AcII photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4633c8aad2f29c01537ef7",
+    "name": "LIM Down 1",
+    "manufacturer": "Haglöfs",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 500,
+      "USD": 560
+    },
+    "descriptionI18n": {
+      "en": "The Haglöfs LIM Down 1 is an ultralight summer mummy sleeping bag from the Less Is More line — tight fit and 90/10 goose down for speed hiking and mountain racing. Comfort 7 °C, limit 3 °C, extreme -12 °C. Weight 470 g; size 195 cm. Current L.I.M +3 Down successor to the original +1 °C limit bag in the same ultralight series.",
+      "de": "Der Haglöfs LIM Down 1 ist ein ultraleichter Sommer-Mumienschlafsack aus der Less-Is-More-Linie — enge Passform und 90/10-Gänsedaune für Speedhiking und Bergläufe. Komfort 7 °C, Grenz 3 °C, Extrem -12 °C. Gewicht 470 g; Größe 195 cm. Aktueller L.I.M +3 Down als Nachfolger des ursprünglichen +1-°C-Grenzmodells in derselben Ultraleicht-Serie."
+    },
+    "manufacturerUrl": "https://www.haglofs.com/de/damen/ausrustung-zubehor-damen/lim-3-down-4163104N2",
+    "taglineI18n": {
+      "en": "Ultralight down bag for fast summer hikes and races.",
+      "de": "Ultraleichter Daunenschlafsack für schnelle Sommertouren und Rennen."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Summer",
+          "de": "Sommer"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "470 g",
+          "de": "470 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4633c8aad2f29c01537ef7-1782985837850-1_200.jpeg",
+          "altText": "LIM Down 1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4633c8aad2f29c01537ef7-1782985837850-1_500.jpeg",
+          "altText": "LIM Down 1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4633c8aad2f29c01537ef7-1782985837850-1_1000.jpeg",
+          "altText": "LIM Down 1 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4633c8aad2f29c01537ef7-1782985837850-1_2000.webp",
+          "altText": "LIM Down 1 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4633c8aad2f29c01537ef7-1782985837850-1_original.webp",
+          "altText": "LIM Down 1 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46348c39cb0001ed3660a5",
+    "name": "Defence 4",
+    "manufacturer": "Carinthia",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 240,
+      "USD": 270
+    },
+    "descriptionI18n": {
+      "en": "The Carinthia Defence 4 is a three-season military-style sleeping bag — centre zip, water-repellent microfibre nylon shell, and double-layer G-LOFT synthetic insulation with Thermoflect heat reflection. Differential cut, trapezoidal foot section, zip cover flap, and draft tube. ISO comfort -8.8 °C, lower limit -15 °C. Combinable with the Tropen liner in the Carinthia sleeping bag system. Weight 1.85 kg (size M); packs to 25 × 30 cm; fits up to 215 cm.",
+      "de": "Der Carinthia Defence 4 ist ein Drei-Jahreszeiten-Schlafsack im Militärstil — Mittelreißverschluss, wasserabweisendes Mikrofaser-Nylon-Außenmaterial und doppelte G-LOFT-Synthetik-Isolierung mit Thermoflect-Wärmereflexion. Differential Cut, trapezförmiger Fußbereich, RV-Abdeckklappe und Windschutzkragen. ISO-Komfort -8,8 °C, Grenz -15 °C. Kombinierbar mit dem Tropen-Innensack im Carinthia-Schlafsacksystem. Gewicht 1,85 kg (Größe M); Packmaß 25 × 30 cm; für Körperlänge bis 215 cm."
+    },
+    "manufacturerUrl": "https://www.carinthia.eu/en/defence-4-p1480/",
+    "taglineI18n": {
+      "en": "Military-grade G-LOFT bag rated to -15 °C.",
+      "de": "Militärischer G-LOFT-Schlafsack bis -15 °C bewertet."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.85 kg",
+          "de": "1,85 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46348c39cb0001ed3660a5-1782985990110-1_200.jpeg",
+          "altText": "Defence 4 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46348c39cb0001ed3660a5-1782985990110-1_500.jpeg",
+          "altText": "Defence 4 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46348c39cb0001ed3660a5-1782985990110-1_1000.jpeg",
+          "altText": "Defence 4 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46348c39cb0001ed3660a5-1782985990110-1_2000.webp",
+          "altText": "Defence 4 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46348c39cb0001ed3660a5-1782985990110-1_original.webp",
+          "altText": "Defence 4 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4635aab8c89f3d7c7cc805",
+    "name": "Abisko Summer",
+    "manufacturer": "Fjällräven",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 160,
+      "USD": 180
+    },
+    "descriptionI18n": {
+      "en": "The Fjällräven Abisko Summer is a lightweight summer synthetic mummy sleeping bag — recycled PrimaLoft insulation that stays warm when damp, full-length two-way zip with anti-snag slider and draft tube, and compact single-layer construction. Flat adjustable hood and angled footbox; internal pocket. Comfort 12 °C, limit 8 °C. Weight 680 g; 300 g fill; fits users up to 190 cm. PFAS-free; for camping, cabin-to-cabin hiking, and travel.",
+      "de": "Der Fjällräven Abisko Summer ist ein leichter Sommer-Synthetics-Mumienschlafsack — recycelte PrimaLoft-Isolierung mit Wärme auch bei Feuchtigkeit, durchgehender Zwei-Wege-Reißverschluss mit Anti-Snag-Schieber und Windschutzleiste sowie kompakte Einschicht-Konstruktion. Flache verstellbare Kapuze und ergonomische Fußpartie; Innentasche. Komfort 12 °C, Grenz 8 °C. Gewicht 680 g; 300 g Füllung; für Körpergröße bis 190 cm. PFAS-frei; für Camping, Hüttenwanderungen und Reisen."
+    },
+    "manufacturerUrl": "https://www.fjallraven.com/eu/en-gb/bags-gear/tents-sleeping-bags/sleeping-bags/abisko-summer/",
+    "taglineI18n": {
+      "en": "Light summer bag for camping, hut treks, and travel.",
+      "de": "Leichter Sommerschlafsack für Camping, Hüttentouren und Reisen."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Summer",
+          "de": "Sommer"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "680 g",
+          "de": "680 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4635aab8c89f3d7c7cc805-1782986502806-1_200.jpeg",
+          "altText": "Abisko Summer photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4635aab8c89f3d7c7cc805-1782986502806-1_500.jpeg",
+          "altText": "Abisko Summer photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4635aab8c89f3d7c7cc805-1782986502806-1_1000.jpeg",
+          "altText": "Abisko Summer photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4635aab8c89f3d7c7cc805-1782986502806-1_2000.webp",
+          "altText": "Abisko Summer photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4635aab8c89f3d7c7cc805-1782986502806-1_original.webp",
+          "altText": "Abisko Summer photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463723aad64fa78d2ac8d5",
+    "name": "Sioux 800",
+    "manufacturer": "Vaude",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 126,
+      "USD": 140
+    },
+    "descriptionI18n": {
+      "en": "The Vaude Sioux 800 is a three-season synthetic mummy sleeping bag — 100% recycled polyester shell, lining, and Sensofiber Eco fill with two-layer construction. Contoured hood, warmth collar, footbox, and full-length two-way zip; PFC-free Eco Finish. Comfort 5 °C, limit 0 °C, extreme -15 °C. Weight 1.55 kg (Regular); packs to 28 × 25 cm; length 220 cm. Bluesign and Green Shape; compression sack included. Current model: Sioux 800 II.",
+      "de": "Der Vaude Sioux 800 ist ein Drei-Jahreszeiten-Synthetics-Mumienschlafsack — 100 % recyceltes Polyester außen, innen und Sensofiber Eco-Füllung mit Zweilagen-Konstruktion. Konturkapuze, Wärmekragen, Fußsack und durchgehender Zwei-Wege-Reißverschluss; PFC-freies Eco Finish. Komfort 5 °C, Grenz 0 °C, Extrem -15 °C. Gewicht 1,55 kg (Regular); Packmaß 28 × 25 cm; Länge 220 cm. Bluesign und Green Shape; Kompressionssack inklusive. Aktuelles Modell: Sioux 800 II."
+    },
+    "manufacturerUrl": "https://www.vaude.com/de/de/45749-sioux-800-ii-kunstfaserschlafsack.html",
+    "taglineI18n": {
+      "en": "Recycled synthetic mummy bag for trekking and travel.",
+      "de": "Recycelter Synthetics-Mumienschlafsack fürs Trekking und Reisen."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.55 kg",
+          "de": "1,55 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463723aad64fa78d2ac8d5-1782986616318-1_200.jpeg",
+          "altText": "Sioux 800 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463723aad64fa78d2ac8d5-1782986616318-1_500.jpeg",
+          "altText": "Sioux 800 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463723aad64fa78d2ac8d5-1782986616318-1_1000.jpeg",
+          "altText": "Sioux 800 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463723aad64fa78d2ac8d5-1782986616318-1_2000.webp",
+          "altText": "Sioux 800 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463723aad64fa78d2ac8d5-1782986616318-1_original.webp",
+          "altText": "Sioux 800 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463837e732947b4cd26dff",
+    "name": "Moraine I +11°C",
+    "manufacturer": "Robens",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 70,
+      "USD": 80
+    },
+    "descriptionI18n": {
+      "en": "The Robens Moraine I +11°C is a one-season synthetic mummy sleeping bag — MicroThermo insulation with recycled polyester taffeta lining and single-layer loose-fill construction. Full L-shaped two-way zip opens flat as a blanket; shark-fin foot box, insulated zip baffle, anti-snag guard, and internal pocket. Comfort 14 °C (women), limit 11 °C (men), extreme 0 °C. Weight 615 g; packs to 21 × 13 cm; fits users up to 195 cm. For festivals, summer camping, and warm-weather travel.",
+      "de": "Der Robens Moraine I +11°C ist ein Einsaison-Synthetics-Mumienschlafsack — MicroThermo-Isolierung mit recyceltem Polyester-Taft-Innenfutter und einlagiger loser Füllung. Durchgehender L-förmiger Zwei-Wege-Reißverschluss lässt sich als Decke öffnen; Haiflossen-Fußbox, isolierte RV-Leiste, Anti-Snag-Schutz und Innentasche. Komfort 14 °C (Frauen), Grenz 11 °C (Männer), Extrem 0 °C. Gewicht 615 g; Packmaß 21 × 13 cm; für Körpergröße bis 195 cm. Für Festivals, Sommercamping und Reisen bei milden Nächten."
+    },
+    "manufacturerUrl": "https://www.robens.de/de-de/shop/outdoor-schlafen/schlafsacke/1-jahreszeiten-schlafsack/moraine-i-11c",
+    "taglineI18n": {
+      "en": "Ultralight summer mummy for festivals and warm nights.",
+      "de": "Ultraleichter Sommer-Mumienschlafsack für Festivals und milde Nächte."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Summer",
+          "de": "Sommer"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "615 g",
+          "de": "615 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463837e732947b4cd26dff-1782986903709-1_200.jpeg",
+          "altText": "Moraine I +11°C photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463837e732947b4cd26dff-1782986903709-1_500.jpeg",
+          "altText": "Moraine I +11°C photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463837e732947b4cd26dff-1782986903709-1_1000.jpeg",
+          "altText": "Moraine I +11°C photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463837e732947b4cd26dff-1782986903709-1_2000.webp",
+          "altText": "Moraine I +11°C photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463837e732947b4cd26dff-1782986903709-1_original.webp",
+          "altText": "Moraine I +11°C photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4638c1e1ca3ff6d583d8d1",
+    "name": "Oscar -10°",
+    "manufacturer": "Nordisk",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 370,
+      "USD": 410
+    },
+    "descriptionI18n": {
+      "en": "The Nordisk Oscar -10° is a winter synthetic mummy sleeping bag — lengthwise tubic chambers with NorGuard S-PO s-core fibre fill and an integrated wind membrane for shelter and open-sky use. 20D nylon ripstop shell, 30D nylon lining, 3D winter hood, thermal collar, shark-fin ventilated foot box, full-length two-way side zip, secondary shoulder zip, and front ventilation zip; internal chest pocket. Comfort -6 °C, limit -10 °C, extreme -30 °C (EN 13537). Weight 1.59 kg total (Medium, with pack sack); official fill weight 1.24 kg; packs to 25 × 34 cm; fits users up to 175 cm. PFC-free.",
+      "de": "Der Nordisk Oscar -10° ist ein Winter-Synthetics-Mumienschlafsack — längs verlaufende Tubic-Kammern mit NorGuard S-PO s-core-Faserfüllung und integrierter Windmembran für Biwak und Schlaf unter freiem Himmel. 20D Nylon-Ripstop-Außenmaterial, 30D Nylon-Innenfutter, 3D-Winterkapuze, Wärmekragen, belüftete Haiflossen-Fußbox, durchgehender Zwei-Wege-Seitenreißverschluss, sekundärer Schulterreißverschluss und Front-Belüftungsreißverschluss; Innenbrusttasche. Komfort -6 °C, Grenz -10 °C, Extrem -30 °C (EN 13537). Gesamtgewicht 1,59 kg (Medium, mit Packsack); offizielles Füllgewicht 1,24 kg; Packmaß 25 × 34 cm; für Körpergröße bis 175 cm. PFC-frei."
+    },
+    "manufacturerUrl": "https://nordisk.eu/products/oscar-10deg-mummy-fibre-rio-red-mustard-yellow-black",
+    "taglineI18n": {
+      "en": "Wind-membrane winter mummy rated to -10 °C.",
+      "de": "Winter-Mumienschlafsack mit Windmembran bis -10 °C bewertet."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Winter",
+          "de": "Winter"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.59 kg",
+          "de": "1,59 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4638c1e1ca3ff6d583d8d1-1782987008671-1_200.jpeg",
+          "altText": "Oscar -10° photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4638c1e1ca3ff6d583d8d1-1782987008671-1_500.jpeg",
+          "altText": "Oscar -10° photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4638c1e1ca3ff6d583d8d1-1782987008671-1_1000.jpeg",
+          "altText": "Oscar -10° photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4638c1e1ca3ff6d583d8d1-1782987008671-1_2000.webp",
+          "altText": "Oscar -10° photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4638c1e1ca3ff6d583d8d1-1782987008671-1_original.webp",
+          "altText": "Oscar -10° photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463916df08780fd1a0b521",
+    "name": "Perform Fiber Bag -7C",
+    "manufacturer": "Mammut",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 250,
+      "USD": 275
+    },
+    "descriptionI18n": {
+      "en": "The Mammut Perform Fiber Bag -7C is a three-season synthetic mummy sleeping bag — Ajungilak polyester insulation with optimized fit, central two-way zip, and noise-reducing hood lining for restorative sleep on multi-day hikes. Magnetic warm collar, insulated zip baffle, hood insulation chamber, anatomical foot box, and internal valuables pocket; includes Deep Sleep mask and earplugs. 100% recycled polyester lining; PFC-free DWR; bluesign and Fair Wear. Comfort -1 °C, limit -7 °C, extreme -22 °C (EN 13537:2012). Weight 1.55 kg (size L); 1.1 kg fill; packs to 29 × 32 cm; fits users up to 195 cm.",
+      "de": "Der Mammut Perform Fiber Bag -7C ist ein Drei-Jahreszeiten-Synthetics-Mumienschlafsack — Ajungilak-Polyester-Isolierung mit optimierter Passform, zentralem Zwei-Wege-Reißverschluss und geräuschdämpfendem Kapuzenfutter für erholsamen Schlaf auf Mehrtagestouren. Magnetischer Wärmekragen, isolierte RV-Leiste, Isolationskammer an der Kapuze, anatomische Fußbox und Innentasche; inkl. Deep-Sleep-Maske und Ohrstöpsel. 100 % recyceltes Polyester-Innenfutter; PFC-freies DWR; bluesign und Fair Wear. Komfort -1 °C, Grenz -7 °C, Extrem -22 °C (EN 13537:2012). Gewicht 1,55 kg (Größe L); 1,1 kg Füllung; Packmaß 29 × 32 cm; für Körpergröße bis 195 cm."
+    },
+    "manufacturerUrl": "https://www.mammut.com/de/de/products/2410-03290-4/perform-fiber-bag-7c",
+    "taglineI18n": {
+      "en": "Restorative 3-season synthetic for multi-day hikes.",
+      "de": "Erholsamer Synthetics-Schlafsack fürs Drei-Jahreszeiten-Trekking."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.55 kg",
+          "de": "1,55 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Synthetic",
+          "de": "Synthetik"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463916df08780fd1a0b521-1782987144160-1_200.jpeg",
+          "altText": "Perform Fiber Bag -7C photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463916df08780fd1a0b521-1782987144160-1_500.jpeg",
+          "altText": "Perform Fiber Bag -7C photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463916df08780fd1a0b521-1782987144160-1_1000.jpeg",
+          "altText": "Perform Fiber Bag -7C photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463916df08780fd1a0b521-1782987144160-1_2000.webp",
+          "altText": "Perform Fiber Bag -7C photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463916df08780fd1a0b521-1782987144160-1_original.webp",
+          "altText": "Perform Fiber Bag -7C photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4639a0764429bf9c69e34f",
+    "name": "Ultra 0°",
+    "manufacturer": "Exped",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 430,
+      "USD": 470
+    },
+    "descriptionI18n": {
+      "en": "The Exped Ultra 0° is a feather-light summer down mummy sleeping bag — 850+ cuin RDS-certified European goose down with circumferential I-beam baffles and Downshift fill adjustment for matching insulation to mat and conditions. Recycled 10D Pertex Quantum ripstop shell and lining; proportional differential cut; 3D triangle footbox, insulated zip flap, and adjustable elliptical draft collar. Comfort 6 °C, limit 2 °C, extreme -13 °C. Weight 550 g (size M); 275 g fill; packs to 15 × 15 × 25 cm; length 203 cm. bluesign; Oeko-Tex 100; no intentionally added PFAS. Includes stuff sack and mesh storage bag.",
+      "de": "Der Exped Ultra 0° ist ein federleichter Sommer-Daunen-Mumienschlafsack — 850+ cuin RDS-zertifizierte europäische Gänsedaune mit umlaufenden H-förmigen Kammern und Downshift-Füllverlagerung für Anpassung an Matte und Bedingungen. Recyceltes 10D Pertex Quantum Ripstop außen und innen; proportionaler Differential Cut; 3D-Dreieck-Fußbox, isolierte RV-Leiste und verstellbarer elliptischer Windschutzkragen. Komfort 6 °C, Grenz 2 °C, Extrem -13 °C. Gewicht 550 g (Größe M); 275 g Füllung; Packmaß 15 × 15 × 25 cm; Länge 203 cm. bluesign; Oeko-Tex 100; keine absichtlich zugesetzten PFAS. Inkl. Packsack und Mesh-Aufbewahrungstasche."
+    },
+    "manufacturerUrl": "https://www.exped.com/de/produkte/schlafsaecke/ultra-0deg",
+    "taglineI18n": {
+      "en": "Ultralight summer down with shiftable baffles.",
+      "de": "Ultraleichte Sommerdaune mit verschiebbarer Füllung."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Summer",
+          "de": "Sommer"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "550 g",
+          "de": "550 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4639a0764429bf9c69e34f-1782987254174-1_200.jpeg",
+          "altText": "Ultra 0° photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4639a0764429bf9c69e34f-1782987254174-1_500.jpeg",
+          "altText": "Ultra 0° photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4639a0764429bf9c69e34f-1782987254174-1_1000.jpeg",
+          "altText": "Ultra 0° photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4639a0764429bf9c69e34f-1782987254174-1_2000.webp",
+          "altText": "Ultra 0° photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4639a0764429bf9c69e34f-1782987254174-1_original.webp",
+          "altText": "Ultra 0° photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463a205375fbc89ce4359f",
+    "name": "Biopod Down Hybrid Ice Cold 190",
+    "manufacturer": "Grüezi Bag",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 700,
+      "USD": 770
+    },
+    "descriptionI18n": {
+      "en": "The Grüezi Bag Biopod Down Hybrid Ice Cold 190 is a winter down-wool hybrid mummy sleeping bag — 700 g RDS-certified goose down (90/10, 800+ cuin) with a lavalan AlmWolle wool layer to keep down dry and regulate moisture. Recycled 20D nylon shell and lining; BeSoDRY-ECO DWR; H-chamber and V-shape baffle construction. Removable USB carbon heating element in the footbox, anti-slip grips, face baffle, warm collar, and two-way zip. Comfort -5 °C, limit -12 °C, extreme -31 °C (EN ISO 23537-1). Weight 1.35 kg (bag); packs to Ø 21 × 30 cm compressed; fits users up to 190 cm. Made in Germany.",
+      "de": "Der Grüezi Bag Biopod Down Hybrid Ice Cold 190 ist ein Winter-Daunen-Wolle-Hybrid-Mumienschlafsack — 700 g RDS-zertifizierte Gänsedaune (90/10, 800+ cuin) mit lavalan-AlmWolle-Schicht, die die Daune trocken hält und Feuchtigkeit reguliert. Recyceltes 20D Nylon außen und innen; BeSoDRY-ECO-DWR; H-Kammer- und V-Shape-Kammerkonstruktion. Herausnehmbares USB-Karbon-Heizelement in der Fußbox, Anti-Rutsch-Noppen, Gesichtsbaffle, Wärmekragen und Zwei-Wege-Reißverschluss. Komfort -5 °C, Grenz -12 °C, Extrem -31 °C (EN ISO 23537-1). Gewicht 1,35 kg (Schlafsack); Packmaß komprimiert Ø 21 × 30 cm; für Körpergröße bis 190 cm. Made in Germany."
+    },
+    "manufacturerUrl": "https://www.gz-bag.de/products/mumienschlafsack-downwool-hybrid-ice-cold-190-wide-14",
+    "taglineI18n": {
+      "en": "Down-wool hybrid with heated footbox for winter tours.",
+      "de": "Daunen-Wolle-Hybrid mit beheizbarer Fußbox fürs Wintertrekking."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "Winter",
+          "de": "Winter"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.35 kg",
+          "de": "1,35 kg"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463a205375fbc89ce4359f-1782987402085-1_200.jpeg",
+          "altText": "Biopod Down Hybrid Ice Cold 190 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463a205375fbc89ce4359f-1782987402085-1_500.jpeg",
+          "altText": "Biopod Down Hybrid Ice Cold 190 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463a205375fbc89ce4359f-1782987402085-1_1000.jpeg",
+          "altText": "Biopod Down Hybrid Ice Cold 190 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463a205375fbc89ce4359f-1782987402085-1_2000.webp",
+          "altText": "Biopod Down Hybrid Ice Cold 190 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463a205375fbc89ce4359f-1782987402085-1_original.webp",
+          "altText": "Biopod Down Hybrid Ice Cold 190 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463a9e88c4cc7b19442775",
+    "name": "X-Lite 300",
+    "manufacturer": "Cumulus",
+    "category": "6a3d2d3f9824a6c14ed21c01",
+    "priceI18n": {
+      "EUR": 439,
+      "USD": 480
+    },
+    "descriptionI18n": {
+      "en": "The Cumulus X-Lite 300 is an ultralight two-to-three-season down mummy sleeping bag — 300 g ethically sourced 900 FP Polish goose down in trapezoid chambers with differential cut. 19 g/m² Toray Airtastic shell and lining; minimalist design with 2/3-length 3 mm YKK zip, down-filled zip tube, 3D hood, and shark-fin foot box. Comfort 2 °C, limit -4 °C. Weight 465 g (standard size); fits users up to 183 cm. Made in Poland; stuff sack and storage bag included.",
+      "de": "Der Cumulus X-Lite 300 ist ein ultraleichter Zwei-bis-Drei-Jahreszeiten-Daunen-Mumienschlafsack — 300 g ethisch bezogene 900-FP polnische Gänsedaune in Trapez-Kammern mit Differential Cut. 19 g/m² Toray Airtastic außen und innen; minimalistisches Design mit 2/3-längigem 3-mm-YKK-Reißverschluss, daunengefüllter RV-Tube, 3D-Kapuze und Haiflossen-Fußbox. Komfort 2 °C, Grenz -4 °C. Gewicht 465 g (Standardgröße); für Körpergröße bis 183 cm. Made in Poland; Packsack und Aufbewahrungstasche inklusive."
+    },
+    "manufacturerUrl": "https://cumulus.equipment/en/eu/p/down-sleeping-bag-x-lite-300",
+    "taglineI18n": {
+      "en": "Ultralight 900 FP down for fast-and-light trekking.",
+      "de": "Ultraleichte 900-FP-Daune fürs schnelle und leichte Trekking."
+    },
+    "highlights": [
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "465 g",
+          "de": "465 g"
+        }
+      },
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Down",
+          "de": "Daune"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463a9e88c4cc7b19442775-1782987588801-1_200.jpeg",
+          "altText": "X-Lite 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463a9e88c4cc7b19442775-1782987588801-1_500.jpeg",
+          "altText": "X-Lite 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463a9e88c4cc7b19442775-1782987588801-1_1000.jpeg",
+          "altText": "X-Lite 300 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463a9e88c4cc7b19442775-1782987588801-1_2000.webp",
+          "altText": "X-Lite 300 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463a9e88c4cc7b19442775-1782987588801-1_original.webp",
+          "altText": "X-Lite 300 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  }
+]

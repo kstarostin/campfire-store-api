@@ -66,5 +66,1188 @@
         }
       }
     ]
+  },
+  {
+    "_id": "6a4620263cfb5daa614dc18b",
+    "name": "Hubba Hubba LT",
+    "manufacturer": "MSR",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 489,
+      "USD": 550
+    },
+    "descriptionI18n": {
+      "en": "The MSR Hubba Hubba LT 2 is a lightweight three-season backpacking tent for two — airy micromesh body, rectangular 32 sq ft (2.95 m²) floor with no taper for modern sleeping pads, and 40 in (102 cm) peak height. Dual StayDry doors with vestibules (16 sq ft / 1.48 m²), PFAS-free DWR rainfly, solution-dyed fabrics, and DAC NFL poles. Minimum weight 1.36 kg (3 lb); packs to 51 × 14 cm. Freestanding unified hub-and-pole setup.",
+      "de": "Das MSR Hubba Hubba LT 2 ist ein leichtes Drei-Jahreszeiten-Rucksackzelt für zwei — luftiges Mikromesh-Innenzelt, rechteckiger 2,95 m² Boden ohne Verjüngung für moderne Isomatten, 102 cm Innenhöhe. Zwei StayDry-Türen mit Vordächern (1,48 m²), PFAS-freie DWR-Außenhaut, solution-dyed Stoffe und DAC-NFL-Gestänge. Mindestgewicht 1,36 kg; Packmaß 51 × 14 cm. Freistehend, schneller Hub-and-Pole-Aufbau."
+    },
+    "manufacturerUrl": "https://cascadedesigns.com/en-eu/products/hubba-hubba-lt-2-person-backpacking-tent-eu",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4620263cfb5daa614dc18b-1782980890199-1_200.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4620263cfb5daa614dc18b-1782980890199-1_500.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4620263cfb5daa614dc18b-1782980890199-1_1000.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4620263cfb5daa614dc18b-1782980890199-1_2000.webp",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4620263cfb5daa614dc18b-1782980890199-1_original.webp",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4620263cfb5daa614dc18b-1782980890922-2_200.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4620263cfb5daa614dc18b-1782980890922-2_500.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4620263cfb5daa614dc18b-1782980890922-2_1000.jpeg",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4620263cfb5daa614dc18b-1782980890922-2_2000.webp",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4620263cfb5daa614dc18b-1782980890922-2_original.webp",
+          "altText": "Hubba Hubba LT photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Lightweight two-person backpacking tent with room to stretch out.",
+      "de": "Leichtes Zweipersonen-Rucksackzelt mit Platz zum Ausstrecken."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.36 kg min",
+          "de": "1,36 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4622d6a200bd4732abb260",
+    "name": "Elixir 3",
+    "manufacturer": "MSR",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 347,
+      "USD": 390
+    },
+    "descriptionI18n": {
+      "en": "The MSR Elixir 3 is a spacious three-season backpacking tent for three — rectangular 41 sq ft (3.79 m²) floor fits modern wide sleeping pads, with 43 in (109 cm) peak height and dual StayDry doors. Mix of mesh and solid panels for ventilation and privacy; PFAS-free DWR rainfly with 15 sq ft vestibule space. Includes footprint, 7000-series aluminum poles, and freestanding color-coded setup. Minimum weight 2.75 kg (6 lb 1 oz); packs to 53 × 19 cm.",
+      "de": "Das MSR Elixir 3 ist ein geräumiges Drei-Jahreszeiten-Rucksackzelt für drei — rechteckiger 3,79 m² Boden für breite Isomatten, 109 cm Innenhöhe und zwei StayDry-Türen. Mischung aus Mesh und Solidstoff für Belüftung und Privatsphäre; PFAS-freie DWR-Außenhaut mit 1,41 m² Vordach. Inkl. Footprint, 7000er-Alu-Gestänge, freistehender Farbcodierung. Mindestgewicht 2,75 kg; Packmaß 53 × 19 cm."
+    },
+    "manufacturerUrl": "https://cascadedesigns.com/en-eu/products/elixir-3-backpacking-tent",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981513442-1_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981513442-1_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981513442-1_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981513442-1_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981513442-1_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981514090-2_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981514090-2_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981514090-2_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981514090-2_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981514090-2_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981514683-3_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981514683-3_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981514683-3_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981514683-3_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981514683-3_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981515179-4_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981515179-4_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981515179-4_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981515179-4_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981515179-4_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981515802-5_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981515802-5_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981515802-5_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981515802-5_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981515802-5_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4622d6a200bd4732abb260-1782981516679-6_200.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4622d6a200bd4732abb260-1782981516679-6_500.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4622d6a200bd4732abb260-1782981516679-6_1000.jpeg",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4622d6a200bd4732abb260-1782981516679-6_2000.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4622d6a200bd4732abb260-1782981516679-6_original.webp",
+          "altText": "Elixir 3 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Roomy three-person tent with footprint included.",
+      "de": "Geräumiges Dreipersonenzelt mit Footprint inklusive."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "3-person",
+          "de": "3 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "2.75 kg min",
+          "de": "2,75 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4623b2f5369b662e3dcc42",
+    "name": "Copper Spur UL2",
+    "manufacturer": "Big Agnes",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 534,
+      "USD": 600
+    },
+    "descriptionI18n": {
+      "en": "The Big Agnes Copper Spur UL2 is a freestanding three-season ultralight backpacking tent for two — HyperBead™ 15D/20D solution-dyed ripstop with PFAS-free 1500 mm waterproofing, dual doors, and dual vestibules (18 sq ft / 1.67 m²). Tapered 29 sq ft (2.69 m²) floor (88 × 52–42 in), 40 in (102 cm) peak height, and DAC NFL pole. Trail weight 1.19 kg (2 lb 10 oz); packed 1.36 kg (3 lb). Successor to the Copper Spur HV UL2 line.",
+      "de": "Das Big Agnes Copper Spur UL2 ist ein freistehendes ultraleichtes Drei-Jahreszeiten-Rucksackzelt für zwei — HyperBead™ 15D/20D solution-dyed Ripstop mit PFAS-freier 1500-mm-Wassersäule, zwei Türen und zwei Vordächer (1,67 m²). Verjüngter 2,69 m² Boden (223 × 132–107 cm), 102 cm Innenhöhe, DAC-NFL-Gestänge. Trail-Gewicht 1,19 kg; Packgewicht 1,36 kg. Nachfolger der Copper Spur HV UL2-Reihe."
+    },
+    "manufacturerUrl": "https://www.bigagnes.com/products/copper-spur-ul-two",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4623b2f5369b662e3dcc42-1782981815882-1_200.jpeg",
+          "altText": "Copper Spur UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4623b2f5369b662e3dcc42-1782981815882-1_500.jpeg",
+          "altText": "Copper Spur UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4623b2f5369b662e3dcc42-1782981815882-1_1000.jpeg",
+          "altText": "Copper Spur UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4623b2f5369b662e3dcc42-1782981815882-1_2000.webp",
+          "altText": "Copper Spur UL2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4623b2f5369b662e3dcc42-1782981815882-1_original.webp",
+          "altText": "Copper Spur UL2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Award-winning ultralight two-person tent with dual doors.",
+      "de": "Preisgekröntes ultraleichtes Zweipersonenzelt mit zwei Türen."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.19 kg trail",
+          "de": "1,19 kg Trail"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4624d42c8efc7276ae93f1",
+    "name": "Tiger Wall UL2",
+    "manufacturer": "Big Agnes",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 445,
+      "USD": 500
+    },
+    "descriptionI18n": {
+      "en": "The Big Agnes Tiger Wall UL2 is a semi-freestanding three-season ultralight backpacking tent for two — high-volume single-pole architecture with dual side-entry doors and vestibules (16 sq ft / 1.49 m²). HyperBead™ recycled 15D ripstop fly and floor with PFAS-free 1500 mm waterproofing. Tapered 28 sq ft (2.6 m²) floor (86 × 52–42 in), 39 in (99 cm) peak height, and DAC Featherlite NFL pole. Trail weight 0.99 kg (2 lb 3 oz); packed 1.13 kg (2 lb 8 oz). Lighter alternative to the freestanding Copper Spur line.",
+      "de": "Das Big Agnes Tiger Wall UL2 ist ein halbfreistehendes ultraleichtes Drei-Jahreszeiten-Rucksackzelt für zwei — hohes Innenvolumen mit Einzelgestänge, zwei Seiteneingängen und Vordächern (1,49 m²). HyperBead™ recyceltes 15D-Ripstop-Fly und -Boden mit PFAS-freier 1500-mm-Wassersäule. Verjüngter 2,6 m² Boden (218 × 132–107 cm), 99 cm Innenhöhe, DAC Featherlite NFL-Gestänge. Trail-Gewicht 0,99 kg; Packgewicht 1,13 kg. Leichtere Alternative zur freistehenden Copper-Spur-Reihe."
+    },
+    "manufacturerUrl": "https://www.bigagnes.com/products/tiger-wall-ul-two",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4624d42c8efc7276ae93f1-1782981972555-1_200.jpeg",
+          "altText": "Tiger Wall UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4624d42c8efc7276ae93f1-1782981972555-1_500.jpeg",
+          "altText": "Tiger Wall UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4624d42c8efc7276ae93f1-1782981972555-1_1000.jpeg",
+          "altText": "Tiger Wall UL2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4624d42c8efc7276ae93f1-1782981972555-1_2000.webp",
+          "altText": "Tiger Wall UL2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4624d42c8efc7276ae93f1-1782981972555-1_original.webp",
+          "altText": "Tiger Wall UL2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Semi-freestanding ultralight tent with generous side-entry doors.",
+      "de": "Halbfreistehendes ultraleichtes Zelt mit großzügigen Seiteneingängen."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "0.99 kg trail",
+          "de": "0,99 kg Trail"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4625775ce468a752a3c98c",
+    "name": "Lofoten 2 ULW",
+    "manufacturer": "Nordisk",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 900,
+      "USD": 1010
+    },
+    "descriptionI18n": {
+      "en": "The Nordisk Lofoten 2 ULW is an ultralight double-wall tunnel tent for two — among the lightest two-layer shelters available, with race weight 0.50 kg and official weight 0.59 kg. Nortech T-NY 7D silicone-coated ripstop nylon, ULW aluminium poles with ultra-short segments, and Flex-rope suspension. Inner floor 220 × 120 cm (2.64 m²), 70 cm peak height; fly 250 × 125 cm. Packs to 11 × 22 cm. Pitched outer-first; inner can be used alone. Built for fast-and-light trekking and bikepacking.",
+      "de": "Das Nordisk Lofoten 2 ULW ist ein ultraleichtes Doppelwand-Tunnelzelt für zwei — eines der leichtesten Zwei-Lagen-Schutzzelte, mit Race-Gewicht 0,50 kg und offiziellem Gewicht 0,59 kg. Nortech T-NY 7D silikonbeschichtetes Ripstop-Nylon, ULW-Aluminiumgestänge mit ultrakurzen Segmenten und Flex-rope-Aufhängung. Innenboden 220 × 120 cm (2,64 m²), 70 cm Innenhöhe; Fly 250 × 125 cm. Packmaß 11 × 22 cm. Aufbau Fly zuerst; Innenzelt einzeln nutzbar. Für Fast-and-Light-Trekking und Bikepacking."
+    },
+    "manufacturerUrl": "https://nordisk.eu/products/lofoten-2-ulw-tent-2-person-forest-green",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4625775ce468a752a3c98c-1782982158370-1_200.jpeg",
+          "altText": "Lofoten 2 ULW photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4625775ce468a752a3c98c-1782982158370-1_500.jpeg",
+          "altText": "Lofoten 2 ULW photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4625775ce468a752a3c98c-1782982158370-1_1000.jpeg",
+          "altText": "Lofoten 2 ULW photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4625775ce468a752a3c98c-1782982158370-1_2000.webp",
+          "altText": "Lofoten 2 ULW photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4625775ce468a752a3c98c-1782982158370-1_original.webp",
+          "altText": "Lofoten 2 ULW photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Featherweight double-wall tunnel tent with tiny pack size.",
+      "de": "Ultraleichtes Doppelwand-Tunnelzelt mit minimalem Packmaß."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "0.59 kg official",
+          "de": "0,59 kg offiziell"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46261fa524d0a250b77068",
+    "name": "Telemark 2.2 LW",
+    "manufacturer": "Nordisk",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 750,
+      "USD": 840
+    },
+    "descriptionI18n": {
+      "en": "The Nordisk Telemark 2.2 LW is a lightweight double-wall tunnel tent for two — dual entrances with vestibules, magnetic quick-snap door closures, and doors that convert to canopies. Silicone-coated 10D nylon fly (2000 mm), breathable 15D nylon inner, and 8000 mm floor. Adjustable inner width; inner floor 214 × 130 cm (2.78 m²), 91 cm peak height. DAC Featherlite NFL aluminium poles. Official weight 1.12 kg; trim 1.06 kg. Successor to the prize-winning Telemark 2 LW line.",
+      "de": "Das Nordisk Telemark 2.2 LW ist ein leichtes Doppelwand-Tunnelzelt für zwei — zwei Eingänge mit Vordächern, magnetische Quick-Snap-Türverschlüsse und umwandelbare Türen als Vordach. Silikonbeschichtetes 10D-Nylon-Fly (2000 mm), atmungsaktives 15D-Nylon-Innenzelt und 8000-mm-Boden. Verstellbare Innenzeltbreite; Innenboden 214 × 130 cm (2,78 m²), 91 cm Innenhöhe. DAC Featherlite NFL-Aluminiumgestänge. Offizielles Gewicht 1,12 kg; Trim 1,06 kg. Nachfolger der preisgekrönten Telemark-2-LW-Reihe."
+    },
+    "manufacturerUrl": "https://nordisk.eu/products/telemark-2-2-lw-2-0-tent-black-forest-green",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46261fa524d0a250b77068-1782982295182-1_200.jpeg",
+          "altText": "Telemark 2.2 LW photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46261fa524d0a250b77068-1782982295182-1_500.jpeg",
+          "altText": "Telemark 2.2 LW photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46261fa524d0a250b77068-1782982295182-1_1000.jpeg",
+          "altText": "Telemark 2.2 LW photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46261fa524d0a250b77068-1782982295182-1_2000.webp",
+          "altText": "Telemark 2.2 LW photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46261fa524d0a250b77068-1782982295182-1_original.webp",
+          "altText": "Telemark 2.2 LW photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Dual-door ultralight tunnel tent with convertible vestibules.",
+      "de": "Ultraleichtes Tunnelzelt mit zwei Türen und Vordach-Option."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.12 kg official",
+          "de": "1,12 kg offiziell"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a4626b692c8fac2efd8bce1",
+    "name": "Hogan Ultralight 2P",
+    "manufacturer": "Vaude",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 683,
+      "USD": 770
+    },
+    "descriptionI18n": {
+      "en": "The VAUDE Hogan Ultralight 2P is a freestanding three-season double-wall tent for two — inner-first flysheet construction with ridge-tunnel hybrid stability, one vestibule, and inner tent pitchable alone. Recycled 15D silicone-coated nylon fly (3000 mm), 20D floor, and DAC NFL Featherlight poles (9.3/8.7 mm). Inner area 2.6 m²; total floor 3.4 m². Minimum weight 1.30 kg; packed 1.45 kg; packs to 43 × 13 cm. Bikepacking-friendly stuff sacks with webbing. Successor to the Hogan UL 2P.",
+      "de": "Das VAUDE Hogan Ultralight 2P ist ein freistehendes Doppelwand-Drei-Jahreszeiten-Zelt für zwei — Inner-First-Fly-Konstruktion mit Ridge-Tunnel-Hybrid für Stabilität, ein Vordach und allein aufstellbares Innenzelt. Recyceltes 15D silikonbeschichtetes Nylon-Fly (3000 mm), 20D-Boden und DAC-NFL-Featherlight-Gestänge (9,3/8,7 mm). Innenfläche 2,6 m²; Gesamtboden 3,4 m². Mindestgewicht 1,30 kg; Packgewicht 1,45 kg; Packmaß 43 × 13 cm. Bikepacking-Packtaschen mit Gurtband. Nachfolger des Hogan UL 2P."
+    },
+    "manufacturerUrl": "https://www.vaude.com/de/de/48448-hogan-2-personen-ultraleichtzelt.html",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a4626b692c8fac2efd8bce1-1782982508874-1_200.jpeg",
+          "altText": "Hogan Ultralight 2P photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a4626b692c8fac2efd8bce1-1782982508874-1_500.jpeg",
+          "altText": "Hogan Ultralight 2P photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a4626b692c8fac2efd8bce1-1782982508874-1_1000.jpeg",
+          "altText": "Hogan Ultralight 2P photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a4626b692c8fac2efd8bce1-1782982508874-1_2000.webp",
+          "altText": "Hogan Ultralight 2P photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a4626b692c8fac2efd8bce1-1782982508874-1_original.webp",
+          "altText": "Hogan Ultralight 2P photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Freestanding ultralight tent with inner-first pitching.",
+      "de": "Freistehendes Ultraleichtzelt mit Inner-First-Aufbau."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.30 kg min",
+          "de": "1,30 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462786e0891b0cb806a335",
+    "name": "Starlight 2 Exp",
+    "manufacturer": "Robens",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 200,
+      "USD": 225
+    },
+    "descriptionI18n": {
+      "en": "The Robens Starlight 2 Exp is a three-season double-wall tunnel tent for two — twin-wedge profile for wind shedding, pre-angled alloy hoop pole with clip-on inner, and adjustable vents from inside. Recycled HydroTex HD RS polyester fly (5000 mm) and 10,000 mm floor. Flysheet-first pitching; mesh door for ventilation. Minimum weight 2.3 kg; packed 2.5 kg; packs to 43 × 16 cm. Luminous zip pulls and colour-coded poles.",
+      "de": "Das Robens Starlight 2 Exp ist ein Doppelwand-Drei-Jahreszeiten-Tunnelzelt für zwei — Zwillingskeil-Profil für Windschlupf, vorgebogenes Aluminium-Hoop-Gestänge mit Clip-Innenzelt und von innen verstellbare Belüftung. Recyceltes HydroTex HD RS Polyester-Fly (5000 mm) und 10.000-mm-Boden. Aufbau Fly zuerst; Moskitonetz-Tür für Belüftung. Mindestgewicht 2,3 kg; Packgewicht 2,5 kg; Packmaß 43 × 16 cm. Leuchtende Zipper und farbcodiertes Gestänge."
+    },
+    "manufacturerUrl": "https://www.robens.de/de-de/shop/outdoor-zelte/zelte-mit-gestange/2-personenzelt/starlight-2-exp",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462786e0891b0cb806a335-1782982764464-1_200.jpeg",
+          "altText": "Starlight 2 Exp photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462786e0891b0cb806a335-1782982764464-1_500.jpeg",
+          "altText": "Starlight 2 Exp photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462786e0891b0cb806a335-1782982764464-1_1000.jpeg",
+          "altText": "Starlight 2 Exp photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462786e0891b0cb806a335-1782982764464-1_2000.webp",
+          "altText": "Starlight 2 Exp photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462786e0891b0cb806a335-1782982764464-1_original.webp",
+          "altText": "Starlight 2 Exp photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Award-winning tunnel tent with excellent ventilation.",
+      "de": "Preisgekröntes Tunnelzelt mit hervorragender Belüftung."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "2.3 kg min",
+          "de": "2,3 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462958e591d1641a7a1dbd",
+    "name": "Cloud-up 3 Ultralight Camping Tent",
+    "manufacturer": "Naturehike",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 179,
+      "USD": 199
+    },
+    "descriptionI18n": {
+      "en": "The Naturehike Cloud Up 3 is a freestanding three-season double-wall backpacking tent for three — 20D nylon silicone-coated fly with 4000 mm+ waterproofing, B3 mesh inner, and included footprint. Single-pole design with crossbar for headroom and stability; extended vestibule for gear. Interior approx. 215 × 180 × 110 cm. 7001 aluminium poles. Packed weight approx. 2.4 kg; trail approx. 2.2 kg. Quick five-minute setup; inner pitchable alone.",
+      "de": "Das Naturehike Cloud Up 3 ist ein freistehendes Doppelwand-Drei-Jahreszeiten-Rucksackzelt für drei — 20D-Nylon-Silikon-Fly mit 4000 mm+ Wassersäule, B3-Mesh-Innenzelt und Footprint inklusive. Einzelgestänge mit Querstange für Kopffreiheit und Stabilität; verlängertes Vordach für Ausrüstung. Innenraum ca. 215 × 180 × 110 cm. 7001-Aluminiumgestänge. Packgewicht ca. 2,4 kg; Trail ca. 2,2 kg. Schneller Aufbau in fünf Minuten; Innenzelt einzeln nutzbar."
+    },
+    "manufacturerUrl": "https://www.naturehike.com/en-de/products/cloud-up-3-person-ultralight-backpacking-tent",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462958e591d1641a7a1dbd-1782983405982-2_200.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462958e591d1641a7a1dbd-1782983405982-2_500.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462958e591d1641a7a1dbd-1782983405982-2_1000.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462958e591d1641a7a1dbd-1782983405982-2_2000.webp",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462958e591d1641a7a1dbd-1782983405982-2_original.webp",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462958e591d1641a7a1dbd-1782983405477-1_200.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462958e591d1641a7a1dbd-1782983405477-1_500.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462958e591d1641a7a1dbd-1782983405477-1_1000.jpeg",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462958e591d1641a7a1dbd-1782983405477-1_2000.webp",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462958e591d1641a7a1dbd-1782983405477-1_original.webp",
+          "altText": "Cloud-up 3 Ultralight Camping Tent photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Roomy ultralight three-person tent with included footprint.",
+      "de": "Geräumiges ultraleichtes Dreipersonenzelt mit Footprint."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "3-person",
+          "de": "3 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "2.2 kg trail",
+          "de": "2,2 kg Trail"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462b0c693ff0a840f15f22",
+    "name": "Mongar UL 2",
+    "manufacturer": "Naturehike",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 229,
+      "USD": 199
+    },
+    "descriptionI18n": {
+      "en": "The Naturehike Mongar UL 2 is an ultralight three-season double-wall backpacking tent for two — Y-frame design with 20D silicone-coated nylon fly and footprint (4000 mm), B3 mesh inner, and 7001 aluminium poles. Configurable one- or two-person layout; inner approx. 210 × 130 × 105 cm. Minimum weight 1.53 kg (two-person); packed 1.67 kg. Quick freestanding setup with symmetrical ventilation.",
+      "de": "Das Naturehike Mongar UL 2 ist ein ultraleichtes Doppelwand-Drei-Jahreszeiten-Rucksackzelt für zwei — Y-Rahmen-Konstruktion mit 20D silikonbeschichtetem Nylon-Fly und Footprint (4000 mm), B3-Mesh-Innenzelt und 7001-Aluminiumgestänge. Konfigurierbar für ein oder zwei Personen; Innenraum ca. 210 × 130 × 105 cm. Mindestgewicht 1,53 kg (Zweipersonen); Packgewicht 1,67 kg. Schneller freistehender Aufbau mit symmetrischer Belüftung."
+    },
+    "manufacturerUrl": "https://www.naturehike.com/en-de/products/mongar-ul-2-person-ultralight-backpacking-tent",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462b0c693ff0a840f15f22-1782983702635-1_200.jpeg",
+          "altText": "Mongar UL 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462b0c693ff0a840f15f22-1782983702635-1_500.jpeg",
+          "altText": "Mongar UL 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462b0c693ff0a840f15f22-1782983702635-1_1000.jpeg",
+          "altText": "Mongar UL 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462b0c693ff0a840f15f22-1782983702635-1_2000.webp",
+          "altText": "Mongar UL 2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462b0c693ff0a840f15f22-1782983702635-1_original.webp",
+          "altText": "Mongar UL 2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Ultralight double-wall tent with flexible one- or two-person layout.",
+      "de": "Ultraleichtes Doppelwandzelt mit flexiblem Ein- oder Zweipersonen-Aufbau."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.53 kg min",
+          "de": "1,53 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462c3722890c1b310f6519",
+    "name": "Anjan 2 GT",
+    "manufacturer": "Hilleberg",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 1015,
+      "USD": 1075
+    },
+    "descriptionI18n": {
+      "en": "The Hilleberg Anjan 2 GT is a three-season tunnel tent for two — extended vestibule (2.5 m²) for gear storage, Kerlon 1000 fly, and 9 mm DAC poles. Catenary-cut outer walls for constant ventilation; mesh door and rear vent; rear outer wall rolls up in warm weather. Linked inner and outer pitch together. Inner area 2.6 m², 100 cm peak height. Minimum weight 1.9 kg; packed 2.2 kg; packs to 46 × 14 cm. Yellow Label — designed for snow-free, mobile backpacking.",
+      "de": "Das Hilleberg Anjan 2 GT ist ein Drei-Jahreszeiten-Tunnelzelt für zwei — verlängertes Vordach (2,5 m²) für Ausrüstung, Kerlon-1000-Fly und 9-mm-DAC-Gestänge. Katenarisch geschnittene Außenwände für dauerhafte Belüftung; Moskitonetz-Tür und Hecklüftung; Hinterwand des Außenzelts bei Wärme aufrollbar. Verbundenes Innen- und Außenzelt zum gemeinsamen Aufbau. Innenfläche 2,6 m², 100 cm Innenhöhe. Mindestgewicht 1,9 kg; Packgewicht 2,2 kg; Packmaß 46 × 14 cm. Yellow Label — für schneefreies, mobiles Backpacking."
+    },
+    "manufacturerUrl": "https://hilleberg.com/deu/products/tent/Anjan%20GT",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462c3722890c1b310f6519-1782983878764-1_200.jpeg",
+          "altText": "Anjan 2 GT photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462c3722890c1b310f6519-1782983878764-1_500.jpeg",
+          "altText": "Anjan 2 GT photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462c3722890c1b310f6519-1782983878764-1_1000.jpeg",
+          "altText": "Anjan 2 GT photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462c3722890c1b310f6519-1782983878764-1_2000.webp",
+          "altText": "Anjan 2 GT photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462c3722890c1b310f6519-1782983878764-1_original.webp",
+          "altText": "Anjan 2 GT photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Lightweight tunnel tent with extended vestibule for mobile trips.",
+      "de": "Leichtes Tunnelzelt mit verlängertem Vordach für mobile Touren."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.9 kg min",
+          "de": "1,9 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462cedcc98df205b3f1226",
+    "name": "Orion III Extreme",
+    "manufacturer": "Exped",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 950,
+      "USD": 850
+    },
+    "descriptionI18n": {
+      "en": "The Exped Orion III Extreme is a four-season freestanding ridge tunnel tent for two to three — full-length ridge pole to ground for wind stability, 40D double-sided silicone nylon fly (3000 mm), and 70D PU floor (10,000 mm). Canopy 3.7 m² (230 × 160 cm), 132 cm inner height; dual vestibules (2.4 m² total) and dual doors. DAC Featherlite NSL poles; inner usable alone as bug tent. Minimum weight 3.6 kg; packed 3.9 kg; packs to 40 × 25 cm. Successor to the Orion III expedition line.",
+      "de": "Das Exped Orion III Extreme ist ein vierjahreszeitiges freistehendes Ridge-Tunnelzelt für zwei bis drei Personen — volle Längsgestänge bis zum Boden für Windstabilität, 40D beidseitig silikonbeschichtetes Nylon-Fly (3000 mm) und 70D-PU-Boden (10.000 mm). Kuppel 3,7 m² (230 × 160 cm), 132 cm Innenhöhe; zwei Vordächer (2,4 m² gesamt) und zwei Türen. DAC Featherlite NSL-Gestänge; Innenzelt allein als Moskitozelt nutzbar. Mindestgewicht 3,6 kg; Packgewicht 3,9 kg; Packmaß 40 × 25 cm. Nachfolger der Orion-III-Expeditionsreihe."
+    },
+    "manufacturerUrl": "https://www.exped.com/en/products/tents-and-tarps/orion-iii-extreme",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462cedcc98df205b3f1226-1782984134440-1_200.jpeg",
+          "altText": "Orion III Extreme photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462cedcc98df205b3f1226-1782984134440-1_500.jpeg",
+          "altText": "Orion III Extreme photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462cedcc98df205b3f1226-1782984134440-1_1000.jpeg",
+          "altText": "Orion III Extreme photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462cedcc98df205b3f1226-1782984134440-1_2000.webp",
+          "altText": "Orion III Extreme photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462cedcc98df205b3f1226-1782984134440-1_original.webp",
+          "altText": "Orion III Extreme photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Expedition-grade freestanding tent with dual vestibules.",
+      "de": "Expeditionsfreistehendes Zelt mit zwei Vordächern."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "3-person",
+          "de": "3 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "3.6 kg min",
+          "de": "3,6 kg min"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462e100afa82a8cfd7b0d6",
+    "name": "Reinsfjell Superlight 2",
+    "manufacturer": "Helsport",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 1250,
+      "USD": 1400
+    },
+    "descriptionI18n": {
+      "en": "The Helsport Reinsfjell Superlight 2 is a freestanding three-season dome tent for two — dual doors and vestibules, three-pole crossing design for stability and headroom, and pre-bent DAC Featherlite NSL poles. 15D Rainguard Superlight silicone fly (2000 mm) and 40D Rainguard Pro floor (5000 mm). Catenary-cut fly walls for ventilation; mesh inner with removable hook system. Carry weight 2.3 kg; packs to 40 × 18 cm. Updated 2026 Adventure line successor to the classic Reinsfjell Superlight.",
+      "de": "Das Helsport Reinsfjell Superlight 2 ist ein freistehendes Drei-Jahreszeiten-Kuppelzelt für zwei — zwei Türen und Vordächer, Drei-Gestänge-Kreuzung für Stabilität und Kopffreiheit, vorgebogenes DAC Featherlite NSL-Gestänge. 15D Rainguard Superlight Silikon-Fly (2000 mm) und 40D Rainguard Pro Boden (5000 mm). Katenarisch geschnittene Fly-Wände für Belüftung; Mesh-Innenzelt mit abnehmbarem Haken-System. Tragegewicht 2,3 kg; Packmaß 40 × 18 cm. Aktualisierte Adventure-Linie 2026 als Nachfolger des klassischen Reinsfjell Superlight."
+    },
+    "manufacturerUrl": "https://helsport.com/eu/adventure-reinsfjell-sl-2-dome--51002-26-10250",
+    "taglineI18n": {
+      "en": "Ultralight freestanding dome with dual doors and vestibules.",
+      "de": "Ultraleichtes freistehendes Kuppelzelt mit zwei Türen und Vordächern."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "2.3 kg",
+          "de": "2,3 kg"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462e100afa82a8cfd7b0d6-1782984409661-1_200.jpeg",
+          "altText": "Reinsfjell Superlight 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462e100afa82a8cfd7b0d6-1782984409661-1_500.jpeg",
+          "altText": "Reinsfjell Superlight 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462e100afa82a8cfd7b0d6-1782984409661-1_1000.jpeg",
+          "altText": "Reinsfjell Superlight 2 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462e100afa82a8cfd7b0d6-1782984409661-1_2000.webp",
+          "altText": "Reinsfjell Superlight 2 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462e100afa82a8cfd7b0d6-1782984409661-1_original.webp",
+          "altText": "Reinsfjell Superlight 2 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a462fcef3a1449977ae3256",
+    "name": "Lightent 2 Pro",
+    "manufacturer": "Ferrino",
+    "category": "661f9b59dc8283b51d38f4d4",
+    "priceI18n": {
+      "EUR": 300,
+      "USD": 335
+    },
+    "descriptionI18n": {
+      "en": "The Ferrino Lightent 2 Pro is an ultralight tunnel tent for two — external pole system for fast pitch in bad weather without wetting the inner, and 100% recycled polyester ripstop fabrics (GRS). Fly 3000 mm PU-coated; floor 8000 mm with taped seams and reinforced corners. Mosquito-net inner hung from poles; vestibule, Camera Air ventilation, and internal pockets. 7001 T6 aluminium poles (2 shockcorded). Minimum weight 1.85 kg (1.5 kg fly only); packed 2.1 kg. Inner 225 × 120 cm, 100 cm peak; packs to 17 × 35 cm.",
+      "de": "Das Ferrino Lightent 2 Pro ist ein ultraleichtes Tunnelzelt für zwei — externes Gestänge für schnellen Aufbau bei schlechtem Wetter ohne nasses Innenzelt, und 100 % recyceltes Polyester-Ripstop (GRS). Fly 3000 mm PU-beschichtet; Boden 8000 mm mit verschweißten Nähten und verstärkten Ecken. Moskitonetz-Innenzelt am Gestänge aufgehängt; Vordach, Camera-Air-Belüftung und Innentaschen. 7001 T6-Aluminiumgestänge (2 vorgebogen). Mindestgewicht 1,85 kg (1,5 kg nur Fly); Packgewicht 2,1 kg. Innen 225 × 120 cm, 100 cm Spitze; Packmaß 17 × 35 cm."
+    },
+    "manufacturerUrl": "https://ferrino.com/lightent-2-pro-loofr/",
+    "taglineI18n": {
+      "en": "Ultralight recycled tunnel tent with external pole pitch.",
+      "de": "Ultraleichtes Recycling-Tunnelzelt mit externem Gestänge-Aufbau."
+    },
+    "highlights": [
+      {
+        "code": "capacity",
+        "valueI18n": {
+          "en": "2-person",
+          "de": "2 Personen"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "1.85 kg min",
+          "de": "1,85 kg min"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a462fcef3a1449977ae3256-1782984764166-1_200.jpeg",
+          "altText": "Lightent 2 Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a462fcef3a1449977ae3256-1782984764166-1_500.jpeg",
+          "altText": "Lightent 2 Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a462fcef3a1449977ae3256-1782984764166-1_1000.jpeg",
+          "altText": "Lightent 2 Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a462fcef3a1449977ae3256-1782984764166-1_2000.webp",
+          "altText": "Lightent 2 Pro photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a462fcef3a1449977ae3256-1782984764166-1_original.webp",
+          "altText": "Lightent 2 Pro photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
   }
 ]

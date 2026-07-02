@@ -544,6 +544,316 @@ module.exports = {
       { code: 'weight', valueI18n: { en: 'Ultralight', de: 'Ultraleicht' } },
     ],
   },
+  '6a4620263cfb5daa614dc18b': {
+    taglineI18n: {
+      en: 'Lightweight two-person backpacking tent with room to stretch out.',
+      de: 'Leichtes Zweipersonen-Rucksackzelt mit Platz zum Ausstrecken.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.36 kg min', de: '1,36 kg min' } },
+    ],
+  },
+  '6a4622d6a200bd4732abb260': {
+    taglineI18n: {
+      en: 'Roomy three-person tent with footprint included.',
+      de: 'Geräumiges Dreipersonenzelt mit Footprint inklusive.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '3-person', de: '3 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '2.75 kg min', de: '2,75 kg min' } },
+    ],
+  },
+  '6a4623b2f5369b662e3dcc42': {
+    taglineI18n: {
+      en: 'Award-winning ultralight two-person tent with dual doors.',
+      de: 'Preisgekröntes ultraleichtes Zweipersonenzelt mit zwei Türen.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.19 kg trail', de: '1,19 kg Trail' } },
+    ],
+  },
+  '6a4624d42c8efc7276ae93f1': {
+    taglineI18n: {
+      en: 'Semi-freestanding ultralight tent with generous side-entry doors.',
+      de: 'Halbfreistehendes ultraleichtes Zelt mit großzügigen Seiteneingängen.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '0.99 kg trail', de: '0,99 kg Trail' } },
+    ],
+  },
+  '6a4625775ce468a752a3c98c': {
+    taglineI18n: {
+      en: 'Featherweight double-wall tunnel tent with tiny pack size.',
+      de: 'Ultraleichtes Doppelwand-Tunnelzelt mit minimalem Packmaß.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '0.59 kg official', de: '0,59 kg offiziell' } },
+    ],
+  },
+  '6a46261fa524d0a250b77068': {
+    taglineI18n: {
+      en: 'Dual-door ultralight tunnel tent with convertible vestibules.',
+      de: 'Ultraleichtes Tunnelzelt mit zwei Türen und Vordach-Option.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.12 kg official', de: '1,12 kg offiziell' } },
+    ],
+  },
+  '6a4626b692c8fac2efd8bce1': {
+    taglineI18n: {
+      en: 'Freestanding ultralight tent with inner-first pitching.',
+      de: 'Freistehendes Ultraleichtzelt mit Inner-First-Aufbau.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.30 kg min', de: '1,30 kg min' } },
+    ],
+  },
+  '6a462786e0891b0cb806a335': {
+    taglineI18n: {
+      en: 'Award-winning tunnel tent with excellent ventilation.',
+      de: 'Preisgekröntes Tunnelzelt mit hervorragender Belüftung.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '2.3 kg min', de: '2,3 kg min' } },
+    ],
+  },
+  '6a462958e591d1641a7a1dbd': {
+    taglineI18n: {
+      en: 'Roomy ultralight three-person tent with included footprint.',
+      de: 'Geräumiges ultraleichtes Dreipersonenzelt mit Footprint.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '3-person', de: '3 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '2.2 kg trail', de: '2,2 kg Trail' } },
+    ],
+  },
+  '6a462b0c693ff0a840f15f22': {
+    taglineI18n: {
+      en: 'Ultralight double-wall tent with flexible one- or two-person layout.',
+      de: 'Ultraleichtes Doppelwandzelt mit flexiblem Ein- oder Zweipersonen-Aufbau.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.53 kg min', de: '1,53 kg min' } },
+    ],
+  },
+  '6a462c3722890c1b310f6519': {
+    taglineI18n: {
+      en: 'Lightweight tunnel tent with extended vestibule for mobile trips.',
+      de: 'Leichtes Tunnelzelt mit verlängertem Vordach für mobile Touren.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.9 kg min', de: '1,9 kg min' } },
+    ],
+  },
+  '6a462cedcc98df205b3f1226': {
+    taglineI18n: {
+      en: 'Expedition-grade freestanding tent with dual vestibules.',
+      de: 'Expeditionsfreistehendes Zelt mit zwei Vordächern.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '3-person', de: '3 Personen' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '3.6 kg min', de: '3,6 kg min' } },
+    ],
+  },
+  '6a462e100afa82a8cfd7b0d6': {
+    taglineI18n: {
+      en: 'Ultralight freestanding dome with dual doors and vestibules.',
+      de: 'Ultraleichtes freistehendes Kuppelzelt mit zwei Türen und Vordächern.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '2.3 kg', de: '2,3 kg' } },
+    ],
+  },
+  '6a462fcef3a1449977ae3256': {
+    taglineI18n: {
+      en: 'Ultralight recycled tunnel tent with external pole pitch.',
+      de: 'Ultraleichtes Recycling-Tunnelzelt mit externem Gestänge-Aufbau.',
+    },
+    highlights: [
+      { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.85 kg min', de: '1,85 kg min' } },
+    ],
+  },
+
+  // Sleeping bags
+  '6a46307ff6404e52322f9416': {
+    taglineI18n: {
+      en: 'Stretch synthetic bag rated to -6 °C for alpine trekking.',
+      de: 'Dehnbarer Synthetics-Schlafsack bis -6 °C fürs alpine Trekking.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.3 kg', de: '1,3 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a46316c9820e6a8c2d311c9': {
+    taglineI18n: {
+      en: 'Ultralight RDS down bag for warm summer nights.',
+      de: 'Ultraleichter RDS-Daunenschlafsack für warme Sommernächte.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Summer', de: 'Sommer' } },
+      { code: 'weight', valueI18n: { en: '850 g', de: '850 g' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
+  '6a46323e95eb204e618822a9': {
+    taglineI18n: {
+      en: 'Recycled synthetic mummy bag rated to 20 °F.',
+      de: 'Recycelter Synthetics-Mumienschlafsack bis 20 °F bewertet.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.6 kg', de: '1,6 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a4632eb57ba9849019ce362': {
+    taglineI18n: {
+      en: 'Versatile down bag with triple-zip Free-Flow ventilation.',
+      de: 'Vielseitiger Daunenschlafsack mit Free-Flow-Drei-Wege-Reißverschluss.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.02 kg', de: '1,02 kg' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
+  '6a4633c8aad2f29c01537ef7': {
+    taglineI18n: {
+      en: 'Ultralight down bag for fast summer hikes and races.',
+      de: 'Ultraleichter Daunenschlafsack für schnelle Sommertouren und Rennen.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Summer', de: 'Sommer' } },
+      { code: 'weight', valueI18n: { en: '470 g', de: '470 g' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
+  '6a46348c39cb0001ed3660a5': {
+    taglineI18n: {
+      en: 'Military-grade G-LOFT bag rated to -15 °C.',
+      de: 'Militärischer G-LOFT-Schlafsack bis -15 °C bewertet.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.85 kg', de: '1,85 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a4635aab8c89f3d7c7cc805': {
+    taglineI18n: {
+      en: 'Light summer bag for camping, hut treks, and travel.',
+      de: 'Leichter Sommerschlafsack für Camping, Hüttentouren und Reisen.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Summer', de: 'Sommer' } },
+      { code: 'weight', valueI18n: { en: '680 g', de: '680 g' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a463723aad64fa78d2ac8d5': {
+    taglineI18n: {
+      en: 'Recycled synthetic mummy bag for trekking and travel.',
+      de: 'Recycelter Synthetics-Mumienschlafsack fürs Trekking und Reisen.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.55 kg', de: '1,55 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a463837e732947b4cd26dff': {
+    taglineI18n: {
+      en: 'Ultralight summer mummy for festivals and warm nights.',
+      de: 'Ultraleichter Sommer-Mumienschlafsack für Festivals und milde Nächte.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Summer', de: 'Sommer' } },
+      { code: 'weight', valueI18n: { en: '615 g', de: '615 g' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a4638c1e1ca3ff6d583d8d1': {
+    taglineI18n: {
+      en: 'Wind-membrane winter mummy rated to -10 °C.',
+      de: 'Winter-Mumienschlafsack mit Windmembran bis -10 °C bewertet.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Winter', de: 'Winter' } },
+      { code: 'weight', valueI18n: { en: '1.59 kg', de: '1,59 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a463916df08780fd1a0b521': {
+    taglineI18n: {
+      en: 'Restorative 3-season synthetic for multi-day hikes.',
+      de: 'Erholsamer Synthetics-Schlafsack fürs Drei-Jahreszeiten-Trekking.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '1.55 kg', de: '1,55 kg' } },
+      { code: 'type', valueI18n: { en: 'Synthetic', de: 'Synthetik' } },
+    ],
+  },
+  '6a4639a0764429bf9c69e34f': {
+    taglineI18n: {
+      en: 'Ultralight summer down with shiftable baffles.',
+      de: 'Ultraleichte Sommerdaune mit verschiebbarer Füllung.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Summer', de: 'Sommer' } },
+      { code: 'weight', valueI18n: { en: '550 g', de: '550 g' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
+  '6a463a205375fbc89ce4359f': {
+    taglineI18n: {
+      en: 'Down-wool hybrid with heated footbox for winter tours.',
+      de: 'Daunen-Wolle-Hybrid mit beheizbarer Fußbox fürs Wintertrekking.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: 'Winter', de: 'Winter' } },
+      { code: 'weight', valueI18n: { en: '1.35 kg', de: '1,35 kg' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
+  '6a463a9e88c4cc7b19442775': {
+    taglineI18n: {
+      en: 'Ultralight 900 FP down for fast-and-light trekking.',
+      de: 'Ultraleichte 900-FP-Daune fürs schnelle und leichte Trekking.',
+    },
+    highlights: [
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '465 g', de: '465 g' } },
+      { code: 'type', valueI18n: { en: 'Down', de: 'Daune' } },
+    ],
+  },
 
   // Kayaks
   '5c8a34ed14eb5c17645c9108': {
