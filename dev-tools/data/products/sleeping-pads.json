@@ -1,0 +1,837 @@
+[
+  {
+    "_id": "6a463cb65654a73b187d0b4d",
+    "name": "NeoAir XLite NXT",
+    "manufacturer": "Therm-a-Rest",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 200,
+      "USD": 200
+    },
+    "descriptionI18n": {
+      "en": "The Therm-a-Rest NeoAir XLite NXT is an ultralight insulated air sleeping pad — 3 in (7.6 cm) thick with horizontal baffles, Triangular Core Matrix construction, and ThermaCapture radiant heat for a 4.5 R-value suitable year-round. 30D ripstop HT nylon top and bottom; WingLock valve; 83% quieter than the prior XLite. Weight 370 g (Regular); 183 × 51 cm; packs to 23 × 10 cm. Includes stuff sack with integrated pump.",
+      "de": "Die Therm-a-Rest NeoAir XLite NXT ist eine ultraleichte isolierte Luftisomatte — 7,6 cm dick mit horizontalen Kammern, Triangular-Core-Matrix-Konstruktion und ThermaCapture-Wärmestrahlung für einen ganzjährig nutzbaren R-Wert von 4,5. 30D Ripstop-HT-Nylon oben und unten; WingLock-Ventil; 83 % leiser als das Vorgängermodell XLite. Gewicht 370 g (Regular); 183 × 51 cm; Packmaß 23 × 10 cm. Inkl. Packsack mit integrierter Pumpe."
+    },
+    "manufacturerUrl": "https://cascadedesigns.com/en-eu/products/neoair-xlite-nxt-sleeping-pad",
+    "taglineI18n": {
+      "en": "Ultralight R-4.5 air pad for year-round backpacking.",
+      "de": "Ultraleichte Luftmatte mit R-4,5 fürs ganzjährige Trekking."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "370 g",
+          "de": "370 g"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463cb65654a73b187d0b4d-1782988086268-1_200.jpeg",
+          "altText": "NeoAir XLite NXT photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463cb65654a73b187d0b4d-1782988086268-1_500.jpeg",
+          "altText": "NeoAir XLite NXT photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463cb65654a73b187d0b4d-1782988086268-1_1000.jpeg",
+          "altText": "NeoAir XLite NXT photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463cb65654a73b187d0b4d-1782988086268-1_2000.webp",
+          "altText": "NeoAir XLite NXT photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463cb65654a73b187d0b4d-1782988086268-1_original.webp",
+          "altText": "NeoAir XLite NXT photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463d53ef25d50258e1413a",
+    "name": "Trail Pro",
+    "manufacturer": "Therm-a-Rest",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 150,
+      "USD": 160
+    },
+    "descriptionI18n": {
+      "en": "The Therm-a-Rest Trail Pro is a self-inflating foam sleeping pad — 3 in (7.6 cm) StrataCore construction with alternating air and foam ridges for warmth-to-weight efficiency and a 4.4 R-value for year-round use. Stretch-knit 50D polyester top and solution-dyed 75D polyester base; WingLock one-way valve. Weight 850 g (Regular); 183 × 51 cm; packs to 28 × 22 cm. Includes stuff sack.",
+      "de": "Die Therm-a-Rest Trail Pro ist eine selbstaufblasende Schaum-Isomatte — 7,6 cm StrataCore-Konstruktion mit abwechselnden Luft- und Schaumrippen für ein effizientes Wärme-Gewicht-Verhältnis und einen ganzjährig nutzbaren R-Wert von 4,4. Stretch-Strick-50D-Polyester oben und solution-dyed 75D-Polyester unten; WingLock-Einweg-Ventil. Gewicht 850 g (Regular); 183 × 51 cm; Packmaß 28 × 22 cm. Inkl. Packsack."
+    },
+    "manufacturerUrl": "https://cascadedesigns.com/en-eu/products/trail-pro-sleeping-pad-eu",
+    "taglineI18n": {
+      "en": "Plush self-inflating pad with R-4.4 StrataCore foam.",
+      "de": "Komfortable Selbstaufblaser mit R-4,4 StrataCore-Schaum."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Self-inflating",
+          "de": "Selbstaufblasend"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "850 g",
+          "de": "850 g"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463d53ef25d50258e1413a-1782988279973-1_200.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463d53ef25d50258e1413a-1782988279973-1_500.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463d53ef25d50258e1413a-1782988279973-1_1000.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463d53ef25d50258e1413a-1782988279973-1_2000.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463d53ef25d50258e1413a-1782988279973-1_original.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463d53ef25d50258e1413a-1782988280761-2_200.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463d53ef25d50258e1413a-1782988280761-2_500.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463d53ef25d50258e1413a-1782988280761-2_1000.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463d53ef25d50258e1413a-1782988280761-2_2000.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463d53ef25d50258e1413a-1782988280761-2_original.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        }
+      },
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463d53ef25d50258e1413a-1782988282373-3_200.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463d53ef25d50258e1413a-1782988282373-3_500.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463d53ef25d50258e1413a-1782988282373-3_1000.jpeg",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463d53ef25d50258e1413a-1782988282373-3_2000.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463d53ef25d50258e1413a-1782988282373-3_original.webp",
+          "altText": "Trail Pro photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463e0ed79fefd5e5d4405b",
+    "name": "Ultra 3R",
+    "manufacturer": "Exped",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 175,
+      "USD": 190
+    },
+    "descriptionI18n": {
+      "en": "The Exped Ultra 3R is a lightweight insulated air sleeping mat — recycled Texpedloft Synmat Technology welded to top and bottom air chambers for R-3.2 (ASTM) three-season warmth. Recycled 20D ripstop polyester shell; 7 cm Cradle Comfort profile with raised side chambers; twin flat valves. Weight 450 g (size M); 183 × 52 cm; packs to 23 × 11 cm. bluesign; DWR-free; no intentionally added PFAS. Includes Schnozzel pump bag, stuff sack, and repair kit.",
+      "de": "Die Exped Ultra 3R ist eine leichte isolierte Luftisomatte — recyceltes Texpedloft Synmat Technology oben und unten an den Luftkammern verschweißt für R-3,2 (ASTM) im Drei-Jahreszeiten-Einsatz. Recyceltes 20D Ripstop-Polyester; 7 cm Cradle-Comfort-Profil mit erhöhten Seitenkammern; zwei Flat-Ventile. Gewicht 450 g (Größe M); 183 × 52 cm; Packmaß 23 × 11 cm. bluesign; DWR-frei; keine absichtlich zugesetzten PFAS. Inkl. Schnozzel-Pumpbag, Packsack und Reparaturset."
+    },
+    "manufacturerUrl": "https://www.exped.com/de/produkte/schlafmatten/ultra-3r",
+    "taglineI18n": {
+      "en": "Lightweight R-3.2 insulated mat for 3-season tours.",
+      "de": "Leichte isolierte Matte mit R-3,2 fürs Drei-Jahreszeiten-Trekking."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "450 g",
+          "de": "450 g"
+        }
+      }
+    ],
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463e0ed79fefd5e5d4405b-1782988431440-1_200.jpeg",
+          "altText": "Ultra 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463e0ed79fefd5e5d4405b-1782988431440-1_500.jpeg",
+          "altText": "Ultra 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463e0ed79fefd5e5d4405b-1782988431440-1_1000.jpeg",
+          "altText": "Ultra 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463e0ed79fefd5e5d4405b-1782988431440-1_2000.webp",
+          "altText": "Ultra 3R photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463e0ed79fefd5e5d4405b-1782988431440-1_original.webp",
+          "altText": "Ultra 3R photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463f11fce24acb35f413ee",
+    "name": "Dura 3R",
+    "manufacturer": "Exped",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 185,
+      "USD": 200
+    },
+    "descriptionI18n": {
+      "en": "The Exped Dura 3R is a durable insulated air sleeping mat for demanding tours — recycled Texpedloft Synmat Technology welded to top and bottom air chambers for R-3.2 (ASTM) warmth from spring through autumn. Recycled 75D / 170D polyester shell; 7 cm Cradle Comfort profile with raised side chambers; twin flat valves. Weight 670 g (size M); 183 × 52 cm; packs to 23 × 13 cm. bluesign; DWR-free; no intentionally added PFAS. Includes Schnozzel pump bag, stuff sack, and repair kit.",
+      "de": "Die Exped Dura 3R ist eine strapazierfähige isolierte Luftisomatte für anspruchsvolle Touren — recyceltes Texpedloft Synmat Technology oben und unten an den Luftkammern verschweißt für R-3,2 (ASTM) von Frühling bis Herbst. Recyceltes 75D / 170D Polyester; 7 cm Cradle-Comfort-Profil mit erhöhten Seitenkammern; zwei Flat-Ventile. Gewicht 670 g (Größe M); 183 × 52 cm; Packmaß 23 × 13 cm. bluesign; DWR-frei; keine absichtlich zugesetzten PFAS. Inkl. Schnozzel-Pumpbag, Packsack und Reparaturset."
+    },
+    "manufacturerUrl": "https://www.exped.com/de/produkte/schlafmatten/dura-3r",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463f11fce24acb35f413ee-1782988654319-1_200.jpeg",
+          "altText": "Dura 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463f11fce24acb35f413ee-1782988654319-1_500.jpeg",
+          "altText": "Dura 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463f11fce24acb35f413ee-1782988654319-1_1000.jpeg",
+          "altText": "Dura 3R photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463f11fce24acb35f413ee-1782988654319-1_2000.webp",
+          "altText": "Dura 3R photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463f11fce24acb35f413ee-1782988654319-1_original.webp",
+          "altText": "Dura 3R photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Durable R-3.2 mat for tough trekking and expeditions.",
+      "de": "Strapazierfähige Matte mit R-3,2 für hartes Trekking und Expeditionen."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "670 g",
+          "de": "670 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a463f907acc05c34e91589e",
+    "name": "Ether Light XR Insulated",
+    "manufacturer": "Sea to Summit",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 195,
+      "USD": 199
+    },
+    "descriptionI18n": {
+      "en": "The Sea to Summit Ether Light XR Insulated is a plush insulated air sleeping pad — 10 cm (3.9 in) Air Sprung Cell construction with ThermalCore insulation and a suspended TRM layer for ASTM R-4.1 extended three-season warmth. 30D / 40D nylon with liquid-extruded TPU lamination; XPRESS valve; integrated Airstream pump in stuff sack. Weight 470 g (Regular); 183 × 55 cm; packs to 20.5 × 11 × 11 cm (525 g packed). PFAS-free; no flame retardants. Includes stuff sack with pumpsack, PillowLock patches, and repair kit.",
+      "de": "Die Sea to Summit Ether Light XR Insulated ist eine komfortable isolierte Luftisomatte — 10 cm Air-Sprung-Cell-Konstruktion mit ThermalCore-Isolierung und suspendierter TRM-Schicht für ASTM R-4,1 im erweiterten Drei-Jahreszeiten-Einsatz. 30D / 40D Nylon mit flüssig extrudiertem TPU-Laminat; XPRESS-Ventil; integrierte Airstream-Pumpe im Packsack. Gewicht 470 g (Regular); 183 × 55 cm; Packmaß 20,5 × 11 × 11 cm (525 g gepackt). PFAS-frei; ohne Flammschutzmittel. Inkl. Packsack mit Pumpbag, PillowLock-Patches und Reparaturset."
+    },
+    "manufacturerUrl": "https://seatosummit.com/products/ether-light-xr-insulated-air-sleeping-pad",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a463f907acc05c34e91589e-1782988790044-1_200.jpeg",
+          "altText": "Ether Light XR Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a463f907acc05c34e91589e-1782988790044-1_500.jpeg",
+          "altText": "Ether Light XR Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a463f907acc05c34e91589e-1782988790044-1_1000.jpeg",
+          "altText": "Ether Light XR Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a463f907acc05c34e91589e-1782988790044-1_2000.webp",
+          "altText": "Ether Light XR Insulated photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a463f907acc05c34e91589e-1782988790044-1_original.webp",
+          "altText": "Ether Light XR Insulated photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Plush 10 cm Air Sprung Cells with R-4.1 ThermalCore warmth.",
+      "de": "Komfortable 10-cm-Air-Sprung-Cells mit R-4,1 ThermalCore-Wärme."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "470 g",
+          "de": "470 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a464009eff6f5fb1d3fd600",
+    "name": "Tensor All-Season",
+    "manufacturer": "Nemo",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 230,
+      "USD": 220
+    },
+    "descriptionI18n": {
+      "en": "The NEMO Tensor All-Season is a quiet ultralight insulated air sleeping pad — Spaceframe baffle construction with two suspended Thermal Mirror film layers for R-5.4 year-round warmth. bluesign-approved 20D nylon top and 40D nylon base; 8.9 cm (3.5 in) thickness; Laylow micro-adjustable valve. Weight 440 g (Regular); 183 × 55 cm; packs to 25.5 × 10 cm (522 g packed). Includes Vortex pump sack, stuff sack, Velcro strap, and repair kit.",
+      "de": "Die NEMO Tensor All-Season ist eine leise ultraleichte isolierte Luftisomatte — Spaceframe-Baffel-Konstruktion mit zwei suspendierten Thermal-Mirror-Folien für R-5,4 ganzjährige Wärme. bluesign-zugelassenes 20D-Nylon oben und 40D-Nylon unten; 8,9 cm (3,5 Zoll) Dicke; Laylow-Mikroventil. Gewicht 440 g (Regular); 183 × 55 cm; Packmaß 25,5 × 10 cm (522 g gepackt). Inkl. Vortex-Pumpbag, Packsack, Klettband und Reparaturset."
+    },
+    "manufacturerUrl": "https://www.nemoequipment.eu/collections/sleeping-pads/products/tensor-all-season-insulated-sleeping-pad",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a464009eff6f5fb1d3fd600-1782988936846-1_200.jpeg",
+          "altText": "Tensor All-Season photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a464009eff6f5fb1d3fd600-1782988936846-1_500.jpeg",
+          "altText": "Tensor All-Season photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a464009eff6f5fb1d3fd600-1782988936846-1_1000.jpeg",
+          "altText": "Tensor All-Season photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a464009eff6f5fb1d3fd600-1782988936846-1_2000.webp",
+          "altText": "Tensor All-Season photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a464009eff6f5fb1d3fd600-1782988936846-1_original.webp",
+          "altText": "Tensor All-Season photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Quiet R-5.4 Spaceframe pad for year-round backpacking.",
+      "de": "Leise Spaceframe-Matte mit R-5,4 fürs ganzjährige Trekking."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "440 g",
+          "de": "440 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46409e8bb993464df05ba8",
+    "name": "Performance 9 M",
+    "manufacturer": "Vaude",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 180,
+      "USD": 190
+    },
+    "descriptionI18n": {
+      "en": "The VAUDE Performance 9 M is an ultralight insulated air sleeping mat — Reflect Technology with convection chambers and reflective foil for ASTM R-5.5 year-round warmth. Recycled 20D polyester with TPU lamination; waffle air-chamber design without continuous baffles; VAUDE flat valve. Weight 370 g (size M); 183 × 51 × 9 cm; packs to 27.5 × 10 cm (380 g packed). Green Shape; Fair Wear; climate neutral. Includes stuff sack and repair kit; optional pump sack.",
+      "de": "Die VAUDE Performance 9 M ist eine ultraleichte isolierte Luftisomatte — Reflect Technology mit Konvektionskammern und reflektierender Folie für ASTM R-5,5 ganzjährige Wärme. Recyceltes 20D Polyester mit TPU-Laminat; Waffel-Luftkammer-Design ohne durchgehende Stege; VAUDE-Flachventil. Gewicht 370 g (Größe M); 183 × 51 × 9 cm; Packmaß 27,5 × 10 cm (380 g gepackt). Green Shape; Fair Wear; klimaneutral. Inkl. Packsack und Reparaturset; Pumpbag optional."
+    },
+    "manufacturerUrl": "https://www.vaude.com/de/de/48436-performance-9-m-isomatte.html",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46409e8bb993464df05ba8-1782989141043-1_200.jpeg",
+          "altText": "Performance 9 M photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46409e8bb993464df05ba8-1782989141043-1_500.jpeg",
+          "altText": "Performance 9 M photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46409e8bb993464df05ba8-1782989141043-1_1000.jpeg",
+          "altText": "Performance 9 M photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46409e8bb993464df05ba8-1782989141043-1_2000.webp",
+          "altText": "Performance 9 M photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46409e8bb993464df05ba8-1782989141043-1_original.webp",
+          "altText": "Performance 9 M photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Ultralight R-5.5 Reflect mat for fast alpine tours.",
+      "de": "Ultraleichte Reflect-Matte mit R-5,5 fürs schnelle Alpintrekking."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "4-season",
+          "de": "4-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "370 g",
+          "de": "370 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46417a9c36e73e7811a5a4",
+    "name": "Air Impact 38",
+    "manufacturer": "Robens",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 65,
+      "USD": 75
+    },
+    "descriptionI18n": {
+      "en": "The Robens Air Impact 38 is a lightweight self-inflating sleeping mat — anatomically tapered shape with vertical foam cores and diamond-profile fill for R-3.1 three-season insulation. 20D 390T double-line square ripstop nylon with TPU coating; 3.8 cm thickness; Peak Valve with one-way high-flow inflation (pump-sack compatible). Weight 705 g; 183 × 51 cm; packs to 28 × 14 cm. PFAS-free. Includes carry bag.",
+      "de": "Die Robens Air Impact 38 ist eine leichte selbstaufblasende Isomatte — anatomisch verjüngte Form mit vertikalen Schaumkernen und Diamantprofil-Füllung für R-3,1 im Drei-Jahreszeiten-Einsatz. 20D 390T Ripstop-Nylon mit Doppelfaden und TPU-Beschichtung; 3,8 cm Dicke; Peak-Ventil mit Einweg-Hochdurchfluss (Pumpbag-kompatibel). Gewicht 705 g; 183 × 51 cm; Packmaß 28 × 14 cm. PFAS-frei. Inkl. Packsack."
+    },
+    "manufacturerUrl": "https://www.robens.de/de-de/shop/outdoor-schlafen/liegenmatten/air-impact-38",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46417a9c36e73e7811a5a4-1782989314723-1_200.jpeg",
+          "altText": "Air Impact 38 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46417a9c36e73e7811a5a4-1782989314723-1_500.jpeg",
+          "altText": "Air Impact 38 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46417a9c36e73e7811a5a4-1782989314723-1_1000.jpeg",
+          "altText": "Air Impact 38 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46417a9c36e73e7811a5a4-1782989314723-1_2000.webp",
+          "altText": "Air Impact 38 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46417a9c36e73e7811a5a4-1782989314723-1_original.webp",
+          "altText": "Air Impact 38 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Compact R-3.1 self-inflating mat for trek and bikepacking.",
+      "de": "Kompakte Selbstaufblaser mit R-3,1 fürs Trekking und Bikepacking."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Self-inflating",
+          "de": "Selbstaufblasend"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "705 g",
+          "de": "705 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46421ec5012fd9f002f2f1",
+    "name": "Zoom UL Insulated",
+    "manufacturer": "Big Agnes",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 200,
+      "USD": 220
+    },
+    "descriptionI18n": {
+      "en": "The Big Agnes Zoom UL Insulated is an ultralight insulated air sleeping pad — O-beam air-chamber construction with enlarged outer baffles and two layers of heat-reflective film for ASTM R-4.3 extended three-season warmth. Post-consumer recycled nylon ripstop; aviation-grade TPU lamination; dual-function single-port valve. Weight 396 g (Regular 20 × 72 in); 183 × 51 × 9 cm; packs to 20 × 10 cm. Antimicrobial treatment; factory inflation tested. Includes pump sack, storage sack, valve seal, and 3M repair patches.",
+      "de": "Die Big Agnes Zoom UL Insulated ist eine ultraleichte isolierte Luftisomatte — O-Beam-Luftkammer-Konstruktion mit vergrößerten Außenbaffeln und zwei Schichten wärmerreflektierender Folie für ASTM R-4,3 im erweiterten Drei-Jahreszeiten-Einsatz. Post-Consumer-Recycling-Nylon-Ripstop; TPU-Laminat in Luftfahrtqualität; Ein-Port-Dualfunktions-Ventil. Gewicht 396 g (Regular 20 × 72 Zoll); 183 × 51 × 9 cm; Packmaß 20 × 10 cm. Antimikrobielle Behandlung; werkseitig aufgeblasen getestet. Inkl. Pumpbag, Packsack, Ventildichtung und 3M-Reparaturpatches."
+    },
+    "manufacturerUrl": "https://eu.bigagnes.com/products/zoom-ul-insulated",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46421ec5012fd9f002f2f1-1782989429972-1_200.jpeg",
+          "altText": "Zoom UL Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46421ec5012fd9f002f2f1-1782989429972-1_500.jpeg",
+          "altText": "Zoom UL Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46421ec5012fd9f002f2f1-1782989429972-1_1000.jpeg",
+          "altText": "Zoom UL Insulated photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46421ec5012fd9f002f2f1-1782989429972-1_2000.webp",
+          "altText": "Zoom UL Insulated photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46421ec5012fd9f002f2f1-1782989429972-1_original.webp",
+          "altText": "Zoom UL Insulated photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Ultralight R-4.3 O-beam pad for fast backcountry miles.",
+      "de": "Ultraleichte O-Beam-Matte mit R-4,3 fürs schnelle Backcountry."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "396 g",
+          "de": "396 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a464295e6b6fb5f9bac74ec",
+    "name": "Ven 2.5",
+    "manufacturer": "Nordisk",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 80,
+      "USD": 90
+    },
+    "descriptionI18n": {
+      "en": "The Nordisk Ven 2.5 is an ultralight self-inflating torso mat — half-length contoured shape with hybrid foam zone construction for R-2.3 three-season insulation when pack weight is critical. 20D honeycomb ripstop polyester shell; ultra-light foam fill (12 kg/m³); push/pull valve for fast inflate and deflate. Weight 280 g; 122 × 51 × 2.5 cm; packs to 10 × 28 cm. PFC-free. Includes pack sack with guy line and cord stopper.",
+      "de": "Die Nordisk Ven 2.5 ist eine ultraleichte selbstaufblasende Torso-Isomatte — halblange konturierte Form mit Hybrid-Schaum-Zonen-Konstruktion für R-2,3 im Drei-Jahreszeiten-Einsatz, wenn jedes Gramm zählt. 20D Honeycomb-Ripstop-Polyester-Schale; ultraleichte Schaumfüllung (12 kg/m³); Push/Pull-Ventil zum schnellen Auf- und Abblasen. Gewicht 280 g; 122 × 51 × 2,5 cm; Packmaß 10 × 28 cm. PFC-frei. Inkl. Packsack mit Guyline und Kordelstopper."
+    },
+    "manufacturerUrl": "https://pim.nordisk.eu/ven-25-mat/mustard-yellow/p/321/2107",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a464295e6b6fb5f9bac74ec-1782989624220-1_200.jpeg",
+          "altText": "Ven 2.5 photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a464295e6b6fb5f9bac74ec-1782989624220-1_500.jpeg",
+          "altText": "Ven 2.5 photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a464295e6b6fb5f9bac74ec-1782989624220-1_1000.jpeg",
+          "altText": "Ven 2.5 photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a464295e6b6fb5f9bac74ec-1782989624220-1_2000.webp",
+          "altText": "Ven 2.5 photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a464295e6b6fb5f9bac74ec-1782989624220-1_original.webp",
+          "altText": "Ven 2.5 photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "Ultralight R-2.3 torso mat when every gram counts.",
+      "de": "Ultraleichte R-2,3-Torso-Matte, wenn jedes Gramm zählt."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Self-inflating",
+          "de": "Selbstaufblasend"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "280 g",
+          "de": "280 g"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "6a46435b1f148b0c43e6f0fc",
+    "name": "Perform Mat",
+    "manufacturer": "Mammut",
+    "category": "6a3d2d3f9824a6c14ed21c02",
+    "priceI18n": {
+      "EUR": 160,
+      "USD": 175
+    },
+    "descriptionI18n": {
+      "en": "The Mammut Perform Mat is a three-season inflatable insulating sleeping pad — 7.5 cm thickness with R-3 thermal insulation for spring-through-autumn trekking and bivouac use. 75D polyester with TPU coating and PFC-free DWR; integrated pillow section; external pump sack for fast, moisture-free inflation. Weight 800 g (without stuff sack); 193 × 65 × 7.5 cm; packs to 28 × 13 × 14 cm. Fair Wear. Includes pump sack and storage bag.",
+      "de": "Die Mammut Perform Mat ist eine isolierte aufblasbare Isomatte für drei Jahreszeiten — 7,5 cm Dicke mit R-3-Wärmedämmung für Trekking und Biwak von Frühling bis Herbst. 75D Polyester mit TPU-Beschichtung und PFC-freier DWR; integrierter Kissenbereich; externer Pumpsack für schnelles, feuchtigkeitsfreies Aufpumpen. Gewicht 800 g (ohne Packsack); 193 × 65 × 7,5 cm; Packmaß 28 × 13 × 14 cm. Fair Wear. Inkl. Pumpsack und Packsack."
+    },
+    "manufacturerUrl": "https://www.mammut.com/de/de/products/2420-00520/perform-mat",
+    "images": [
+      {
+        "thumbnail": {
+          "url": "/img/products/thumbnail/product-6a46435b1f148b0c43e6f0fc-1782989817633-1_200.jpeg",
+          "altText": "Perform Mat photo",
+          "mimeType": "image/jpeg"
+        },
+        "small": {
+          "url": "/img/products/small/product-6a46435b1f148b0c43e6f0fc-1782989817633-1_500.jpeg",
+          "altText": "Perform Mat photo",
+          "mimeType": "image/jpeg"
+        },
+        "medium": {
+          "url": "/img/products/medium/product-6a46435b1f148b0c43e6f0fc-1782989817633-1_1000.jpeg",
+          "altText": "Perform Mat photo",
+          "mimeType": "image/jpeg"
+        },
+        "large": {
+          "url": "/img/products/large/product-6a46435b1f148b0c43e6f0fc-1782989817633-1_2000.webp",
+          "altText": "Perform Mat photo",
+          "mimeType": "image/webp"
+        },
+        "original": {
+          "url": "/img/products/original/product-6a46435b1f148b0c43e6f0fc-1782989817633-1_original.webp",
+          "altText": "Perform Mat photo",
+          "mimeType": "image/webp"
+        }
+      }
+    ],
+    "taglineI18n": {
+      "en": "R-3 inflatable pad with integrated pillow for multi-day treks.",
+      "de": "Aufblasbare R-3-Matte mit integriertem Kissen für Mehrtagestouren."
+    },
+    "highlights": [
+      {
+        "code": "type",
+        "valueI18n": {
+          "en": "Inflatable",
+          "de": "Luftmatratze"
+        }
+      },
+      {
+        "code": "season",
+        "valueI18n": {
+          "en": "3-season",
+          "de": "3-Jahreszeiten"
+        }
+      },
+      {
+        "code": "weight",
+        "valueI18n": {
+          "en": "800 g",
+          "de": "800 g"
+        }
+      }
+    ]
+  }
+]

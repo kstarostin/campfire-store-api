@@ -855,6 +855,129 @@ module.exports = {
     ],
   },
 
+  // Sleeping pads
+  '6a463cb65654a73b187d0b4d': {
+    taglineI18n: {
+      en: 'Ultralight R-4.5 air pad for year-round backpacking.',
+      de: 'Ultraleichte Luftmatte mit R-4,5 fürs ganzjährige Trekking.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '370 g', de: '370 g' } },
+    ],
+  },
+  '6a463d53ef25d50258e1413a': {
+    taglineI18n: {
+      en: 'Plush self-inflating pad with R-4.4 StrataCore foam.',
+      de: 'Komfortable Selbstaufblaser mit R-4,4 StrataCore-Schaum.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '850 g', de: '850 g' } },
+    ],
+  },
+  '6a463e0ed79fefd5e5d4405b': {
+    taglineI18n: {
+      en: 'Lightweight R-3.2 insulated mat for 3-season tours.',
+      de: 'Leichte isolierte Matte mit R-3,2 fürs Drei-Jahreszeiten-Trekking.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '450 g', de: '450 g' } },
+    ],
+  },
+  '6a463f11fce24acb35f413ee': {
+    taglineI18n: {
+      en: 'Durable R-3.2 mat for tough trekking and expeditions.',
+      de: 'Strapazierfähige Matte mit R-3,2 für hartes Trekking und Expeditionen.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '670 g', de: '670 g' } },
+    ],
+  },
+  '6a463f907acc05c34e91589e': {
+    taglineI18n: {
+      en: 'Plush 10 cm Air Sprung Cells with R-4.1 ThermalCore warmth.',
+      de: 'Komfortable 10-cm-Air-Sprung-Cells mit R-4,1 ThermalCore-Wärme.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '470 g', de: '470 g' } },
+    ],
+  },
+  '6a464009eff6f5fb1d3fd600': {
+    taglineI18n: {
+      en: 'Quiet R-5.4 Spaceframe pad for year-round backpacking.',
+      de: 'Leise Spaceframe-Matte mit R-5,4 fürs ganzjährige Trekking.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '440 g', de: '440 g' } },
+    ],
+  },
+  '6a46409e8bb993464df05ba8': {
+    taglineI18n: {
+      en: 'Ultralight R-5.5 Reflect mat for fast alpine tours.',
+      de: 'Ultraleichte Reflect-Matte mit R-5,5 fürs schnelle Alpintrekking.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '370 g', de: '370 g' } },
+    ],
+  },
+  '6a46417a9c36e73e7811a5a4': {
+    taglineI18n: {
+      en: 'Compact R-3.1 self-inflating mat for trek and bikepacking.',
+      de: 'Kompakte Selbstaufblaser mit R-3,1 fürs Trekking und Bikepacking.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '705 g', de: '705 g' } },
+    ],
+  },
+  '6a46421ec5012fd9f002f2f1': {
+    taglineI18n: {
+      en: 'Ultralight R-4.3 O-beam pad for fast backcountry miles.',
+      de: 'Ultraleichte O-Beam-Matte mit R-4,3 fürs schnelle Backcountry.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '396 g', de: '396 g' } },
+    ],
+  },
+  '6a464295e6b6fb5f9bac74ec': {
+    taglineI18n: {
+      en: 'Ultralight R-2.3 torso mat when every gram counts.',
+      de: 'Ultraleichte R-2,3-Torso-Matte, wenn jedes Gramm zählt.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '280 g', de: '280 g' } },
+    ],
+  },
+  '6a46435b1f148b0c43e6f0fc': {
+    taglineI18n: {
+      en: 'R-3 inflatable pad with integrated pillow for multi-day treks.',
+      de: 'Aufblasbare R-3-Matte mit integriertem Kissen für Mehrtagestouren.',
+    },
+    highlights: [
+      { code: 'type', valueI18n: { en: 'Inflatable', de: 'Luftmatratze' } },
+      { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
+      { code: 'weight', valueI18n: { en: '800 g', de: '800 g' } },
+    ],
+  },
+
   // Kayaks
   '5c8a34ed14eb5c17645c9108': {
     taglineI18n: {
