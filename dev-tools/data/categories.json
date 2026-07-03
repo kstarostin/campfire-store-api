@@ -6,6 +6,32 @@
     "nameI18n": {
       "en": "Kayaks",
       "de": "Kajaks"
+    },
+    "titleI18n": {
+      "en": "Follow the line where water meets horizon",
+      "de": "Folge der Linie, wo Wasser und Horizont sich treffen"
+    },
+    "descriptionI18n": {
+      "en": "From glassy lakes to whitewater — find the hull, paddle, and kit that match your next put-in.",
+      "de": "Von spiegelglatten Seen bis Wildwasser — Rumpf, Paddel und Zubehör für deinen nächsten Einstieg."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman paddling a kayak on calm water",
+          "de": "Frau paddelt ein Kajak auf ruhigem Wasser"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman paddling a kayak on calm water",
+          "de": "Frau paddelt ein Kajak auf ruhigem Wasser"
+        }
+      }
     }
   },
   {
@@ -16,37 +42,141 @@
       "en": "Touring kayaks",
       "de": "Touring Kajaks"
     },
-    "parentCategory": "661f8a811d571619fe96eec2"
+    "parentCategory": "661f8a811d571619fe96eec2",
+    "titleI18n": {
+      "en": "Touring kayaks",
+      "de": "Touring Kajaks"
+    },
+    "descriptionI18n": {
+      "en": "Distance & overnight",
+      "de": "Distanz & Übernachtung"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/touring-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman kayaking on a lake at daytime",
+          "de": "Frau beim Kajakfahren auf einem See am Tag"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/touring-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman kayaking on a lake at daytime",
+          "de": "Frau beim Kajakfahren auf einem See am Tag"
+        }
+      }
+    }
   },
   {
     "_id": "661f8a911063cec412136c92",
     "code": "whitewater-kayaks",
-    "icon": "sailboat",
+    "icon": "waves",
     "nameI18n": {
       "en": "Whitewater kayaks",
       "de": "Wildwasser-Kajaks"
     },
-    "parentCategory": "661f8a811d571619fe96eec2"
+    "parentCategory": "661f8a811d571619fe96eec2",
+    "titleI18n": {
+      "en": "Whitewater kayaks",
+      "de": "Wildwasser-Kajaks"
+    },
+    "descriptionI18n": {
+      "en": "Play & river running",
+      "de": "Play & Wildwasser"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/whitewater-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Person whitewater rafting on a river",
+          "de": "Person beim Wildwasser-Rafting auf einem Fluss"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/whitewater-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Person whitewater rafting on a river",
+          "de": "Person beim Wildwasser-Rafting auf einem Fluss"
+        }
+      }
+    }
   },
   {
     "_id": "661f8a95fc66c5cca8a69bcb",
     "code": "inflatable-kayaks",
-    "icon": "sailboat",
+    "icon": "wind",
     "nameI18n": {
       "en": "Inflatable kayaks",
       "de": "Aufblasbare Kajaks"
     },
-    "parentCategory": "661f8a811d571619fe96eec2"
+    "parentCategory": "661f8a811d571619fe96eec2",
+    "titleI18n": {
+      "en": "Inflatable kayaks",
+      "de": "Aufblasbare Kajaks"
+    },
+    "descriptionI18n": {
+      "en": "Packable & versatile",
+      "de": "Packbar & vielseitig"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/inflatable-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Inflatable kayak floating on water",
+          "de": "Aufblasbares Kajak auf dem Wasser"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/inflatable-kayaks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Inflatable kayak floating on water",
+          "de": "Aufblasbares Kajak auf dem Wasser"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21bff",
     "code": "kayak-accessories",
-    "icon": "sailboat",
+    "icon": "package",
     "nameI18n": {
       "en": "Kayak accessories",
       "de": "Kajak-Zubehör"
     },
-    "parentCategory": "661f8a811d571619fe96eec2"
+    "parentCategory": "661f8a811d571619fe96eec2",
+    "titleI18n": {
+      "en": "Kayak accessories",
+      "de": "Kajak-Zubehör"
+    },
+    "descriptionI18n": {
+      "en": "Paddles & safety",
+      "de": "Paddel & Sicherheit"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/kayak-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Wooden kayak paddle resting on water",
+          "de": "Holzkajakpaddel auf dem Wasser"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/kayak-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Wooden kayak paddle resting on water",
+          "de": "Holzkajakpaddel auf dem Wasser"
+        }
+      }
+    }
   },
   {
     "_id": "661f8a9b6633eab0748e2638",
@@ -55,6 +185,32 @@
     "nameI18n": {
       "en": "Bicycles",
       "de": "Fahrräder"
+    },
+    "titleI18n": {
+      "en": "Ride farther than yesterday's map edge",
+      "de": "Fahr weiter als der Rand von gesterns Karte"
+    },
+    "descriptionI18n": {
+      "en": "Road, gravel, and trail — bikes built for European cols, forest doubletrack, and the commute that becomes an adventure.",
+      "de": "Straße, Gravel und Trail — Räder für europäische Pässe, Waldwege und Pendeln, das zum Abenteuer wird."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/bicycles.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Man and woman riding road bikes along a coastal road",
+          "de": "Mann und Frau fahren Rennräder an einer Küstenstraße"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/bicycles.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Man and woman riding road bikes along a coastal road",
+          "de": "Mann und Frau fahren Rennräder an einer Küstenstraße"
+        }
+      }
     }
   },
   {
@@ -65,37 +221,141 @@
       "en": "Road bikes",
       "de": "Rennräder"
     },
-    "parentCategory": "661f8a9b6633eab0748e2638"
+    "parentCategory": "661f8a9b6633eab0748e2638",
+    "titleI18n": {
+      "en": "Road bikes",
+      "de": "Rennräder"
+    },
+    "descriptionI18n": {
+      "en": "Speed & tarmac",
+      "de": "Tempo & Asphalt"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/road-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Couple riding road bikes down a country road",
+          "de": "Paar fährt Rennräder auf einer Landstraße"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/road-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Couple riding road bikes down a country road",
+          "de": "Paar fährt Rennräder auf einer Landstraße"
+        }
+      }
+    }
   },
   {
     "_id": "661f8ac137eb9e0aa239bb96",
     "code": "gravel-bikes",
-    "icon": "bike",
+    "icon": "map",
     "nameI18n": {
       "en": "Gravel bikes",
       "de": "Gravelbikes"
     },
-    "parentCategory": "661f8a9b6633eab0748e2638"
+    "parentCategory": "661f8a9b6633eab0748e2638",
+    "titleI18n": {
+      "en": "Gravel bikes",
+      "de": "Gravelbikes"
+    },
+    "descriptionI18n": {
+      "en": "All-road explorers",
+      "de": "Allroad-Entdecker"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/gravel-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Cyclists practicing on gravel roads",
+          "de": "Radfahrer trainieren auf Schotterwegen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/gravel-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Cyclists practicing on gravel roads",
+          "de": "Radfahrer trainieren auf Schotterwegen"
+        }
+      }
+    }
   },
   {
     "_id": "661f8ac9010ca367f5647930",
     "code": "mountain-bikes",
-    "icon": "bike",
+    "icon": "mountain",
     "nameI18n": {
       "en": "Mountain bikes",
       "de": "Mountainbikes"
     },
-    "parentCategory": "661f8a9b6633eab0748e2638"
+    "parentCategory": "661f8a9b6633eab0748e2638",
+    "titleI18n": {
+      "en": "Mountain bikes",
+      "de": "Mountainbikes"
+    },
+    "descriptionI18n": {
+      "en": "Singletrack & enduro",
+      "de": "Singletrack & Enduro"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/mountain-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Man riding a mountain bike on a rocky trail",
+          "de": "Mann fährt Mountainbike auf einem felsigen Trail"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/mountain-bikes.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Man riding a mountain bike on a rocky trail",
+          "de": "Mann fährt Mountainbike auf einem felsigen Trail"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c00",
     "code": "cycling-accessories",
-    "icon": "bike",
+    "icon": "wrench",
     "nameI18n": {
       "en": "Cycling accessories",
       "de": "Fahrrad-Zubehör"
     },
-    "parentCategory": "661f8a9b6633eab0748e2638"
+    "parentCategory": "661f8a9b6633eab0748e2638",
+    "titleI18n": {
+      "en": "Cycling accessories",
+      "de": "Fahrrad-Zubehör"
+    },
+    "descriptionI18n": {
+      "en": "Helmets & kit",
+      "de": "Helme & Equipment"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/cycling-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Bicycle helmet and water bottle on a wooden bench",
+          "de": "Fahrradhelm und Trinkflasche auf einer Holzbank"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/cycling-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Bicycle helmet and water bottle on a wooden bench",
+          "de": "Fahrradhelm und Trinkflasche auf einer Holzbank"
+        }
+      }
+    }
   },
   {
     "_id": "661f9b46991ea86cfbc53dda",
@@ -104,6 +364,32 @@
     "nameI18n": {
       "en": "Camping",
       "de": "Camping"
+    },
+    "titleI18n": {
+      "en": "Make home wherever the fire crackles",
+      "de": "Mach Zuhause, wo das Feuer knistert"
+    },
+    "descriptionI18n": {
+      "en": "Shelter, sleep systems, camp kitchen — everything for nights when the Milky Way is your ceiling.",
+      "de": "Unterkunft, Schlafsysteme, Campingküche — für Nächte, in denen die Milchstraße dein Dach ist."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/camping.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Friends camping and sharing a meal outdoors",
+          "de": "Freunde campen und essen gemeinsam im Freien"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/camping.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Friends camping and sharing a meal outdoors",
+          "de": "Freunde campen und essen gemeinsam im Freien"
+        }
+      }
     }
   },
   {
@@ -114,47 +400,159 @@
       "en": "Tents",
       "de": "Zelte"
     },
-    "parentCategory": "661f9b46991ea86cfbc53dda"
+    "parentCategory": "661f9b46991ea86cfbc53dda",
+    "titleI18n": {
+      "en": "Tents",
+      "de": "Zelte"
+    },
+    "descriptionI18n": {
+      "en": "2P to expedition",
+      "de": "2P bis Expedition"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/tents.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman and dog inside a tent near a lake",
+          "de": "Frau und Hund in einem Zelt am See"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/tents.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman and dog inside a tent near a lake",
+          "de": "Frau und Hund in einem Zelt am See"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c01",
     "code": "sleeping-bags",
-    "icon": "tent",
+    "icon": "moon",
     "nameI18n": {
       "en": "Sleeping bags",
       "de": "Schlafsäcke"
     },
-    "parentCategory": "661f9b46991ea86cfbc53dda"
+    "parentCategory": "661f9b46991ea86cfbc53dda",
+    "titleI18n": {
+      "en": "Sleeping bags",
+      "de": "Schlafsäcke"
+    },
+    "descriptionI18n": {
+      "en": "Warmth rated",
+      "de": "Wärmegrad bewertet"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/sleeping-bags.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Tent pitched on a cliff at golden hour",
+          "de": "Zelt auf einer Klippe in der goldenen Stunde"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/sleeping-bags.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Tent pitched on a cliff at golden hour",
+          "de": "Zelt auf einer Klippe in der goldenen Stunde"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c02",
     "code": "sleeping-pads",
-    "icon": "tent",
+    "icon": "layers",
     "nameI18n": {
       "en": "Sleeping pads",
       "de": "Isomatten"
     },
-    "parentCategory": "661f9b46991ea86cfbc53dda"
+    "parentCategory": "661f9b46991ea86cfbc53dda",
+    "titleI18n": {
+      "en": "Sleeping pads",
+      "de": "Isomatten"
+    },
+    "descriptionI18n": {
+      "en": "Insulation & comfort",
+      "de": "Dämmung & Komfort"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/sleeping-pads.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Couple sitting together on a red blanket outdoors",
+          "de": "Paar sitzt gemeinsam auf einer roten Decke im Freien"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/sleeping-pads.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Couple sitting together on a red blanket outdoors",
+          "de": "Paar sitzt gemeinsam auf einer roten Decke im Freien"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c03",
     "code": "camp-kitchen",
-    "icon": "tent",
+    "icon": "flame",
     "nameI18n": {
       "en": "Camp kitchen",
       "de": "Campingküche"
     },
-    "parentCategory": "661f9b46991ea86cfbc53dda"
+    "parentCategory": "661f9b46991ea86cfbc53dda",
+    "titleI18n": {
+      "en": "Camp kitchen",
+      "de": "Campingküche"
+    },
+    "descriptionI18n": {
+      "en": "Stoves & cookware",
+      "de": "Kocher & Geschirr"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/camp-kitchen.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Friends sharing a meal while camping outdoors",
+          "de": "Freunde teilen eine Mahlzeit beim Campen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/camp-kitchen.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Friends sharing a meal while camping outdoors",
+          "de": "Freunde teilen eine Mahlzeit beim Campen"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c04",
     "code": "camping-accessories",
-    "icon": "tent",
+    "icon": "backpack",
     "nameI18n": {
       "en": "Camping accessories",
       "de": "Camping-Zubehör"
     },
-    "parentCategory": "661f9b46991ea86cfbc53dda"
+    "parentCategory": "661f9b46991ea86cfbc53dda",
+    "titleI18n": {
+      "en": "Camping accessories",
+      "de": "Camping-Zubehör"
+    },
+    "descriptionI18n": {
+      "en": "Chairs & essentials",
+      "de": "Stühle & Basics"
+    }
   },
   {
     "_id": "661f9bf7adbbcb8a078d7a09",
@@ -163,6 +561,32 @@
     "nameI18n": {
       "en": "Bags & gear",
       "de": "Rucksäcke & Ausrüstung"
+    },
+    "titleI18n": {
+      "en": "Carry only what earns its grams",
+      "de": "Trag nur, was jedes Gramm verdient"
+    },
+    "descriptionI18n": {
+      "en": "Packs that distribute the load, lights that outlast dusk, and tools you hope you never need — until you do.",
+      "de": "Rucksäcke, die die Last verteilen, Lampen, die die Dämmerung überdauern, und Werkzeug für den Ernstfall."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/bags-and-gear.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Black bag beside cameras, portable drive and hiking boots",
+          "de": "Schwarze Tasche neben Kameras, Festplatte und Wanderschuhen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/bags-and-gear.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Black bag beside cameras, portable drive and hiking boots",
+          "de": "Schwarze Tasche neben Kameras, Festplatte und Wanderschuhen"
+        }
+      }
     }
   },
   {
@@ -173,17 +597,69 @@
       "en": "Backpacks",
       "de": "Rucksäcke"
     },
-    "parentCategory": "661f9bf7adbbcb8a078d7a09"
+    "parentCategory": "661f9bf7adbbcb8a078d7a09",
+    "titleI18n": {
+      "en": "Backpacks",
+      "de": "Rucksäcke"
+    },
+    "descriptionI18n": {
+      "en": "Day to expedition",
+      "de": "Tag bis Expedition"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/backpacks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two hikers walking towards a snow-covered mountain",
+          "de": "Zwei Wanderer auf dem Weg zu einem verschneiten Berg"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/backpacks.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two hikers walking towards a snow-covered mountain",
+          "de": "Zwei Wanderer auf dem Weg zu einem verschneiten Berg"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c05",
     "code": "lighting-tools",
-    "icon": "backpack",
+    "icon": "flashlight",
     "nameI18n": {
       "en": "Lighting & tools",
       "de": "Beleuchtung & Werkzeug"
     },
-    "parentCategory": "661f9bf7adbbcb8a078d7a09"
+    "parentCategory": "661f9bf7adbbcb8a078d7a09",
+    "titleI18n": {
+      "en": "Lighting & tools",
+      "de": "Beleuchtung & Werkzeug"
+    },
+    "descriptionI18n": {
+      "en": "Headlamps & repair",
+      "de": "Kopflampen & Reparatur"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/lighting-tools.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Camping lantern, knife and outdoor tools on wood",
+          "de": "Campinglaterne, Messer und Outdoor-Werkzeug auf Holz"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/lighting-tools.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Camping lantern, knife and outdoor tools on wood",
+          "de": "Campinglaterne, Messer und Outdoor-Werkzeug auf Holz"
+        }
+      }
+    }
   },
   {
     "_id": "661f9cb87947f7b74d62db49",
@@ -192,6 +668,32 @@
     "nameI18n": {
       "en": "Clothing",
       "de": "Bekleidung"
+    },
+    "titleI18n": {
+      "en": "Layer smart. Stay out longer.",
+      "de": "Schichten klug. Bleib länger draußen."
+    },
+    "descriptionI18n": {
+      "en": "Shells that shrug off squalls, midlayers that breathe on the uphill, and bottoms that move with you from valley to summit.",
+      "de": "Shells gegen Regen, Midlayer fürs Steigen, Hosen, die mit dir vom Tal auf den Gipfel gehen."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/clothing.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two men standing on a cliff overlooking the landscape",
+          "de": "Zwei Männer stehen auf einer Klippe mit Blick auf die Landschaft"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/clothing.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two men standing on a cliff overlooking the landscape",
+          "de": "Zwei Männer stehen auf einer Klippe mit Blick auf die Landschaft"
+        }
+      }
     }
   },
   {
@@ -202,74 +704,282 @@
       "en": "Hiking pants",
       "de": "Wanderhosen"
     },
-    "parentCategory": "661f9cb87947f7b74d62db49"
+    "parentCategory": "661f9cb87947f7b74d62db49",
+    "titleI18n": {
+      "en": "Hiking pants",
+      "de": "Wanderhosen"
+    },
+    "descriptionI18n": {
+      "en": "Durable & stretch",
+      "de": "Robust & stretch"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/hiking-pants.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Young couple hiking in sunny winter mountains",
+          "de": "Junges Paar wandert in sonnigen Winterbergen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/hiking-pants.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Young couple hiking in sunny winter mountains",
+          "de": "Junges Paar wandert in sonnigen Winterbergen"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c06",
     "code": "jackets-shells",
-    "icon": "shirt",
+    "icon": "cloud-rain",
     "nameI18n": {
       "en": "Jackets & shells",
       "de": "Jacken & Hardshells"
     },
-    "parentCategory": "661f9cb87947f7b74d62db49"
+    "parentCategory": "661f9cb87947f7b74d62db49",
+    "titleI18n": {
+      "en": "Jackets & shells",
+      "de": "Jacken & Hardshells"
+    },
+    "descriptionI18n": {
+      "en": "Weather protection",
+      "de": "Wetterschutz"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/jackets-shells.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Hiker with backpack looking up at the mountains",
+          "de": "Wanderer mit Rucksack blickt zu den Bergen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/jackets-shells.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Hiker with backpack looking up at the mountains",
+          "de": "Wanderer mit Rucksack blickt zu den Bergen"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c07",
     "code": "midlayers-fleece",
-    "icon": "shirt",
+    "icon": "thermometer",
     "nameI18n": {
       "en": "Midlayers & fleece",
       "de": "Midlayer & Fleece"
     },
-    "parentCategory": "661f9cb87947f7b74d62db49"
+    "parentCategory": "661f9cb87947f7b74d62db49",
+    "titleI18n": {
+      "en": "Midlayers & fleece",
+      "de": "Midlayer & Fleece"
+    },
+    "descriptionI18n": {
+      "en": "Warmth without bulk",
+      "de": "Wärme ohne Volumen"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/midlayers-fleece.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman in a pink shirt and green leggings outdoors",
+          "de": "Frau in pinkem Shirt und grünen Leggings im Freien"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/midlayers-fleece.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman in a pink shirt and green leggings outdoors",
+          "de": "Frau in pinkem Shirt und grünen Leggings im Freien"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c08",
     "code": "shorts-tights",
-    "icon": "shirt",
+    "icon": "activity",
     "nameI18n": {
       "en": "Shorts & tights",
       "de": "Shorts & Tights"
     },
-    "parentCategory": "661f9cb87947f7b74d62db49"
+    "parentCategory": "661f9cb87947f7b74d62db49",
+    "titleI18n": {
+      "en": "Shorts & tights",
+      "de": "Shorts & Tights"
+    },
+    "descriptionI18n": {
+      "en": "Run & fast hike",
+      "de": "Lauf & Fast Hike"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/shorts-tights.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman sitting on a mountain cliff overlooking the valley",
+          "de": "Frau sitzt auf einer Bergklippe mit Talblick"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/shorts-tights.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Woman sitting on a mountain cliff overlooking the valley",
+          "de": "Frau sitzt auf einer Bergklippe mit Talblick"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c09",
     "code": "footwear",
-    "icon": "sport-shoe",
+    "icon": "footprints",
     "nameI18n": {
       "en": "Footwear",
       "de": "Schuhe"
+    },
+    "titleI18n": {
+      "en": "Trust every step on uncertain ground",
+      "de": "Vertrau jedem Schritt auf unsicherem Boden"
+    },
+    "descriptionI18n": {
+      "en": "From supportive boots on scree to responsive trail runners on singletrack — grip, fit, and confidence built in.",
+      "de": "Von stützenden Stiefeln im Geröll bis zu trailschnellen Schuhen — Grip, Passform und Sicherheit."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/footwear.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Close-up of hiking shoe soles in the mountains",
+          "de": "Nahaufnahme von Wanderschuhsohlen in den Bergen"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/footwear.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Close-up of hiking shoe soles in the mountains",
+          "de": "Nahaufnahme von Wanderschuhsohlen in den Bergen"
+        }
+      }
     }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c0a",
     "code": "hiking-boots",
-    "icon": "sport-shoe",
+    "icon": "footprints",
     "nameI18n": {
       "en": "Hiking boots",
       "de": "Wanderstiefel"
     },
-    "parentCategory": "6a3d2d3f9824a6c14ed21c09"
+    "parentCategory": "6a3d2d3f9824a6c14ed21c09",
+    "titleI18n": {
+      "en": "Hiking boots",
+      "de": "Wanderstiefel"
+    },
+    "descriptionI18n": {
+      "en": "Ankle support & grip",
+      "de": "Knöchelhalt & Grip"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/hiking-boots.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Brown lace-up hiking boot close-up",
+          "de": "Nahaufnahme eines braunen Schnürwanderstiefels"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/hiking-boots.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Brown lace-up hiking boot close-up",
+          "de": "Nahaufnahme eines braunen Schnürwanderstiefels"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c0b",
     "code": "trail-runners",
-    "icon": "sport-shoe",
+    "icon": "zap",
     "nameI18n": {
       "en": "Trail runners",
       "de": "Trailschuhe"
     },
-    "parentCategory": "6a3d2d3f9824a6c14ed21c09"
+    "parentCategory": "6a3d2d3f9824a6c14ed21c09",
+    "titleI18n": {
+      "en": "Trail runners",
+      "de": "Trailschuhe"
+    },
+    "descriptionI18n": {
+      "en": "Light & fast",
+      "de": "Leicht & schnell"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/trail-runners.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two people trail running outdoors",
+          "de": "Zwei Personen beim Trailrunning im Freien"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/trail-runners.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Two people trail running outdoors",
+          "de": "Zwei Personen beim Trailrunning im Freien"
+        }
+      }
+    }
   },
   {
     "_id": "661f9cdcabdf632642f2b435",
     "code": "ski",
-    "icon": "mountain",
+    "icon": "mountain-snow",
     "nameI18n": {
       "en": "Ski",
       "de": "Ski"
+    },
+    "titleI18n": {
+      "en": "Chase the line through cold air and deep snow",
+      "de": "Jage die Linie durch kalte Luft und Tiefschnee"
+    },
+    "descriptionI18n": {
+      "en": "All-mountain skis, piste chargers, boots that transfer power, and the small kit that keeps you on the mountain all day.",
+      "de": "All-Mountain-Ski, Pistenschwinger, stützende Boots und das kleine Zubehör für den ganzen Tag am Berg."
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/ski.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier descending a snowy mountain slope",
+          "de": "Skifahrer auf einer verschneiten Berghangabfahrt"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/ski.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier descending a snowy mountain slope",
+          "de": "Skifahrer auf einer verschneiten Berghangabfahrt"
+        }
+      }
     }
   },
   {
@@ -280,36 +990,140 @@
       "en": "All mountain",
       "de": "All-Mountain"
     },
-    "parentCategory": "661f9cdcabdf632642f2b435"
+    "parentCategory": "661f9cdcabdf632642f2b435",
+    "titleI18n": {
+      "en": "All mountain",
+      "de": "All-Mountain"
+    },
+    "descriptionI18n": {
+      "en": "One-quiver daily drivers",
+      "de": "Ein-Ski-für-alles"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/all-mountain.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier in a red jacket carving on snowy terrain",
+          "de": "Skifahrer in roter Jacke auf verschneitem Gelände"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/all-mountain.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier in a red jacket carving on snowy terrain",
+          "de": "Skifahrer in roter Jacke auf verschneitem Gelände"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c0c",
     "code": "piste-freeride-skis",
-    "icon": "mountain",
+    "icon": "snowflake",
     "nameI18n": {
       "en": "Piste & freeride skis",
       "de": "Pisten- & Freeride-Ski"
     },
-    "parentCategory": "661f9cdcabdf632642f2b435"
+    "parentCategory": "661f9cdcabdf632642f2b435",
+    "titleI18n": {
+      "en": "Piste & freeride skis",
+      "de": "Pisten- & Freeride-Ski"
+    },
+    "descriptionI18n": {
+      "en": "Groomed to off-piste",
+      "de": "Piste bis Powder"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/piste-freeride-skis.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier descending a snow-covered mountain slope",
+          "de": "Skifahrer auf einer verschneiten Hangabfahrt"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/piste-freeride-skis.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Skier descending a snow-covered mountain slope",
+          "de": "Skifahrer auf einer verschneiten Hangabfahrt"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c0d",
     "code": "ski-boots",
-    "icon": "mountain",
+    "icon": "boot",
     "nameI18n": {
       "en": "Ski boots",
       "de": "Skischuhe"
     },
-    "parentCategory": "661f9cdcabdf632642f2b435"
+    "parentCategory": "661f9cdcabdf632642f2b435",
+    "titleI18n": {
+      "en": "Ski boots",
+      "de": "Skischuhe"
+    },
+    "descriptionI18n": {
+      "en": "Fit & flex",
+      "de": "Passform & Flex"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/ski-boots.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Snowboarder riding on a snowy mountain slope",
+          "de": "Snowboarder auf einer verschneiten Berghangabfahrt"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/ski-boots.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Snowboarder riding on a snowy mountain slope",
+          "de": "Snowboarder auf einer verschneiten Berghangabfahrt"
+        }
+      }
+    }
   },
   {
     "_id": "6a3d2d3f9824a6c14ed21c0e",
     "code": "ski-accessories",
-    "icon": "mountain",
+    "icon": "glasses",
     "nameI18n": {
       "en": "Ski accessories",
       "de": "Ski-Zubehör"
     },
-    "parentCategory": "661f9cdcabdf632642f2b435"
+    "parentCategory": "661f9cdcabdf632642f2b435",
+    "titleI18n": {
+      "en": "Ski accessories",
+      "de": "Ski-Zubehör"
+    },
+    "descriptionI18n": {
+      "en": "Poles & protection",
+      "de": "Stöcke & Schutz"
+    },
+    "image": {
+      "large": {
+        "url": "/img/categories/large/ski-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Pair of skis resting on snow-covered ground",
+          "de": "Skipaar liegt auf verschneitem Boden"
+        }
+      },
+      "small": {
+        "url": "/img/categories/small/ski-accessories.webp",
+        "mimeType": "image/webp",
+        "altTextI18n": {
+          "en": "Pair of skis resting on snow-covered ground",
+          "de": "Skipaar liegt auf verschneitem Boden"
+        }
+      }
+    }
   }
 ]

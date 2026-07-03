@@ -63,6 +63,24 @@ describe('Campfire Store API regression suite', () => {
       (category) => category.code === 'kayaks',
     );
     expect(kayaks.icon).toBe('sailboat');
+    expect(kayaks.titleI18n.en).toBe(
+      'Follow the line where water meets horizon',
+    );
+    expect(kayaks.descriptionI18n.en).toContain('glassy lakes');
+    expect(kayaks.image?.large?.url).toMatch(/\/img\/categories\/large\/kayaks\.webp$/);
+    expect(kayaks.image?.small?.url).toMatch(/\/img\/categories\/small\/kayaks\.webp$/);
+    expect(kayaks.image?.large?.altTextI18n?.en).toBeTruthy();
+  });
+
+  test('GET /categories/:code returns leaf title and description copy', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/touring-kayaks`)
+      .query({ language: 'de', currency: 'EUR' })
+      .expect(200);
+
+    const category = response.body.data.document;
+    expect(category.titleI18n.de).toBe('Touring Kajaks');
+    expect(category.descriptionI18n.de).toBe('Distanz & Übernachtung');
   });
 
   test('GET /categories/:code resolves category by unique code', async () => {
@@ -88,7 +106,7 @@ describe('Campfire Store API regression suite', () => {
     expect(response.body.data.document.icon).toBe('backpack');
   });
 
-  test('GET /categories/footwear returns sport-shoe icon', async () => {
+  test('GET /categories/footwear returns footprints icon', async () => {
     const response = await request(app)
       .get(`${API}/categories/footwear`)
       .query({ language: 'en' })
@@ -96,7 +114,16 @@ describe('Campfire Store API regression suite', () => {
 
     expect(response.body.status).toBe('success');
     expect(response.body.data.document.code).toBe('footwear');
-    expect(response.body.data.document.icon).toBe('sport-shoe');
+    expect(response.body.data.document.icon).toBe('footprints');
+  });
+
+  test('GET /categories/whitewater-kayaks returns waves icon', async () => {
+    const response = await request(app)
+      .get(`${API}/categories/whitewater-kayaks`)
+      .query({ language: 'en' })
+      .expect(200);
+
+    expect(response.body.data.document.icon).toBe('waves');
   });
 
   test('GET /categories/sleeping-bags returns seeded products', async () => {

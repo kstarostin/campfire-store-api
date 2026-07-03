@@ -11,6 +11,23 @@ const CATEGORY_ICONS = [
   'mountain',
   'package',
   'sport-shoe',
+  'waves',
+  'wind',
+  'map',
+  'wrench',
+  'moon',
+  'layers',
+  'flame',
+  'flashlight',
+  'cloud-rain',
+  'thermometer',
+  'activity',
+  'footprints',
+  'zap',
+  'mountain-snow',
+  'snowflake',
+  'boot',
+  'glasses',
 ];
 
 const DEFAULT_CATEGORY_ICON = 'package';

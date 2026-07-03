@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
+const categoryImageSchema = require('./schemes/categoryImageSchema');
 const {
   CATEGORY_ICONS,
   DEFAULT_CATEGORY_ICON,
@@ -49,6 +50,19 @@ const categorySchema = new mongoose.Schema(
       },
       default: DEFAULT_CATEGORY_ICON,
     },
+    image: categoryImageSchema,
+    titleI18n: i18nTextSchema({
+      maxlength: [
+        96,
+        'Category title length must be no more than 96 characters long.',
+      ],
+    }),
+    descriptionI18n: i18nTextSchema({
+      maxlength: [
+        200,
+        'Category description length must be no more than 200 characters long.',
+      ],
+    }),
   },
   {
     toJSON: { virtuals: true },

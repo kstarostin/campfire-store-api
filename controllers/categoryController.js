@@ -17,12 +17,18 @@ exports.createCategory = factory.createOne(Category, [
   'nameI18n',
   'parentCategory',
   'icon',
+  'image',
+  'titleI18n',
+  'descriptionI18n',
 ]);
 exports.updateCategory = factory.updateOne(Category, [
   'code',
   'nameI18n',
   'parentCategory',
   'icon',
+  'image',
+  'titleI18n',
+  'descriptionI18n',
 ]);
 exports.deleteCategory = factory.deleteOne(Category);
 
