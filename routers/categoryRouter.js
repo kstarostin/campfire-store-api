@@ -71,11 +71,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(
-    authController.protect,
-    authController.restrictTo('admin'),
-    categoryController.createCategory,
-  );
+  .post(authController.protect, authController.restrictTo('admin'), categoryController.createCategory);
 
 router
   .route('/:id')
@@ -186,10 +182,6 @@ router
    *             schema:
    *               $ref: '#/components/schemas/productsSchema'
    */
-  .get(
-    categoryController.resolveCategoryParam,
-    productController.handleCategoryId,
-    productController.getAllProducts,
-  );
+  .get(categoryController.resolveCategoryParam, productController.handleCategoryId, productController.getAllProducts);
 
 module.exports = router;

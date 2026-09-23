@@ -23,19 +23,12 @@ const updateEntryPrice = async function (entry, newCurrency) {
 const changeCartEntriesCurrency = async function (cart, newCurrency, next) {
   // Validate new currency value
   if (!allowedCurrencies.includes(newCurrency)) {
-    return next(
-      new AppError(
-        `Allowed currencies are [${allowedCurrencies.join(', ')}].`,
-        400,
-      ),
-    );
+    return next(new AppError(`Allowed currencies are [${allowedCurrencies.join(', ')}].`, 400));
   }
   // Validate availability of entry prices for the new currency
   const entries = await GenericOrderEntry.find({ parent: cart.id });
   const productIds = entries?.map((entry) => entry.product);
-  const invalidProducts = (
-    await Product.find({ _id: { $in: productIds } })
-  ).filter((product) => {
+  const invalidProducts = (await Product.find({ _id: { $in: productIds } })).filter((product) => {
     const newPrice = product.prices.find((pr) => pr.currency === newCurrency);
     return !newPrice || !newPrice.value || newPrice.value === 0;
   });
@@ -48,9 +41,7 @@ const changeCartEntriesCurrency = async function (cart, newCurrency, next) {
     );
   }
   // Update price value for each entry
-  await Promise.all(
-    entries.map((entry) => updateEntryPrice(entry, newCurrency)),
-  );
+  await Promise.all(entries.map((entry) => updateEntryPrice(entry, newCurrency)));
   return true;
 };
 
@@ -63,10 +54,7 @@ exports.oneSessionCartAllowed = catchAsync(async (req, res, next) => {
   }
   if ((await Cart.countDocuments({ user: req.params.userId })) > 0) {
     return next(
-      new AppError(
-        `The user with ID ${req.params.userId} already have a cart. One cart is allowed per user.`,
-        400,
-      ),
+      new AppError(`The user with ID ${req.params.userId} already have a cart. One cart is allowed per user.`, 400),
     );
   }
   next();
@@ -108,20 +96,12 @@ exports.updateCart = catchAsync(async (req, res, next) => {
     _id: req.params.cartId,
   };
   // Sanitize request body
-  req.body = new RequestBodySanitizer([
-    'deliveryAddress',
-    'billingAddress',
-    'deliveryNote',
-  ]).sanitize(req.body);
+  req.body = new RequestBodySanitizer(['deliveryAddress', 'billingAddress', 'deliveryNote']).sanitize(req.body);
 
   const cart = await Cart.findOne(filter);
   let recalculate = false;
   if (req.body.currency && cart.currency !== req.body.currency) {
-    recalculate = await changeCartEntriesCurrency(
-      cart,
-      req.body.currency,
-      next,
-    );
+    recalculate = await changeCartEntriesCurrency(cart, req.body.currency, next);
   }
 
   const updatedCart = await Cart.findOneAndUpdate(

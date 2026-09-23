@@ -26,10 +26,7 @@ const productHighlightSchema = new mongoose.Schema(
       required: [true, 'Highlight must have a code.'],
       trim: true,
       lowercase: true,
-      maxlength: [
-        32,
-        'Highlight code must be no more than 32 characters long.',
-      ],
+      maxlength: [32, 'Highlight code must be no more than 32 characters long.'],
       enum: {
         values: HIGHLIGHT_CODES,
         message: 'Highlight code `{VALUE}` is not supported.',
@@ -37,10 +34,7 @@ const productHighlightSchema = new mongoose.Schema(
     },
     valueI18n: i18nTextSchema({
       required: [true, 'Highlight must have a localized value.'],
-      maxlength: [
-        128,
-        'Highlight value must be no more than 128 characters long.',
-      ],
+      maxlength: [128, 'Highlight value must be no more than 128 characters long.'],
     }),
   },
   { _id: false },

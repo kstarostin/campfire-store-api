@@ -18,12 +18,7 @@ exports.placeOrder = catchAsync(async (req, res, next) => {
   }
   let cart = await Cart.findById(req.body.cartId);
   if (cart.user.id !== req.user.id) {
-    return next(
-      new AppError(
-        'The cart with requested ID does not belong to this user',
-        404,
-      ),
-    );
+    return next(new AppError('The cart with requested ID does not belong to this user', 404));
   }
 
   if (!cart.valid) {

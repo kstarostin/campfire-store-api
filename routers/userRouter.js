@@ -158,10 +158,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.restrictTo('admin', 'me'),
-    userController.deleteUserPhoto,
-  );
+  .delete(authController.restrictTo('admin', 'me'), userController.deleteUserPhoto);
 
 router.use('/:userId/carts', cartRouter);
 router.use('/:userId/orders', orderRouter);

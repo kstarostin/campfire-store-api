@@ -20,9 +20,7 @@ describe('priceFilterUtils', () => {
   });
 
   test('buildPriceQuickFilters returns suggestions for affordable catalogs', () => {
-    const quickFilters = buildPriceQuickFilters([
-      49, 59, 79, 89, 99, 120, 140, 180, 220, 260, 320, 380,
-    ]);
+    const quickFilters = buildPriceQuickFilters([49, 59, 79, 89, 99, 120, 140, 180, 220, 260, 320, 380]);
 
     expect(quickFilters.length).toBeGreaterThan(0);
     expect(quickFilters[0].max).toBeLessThan(500);

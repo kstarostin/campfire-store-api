@@ -5,9 +5,7 @@ const APIFeatures = require('../utils/apiFeatures');
 
 exports.getAllCurrencies = catchAsync(async (req, res, next) => {
   // EXECUTE QUERY
-  const features = new APIFeatures(Currency.find(), req.query)
-    .sort()
-    .limitFields();
+  const features = new APIFeatures(Currency.find(), req.query).sort().limitFields();
   const documents = (await features.dbQuery).map((document) =>
     new DocumentSanitizer(req.language, req.currency, 2).sanitize(document),
   );

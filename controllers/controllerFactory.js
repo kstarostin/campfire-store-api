@@ -4,8 +4,7 @@ const catchAsync = require('../utils/catchAsync');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 
-const getParentId = (req) =>
-  req.params.cartId || req.params.orderId || req.params.wishlistId;
+const getParentId = (req) => req.params.cartId || req.params.orderId || req.params.wishlistId;
 
 /**
  * Build a filter condition for request parameters: userId and cartId,
@@ -68,8 +67,7 @@ exports.getAll = (Model, limitOptions) =>
       .filter(filter);
     // Retrieve total count of documents. If filter is empty - use more efficient way.
     const totalCount =
-      Object.keys(features.resultFilter).length === 0 &&
-      features.resultFilter.constructor === Object
+      Object.keys(features.resultFilter).length === 0 && features.resultFilter.constructor === Object
         ? await Model.estimatedDocumentCount()
         : await Model.countDocuments(features.resultFilter);
     // const documents = await features.dbQuery.explain();
@@ -77,8 +75,7 @@ exports.getAll = (Model, limitOptions) =>
       new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
     );
 
-    const numberOfPages =
-      totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
+    const numberOfPages = totalCount > 0 ? Math.ceil(totalCount / documents.length) : 1;
 
     // SEND RESPONSE
     res.status(200).json({
@@ -106,11 +103,7 @@ exports.getOne = (Model, populateOptions) =>
     const filter = await getIdConditionsForOne(req);
 
     let query = Model.findOne(filter);
-    if (
-      populateOptions &&
-      Array.isArray(populateOptions) &&
-      populateOptions.length > 0
-    ) {
+    if (populateOptions && Array.isArray(populateOptions) && populateOptions.length > 0) {
       populateOptions.forEach((options) => {
         query = query.populate(options);
       });
@@ -120,9 +113,7 @@ exports.getOne = (Model, populateOptions) =>
     if (!document) {
       return next(new AppError('No document found with this ID', 404));
     }
-    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(
-      document,
-    );
+    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(document);
 
     res.status(200).json({
       status: 'success',
@@ -140,9 +131,7 @@ exports.getOne = (Model, populateOptions) =>
 exports.createOne = (Model, bodySanitizerWhitelist = []) =>
   catchAsync(async (req, res, next) => {
     // Sanitize request body
-    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(
-      req.body,
-    );
+    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(req.body);
     const newDocument = await Model.create(req.body);
 
     res.status(201).json({
@@ -164,9 +153,7 @@ exports.updateOne = (Model, bodySanitizerWhitelist = []) =>
     // To allow for nested GET objects on user
     const filter = await getIdConditionsForOne(req);
     // Sanitize request body
-    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(
-      req.body,
-    );
+    req.body = new RequestBodySanitizer(bodySanitizerWhitelist).sanitize(req.body);
     // Perform update
     let document = await Model.findOneAndUpdate(
       filter,
@@ -181,9 +168,7 @@ exports.updateOne = (Model, bodySanitizerWhitelist = []) =>
     }
 
     // Sanitize response document
-    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(
-      document,
-    );
+    document = new DocumentSanitizer(req.language, req.currency, 7).sanitize(document);
 
     res.status(200).json({
       status: 'success',

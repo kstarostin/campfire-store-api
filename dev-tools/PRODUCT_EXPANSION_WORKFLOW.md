@@ -7,13 +7,13 @@ Step-by-step process for adding SKUs during Phase 2. See also:
 
 ## Roles
 
-| Step | Who |
-|------|-----|
-| Product stub (JSON without images) | Agent — **creates** `dev-tools/image-staging/{product-id}/` |
-| Review PDP + download source image | You — drop **any filename** into that folder |
-| Crop/convert derivatives + wire `images[]` | Agent (`process-staged-images.js`) |
-| Confirm or skip | You |
-| Cleanup staging | Agent — **delete** `image-staging/{product-id}/` after success **or** on skip |
+| Step                                       | Who                                                                           |
+| ------------------------------------------ | ----------------------------------------------------------------------------- |
+| Product stub (JSON without images)         | Agent — **creates** `dev-tools/image-staging/{product-id}/`                   |
+| Review PDP + download source image         | You — drop **any filename** into that folder                                  |
+| Crop/convert derivatives + wire `images[]` | Agent (`process-staged-images.js`)                                            |
+| Confirm or skip                            | You                                                                           |
+| Cleanup staging                            | Agent — **delete** `image-staging/{product-id}/` after success **or** on skip |
 
 ## 1. Staging folder
 

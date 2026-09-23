@@ -37,11 +37,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    cartController.getAllCarts,
-  )
+  .get(authController.protect, sessionController.handleUserId, cartController.getAllCarts)
   /**
    * @swagger
    * /users/{id}/carts:
@@ -110,11 +106,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    cartController.getCart,
-  )
+  .get(authController.protect, sessionController.handleUserId, cartController.getCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -146,11 +138,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(
-    authController.protect,
-    sessionController.handleUserId,
-    cartController.updateCart,
-  )
+  .patch(authController.protect, sessionController.handleUserId, cartController.updateCart)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}:
@@ -169,11 +157,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    sessionController.handleUserId,
-    cartController.deleteCart,
-  );
+  .delete(authController.protect, sessionController.handleUserId, cartController.deleteCart);
 
 router.use('/:cartId/entries', cartEntryRouter);
 

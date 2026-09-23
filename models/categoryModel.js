@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
 const categoryImageSchema = require('./schemes/categoryImageSchema');
-const {
-  CATEGORY_ICONS,
-  DEFAULT_CATEGORY_ICON,
-} = require('../utils/categoryIconUtils');
+const { CATEGORY_ICONS, DEFAULT_CATEGORY_ICON } = require('../utils/categoryIconUtils');
 // const validateRefId = require('./middleware/validateRefId');
 
 /**
@@ -26,18 +23,12 @@ const categorySchema = new mongoose.Schema(
       type: String,
       required: [true, 'Category must have a unique code.'],
       unique: true,
-      maxlength: [
-        32,
-        'Category code length must be no more than 32 characters long.',
-      ],
+      maxlength: [32, 'Category code length must be no more than 32 characters long.'],
       minlength: [2, 'Category code length must at least 2 characters long.'],
     },
     nameI18n: {
       type: i18nTextSchema({
-        maxlength: [
-          64,
-          'Category name length must be no more than 64 characters long.',
-        ],
+        maxlength: [64, 'Category name length must be no more than 64 characters long.'],
       }),
       required: [true, 'Category must have a name.'],
     },
@@ -52,16 +43,10 @@ const categorySchema = new mongoose.Schema(
     },
     image: categoryImageSchema,
     titleI18n: i18nTextSchema({
-      maxlength: [
-        96,
-        'Category title length must be no more than 96 characters long.',
-      ],
+      maxlength: [96, 'Category title length must be no more than 96 characters long.'],
     }),
     descriptionI18n: i18nTextSchema({
-      maxlength: [
-        200,
-        'Category description length must be no more than 200 characters long.',
-      ],
+      maxlength: [200, 'Category description length must be no more than 200 characters long.'],
     }),
   },
   {

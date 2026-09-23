@@ -13,10 +13,7 @@ const categoryImageSizeSchema = new mongoose.Schema(
       type: String,
     },
     altTextI18n: i18nTextSchema({
-      maxlength: [
-        128,
-        'Image alt text length must be no more than 128 characters long.',
-      ],
+      maxlength: [128, 'Image alt text length must be no more than 128 characters long.'],
     }),
   },
   { _id: false },

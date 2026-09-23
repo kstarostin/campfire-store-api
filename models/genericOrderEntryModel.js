@@ -46,12 +46,7 @@ const entrySchema = new mongoose.Schema(
 );
 
 // Document middleware
-entrySchema
-  .path('product')
-  .validate(
-    (value, respond) => validateRefId(value, respond, Product),
-    'Invalid product ID.',
-  );
+entrySchema.path('product').validate((value, respond) => validateRefId(value, respond, Product), 'Invalid product ID.');
 
 // Query middleware:
 // TODO: fix TypeError: Cannot read properties of undefined (reading 'wasPopulated')

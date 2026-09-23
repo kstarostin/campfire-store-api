@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const { performImport, performDelete, recreateTestData } = require('./db-seed');
 
 const getDbUri = () =>
-  process.env.DATABASE.replace(
-    '<USERNAME>',
-    process.env.DATABASE_USERNAME,
-  ).replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
+  process.env.DATABASE.replace('<USERNAME>', process.env.DATABASE_USERNAME).replace(
+    '<PASSWORD>',
+    process.env.DATABASE_PASSWORD,
+  );
 
 const runCli = async () => {
   dotenv.config({ path: './config.env', quiet: true });
@@ -24,9 +24,7 @@ const runCli = async () => {
     } else if (command === '--recreate' || command === '--r') {
       await recreateTestData();
     } else {
-      console.log(
-        'Usage: node import-test-data.js [--import|--delete|--recreate]',
-      );
+      console.log('Usage: node import-test-data.js [--import|--delete|--recreate]');
       process.exitCode = 1;
       return;
     }

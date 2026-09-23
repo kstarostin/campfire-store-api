@@ -332,16 +332,8 @@
         border: 1px solid #fed7aa;
         border-radius: var(--radius-lg);
         background:
-          radial-gradient(
-            circle at 88% 12%,
-            rgb(245 158 11 / 22%),
-            transparent 40%
-          ),
-          radial-gradient(
-            circle at 12% 82%,
-            rgb(234 88 12 / 18%),
-            transparent 36%
-          ),
+          radial-gradient(circle at 88% 12%, rgb(245 158 11 / 22%), transparent 40%),
+          radial-gradient(circle at 12% 82%, rgb(234 88 12 / 18%), transparent 36%),
           linear-gradient(145deg, #fffbeb 0%, #fff7ed 45%, #ffffff 100%);
         box-shadow: var(--shadow-md);
       }
@@ -559,11 +551,7 @@
       }
 
       .category-card--forest {
-        background: linear-gradient(
-          180deg,
-          var(--color-secondary-subtle) 0%,
-          var(--color-surface) 100%
-        );
+        background: linear-gradient(180deg, var(--color-secondary-subtle) 0%, var(--color-surface) 100%);
         border-color: var(--color-secondary-muted);
       }
 
@@ -754,12 +742,7 @@
         border-radius: var(--radius-lg);
         color: white;
         border: 1px solid rgb(255 255 255 / 10%);
-        background: linear-gradient(
-          135deg,
-          #064e3b 0%,
-          #047857 48%,
-          #065f46 100%
-        );
+        background: linear-gradient(135deg, #064e3b 0%, #047857 48%, #065f46 100%);
         box-shadow: var(--shadow-md);
       }
 
@@ -862,10 +845,7 @@
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <a class="logo" href="#" aria-label="Campfire Store home">
-          <img
-            src="./public/img/campfire_logo_light.png"
-            alt="Campfire Store"
-          />
+          <img src="./public/img/campfire_logo_light.png" alt="Campfire Store" />
         </a>
 
         <nav class="nav-desktop" aria-label="Main">
@@ -884,10 +864,7 @@
         <label class="header-search">
           <span class="search-field">
             <i data-lucide="search" size="18"></i>
-            <input
-              type="search"
-              placeholder="Search gear, brands, categories…"
-            />
+            <input type="search" placeholder="Search gear, brands, categories…" />
           </span>
         </label>
 
@@ -909,12 +886,7 @@
         </div>
       </div>
 
-      <div
-        class="mega-menu"
-        id="categories-mega-menu"
-        aria-label="Category menu"
-        aria-hidden="true"
-      >
+      <div class="mega-menu" id="categories-mega-menu" aria-label="Category menu" aria-hidden="true">
         <div class="container mega-menu__inner">
           <div class="mega-menu__grid">
             <div class="mega-menu__column">
@@ -982,18 +954,15 @@
               </span>
               <h1>Gear up for the trail, water, and road.</h1>
               <p>
-                A lightweight storefront concept for the Campfire Store API —
-                clean gray neutrals, orange accents from the logo flame, and a
-                catalog built for mobile first.
+                A lightweight storefront concept for the Campfire Store API — clean gray neutrals, orange accents from
+                the logo flame, and a catalog built for mobile first.
               </p>
               <div class="hero-actions">
                 <button class="btn btn-primary" type="button">
                   Shop bestsellers
                   <i data-lucide="arrow-right" size="18"></i>
                 </button>
-                <button class="btn btn-secondary" type="button">
-                  Browse categories
-                </button>
+                <button class="btn btn-secondary" type="button">Browse categories</button>
               </div>
             </div>
 
@@ -1027,37 +996,27 @@
 
           <div class="category-row">
             <article class="category-card">
-              <span class="category-icon"
-                ><i data-lucide="bike" size="18"></i
-              ></span>
+              <span class="category-icon"><i data-lucide="bike" size="18"></i></span>
               <strong>Bicycles</strong>
               <span>27 products</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"
-                ><i data-lucide="backpack" size="18"></i
-              ></span>
+              <span class="category-icon"><i data-lucide="backpack" size="18"></i></span>
               <strong>Backpacks</strong>
               <span>9 products</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"
-                ><i data-lucide="tent" size="18"></i
-              ></span>
+              <span class="category-icon"><i data-lucide="tent" size="18"></i></span>
               <strong>Camping</strong>
               <span>Tents &amp; more</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"
-                ><i data-lucide="sailboat" size="18"></i
-              ></span>
+              <span class="category-icon"><i data-lucide="sailboat" size="18"></i></span>
               <strong>Kayaks</strong>
               <span>Touring line</span>
             </article>
             <article class="category-card">
-              <span class="category-icon"
-                ><i data-lucide="shirt" size="18"></i
-              ></span>
+              <span class="category-icon"><i data-lucide="shirt" size="18"></i></span>
               <strong>Clothing</strong>
               <span>Hiking pants</span>
             </article>
@@ -1162,9 +1121,8 @@
         <div class="promo">
           <h2>Free demo checkout flow</h2>
           <p>
-            Login as <strong>alex.chen@explorernet.net</strong>, build a cart,
-            and place an order against the live API — perfect for showcasing the
-            full stack.
+            Login as <strong>alex.chen@explorernet.net</strong>, build a cart, and place an order against the live API —
+            perfect for showcasing the full stack.
           </p>
         </div>
       </section>
@@ -1174,21 +1132,10 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <img
-              src="./public/img/campfire_logo_dark.png"
-              alt="Campfire Store"
-              style="height: 1.75rem"
-            />
-            <p
-              style="
-                margin: 0.75rem 0 0;
-                max-width: 20rem;
-                color: var(--color-text-muted);
-                font-size: 0.9375rem;
-              "
-            >
-              Demo outdoor storefront for the Campfire Store API. Orange fire
-              accents in the hero, emerald green across the catalog UI.
+            <img src="./public/img/campfire_logo_dark.png" alt="Campfire Store" style="height: 1.75rem" />
+            <p style="margin: 0.75rem 0 0; max-width: 20rem; color: var(--color-text-muted); font-size: 0.9375rem">
+              Demo outdoor storefront for the Campfire Store API. Orange fire accents in the hero, emerald green across
+              the catalog UI.
             </p>
           </div>
           <div>
@@ -1213,10 +1160,7 @@
             <h3>API</h3>
             <ul>
               <li>
-                <a
-                  href="https://campfire-store-api.onrender.com/api/v1/api-docs/"
-                  target="_blank"
-                  rel="noreferrer"
+                <a href="https://campfire-store-api.onrender.com/api/v1/api-docs/" target="_blank" rel="noreferrer"
                   >Swagger docs</a
                 >
               </li>
@@ -1238,9 +1182,7 @@
 
       const siteHeader = document.getElementById('site-header');
       const categoriesTrigger = document.getElementById('categories-trigger');
-      const categoriesMegaMenu = document.getElementById(
-        'categories-mega-menu',
-      );
+      const categoriesMegaMenu = document.getElementById('categories-mega-menu');
 
       const setMegaMenuOpen = (isOpen) => {
         siteHeader.classList.toggle('mega-open', isOpen);

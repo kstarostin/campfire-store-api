@@ -63,11 +63,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(
-    authController.protect,
-    authController.restrictTo('admin'),
-    titleController.createTitle,
-  );
+  .post(authController.protect, authController.restrictTo('admin'), titleController.createTitle);
 
 router
   .route('/:id')
@@ -119,11 +115,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(
-    authController.protect,
-    authController.restrictTo('admin'),
-    titleController.updateTitle,
-  )
+  .patch(authController.protect, authController.restrictTo('admin'), titleController.updateTitle)
   /**
    * @swagger
    * /titles/{id}:
@@ -141,10 +133,6 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    authController.restrictTo('admin'),
-    titleController.deleteTitle,
-  );
+  .delete(authController.protect, authController.restrictTo('admin'), titleController.deleteTitle);
 
 module.exports = router;

@@ -11,16 +11,14 @@ function roundPriceCeiling(value) {
 }
 
 function buildPriceQuickFilters(prices) {
-  const validPrices = prices.filter(
-    (price) => typeof price === 'number' && Number.isFinite(price) && price > 0,
-  );
+  const validPrices = prices.filter((price) => typeof price === 'number' && Number.isFinite(price) && price > 0);
   const total = validPrices.length;
   if (total < 2) return [];
 
   const maxMatches = Math.max(1, Math.floor(total * 0.25));
-  const thresholds = [
-    ...new Set(validPrices.map((price) => roundPriceCeiling(price))),
-  ].sort((left, right) => left - right);
+  const thresholds = [...new Set(validPrices.map((price) => roundPriceCeiling(price)))].sort(
+    (left, right) => left - right,
+  );
 
   const quickFilters = [];
   const usedThresholds = new Set();
@@ -47,9 +45,7 @@ function stripCatalogClientFilters(filter, currency) {
   const priceKey = `priceI18n.${currency}`;
 
   if (Array.isArray(filter.$and)) {
-    const parts = filter.$and.filter(
-      (part) => part && !part.manufacturer && !part[priceKey],
-    );
+    const parts = filter.$and.filter((part) => part && !part.manufacturer && !part[priceKey]);
 
     if (parts.length === 0) return {};
     if (parts.length === 1) return { ...parts[0] };

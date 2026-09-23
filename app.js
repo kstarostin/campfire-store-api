@@ -51,9 +51,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(helmet());
 
 // Limit requests from the same IP
-const allowList = process.env.RATE_LIMIT_ALLOW_LIST
-  ? process.env.RATE_LIMIT_ALLOW_LIST.split(',')
-  : [];
+const allowList = process.env.RATE_LIMIT_ALLOW_LIST ? process.env.RATE_LIMIT_ALLOW_LIST.split(',') : [];
 const periodMinutes = 60;
 const limiter = rateLimit({
   limit: 100,
@@ -95,11 +93,7 @@ const basePath = '/';
 const apiPath = `${basePath}api/v1`;
 
 // Swagger routes
-app.use(
-  `${apiPath}/api-docs`,
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerConfig.document, swaggerConfig.options),
-);
+app.use(`${apiPath}/api-docs`, swaggerUi.serve, swaggerUi.setup(swaggerConfig.document, swaggerConfig.options));
 app.use(basePath, swaggerRedirectRouter);
 
 // App routes

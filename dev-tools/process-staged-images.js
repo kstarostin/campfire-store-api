@@ -71,9 +71,7 @@ const parseHexColor = (value) => {
 };
 
 const rgbToHex = ({ r, g, b }) =>
-  `#${[r, g, b]
-    .map((channel) => Math.round(channel).toString(16).padStart(2, '0'))
-    .join('')}`;
+  `#${[r, g, b].map((channel) => Math.round(channel).toString(16).padStart(2, '0')).join('')}`;
 
 const averageRgb = (samples) => {
   const total = samples.reduce(
@@ -92,8 +90,7 @@ const averageRgb = (samples) => {
   };
 };
 
-const colorDistance = (a, b) =>
-  Math.max(Math.abs(a.r - b.r), Math.abs(a.g - b.g), Math.abs(a.b - b.b));
+const colorDistance = (a, b) => Math.max(Math.abs(a.r - b.r), Math.abs(a.g - b.g), Math.abs(a.b - b.b));
 
 const samplePatchAverage = async (inputPath, left, top, patchSize) => {
   const { data, info } = await sharp(inputPath)
@@ -102,7 +99,7 @@ const samplePatchAverage = async (inputPath, left, top, patchSize) => {
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  const channels = info.channels;
+  const { channels } = info;
   let r = 0;
   let g = 0;
   let b = 0;
@@ -119,10 +116,7 @@ const samplePatchAverage = async (inputPath, left, top, patchSize) => {
 
 const detectBackgroundColor = async (inputPath) => {
   const { width, height } = await sharp(inputPath).metadata();
-  const patch = Math.max(
-    4,
-    Math.min(PATCH_MAX, Math.floor(width * 0.04), Math.floor(height * 0.04)),
-  );
+  const patch = Math.max(4, Math.min(PATCH_MAX, Math.floor(width * 0.04), Math.floor(height * 0.04)));
 
   const regions = [
     { left: 0, top: 0 },
@@ -136,21 +130,15 @@ const detectBackgroundColor = async (inputPath) => {
   ];
 
   const samples = await Promise.all(
-    regions.map((region) =>
-      samplePatchAverage(inputPath, region.left, region.top, patch),
-    ),
+    regions.map((region) => samplePatchAverage(inputPath, region.left, region.top, patch)),
   );
 
   const average = averageRgb(samples);
-  const consistent = samples.every(
-    (sample) => colorDistance(sample, average) <= BG_CHANNEL_TOLERANCE,
-  );
+  const consistent = samples.every((sample) => colorDistance(sample, average) <= BG_CHANNEL_TOLERANCE);
 
   if (!consistent) {
     const cornerAverage = averageRgb(samples.slice(0, 4));
-    console.warn(
-      `  Edge colors vary; using corner average ${rgbToHex(cornerAverage)}`,
-    );
+    console.warn(`  Edge colors vary; using corner average ${rgbToHex(cornerAverage)}`);
     return cornerAverage;
   }
 
@@ -192,15 +180,7 @@ const buildImagePath = (sizeName, imageName, format) => {
   return `/img/products/${sizeName}/${imageName}_${dimensionToken}.${format}`;
 };
 
-const writeDerivative = async ({
-  inputPath,
-  outputPath,
-  sizeName,
-  format,
-  fit,
-  background,
-  dryRun,
-}) => {
+const writeDerivative = async ({ inputPath, outputPath, sizeName, format, fit, background, dryRun }) => {
   const absOutput = path.join(publicRoot, outputPath);
   if (dryRun) {
     console.log(`  would write ${outputPath}`);
@@ -222,8 +202,7 @@ const writeDerivative = async ({
   }
 
   if (format === 'jpeg') {
-    const quality =
-      sizeName === 'thumbnail' || sizeName === 'small' ? 90 : 75;
+    const quality = sizeName === 'thumbnail' || sizeName === 'small' ? 90 : 75;
     pipeline = pipeline.jpeg({ mozjpeg: true, quality });
   } else {
     pipeline = pipeline.webp({ quality: 75, effort: 6 });
@@ -232,15 +211,7 @@ const writeDerivative = async ({
   await pipeline.toFile(absOutput);
 };
 
-const buildImageContainer = async ({
-  productId,
-  index,
-  inputPath,
-  altText,
-  fit,
-  bgOption,
-  dryRun,
-}) => {
+const buildImageContainer = async ({ productId, index, inputPath, altText, fit, bgOption, dryRun }) => {
   const background = await resolveBackground({ inputPath, fit, bgOption });
   const bgHex = rgbToHex(background);
   const { hasAlpha } = await sharp(inputPath).metadata();
@@ -277,9 +248,7 @@ const buildImageContainer = async ({
 };
 
 const patchProductFile = ({ productFile, productId, images, dryRun }) => {
-  const absPath = path.isAbsolute(productFile)
-    ? productFile
-    : path.join(repoRoot, productFile);
+  const absPath = path.isAbsolute(productFile) ? productFile : path.join(repoRoot, productFile);
 
   const products = JSON.parse(fs.readFileSync(absPath, 'utf-8'));
   const index = products.findIndex((product) => product._id === productId);
@@ -303,9 +272,7 @@ const resolveAltText = ({ productFile, productId, altText }) => {
   if (altText) return altText;
 
   if (productFile) {
-    const absPath = path.isAbsolute(productFile)
-      ? productFile
-      : path.join(repoRoot, productFile);
+    const absPath = path.isAbsolute(productFile) ? productFile : path.join(repoRoot, productFile);
     const products = JSON.parse(fs.readFileSync(absPath, 'utf-8'));
     const product = products.find((entry) => entry._id === productId);
     if (product?.name) {
@@ -332,9 +299,7 @@ const main = async () => {
   const altText = resolveAltText(options);
   const images = [];
 
-  console.log(
-    `${dryRun ? '[dry-run] ' : ''}Processing ${sources.length} image(s) for ${productId} (fit: ${fit})`,
-  );
+  console.log(`${dryRun ? '[dry-run] ' : ''}Processing ${sources.length} image(s) for ${productId} (fit: ${fit})`);
 
   for (let i = 0; i < sources.length; i += 1) {
     const inputPath = sources[i];

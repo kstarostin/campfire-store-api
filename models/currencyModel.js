@@ -19,10 +19,7 @@ const currencySchema = new mongoose.Schema({
     type: String,
     required: [true, 'Currency must have a unique code.'],
     unique: true,
-    maxlength: [
-      3,
-      'Currency code length must be no more than 3 characters long.',
-    ],
+    maxlength: [3, 'Currency code length must be no more than 3 characters long.'],
     minlength: [3, 'Currency code length must at least 3 characters long.'],
   },
   nameI18n: {

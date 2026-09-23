@@ -5,12 +5,7 @@ const User = require('../models/userModel');
 const Cart = require('../models/cartModel');
 const Order = require('../models/orderModel');
 const Wishlist = require('../models/wishlistModel');
-const {
-  allowedLanguages,
-  defaultLanguage,
-  allowedCurrencies,
-  defaultCurrency,
-} = require('../utils/config');
+const { allowedLanguages, defaultLanguage, allowedCurrencies, defaultCurrency } = require('../utils/config');
 
 const extractUser = async (id, next) => {
   let user;
@@ -51,12 +46,7 @@ const extractWishlist = async (id) => {
 
 const validateRequestParam = (req, paramName, next) => {
   if (!req.params[paramName]) {
-    return next(
-      new AppError(
-        `Required parameter ${paramName} for this request is missing`,
-        400,
-      ),
-    );
+    return next(new AppError(`Required parameter ${paramName} for this request is missing`, 400));
   }
 };
 
@@ -84,9 +74,7 @@ exports.handleUserIdCartId = catchAsync(async (req, res, next) => {
   const cart = await extractCart(req.params.cartId);
 
   if (cart.user.id !== user.id) {
-    return next(
-      new AppError('No relation found between cartId and userId', 404),
-    );
+    return next(new AppError('No relation found between cartId and userId', 404));
   }
   req.cart = cart;
   next();
@@ -103,13 +91,9 @@ exports.handleUserIdWishlistId = catchAsync(async (req, res, next) => {
   validateRequestParam(req, 'wishlistId', next);
   const wishlist = await extractWishlist(req.params.wishlistId);
 
-  const wishlistUserId = wishlist.user._id
-    ? wishlist.user._id.toString()
-    : wishlist.user.toString();
+  const wishlistUserId = wishlist.user._id ? wishlist.user._id.toString() : wishlist.user.toString();
   if (wishlistUserId !== user.id.toString()) {
-    return next(
-      new AppError('No relation found between wishlistId and userId', 404),
-    );
+    return next(new AppError('No relation found between wishlistId and userId', 404));
   }
   req.wishlist = wishlist;
   next();
@@ -128,9 +112,7 @@ exports.handleUserIdOrderId = catchAsync(async (req, res, next) => {
   const order = await extractOrder(req.params.cartId);
 
   if (order.user.id !== user.id) {
-    return next(
-      new AppError('No relation found between orderId and userId', 404),
-    );
+    return next(new AppError('No relation found between orderId and userId', 404));
   }
   next();
 });
@@ -140,10 +122,7 @@ exports.handleUserIdOrderId = catchAsync(async (req, res, next) => {
  */
 exports.handleLanguage = (req, res, next) => {
   const queryLanguage = req.query.language;
-  req.language =
-    queryLanguage && allowedLanguages.includes(queryLanguage)
-      ? queryLanguage
-      : defaultLanguage;
+  req.language = queryLanguage && allowedLanguages.includes(queryLanguage) ? queryLanguage : defaultLanguage;
   // console.log(`Session language: ${req.language}`);
   next();
 };
@@ -153,10 +132,7 @@ exports.handleLanguage = (req, res, next) => {
  */
 exports.handleCurrency = (req, res, next) => {
   const queryCurrency = req.query.currency;
-  req.currency =
-    queryCurrency && allowedCurrencies.includes(queryCurrency)
-      ? queryCurrency
-      : defaultCurrency;
+  req.currency = queryCurrency && allowedCurrencies.includes(queryCurrency) ? queryCurrency : defaultCurrency;
   // console.log(`Session currency: ${req.currency}`);
   next();
 };

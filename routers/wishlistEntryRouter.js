@@ -42,11 +42,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserIdWishlistId,
-    wishlistEntryController.getAllEntries,
-  )
+  .get(authController.protect, sessionController.handleUserIdWishlistId, wishlistEntryController.getAllEntries)
   /**
    * @swagger
    * /users/{id}/wishlists/{wishlistId}/entries:
@@ -116,11 +112,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserIdWishlistId,
-    wishlistEntryController.getEntry,
-  )
+  .get(authController.protect, sessionController.handleUserIdWishlistId, wishlistEntryController.getEntry)
   /**
    * @swagger
    * /users/{id}/wishlists/{wishlistId}/entries/{entryId}:
@@ -140,10 +132,6 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    sessionController.handleUserIdWishlistId,
-    wishlistEntryController.deleteEntry,
-  );
+  .delete(authController.protect, sessionController.handleUserIdWishlistId, wishlistEntryController.deleteEntry);
 
 module.exports = router;

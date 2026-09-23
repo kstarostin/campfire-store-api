@@ -16,9 +16,7 @@ const RequestBodySanitizer = require('../utils/requestBodySanitizer');
 const calculateEntryPrice = async function (cart, productId, quantity, next) {
   const product = await Product.findOne({ _id: productId });
   if (!product) {
-    return next(
-      new AppError(`Can not find a product by ID ${productId}.`, 404),
-    );
+    return next(new AppError(`Can not find a product by ID ${productId}.`, 404));
   }
 
   const { currency } = cart;
@@ -36,9 +34,7 @@ const calculateEntryPrice = async function (cart, productId, quantity, next) {
 
 exports.assignEntryToCart = (req, res, next) => {
   if (!req.body.parent) {
-    req.body.parent = req.params.cartId
-      ? req.params.cartId
-      : req.params.orderId;
+    req.body.parent = req.params.cartId ? req.params.cartId : req.params.orderId;
   }
   next();
 };
@@ -51,25 +47,14 @@ exports.getEntry = factory.getOne(GenericOrderEntry);
 
 exports.createEntry = catchAsync(async (req, res, next) => {
   // Sanitize request body
-  req.body = new RequestBodySanitizer([
-    'product',
-    'quantity',
-    'parent',
-  ]).sanitize(req.body);
+  req.body = new RequestBodySanitizer(['product', 'quantity', 'parent']).sanitize(req.body);
   // Adjust entry price in the payload based on the product and cart currency
   if (req.params.cartId) {
-    req.body.price = await calculateEntryPrice(
-      req.cart,
-      req.body.product,
-      req.body.quantity,
-      next,
-    );
+    req.body.price = await calculateEntryPrice(req.cart, req.body.product, req.body.quantity, next);
   }
   // Create a new cart / order entry
   let newDocument = await GenericOrderEntry.create(req.body);
-  newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(
-    newDocument,
-  );
+  newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(newDocument);
   // Recalculate cart after entry modification
   await req.cart?.recalculate();
 
@@ -93,12 +78,7 @@ exports.updateEntry = catchAsync(async (req, res, next) => {
   }
   // Adjust entry price in the payload based on the product and cart currency
   if (req.params.cartId && req.body.quantity) {
-    req.body.price = await calculateEntryPrice(
-      req.cart,
-      document.product,
-      req.body.quantity,
-      next,
-    );
+    req.body.price = await calculateEntryPrice(req.cart, document.product, req.body.quantity, next);
   }
   // Sanitize request body
   req.body = new RequestBodySanitizer(['quantity']).sanitize(req.body);
@@ -114,11 +94,7 @@ exports.updateEntry = catchAsync(async (req, res, next) => {
   // Recalculate cart after entry modification
   await req.cart?.recalculate();
 
-  updatedDocument = new DocumentSanitizer(
-    req.language,
-    req.currency,
-    3,
-  ).sanitize(updatedDocument);
+  updatedDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(updatedDocument);
 
   res.status(200).json({
     status: 'success',

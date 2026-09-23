@@ -45,20 +45,12 @@ exports.searchProducts = catchAsync(async (req, res, next) => {
   }
 
   if (query.length > MAX_QUERY_LENGTH) {
-    return next(
-      new AppError(
-        `Search query must be ${MAX_QUERY_LENGTH} characters or fewer.`,
-        400,
-      ),
-    );
+    return next(new AppError(`Search query must be ${MAX_QUERY_LENGTH} characters or fewer.`, 400));
   }
 
   const searchFilter = await buildProductSearchFilter(query, Category);
 
-  const features = new APIFeatures(
-    Product.find(searchFilter).select('-descriptionI18n'),
-    req.query,
-  )
+  const features = new APIFeatures(Product.find(searchFilter).select('-descriptionI18n'), req.query)
     .paginate({ defaultLimit: 25, maxLimit: 50 })
     .sort()
     .limitFields()
@@ -66,18 +58,12 @@ exports.searchProducts = catchAsync(async (req, res, next) => {
 
   const totalCount = await Product.countDocuments(features.resultFilter);
   const documents = (await features.dbQuery).map((document) =>
-    normalizeProductBadges(
-      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
-    ),
+    normalizeProductBadges(new DocumentSanitizer(req.language, req.currency, 8).sanitize(document)),
   );
 
-  const numberOfPages =
-    totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
+  const numberOfPages = totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
 
-  const quickFilterScope = stripCatalogClientFilters(
-    features.resultFilter,
-    req.currency,
-  );
+  const quickFilterScope = stripCatalogClientFilters(features.resultFilter, req.currency);
 
   res.status(200).json({
     status: 'success',

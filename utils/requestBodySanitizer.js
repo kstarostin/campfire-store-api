@@ -1,7 +1,6 @@
 class RequestBodySanitizer {
   constructor(whitelist) {
-    this.whitelist =
-      Array.isArray(whitelist) && whitelist.length > 0 ? whitelist : [];
+    this.whitelist = Array.isArray(whitelist) && whitelist.length > 0 ? whitelist : [];
   }
 
   /**
@@ -12,9 +11,7 @@ class RequestBodySanitizer {
    */
   sanitize(body) {
     Object.keys(body)
-      .filter(
-        (value) => this.whitelist.length > 0 && !this.whitelist.includes(value),
-      )
+      .filter((value) => this.whitelist.length > 0 && !this.whitelist.includes(value))
       .forEach((value) => {
         body[value] = undefined;
       });

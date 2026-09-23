@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+
+# Vendored Swagger UI theme — keep as shipped upstream
+public/css/swagger-ui-theme-flattop.css
+
+# Generated Postman exports — reformatting churns on every re-export
+dev-tools/*.postman_collection.json

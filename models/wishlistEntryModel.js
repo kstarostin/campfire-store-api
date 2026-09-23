@@ -38,17 +38,11 @@ wishlistEntrySchema.index({ parent: 1, product: 1 }, { unique: true });
 
 wishlistEntrySchema
   .path('product')
-  .validate(
-    (value, respond) => validateRefId(value, respond, Product),
-    'Invalid product ID.',
-  );
+  .validate((value, respond) => validateRefId(value, respond, Product), 'Invalid product ID.');
 
 wishlistEntrySchema
   .path('parent')
-  .validate(
-    (value, respond) => validateRefId(value, respond, Wishlist),
-    'Invalid wishlist ID.',
-  );
+  .validate((value, respond) => validateRefId(value, respond, Wishlist), 'Invalid wishlist ID.');
 
 const WishlistEntry = mongoose.model('WishlistEntry', wishlistEntrySchema);
 module.exports = WishlistEntry;

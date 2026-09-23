@@ -18,13 +18,7 @@ const multerFilter = (req, file, cb) => {
   if (allowedImageMimeTypes.includes(file.mimetype)) {
     cb(null, true);
   } else {
-    cb(
-      new AppError(
-        `Allowed photo image mime types are [${allowedImageMimeTypes.join(', ')}].`,
-        400,
-      ),
-      false,
-    );
+    cb(new AppError(`Allowed photo image mime types are [${allowedImageMimeTypes.join(', ')}].`, 400), false);
   }
 };
 const upload = multer({
@@ -84,12 +78,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
   }
 
   // Sanitize request body
-  const sanitizerWhitelist = [
-    'name',
-    'email',
-    'deliveryAddresses',
-    'billingAddresses',
-  ];
+  const sanitizerWhitelist = ['name', 'email', 'deliveryAddresses', 'billingAddresses'];
   // Additionally, make sure only admins can manage their roles
   if (req.user?.roles?.includes('admin')) {
     sanitizerWhitelist.push('roles');
@@ -112,9 +101,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 
   // Forbid changing passwords on this route
   if (req.body.password) {
-    return next(
-      new AppError('This route does not allow changing passwords.', 400),
-    );
+    return next(new AppError('This route does not allow changing passwords.', 400));
   }
 
   // Perform update
@@ -135,9 +122,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
   );
 
   // Sanitize response document
-  updatedUser = new DocumentSanitizer(req.language, req.currency, 6).sanitize(
-    updatedUser,
-  );
+  updatedUser = new DocumentSanitizer(req.language, req.currency, 6).sanitize(updatedUser);
 
   res.status(200).json({
     status: 'success',
@@ -246,9 +231,7 @@ exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
     user.photo?.small?.url?.length === 0 ||
     user.photo?.small?.url?.includes('user_photo_placeholder')
   ) {
-    return next(
-      new AppError('User does not have a valid uploaded photo to remove.', 400),
-    );
+    return next(new AppError('User does not have a valid uploaded photo to remove.', 400));
   }
 
   // Mark old photo images for delete

@@ -47,7 +47,7 @@ Config comes from **`config.env`** (not `.env`), loaded by `server.js` and `test
 
 This is the central idea and it shapes every model and controller.
 
-Documents store **all** locales inline. `models/schemes/i18nTextSchema.js` and `i18nPriceSchema.js` are *factory functions* that generate a sub-schema with one key per configured language/currency, so `nameI18n` is `{en, de}` and `priceI18n` is `{USD, EUR}`.
+Documents store **all** locales inline. `models/schemes/i18nTextSchema.js` and `i18nPriceSchema.js` are _factory functions_ that generate a sub-schema with one key per configured language/currency, so `nameI18n` is `{en, de}` and `priceI18n` is `{USD, EUR}`.
 
 On the way out, `utils/documentSanitizer.js` walks each response document to a fixed depth (8 for lists, 7 for single documents) and deletes every locale except the session's. `controllers/sessionController.js` (`handleLanguage`/`handleCurrency`, registered globally in `app.js`) sets `req.language`/`req.currency` from the `?language=` and `?currency=` query params, falling back to defaults.
 
@@ -67,11 +67,11 @@ Write operations run `utils/requestBodySanitizer.js` against an explicit whiteli
 
 **Response envelopes are not uniform.** Match the existing shape when adding endpoints:
 
-| Operation | Shape |
-|---|---|
-| `getAll` | `{status, resultsFound, resultsPerPage, resultsTotal, currentPage, pages, data: {documents}}` |
-| `getOne` / `updateOne` | `{status, data: {document}}` |
-| `createOne` | `{status, data: {data}}` — note the doubled key |
+| Operation              | Shape                                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| `getAll`               | `{status, resultsFound, resultsPerPage, resultsTotal, currentPage, pages, data: {documents}}` |
+| `getOne` / `updateOne` | `{status, data: {document}}`                                                                  |
+| `createOne`            | `{status, data: {data}}` — note the doubled key                                               |
 
 ### Nested resources under users
 
@@ -87,7 +87,7 @@ Carts, orders and wishlists are not top-level routes. `routers/userRouter.js` mo
 
 `genericOrderSchema.methods.recalculate()` sums entry prices into `total` and saves — call it after any entry mutation. A `pre('findOneAndDelete')` hook cascades entry deletion.
 
-Wishlists are deliberately *not* part of this hierarchy: separate `Wishlist` + `WishlistEntry` models, with a unique compound index on `{parent, product}`.
+Wishlists are deliberately _not_ part of this hierarchy: separate `Wishlist` + `WishlistEntry` models, with a unique compound index on `{parent, product}`.
 
 ### Auth
 

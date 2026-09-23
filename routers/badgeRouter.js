@@ -63,11 +63,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(
-    authController.protect,
-    authController.restrictTo('admin'),
-    badgeController.createBadge,
-  );
+  .post(authController.protect, authController.restrictTo('admin'), badgeController.createBadge);
 
 router
   .route('/:id')
@@ -119,11 +115,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(
-    authController.protect,
-    authController.restrictTo('admin'),
-    badgeController.updateBadge,
-  )
+  .patch(authController.protect, authController.restrictTo('admin'), badgeController.updateBadge)
   /**
    * @swagger
    * /badges/{id}:
@@ -143,10 +135,6 @@ router
    *       409:
    *         description: Badge is still assigned to one or more products.
    */
-  .delete(
-    authController.protect,
-    authController.restrictTo('admin'),
-    badgeController.deleteBadge,
-  );
+  .delete(authController.protect, authController.restrictTo('admin'), badgeController.deleteBadge);
 
 module.exports = router;

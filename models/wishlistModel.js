@@ -35,12 +35,7 @@ const wishlistSchema = new mongoose.Schema(
   },
 );
 
-wishlistSchema
-  .path('user')
-  .validate(
-    (value, respond) => validateRefId(value, respond, User),
-    'Invalid user ID.',
-  );
+wishlistSchema.path('user').validate((value, respond) => validateRefId(value, respond, User), 'Invalid user ID.');
 
 const Wishlist = mongoose.model('Wishlist', wishlistSchema);
 module.exports = Wishlist;

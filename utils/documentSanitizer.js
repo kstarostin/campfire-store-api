@@ -17,7 +17,7 @@ class DocumentSanitizer {
    */
   sanitize(document) {
     // console.log('Start sanitizing document...');
-    const start = Date.now();
+    // const start = Date.now();
 
     // Define the current object, it's path and current scan level
     let currentObject;
@@ -77,11 +77,7 @@ class DocumentSanitizer {
 
   #isValidForSanitizing(key) {
     const excludeKeys = ['buffer'];
-    return (
-      !key.startsWith('$') &&
-      !key.startsWith('__') &&
-      !excludeKeys.includes(key)
-    );
+    return !key.startsWith('$') && !key.startsWith('__') && !excludeKeys.includes(key);
   }
 
   #sanitizeI18nText = (object, path, key) => {

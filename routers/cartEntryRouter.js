@@ -47,11 +47,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserIdCartId,
-    genericOrderEntryController.getAllEntries,
-  )
+  .get(authController.protect, sessionController.handleUserIdCartId, genericOrderEntryController.getAllEntries)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}/entries:
@@ -122,11 +118,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserIdCartId,
-    genericOrderEntryController.getEntry,
-  )
+  .get(authController.protect, sessionController.handleUserIdCartId, genericOrderEntryController.getEntry)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}/entries/{entryId}:
@@ -162,11 +154,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(
-    authController.protect,
-    sessionController.handleUserIdCartId,
-    genericOrderEntryController.updateEntry,
-  )
+  .patch(authController.protect, sessionController.handleUserIdCartId, genericOrderEntryController.updateEntry)
   /**
    * @swagger
    * /users/{id}/carts/{cartId}/entries/{entryId}:
@@ -186,10 +174,6 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    sessionController.handleUserIdCartId,
-    genericOrderEntryController.deleteEntry,
-  );
+  .delete(authController.protect, sessionController.handleUserIdCartId, genericOrderEntryController.deleteEntry);
 
 module.exports = router;

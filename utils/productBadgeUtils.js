@@ -54,11 +54,7 @@ exports.validateProductBadgeAssignments = async (badges) => {
       throw new AppError('Each badge assignment must include a valid badge ID.', 400);
     }
 
-    if (
-      typeof assignment.priority !== 'number' ||
-      !Number.isInteger(assignment.priority) ||
-      assignment.priority < 1
-    ) {
+    if (typeof assignment.priority !== 'number' || !Number.isInteger(assignment.priority) || assignment.priority < 1) {
       throw new AppError('Each badge assignment must have priority >= 1.', 400);
     }
 
@@ -75,9 +71,6 @@ exports.validateProductBadgeAssignments = async (badges) => {
   });
 
   if (activeBadgeCount !== badgeIds.length) {
-    throw new AppError(
-      'One or more badges are invalid, inactive, or do not exist.',
-      400,
-    );
+    throw new AppError('One or more badges are invalid, inactive, or do not exist.', 400);
   }
 };

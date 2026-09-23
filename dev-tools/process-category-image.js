@@ -38,9 +38,7 @@ const parseArgs = () => {
   const args = process.argv.slice(2);
   const code = args.find((arg) => !arg.startsWith('--'));
   if (!code) {
-    console.error(
-      'Usage: node dev-tools/process-category-image.js <category-code> [--source path | --url https://…]',
-    );
+    console.error('Usage: node dev-tools/process-category-image.js <category-code> [--source path | --url https://…]');
     process.exit(1);
   }
 
@@ -171,8 +169,7 @@ const main = async () => {
   if (options.altEn || copyAlt?.en) altTextI18n.en = options.altEn ?? copyAlt.en;
   if (options.altDe || copyAlt?.de) altTextI18n.de = options.altDe ?? copyAlt.de;
 
-  const withAlt = (sizeEntry) =>
-    Object.keys(altTextI18n).length ? { ...sizeEntry, altTextI18n } : sizeEntry;
+  const withAlt = (sizeEntry) => (Object.keys(altTextI18n).length ? { ...sizeEntry, altTextI18n } : sizeEntry);
 
   const large = withAlt(await writeVariant(sourcePath, options.code, 'large', options.dryRun));
   const small = withAlt(await writeVariant(sourcePath, options.code, 'small', options.dryRun));

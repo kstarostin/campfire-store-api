@@ -37,11 +37,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    wishlistController.getAllWishlists,
-  )
+  .get(authController.protect, sessionController.handleUserId, wishlistController.getAllWishlists)
   /**
    * @swagger
    * /users/{id}/wishlists:
@@ -107,11 +103,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    wishlistController.getWishlist,
-  )
+  .get(authController.protect, sessionController.handleUserId, wishlistController.getWishlist)
   /**
    * @swagger
    * /users/{id}/wishlists/{wishlistId}:
@@ -144,11 +136,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .patch(
-    authController.protect,
-    sessionController.handleUserId,
-    wishlistController.updateWishlist,
-  )
+  .patch(authController.protect, sessionController.handleUserId, wishlistController.updateWishlist)
   /**
    * @swagger
    * /users/{id}/wishlists/{wishlistId}:
@@ -167,11 +155,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    sessionController.handleUserId,
-    wishlistController.deleteWishlist,
-  );
+  .delete(authController.protect, sessionController.handleUserId, wishlistController.deleteWishlist);
 
 router.use('/:wishlistId/entries', wishlistEntryRouter);
 

@@ -19,10 +19,7 @@ const languageSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Language must have a unique code.'],
     unique: true,
-    maxlength: [
-      2,
-      'Language code length must be no more than 2 characters long.',
-    ],
+    maxlength: [2, 'Language code length must be no more than 2 characters long.'],
     minlength: [2, 'Language code length must at least 2 characters long.'],
   },
   nameI18n: {

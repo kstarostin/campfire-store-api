@@ -12,7 +12,10 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '40 L', de: '40 L' } },
       { code: 'fit', valueI18n: { en: 'Unisex', de: 'Unisex' } },
-      { code: 'use', valueI18n: { en: 'Alpine trekking', de: 'Alpines Trekking' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Alpine trekking', de: 'Alpines Trekking' },
+      },
     ],
   },
   '662def6170b24f3efc32963b': {
@@ -23,7 +26,13 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '15 L', de: '15 L' } },
       { code: 'fit', valueI18n: { en: 'Unisex', de: 'Unisex' } },
-      { code: 'use', valueI18n: { en: 'Climbing & via ferrata', de: 'Klettern & Via Ferrata' } },
+      {
+        code: 'use',
+        valueI18n: {
+          en: 'Climbing & via ferrata',
+          de: 'Klettern & Via Ferrata',
+        },
+      },
     ],
   },
   '662df51aaf311f80b416de13': {
@@ -34,7 +43,10 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '38 L', de: '38 L' } },
       { code: 'fit', valueI18n: { en: 'Unisex', de: 'Unisex' } },
-      { code: 'use', valueI18n: { en: 'Alpine & ski touring', de: 'Alpin & Skitouren' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Alpine & ski touring', de: 'Alpin & Skitouren' },
+      },
     ],
   },
   '662df7f89b36f3b6155abd5f': {
@@ -45,7 +57,10 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '65 L', de: '65 L' } },
       { code: 'fit', valueI18n: { en: 'Men', de: 'Herren' } },
-      { code: 'use', valueI18n: { en: 'Extended backpacking', de: 'Langstrecken-Trekking' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Extended backpacking', de: 'Langstrecken-Trekking' },
+      },
     ],
   },
   '662df8c6b026d4e999ba5327': {
@@ -56,7 +71,10 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '50 L', de: '50 L' } },
       { code: 'fit', valueI18n: { en: 'Women', de: 'Damen' } },
-      { code: 'use', valueI18n: { en: 'Multi-day trekking', de: 'Mehrtagestrekking' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Multi-day trekking', de: 'Mehrtagestrekking' },
+      },
     ],
   },
   '662dfa6d912584992752bc65': {
@@ -78,7 +96,13 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '28 L', de: '28 L' } },
       { code: 'fit', valueI18n: { en: 'Women', de: 'Damen' } },
-      { code: 'use', valueI18n: { en: 'Day & weekend hikes', de: 'Tages- & Wochenendtouren' } },
+      {
+        code: 'use',
+        valueI18n: {
+          en: 'Day & weekend hikes',
+          de: 'Tages- & Wochenendtouren',
+        },
+      },
     ],
   },
   '662e000df9c246bd3b03dbf9': {
@@ -89,7 +113,13 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '13 L', de: '13 L' } },
       { code: 'fit', valueI18n: { en: 'Unisex', de: 'Unisex' } },
-      { code: 'use', valueI18n: { en: 'Fast & light tours', de: 'Schnell & leicht unterwegs' } },
+      {
+        code: 'use',
+        valueI18n: {
+          en: 'Fast & light tours',
+          de: 'Schnell & leicht unterwegs',
+        },
+      },
     ],
   },
   '662e00c6dd0d4ade52164a56': {
@@ -100,7 +130,10 @@ module.exports = {
     highlights: [
       { code: 'volume', valueI18n: { en: '36 L', de: '36 L' } },
       { code: 'fit', valueI18n: { en: 'Unisex', de: 'Unisex' } },
-      { code: 'use', valueI18n: { en: 'Technical trails', de: 'Technische Trails' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Technical trails', de: 'Technische Trails' },
+      },
     ],
   },
 
@@ -124,7 +157,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'All-road adventures', de: 'Allroad-Abenteuer' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'All-road adventures', de: 'Allroad-Abenteuer' },
+      },
     ],
   },
   '6635e52c08a5c723c8ac2f99': {
@@ -157,7 +193,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Gravel & bikepacking', de: 'Gravel & Bikepacking' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Gravel & bikepacking', de: 'Gravel & Bikepacking' },
+      },
     ],
   },
   '663603ab52bc5f09bc0ce046': {
@@ -168,7 +207,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Racing & fondos', de: 'Rennen & Fondos' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Racing & fondos', de: 'Rennen & Fondos' },
+      },
     ],
   },
   '66360493560b98ec0c94efe1': {
@@ -179,7 +221,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Performance gravel', de: 'Performance-Gravel' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Performance gravel', de: 'Performance-Gravel' },
+      },
     ],
   },
   '663606d1245b69f3c4c75029': {
@@ -190,7 +235,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Gravel & commuting', de: 'Gravel & Pendeln' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Gravel & commuting', de: 'Gravel & Pendeln' },
+      },
     ],
   },
   '6636079252d387e096864c2e': {
@@ -212,7 +260,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Gravel & endurance', de: 'Gravel & Ausdauer' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Gravel & endurance', de: 'Gravel & Ausdauer' },
+      },
     ],
   },
 
@@ -224,8 +275,14 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Men', de: 'Herren' } },
-      { code: 'material', valueI18n: { en: 'Stretch softshell', de: 'Stretch-Softshell' } },
-      { code: 'use', valueI18n: { en: 'Hiking & trekking', de: 'Wandern & Trekking' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Stretch softshell', de: 'Stretch-Softshell' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Hiking & trekking', de: 'Wandern & Trekking' },
+      },
     ],
   },
   '662e06be7b552a6e688ae68b': {
@@ -246,8 +303,14 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Women', de: 'Damen' } },
-      { code: 'material', valueI18n: { en: 'Stretch softshell', de: 'Stretch-Softshell' } },
-      { code: 'use', valueI18n: { en: 'Hiking & trekking', de: 'Wandern & Trekking' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Stretch softshell', de: 'Stretch-Softshell' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Hiking & trekking', de: 'Wandern & Trekking' },
+      },
     ],
   },
   '662e0b1e6c0a612bde5f0b33': {
@@ -269,7 +332,10 @@ module.exports = {
     highlights: [
       { code: 'fit', valueI18n: { en: 'Men', de: 'Herren' } },
       { code: 'material', valueI18n: { en: 'G-1000 Eco', de: 'G-1000 Eco' } },
-      { code: 'use', valueI18n: { en: 'Summer trekking', de: 'Sommer-Trekking' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Summer trekking', de: 'Sommer-Trekking' },
+      },
     ],
   },
   '662e0ee377fe7d14cc28d205': {
@@ -279,8 +345,14 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Men', de: 'Herren' } },
-      { code: 'material', valueI18n: { en: 'Stretch & Cordura', de: 'Stretch & Cordura' } },
-      { code: 'use', valueI18n: { en: 'Alpine climbing', de: 'Alpines Klettern' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Stretch & Cordura', de: 'Stretch & Cordura' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Alpine climbing', de: 'Alpines Klettern' },
+      },
     ],
   },
   '662e11f91e71603fc3c969f4': {
@@ -290,8 +362,17 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Women', de: 'Damen' } },
-      { code: 'material', valueI18n: { en: 'Stretch weave', de: 'Stretch-Gewebe' } },
-      { code: 'use', valueI18n: { en: 'Trail running & hiking', de: 'Trailrunning & Wandern' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Stretch weave', de: 'Stretch-Gewebe' },
+      },
+      {
+        code: 'use',
+        valueI18n: {
+          en: 'Trail running & hiking',
+          de: 'Trailrunning & Wandern',
+        },
+      },
     ],
   },
   '662e13bb2a8d209afe2adb9c': {
@@ -312,7 +393,10 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Men', de: 'Herren' } },
-      { code: 'material', valueI18n: { en: 'Recycled nylon', de: 'Recyceltes Nylon' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Recycled nylon', de: 'Recyceltes Nylon' },
+      },
       { code: 'use', valueI18n: { en: 'Rock climbing', de: 'Klettern' } },
     ],
   },
@@ -323,8 +407,14 @@ module.exports = {
     },
     highlights: [
       { code: 'fit', valueI18n: { en: 'Women', de: 'Damen' } },
-      { code: 'material', valueI18n: { en: 'Recycled polyester', de: 'Recyceltes Polyester' } },
-      { code: 'use', valueI18n: { en: 'Training & hiking', de: 'Training & Wandern' } },
+      {
+        code: 'material',
+        valueI18n: { en: 'Recycled polyester', de: 'Recyceltes Polyester' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Training & hiking', de: 'Training & Wandern' },
+      },
     ],
   },
 
@@ -392,7 +482,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '27.5″', de: '27,5″' } },
-      { code: 'use', valueI18n: { en: 'Trail & leisure', de: 'Trail & Freizeit' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Trail & leisure', de: 'Trail & Freizeit' },
+      },
     ],
   },
   '662e2dbc06c4ca5fb6996828': {
@@ -447,7 +540,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '29″', de: '29″' } },
-      { code: 'use', valueI18n: { en: 'Trail & enduro', de: 'Trail & Enduro' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Trail & enduro', de: 'Trail & Enduro' },
+      },
     ],
   },
 
@@ -471,7 +567,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Endurance rides', de: 'Ausdauerfahrten' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Endurance rides', de: 'Ausdauerfahrten' },
+      },
     ],
   },
   '66367c0785fae5dd2b063190': {
@@ -482,7 +581,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Aluminium', de: 'Aluminium' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Endurance & sportive', de: 'Ausdauer & Sportive' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Endurance & sportive', de: 'Ausdauer & Sportive' },
+      },
     ],
   },
   '66367e0fe2fed4e4f85b6149': {
@@ -493,7 +595,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Racing & fondos', de: 'Rennen & Fondos' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Racing & fondos', de: 'Rennen & Fondos' },
+      },
     ],
   },
   '66367ef81ff94c4ed0b6096a': {
@@ -515,7 +620,10 @@ module.exports = {
     highlights: [
       { code: 'frame', valueI18n: { en: 'Carbon', de: 'Carbon' } },
       { code: 'wheel', valueI18n: { en: '700c', de: '700c' } },
-      { code: 'use', valueI18n: { en: 'Climbing & racing', de: 'Anstiege & Rennen' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Climbing & racing', de: 'Anstiege & Rennen' },
+      },
     ],
   },
 
@@ -574,7 +682,10 @@ module.exports = {
     highlights: [
       { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
-      { code: 'weight', valueI18n: { en: '1.19 kg trail', de: '1,19 kg Trail' } },
+      {
+        code: 'weight',
+        valueI18n: { en: '1.19 kg trail', de: '1,19 kg Trail' },
+      },
     ],
   },
   '6a4624d42c8efc7276ae93f1': {
@@ -585,7 +696,10 @@ module.exports = {
     highlights: [
       { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
-      { code: 'weight', valueI18n: { en: '0.99 kg trail', de: '0,99 kg Trail' } },
+      {
+        code: 'weight',
+        valueI18n: { en: '0.99 kg trail', de: '0,99 kg Trail' },
+      },
     ],
   },
   '6a4625775ce468a752a3c98c': {
@@ -596,7 +710,10 @@ module.exports = {
     highlights: [
       { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
-      { code: 'weight', valueI18n: { en: '0.59 kg official', de: '0,59 kg offiziell' } },
+      {
+        code: 'weight',
+        valueI18n: { en: '0.59 kg official', de: '0,59 kg offiziell' },
+      },
     ],
   },
   '6a46261fa524d0a250b77068': {
@@ -607,7 +724,10 @@ module.exports = {
     highlights: [
       { code: 'capacity', valueI18n: { en: '2-person', de: '2 Personen' } },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
-      { code: 'weight', valueI18n: { en: '1.12 kg official', de: '1,12 kg offiziell' } },
+      {
+        code: 'weight',
+        valueI18n: { en: '1.12 kg official', de: '1,12 kg offiziell' },
+      },
     ],
   },
   '6a4626b692c8fac2efd8bce1': {
@@ -873,7 +993,10 @@ module.exports = {
       de: 'Komfortable Selbstaufblaser mit R-4,4 StrataCore-Schaum.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' },
+      },
       { code: 'season', valueI18n: { en: '4-season', de: '4-Jahreszeiten' } },
       { code: 'weight', valueI18n: { en: '850 g', de: '850 g' } },
     ],
@@ -939,7 +1062,10 @@ module.exports = {
       de: 'Kompakte Selbstaufblaser mit R-3,1 fürs Trekking und Bikepacking.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' },
+      },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
       { code: 'weight', valueI18n: { en: '705 g', de: '705 g' } },
     ],
@@ -961,7 +1087,10 @@ module.exports = {
       de: 'Ultraleichte R-2,3-Torso-Matte, wenn jedes Gramm zählt.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Self-inflating', de: 'Selbstaufblasend' },
+      },
       { code: 'season', valueI18n: { en: '3-season', de: '3-Jahreszeiten' } },
       { code: 'weight', valueI18n: { en: '280 g', de: '280 g' } },
     ],
@@ -998,7 +1127,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Sea touring', de: 'Seekajak' } },
       { code: 'length', valueI18n: { en: '490 cm', de: '490 cm' } },
-      { code: 'use', valueI18n: { en: 'Rivers & coast', de: 'Flüsse & Küste' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Rivers & coast', de: 'Flüsse & Küste' },
+      },
     ],
   },
   '6a44ec4dbaf73aad41d6af5c': {
@@ -1009,7 +1141,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Sea touring', de: 'Seekajak' } },
       { code: 'length', valueI18n: { en: '452 cm', de: '452 cm' } },
-      { code: 'use', valueI18n: { en: 'Surf & rock-hopping', de: 'Surf & Rock-Hopping' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Surf & rock-hopping', de: 'Surf & Rock-Hopping' },
+      },
     ],
   },
   '6a44f1d1b143e2ab469915d7': {
@@ -1020,7 +1155,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Tandem sea', de: 'Tandem-Seekajak' } },
       { code: 'length', valueI18n: { en: '591 cm', de: '591 cm' } },
-      { code: 'use', valueI18n: { en: 'Coast & expeditions', de: 'Küste & Expedition' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Coast & expeditions', de: 'Küste & Expedition' },
+      },
     ],
   },
   '6a44f3418497341fce235f8a': {
@@ -1029,7 +1167,10 @@ module.exports = {
       de: 'Stabiles 381-cm-Freizeitkajak für Komfort und Weite.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Recreational touring', de: 'Freizeit-Touren' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Recreational touring', de: 'Freizeit-Touren' },
+      },
       { code: 'length', valueI18n: { en: '381 cm', de: '381 cm' } },
       { code: 'use', valueI18n: { en: 'Lakes & coast', de: 'Seen & Küste' } },
     ],
@@ -1040,7 +1181,10 @@ module.exports = {
       de: 'Leichtes 305-cm-Performance-Sit-in für Stabilität und Tagestouren.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Performance touring', de: 'Performance-Touren' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Performance touring', de: 'Performance-Touren' },
+      },
       { code: 'length', valueI18n: { en: '305 cm', de: '305 cm' } },
       { code: 'use', valueI18n: { en: 'Lakes & chop', de: 'Seen & Chop' } },
     ],
@@ -1053,7 +1197,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Day touring', de: 'Tagestouren' } },
       { code: 'length', valueI18n: { en: '386 cm', de: '386 cm' } },
-      { code: 'use', valueI18n: { en: 'Inland & coast', de: 'Binnen & Küste' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Inland & coast', de: 'Binnen & Küste' },
+      },
     ],
   },
   '6a44f91ca923caab5a5a2c40': {
@@ -1097,7 +1244,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'River play', de: 'River Play' } },
       { code: 'length', valueI18n: { en: '267 cm (MD)', de: '267 cm (MD)' } },
-      { code: 'use', valueI18n: { en: 'Downriver play', de: 'Downriver Play' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Downriver play', de: 'Downriver Play' },
+      },
     ],
   },
   '6a44fc214b16a3377e667497': {
@@ -1119,7 +1269,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Half-slice', de: 'Half-Slice' } },
       { code: 'length', valueI18n: { en: '245 cm (M)', de: '245 cm (M)' } },
-      { code: 'use', valueI18n: { en: 'One-boat quiver', de: 'Ein Boot für alles' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'One-boat quiver', de: 'Ein Boot für alles' },
+      },
     ],
   },
   '6a44fe7a30a10df24310ab47': {
@@ -1163,7 +1316,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'River running', de: 'River Running' } },
       { code: 'length', valueI18n: { en: '234 cm', de: '234 cm' } },
-      { code: 'use', valueI18n: { en: 'All-round river', de: 'Allround-Fluss' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'All-round river', de: 'Allround-Fluss' },
+      },
     ],
   },
   '6a4502e6e2cf3b9d2ccf0096': {
@@ -1183,9 +1339,15 @@ module.exports = {
       de: 'Leichtes 1–2-Person-Aufblas-Kajak für Seen und ruhige Flüsse.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable tandem/solo', de: 'Aufblas Solo/Tandem' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable tandem/solo', de: 'Aufblas Solo/Tandem' },
+      },
       { code: 'length', valueI18n: { en: '360 cm', de: '360 cm' } },
-      { code: 'use', valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' },
+      },
     ],
   },
   '6a4504f4046db0918409b20f': {
@@ -1194,9 +1356,15 @@ module.exports = {
       de: 'Schnelles 1–3-Person-Aufblas-Kajak für Meer und Expeditionen.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable sea/touring', de: 'Aufblas Meer/Touren' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable sea/touring', de: 'Aufblas Meer/Touren' },
+      },
       { code: 'length', valueI18n: { en: '455 cm', de: '455 cm' } },
-      { code: 'use', valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' },
+      },
     ],
   },
   '6a45065b3abd9b4ebe0695da': {
@@ -1205,9 +1373,18 @@ module.exports = {
       de: 'Ultraleichtes Solo-Aufblas-Kajak mit Rippenrahmen-Performance.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable solo touring', de: 'Aufblas Solo-Touren' } },
-      { code: 'length', valueI18n: { en: '317 cm (10 ft 5 in)', de: '317 cm (10 ft 5 in)' } },
-      { code: 'use', valueI18n: { en: 'Lakes & calm water', de: 'Seen & ruhiges Wasser' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable solo touring', de: 'Aufblas Solo-Touren' },
+      },
+      {
+        code: 'length',
+        valueI18n: { en: '317 cm (10 ft 5 in)', de: '317 cm (10 ft 5 in)' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes & calm water', de: 'Seen & ruhiges Wasser' },
+      },
     ],
   },
   '6a4508ffa3e4ad6c598a2f9f': {
@@ -1216,9 +1393,15 @@ module.exports = {
       de: 'Drop-Stitch-Solo-Sit-in für anspruchsvolle Tagestouren.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable sit-in solo', de: 'Aufblas Sit-in Solo' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable sit-in solo', de: 'Aufblas Sit-in Solo' },
+      },
       { code: 'length', valueI18n: { en: '380 cm', de: '380 cm' } },
-      { code: 'use', valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Sea, lakes & rivers', de: 'Meer, Seen & Flüsse' },
+      },
     ],
   },
   '6a450a346aa5c71f1c32252b': {
@@ -1227,9 +1410,18 @@ module.exports = {
       de: 'Steifes Solo-Aufblas-Kajak für Touren und leichtes Wildwasser.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable all-round', de: 'Aufblas Allround' } },
-      { code: 'length', valueI18n: { en: '312 cm (10 ft 3 in)', de: '312 cm (10 ft 3 in)' } },
-      { code: 'use', valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable all-round', de: 'Aufblas Allround' },
+      },
+      {
+        code: 'length',
+        valueI18n: { en: '312 cm (10 ft 3 in)', de: '312 cm (10 ft 3 in)' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' },
+      },
     ],
   },
   '6a450acaa39cdba95f9db7c3': {
@@ -1238,9 +1430,21 @@ module.exports = {
       de: 'Günstiges Tandem-Aufblas-Set für entspannte See- und Flusstage.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable tandem recreational', de: 'Aufblas Tandem Freizeit' } },
-      { code: 'length', valueI18n: { en: '384 cm (12 ft 7 in)', de: '384 cm (12 ft 7 in)' } },
-      { code: 'use', valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' } },
+      {
+        code: 'type',
+        valueI18n: {
+          en: 'Inflatable tandem recreational',
+          de: 'Aufblas Tandem Freizeit',
+        },
+      },
+      {
+        code: 'length',
+        valueI18n: { en: '384 cm (12 ft 7 in)', de: '384 cm (12 ft 7 in)' },
+      },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes & calm rivers', de: 'Seen & ruhige Flüsse' },
+      },
     ],
   },
   '6a450b498989c70cefa976a9': {
@@ -1249,9 +1453,18 @@ module.exports = {
       de: 'Stabiles Tandem-Touren-Aufblas-Kajak für Mehrtages-Seen-Touren.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable tandem touring', de: 'Aufblas Tandem Touren' } },
+      {
+        code: 'type',
+        valueI18n: {
+          en: 'Inflatable tandem touring',
+          de: 'Aufblas Tandem Touren',
+        },
+      },
       { code: 'length', valueI18n: { en: '390 cm', de: '390 cm' } },
-      { code: 'use', valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes, rivers & coast', de: 'Seen, Flüsse & Küste' },
+      },
     ],
   },
   '6a450b9f3267aaff8199e191': {
@@ -1260,9 +1473,18 @@ module.exports = {
       de: 'Premium-EPDM-Aufblas-Kajak für Fluss, See und WW II.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable sit-in touring', de: 'Aufblas Sit-in Touren' } },
+      {
+        code: 'type',
+        valueI18n: {
+          en: 'Inflatable sit-in touring',
+          de: 'Aufblas Sit-in Touren',
+        },
+      },
       { code: 'length', valueI18n: { en: '395 cm', de: '395 cm' } },
-      { code: 'use', valueI18n: { en: 'Rivers, lakes & WW II', de: 'Flüsse, Seen & WW II' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Rivers, lakes & WW II', de: 'Flüsse, Seen & WW II' },
+      },
     ],
   },
   '6a450c1819b9507a085d4085': {
@@ -1271,9 +1493,15 @@ module.exports = {
       de: 'Drop-Stitch-Familien-Aufblas-Kajak für Seen und WW-II-Flüsse.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Inflatable drop-stitch', de: 'Aufblas Drop-Stitch' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Inflatable drop-stitch', de: 'Aufblas Drop-Stitch' },
+      },
       { code: 'length', valueI18n: { en: '410 cm', de: '410 cm' } },
-      { code: 'use', valueI18n: { en: 'Lakes & WW II rivers', de: 'Seen & WW-II-Flüsse' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Lakes & WW II rivers', de: 'Seen & WW-II-Flüsse' },
+      },
     ],
   },
   '6a450ca257ff5b1b81780161': {
@@ -1284,7 +1512,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Touring paddle', de: 'Tourenpaddel' } },
       { code: 'length', valueI18n: { en: '220–260 cm', de: '220–260 cm' } },
-      { code: 'use', valueI18n: { en: 'Low-angle touring', de: 'Low-Angle-Touren' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Low-angle touring', de: 'Low-Angle-Touren' },
+      },
     ],
   },
   '6a450d9eabac12be3ec20b4f': {
@@ -1295,7 +1526,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Kayak paddle', de: 'Kajakpaddel' } },
       { code: 'length', valueI18n: { en: '197–240 cm', de: '197–240 cm' } },
-      { code: 'use', valueI18n: { en: 'Whitewater & touring', de: 'Wildwasser & Touren' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Whitewater & touring', de: 'Wildwasser & Touren' },
+      },
     ],
   },
   '6a450e5acf03cdab7897833d': {
@@ -1304,7 +1538,10 @@ module.exports = {
       de: 'Leichte Touren-Schwimmweste für komfortables Ganztagespaddeln.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: '50N buoyancy aid', de: '50N-Schwimmweste' } },
+      {
+        code: 'type',
+        valueI18n: { en: '50N buoyancy aid', de: '50N-Schwimmweste' },
+      },
       { code: 'length', valueI18n: { en: 'XS/S–XL/XXL', de: 'XS/S–XL/XXL' } },
       { code: 'use', valueI18n: { en: 'Kayak touring', de: 'Kajaktouren' } },
     ],
@@ -1317,7 +1554,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Touring paddle', de: 'Tourenpaddel' } },
       { code: 'length', valueI18n: { en: '200–240 cm', de: '200–240 cm' } },
-      { code: 'use', valueI18n: { en: 'Flatwater touring', de: 'Flachwasser-Touren' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Flatwater touring', de: 'Flachwasser-Touren' },
+      },
     ],
   },
   '6a4510843650989015c279a9': {
@@ -1328,7 +1568,10 @@ module.exports = {
     highlights: [
       { code: 'type', valueI18n: { en: 'Throw bag', de: 'Wurfleine' } },
       { code: 'length', valueI18n: { en: '75 ft rope', de: '23 m Seil' } },
-      { code: 'use', valueI18n: { en: 'Swiftwater rescue', de: 'Wildwasser-Rettung' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Swiftwater rescue', de: 'Wildwasser-Rettung' },
+      },
     ],
   },
   '6a4510ecbb0199501f287ce7': {
@@ -1337,9 +1580,15 @@ module.exports = {
       de: 'Klappbarer J-Cradle-Träger für ein oder zwei Kajaks auf dem Dach.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Roof kayak mount', de: 'Dach-Kajakträger' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Roof kayak mount', de: 'Dach-Kajakträger' },
+      },
       { code: 'length', valueI18n: { en: '1–2 boats', de: '1–2 Boote' } },
-      { code: 'use', valueI18n: { en: 'Vehicle transport', de: 'Fahrzeugtransport' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Vehicle transport', de: 'Fahrzeugtransport' },
+      },
     ],
   },
   '6a45117b9fa77dcf70bb1d02': {
@@ -1348,9 +1597,15 @@ module.exports = {
       de: 'High-End-Rand-Spritzdecke für anspruchsvolles Wildwasser.',
     },
     highlights: [
-      { code: 'type', valueI18n: { en: 'Whitewater sprayskirt', de: 'WW-Spritzdecke' } },
+      {
+        code: 'type',
+        valueI18n: { en: 'Whitewater sprayskirt', de: 'WW-Spritzdecke' },
+      },
       { code: 'length', valueI18n: { en: 'Bighole 87', de: 'Bighole 87' } },
-      { code: 'use', valueI18n: { en: 'Whitewater kayak', de: 'Wildwasser-Kajak' } },
+      {
+        code: 'use',
+        valueI18n: { en: 'Whitewater kayak', de: 'Wildwasser-Kajak' },
+      },
     ],
   },
 };

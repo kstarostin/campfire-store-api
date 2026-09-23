@@ -46,10 +46,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /categories returns icon keys for storefront rendering', async () => {
-    const response = await request(app)
-      .get(`${API}/categories`)
-      .query({ language: 'en' })
-      .expect(200);
+    const response = await request(app).get(`${API}/categories`).query({ language: 'en' }).expect(200);
 
     expect(response.body.status).toBe('success');
     expect(response.body.resultsTotal).toBeGreaterThanOrEqual(32);
@@ -59,13 +56,9 @@ describe('Campfire Store API regression suite', () => {
       expect(category.icon).toBeDefined();
     }
 
-    const kayaks = response.body.data.documents.find(
-      (category) => category.code === 'kayaks',
-    );
+    const kayaks = response.body.data.documents.find((category) => category.code === 'kayaks');
     expect(kayaks.icon).toBe('sailboat');
-    expect(kayaks.titleI18n.en).toBe(
-      'Follow the line where water meets horizon',
-    );
+    expect(kayaks.titleI18n.en).toBe('Follow the line where water meets horizon');
     expect(kayaks.descriptionI18n.en).toContain('glassy lakes');
     expect(kayaks.image?.large?.url).toMatch(/\/img\/categories\/large\/kayaks\.webp$/);
     expect(kayaks.image?.small?.url).toMatch(/\/img\/categories\/small\/kayaks\.webp$/);
@@ -107,10 +100,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /categories/footwear returns footprints icon', async () => {
-    const response = await request(app)
-      .get(`${API}/categories/footwear`)
-      .query({ language: 'en' })
-      .expect(200);
+    const response = await request(app).get(`${API}/categories/footwear`).query({ language: 'en' }).expect(200);
 
     expect(response.body.status).toBe('success');
     expect(response.body.data.document.code).toBe('footwear');
@@ -212,10 +202,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('regular user cannot list all users', async () => {
-    const response = await request(app)
-      .get(`${API}/users`)
-      .set('Authorization', `Bearer ${authToken}`)
-      .expect(403);
+    const response = await request(app).get(`${API}/users`).set('Authorization', `Bearer ${authToken}`).expect(403);
 
     expect(response.body.status).toBe('failed');
     expect(response.body.message).toMatch(/permission/i);
@@ -234,10 +221,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /products?limit=1 returns a single product', async () => {
-    const response = await request(app)
-      .get(`${API}/products`)
-      .query({ limit: 1, page: 1 })
-      .expect(200);
+    const response = await request(app).get(`${API}/products`).query({ limit: 1, page: 1 }).expect(200);
 
     expect(response.body.status).toBe('success');
     expect(response.body.data.documents).toHaveLength(1);
@@ -249,9 +233,7 @@ describe('Campfire Store API regression suite', () => {
       .query({ language: 'en', currency: 'EUR', limit: 100 })
       .expect(200);
 
-    const priceFilter = response.body.data.filters.find(
-      (filter) => filter.name === 'priceI18n',
-    );
+    const priceFilter = response.body.data.filters.find((filter) => filter.name === 'priceI18n');
 
     expect(priceFilter).toBeDefined();
     expect(Array.isArray(priceFilter.quickFilters)).toBe(true);
@@ -260,9 +242,7 @@ describe('Campfire Store API regression suite', () => {
     for (const quickFilter of priceFilter.quickFilters) {
       expect(quickFilter.max).toBeGreaterThan(0);
       expect(quickFilter.count).toBeGreaterThanOrEqual(1);
-      expect(quickFilter.count).toBeLessThanOrEqual(
-        Math.max(1, Math.floor(response.body.resultsTotal * 0.25)),
-      );
+      expect(quickFilter.count).toBeLessThanOrEqual(Math.max(1, Math.floor(response.body.resultsTotal * 0.25)));
     }
   });
 
@@ -272,9 +252,7 @@ describe('Campfire Store API regression suite', () => {
       .query({ language: 'en', currency: 'EUR', limit: 100 })
       .expect(200);
 
-    const priceFilter = unfiltered.body.data.filters.find(
-      (filter) => filter.name === 'priceI18n',
-    );
+    const priceFilter = unfiltered.body.data.filters.find((filter) => filter.name === 'priceI18n');
     const quickFilter = priceFilter.quickFilters[0];
     expect(quickFilter).toBeDefined();
 
@@ -290,15 +268,21 @@ describe('Campfire Store API regression suite', () => {
 
     expect(filtered.body.resultsTotal).toBe(quickFilter.count);
     expect(filtered.body.resultsTotal).toBeLessThan(unfiltered.body.resultsTotal);
-    expect(
-      filtered.body.data.filters.find((filter) => filter.name === 'priceI18n').quickFilters,
-    ).toEqual(priceFilter.quickFilters);
+    expect(filtered.body.data.filters.find((filter) => filter.name === 'priceI18n').quickFilters).toEqual(
+      priceFilter.quickFilters,
+    );
   });
 
   test('GET /categories/:id/products returns products for root and leaf categories', async () => {
     const rootResponse = await request(app)
       .get(`${API}/categories/${KAYAKS_ROOT_CATEGORY_ID}/products`)
-      .query({ language: 'en', currency: 'EUR', page: 1, limit: 8, sort: 'featureOrder' })
+      .query({
+        language: 'en',
+        currency: 'EUR',
+        page: 1,
+        limit: 8,
+        sort: 'featureOrder',
+      })
       .expect(200);
 
     expect(rootResponse.body.status).toBe('success');
@@ -364,10 +348,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /search?q=kayak finds products by name or category', async () => {
-    const response = await request(app)
-      .get(`${API}/search`)
-      .query({ q: 'kayak', limit: 10 })
-      .expect(200);
+    const response = await request(app).get(`${API}/search`).query({ q: 'kayak', limit: 10 }).expect(200);
 
     expect(response.body.status).toBe('success');
     expect(response.body.query).toBe('kayak');
@@ -376,18 +357,11 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /search?q=Cube finds products by manufacturer', async () => {
-    const response = await request(app)
-      .get(`${API}/search`)
-      .query({ q: 'Cube', limit: 10 })
-      .expect(200);
+    const response = await request(app).get(`${API}/search`).query({ q: 'Cube', limit: 10 }).expect(200);
 
     expect(response.body.status).toBe('success');
     expect(response.body.resultsTotal).toBeGreaterThan(0);
-    expect(
-      response.body.data.documents.every(
-        (product) => product.manufacturer === 'Cube',
-      ),
-    ).toBe(true);
+    expect(response.body.data.documents.every((product) => product.manufacturer === 'Cube')).toBe(true);
   });
 
   test('GET /search rejects overly long queries', async () => {
@@ -410,9 +384,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('GET /products/:id includes populated product badges', async () => {
-    const response = await request(app)
-      .get(`${API}/products/${SAMPLE_PRODUCT_ID}`)
-      .expect(200);
+    const response = await request(app).get(`${API}/products/${SAMPLE_PRODUCT_ID}`).expect(200);
 
     const product = response.body.data.document;
 
@@ -481,9 +453,7 @@ describe('Campfire Store API regression suite', () => {
     const productIds = response.body.data.documents.map((entry) =>
       typeof entry.product === 'string' ? entry.product : entry.product._id,
     );
-    expect(productIds).toEqual(
-      expect.arrayContaining([GRAIL_PRODUCT_ID, SAMPLE_PRODUCT_ID]),
-    );
+    expect(productIds).toEqual(expect.arrayContaining([GRAIL_PRODUCT_ID, SAMPLE_PRODUCT_ID]));
   });
 
   test('POST /users/:id/wishlists/:wishlistId/entries rejects duplicate product', async () => {
@@ -543,9 +513,7 @@ describe('Campfire Store API regression suite', () => {
   });
 
   test('unknown route returns 404', async () => {
-    const response = await request(app)
-      .get(`${API}/this-route-does-not-exist`)
-      .expect(404);
+    const response = await request(app).get(`${API}/this-route-does-not-exist`).expect(404);
 
     expect(response.body.status).toBe('failed');
     expect(response.body.message).toMatch(/can't find/i);

@@ -8,10 +8,7 @@ const addressSchema = new mongoose.Schema({
   label: {
     type: String,
     trim: true,
-    maxlength: [
-      32,
-      'Address label length must be no more than 32 characters long.',
-    ],
+    maxlength: [32, 'Address label length must be no more than 32 characters long.'],
   },
   title: {
     type: mongoose.Schema.ObjectId,
@@ -27,10 +24,7 @@ const addressSchema = new mongoose.Schema({
   street: {
     type: String,
     required: [true, 'Address must have a street'],
-    maxlength: [
-      128,
-      'Street name length must be no more than 128 characters long.',
-    ],
+    maxlength: [128, 'Street name length must be no more than 128 characters long.'],
     minlength: [2, 'Street name length must be at least 2 characters long.'],
   },
   house: {
@@ -40,32 +34,20 @@ const addressSchema = new mongoose.Schema({
   postalCode: {
     type: String,
     required: [true, 'Address must have a postal code'],
-    maxlength: [
-      6,
-      'Postal code length must be no more than 6 characters long.',
-    ],
+    maxlength: [6, 'Postal code length must be no more than 6 characters long.'],
     minlength: [4, 'Postal code length must be at least 2 characters long.'],
-    validate: [
-      validator.isNumeric,
-      'Please provide a valid numeric postal code.',
-    ],
+    validate: [validator.isNumeric, 'Please provide a valid numeric postal code.'],
   },
   town: {
     type: String,
     required: [true, 'Address must have a town'],
-    maxlength: [
-      32,
-      'Town name length must be no more than 32 characters long.',
-    ],
+    maxlength: [32, 'Town name length must be no more than 32 characters long.'],
     minlength: [2, 'Town name length must be at least 2 characters long.'],
   },
   country: {
     type: String,
     required: [true, 'Address must have a cauntry'],
-    maxlength: [
-      32,
-      'Country name length must be no more than 32 characters long.',
-    ],
+    maxlength: [32, 'Country name length must be no more than 32 characters long.'],
     minlength: [2, 'Country name length must be at least 2 characters long.'],
   },
 });

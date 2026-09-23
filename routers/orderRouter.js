@@ -46,11 +46,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    orderController.getAllOrders,
-  )
+  .get(authController.protect, sessionController.handleUserId, orderController.getAllOrders)
   /**
    * @swagger
    * /users/{id}/orders:
@@ -82,11 +78,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .post(
-    authController.protect,
-    sessionController.handleUserId,
-    orderController.placeOrder,
-  );
+  .post(authController.protect, sessionController.handleUserId, orderController.placeOrder);
 
 router
   .route('/:orderId')
@@ -114,10 +106,6 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .get(
-    authController.protect,
-    sessionController.handleUserId,
-    orderController.getOrder,
-  );
+  .get(authController.protect, sessionController.handleUserId, orderController.getOrder);
 
 module.exports = router;

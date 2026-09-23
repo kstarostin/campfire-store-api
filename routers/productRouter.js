@@ -202,11 +202,7 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    authController.restrictTo('admin'),
-    productController.deleteProduct,
-  );
+  .delete(authController.protect, authController.restrictTo('admin'), productController.deleteProduct);
 
 router
   .route('/:id/images/:imageId')
@@ -228,10 +224,6 @@ router
    *       401:
    *         $ref: '#/components/responses/unauthorizedError'
    */
-  .delete(
-    authController.protect,
-    authController.restrictTo('admin'),
-    productController.deleteProductImage,
-  );
+  .delete(authController.protect, authController.restrictTo('admin'), productController.deleteProductImage);
 
 module.exports = router;

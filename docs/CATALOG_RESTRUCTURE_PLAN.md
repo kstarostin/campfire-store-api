@@ -19,17 +19,17 @@
 
 ## 2. Design principles (Options A + B)
 
-| Principle | Decision |
-|-----------|----------|
-| Root depth | Keep **two levels** only: root → leaf. No third level (no “Men’s / Women’s” categories). |
-| Rename | **Accessories** root becomes **Bags & gear** (`bags-and-gear`). |
-| Cross-cutting gear | Backpacks, lighting, poles stay under **Bags & gear**. |
-| Sport-specific gear | Paddles/PFDs → **kayak-accessories**; helmets/lights → **cycling-accessories**; lanterns/chairs → **camping-accessories**; poles/goggles → **ski-accessories**. |
-| Footwear | New **Footwear** root (Option B) — too important to bury under Clothing. |
-| Camping depth | Split into tents, sleep, kitchen, and camp accessories (Option A). |
-| Clothing depth | Split pants, jackets, midlayers, shorts/tights; optional hats/gloves leaf. |
-| Empty leaves | New leaves ship **empty** in Phase 1; populate in Phase 2. Exception: fill **whitewater-kayaks** and **inflatable-kayaks** early in Phase 2 (currently embarrassing in the grid). |
-| Icons | Reuse existing API icon enum where possible; extend only if needed (see §6). |
+| Principle           | Decision                                                                                                                                                                          |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Root depth          | Keep **two levels** only: root → leaf. No third level (no “Men’s / Women’s” categories).                                                                                          |
+| Rename              | **Accessories** root becomes **Bags & gear** (`bags-and-gear`).                                                                                                                   |
+| Cross-cutting gear  | Backpacks, lighting, poles stay under **Bags & gear**.                                                                                                                            |
+| Sport-specific gear | Paddles/PFDs → **kayak-accessories**; helmets/lights → **cycling-accessories**; lanterns/chairs → **camping-accessories**; poles/goggles → **ski-accessories**.                   |
+| Footwear            | New **Footwear** root (Option B) — too important to bury under Clothing.                                                                                                          |
+| Camping depth       | Split into tents, sleep, kitchen, and camp accessories (Option A).                                                                                                                |
+| Clothing depth      | Split pants, jackets, midlayers, shorts/tights; optional hats/gloves leaf.                                                                                                        |
+| Empty leaves        | New leaves ship **empty** in Phase 1; populate in Phase 2. Exception: fill **whitewater-kayaks** and **inflatable-kayaks** early in Phase 2 (currently embarrassing in the grid). |
+| Icons               | Reuse existing API icon enum where possible; extend only if needed (see §6).                                                                                                      |
 
 ---
 
@@ -115,9 +115,9 @@ Ski                             [icon: mountain]
 
 ### 5.1 In-place updates (keep `_id`)
 
-| `_id` | Old `code` | New `code` | `nameI18n.en` | `nameI18n.de` | `icon` |
-|-------|------------|------------|---------------|---------------|--------|
-| `661f9bf7adbbcb8a078d7a09` | `accessories` | `bags-and-gear` | Bags & gear | Rucksäcke & Ausrüstung | `backpack` |
+| `_id`                      | Old `code`    | New `code`      | `nameI18n.en` | `nameI18n.de`          | `icon`     |
+| -------------------------- | ------------- | --------------- | ------------- | ---------------------- | ---------- |
+| `661f9bf7adbbcb8a078d7a09` | `accessories` | `bags-and-gear` | Bags & gear   | Rucksäcke & Ausrüstung | `backpack` |
 
 > **URL impact:** `/categories/accessories` stops working. Storefront and bookmarks should use `/categories/bags-and-gear`. Optional: temporary API alias redirect (not required for demo).
 
@@ -127,27 +127,27 @@ All other existing categories: **no `_id` or `code` changes**.
 
 Use `new ObjectId()` in a seed script or `dev-tools/generate-category-ids.js`. Record assigned IDs in `categories.json` once generated.
 
-| `code` | Parent root `code` | `nameI18n.en` | `nameI18n.de` | `icon` | Priority |
-|--------|-------------------|---------------|---------------|--------|----------|
-| `kayak-accessories` | `kayaks` | Kayak accessories | Kajak-Zubehör | `sailboat` | P1 |
-| `cycling-accessories` | `bicycles` | Cycling accessories | Fahrrad-Zubehör | `bike` | P1 |
-| `e-bikes` | `bicycles` | E-bikes | E-Bikes | `bike` | P2 (optional) |
-| `sleeping-bags` | `camping` | Sleeping bags | Schlafsäcke | `tent` | P1 |
-| `sleeping-pads` | `camping` | Sleeping pads | Isomatten | `tent` | P1 |
-| `camp-kitchen` | `camping` | Camp kitchen | Campingküche | `tent` | P1 |
-| `camping-accessories` | `camping` | Camping accessories | Camping-Zubehör | `tent` | P1 |
-| `lighting-tools` | `bags-and-gear` | Lighting & tools | Beleuchtung & Werkzeug | `backpack` | P1 |
-| `trekking-poles` | `bags-and-gear` | Trekking poles | Trekkingstöcke | `backpack` | P2 |
-| `jackets-shells` | `clothing` | Jackets & shells | Jacken & Hardshells | `shirt` | P1 |
-| `midlayers-fleece` | `clothing` | Midlayers & fleece | Midlayer & Fleece | `shirt` | P1 |
-| `shorts-tights` | `clothing` | Shorts & tights | Shorts & Tights | `shirt` | P1 |
-| `clothing-accessories` | `clothing` | Clothing accessories | Bekleidungszubehör | `shirt` | P2 |
-| `footwear` | — (root) | Footwear | Schuhe | `sport-shoe` | P1 |
-| `hiking-boots` | `footwear` | Hiking boots | Wanderstiefel | `sport-shoe` | P1 |
-| `trail-runners` | `footwear` | Trail runners | Trailschuhe | `sport-shoe` | P1 |
-| `piste-freeride-skis` | `ski` | Piste & freeride skis | Pisten- & Freeride-Ski | `mountain` | P1 |
-| `ski-boots` | `ski` | Ski boots | Skischuhe | `mountain` | P1 |
-| `ski-accessories` | `ski` | Ski accessories | Ski-Zubehör | `mountain` | P1 |
+| `code`                 | Parent root `code` | `nameI18n.en`         | `nameI18n.de`          | `icon`       | Priority      |
+| ---------------------- | ------------------ | --------------------- | ---------------------- | ------------ | ------------- |
+| `kayak-accessories`    | `kayaks`           | Kayak accessories     | Kajak-Zubehör          | `sailboat`   | P1            |
+| `cycling-accessories`  | `bicycles`         | Cycling accessories   | Fahrrad-Zubehör        | `bike`       | P1            |
+| `e-bikes`              | `bicycles`         | E-bikes               | E-Bikes                | `bike`       | P2 (optional) |
+| `sleeping-bags`        | `camping`          | Sleeping bags         | Schlafsäcke            | `tent`       | P1            |
+| `sleeping-pads`        | `camping`          | Sleeping pads         | Isomatten              | `tent`       | P1            |
+| `camp-kitchen`         | `camping`          | Camp kitchen          | Campingküche           | `tent`       | P1            |
+| `camping-accessories`  | `camping`          | Camping accessories   | Camping-Zubehör        | `tent`       | P1            |
+| `lighting-tools`       | `bags-and-gear`    | Lighting & tools      | Beleuchtung & Werkzeug | `backpack`   | P1            |
+| `trekking-poles`       | `bags-and-gear`    | Trekking poles        | Trekkingstöcke         | `backpack`   | P2            |
+| `jackets-shells`       | `clothing`         | Jackets & shells      | Jacken & Hardshells    | `shirt`      | P1            |
+| `midlayers-fleece`     | `clothing`         | Midlayers & fleece    | Midlayer & Fleece      | `shirt`      | P1            |
+| `shorts-tights`        | `clothing`         | Shorts & tights       | Shorts & Tights        | `shirt`      | P1            |
+| `clothing-accessories` | `clothing`         | Clothing accessories  | Bekleidungszubehör     | `shirt`      | P2            |
+| `footwear`             | — (root)           | Footwear              | Schuhe                 | `sport-shoe` | P1            |
+| `hiking-boots`         | `footwear`         | Hiking boots          | Wanderstiefel          | `sport-shoe` | P1            |
+| `trail-runners`        | `footwear`         | Trail runners         | Trailschuhe            | `sport-shoe` | P1            |
+| `piste-freeride-skis`  | `ski`              | Piste & freeride skis | Pisten- & Freeride-Ski | `mountain`   | P1            |
+| `ski-boots`            | `ski`              | Ski boots             | Skischuhe              | `mountain`   | P1            |
+| `ski-accessories`      | `ski`              | Ski accessories       | Ski-Zubehör            | `mountain`   | P1            |
 
 **P1** = include in first category PR. **P2** = can follow immediately after without blocking product work.
 
@@ -159,9 +159,9 @@ Current allowed keys (`categoryIconUtils.js`): `sailboat`, `bike`, `tent`, `back
 
 **Add for this restructure:**
 
-| Key | Lucide component | Used by |
-|-----|------------------|---------|
-| `sport-shoe` | `SportShoe` | `footwear`, `hiking-boots`, `trail-runners` |
+| Key          | Lucide component | Used by                                     |
+| ------------ | ---------------- | ------------------------------------------- |
+| `sport-shoe` | `SportShoe`      | `footwear`, `hiking-boots`, `trail-runners` |
 
 Update in sync:
 
@@ -170,9 +170,9 @@ Update in sync:
 
 Optional later (not required for Phase 1):
 
-| Key | Lucide component | Used by |
-|-----|------------------|---------|
-| `flame` | `Flame` | `camp-kitchen` (if `tent` feels wrong on that leaf) |
+| Key     | Lucide component | Used by                                             |
+| ------- | ---------------- | --------------------------------------------------- |
+| `flame` | `Flame`          | `camp-kitchen` (if `tent` feels wrong on that leaf) |
 
 ---
 
@@ -223,41 +223,41 @@ When filling assortment (~450 SKUs), use this mapping. **No product moves in Pha
 
 ### 8.1 Keep in current leaf (no move)
 
-| Leaf | Current SKUs | Notes |
-|------|-------------|-------|
-| `backpacks` | 9 | Stays under renamed `bags-and-gear` |
-| `hiking-pants` | 10 | Keep true pants only |
-| `road-bikes`, `gravel-bikes`, `mountain-bikes` | 27 | Bulk expansion in place |
-| `touring-kayaks`, `all-mountain`, `tents` | 3 | Expand in place |
+| Leaf                                           | Current SKUs | Notes                               |
+| ---------------------------------------------- | ------------ | ----------------------------------- |
+| `backpacks`                                    | 9            | Stays under renamed `bags-and-gear` |
+| `hiking-pants`                                 | 10           | Keep true pants only                |
+| `road-bikes`, `gravel-bikes`, `mountain-bikes` | 27           | Bulk expansion in place             |
+| `touring-kayaks`, `all-mountain`, `tents`      | 3            | Expand in place                     |
 
 ### 8.2 Reassign in Phase 2 (taxonomy cleanup)
 
-| Product | From | To |
-|---------|------|-----|
+| Product                              | From           | To              |
+| ------------------------------------ | -------------- | --------------- |
 | Fjällräven Nikka Shorts Curved Women | `hiking-pants` | `shorts-tights` |
-| Patagonia Women's Pack Out Tights | `hiking-pants` | `shorts-tights` |
+| Patagonia Women's Pack Out Tights    | `hiking-pants` | `shorts-tights` |
 
 ### 8.3 Phase 2 priority fill order (by empty-leaf visibility)
 
-1. **whitewater-kayaks**, **inflatable-kayaks** (~12–15 SKUs each)  
-2. **sleeping-bags**, **tents** expansion (~20–25 each)  
-3. **jackets-shells**, **hiking-boots** (~25–30 each)  
-4. **kayak-accessories**, **camp-kitchen**, **cycling-accessories**  
-5. Bike depth, ski expansion, remaining leaves  
+1. **whitewater-kayaks**, **inflatable-kayaks** (~12–15 SKUs each)
+2. **sleeping-bags**, **tents** expansion (~20–25 each)
+3. **jackets-shells**, **hiking-boots** (~25–30 each)
+4. **kayak-accessories**, **camp-kitchen**, **cycling-accessories**
+5. Bike depth, ski expansion, remaining leaves
 
 Full SKU targets and real product lists: [CATALOG_PRODUCT_EXPANSION_PLAN.md](./CATALOG_PRODUCT_EXPANSION_PLAN.md).
 
 ### 8.4 Target SKU distribution (~450 total)
 
-| Department | Target SKUs |
-|------------|-------------|
-| Bicycles (+ e-bikes when added) | 110–120 |
-| Clothing (+ clothing-accessories) | 95–110 |
-| Camping | 75–90 |
-| Bags & gear | 50–60 |
-| Footwear | 45–55 |
-| Kayaks (+ kayak-accessories) | 35–45 |
-| Ski | 35–45 |
+| Department                        | Target SKUs |
+| --------------------------------- | ----------- |
+| Bicycles (+ e-bikes when added)   | 110–120     |
+| Clothing (+ clothing-accessories) | 95–110      |
+| Camping                           | 75–90       |
+| Bags & gear                       | 50–60       |
+| Footwear                          | 45–55       |
+| Kayaks (+ kayak-accessories)      | 35–45       |
+| Ski                               | 35–45       |
 
 ---
 
@@ -277,22 +277,22 @@ Full SKU targets and real product lists: [CATALOG_PRODUCT_EXPANSION_PLAN.md](./C
 
 ## 10. Open decisions (confirm before implementation)
 
-| # | Question | Recommendation |
-|---|----------|----------------|
-| 1 | Include `e-bikes` leaf in Phase 1a or wait? | **Wait (P2)** until bike expansion sprint — avoids another empty grid cell. |
-| 2 | Include `trekking-poles` and `clothing-accessories` in Phase 1a? | **P2** — lower urgency than sleep, jackets, footwear. |
-| 3 | Split `piste-freeride-skis` into two leaves later? | **Yes**, when ski SKU count &gt; ~25. |
-| 4 | API redirect `accessories` → `bags-and-gear`? | **Skip** for demo; note in changelog. |
-| 5 | Add `sport-shoe` icon in same PR? | **Yes** — coordinated API + UI change (§6). |
+| #   | Question                                                         | Recommendation                                                              |
+| --- | ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1   | Include `e-bikes` leaf in Phase 1a or wait?                      | **Wait (P2)** until bike expansion sprint — avoids another empty grid cell. |
+| 2   | Include `trekking-poles` and `clothing-accessories` in Phase 1a? | **P2** — lower urgency than sleep, jackets, footwear.                       |
+| 3   | Split `piste-freeride-skis` into two leaves later?               | **Yes**, when ski SKU count &gt; ~25.                                       |
+| 4   | API redirect `accessories` → `bags-and-gear`?                    | **Skip** for demo; note in changelog.                                       |
+| 5   | Add `sport-shoe` icon in same PR?                                | **Yes** — coordinated API + UI change (§6).                                 |
 
 ---
 
 ## 11. Related documents
 
-| Document | When |
-|----------|------|
-| `CATALOG_PRODUCT_EXPANSION_PLAN.md` | Phase 2 — SKU targets, sprint order, real product seed lists, image pipeline |
-| `FRONTEND_UI_REQUIREMENTS.md` (store) | Update category examples if they mention Accessories |
+| Document                              | When                                                                         |
+| ------------------------------------- | ---------------------------------------------------------------------------- |
+| `CATALOG_PRODUCT_EXPANSION_PLAN.md`   | Phase 2 — SKU targets, sprint order, real product seed lists, image pipeline |
+| `FRONTEND_UI_REQUIREMENTS.md` (store) | Update category examples if they mention Accessories                         |
 
 ---
 

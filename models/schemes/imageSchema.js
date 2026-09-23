@@ -11,10 +11,7 @@ const imageSchema = new mongoose.Schema({
   },
   altText: {
     type: String,
-    maxlength: [
-      128,
-      'Image alt text length must be no more than 128 characters long.',
-    ],
+    maxlength: [128, 'Image alt text length must be no more than 128 characters long.'],
   },
   mimeType: {
     type: String,

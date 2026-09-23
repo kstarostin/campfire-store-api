@@ -107,7 +107,10 @@ module.exports = {
   // —— Leaf categories ——
   'touring-kayaks': {
     titleI18n: { en: 'Touring kayaks', de: 'Touring Kajaks' },
-    descriptionI18n: { en: 'Distance & overnight', de: 'Distanz & Übernachtung' },
+    descriptionI18n: {
+      en: 'Distance & overnight',
+      de: 'Distanz & Übernachtung',
+    },
     imageAltI18n: {
       en: 'Woman kayaking on a lake at daytime',
       de: 'Frau beim Kajakfahren auf einem See am Tag',
@@ -271,7 +274,10 @@ module.exports = {
   },
   'all-mountain': {
     titleI18n: { en: 'All mountain', de: 'All-Mountain' },
-    descriptionI18n: { en: 'One-quiver daily drivers', de: 'Ein-Ski-für-alles' },
+    descriptionI18n: {
+      en: 'One-quiver daily drivers',
+      de: 'Ein-Ski-für-alles',
+    },
     imageAltI18n: {
       en: 'Skier in a red jacket carving on snowy terrain',
       de: 'Skifahrer in roter Jacke auf verschneitem Gelände',

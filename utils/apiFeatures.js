@@ -19,9 +19,7 @@ class APIFeatures {
         .split(',')
         .map((field) => field.trim())
         .filter(Boolean);
-      const hasIdSort = sortFields.some(
-        (field) => field.replace(/^-/, '') === '_id',
-      );
+      const hasIdSort = sortFields.some((field) => field.replace(/^-/, '') === '_id');
 
       if (!hasIdSort) {
         sortFields.push('_id');
@@ -55,12 +53,8 @@ class APIFeatures {
    * @returns enchanced search query.
    */
   paginate(limitOptions) {
-    const defaultLimit =
-      limitOptions && limitOptions.defaultLimit
-        ? limitOptions.defaultLimit
-        : 50;
-    const maxLimit =
-      limitOptions && limitOptions.maxLimit ? limitOptions.maxLimit : 100;
+    const defaultLimit = limitOptions && limitOptions.defaultLimit ? limitOptions.defaultLimit : 50;
+    const maxLimit = limitOptions && limitOptions.maxLimit ? limitOptions.maxLimit : 100;
 
     const page = this.requestQuery.page * 1 || 1;
     let limit = this.requestQuery.limit * 1 || defaultLimit;

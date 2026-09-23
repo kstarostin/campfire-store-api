@@ -20,18 +20,12 @@ const badgeSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Badge must have a unique code.'],
     unique: true,
-    maxlength: [
-      16,
-      'Badge code length must be no more than 16 characters long.',
-    ],
+    maxlength: [16, 'Badge code length must be no more than 16 characters long.'],
     minlength: [2, 'Badge code length must at least 2 characters long.'],
   },
   nameI18n: {
     type: i18nTextSchema({
-      maxlength: [
-        24,
-        'Badge name length must be no more than 24 characters long.',
-      ],
+      maxlength: [24, 'Badge name length must be no more than 24 characters long.'],
     }),
     required: [true, 'Badge must have a name.'],
   },

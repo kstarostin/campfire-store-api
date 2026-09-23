@@ -20,9 +20,6 @@ const productBadgeSchema = new mongoose.Schema({
 
 productBadgeSchema
   .path('badge')
-  .validate(
-    (value, respond) => validateRefId(value, respond, Badge),
-    'Invalid badge ID.',
-  );
+  .validate((value, respond) => validateRefId(value, respond, Badge), 'Invalid badge ID.');
 
 module.exports = productBadgeSchema;

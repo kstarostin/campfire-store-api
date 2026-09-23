@@ -24,9 +24,7 @@ exports.createEntry = catchAsync(async (req, res, next) => {
 
   const product = await Product.findById(req.body.product);
   if (!product) {
-    return next(
-      new AppError(`Can not find a product by ID ${req.body.product}.`, 404),
-    );
+    return next(new AppError(`Can not find a product by ID ${req.body.product}.`, 404));
   }
 
   const existingEntry = await WishlistEntry.findOne({
@@ -34,15 +32,11 @@ exports.createEntry = catchAsync(async (req, res, next) => {
     product: req.body.product,
   });
   if (existingEntry) {
-    return next(
-      new AppError('This product is already in the wishlist.', 409),
-    );
+    return next(new AppError('This product is already in the wishlist.', 409));
   }
 
   let newDocument = await WishlistEntry.create(req.body);
-  newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(
-    newDocument,
-  );
+  newDocument = new DocumentSanitizer(req.language, req.currency, 3).sanitize(newDocument);
 
   res.status(201).json({
     status: 'success',

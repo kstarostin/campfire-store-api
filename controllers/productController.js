@@ -7,10 +7,7 @@ const catchAsync = require('../utils/catchAsync');
 const APIFeatures = require('../utils/apiFeatures');
 const DocumentSanitizer = require('../utils/documentSanitizer');
 const RequestBodySanitizer = require('../utils/requestBodySanitizer');
-const {
-  normalizeProductBadges,
-  validateProductBadgeAssignments,
-} = require('../utils/productBadgeUtils');
+const { normalizeProductBadges, validateProductBadgeAssignments } = require('../utils/productBadgeUtils');
 const { buildPriceQuickFilters, stripCatalogClientFilters } = require('../utils/priceFilterUtils');
 const AppError = require('../utils/appError');
 const { createImageFile } = require('../utils/fileUtils');
@@ -24,10 +21,7 @@ const multerFilter = (req, file, cb) => {
   if (file.mimetype === 'image/webp') {
     cb(null, true);
   } else {
-    cb(
-      new AppError('Allowed product image mime types are [image/webp].', 400),
-      false,
-    );
+    cb(new AppError('Allowed product image mime types are [image/webp].', 400), false);
   }
 };
 const upload = multer({
@@ -136,9 +130,7 @@ exports.aggregateFilters = aggregateFilters;
  */
 exports.handleCategoryId = catchAsync(async (req, res, next) => {
   if (!req.params.id) {
-    return next(
-      new AppError('Required parameter id for this request is missing.', 400),
-    );
+    return next(new AppError('Required parameter id for this request is missing.', 400));
   }
   const category = await Category.findById(req.params.id);
 
@@ -177,24 +169,17 @@ exports.getAllProducts = catchAsync(async (req, res, next) => {
     .filter(filter);
   // Retrieve total count of documents. If filter is empty - use more efficient way.
   const totalCount =
-    Object.keys(features.resultFilter).length === 0 &&
-    features.resultFilter.constructor === Object
+    Object.keys(features.resultFilter).length === 0 && features.resultFilter.constructor === Object
       ? await Product.estimatedDocumentCount()
       : await Product.countDocuments(features.resultFilter);
   // const documents = await features.dbQuery.explain();
   const documents = (await features.dbQuery).map((document) =>
-    normalizeProductBadges(
-      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
-    ),
+    normalizeProductBadges(new DocumentSanitizer(req.language, req.currency, 8).sanitize(document)),
   );
 
-  const numberOfPages =
-    totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
+  const numberOfPages = totalCount > 0 ? Math.ceil(totalCount / features.limit) : 1;
 
-  const quickFilterScope = stripCatalogClientFilters(
-    features.resultFilter,
-    req.currency,
-  );
+  const quickFilterScope = stripCatalogClientFilters(features.resultFilter, req.currency);
 
   // SEND RESPONSE
   res.status(200).json({
@@ -223,9 +208,7 @@ exports.getProduct = catchAsync(async (req, res, next) => {
     return next(new AppError('No document found with this ID', 404));
   }
 
-  product = normalizeProductBadges(
-    new DocumentSanitizer(req.language, req.currency, 7).sanitize(product),
-  );
+  product = normalizeProductBadges(new DocumentSanitizer(req.language, req.currency, 7).sanitize(product));
 
   res.status(200).json({
     status: 'success',
@@ -257,11 +240,7 @@ exports.getRelatedProducts = catchAsync(async (req, res, next) => {
       .select('-descriptionI18n')
       .sort({ isFeatured: -1, featureOrder: 1, name: 1 })
       .limit(limit)
-  ).map((document) =>
-    normalizeProductBadges(
-      new DocumentSanitizer(req.language, req.currency, 8).sanitize(document),
-    ),
-  );
+  ).map((document) => normalizeProductBadges(new DocumentSanitizer(req.language, req.currency, 8).sanitize(document)));
 
   res.status(200).json({
     status: 'success',
@@ -467,14 +446,10 @@ exports.deleteProductImage = catchAsync(async (req, res, next) => {
     return next(new AppError('No product found with this ID.', 404));
   }
 
-  const existingImage = product.images.find(
-    (image) => image.id === req.params.imageId,
-  );
+  const existingImage = product.images.find((image) => image.id === req.params.imageId);
   // Check image existence
   if (!existingImage) {
-    return next(
-      new AppError('Product does not have an image with this ID.', 404),
-    );
+    return next(new AppError('Product does not have an image with this ID.', 404));
   }
 
   // Mark old photo images for delete
@@ -503,9 +478,7 @@ exports.deleteProductImage = catchAsync(async (req, res, next) => {
   );
 
   // Perform update
-  req.body.images = product.images.filter(
-    (image) => image.id !== req.params.imageId,
-  );
+  req.body.images = product.images.filter((image) => image.id !== req.params.imageId);
   req.body.updatedAt = Date.now();
 
   await Product.findByIdAndUpdate(product.id, req.body, {

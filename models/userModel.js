@@ -24,10 +24,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, 'User must have a name.'],
       trim: true,
-      maxlength: [
-        128,
-        'User name length must be no more than 128 characters long.',
-      ],
+      maxlength: [128, 'User name length must be no more than 128 characters long.'],
       minlength: [2, 'User name length must at least 2 characters long.'],
     },
     email: {
@@ -56,10 +53,7 @@ const userSchema = new mongoose.Schema(
         },
       ],
       required: true,
-      validate: [
-        (value) => value.length > 0,
-        'User must have at least one role.',
-      ],
+      validate: [(value) => value.length > 0, 'User must have at least one role.'],
     },
     photo: imageContainerSchema,
     deliveryAddresses: [addressSchema],
@@ -102,19 +96,13 @@ userSchema.pre(/^find/, async function () {
   });
 });
 
-userSchema.methods.validatePassword = async function (
-  passwordToCheck,
-  userPassword,
-) {
+userSchema.methods.validatePassword = async function (passwordToCheck, userPassword) {
   return await bcrypt.compare(passwordToCheck, userPassword);
 };
 
 userSchema.methods.passwordChangedAfter = async function (jwtTimestamp) {
   if (this.passwordChangedAt) {
-    const changedTimestamp = parseInt(
-      this.passwordChangedAt.getTime() / 1000,
-      10,
-    );
+    const changedTimestamp = parseInt(this.passwordChangedAt.getTime() / 1000, 10);
     return jwtTimestamp < changedTimestamp;
   }
   // false means not changed

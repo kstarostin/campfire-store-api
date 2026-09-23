@@ -9,18 +9,8 @@ exports.getAllBadges = factory.getAll(Badge, {
   maxLimit: 100,
 });
 exports.getBadge = factory.getOne(Badge);
-exports.createBadge = factory.createOne(Badge, [
-  'code',
-  'nameI18n',
-  'style',
-  'active',
-]);
-exports.updateBadge = factory.updateOne(Badge, [
-  'code',
-  'nameI18n',
-  'style',
-  'active',
-]);
+exports.createBadge = factory.createOne(Badge, ['code', 'nameI18n', 'style', 'active']);
+exports.updateBadge = factory.updateOne(Badge, ['code', 'nameI18n', 'style', 'active']);
 
 exports.deleteBadge = catchAsync(async (req, res, next) => {
   const assignmentCount = await Product.countDocuments({
@@ -29,10 +19,7 @@ exports.deleteBadge = catchAsync(async (req, res, next) => {
 
   if (assignmentCount > 0) {
     return next(
-      new AppError(
-        `Cannot delete badge: it is assigned to ${assignmentCount} product(s). Unassign it first.`,
-        409,
-      ),
+      new AppError(`Cannot delete badge: it is assigned to ${assignmentCount} product(s). Unassign it first.`, 409),
     );
   }
 

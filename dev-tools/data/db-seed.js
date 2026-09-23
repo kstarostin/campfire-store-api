@@ -17,8 +17,7 @@ const { allowedCurrencies, allowedLanguages } = require('../../utils/config');
 const dataDir = __dirname;
 const productsDir = path.join(dataDir, 'products');
 
-const readJson = (filename) =>
-  JSON.parse(fs.readFileSync(path.join(dataDir, filename), 'utf-8'));
+const readJson = (filename) => JSON.parse(fs.readFileSync(path.join(dataDir, filename), 'utf-8'));
 
 const readProductFiles = () => {
   const files = fs
@@ -44,12 +43,8 @@ const seedData = {
   wishlistEntries: readJson('wishlistEntries.json'),
   orders: readJson('orders.json'),
   orderEntries: readJson('orderEntries.json'),
-  currencies: readJson('currencies.json').filter((currency) =>
-    allowedCurrencies.includes(currency.code),
-  ),
-  languages: readJson('languages.json').filter((language) =>
-    allowedLanguages.includes(language.code),
-  ),
+  currencies: readJson('currencies.json').filter((currency) => allowedCurrencies.includes(currency.code)),
+  languages: readJson('languages.json').filter((language) => allowedLanguages.includes(language.code)),
 };
 
 const performImport = async () => {

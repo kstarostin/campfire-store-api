@@ -16,10 +16,8 @@ const Badge = require('../models/badgeModel');
 const basePath = '/';
 const apiPath = `${basePath}api/v1`;
 
-const storefrontUrl =
-  process.env.STOREFRONT_URL || 'https://campfire-store.netlify.app';
-const githubUrl =
-  process.env.GITHUB || 'https://github.com/kstarostin/campfire-store-api';
+const storefrontUrl = process.env.STOREFRONT_URL || 'https://campfire-store.netlify.app';
+const githubUrl = process.env.GITHUB || 'https://github.com/kstarostin/campfire-store-api';
 
 const omitFields = ['_id', 'createdAt', 'updatedAt'];
 
@@ -58,11 +56,7 @@ const document = swaggerJSDoc({
       }),
     },
   },
-  apis: [
-    './routers/*.js',
-    './swagger/parameters.yaml',
-    './swagger/components.yaml',
-  ],
+  apis: ['./routers/*.js', './swagger/parameters.yaml', './swagger/components.yaml'],
 });
 
 /**
@@ -91,10 +85,7 @@ const hideDarkModeTogglePlugin = function () {
 
 // Swagger options
 const options = {
-  customCssUrl: [
-    '../../../css/swagger-ui-theme-flattop.css',
-    '../../../css/swagger-ui-general.css',
-  ],
+  customCssUrl: ['../../../css/swagger-ui-theme-flattop.css', '../../../css/swagger-ui-general.css'],
   swaggerOptions: {
     plugins: [hideDarkModeTogglePlugin],
   },

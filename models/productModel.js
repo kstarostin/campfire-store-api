@@ -27,32 +27,20 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Product must have a name.'],
       trim: true,
-      maxlength: [
-        128,
-        'Product name length must be no more than 128 characters long.',
-      ],
+      maxlength: [128, 'Product name length must be no more than 128 characters long.'],
       minlength: [2, 'Product name length must at least 2 characters long.'],
     },
     descriptionI18n: i18nTextSchema({
-      maxlength: [
-        4096,
-        'Product name length must be no more than 4096 characters long.',
-      ],
+      maxlength: [4096, 'Product name length must be no more than 4096 characters long.'],
     }),
     slug: String,
     priceI18n: i18nPriceSchema({
-      required: [
-        true,
-        'Product must have a price value for each supported currency.',
-      ],
+      required: [true, 'Product must have a price value for each supported currency.'],
     }),
     manufacturer: {
       type: String,
       required: [true, 'Product must have a manufacturer.'],
-      maxlength: [
-        64,
-        'Manufacturer length must be no more than 64 characters long.',
-      ],
+      maxlength: [64, 'Manufacturer length must be no more than 64 characters long.'],
       minlength: [2, 'Manufacturer length must at least 2 characters long.'],
     },
     category: {
@@ -75,16 +63,10 @@ const productSchema = new mongoose.Schema(
     manufacturerUrl: {
       type: String,
       trim: true,
-      maxlength: [
-        2048,
-        'Manufacturer URL must be no more than 2048 characters long.',
-      ],
+      maxlength: [2048, 'Manufacturer URL must be no more than 2048 characters long.'],
     },
     taglineI18n: i18nTextSchema({
-      maxlength: [
-        160,
-        'Tagline must be no more than 160 characters long.',
-      ],
+      maxlength: [160, 'Tagline must be no more than 160 characters long.'],
     }),
     highlights: {
       type: [productHighlightSchema],
@@ -116,10 +98,7 @@ productSchema.pre('save', async function () {
 
 productSchema
   .path('category')
-  .validate(
-    (value, respond) => validateRefId(value, respond, Category),
-    'Invalid category ID.',
-  );
+  .validate((value, respond) => validateRefId(value, respond, Category), 'Invalid category ID.');
 
 // Query middleware:
 productSchema.pre(/^find/, async function () {

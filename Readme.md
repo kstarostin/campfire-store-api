@@ -32,14 +32,14 @@ The main goal of this project was to create a small and simple API for an online
 
 Copy `./config.env.template` to `./config.env` and fill in your values:
 
-| Variable | Description |
-|----------|-------------|
-| `DATABASE_USERNAME` | MongoDB Atlas username |
-| `DATABASE_PASSWORD` | MongoDB Atlas password |
-| `DATABASE` | Connection string **with** `<USERNAME>` and `<PASSWORD>` placeholders and the database name in the path, e.g. `mongodb+srv://<USERNAME>:<PASSWORD>@cluster.example.net/campfire-store?retryWrites=true&w=majority` |
-| `JWT_SECRET` | Secret used to sign JWT tokens (required for login/signup) |
-| `JWT_EXPIRES_IN` | Token lifetime, e.g. `30d` |
-| `JWT_COOKIE_EXPIRES_IN` | Cookie lifetime in days |
+| Variable                | Description                                                                                                                                                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `DATABASE_USERNAME`     | MongoDB Atlas username                                                                                                                                                                                             |
+| `DATABASE_PASSWORD`     | MongoDB Atlas password                                                                                                                                                                                             |
+| `DATABASE`              | Connection string **with** `<USERNAME>` and `<PASSWORD>` placeholders and the database name in the path, e.g. `mongodb+srv://<USERNAME>:<PASSWORD>@cluster.example.net/campfire-store?retryWrites=true&w=majority` |
+| `JWT_SECRET`            | Secret used to sign JWT tokens (required for login/signup)                                                                                                                                                         |
+| `JWT_EXPIRES_IN`        | Token lifetime, e.g. `30d`                                                                                                                                                                                         |
+| `JWT_COOKIE_EXPIRES_IN` | Cookie lifetime in days                                                                                                                                                                                            |
 
 > **Important:** include the database name in the `DATABASE` URL (e.g. `/campfire-store`). Without it, Mongoose connects to the default `test` database, which will appear empty even when Atlas contains your data.
 

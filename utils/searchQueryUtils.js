@@ -35,11 +35,7 @@ function buildTermOrConditions(regex, categoryIds) {
  */
 async function findMatchingCategoryIds(regex, Category) {
   const matchingCategories = await Category.find({
-    $or: [
-      { 'nameI18n.en': regex },
-      { 'nameI18n.de': regex },
-      { code: regex },
-    ],
+    $or: [{ 'nameI18n.en': regex }, { 'nameI18n.de': regex }, { code: regex }],
   })
     .select('_id')
     .lean();

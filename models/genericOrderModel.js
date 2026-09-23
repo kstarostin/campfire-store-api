@@ -34,10 +34,7 @@ const genericOrderSchema = new mongoose.Schema(
     billingAddress: addressSchema,
     deliveryNote: {
       type: String,
-      maxlength: [
-        512,
-        'Delivery note length must be no more than 512 characters long.',
-      ],
+      maxlength: [512, 'Delivery note length must be no more than 512 characters long.'],
     },
   },
   {
@@ -55,12 +52,7 @@ genericOrderSchema.virtual('entries', {
 });
 
 // Document middleware
-genericOrderSchema
-  .path('user')
-  .validate(
-    (value, respond) => validateRefId(value, respond, User),
-    'Invalid user ID.',
-  );
+genericOrderSchema.path('user').validate((value, respond) => validateRefId(value, respond, User), 'Invalid user ID.');
 
 // Query middleware
 genericOrderSchema.pre(/^find/, async function () {

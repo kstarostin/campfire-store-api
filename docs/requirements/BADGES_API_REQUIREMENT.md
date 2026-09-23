@@ -22,15 +22,15 @@ The frontend must **not** invent badge labels or business rules. It renders popu
 
 ## 2. Confirmed product decisions
 
-| Topic | Decision |
-| ----- | -------- |
-| Model pattern | Mirror **Title** — separate collection, `code` + `nameI18n` |
-| Badge CRUD | Admin-only for write; **public GET** (same as `/titles`) |
-| Product assignment | Product `POST` / `PATCH` whitelist only |
-| Inactive badges | Omit from populated product `badges[]` on read |
-| Auto badges | Manual only in V1 |
-| Visual style | Enum: `primary` \| `forest` \| `neutral` |
-| Delete policy | **Block delete** if badge is assigned to any product |
+| Topic              | Decision                                                    |
+| ------------------ | ----------------------------------------------------------- |
+| Model pattern      | Mirror **Title** — separate collection, `code` + `nameI18n` |
+| Badge CRUD         | Admin-only for write; **public GET** (same as `/titles`)    |
+| Product assignment | Product `POST` / `PATCH` whitelist only                     |
+| Inactive badges    | Omit from populated product `badges[]` on read              |
+| Auto badges        | Manual only in V1                                           |
+| Visual style       | Enum: `primary` \| `forest` \| `neutral`                    |
+| Delete policy      | **Block delete** if badge is assigned to any product        |
 
 ---
 
@@ -38,35 +38,38 @@ The frontend must **not** invent badge labels or business rules. It renders popu
 
 Study these files before implementing:
 
-| Concern | Reference files |
-| ------- | ---------------- |
-| Title model | `models/titleModel.js` |
-| Title CRUD | `controllers/titleController.js` |
-| Title routes + Swagger JSDoc | `routers/titleRouter.js` |
-| Reference on parent doc | `models/schemes/addressSchema.js` (`title: ObjectId ref Title`) |
-| Populate on read | `models/userModel.js` pre(`/^find/`) populate `deliveryAddresses.title` |
-| Generic CRUD | `controllers/controllerFactory.js` |
-| i18n text fields | `models/schemes/i18nTextSchema.js` + `utils/config.js` `allowedLanguages` |
-| Ref validation | `models/middleware/validateRefId.js` (used on `product.category`) |
-| Response sanitization | `utils/documentSanitizer.js` (strips non-session languages from `*i18n*` fields) |
-| Product list/detail | `controllers/productController.js`, `models/productModel.js` |
-| App mount | `app.js` → `/api/v1/...` |
-| Swagger | `swagger/swaggerConfig.js`, `swagger/components.yaml`, `swagger/parameters.yaml` |
-| Seed data | `dev-tools/data/titles.json`, `dev-tools/data/db-seed.js` |
+| Concern                      | Reference files                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------- |
+| Title model                  | `models/titleModel.js`                                                           |
+| Title CRUD                   | `controllers/titleController.js`                                                 |
+| Title routes + Swagger JSDoc | `routers/titleRouter.js`                                                         |
+| Reference on parent doc      | `models/schemes/addressSchema.js` (`title: ObjectId ref Title`)                  |
+| Populate on read             | `models/userModel.js` pre(`/^find/`) populate `deliveryAddresses.title`          |
+| Generic CRUD                 | `controllers/controllerFactory.js`                                               |
+| i18n text fields             | `models/schemes/i18nTextSchema.js` + `utils/config.js` `allowedLanguages`        |
+| Ref validation               | `models/middleware/validateRefId.js` (used on `product.category`)                |
+| Response sanitization        | `utils/documentSanitizer.js` (strips non-session languages from `*i18n*` fields) |
+| Product list/detail          | `controllers/productController.js`, `models/productModel.js`                     |
+| App mount                    | `app.js` → `/api/v1/...`                                                         |
+| Swagger                      | `swagger/swaggerConfig.js`, `swagger/components.yaml`, `swagger/parameters.yaml` |
+| Seed data                    | `dev-tools/data/titles.json`, `dev-tools/data/db-seed.js`                        |
 
 ### 3.1 How Titles work today (template for Badges)
 
 **`Title` schema:**
+
 - `code` — unique string slug (2–16 chars)
 - `nameI18n` — required, via `i18nTextSchema` (max 8 chars per language in Title; **badges need a longer limit** — see §4.1)
 - `createdAt` / `updatedAt` — `select: false`
 
 **`/api/v1/titles`:**
+
 - `GET /` and `GET /:id` — **public**, support `language`, pagination, sort, fields (via `controllerFactory.getAll` / `getOne`)
 - `POST /`, `PATCH /:id`, `DELETE /:id` — `authController.protect` + `restrictTo('admin')`
 - Create/update body whitelist: `['code', 'nameI18n']`
 
 **Usage on another document:**
+
 - `addressSchema.title` → `ObjectId ref 'Title'`
 - User `pre(/^find/)` populates nested `title` with `select: '_id code nameI18n'`
 - API returns populated object; `DocumentSanitizer` leaves only `nameI18n[sessionLanguage]`
@@ -98,6 +101,7 @@ Mirror `titleModel.js` structure. Add badge-specific fields.
 **`nameI18n` maxlength:** use **24** characters per language (Title uses 8 for “Mr.” / “Frau”; badge labels like “Bestseller” need more room).
 
 **Indexes:**
+
 - `{ code: 1 }` unique
 - `{ active: 1 }`
 
@@ -135,10 +139,11 @@ Create `models/schemes/productBadgeSchema.js` (parallel to `addressSchema.js` em
 Add to product schema (alongside existing `isFeatured`, `featureOrder`):
 
 ```js
-badges: [productBadgeSchema]   // default []
+badges: [productBadgeSchema]; // default []
 ```
 
 **Rules:**
+
 - No duplicate `badge` ObjectId on the same product
 - On save/update: reject assignments to non-existent or **inactive** badges (validator or controller check)
 
@@ -152,12 +157,14 @@ badges: [productBadgeSchema]   // default []
 ```
 
 **Post-populate / pre-response filtering (product reads):**
+
 - Remove assignment entries where populated `badge` is `null` (orphan ref) or `active === false`
 - Sort assignments by `priority` ascending before response
 
 Implement filtering in a shared helper (e.g. `utils/productBadgeUtils.js`) called from `productController.getAllProducts`, `factory.getOne`, and category products handler — **do not duplicate logic in three places**.
 
 **Index (optional):**
+
 - `{ 'badges.badge': 1 }` — supports delete-guard count query
 
 ---
@@ -172,18 +179,21 @@ Clone `routers/titleRouter.js` structure. Mount in `app.js`:
 app.use(`${apiPath}/badges`, badgeRouter);
 ```
 
-| Method | Path | Auth | Handler |
-| ------ | ---- | ---- | ------- |
-| `GET` | `/badges` | Public | `badgeController.getAllBadges` |
-| `POST` | `/badges` | Admin | `badgeController.createBadge` |
-| `GET` | `/badges/:id` | Public | `badgeController.getBadge` |
-| `PATCH` | `/badges/:id` | Admin | `badgeController.updateBadge` |
-| `DELETE` | `/badges/:id` | Admin | `badgeController.deleteBadge` |
+| Method   | Path          | Auth   | Handler                        |
+| -------- | ------------- | ------ | ------------------------------ |
+| `GET`    | `/badges`     | Public | `badgeController.getAllBadges` |
+| `POST`   | `/badges`     | Admin  | `badgeController.createBadge`  |
+| `GET`    | `/badges/:id` | Public | `badgeController.getBadge`     |
+| `PATCH`  | `/badges/:id` | Admin  | `badgeController.updateBadge`  |
+| `DELETE` | `/badges/:id` | Admin  | `badgeController.deleteBadge`  |
 
 **Controller** — `controllers/badgeController.js` (mirror `titleController.js`):
 
 ```js
-exports.getAllBadges = factory.getAll(Badge, { defaultLimit: 25, maxLimit: 100 });
+exports.getAllBadges = factory.getAll(Badge, {
+  defaultLimit: 25,
+  maxLimit: 100,
+});
 exports.getBadge = factory.getOne(Badge);
 exports.createBadge = factory.createOne(Badge, ['code', 'nameI18n', 'style', 'active']);
 exports.updateBadge = factory.updateOne(Badge, ['code', 'nameI18n', 'style', 'active']);
@@ -222,6 +232,7 @@ Add `badges` to whitelists in `controllers/productController.js`:
 ```
 
 **Validation on create/update:**
+
 - Each `badge` is valid ObjectId referencing an **active** `Badge`
 - Unique badge per product
 - `priority` integer ≥ 1
@@ -234,7 +245,7 @@ Add `badges` to whitelists in `controllers/productController.js`:
 Before delete, count products referencing this badge:
 
 ```js
-Product.countDocuments({ 'badges.badge': badgeId })
+Product.countDocuments({ 'badges.badge': badgeId });
 ```
 
 If count > 0 → `409` with message indicating how many products reference it. Admin must unassign first.
@@ -283,6 +294,7 @@ Apply badge population + filtering on:
 ```
 
 **Notes:**
+
 - Shape mirrors populated `address.title` on user reads — **no separate flattened DTO**
 - `DocumentSanitizer` removes non-session `nameI18n` keys (existing behavior)
 - Do **not** expose `active` on populated badge subdocs in product responses (inactive badges are already filtered out)
@@ -412,26 +424,27 @@ After API ships, the storefront will consume populated badges **like titles on a
 
 ```ts
 interface Badge {
-  _id: string
-  code: string
-  nameI18n: Partial<Record<'en' | 'de', string>>
-  style?: 'primary' | 'forest' | 'neutral'
+  _id: string;
+  code: string;
+  nameI18n: Partial<Record<'en' | 'de', string>>;
+  style?: 'primary' | 'forest' | 'neutral';
 }
 
 interface ProductBadgeAssignment {
-  priority: number
-  badge: Badge
+  priority: number;
+  badge: Badge;
 }
 
 interface Product {
   // …
-  badges?: ProductBadgeAssignment[]
+  badges?: ProductBadgeAssignment[];
 }
 ```
 
 **Display label:** read the single language value from `badge.nameI18n` after `DocumentSanitizer` (same approach as category names in `parseCategoryList`).
 
 **Layout-only UI rules:**
+
 - Sort by `priority` if needed (prefer API-pre-sorted)
 - Show max 1–2 badges on card
 - Map `badge.style` → CSS: `primary` (orange), `forest` (emerald), `neutral` (muted)
@@ -457,11 +470,11 @@ interface Product {
 
 ## 14. Difference from initial draft (intentional changes)
 
-| Initial draft | Revised (aligned with API) |
-| ------------- | -------------------------- |
-| `key` field | **`code`** (like Title) |
-| `labelI18n` / flat `label` | **`nameI18n`** + `DocumentSanitizer` |
-| Computed `badges[]` DTO | **Populated refs** `{ priority, badge: { _id, code, nameI18n, style } }` |
-| Admin-only `GET /badges` | **Public GET** (like `/titles`) |
-| Custom controllers | **`controllerFactory`** pattern |
-| `sortOrder` on Badge | **Not in V1** (use query `sort` param) |
+| Initial draft              | Revised (aligned with API)                                               |
+| -------------------------- | ------------------------------------------------------------------------ |
+| `key` field                | **`code`** (like Title)                                                  |
+| `labelI18n` / flat `label` | **`nameI18n`** + `DocumentSanitizer`                                     |
+| Computed `badges[]` DTO    | **Populated refs** `{ priority, badge: { _id, code, nameI18n, style } }` |
+| Admin-only `GET /badges`   | **Public GET** (like `/titles`)                                          |
+| Custom controllers         | **`controllerFactory`** pattern                                          |
+| `sortOrder` on Badge       | **Not in V1** (use query `sort` param)                                   |

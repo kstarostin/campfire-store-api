@@ -19,18 +19,12 @@ const titleSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Title must have a unique code.'],
     unique: true,
-    maxlength: [
-      16,
-      'Title code length must be no more than 16 characters long.',
-    ],
+    maxlength: [16, 'Title code length must be no more than 16 characters long.'],
     minlength: [2, 'Title code length must at least 2 characters long.'],
   },
   nameI18n: {
     type: i18nTextSchema({
-      maxlength: [
-        8,
-        'Title name length must be no more than 8 characters long.',
-      ],
+      maxlength: [8, 'Title name length must be no more than 8 characters long.'],
     }),
     required: [true, 'Title must have a name.'],
   },

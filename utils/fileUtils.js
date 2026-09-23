@@ -13,9 +13,7 @@ exports.createImageFile = async (options) => {
     .build();
 
   // Configure output
-  let sharpBuilder = sharp(options.file.buffer)
-    .flatten({ background: '#ffffff' })
-    .toFormat(options.format);
+  let sharpBuilder = sharp(options.file.buffer).flatten({ background: '#ffffff' }).toFormat(options.format);
 
   if (options.sizeName !== 'original') {
     // Get image side size by its name
@@ -24,10 +22,7 @@ exports.createImageFile = async (options) => {
   }
 
   if (options.format === 'jpeg') {
-    const quality =
-      options.sizeName === 'thumbnail' || options.sizeName === 'small'
-        ? 90
-        : 75;
+    const quality = options.sizeName === 'thumbnail' || options.sizeName === 'small' ? 90 : 75;
     sharpBuilder = sharpBuilder.jpeg({ mozjpeg: true, quality });
   } else if (options.format === 'webp') {
     sharpBuilder = sharpBuilder.webp({ quality: 75, effort: 6 });
