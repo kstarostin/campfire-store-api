@@ -69,6 +69,13 @@ app.use(bodyParser.json({ limit: '10kb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10kb' }));
 
 app.use(cookieParser());
+
+// Sanitize data against NoSQL query injection.
+// ORDER MATTERS: this must run before xss(). express-xss-sanitizer v2 redefines
+// req.query via Object.defineProperty({ writable: false }), and strict-mode
+// express-mongo-sanitize assigns to req.query directly — running it afterwards
+// throws "Cannot assign to read only property 'query'" on every request.
+app.use(mongoSanitize());
 app.use(xss());
 
 // Prevent parameter pollution
@@ -76,9 +83,6 @@ app.use(hpp());
 
 // Compression middleware
 app.use(compression());
-
-// Sanitize data against NoSQL query injection
-app.use(mongoSanitize());
 
 // Handles request language and currency parameters in the session
 app.use(sessionHandler.handleLanguage, sessionHandler.handleCurrency);

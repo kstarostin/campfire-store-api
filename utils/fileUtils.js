@@ -30,7 +30,7 @@ exports.createImageFile = async (options) => {
         : 75;
     sharpBuilder = sharpBuilder.jpeg({ mozjpeg: true, quality });
   } else if (options.format === 'webp') {
-    sharpBuilder = sharpBuilder.webp({ mozjpeg: true, quality: 75, effort: 6 });
+    sharpBuilder = sharpBuilder.webp({ quality: 75, effort: 6 });
   } else {
     return new AppError('Unsupported image file format.', 400);
   }
