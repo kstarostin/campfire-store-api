@@ -66,7 +66,9 @@ const userSchema = new mongoose.Schema(
 );
 
 // Indexes
-userSchema.index({ email: 1 });
+// `email` is indexed by its own `unique: true` above — declaring it again here
+// made Mongoose warn about a duplicate index and would have dropped the
+// uniqueness constraint had the plain definition won.
 
 // Document middleware
 userSchema.pre('save', async function () {

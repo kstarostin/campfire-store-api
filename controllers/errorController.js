@@ -43,9 +43,12 @@ const handleCastErrorDB = (err) => {
  * Handles MongoDB error with the code 11000.
  */
 const handleDuplicateFieldsDB = (err) => {
-  // const value = err.errmsg.match(/(["'])(\\?.)*?\1/)[0];
-  const value = err.keyValue.name;
-  const message = `Duplicate field value ${value}. Please use another value.`;
+  // keyValue holds the conflicting field, whichever it is — reading a fixed key
+  // here reported "undefined" for every duplicate other than `name`.
+  const [field, value] = Object.entries(err.keyValue ?? {})[0] ?? [];
+  const message = field
+    ? `Duplicate value for ${field}: ${value}. Please use another value.`
+    : 'Duplicate field value. Please use another value.';
   return new AppError(message, 400);
 };
 
@@ -74,24 +77,26 @@ module.exports = (err, req, res, next) => {
   err.status = err.status || 'error';
 
   if (process.env.NODE_ENV === 'production') {
-    let error = { ...err };
-    error.message = err.message;
+    // Inspect `err` itself rather than a `{ ...err }` copy: Mongoose defines
+    // `name` on the error prototype, so spreading dropped it and the CastError
+    // branch below could never match. Each handler returns a fresh AppError,
+    // so there is nothing to protect against mutation here.
+    let error = err;
 
-    if (error.name === 'CastError') {
-      error = handleCastErrorDB(error);
-    }
-    if (error.code === 11000) {
-      error = handleDuplicateFieldsDB(error);
-    }
-    if (error._message === 'Validation failed') {
-      error = handleValidationErrorDB(error);
-    }
-    if (error.name === 'JsonWebTokenError') {
+    if (err.name === 'CastError') {
+      error = handleCastErrorDB(err);
+    } else if (err.code === 11000) {
+      error = handleDuplicateFieldsDB(err);
+    } else if (err.name === 'ValidationError') {
+      // Mongoose prefixes `_message` with the model name ("User validation
+      // failed"), so match on the stable `name` instead.
+      error = handleValidationErrorDB(err);
+    } else if (err.name === 'JsonWebTokenError') {
       error = handleJWTError();
-    }
-    if (error.name === 'TokenExpiredError') {
+    } else if (err.name === 'TokenExpiredError') {
       error = handleJWTExpiredError();
     }
+
     sendErrorProd(error, req, res);
   } else {
     sendErrorDev(err, req, res);
