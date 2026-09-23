@@ -75,26 +75,24 @@ const userSchema = new mongoose.Schema(
 userSchema.index({ email: 1 });
 
 // Document middleware
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function () {
   // Only run this function if password was modified
   if (!this.isModified('password')) {
-    return next();
+    return;
   }
   // Hash the password with cost of 12
   this.password = await bcrypt.hash(this.password, 12);
-  next();
 });
 
-userSchema.pre('save', function (next) {
+userSchema.pre('save', async function () {
   if (!this.isModified('password') || this.isNew) {
-    return next();
+    return;
   }
   this.passwordChangedAt = Date.now() - 1000;
-  next();
 });
 
 // Query middleware — populate title refs inside embedded address subdocuments only.
-userSchema.pre(/^find/, function (next) {
+userSchema.pre(/^find/, async function () {
   this.populate({
     path: 'deliveryAddresses.title',
     select: '_id code nameI18n',
@@ -102,7 +100,6 @@ userSchema.pre(/^find/, function (next) {
     path: 'billingAddresses.title',
     select: '_id code nameI18n',
   });
-  next();
 });
 
 userSchema.methods.validatePassword = async function (

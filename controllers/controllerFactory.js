@@ -172,7 +172,7 @@ exports.updateOne = (Model, bodySanitizerWhitelist = []) =>
       filter,
       { ...req.body, ...{ updatedAt: Date.now() } },
       {
-        new: true,
+        returnDocument: 'after',
         runValidators: true,
       },
     );

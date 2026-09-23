@@ -65,12 +65,39 @@ const document = swaggerJSDoc({
   ],
 });
 
+/**
+ * Swagger UI has no config flag for dark mode: its StandaloneLayout topbar
+ * renders a DarkModeToggle component that adds a `dark-mode` class to <html>
+ * from prefers-color-scheme, and offers a button to toggle it. The Flattop
+ * theme is light-only, so the component is replaced with one that renders
+ * nothing — the supported way to swap a Swagger UI component.
+ *
+ * With the component gone the toggle never mounts, so the class is never
+ * applied and no CSS overrides are needed.
+ *
+ * Note: this replaces Swagger UI's default `plugins` array, which holds only
+ * the DownloadUrl plugin backing the "Explore" URL bar. That bar is hidden
+ * while `explorer` is off; re-add DownloadUrl here if it is ever enabled.
+ */
+const hideDarkModeTogglePlugin = function () {
+  return {
+    components: {
+      DarkModeToggle: function DarkModeToggle() {
+        return null;
+      },
+    },
+  };
+};
+
 // Swagger options
 const options = {
   customCssUrl: [
     '../../../css/swagger-ui-theme-flattop.css',
     '../../../css/swagger-ui-general.css',
   ],
+  swaggerOptions: {
+    plugins: [hideDarkModeTogglePlugin],
+  },
   customSiteTitle: 'Campfire | Store API',
   customfavIcon: '../../../img/favicon.ico',
 };

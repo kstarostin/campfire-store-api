@@ -110,9 +110,8 @@ productSchema.index({ isFeatured: 1, featureOrder: 1 });
 productSchema.index({ 'badges.badge': 1 });
 
 // Document middleware: runs before .save() and .create()
-productSchema.pre('save', function (next) {
+productSchema.pre('save', async function () {
   this.slug = slugifyName(this.name);
-  next();
 });
 
 productSchema
@@ -123,7 +122,7 @@ productSchema
   );
 
 // Query middleware:
-productSchema.pre(/^find/, function (next) {
+productSchema.pre(/^find/, async function () {
   this.lean() // Convert to plain js object to exlude virtuals
     .populate({
       path: 'category',
@@ -133,7 +132,6 @@ productSchema.pre(/^find/, function (next) {
       path: 'badges.badge',
       select: '_id code nameI18n style active',
     });
-  next();
 });
 
 const Product = mongoose.model('Product', productSchema);

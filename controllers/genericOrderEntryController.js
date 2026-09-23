@@ -107,7 +107,7 @@ exports.updateEntry = catchAsync(async (req, res, next) => {
     filter,
     { ...req.body, ...{ updatedAt: Date.now() } },
     {
-      new: true,
+      returnDocument: 'after',
       runValidators: true,
     },
   );

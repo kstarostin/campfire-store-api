@@ -122,7 +122,7 @@ exports.updateUser = catchAsync(async (req, res, next) => {
     user.id,
     { ...req.body, ...{ updatedAt: Date.now() } },
     {
-      new: true,
+      returnDocument: 'after',
       runValidators: true,
     },
   );
@@ -273,7 +273,7 @@ exports.deleteUserPhoto = catchAsync(async (req, res, next) => {
 
   // Perform update
   await User.findByIdAndUpdate(user.id, user, {
-    new: true,
+    returnDocument: 'after',
     runValidators: true,
   });
 

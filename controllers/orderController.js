@@ -38,7 +38,11 @@ exports.placeOrder = catchAsync(async (req, res, next) => {
   cart = await Cart.findByIdAndUpdate(
     cart._id,
     { kind: 'Order', status: defaultOrderStatus },
-    { runValidators: true, overwriteDiscriminatorKey: true, new: true },
+    {
+      runValidators: true,
+      overwriteDiscriminatorKey: true,
+      returnDocument: 'after',
+    },
   );
   const newOrder = await Order.findById(cart._id);
 

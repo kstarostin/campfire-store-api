@@ -433,7 +433,7 @@ exports.updateProduct = catchAsync(async (req, res, next) => {
     req.params.id,
     { ...req.body, ...{ updatedAt: Date.now() } },
     {
-      new: true,
+      returnDocument: 'after',
       runValidators: true,
     },
   );
@@ -509,7 +509,7 @@ exports.deleteProductImage = catchAsync(async (req, res, next) => {
   req.body.updatedAt = Date.now();
 
   await Product.findByIdAndUpdate(product.id, req.body, {
-    new: true,
+    returnDocument: 'after',
     runValidators: true,
   });
 

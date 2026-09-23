@@ -63,7 +63,7 @@ genericOrderSchema
   );
 
 // Query middleware
-genericOrderSchema.pre(/^find/, function (next) {
+genericOrderSchema.pre(/^find/, async function () {
   this.populate({
     path: 'user',
     select: '_id name email',
@@ -86,15 +86,13 @@ genericOrderSchema.pre(/^find/, function (next) {
         select: '_id code nameI18n',
       },
     });
-  next();
 });
 
-genericOrderSchema.pre('findOneAndDelete', async function (next) {
+genericOrderSchema.pre('findOneAndDelete', async function () {
   if (this?.getFilter()?._id) {
     const cartId = this.getFilter()._id;
     await GenericOrderEntry.deleteMany({ parent: cartId });
   }
-  next();
 });
 
 const GenericOrder = mongoose.model('GenericOrder', genericOrderSchema);
