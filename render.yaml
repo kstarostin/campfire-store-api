@@ -21,6 +21,8 @@ services:
     startCommand: NODE_ENV=production node server.js
     healthCheckPath: /api/v1/languages
     envVars:
+      - key: NODE_VERSION
+        value: "24"
       - key: NODE_ENV
         value: production
       - key: DATABASE_USERNAME

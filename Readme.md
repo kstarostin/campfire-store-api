@@ -21,7 +21,7 @@ Check out the API visual documentation <a href="https://campfire-store-api.onren
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) 20 or newer
+- [Node.js](https://nodejs.org/) 22 or newer (the repo pins 24 via `.nvmrc`)
 - A [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database) cluster (free M0 tier works well for this demo)
 
 ## Project structure
