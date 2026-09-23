@@ -1,9 +1,7 @@
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
 const { xss } = require('express-xss-sanitizer');
 const rateLimit = require('express-rate-limit');
-const mongoSanitize = require('express-mongo-sanitize');
 const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
@@ -13,6 +11,7 @@ const compression = require('compression');
 const swaggerUi = require('swagger-ui-express');
 
 const AppError = require('./utils/appError');
+const mongoSanitize = require('./utils/mongoSanitize');
 const sessionHandler = require('./controllers/sessionController');
 const errorHandler = require('./controllers/errorController');
 
@@ -33,12 +32,17 @@ const swaggerConfig = require('./swagger/swaggerConfig');
 
 const app = express();
 
+// Express 5 defaults the query parser to 'simple', which parses ?a[b]=1 as the
+// flat key "a[b]" instead of a nested object. Keep the Express 4 'extended'
+// behaviour so query handling is unchanged by the upgrade.
+app.set('query parser', 'extended');
+
 // GLOBAL MIDDLEWARES
 
 // Activate CORS
 app.use(cors());
 // Activate CORS pre-flight requests
-app.options('*', cors());
+app.options('/*splat', cors());
 
 // Serving static files
 app.use(express.static(path.join(__dirname, '/public')));
@@ -65,16 +69,15 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Body parser, reading data from body into req.body
-app.use(bodyParser.json({ limit: '10kb' }));
-app.use(bodyParser.urlencoded({ extended: true, limit: '10kb' }));
+app.use(express.json({ limit: '10kb' }));
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
 app.use(cookieParser());
 
 // Sanitize data against NoSQL query injection.
-// ORDER MATTERS: this must run before xss(). express-xss-sanitizer v2 redefines
-// req.query via Object.defineProperty({ writable: false }), and strict-mode
-// express-mongo-sanitize assigns to req.query directly — running it afterwards
-// throws "Cannot assign to read only property 'query'" on every request.
+// ORDER MATTERS: this must run before xss(), which redefines req.query via
+// Object.defineProperty({ writable: false }). Any sanitizer running afterwards
+// that assigns to req.query throws "Cannot assign to read only property 'query'".
 app.use(mongoSanitize());
 app.use(xss());
 
@@ -112,7 +115,7 @@ app.use(`${apiPath}/users`, userRouter);
 // app.use(`${apiPath}/users`, cartRouter);
 
 // ERROR HANDLERS
-app.all('*', (req, res, next) => {
+app.all('/*splat', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
