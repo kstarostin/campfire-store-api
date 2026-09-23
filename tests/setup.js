@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const { recreateTestData } = require('../dev-tools/data/db-seed');
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './config.env', quiet: true });
 
 const getDbUri = () =>
   process.env.DATABASE.replace('<USERNAME>', process.env.DATABASE_USERNAME).replace(

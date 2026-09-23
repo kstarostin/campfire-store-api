@@ -9,7 +9,7 @@ const getDbUri = () =>
   ).replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 
 const runCli = async () => {
-  dotenv.config({ path: './config.env' });
+  dotenv.config({ path: './config.env', quiet: true });
 
   await mongoose.connect(getDbUri());
   console.log('DB connection successful!');
