@@ -9,8 +9,8 @@ exports.getAllBadges = factory.getAll(Badge, {
   maxLimit: 100,
 });
 exports.getBadge = factory.getOne(Badge);
-exports.createBadge = factory.createOne(Badge, ['code', 'nameI18n', 'style', 'active']);
-exports.updateBadge = factory.updateOne(Badge, ['code', 'nameI18n', 'style', 'active']);
+exports.createBadge = factory.createOne(Badge, ['code', 'nameI18n', 'active']);
+exports.updateBadge = factory.updateOne(Badge, ['code', 'nameI18n', 'active']);
 
 exports.deleteBadge = catchAsync(async (req, res, next) => {
   const assignmentCount = await Product.countDocuments({

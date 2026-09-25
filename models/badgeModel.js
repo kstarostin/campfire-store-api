@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const i18nTextSchema = require('./schemes/i18nTextSchema');
-const { allowedBadgeStyles, defaultBadgeStyle } = require('../utils/config');
 
 /**
  * BADGE SCHEMA
@@ -28,14 +27,6 @@ const badgeSchema = new mongoose.Schema({
       maxlength: [24, 'Badge name length must be no more than 24 characters long.'],
     }),
     required: [true, 'Badge must have a name.'],
-  },
-  style: {
-    type: String,
-    enum: {
-      values: allowedBadgeStyles,
-      message: `Allowed badge styles are [${allowedBadgeStyles.join(', ')}].`,
-    },
-    default: defaultBadgeStyle,
   },
   active: {
     type: Boolean,

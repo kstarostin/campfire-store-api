@@ -57,7 +57,9 @@ Consequences worth knowing:
 - The sanitizer reaches into Mongoose internals (`document._doc`, `document.$$populatedVirtuals`). Changes to populate or `.lean()` behaviour can silently break it.
 - Nesting deeper than the max level will leak untranslated locales into responses.
 
-`utils/config.js` is the single source of truth for locales, order statuses, user roles, badge styles, allowed image MIME types, and the image dimension map.
+`utils/config.js` is the single source of truth for locales, order statuses, user roles, allowed image MIME types, and the image dimension map.
+
+Badges carry no presentation: a badge is a `code` and a localized name. How one looks is a storefront concern, mapped from `code` in the frontend's `lib/badgeStyle.ts`.
 
 ### Generic CRUD layer
 
