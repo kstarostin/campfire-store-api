@@ -68,6 +68,12 @@
           "de": "Steile Creeks"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -432,6 +438,12 @@
           "en": "One-boat quiver",
           "de": "Ein Boot für alles"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 1
       }
     ]
   },

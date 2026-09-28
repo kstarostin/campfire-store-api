@@ -141,6 +141,12 @@
           "de": "Flüsse & Küste"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -782,6 +788,12 @@
           "en": "Open coast",
           "de": "Offene Küste"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 1
       }
     ]
   }

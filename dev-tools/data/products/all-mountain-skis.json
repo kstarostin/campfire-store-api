@@ -70,6 +70,12 @@
           "de": "All-Mountain"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   }
 ]

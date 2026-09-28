@@ -68,6 +68,12 @@
           "mimeType": "image/webp"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -263,6 +269,12 @@
           "altText": "Trestles Elite Eco 20 photo",
           "mimeType": "image/webp"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
       }
     ]
   },
@@ -618,6 +630,12 @@
           "altText": "Sioux 800 photo",
           "mimeType": "image/webp"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
       }
     ]
   },

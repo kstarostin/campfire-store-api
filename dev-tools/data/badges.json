@@ -16,5 +16,23 @@
       "de": "Neu"
     },
     "active": true
+  },
+  {
+    "_id": "662b497f11aed4312b44a012",
+    "code": "eco",
+    "nameI18n": {
+      "en": "Eco",
+      "de": "Öko"
+    },
+    "active": true
+  },
+  {
+    "_id": "662b497f11aed4312b44a013",
+    "code": "limited",
+    "nameI18n": {
+      "en": "Limited",
+      "de": "Limitiert"
+    },
+    "active": true
   }
 ]

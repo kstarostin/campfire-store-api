@@ -389,6 +389,12 @@
           "de": "Schnelles Gravel"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 1
+      }
     ]
   },
   {
@@ -609,6 +615,12 @@
           "en": "Performance gravel",
           "de": "Performance-Gravel"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a013",
+        "priority": 1
       }
     ]
   },

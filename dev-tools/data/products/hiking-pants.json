@@ -283,6 +283,12 @@
           "de": "Trail-Wandern"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
+      }
     ]
   },
   {
@@ -380,6 +386,12 @@
           "en": "Summer trekking",
           "de": "Sommer-Trekking"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
       }
     ]
   },
@@ -560,6 +572,12 @@
           "de": "Alpines Klettern"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -701,6 +719,16 @@
           "en": "Rock climbing",
           "de": "Klettern"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
+      },
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 2
       }
     ]
   }

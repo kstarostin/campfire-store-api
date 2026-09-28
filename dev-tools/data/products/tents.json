@@ -163,6 +163,12 @@
           "de": "1,36 kg min"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -439,6 +445,12 @@
           "en": "1.19 kg trail",
           "de": "1,19 kg Trail"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a011",
+        "priority": 1
       }
     ]
   },
@@ -1247,6 +1259,12 @@
           "altText": "Lightent 2 Pro photo",
           "mimeType": "image/webp"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
       }
     ]
   }

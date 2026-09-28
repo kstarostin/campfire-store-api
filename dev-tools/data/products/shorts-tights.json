@@ -68,6 +68,12 @@
           "de": "Sommer-Wandern"
         }
       }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a010",
+        "priority": 1
+      }
     ]
   },
   {
@@ -138,6 +144,12 @@
           "en": "Training & hiking",
           "de": "Training & Wandern"
         }
+      }
+    ],
+    "badges": [
+      {
+        "badge": "662b497f11aed4312b44a012",
+        "priority": 1
       }
     ]
   }
