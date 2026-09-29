@@ -9,8 +9,8 @@
       "USD": 119
     },
     "descriptionI18n": {
-      "en": "Highly versatile hiking pants with strategically placed stretch panels and added ventilation zippers for optimal comfort and flexibility.",
-      "de": "Äußerst vielseitige Wanderhose mit zusätzlichen Belüftungsreißverschlüssen und strategisch platzierten Stretcheinsätzen für optimalen Komfort und Flexibilität."
+      "en": "Highly versatile outdoor trousers with extra ventilation and well-judged details, combining flexibility, durability and a lot of thought for demanding use outdoors.\n\nStretch panels over the seat, knees and hips let the trousers move naturally with your body, so comfort and freedom of movement hold up all day. Polycotton canvas reinforces the thighs and lower legs where wear happens fastest, while the breathable fabric and ventilation zips release heat when you push on the trail. Six pockets take care of practical storage, and the cuffs have a zip gusset and buttons so they sit right over boots.",
+      "de": "Sehr vielseitige Outdoorhosen mit zusätzlicher Belüftung und gut durchdachten Details, die Flexibilität, Haltbarkeit und viel Liebe zum Detail für den anspruchsvollen Einsatz draußen verbinden.\n\nStretch-Einsätze über Gesäß, Knien und Hüfte lassen die Hose den Bewegungen deines Körpers folgen, sodass Komfort und Bewegungsfreiheit den ganzen Tag erhalten bleiben. Polycotton-Canvas verstärkt Oberschenkel und Unterschenkel dort, wo der Verschleiß am größten ist, während das atmungsaktive Material und die Belüftungsreißverschlüsse Wärme ableiten, wenn du am Berg Gas gibst. Sechs Taschen sorgen für praktischen Stauraum, und die Beinabschlüsse haben einen Reißverschlusskeil sowie Knöpfe, damit sie über Stiefeln richtig sitzen."
     },
     "images": [
       {
@@ -43,7 +43,7 @@
     ],
     "isFeatured": true,
     "featureOrder": 8,
-    "manufacturerUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851",
+    "manufacturerUrl": "https://www.revolutionrace.com/men/pants/outdoor-hiking-pants/nordwand-pro-pants-men-2-0",
     "taglineI18n": {
       "en": "Stretch hiking pants built for variable mountain weather.",
       "de": "Stretch-Wanderhose für wechselhaftes Bergwetter."
@@ -82,8 +82,8 @@
       "USD": 119
     },
     "descriptionI18n": {
-      "en": "The RVRC GP Pro Pants are a pair of highly durable, multifunctional outdoor pants designed to last in harsh outdoor settings. Made with PFC-free Hypershell® material, these pants are both wind- and water-repellent. Durable reinforcements over the thighs, lower legs, and seat add extra strength and protect against wear and tear. The 4-way stretch panels at the top, inside thighs, and behind the knees ventilate and provide incredible comfort. Thigh ventilation with zippers comes in handy when you’re getting too hot.",
-      "de": "Die RVRC GP Pro Pants ist eine äußerst strapazierfähige, multifunktionale Outdoor-Hose, die für raue Outdoor-Umgebungen ausgelegt ist. Diese Hose aus PFC-freiem Hypershell®-Material ist sowohl wind- als auch wasserabweisend. Strapazierfähige Verstärkungen an Oberschenkeln, Unterschenkeln und Gesäß sorgen für zusätzliche Festigkeit und schützen vor Abnutzung. Die 4-Wege-Stretcheinsätze oben, an den Innenseiten der Oberschenkel und an den Kniekehlen sorgen für Belüftung und bieten unglaublichen Komfort. Die Oberschenkelbelüftung mit Reißverschlüssen ist praktisch, wenn es dir zu heiß wird."
+      "en": "RevolutionRace's toughest outdoor trousers, with smart ventilation to keep you cool — designed for everyday, all-round use in changing conditions.\n\nBased on the bestselling RVRC GP Pants, they are made from the brand's most durable polycotton canvas with reinforcements at the ankles and over the knees to hold up against heavy use and tearing. Pockets for knee pads come in handy when you need extra support, and zipped thigh vents provide cool comfort on warm days or during more intense activity. Six pockets keep small gear safe, and adjustable cuffs stop the legs riding up or letting debris in.",
+      "de": "Die robustesten Outdoorhosen von RevolutionRace, mit durchdachter Belüftung für einen kühlen Kopf — gemacht für den täglichen Allround-Einsatz bei wechselnden Bedingungen.\n\nBasierend auf der meistverkauften RVRC GP Pants bestehen sie aus dem strapazierfähigsten Polycotton-Canvas der Marke, mit Verstärkungen an den Knöcheln und über den Knien, die hartem Einsatz und Rissen standhalten. Taschen für Knieschoner helfen, wenn du zusätzlichen Halt brauchst, und die Belüftungsreißverschlüsse an den Oberschenkeln sorgen an warmen Tagen oder bei intensiver Bewegung für Kühlung. Sechs Taschen verstauen Kleinkram sicher, und verstellbare Beinabschlüsse verhindern, dass die Hose hochrutscht oder Schmutz eindringt."
     },
     "images": [
       {
@@ -114,7 +114,7 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.revolutionrace.de/herren/hosen/outdoor-wanderhosen/nordwand-pro-pants-men?Color=2851",
+    "manufacturerUrl": "https://www.revolutionrace.com/men/pants/outdoor-hiking-pants/rvrc-gp-pro-pants-men",
     "taglineI18n": {
       "en": "Tough multifunction pants for harsh outdoor conditions.",
       "de": "Robuste Multifunktionshose für raue Outdoor-Bedingungen."
@@ -185,7 +185,6 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.revolutionrace.de/damen/hosen/outdoor-wanderhosen/nordwand-pro-pants-women?Color=2283",
     "taglineI18n": {
       "en": "Women’s versatile hiking pants with stretch and ventilation.",
       "de": "Vielseitige Wanderhose für Frauen mit Stretch und Belüftung."
@@ -224,8 +223,8 @@
       "USD": 189.95
     },
     "descriptionI18n": {
-      "en": "Versatile, hardwearing trousers with pre-shaped knees – Greenland Trail Trousers for men are made of G-1000 and reinforced with a double layer of fabric on the rear and knees. Versatile and simple, comfortable and durable – they are perfect for everyday outdoor life as well as urban environments. Now with a new, more inclusive fit for improved movement and comfort. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
-      "de": "Vielseitige, strapazierfähige Hose mit vorgeformten Knien – die Greenland Trail Trousers für Herren ist aus G-1000 gefertigt und am Gesäß sowie an den Knien mit einer doppelten Materialschicht verstärkt. Dieses einfache, komfortable und langlebige Modell ist perfekt für den Alltag im Freien und für die Stadt geeignet. Jetzt mit neuer, noch besserer Passform für mehr Bewegungsfreiheit und Komfort. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+      "en": "Practical and durable outdoor trousers, just as convenient for everyday wear as for a shorter day hike. The Greenland Trail Trousers for men are made of G-1000 and reinforced with a double layer of fabric across the rear and knees, with pre-shaped knees that follow the leg as you walk.\n\nVersatile and simple, comfortable and hard-wearing, they suit everyday outdoor life and urban surroundings equally well — which is really the point of them. They now come in a new, more inclusive fit for improved movement and comfort.",
+      "de": "Praktische, langlebige Outdoorhose, die sich für den Alltag ebenso eignet wie für eine kürzere Tageswanderung. Die Greenland Trail Trousers für Herren bestehen aus G-1000 und sind am Gesäß sowie an den Knien mit einer doppelten Materialschicht verstärkt; die vorgeformten Knie folgen dem Bein beim Gehen.\n\nVielseitig und schlicht, bequem und strapazierfähig — sie passen zum Leben draußen genauso wie zur Stadt, und genau darum geht es bei ihnen. Inzwischen gibt es sie in einer neuen, inklusiveren Passform für mehr Bewegungsfreiheit und Komfort."
     },
     "images": [
       {
@@ -301,8 +300,8 @@
       "USD": 235.95
     },
     "descriptionI18n": {
-      "en": "Durable trekking trousers with technical features, made from wind- and water-resistant G-1000. The model is based on our best-selling Vidda Pro but has improved ventilation options and a slimmer fit with stretch fabric in crotch so still has great freedom of movement . The buttoned strap adjustments at the leg endings can be removed and there are numerous practical pockets and details – such as a knife pocket on the right leg and a loop for an axe on the side of the waist. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
-      "de": "Langlebige Trekkinghose mit technischen Details aus wind- und wasserfestem G-1000. Das Modell orientiert sich an unserer beliebten Vidda Pro, punktet aber mit optimierten Belüftungsoptionen, schmalerem Schnitt und Stretchmaterial im Schritt für uneingeschränkte Bewegungsfreiheit. Die verstellbaren Riemen mit Druckknöpfen an den Beinenden lassen sich abnehmen und es gibt jede Menge praktische Details – wie eine Messertasche am rechten Bein und eine Schlaufe für eine Axt auf Taillenhöhe. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+      "en": "Technical trekking trousers with ventilation options, made from wind- and water-resistant G-1000 and built to last.\n\nThe model is based on Fjällräven's best-selling Vidda Pro but adds improved ventilation and a slimmer fit, with stretch fabric at the crotch so freedom of movement is not lost to the narrower cut. The buttoned strap adjustments at the leg endings can be removed, and there are numerous practical pockets and details — among them a knife pocket on the right leg and a loop for an axe at the side of the waist.",
+      "de": "Technische Trekkinghose mit Belüftungsoptionen, gefertigt aus wind- und wasserabweisendem G-1000 und auf Langlebigkeit ausgelegt.\n\nDas Modell orientiert sich an der meistverkauften Vidda Pro von Fjällräven, bietet aber verbesserte Belüftung und einen schmaleren Schnitt — mit Stretchmaterial im Schritt, damit der engere Schnitt keine Bewegungsfreiheit kostet. Die Riemenverstellungen mit Knöpfen an den Beinabschlüssen lassen sich abnehmen, und es gibt zahlreiche praktische Taschen und Details, darunter eine Messertasche am rechten Bein und eine Schlaufe für ein Beil an der Seite des Bundes."
     },
     "images": [
       {
@@ -405,8 +404,8 @@
       "USD": 256.95
     },
     "descriptionI18n": {
-      "en": "Award-winning trekking trousers in stretch fabric and G-1000, now updated for even better performance, comfort and durability. The trousers have classic, large pockets, generous ventilation zippers and openings for kneepads (an accessory). A well-fitting, durable classic pair of trousers for maximum freedom of movement in the mountains. Available in three lengths; short, regular and long. If you’re already a fan of our trousers, you should order a size up in our Improved Fit. If this is your first pair of trousers, check our Size Guide to find your best fit.",
-      "de": "Preisgekrönte Trekkinghose aus Stretchmaterial und G-1000, jetzt überarbeitet für noch bessere Leistung, mehr Tragekomfort und höhere Langlebigkeit. Die Hose hat klassische, große Taschen, zahlreiche Belüftungsreißverschlüsse und Öffnungen für Knieschoner (Zubehör). Ein gut sitzender, langlebiger Hosenklassiker für maximale Bewegungsfreiheit in den Bergen. Erhältlich in drei Längen: Kurz, regulär und lang. Wenn du bereits ein Fan unserer Hosen bist, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+      "en": "Award-winning trekking trousers in stretch fabric and G-1000, now updated for even better performance, comfort and durability.\n\nThey carry classic, large pockets, generous ventilation zippers and openings for kneepads, which are available separately. The result is a well-fitting, durable classic built for maximum freedom of movement in the mountains, and they come in three lengths — short, regular and long — so the fit can be matched to your leg rather than the other way round.",
+      "de": "Preisgekrönte Trekkinghose aus Stretchmaterial und G-1000, jetzt überarbeitet für noch bessere Leistung, mehr Tragekomfort und höhere Langlebigkeit.\n\nSie hat klassische, große Taschen, großzügige Belüftungsreißverschlüsse und Öffnungen für Knieschoner, die separat erhältlich sind. Das Ergebnis ist ein gut sitzender, langlebiger Klassiker für maximale Bewegungsfreiheit am Berg — erhältlich in drei Längen: kurz, normal und lang, damit sich die Passform nach deinem Bein richtet und nicht umgekehrt."
     },
     "images": [
       {
@@ -590,8 +589,8 @@
       "USD": 224.95
     },
     "descriptionI18n": {
-      "en": "Lightweight, full-stretch trousers in a durable, double-woven stretch fabric – Abisko Trail Stretch Trousers W are functional trousers optimised for hiking. They are perfect for treks where you need excellent freedom of movement combined with durability and protection. Well-fitting design with regular fit, slightly tapered lower legs and elastic at the sides and back of the waist. They also have a discreet zippered leg pocket for your essentials, zippered hand pockets and elastic drawcord adjustments at the leg endings. If you’re already a fan of our trousers, then you can expect to stay the same size in our Improved Fit if you wear an EU 34 through 44. EU sizes 46 and above can go down a size, depending on fit preference. If this is your first pair of trousers, check our Size Guide to find your best fit.",
-      "de": "Leichte Stretchhose aus langlebigem, doppelt gewebtem Stretchmaterial – die Abisko Trail Stretch Trousers W ist eine Funktionshose, die sich optimal zum Wandern eignet. Sie ist der perfekte Begleiter, wenn du exzellente Bewegungsfreiheit, Langlebigkeit und Schutz brauchst. Gut sitzendes Design mit Regular Fit, etwas schmaler zulaufendem Bein unten sowie elastischen Einsätzen an den Seiten und hinten am Bund. Die Hose hat auch eine unauffällige Reißverschlusstasche am Bein für die wichtigsten Utensilien, Eingrifftaschen mit Reißverschluss und einen elastischen Tunnelzug an den Beinabschlüssen. Wenn du bereits ein Fan unserer Hosen bist und eine EU-Größe zwischen 34 und 44 trägst, wählst du Hosen mit unserem Improved Fit eine Nummer größer. Ab Größe 46 kannst du eine Nummer kleiner tragen – je nach Vorliebe. Solltest du zum ersten Mal eine Hose von uns tragen, wirf am besten einen Blick in unseren Größenguide."
+      "en": "Lightweight, full-stretch trousers made from a durable, double-woven stretch fabric that is partly recycled — functional trousers optimised for hiking.\n\nThey suit treks where excellent freedom of movement has to come together with durability and protection. The design is well-fitting with a regular fit, slightly tapered lower legs and elastic at the sides and back of the waist. There is a discreet zippered leg pocket for essentials, zippered hand pockets, and elastic drawcord adjustments at the leg endings.",
+      "de": "Leichte Stretchhose aus langlebigem, doppelt gewebtem und teils recyceltem Stretchmaterial — eine Funktionshose, die fürs Wandern optimiert ist.\n\nSie eignet sich für Touren, bei denen hervorragende Bewegungsfreiheit mit Strapazierfähigkeit und Schutz zusammenkommen muss. Der Schnitt sitzt gut, mit regulärer Passform, leicht verjüngten Unterschenkeln und Elastik an den Seiten und im Rückenbereich des Bundes. Dazu kommen eine dezente Beintasche mit Reißverschluss für das Wichtigste, Eingrifftaschen mit Reißverschluss und elastische Kordelzüge an den Beinabschlüssen."
     },
     "images": [
       {

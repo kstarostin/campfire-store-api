@@ -9,8 +9,8 @@
       "USD": 2135
     },
     "descriptionI18n": {
-      "en": "Like all our frames, the Stereo ONE22 is all about providing the best performance at the lowest possible weight. Hydroformed tubing is triple butted to save as much weight as possible without sacrificing strength. The tapered head tube and Boost 148 rear axle ensure steering precision and excellent pedalling efficiency. And it's all built around our Efficient Trail Control kinematics and a 130mm fork, with Agile Trail Geometry putting you firmly in control at all times. There's even a SizeSplit XS option with 27.5in wheels for riders who are shorter in stature, but don't want to compromise on performance.",
-      "de": "Wie bei allen unseren Rahmen geht es auch beim Stereo ONE22 um 1a-Performance bei zugleich geringem Gewicht. Klingt unmachbar? Keineswegs. Durch den Einsatz dreifach konifizierter Rohrsätze wurde effizient Gewicht gespart, und zwar ohne Einbußen in Sachen Stabilität und Steifigkeit. Eine ausgeklügelte Kombination aus einem konifizierten Steuerrohr und Boost 148 Hinterbau sorgt für optimierte Lenkpräzision und höchste Pedaliereffizienz. Dazu kommen unsere Efficient Trail Control Kinematik, eine 130 mm Federgabel und die Agile Trail Geometry für ein stabiles, kontrolliertes Handling, immer und überall. Unser SizeSplit System umfasst sogar eine XS-Variante mit 27.5 Zoll Laufrädern für kleinere Fahrer, die auf maximale Performance nicht verzichten wollen."
+      "en": "Every trail tells a different story — which is precisely why the Stereo series exists. Whether in High Performance Carbon or C:62 carbon, each model pairs a light chassis with finely tuned kinematics and handling that is as convincing on flowing singletrack as it is on technical descents.\n\nClever details make each ride simpler: an integrated storage compartment in the down tube, and a mount for your bike computer. The result is a versatile all-mountain bike that leaves you wanting the next trail — and usually one after that.",
+      "de": "Jeder Trail erzählt eine andere Geschichte — und genau dafür gibt es die Stereo Serie. Ob High Performance Carbon oder C:62® Carbon: Jedes Modell verbindet ein leichtes Chassis mit einer fein abgestimmten Kinematik und einem Handling, das auf flowigen Singletrails genauso überzeugt wie auf technischen Abfahrten.\n\nClevere Details machen jede Ausfahrt unkomplizierter, etwa das integrierte Storage-Fach im Unterrohr oder die Halterung für deinen Bike-Computer. Das Ergebnis ist ein vielseitiges All-Mountain-Bike, das Lust auf den nächsten Trail macht — und meistens noch auf einen danach."
     },
     "images": [
       {
@@ -41,7 +41,7 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-de/cube-stereo-one22-pro-fireorange-n-black/fa0fb720455087e4ee42e2e9055bbee3",
+    "manufacturerUrl": "https://www.cube.eu/de-de/bikes/mountainbike/fullsuspension/stereo",
     "taglineI18n": {
       "en": "Lightweight trail bike for fast cross-country laps.",
       "de": "Leichtes Trailbike für schnelle Cross-Country-Runden."
@@ -112,7 +112,7 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-de/cube-ams-zero99-c-68x-slt-29-liquidblue-n-blue/57ae7e17c37d57aee8ee75fb7c7b5c53",
+    "manufacturerUrl": "https://www.cube.eu/de-de/bikes/mountainbike/fullsuspension/ams",
     "taglineI18n": {
       "en": "Ultra-light race machine for cross-country competition.",
       "de": "Ultraleichte Renmmaschine für Cross-Country-Wettkämpfe."
@@ -157,8 +157,8 @@
       "USD": 3499
     },
     "descriptionI18n": {
-      "en": "Big wheels, big travel, big fun. The Stereo ONE77's frame is based on our proven four-bar suspension design and Agile Trail Geometry, for superb suspension performance and dependable handling in a huge range of trail conditions. With a flip chip and two mounting points for air and coil, the rear suspension setup is designed to be progressive – and there are angle adjustment inserts so you can tweak the geometry to suit your own preference. The frame is equally happy with an air or coil shock, and covered bearings, internally routed cables and a threaded bottom bracket mean you can spend more time shredding and less time wrenching. Simply put, it redefines what a big-travel, big-wheeled bike can do.",
-      "de": "Große Laufräder, viel Federweg, mega Fahrspaß – kurz: das Stereo ONE77. Die Basis des Rahmens bilden unser bewährtes Viergelenker-Design und die Agile Trail Geometry, beides Garanten für exzellente Dämpfung und zuverlässiges Handling bei allen möglichen und unmöglichen Trail-Bedingungen. Mit einem Flip-Chip und zwei Befestigungspunkten für wahlweise Stahl- oder Luftdämpfer gibt sich die Federung am Heck superprogressiv und effizient. Außerdem kannst du die Geometrie per Lagerschalen zur Winkelverstellung auf deine individuellen Vorlieben und Anforderungen anpassen. Für den letzten Schliff sorgen elegant integrierte Lager, ein geschraubtes Tretlager und ins Innere verlegte Züge. Das bedeutet weniger Wartung und damit keine verpassten Meter mehr auf dem Trail. Kurz: Mit diesem Chassis bekommen Federweg und Laufradgröße ihre ganz große Bühne!"
+      "en": "Part of the Stereo series, built on the idea that every trail tells a different story. A light chassis, finely tuned kinematics and handling that works on flowing singletrack and technical descents alike — with the longer travel of the ONE77 aimed at rougher ground.\n\nClever details keep each ride simple: an integrated storage compartment in the down tube and a mount for your bike computer. The result is a versatile all-mountain bike that makes you want the next trail, and usually one after that.",
+      "de": "Teil der Stereo Serie, gebaut nach dem Gedanken, dass jeder Trail eine andere Geschichte erzählt. Ein leichtes Chassis, eine fein abgestimmte Kinematik und ein Handling, das auf flowigen Singletrails genauso funktioniert wie auf technischen Abfahrten — mit dem größeren Federweg des ONE77 für ruppigeres Gelände.\n\nClevere Details halten jede Ausfahrt unkompliziert: das integrierte Storage-Fach im Unterrohr und die Halterung für deinen Bike-Computer. Das Ergebnis ist ein vielseitiges All-Mountain-Bike, das Lust auf den nächsten Trail macht — und meistens noch auf einen danach."
     },
     "images": [
       {
@@ -189,7 +189,7 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-de/cube-stereo-one77-pro-29-black-anodized/779d74ad07ef7527937a08977d5a306b",
+    "manufacturerUrl": "https://www.cube.eu/de-de/bikes/mountainbike/fullsuspension/stereo",
     "taglineI18n": {
       "en": "Long-travel enduro bike for steep descents and big hits.",
       "de": "Enduro-Bike mit viel Federweg für steile Abfahrten."
@@ -260,7 +260,6 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-en/cube-attention-fireorange-n-black/476b8ec08e88ea20b723e67077f2d625",
     "taglineI18n": {
       "en": "Capable hardtail for trail fun without breaking the bank.",
       "de": "Vielseitiges Hardtail für Trail-Spaß zum fairen Preis."
@@ -331,7 +330,6 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-de/cube-elite-c-68x-slx-teamline/997f7acc2b826f5378aec4981791ab25",
     "taglineI18n": {
       "en": "XC race hardtail with premium carbon frame.",
       "de": "XC-Renn-Hardtail mit Premium-Carbonrahmen."
@@ -402,7 +400,6 @@
         }
       }
     ],
-    "manufacturerUrl": "https://www.cube.eu/de-de/cube-access-ws-darkpurple-n-pink/90e88b866bcaa823eb5bcb4efc8cbeb9",
     "taglineI18n": {
       "en": "Women’s trail hardtail with confidence-inspiring geometry.",
       "de": "Trail-Hardtail für Frauen mit sicherer Geometrie."
@@ -441,8 +438,8 @@
       "USD": 3199
     },
     "descriptionI18n": {
-      "en": "",
-      "de": ""
+      "en": "A light carbon all-mountain bike that is efficient, comfortable and always ready for a trail adventure — now with a more progressive geometry for extra stability on demanding ground.\n\nTriple Phase Suspension is at the heart of it, giving a great ride feel and full control on any trail: sensitive off the top for grip in abundance, an efficient platform through the mid-stroke for speed and momentum, and high end-progression that stands up to big hits without bottoming out. Internal cable routing gives the Neuron CF a clean look, but it is not only about style — pre-installed cable channels make servicing and building the bike considerably easier.",
+      "de": "Dieses leichte All-Mountainbike aus Carbon ist effizient, komfortabel und immer bereit für ein Trail-Abenteuer — jetzt mit progressiverer Geometrie für noch mehr Stabilität auf anspruchsvollen Trails.\n\nKern ist die Triple Phase Suspension, die ein großartiges Fahrgefühl und volle Kontrolle auf jedem Trail bietet: feinfühliges Ansprechverhalten für Grip en masse, eine effiziente Plattform im mittleren Federweg für Speed und Momentum sowie hohe End-Progression, die dem Durchschlagen auch bei großen Hits vorbeugt. Die interne Kabelführung sorgt für einen eleganten Look — hier geht es aber nicht nur um Stil: Vorinstallierte Kabelkanäle machen Wartung und Aufbau deutlich einfacher."
     },
     "images": [
       {
@@ -620,8 +617,8 @@
       "USD": 1599
     },
     "descriptionI18n": {
-      "en": "",
-      "de": ""
+      "en": "Long-distance comfort and full control: a hardtail all-rounder with a 120 mm suspension fork, a modern aluminium frame and an adjustable dropper post.\n\nThat combination is what makes it flexible. The fork and frame take the edge off rough, unsurfaced ground, while the dropper lets you get the saddle out of the way when the trail points down and back up again for the climb — so a single bike covers everything from forest tracks to properly rocky terrain.",
+      "de": "Langstreckentauglicher Komfort und volle Kontrolle: ein Hardtail-Allrounder mit 120-mm-Federgabel, modernem Aluminium-Rahmen und verstellbarer Dropper Post.\n\nGenau diese Kombination macht es so flexibel. Gabel und Rahmen nehmen ruppigem, unbefestigtem Untergrund die Härte, während die Dropper Post den Sattel aus dem Weg räumt, sobald es bergab geht — und ihn für den Anstieg wieder nach oben bringt. So deckt ein einziges Bike alles ab, vom Waldweg bis zum richtig steinigen Gelände."
     },
     "images": [
       {
